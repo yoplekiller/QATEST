@@ -1,5 +1,7 @@
 import os
 from datetime import datetime
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 
 
 # 스크린샷
@@ -19,5 +21,7 @@ def take_screenshot(driver, test_name, save_dir="screenshots"):
     #스크린샷 저장
     driver.save_screenshot(file_path)
     print(f"Screenshot saved at: {file_path}")
+
+
 
 

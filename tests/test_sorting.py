@@ -1,3 +1,5 @@
+import os
+
 import pytest
 import time
 from selenium import webdriver
@@ -10,8 +12,9 @@ from project.utilities import take_screenshot
 @pytest.fixture
 def driver():
     """WebDriver 초기화 및 종료"""
-    service_obj = Service(r"C:\Users\jmlim\Desktop\chromedriver-win32\chromedriver.exe")
-    driver = webdriver.Chrome(service=service_obj)  # Chrome WebDriver 초기화
+    chrome_driver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else r"C:\Users\jmlim\Desktop\chromedriver-win32\chromedriver.exe"
+    service_obj = Service(chrome_driver_path)
+    driver = webdriver.Chrome(service=service_obj)
     driver.maximize_window()
     driver.implicitly_wait(10)
     driver.get(BASE_URL)

@@ -39,3 +39,9 @@ jobs:
         wget https://chromedriver.storage.googleapis.com/${CHROME_VERSION}/chromedriver_linux64.zip
         unzip chromedriver_linux64.zip
         sudo mv chromedriver /usr/local/bin/
+
+    - name: Upload HTML Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-report
+        path: report.html
