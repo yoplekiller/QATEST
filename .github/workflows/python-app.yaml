@@ -20,12 +20,12 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install dependencies and tools
         run: |
           pip install -r requirements.txt
           sudo apt-get update
           sudo apt-get install -y wget unzip
-          wget -q -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/131.0.6778.265/chromedriver_win64.zip
+          wget -q -O /tmp/chromedriver.zip https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.264/win64/chromedriver-win64.zip
           unzip /tmp/chromedriver.zip -d /usr/local/bin/
           sudo apt-get install -y google-chrome-stable
 
