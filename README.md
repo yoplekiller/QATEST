@@ -21,7 +21,7 @@
 - **ChromeDriver**: Chrome 브라우저를 제어하기 위한 WebDriver.
 
 ### **파일 구조**
-
+````
 project_root/<br>
 ├── .github/workflows/selenium-tests.yml &nbsp;&nbsp;&nbsp;&nbsp;  # GitHub Actions 워크플로우 파일 (CI/CD)<br>
 ├── browser_action.py &nbsp;&nbsp;&nbsp;&nbsp;# 브라우저 상호작용 관련 주요 함수<br>
@@ -32,7 +32,7 @@ project_root/<br>
 ├── test_search.py    &nbsp;&nbsp;&nbsp;&nbsp;  # 상품 검색 기능 테스트<br>
 ├── test_sorting.py       &nbsp;&nbsp;&nbsp;&nbsp; # 정렬 옵션 테스트<br>
 ├── requirements.txt   &nbsp;&nbsp;&nbsp;&nbsp;  # 프로젝트 의존성 목록<br>
-
+````
                         
 
 
@@ -46,20 +46,40 @@ project_root/<br>
 
 #### **설정 방법**
 
-1. 레포지토리 클론:
+1. 레포지토리 클론:<br>
+   ````
    git clone https://github.com/yourusername/your-repository.git
    cd your-repository
 
+2. 의존성 설치:<br>
+   ````
+   pip install -r requirements.txt
+3. `config.py`파일에서 기본 URL을 업데이트 (기본값:`http://www.kurly.com/main`).
+4. ChromeDriver가 설치되어 있고, `browser_aciton.py`또는 시스템 환경 변수에 경로가 설정되어있는지 확인.
 
+### 테스트 결과 리포트 생성
+
+`pytest-html` 플러그인을 사용해 테스트 결과를 HTML로 시각화할 수 있습니다.
+
+#### 설치 방법
+   ```
+   pip install pytest-html
+   ```
+#### 리포트 생성 방법
+  ```
+  pytest --html=report.html --self-contained-html
+  ```
 ### **테스트 실행**
 #### **로컬 환경에서 실행**
 개별 테스트 파일을 pytest로 실행:<br>
+````
 pytest test_search.py<br>
 pytest test_sorting.py<br>
 pytest test_cart.py<br>
 pytest test_price_filter.py
+````
 
-#### **GitHub Actions을 활용한 CI/CD**
+### **GitHub Actions을 활용한 CI/CD**
 이 프로젝트는 main 브랜치에 푸시되거나 pr이 생성될 때 테스트를 실행하는 Github Actions 워크플로우
 (selenium-tests.yaml)를 포함합니다. 워크플로우는 의존성을 설치하고 ChromeDriver를 설정한 후 테스트를
 실행합니다.
@@ -75,5 +95,37 @@ pytest test_price_filter.py
 - Firefox,Safari 등 추가 브라우저를 포함한 CI/CD 파이프라인 확장.
 - 로그인, 회원가입 등의 테스트 케이스 추가.
 
-### **라이선스**
+### **기여 방법**
+1. **레포지토리 포크(Fork):** 
+ - Github에서 이 프로젝트를 포크하여 자신의 계정으로 복사하세요
+2. **클론(Clone):**
+- 포크한 레포지토리를 로컬 환경에 클론합니다:
+  ````
+  git clone https://github.com/yourusername/your-repository.git
+  cd your-repository
 
+3. **새로운 브랜치 생성:**
+- 기능 추가나 버그 수정을 위한 브랜치를 생성하세요:
+  ````
+  git check -b new-feature-branch
+  
+4. **변경 사항 커밋:**
+- 작업한 내용을 커밋하고 로컬 브랜치에 저장합니다:
+  ````
+  git add .
+  git commit -m "Add new feature or fix bug"
+
+5. **푸시(Push)**
+- 변경 사항을 Github에 푸시합니다:
+  ````
+  git push origin new-feature-branch
+
+6. **Pull Request 생성:**
+- Github에서 원본 레포지토리로 Pull Request(PR)을 생성하여 변경 사항을 제출하세요.
+
+7. **검토 및 병합:**
+- 프로젝트 관리자가 PR을 검토하고 병합합니다.
+
+
+### **라이선스**
+이 프로젝트는 MIT 라이선스를 따릅니다. 자세한 내용은 LICENSE 파일을 참조하세요.
