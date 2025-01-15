@@ -8,7 +8,7 @@ on:
 
 jobs:
   selenium-tests:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     services:
       selenium:
