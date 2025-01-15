@@ -2,7 +2,7 @@ import os
 
 import pytest
 from selenium.webdriver.common.by import By
-
+from selenium.webdriver.chrome.options import Options
 from project.config import BASE_URL
 from project.utilities import take_screenshot
 from selenium import webdriver
