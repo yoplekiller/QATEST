@@ -2,7 +2,7 @@ import os
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
 
 @pytest.fixture
 def initialize_browser():
@@ -11,10 +11,10 @@ def initialize_browser():
         # CI 환경에서는 Selenium Grid 사용
         grid_url = "http://localhost:4444/wd/hub"
         options = webdriver.ChromeOptions()
-        options.add_argument("--headless")
-        options.add_argument("--no-sandbox")
-        options.add_argument("--disable-dev-shm-usage")
-        capabilities = DesiredCapabilities.CHROME.copy()
+        options.add_argument("--headless") #화면 없이 실행
+        options.add_argument("--no-sandbox") # 샌드박스 문제 방지
+        options.add_argument("--disable-dev-shm-usage")# 메모리 문제 해결
+
         driver = webdriver.Remote(command_executor=grid_url, options=options)
     else:
         # 로컬 환경에서는 로컬 ChromeDriver 사용

@@ -23,15 +23,16 @@
 ### **파일 구조**
 ````
 project_root/<br>
-├── .github/workflows/selenium-tests.yml &nbsp;&nbsp;&nbsp;&nbsp;  # GitHub Actions 워크플로우 파일 (CI/CD)
-├── browser_action.py &nbsp;&nbsp;&nbsp;&nbsp;# 브라우저 상호작용 관련 주요 함수
-├── config.py  &nbsp;&nbsp;&nbsp;&nbsp; # 기본 URL 및 설정 파일
-├── utilities.py        &nbsp;&nbsp;&nbsp;&nbsp; # 스크린샷 등 유틸리티 함수
-├── test_cart.py       &nbsp;&nbsp;&nbsp;&nbsp; # 장바구니 동작 테스트
-├── test_price_filter.py      &nbsp;&nbsp;&nbsp;&nbsp; # 가격 필터링 테스트
-├── test_search.py    &nbsp;&nbsp;&nbsp;&nbsp;  # 상품 검색 기능 테스트
-├── test_sorting.py       &nbsp;&nbsp;&nbsp;&nbsp; # 정렬 옵션 테스트
-├── requirements.txt   &nbsp;&nbsp;&nbsp;&nbsp;  # 프로젝트 의존성 목록
+├── .github/workflows/selenium-tests.yml  # GitHub Actions 워크플로우 파일 (CI/CD)
+├── browser_action.py # 브라우저 상호작용 관련 주요 함수
+├── config.py  # 기본 URL 및 설정 파일
+├── utilities.py # 스크린샷 등 유틸리티 함수
+├── conftest.py  # 브라우저 초기화 함수 
+├── test_cart.py  # 장바구니 동작 테스트
+├── test_category_filter.py  # 가격 필터링 테스트
+├── test_search.py  # 상품 검색 기능 테스트
+├── test_sorting.py  # 정렬 옵션 테스트
+├── requirements.txt # 프로젝트 의존성 목록
 ````
                         
 
@@ -55,7 +56,7 @@ project_root/<br>
    ````
    pip install -r requirements.txt
 3. `config.py`파일에서 기본 URL을 업데이트 (기본값:`http://www.kurly.com/main`).
-4. ChromeDriver가 설치되어 있고, `browser_aciton.py`또는 시스템 환경 변수에 경로가 설정되어있는지 확인.
+4. ChromeDriver가 설치되어 있고, `browser_action.py`또는 시스템 환경 변수에 경로가 설정되어있는지 확인.
 
 ### 테스트 결과 리포트 생성
 
@@ -89,10 +90,9 @@ pytest test_category_filter.py
 생성된 HTML 리포트를 확인할 수 있습니다.
 
 ### **향후 개선 사항**
-- 엣지 케이스를 위한 추가 테스트 케이스 작성.
 - 테스트 관리 도구와 통합.
 - pytest-html을 활용한 상세한 테스트 리포트 생성.
-- Firefox,Safari 등 추가 브라우저를 포함한 CI/CD 파이프라인 확장.
+- firefox, edge 등 추가 브라우저를 포함한 CI/CD 파이프라인 확장.
 - 로그인, 회원가입 등의 테스트 케이스 추가.
 
 ### **기여 방법**

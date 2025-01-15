@@ -8,7 +8,7 @@ from project.config import BASE_URL
 from project.utilities import take_screenshot
 
 
-#분류
+#분류 기능 테스트
 def test_sorting_new(initialize_browser):
     driver = initialize_browser
     search_product(driver, "콜라")
