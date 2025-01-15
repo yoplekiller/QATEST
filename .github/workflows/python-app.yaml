@@ -28,6 +28,12 @@ jobs:
           wget -q -O /tmp/chromedriver.zip https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.83/linux64/chromedriver-linux64.zip
           unzip /tmp/chromedriver.zip -d /usr/local/bin/
           sudo apt-get install -y google-chrome-stable
+       
+      - name: Debug environment
+        run: |
+          which chromedriver
+          chromedriver --version
+          google-chrome --version    
 
       - name: Run tests
         run: pytest --maxfail=5 --disable-warnings
