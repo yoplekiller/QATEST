@@ -29,7 +29,7 @@ jobs:
       run: |
         python -m venv venv
         dir venv
-        .\venv\Scripts\activate
+        venv\Scripts\activate
 
     - name: Install dependencies
       run: |
