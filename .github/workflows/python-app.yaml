@@ -24,20 +24,23 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
+    
+    - name: Create virtual enviroment
+      run: |
+        pyhton -m venv venv
+        dir venv
+        .\venv\Scripts\activate
 
     - name: Install dependencies
       run: |
-        python - m venv venv
         source venv/bin/activate
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run Selenium Tests
-      env:
-        SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
+    - name: Run tests
       run: |
-        source ./venv/bin/activate || .\venv\Scripts\activate
-        pytest tests --html=report.html --self-contained-html
+        .\venv\Scripts\activate
+        pytest --html=report.html --self-contained-html
   
     - name: Upload test report
       uses: actions/upload-artifact@v3
