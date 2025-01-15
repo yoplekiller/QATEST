@@ -25,7 +25,7 @@ jobs:
           pip install -r requirements.txt
           sudo apt-get update
           sudo apt-get install -y wget unzip
-          wget -q -O /tmp/chromedriver.zip wget -q -O chromedriver.zip C:\Users\jmlim\Desktop\chromedriver-win32\chromedriver.exe"
+          wget -q -O /tmp/chromedriver.zip wget -q -O chromedriver.zip "C:\Users\jmlim\Desktop\chromedriver-win32\chromedriver.exe"
           unzip chromedriver.zip -d C:\Users\jmlim\chromedriver
           chmod +x /usr/local/bin/chromedriver
           sudo apt-get install -y google-chrome-stable
