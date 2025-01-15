@@ -1,5 +1,6 @@
 import os
 
+import pytest
 from selenium.webdriver.common.by import By
 
 from project.config import BASE_URL
@@ -7,6 +8,7 @@ from project.utilities import take_screenshot
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
+@pytest.fixture
 def initialize_browser():
     """WebDriver 초기화 및 종료"""
     chrome_driver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else r"C:\Users\jmlim\Desktop\chromedriver-win32\chromedriver.exe"
