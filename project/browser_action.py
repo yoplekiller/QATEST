@@ -1,6 +1,7 @@
 import os
 
 import pytest
+from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from project.config import BASE_URL
@@ -11,18 +12,29 @@ from selenium.webdriver.chrome.service import Service
 @pytest.fixture
 def initialize_browser():
     """WebDriver 초기화 및 종료"""
-    chrome_driver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else r"C:\Users\jmlim\Desktop\chromedriver-win32\chromedriver.exe"
-    service_obj = Service(chrome_driver_path)
-    driver = webdriver.Chrome(service=service_obj)
-    options = webdriver.ChromeOptions()
     if os.getenv("CI"):
+        # CI 환경에서는 Selenium Grid 사용
+        grid_url = "http://localhost:4444/wd/hub"
+        options = webdriver.ChromeOptions()
         options.add_argument("--headless")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
-    driver = webdriver.Chrome(service=service_obj, options=options)
+        capabilities = DesiredCapabilities.CHROME.copy()
+        driver = webdriver.Remote(command_executor=grid_url, options=options, desired_capabilities=capabilities)
+    else:
+        # 로컬 환경에서는 로컬 ChromeDriver 사용
+        chrome_driver_path = r"C:\Users\jmlim\Desktop\chromedriver-win32\chromedriver.exe"
+        service_obj = Service(chrome_driver_path)
+        options = webdriver.ChromeOptions()
+        driver = webdriver.Chrome(service=service_obj, options=options)
+
+    # 공통 설정
     driver.maximize_window()
     driver.implicitly_wait(10)
-    driver.get(BASE_URL)
+
+    # BASE_URL 가져오기
+    base_url = os.getenv("BASE_URL", "https://www.kurly.com/main")  # 기본값 설정
+    driver.get(base_url)
     yield driver
     driver.quit()
 
