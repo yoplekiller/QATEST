@@ -21,30 +21,20 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies and tools
+        run: pip install -r requirements.txt
+          
+      - name: Download ChromeDriver
         run: |
-          pip install -r requirements.txt
-          sudo apt-get update
-          sudo apt-get install -y wget unzip google-chrome-stable
-          sudo mkdir -p /usr/local/bin/
-          wget -q -O /tmp/chromedriver.zip "https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.83/linux64/chromedriver-linux64.zip"
-          unzip /tmp/chromedriver.zip -d /tmp/chromedriver
-          CHROMEDRIVER_PATH=$(find /tmp/chromedriver -type f -name "chromedriver")
-          if [ -z "$CHROMEDRIVER_PATH" ]; then
-            echo "ChromeDriver not found in the extracted archive."
-            exit 1
-          fi
-          sudo mv "$CHROMEDRIVER_PATH" /usr/local/bin/chromedriver
-          sudo chmod +x /usr/local/bin/chromedriver
-          ls -la /usr/local/bin/ # 디버깅: 설치된 파일 확인
+          mkdir -p /tmp/chromedriver
+          wget -q https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip -d /tmp/chromedriver/
+          mv /tmp/chromedriver/chromedriver /usr/local/bin/
+          chmod +x /usr/local/bin/chromedriver   
        
-      - name: Debug environment
-        run: |
-          ls -la /usr/local/bin/
-          which chromedriver
-          chromedriver --version
-          google-chrome --version    
-
+   
       - name: Run tests
+        env:
+          CHROME_OPTIONS: "--user-data-dir=/tmp/chrome-user-data"
         run: pytest --maxfail=5 --disable-warnings
 
       - name: Upload HTML Report
