@@ -15,7 +15,7 @@ def initialize_browser():
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         capabilities = DesiredCapabilities.CHROME.copy()
-        driver = webdriver.Remote(command_executor=grid_url, options=options, desired_capabilities=capabilities)
+        driver = webdriver.Remote(command_executor=grid_url, options=options)
     else:
         # 로컬 환경에서는 로컬 ChromeDriver 사용
         chrome_driver_path = r"C:\Users\jmlim\Desktop\chromedriver-win32\chromedriver.exe"
