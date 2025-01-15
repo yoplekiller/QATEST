@@ -13,13 +13,13 @@ def test_price_filter(initialize_browser):
     driver.execute_script("arguments[0].scrollIntoView(true);", target)
     time.sleep(2)
 
-    click_price_sort_option(driver,'12,270원 미만')
+    click_price_sort_option(driver,'12,280원 미만')
     time.sleep(2)
-    take_screenshot(driver,'12,270원 미만')
+    take_screenshot(driver,'12,280원 미만')
 
-    click_price_sort_option(driver,'12,270원 ~ 19,995원')
+    click_price_sort_option(driver,'12,280원 ~ 19,995원')
     time.sleep(2)
-    take_screenshot(driver, '12,270원 ~ 19,995원')
+    take_screenshot(driver, '12,280원 ~ 19,995원')
 
     click_price_sort_option(driver,'19,995원 ~ 32,780원')
     time.sleep(2)
