@@ -24,10 +24,12 @@ jobs:
         run: |
           pip install -r requirements.txt
           sudo apt-get update
-          sudo apt-get install -y wget unzip
+          sudo apt-get install -y wget unzip google-chrome-stable
+          sudo mkdir -p /usr/local/bin/
           wget -q -O /tmp/chromedriver.zip "https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.83/linux64/chromedriver-linux64.zip"
           unzip /tmp/chromedriver.zip -d /usr/local/bin/
-          sudo apt-get install -y google-chrome-stable
+          sudo chmod +x /usr/local/bin/chromedriver
+          ls -la /usr/local/bin/ # Debug to check if ChromeDriver is correctly installed
        
       - name: Debug environment
         run: |
