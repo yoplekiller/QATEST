@@ -22,6 +22,11 @@ jobs:
 
       - name: Install dependencies and tools
         run: pip install -r requirements.txt
+
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable  
           
       - name: Download ChromeDriver
         run: |
@@ -35,7 +40,9 @@ jobs:
       - name: Run tests
         env:
           CHROME_OPTIONS: "--headless --no-sandbox --disable-dev-shm-usage --remote-debugging-port=9222 --disable-gpu --user-data-dir=/tmp/chrome-user-data"
-        run: pytest --maxfail=5 --disable-warnings
+        run: |
+          Xvfb :99 -screen 0 1920x1080x16 &
+          pytest --maxfail=5 --disable-warnings
 
       - name: Upload HTML Report
         uses: actions/upload-artifact@v3
