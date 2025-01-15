@@ -1,29 +1,12 @@
-import os
 import time
-import pytest
-from selenium.webdriver.chrome.service import Service
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-from project.browser_action import search_product
-from project.config import BASE_URL
+from project.browser_action import search_product, initialize_browser
 from project.utilities import take_screenshot
 
 
-
-@pytest.fixture
-def driver():
-    """WebDriver 초기화 및 종료"""
-    chrome_driver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else r"C:\Users\jmlim\Desktop\chromedriver-win32\chromedriver.exe"
-    service_obj = Service(chrome_driver_path)
-    driver = webdriver.Chrome(service=service_obj)
-    driver.maximize_window()
-    driver.implicitly_wait(10)
-    driver.get(BASE_URL)
-    yield driver
-    driver.quit()
-
 #담기 후 취소
-def test_cart_cancel(driver):
+def test_cart_cancel(initialize_browser):
+    driver = initialize_browser
     search_product(driver, "콜라")
     driver.find_element(By.XPATH, "//body[1]/div[1]/div[1]/div[4]/div[1]/main[1]/div[2]/div[2]/div[2]/a[1]/div[2]/button[1]").click()
     time.sleep(2)
@@ -31,7 +14,8 @@ def test_cart_cancel(driver):
     time.sleep(2)
 
 # 담기 > 장바구니 담기 > 카트 click
-def test_cart(driver):
+def test_cart(initialize_browser):
+    driver = initialize_browser
     search_product(driver,"콜라")
     driver.find_element(By.XPATH,"//body[1]/div[1]/div[1]/div[4]/div[1]/main[1]/div[2]/div[2]/div[2]/a[1]/div[2]/button[1]").click()
     time.sleep(2)

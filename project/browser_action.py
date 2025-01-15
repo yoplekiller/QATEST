@@ -14,6 +14,12 @@ def initialize_browser():
     chrome_driver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else r"C:\Users\jmlim\Desktop\chromedriver-win32\chromedriver.exe"
     service_obj = Service(chrome_driver_path)
     driver = webdriver.Chrome(service=service_obj)
+    options = webdriver.ChromeOptions()
+    if os.getenv("CI"):
+        options.add_argument("--headless")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+    driver = webdriver.Chrome(service=service_obj, options=options)
     driver.maximize_window()
     driver.implicitly_wait(10)
     driver.get(BASE_URL)
