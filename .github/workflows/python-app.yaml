@@ -30,10 +30,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Install ChromeDriver
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y chromium-chromedriver
+        export PATH=$PATH:/usr/lib/chromium-browser/    
+
     - name: Run tests
       env:
         CI: true
-        BASE_URL: https://yourwebsite.com  # Replace with your actual base URL
+        BASE_URL: https://www.kurly.com/  # Replace with your actual base URL
       run: |
         pytest tests --html=report.html --self-contained-html
 
