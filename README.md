@@ -23,15 +23,15 @@
 ### **파일 구조**
 ````
 project_root/<br>
-├── .github/workflows/selenium-tests.yml &nbsp;&nbsp;&nbsp;&nbsp;  # GitHub Actions 워크플로우 파일 (CI/CD)<br>
-├── browser_action.py &nbsp;&nbsp;&nbsp;&nbsp;# 브라우저 상호작용 관련 주요 함수<br>
-├── config.py  &nbsp;&nbsp;&nbsp;&nbsp; # 기본 URL 및 설정 파일<br>
-├── utilities.py        &nbsp;&nbsp;&nbsp;&nbsp; # 스크린샷 등 유틸리티 함수<br>
-├── test_cart.py       &nbsp;&nbsp;&nbsp;&nbsp; # 장바구니 동작 테스트<br>
-├── test_price_filter.py      &nbsp;&nbsp;&nbsp;&nbsp; # 가격 필터링 테스트<br>
-├── test_search.py    &nbsp;&nbsp;&nbsp;&nbsp;  # 상품 검색 기능 테스트<br>
-├── test_sorting.py       &nbsp;&nbsp;&nbsp;&nbsp; # 정렬 옵션 테스트<br>
-├── requirements.txt   &nbsp;&nbsp;&nbsp;&nbsp;  # 프로젝트 의존성 목록<br>
+├── .github/workflows/selenium-tests.yml &nbsp;&nbsp;&nbsp;&nbsp;  # GitHub Actions 워크플로우 파일 (CI/CD)
+├── browser_action.py &nbsp;&nbsp;&nbsp;&nbsp;# 브라우저 상호작용 관련 주요 함수
+├── config.py  &nbsp;&nbsp;&nbsp;&nbsp; # 기본 URL 및 설정 파일
+├── utilities.py        &nbsp;&nbsp;&nbsp;&nbsp; # 스크린샷 등 유틸리티 함수
+├── test_cart.py       &nbsp;&nbsp;&nbsp;&nbsp; # 장바구니 동작 테스트
+├── test_price_filter.py      &nbsp;&nbsp;&nbsp;&nbsp; # 가격 필터링 테스트
+├── test_search.py    &nbsp;&nbsp;&nbsp;&nbsp;  # 상품 검색 기능 테스트
+├── test_sorting.py       &nbsp;&nbsp;&nbsp;&nbsp; # 정렬 옵션 테스트
+├── requirements.txt   &nbsp;&nbsp;&nbsp;&nbsp;  # 프로젝트 의존성 목록
 ````
                         
 
@@ -73,9 +73,9 @@ project_root/<br>
 #### **로컬 환경에서 실행**
 개별 테스트 파일을 pytest로 실행:<br>
 ````
-pytest test_search.py<br>
-pytest test_sorting.py<br>
-pytest test_cart.py<br>
+pytest test_search.py
+pytest test_sorting.py
+pytest test_cart.py
 pytest test_category_filter.py
 ````
 
