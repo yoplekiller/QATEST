@@ -21,13 +21,13 @@ def test_price_filter(initialize_browser):
     time.sleep(2)
     take_screenshot(driver, '12,280원 ~ 19,995원')
 
-    click_price_sort_option(driver,'19,995원 ~ 32,780원')
+    click_price_sort_option(driver,'19,995원 ~ 32,756원')
     time.sleep(2)
-    take_screenshot(driver, '19,995원 ~ 32,780원')
+    take_screenshot(driver, '19,995원 ~ 32,756원')
 
-    click_price_sort_option(driver,'32,780원 이상')
+    click_price_sort_option(driver,'32,756원 이상')
     time.sleep(2)
-    take_screenshot(driver, '32,780원 이상')
+    take_screenshot(driver, '32,756원 이상')
 
 
 
