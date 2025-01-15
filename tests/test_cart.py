@@ -1,6 +1,6 @@
 import time
 from selenium.webdriver.common.by import By
-from project.browser_action import search_product, initialize_browser
+from project.browser_action import search_product
 from project.utilities import take_screenshot
 
 
