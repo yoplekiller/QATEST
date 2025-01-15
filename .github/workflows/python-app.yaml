@@ -34,7 +34,7 @@ jobs:
    
       - name: Run tests
         env:
-          CHROME_OPTIONS: "--user-data-dir=/tmp/chrome-user-data"
+          CHROME_OPTIONS: "--headless --no-sandbox --disable-dev-shm-usage --remote-debugging-port=9222 --disable-gpu --user-data-dir=/tmp/chrome-user-data"
         run: pytest --maxfail=5 --disable-warnings
 
       - name: Upload HTML Report
