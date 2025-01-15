@@ -76,7 +76,7 @@ project_root/<br>
 pytest test_search.py<br>
 pytest test_sorting.py<br>
 pytest test_cart.py<br>
-pytest test_price_filter.py
+pytest test_category_filter.py
 ````
 
 ### **GitHub Actions을 활용한 CI/CD**

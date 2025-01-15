@@ -27,7 +27,7 @@ def click_sort_option(driver, option_text):
     sort_button = driver.find_element(By.XPATH, f"//a[contains(text(),'{option_text}')]")
     sort_button.click()
 
-def click_price_sort_option(driver, option_text):
+def click_category_sort_option(driver, option_text):
     """
     정렬 옵션 클릭
     :param driver: WebDriver 객체
