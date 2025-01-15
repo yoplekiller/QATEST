@@ -8,7 +8,7 @@ on:
 
 jobs:
   selenium-tests:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     services:
       selenium:
@@ -27,7 +27,7 @@ jobs:
     
     - name: Create virtual enviroment
       run: |
-        pyhton -m venv venv
+        python -m venv venv
         dir venv
         .\venv\Scripts\activate
 
