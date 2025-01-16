@@ -1,4 +1,4 @@
-name: Selenium Tests CI/CD
+name: Selenium Tests Repeat
 
 on:
   push:
