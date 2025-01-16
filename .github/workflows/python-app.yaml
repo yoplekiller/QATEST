@@ -6,7 +6,7 @@ on:
       - main
   pull_request:
   schedule:
-    - cron: '7 9 * * *' # 실행 시간 설정정
+    - cron: '20 9 * * *' # 실행 시간 설정(UTC)
 
 jobs:
   selenium-tests:
@@ -49,3 +49,11 @@ jobs:
       with:
         name: selenium test-report
         path: report.html
+
+    - name: Run infinite tests
+      run: |
+        while true; do
+          pytest --html=report.html --self-contained-html
+          echo "Waiting for 10 seconds..."
+          sleep 10
+        done    

@@ -87,9 +87,14 @@ pytest test_header.py
 (selenium-tests.yaml)를 포함합니다. 워크플로우는 의존성을 설치하고 ChromeDriver를 설정한 후 테스트를
 실행합니다.
 
-#### **테스트 리포트 업로드**
+1. 테스트 리포트 업로드
 - Artifact 코드를 추가하여 HTML 테스트 리포트가 GitHub Actions의 Artifacts 섹션으로 업로드되어 확인할 수 있습니다.
-
+ 
+2. cron 함수를 활용하여 특정 시간 테스트 자동 실행
+````
+  schedule:
+  - cron: '0 */6 * * *'
+ ````
 ### **실행 결과 예시**
 테스트 결과 스크린샷은 디버깅 및 겸증을 위해 screenshots 디렉토리에 저장됩니다. 테스트를 실행한 후
 생성된 HTML 리포트를 확인할 수 있습니다.
