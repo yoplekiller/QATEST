@@ -6,7 +6,7 @@ on:
       - main
   pull_request:
   schedule:
-    - cron: '7 9 * * *' 
+    - cron: '7 9 * * *' # 실행 시간 설정정
 
 jobs:
   selenium-tests:
@@ -22,30 +22,30 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Python
+    - name: Set up Python #파이선 설치
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
     
-    - name: Create virtual enviroment
+    - name: Create virtual enviroment #환경 변수 설정
       run: |
         python -m venv venv
         dir venv
         source venv/bin/activate
 
-    - name: Install dependencies
+    - name: Install dependencies # 의존성 설치
       run: |
         source venv/bin/activate
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run tests
+    - name: Run tests # 테스트 실행
       run: |
         source venv/bin/activate
         pytest --html=report.html --self-contained-html
 
-    - name: Upload HTML report
-      uses: actions/upload-artifact@v3
+    - name: Upload HTML report #테스트 report
+      uses: actions/upload-artifact@v4
       with:
         name: selenium test-report
         path: report.html
