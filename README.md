@@ -30,6 +30,7 @@ project_root/<br>
 ├── conftest.py  # 브라우저 초기화 함수 
 ├── test_cart.py  # 장바구니 동작 테스트
 ├── test_category_filter.py  # 가격 필터링 테스트
+├── test_header.py  # 홈페이지 헤더 버튼 동작 테스트
 ├── test_search.py  # 상품 검색 기능 테스트
 ├── test_sorting.py  # 정렬 옵션 테스트
 ├── requirements.txt # 프로젝트 의존성 목록
@@ -78,6 +79,7 @@ pytest test_search.py
 pytest test_sorting.py
 pytest test_cart.py
 pytest test_category_filter.py
+pytest test_header.py
 ````
 
 ### **GitHub Actions을 활용한 CI/CD**
