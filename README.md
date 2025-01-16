@@ -91,11 +91,13 @@ pytest test_header.py
 - Artifact 코드를 추가하여 HTML 테스트 리포트가 GitHub Actions의 Artifacts 섹션으로 업로드되어 확인할 수 있습니다.
  
 2. **테스트 자동 실행:**
+- CI/CD 파이프라인에서 테스트를 6시간 간격으로 자동 실행하도록 설정하였습니다.
 ````
-  schedule:
-  - cron: '0 */6 * * *'
- ````
+schedule:
+ - cron: '0 */6 * * *'
+````
 3. **반복 테스트 실행:**
+- CI/CD 파이프라인에서
 - repeat-test.yaml 파일을 이용하여 반복 테스트 실행
 
 
