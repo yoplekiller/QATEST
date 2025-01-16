@@ -27,7 +27,7 @@ jobs:
       with:
         python-version: '3.11'
     
-    - name: Create virtual enviroment #환경 변수 설정
+    - name: Create virtual enviroment #가상 환경 설정
       run: |
         python -m venv venv
         dir venv
@@ -49,7 +49,7 @@ jobs:
           sleep 10
         done
 
-    - name: Upload HTML report #테스트 report
+    - name: Upload HTML report #리포트 업로드
       uses: actions/upload-artifact@v4
       with:
         name: selenium test-report
