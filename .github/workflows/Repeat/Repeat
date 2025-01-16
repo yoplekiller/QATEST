@@ -1,0 +1,55 @@
+name: Selenium Tests CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  schedule:
+    - cron: '20 9 * * *' # 실행 시간 설정(UTC)
+
+jobs:
+  selenium-tests:
+    runs-on: ubuntu-latest
+
+    services:
+      selenium:
+        image: selenium/standalone-chrome:latest
+        ports:
+          - 4444:4444
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python #파이선 설치
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Create virtual enviroment #환경 변수 설정
+      run: |
+        python -m venv venv
+        dir venv
+        source venv/bin/activate
+
+    - name: Install dependencies # 의존성 설치
+      run: |
+        source venv/bin/activate
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run tests # 테스트 실행
+      run: |
+        source venv/bin/activate
+        while true; do
+          pytest --html=report_$(date+'%Y%m%d%H%M%S').html --self-contained-html
+          echo "Waiting for 10 seconds..."
+          sleep 10
+        done
+
+    - name: Upload HTML report #테스트 report
+      uses: actions/upload-artifact@v4
+      with:
+        name: selenium test-report
+        path: report.html
