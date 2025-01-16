@@ -42,7 +42,7 @@ jobs:
     - name: Run repeated tests # 테스트 실행
       run: |
         source venv/bin/activate
-        for i in {1..5}; do
+        for i in {1..5}; do       #테스트 5회 실행행
           echo "Running test iteration $i..."
           pytest --html=report_$i.html --self-contained-html
           echo "Waiting for 10 seconds before next test..."
