@@ -41,6 +41,7 @@ jobs:
       run: |
         source venv/bin/activate
         pytest --html=report.html --self-contained-html
+        
     - name: Upload HTML report
       uses: actions/upload-artifact@v3
       with:
