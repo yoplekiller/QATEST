@@ -42,9 +42,10 @@ jobs:
     - name: Run tests # 테스트 실행
       run: |
         source venv/bin/activate
-        while true; do
-          pytest --html=report_$(date+'%Y%m%d%H%M%S').html --self-contained-html
-          echo "Waiting for 10 seconds..."
+        for i in {1..5}; do
+          echo "Running test iteration $i..."
+          pytest --html=report_$i.html --self-contained-html
+          echo "Waiting for 10 seconds before next test..."
           sleep 10
         done
 
@@ -52,4 +53,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: selenium test-report
-        path: report.html
+        path: report_*.html
