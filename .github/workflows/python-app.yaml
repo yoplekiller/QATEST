@@ -42,9 +42,8 @@ jobs:
         source venv/bin/activate
         pytest --html=report.html --self-contained-html
   
-    - name: Upload test report
-      uses: actions/upload-artifact@v3
-      with:
-        name: selenium-test-report
-        path: report.html
+    - name: Serve report via Python HTTP server
+      run: |
+        python -m http.server 8000 &
+        echo "HTML report available at: http://localhost:8000/report.html"
   
