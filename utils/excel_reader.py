@@ -1,6 +1,9 @@
 import openpyxl
+import os
 
-file_path = r"C:\Users\jmlim\Desktop\QA\AutoTest\utils\test_case.xlsx"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+file_path = os.path.join(BASE_DIR, "utils", "test_case.xlsx")
+
 
 #상품 목록
 def read_search_terms_from_excel(file_path):
