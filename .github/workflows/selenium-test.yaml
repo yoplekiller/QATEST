@@ -33,7 +33,8 @@ jobs:
         run: echo "start=$(date +%s)" >> $GITHUB_ENV
 
       - name: Run Selenium Tests
-        run: venv/bin/python -m pytest src/tests/ui_tests --html=ui_test_report.html --self-contained-html
+        run: pytest src/tests/ui_tests --html=ui_test_report.html --self-contained-html
+
 
       - name: Capture end time and calculate duration #수행시간
         id: test-duration
