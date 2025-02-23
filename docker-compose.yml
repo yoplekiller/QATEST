@@ -1,0 +1,16 @@
+version: "3"
+services:
+  selenium:
+    image: selenium/standalone-chrome
+    container_name: selenium-test
+    ports:
+      - "4444:4444"
+    shm_size: "2g"
+
+  test-runner:
+    build: .
+    depends_on:
+      - selenium
+    environment:
+      - SELENIUM_REMOTE_URL=http://selenium:4444/wd/hub
+    command: pytest tests/
