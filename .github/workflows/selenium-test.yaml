@@ -26,3 +26,23 @@ jobs:
 
       - name: Run Selenium Tests
         run: pytest src/tests/
+
+      - name: Upload HTML report to Github Pages #리포트 업로드
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: . #현재 디렉토리 내의 모든 파일을 업로드
+          keep_files: true #기존파일 유지
+
+      - name: Send Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
+          SLACK_USERNAME: "GitHub Actions"
+          SLACK_ICON_EMOJI: ":robot_face:"
+          SLACK_TITLE: "✅ Selenium Test 완료"
+          SLACK_MESSAGE: |
+            *📢 Selenium UI 테스트가 끝났습니다!*
+            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/ui_report.html>
+            🕒 수행 시간: `${{ env.time }}`
+          SLACK_COLOR: "#36a64f"
