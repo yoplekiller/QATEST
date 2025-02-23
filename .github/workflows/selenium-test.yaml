@@ -19,13 +19,27 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.13"
+
+      - name: Create virtual environment
+        run: python -m venv venv
 
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
+      - name: Capture start time
+        id: start-time
+        run: echo "start=$(date +%s)" >> $GITHUB_ENV
+
       - name: Run Selenium Tests
-        run: pytest src/tests/
+        run: venv/bin/python -m pytest src/tests/ui_tests --html=ui_test_report.html --self-contained-html
+
+      - name: Capture end time and calculate duration #수행시간
+        id: test-duration
+        run: |
+          end=$(date +%s)
+          duration=$((end - ${{ env.start }}))
+          echo "time=${duration}초" >> $GITHUB_ENV    
 
       - name: Upload HTML report to Github Pages #리포트 업로드
         uses: peaceiris/actions-gh-pages@v3
