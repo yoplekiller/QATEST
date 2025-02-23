@@ -8,6 +8,8 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: '0 */4 * * *' # 실행 시간 설정(UTC)
 
 jobs:
   selenium-tests:
