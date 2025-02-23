@@ -1,12 +1,12 @@
 import pytest
 from selenium.webdriver import Keys
 import time
-from utils.excel_reader import read_search_terms_from_excel
+from utils.excel_reader import read_search_terms_from_excel, file_path
 from selenium.webdriver.common.by import By
 from utils.utilites import capture_screenshot
 
 
-search_cases = read_search_terms_from_excel(r"C:\Users\jmlim\Desktop\QA\AutoTest\utils\test_case.xlsx")
+search_cases = read_search_terms_from_excel(file_path)
 
 @pytest.mark.parametrize("tc_id, search_term", search_cases)
 def test_product_search(driver, tc_id, search_term):
