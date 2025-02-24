@@ -25,4 +25,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["pytest", "src/tests/ui_tests", "--html=ui_test_report.html", "--self-contained-html"]
+CMD ["pytest", "src/tests/ui_tests", "--html=ui_test_report.html", "--self-contained-html", "/dev/null"]

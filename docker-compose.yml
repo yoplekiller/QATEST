@@ -20,4 +20,6 @@ services:
     working_dir: /app
     environment:
       - SELENIUM_REMOTE_URL=http://selenium:4444/wd/hub
-    command: pytest src/tests/ui_tests --html=ui_test_report.html --self-contained-html
+    command: |
+      pytest src/tests/ui_tests --html=ui_test_report.html --self-contained-html
+      tail -f /dev/null
