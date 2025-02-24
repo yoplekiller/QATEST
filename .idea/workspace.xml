@@ -41,27 +41,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python 테스트.conftest.test_123의 Python 테스트.executor&quot;: &quot;Run&quot;,
-    &quot;Python 테스트.test_ui_add_product.py 내 Python 테스트.executor&quot;: &quot;Run&quot;,
-    &quot;Python 테스트.test_ui_add_product.test_add_product의 Python 테스트.executor&quot;: &quot;Run&quot;,
-    &quot;Python 테스트.test_ui_cart.py 내 Python 테스트.executor&quot;: &quot;Run&quot;,
-    &quot;Python 테스트.test_ui_cart.test_cart의 Python 테스트.executor&quot;: &quot;Run&quot;,
-    &quot;Python 테스트.test_ui_category.py 내 Python 테스트.executor&quot;: &quot;Run&quot;,
-    &quot;Python 테스트.test_ui_login.py 내 Python 테스트.executor&quot;: &quot;Run&quot;,
-    &quot;Python 테스트.test_ui_login.test_login의 Python 테스트.executor&quot;: &quot;Run&quot;,
-    &quot;Python 테스트.test_ui_search.py 내 Python 테스트.executor&quot;: &quot;Run&quot;,
-    &quot;Python 테스트.test_ui_search.test_product_search의 Python 테스트.executor&quot;: &quot;Run&quot;,
-    &quot;Python.123.executor&quot;: &quot;Run&quot;,
-    &quot;Python.asdf.executor&quot;: &quot;Run&quot;,
-    &quot;Python.conftest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python 테스트.conftest.test_123의 Python 테스트.executor": "Run",
+    "Python 테스트.test_ui_add_product.py 내 Python 테스트.executor": "Run",
+    "Python 테스트.test_ui_add_product.test_add_product의 Python 테스트.executor": "Run",
+    "Python 테스트.test_ui_cart.py 내 Python 테스트.executor": "Run",
+    "Python 테스트.test_ui_cart.test_cart의 Python 테스트.executor": "Run",
+    "Python 테스트.test_ui_category.py 내 Python 테스트.executor": "Run",
+    "Python 테스트.test_ui_login.py 내 Python 테스트.executor": "Run",
+    "Python 테스트.test_ui_login.test_login의 Python 테스트.executor": "Run",
+    "Python 테스트.test_ui_search.py 내 Python 테스트.executor": "Run",
+    "Python 테스트.test_ui_search.test_product_search의 Python 테스트.executor": "Run",
+    "Python.123.executor": "Run",
+    "Python.asdf.executor": "Run",
+    "Python.conftest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "gh-pages",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jmlim\Desktop\QA\AutoTest\.github\workflows" />
