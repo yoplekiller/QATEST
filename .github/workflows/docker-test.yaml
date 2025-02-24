@@ -1,12 +1,12 @@
-name: Selenium Test Automation
+name: Docker Test Automation
 
 on:
   pull_request:
     branches:
       - main
   workflow_dispatch:
-  schedule:
-    - cron: '0 */4 * * *' # 실행 시간 설정(UTC)
+#  schedule:
+#    - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
   #  push:
   #    branches:
   #      - main
