@@ -24,7 +24,7 @@ jobs:
 
       - name: Build and Start Containers
         run: |
-          docker-compose up -d
+          docker compose up -d
           sleep 10
 
       - name: Capture start time
@@ -36,7 +36,7 @@ jobs:
 
       - name: Stop and Remove Containers
         if: always()
-        run: docker-compose down
+        run: docker compose down
 
       - name: Capture end time and calculate duration #수행시간
         id: test-duration
