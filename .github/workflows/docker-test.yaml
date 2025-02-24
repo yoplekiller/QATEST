@@ -17,8 +17,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+      - name: Install Docker & Docker Compose
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dokcer-compose-plugin
 
       - name: Build and Start Containers
         run: |
