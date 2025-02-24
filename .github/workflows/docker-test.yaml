@@ -17,10 +17,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.13"
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
 
       - name: Create virtual environment
         run: python -m venv venv
@@ -35,9 +34,7 @@ jobs:
         run: echo "start=$(date +%s)" >> $GITHUB_ENV
 
       - name: Run Selenium Tests
-        run: |
-          mkdir -p reports
-          venv/bin/python -m pytest src/tests/ui_tests --html=ui_test_report.html --self-contained-html
+        run: venv/bin/python -m pytest src/tests/ui_tests --html=report.html --self-contained-html
 
 
       - name: Capture end time and calculate duration #수행시간
@@ -63,6 +60,6 @@ jobs:
           SLACK_TITLE: "✅ Selenium Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/test_ui_report.html>
+            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/report.html>
             🕒 수행 시간: `${{ env.time }}`
           SLACK_COLOR: "#36a64f"
