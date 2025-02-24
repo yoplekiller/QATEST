@@ -18,8 +18,8 @@ def driver():
     chrome_options.add_argument("--remote-debugging-port=9222")
 
 
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service,options=chrome_options)
+    service_obj = Service("/usr/local/bin/chromedriver")
+    driver = webdriver.Chrome(service=service_obj,options=chrome_options)
 
     driver.get("https://www.kurly.com/main")
     driver.maximize_window()
