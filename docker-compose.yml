@@ -7,12 +7,12 @@ services:
     ports:
       - "4444:4444"
     shm_size: "2g"
-    environment:
-      - SE_NODE_MAX_INSTANCES=5
-      - SE_NODE_MAX_SESSIONS=5
+
+
 
   test-runner:
     build: .
+    container_name: test-runner
     depends_on:
       - selenium
     volumes:
