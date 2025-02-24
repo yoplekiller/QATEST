@@ -52,7 +52,7 @@ jobs:
           publish_dir: . #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: true #기존파일 유지
 
-      - name: Send Slack Notification
+      - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
