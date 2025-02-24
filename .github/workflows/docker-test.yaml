@@ -33,7 +33,7 @@ jobs:
         run: echo "start=$(date +%s)" >> $GITHUB_ENV
 
       - name: Run Selenium Tests
-        run: docker exec selenium-container pytest src/tests/ui_tests --html=ui_report.html --self-contained-html
+        run: docker exec test-runner pytest src/tests/ui_tests --html=ui_test_report.html --self-contained-html
 
       - name: Stop and Remove Containers
         if: always()
