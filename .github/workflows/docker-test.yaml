@@ -20,7 +20,7 @@ jobs:
       - name: Install Docker & Docker Compose
         run: |
           sudo apt-get update
-          sudo apt-get install -y dokcer-compose-plugin
+          sudo apt-get install -y dokcer-compose
 
       - name: Build and Start Containers
         run: |
