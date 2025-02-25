@@ -33,7 +33,7 @@ jobs:
         run: echo "start=$(date +%s)" >> $GITHUB_ENV
 
       - name: Run Selenium Tests
-        run: docker exec test-runner pytest src/tests/ui_tests --html=ui_test_report.html --self-contained-html
+        run: docker exec test-runner pytest src/tests/ui_tests --html=docker_report.html --self-contained-html
 
       - name: Stop and Remove Containers
         if: always()
@@ -62,6 +62,6 @@ jobs:
           SLACK_TITLE: "✅ Selenium Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/ui_report.html>
+            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/docker_report.html>
             🕒 수행 시간: `${{ env.time }}`
           SLACK_COLOR: "#36a64f"
