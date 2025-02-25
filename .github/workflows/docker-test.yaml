@@ -13,6 +13,10 @@ on:
 jobs:
   docker-tests:
     runs-on: ubuntu-latest
+    container:
+      image: python:3.13
+      options: --shm-size=2g
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
