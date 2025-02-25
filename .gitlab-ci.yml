@@ -2,7 +2,6 @@ stages:
   - test
 
 variables:
-  SELENIUM_VERSION: "4.10.0"
   CONTAINER_MEMORY: "6g"
   SHARED_MEMORY: "4g"
 
@@ -12,10 +11,10 @@ test:
   services:
     - docker:dind  # Docker-in-Docker 활성화
   before_script:
+    - export DOCKER_BUILDKIT=1
     - docker info  # Docker 실행 상태 확인
-    - docker-compose build  # Docker 이미지 먼저 빌드
+    - docker build -t test-runner .  # Docker 이미지를 먼저 빌드
   script:
-    - docker images
     - docker-compose up -d  # 컨테이너 실행
     - docker exec test-runner pytest src/tests/ui_tests --html=docker_report.html --self-contained-html
   only:
