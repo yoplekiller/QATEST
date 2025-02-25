@@ -14,7 +14,7 @@ test:
     - export DOCKER_BUILDKIT=1
     - docker build -t test-runner .  # Docker 이미지를 먼저 빌드
   script:
-    - docker image
+    - docker images
     - docker-compose up -d  # 컨테이너 실행
     - docker exec test-runner pytest src/tests/ui_tests --html=docker_report.html --self-contained-html
   only:
