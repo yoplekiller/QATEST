@@ -11,6 +11,12 @@ RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearm
 # Selenium 및 WebDriver Manager 설치
 RUN pip install selenium pytest pytest-html webdriver-manager openpyxl
 
+# 작업 디렉토리 설정
+WORKDIR /app
+
+# 테스트 코드 복사 (src/tests/ui_tests 포함)
+COPY . /app
+
 # WebDriver Manager를 사용하여 ChromeDriver 자동 설치 후 실행
 CMD ["pytest", "src/tests/ui_tests", "--html=ui_test_report.html", "--self-contained-html"]
 
