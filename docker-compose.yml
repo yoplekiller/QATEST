@@ -6,7 +6,7 @@ services:
     container_name: selenium-container
     ports:
       - "5555:4444"
-    shm_size: '1gb'
+    shm_size: '2gb'
 
 
 
