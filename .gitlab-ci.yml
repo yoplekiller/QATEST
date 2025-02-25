@@ -1,0 +1,9 @@
+stages:
+  - test
+
+test:
+  stage: test
+  image: python:3.13
+  script:
+    - docker-compose up -d --build
+    - docker run --memory=6g --shm-size=4g test-runner pytest src/tests/ui_tests --html=docker_report.html --self-contained-html
