@@ -1,3 +1,13 @@
+name: Gitlab CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
 stages:
   - test
 
