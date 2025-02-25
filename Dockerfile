@@ -9,7 +9,7 @@ RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearm
     && apt-get update && apt-get install -y google-chrome-stable
 
 # Selenium 및 WebDriver Manager 설치
-RUN pip install selenium pytest pytest-html webdriver-manager
+RUN pip install selenium pytest pytest-html webdriver-manager openpyxl
 
 # WebDriver Manager를 사용하여 ChromeDriver 자동 설치 후 실행
 CMD ["pytest", "src/tests/ui_tests", "--html=ui_test_report.html", "--self-contained-html"]
