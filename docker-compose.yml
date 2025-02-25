@@ -8,10 +8,6 @@ services:
       - "5555:4444"
     shm_size: '4gb'
 
-
-
-
-
   test-runner:
     build: .
 
