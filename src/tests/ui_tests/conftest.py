@@ -18,7 +18,7 @@ def driver():
     chrome_options.add_argument("--remote-debugging-port=9222")
 
 
-    service_obj = Service("/usr/local/bin/chromedriver")
+    service_obj = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service_obj,options=chrome_options)
 
     driver.get("https://www.kurly.com/main")

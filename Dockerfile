@@ -1,28 +1,16 @@
 FROM python:3.13
 
-WORKDIR /app
+# 필수 패키지 설치
+RUN apt-get update && apt-get install -y wget unzip curl jq
 
-RUN apt-get update && apt-get install -y \
-    wget unzip curl \
-    xvfb libxi6 libgconf-2-4 \
-    libnss3 libxss1 libappindicator3-1\
-    fonts-liberation libasound2 libnspr4 libnss3 \
-    libx11-xcb1 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 \
-    libxrandr2 libxrender1 libgtk-3-0 libgbm1
+# Google Chrome 설치
+RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor > /usr/share/keyrings/google-chrome-keyring.gpg \
+    && echo "deb [signed-by=/usr/share/keyrings/google-chrome-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" | tee /etc/apt/sources.list.d/google-chrome.list \
+    && apt-get update && apt-get install -y google-chrome-stable
 
-# Chrome 설치
-RUN wget -O /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
-    apt install -y /tmp/chrome.deb && rm /tmp/chrome.deb
+# Selenium 및 WebDriver Manager 설치
+RUN pip install selenium pytest pytest-html webdriver-manager
 
-# ChromeDriver 설치
-RUN CHROME_DRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE) && \
-    wget -q "https://chromedriver.storage.googleapis.com/${CHROME_DRIVER_VERSION}/chromedriver_linux64.zip" -O /tmp/chromedriver.zip && \
-    unzip /tmp/chromedriver.zip -d /usr/local/bin/ && \
-    chmod +x /usr/local/bin/chromedriver
+# WebDriver Manager를 사용하여 ChromeDriver 자동 설치 후 실행
+CMD ["pytest", "src/tests/ui_tests", "--html=ui_test_report.html", "--self-contained-html"]
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY . .
-
-CMD ["pytest", "src/tests/ui_tests", "--html=ui_test_report.html", "--self-contained-html", "/dev/null"]
