@@ -26,6 +26,11 @@ jobs:
         run: |
           docker compose up -d
           sleep 10
+          
+
+      - name: Build Docker image
+        run: |
+          docker build -t test-runner .    
 
       - name: Capture start time
         id: start-time
