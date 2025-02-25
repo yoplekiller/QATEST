@@ -9,7 +9,7 @@ on:
       - main
 jobs:
   stages:
-  - test
+    - test
   test:
     stage: test
     image: python:3.13
