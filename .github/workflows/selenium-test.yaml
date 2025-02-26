@@ -71,14 +71,14 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report  #현재 디렉토리 내의 모든 파일을 업로드
+          publish_dir: .  #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: true #기존파일 유지
 
       - name: Upload Allure Report as Artifact #아티팩트
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
-          path: allure-report
+          path: .
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
