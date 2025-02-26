@@ -64,7 +64,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .  #현재 디렉토리 내의 모든 파일을 업로드
+          publish_dir: ./allure-report  #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: true #기존파일 유지
 
 
@@ -72,7 +72,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
-          path: allure-results
+          path: allure-report
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
@@ -83,7 +83,7 @@ jobs:
           SLACK_TITLE: "✅ Selenium Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 Allure Report (웹)*: <https://yoplekiller.github.io/QATEST/allure-results/index.html>
+            *📄 Allure Report (웹)*: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
             *📂 Allure Report (다운로드)*: <https://github.com/QATEST/actions/runs/${{ github.run_id }}>
             🕒 수행 시간: `${{ env.time }}`
           SLACK_COLOR: "#36a64f"
