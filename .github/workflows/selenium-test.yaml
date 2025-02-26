@@ -50,7 +50,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wget unzip
           wget https://github.com/allure-framework/allure2/releases/download/2.19.0/allure-2.19.0.tgz
-          tar -zxvf allure-2.19.0.tgz
+          tar xf /home/user/Downloads/allure-2.29.0.tgz -C /home/user/tools
           sudo mv allure-2.19.0 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
           
