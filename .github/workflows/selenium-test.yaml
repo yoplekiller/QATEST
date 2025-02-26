@@ -26,9 +26,7 @@ jobs:
         run: python -m venv venv
 
       - name: Install Dependencies
-        run: |
-          source venv/bin/activate
-          venv/bin/python -m pip install -r requirements.txt allure-pytest
+        run: venv/bin/python -m pip install -r requirements.txt allure-pytest
         
       - name: Capture start time  #테스트 시작 시간
         id: start-time
