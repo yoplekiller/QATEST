@@ -52,7 +52,7 @@ jobs:
           
 
       - name: Generate Allure Report
-        run: allure generate allure-results -o allure-results --clean
+        run: allure generate allure-results -o allure-report --clean
 
 
       - name: Capture end time and calculate duration #수행시간
