@@ -35,10 +35,6 @@ jobs:
       - name: Ensure allure-results exists
         run: mkdir -p allure-results
 
-      - name: Ensure allure-report directory exists
-        run: mkdir -p allure-report
-
-
       - name: Run Selenium Tests #테스트 실행
         run: |
           mkdir -p allure-results
@@ -50,7 +46,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wget unzip
           wget https://github.com/allure-framework/allure2/releases/download/2.19.0/allure-2.19.0.tgz
-          tar xf /home/user/Downloads/allure-2.29.0.tgz -C /home/user/tools
+          tar -zxvf allure-2.19.0.tgz
           sudo mv allure-2.19.0 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
           
@@ -71,7 +67,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .  #현재 디렉토리 내의 모든 파일을 업로드
+          publish_dir: ./allure-report  #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: true #기존파일 유지
 
       - name: Upload Allure Report as Artifact #아티팩트
@@ -90,6 +86,6 @@ jobs:
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
             *📄 Allure Report (웹)*: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
-            *📂 Allure Report (다운로드)*: <https://github.com/QATEST/actions/runs/${{ github.run_id }}>
+            *📂 Allure Report (다운로드)*:  <${{ env.ARTIFACT_URL }}>
             🕒 수행 시간: `${{ env.time }}`
           SLACK_COLOR: "#36a64f"
