@@ -73,13 +73,6 @@ jobs:
           publish_dir: ./allure-report  #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: true #기존파일 유지
 
-      - name: Debug GitHub Pages Deployment
-        run: |
-          git fetch origin gh-pages
-          git checkout gh-pages
-          ls -l
-          ls -l allure-report
-
       - name: Upload Allure Report Artifact
         uses: actions/upload-artifact@v4
         with:
