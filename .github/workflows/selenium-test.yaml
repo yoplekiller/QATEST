@@ -75,7 +75,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
-          path: .
+          path: allure-report
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
