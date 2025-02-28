@@ -28,23 +28,6 @@ jobs:
       - name: Install Dependencies #의존성 설치
         run: venv/bin/python -m pip install -r requirements.txt allure-pytest
 
-      - name: Capture start time  #테스트 시작 시간
-        id: start-time
-        run: echo "start=$(date +%s)" >> $GITHUB_ENV
-
-      - name: Ensure allure-results exists
-        run: mkdir -p allure-results
-
-      - name: Run Selenium Tests #테스트 실행
-        run: |
-          mkdir -p allure-results
-          venv/bin/python -m pytest src/tests/ui_tests --alluredir=$(pwd)/allure-results
-          
-
-      - name: Debug Allure Results
-        run: |
-          ls -l allure-results || echo "❌ allure-results directory is missing!"
-
 
       - name: Install Allure CLI # Allure CLI 설치
         run: |
@@ -54,6 +37,20 @@ jobs:
           tar -zxvf allure-2.19.0.tgz
           sudo mv allure-2.19.0 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+          
+          
+
+      - name: Capture start time  #테스트 시작 시간
+        id: start-time
+        run: echo "start=$(date +%s)" >> $GITHUB_ENV
+
+
+
+      - name: Run Selenium Tests #테스트 실행
+        run: |
+          mkdir -p allure-results
+          venv/bin/python -m pytest src/tests/ui_tests --alluredir=$(pwd)/allure-results
+          
           
 
       - name: Generate Allure Report
@@ -67,8 +64,15 @@ jobs:
         run: |
           end=$(date +%s)
           duration=$((end - ${{ env.start }}))
-          echo "time=${duration}초" >> $GITHUB_ENV    
+          echo "time=${duration}초" >> $GITHUB_ENV  
           
+
+      - name: Upload Allure Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
+
 
       - name: Upload Allure Report to GitHub Pages #리포트 업로드
         uses: peaceiris/actions-gh-pages@v3
@@ -78,19 +82,8 @@ jobs:
           publish_dir: ./allure-report  #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: true #기존파일 유지
 
-      - name: Upload Allure Report Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report
 
 
-      - name: Debug GitHub Pages Deployment
-        run: |
-          git fetch origin gh-pages
-          git checkout gh-pages
-          ls -l
-          ls -l allure-report  # ✅ 업로드된 파일 확인
 
       - name: Get Artifact Download Link
         run: echo "ARTIFACT_URL=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> $GITHUB_ENV
