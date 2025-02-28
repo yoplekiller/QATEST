@@ -84,6 +84,14 @@ jobs:
           name: allure-report
           path: allure-report
 
+
+      - name: Debug GitHub Pages Deployment
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages
+          ls -l
+          ls -l allure-report  # ✅ 업로드된 파일 확인
+
       - name: Get Artifact Download Link
         run: echo "ARTIFACT_URL=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> $GITHUB_ENV
 
