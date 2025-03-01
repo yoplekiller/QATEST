@@ -37,17 +37,6 @@ jobs:
           tar -zxvf allure-2.32.2.tgz
           sudo mv allure-2.32.2 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
-
-      - name: Force Upload Allure Report to GitHub Pages
-        run: |
-          rm -rf venv  # venv 폴더 삭제하여 브랜치 변경 가능하게 함
-          git fetch origin gh-pages || git checkout --orphan gh-pages
-          git checkout gh-pages
-          rm -rf *
-          cp -r ../allure-report/* .
-          git add .
-          git commit -m "Deploy Allure Report"
-          git push --force origin gh-pages
           
           
 
@@ -69,6 +58,16 @@ jobs:
           allure generate allure-results -o allure-report --clean
           ls -l allure-report || echo "❌ allure-report directory is missing!"
 
+      - name: Force Upload Allure Report to GitHub Pages
+        run: |
+          rm -rf venv  # venv 폴더 삭제하여 브랜치 변경 가능하게 함
+          git fetch origin gh-pages || git checkout --orphan gh-pages
+          git checkout gh-pages
+          rm -rf *
+          cp -r ../allure-report/* .
+          git add .
+          git commit -m "Deploy Allure Report"
+          git push --force origin gh-pages
 
       - name: Capture end time and calculate duration #수행시간
         id: test-duration
