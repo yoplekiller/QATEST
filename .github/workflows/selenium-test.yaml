@@ -82,8 +82,6 @@ jobs:
 
 
 
-
-
       - name: Get Artifact Download Link
         run: echo "ARTIFACT_URL=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> $GITHUB_ENV
 
@@ -97,7 +95,7 @@ jobs:
           SLACK_TITLE: "✅ Selenium Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 Allure Report (웹)*: <https://yoplekiller.github.io/QATEST/aindex.html>
+            *📄 Allure Report (웹)*: <https://yoplekiller.github.io/QATEST/index.html>
             *📂 Allure Report (다운로드)*:  <${{ env.ARTIFACT_URL }}>
             🕒 수행 시간: `${{ env.time }}`
           SLACK_COLOR: "#36a64f"
