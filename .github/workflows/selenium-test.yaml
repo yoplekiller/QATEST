@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 */4 * * *' # 실행 시간 설정(UTC)
-  #  push:
-  #    branches:
-  #      - main
+  push:
+    branches:
+      - main
 jobs:
   selenium-tests:
     runs-on: ubuntu-latest
@@ -78,13 +78,13 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./allure-report  #현재 디렉토리 내의 모든 파일을 업로드
+          publish_dir: .  #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: false # 기존 파일 삭제 후 새로운 파일 업로드
-
 
 
       - name: Get Artifact Download Link
         run: echo "ARTIFACT_URL=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> $GITHUB_ENV
+
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
@@ -95,7 +95,7 @@ jobs:
           SLACK_TITLE: "✅ Selenium Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 Allure Report (웹)*: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
+            *📄 Allure Report (웹)*: <https://yoplekiller.github.io/QATEST/index.html>
             *📂 Allure Report (다운로드)*:  <${{ env.ARTIFACT_URL }}>
             🕒 수행 시간: `${{ env.time }}`
           SLACK_COLOR: "#36a64f"
