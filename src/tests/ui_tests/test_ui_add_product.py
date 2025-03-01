@@ -21,7 +21,7 @@ def test_add_product(driver):
     time.sleep(2)
 
 
-    quantity_down_button = driver.find_element(By.XPATH, "//button[@aria-label='수량리기']")
+    quantity_down_button = driver.find_element(By.XPATH, "//button[@aria-label='수량내리기']")
     for _ in range(2):
         quantity_down_button.click()
     time.sleep(2)
@@ -30,9 +30,5 @@ def test_add_product(driver):
     cart_add_button.click()
     time.sleep(2)
 
-    try:
-        driver.find_element(By.XPATH, "//input[@id='wrong_search_id']").click()
-    except Exception:
-        pytest.fail("📌 예상된 실패: 잘못된 XPATH로 인해 클릭할 수 없음")
 
     capture_screenshot(driver,"상품 추가","screenshots_add_product")
