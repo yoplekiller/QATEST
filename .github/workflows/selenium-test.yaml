@@ -47,6 +47,14 @@ jobs:
       - name: Run Selenium Tests #테스트 실행
         run: |
           venv/bin/python -m pytest src/tests/ui_tests --alluredir=$(pwd)/allure-results
+          
+
+      - name: Capture end time and calculate duration #수행시간
+        id: test-duration
+        run: |
+          end=$(date +%s)
+          duration=$((end - ${{ env.start }}))
+          echo "time=${duration}초" >> $GITHUB_ENV       
                  
 
       - name: Generate Allure Report
@@ -56,12 +64,13 @@ jobs:
           allure generate allure-results -o allure-report --clean
 
 
-      - name: Capture end time and calculate duration #수행시간
-        id: test-duration
-        run: |
-          end=$(date +%s)
-          duration=$((end - ${{ env.start }}))
-          echo "time=${duration}초" >> $GITHUB_ENV  
+          
+          
+      - name: Upload Allure Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
           
 
 
@@ -75,11 +84,6 @@ jobs:
 
 
 
-      - name: Upload Allure Report Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report
 
 
       - name: Get Artifact Download Link
