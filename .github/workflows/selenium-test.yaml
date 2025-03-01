@@ -69,7 +69,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
-          path: allure-report
+          path: .
 
 
       - name: Upload Allure Report to GitHub Pages #리포트 업로드
@@ -81,9 +81,12 @@ jobs:
           keep_files: false # 기존 파일 삭제 후 새로운 파일 업로드
 
 
-
       - name: Get Artifact Download Link
         run: echo "ARTIFACT_URL=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> $GITHUB_ENV
+
+
+      - name: Wait for GitHub Pages Deployment
+        run: sleep 10
 
 
       - name: Send Slack Notification # Slack 알람
