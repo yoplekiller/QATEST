@@ -37,6 +37,16 @@ jobs:
           tar -zxvf allure-2.32.2.tgz
           sudo mv allure-2.32.2 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+
+      - name: Force Upload Allure Report to GitHub Pages
+        run: |
+          git fetch origin gh-pages || git checkout --orphan gh-pages
+          git checkout gh-pages
+          rm -rf *
+          cp -r ../allure-report/* .
+          git add .
+          git commit -m "Deploy Allure Report"
+          git push --force origin gh-pages
           
           
 
