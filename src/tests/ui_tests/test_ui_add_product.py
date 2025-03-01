@@ -1,4 +1,5 @@
 import time
+import pytest
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from utils.utilites import capture_screenshot
@@ -28,5 +29,6 @@ def test_add_product(driver):
     cart_add_button = driver.find_element(By.XPATH, "//button[@class='css-ahkst0 e4nu7ef3']")
     cart_add_button.click()
     time.sleep(2)
+
 
     capture_screenshot(driver,"상품 추가","screenshots_add_product")
