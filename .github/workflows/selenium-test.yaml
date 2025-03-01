@@ -80,7 +80,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./allure-report  #현재 디렉토리 내의 모든 파일을 업로드
-          keep_files: true #기존파일 유지
+          keep_files: false # 기존 파일 삭제 후 새로운 파일 업로드
 
 
 
