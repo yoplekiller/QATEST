@@ -64,12 +64,6 @@ jobs:
           echo "time=${duration}초" >> $GITHUB_ENV  
           
 
-      - name: Upload Allure Report Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report
-
 
       - name: Upload Allure Report to GitHub Pages #리포트 업로드
         uses: peaceiris/actions-gh-pages@v3
@@ -78,6 +72,14 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./allure-report  #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: false # 기존 파일 삭제 후 새로운 파일 업로드
+
+
+
+      - name: Upload Allure Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
 
 
       - name: Get Artifact Download Link
