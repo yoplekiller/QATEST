@@ -69,8 +69,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
-          path: allure-report
-          
+          path: .
 
 
       - name: Upload Allure Report to GitHub Pages #리포트 업로드
