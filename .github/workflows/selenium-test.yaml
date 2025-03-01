@@ -56,7 +56,10 @@ jobs:
       - name: Generate Allure Report
         run: |
           allure generate allure-results -o allure-report --clean
-          ls -l allure-report || echo "❌ allure-report directory is missing!"
+          echo "Checking allure-results directory..."
+          ls -la allure-results || echo "❌ allure-results directory is missing!"
+          echo "Checking allure-report directory..."
+          ls -la allure-report || echo "❌ allure-report directory is missing!""
 
 
       - name: Capture end time and calculate duration #수행시간
