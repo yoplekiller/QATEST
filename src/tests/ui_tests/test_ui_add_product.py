@@ -14,7 +14,7 @@ def test_add_product(driver):
     add_button = driver.find_element(By.XPATH, "//a[3]//div[2]//button[1]")
     add_button.click()
 
-    quantity_up_button = driver.find_element(By.XPATH, "//button[@aria-label='수올리기']")
+    quantity_up_button = driver.find_element(By.XPATH, "//button[@aria-label='수량올리기']")
     for _ in range(2):
       quantity_up_button.click()
     time.sleep(2)
