@@ -48,18 +48,14 @@ jobs:
 
       - name: Run Selenium Tests #테스트 실행
         run: |
-          mkdir -p allure-results
           venv/bin/python -m pytest src/tests/ui_tests --alluredir=$(pwd)/allure-results
-          
-          
+                 
 
       - name: Generate Allure Report
         run: |
+          mkdir -p allure-results
+          mkdir -p allure-report
           allure generate allure-results -o allure-report --clean
-          echo "Checking allure-results directory..."
-          ls -la allure-results || echo "❌ allure-results directory is missing!"
-          echo "Checking allure-report directory..."
-          ls -la allure-report || echo "❌ allure-report directory is missing!""
 
 
       - name: Capture end time and calculate duration #수행시간
