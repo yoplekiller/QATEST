@@ -30,5 +30,21 @@ def driver():
 
     driver.quit()  # 모든 테스트 완료 후 브라우저 종료s
 
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    report = outcome.get_result()
+
+    if report.when == "call" and report.failed:
+        driver = item.funcargs.get("driver")
+        if driver:
+            screenshots_dir = "failed_screenshots"
+            os.makedirs(screenshots_dir, exist_ok=True)
+
+        screenshot_path = os.path.join(screenshots_dir, f"{item.name}.png")
+
+        driver.save_screenshot(screenshot_path)
+
+
 
 
