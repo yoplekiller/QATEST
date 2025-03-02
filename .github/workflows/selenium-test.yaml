@@ -42,7 +42,6 @@ jobs:
       - name: Clean previous Allure results
         run: |
           rm -rf allure-results || true
-          mkdir -p allure-results
 
 
       - name: Run Selenium Tests #테스트 실행
