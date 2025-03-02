@@ -39,11 +39,6 @@ jobs:
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
           
 
-      - name: Capture start time  #테스트 시작 시간
-        id: start-time
-        run: echo "start=$(date +%s)" >> $GITHUB_ENV
-
-
       - name: Clean previous Allure results
         run: rm -rf allure-results || true
 
@@ -62,25 +57,25 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-
-
-      - name: Capture end time and calculate duration #수행시간
-        id: test-duration
+      - name: Load previous Allure history
         run: |
-          end=$(date +%s)
-          duration=$((end - ${{ env.start }}))
-          echo "time=${duration}초" >> $GITHUB_ENV       
-                 
+          mkdir -p allure-results
+          if [ -d gh-pages/allure-history ]; then
+            cp -r gh-pages/allure-history allure-results/
+          fi
+
 
       - name: Generate Allure Report
         run: |
           mkdir -p allure-results
           allure generate allure-results -o allure-report --clean
-          cp -r gh-pages/allure-history allure-report/* gh-pages/allure-history/
+          mkdir -p gh-pages/allure-history
+          cp -r allure-report/history gh-pages/allure-history
      
 
       - name: Upload Allure Report Artifact
         uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: allure-report
           path: allure-report
@@ -88,6 +83,7 @@ jobs:
 
       - name: Upload Allure Report to GitHub Pages #리포트 업로드
         uses: peaceiris/actions-gh-pages@v3
+        if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
@@ -110,6 +106,5 @@ jobs:
             *📢 Selenium UI 테스트가 끝났습니다!*
             *📄 Allure Report (웹)*: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
             *📂 Allure Report (다운로드)*:  <${{ env.ARTIFACT_URL }}>
-            🕒 수행 시간: `${{ env.time }}`
             ⚠ GitHub Pages 반영까지 시간이 걸릴 수 있습니다. 404 발생 시 잠시 후 다시 확인하세요.
           SLACK_COLOR: "#36a64f"
