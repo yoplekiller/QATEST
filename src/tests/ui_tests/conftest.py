@@ -31,7 +31,7 @@ def driver():
     driver.quit()  # 모든 테스트 완료 후 브라우저 종료s
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
-def pytest_runtest_make_report(item, call):
+def pytest_runtest_makereport(item, call):
     outcome = yield
     report = outcome.get_result()
 
