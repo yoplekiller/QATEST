@@ -8,7 +8,7 @@ from utils.utilites import capture_screenshot
 def test_add_product(driver):
 
     search_box = driver.find_element(By.XPATH, "//input[@id='gnb_search']")
-    search_box.send_keys("과자")
+    search_box.send_keys("과1자")
     search_box.send_keys(Keys.RETURN)
     time.sleep(3)
 
