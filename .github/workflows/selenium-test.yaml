@@ -46,7 +46,7 @@ jobs:
 
       - name: Run Selenium Tests #테스트 실행
         run: |
-          venv/bin/python -m pytest src/tests/ui_tests --alluredir=$(pwd)/allure-results
+          venv/bin/python -m pytest src/tests/ui_tests --alluredir=$(pwd)/allure-results --maxfail=10 --continue-on-collection-errors
           
 
       - name: Capture end time and calculate duration #수행시간

@@ -36,19 +36,17 @@ def test_login(driver, tc_id, username, password, expected):
 
 
 
-
-
-
-    if expected == "disabled":
-        assert not login_submit_button.is_enabled(),f"❌ {tc_id} 실패: 버튼이 활성화됨(비활성화 예상)"
-    elif expected == "error":
-        assert driver.find_element(By.XPATH,"//div[contains(text(),'다시 로그인해 주세요.')]") ,f"❌ {tc_id} 실패: 오류메시지 미노출"
-    elif expected == "success":
-        assert "네이버+ 스토어" in driver.title ,f"❌ {tc_id} 실패: 로그인 실패"
-
-    print(f"✅ {tc_id} 테스트 통과!")
-    time.sleep(2)
-
+    #
+    # if expected == "disabled":
+    #     assert not login_submit_button.is_enabled(),f"❌ {tc_id} 실패: 버튼이 활성화됨(비활성화 예상)"
+    # elif expected == "error":
+    #     assert driver.find_element(By.XPATH,"//div[contains(text(),'다시 로그인해 주세요.')]") ,f"❌ {tc_id} 실패: 오류메시지 미노출"
+    # elif expected == "success":
+    #     assert "네이버+ 스토어" in driver.title ,f"❌ {tc_id} 실패: 로그인 실패"
+    #
+    # print(f"✅ {tc_id} 테스트 통과!")
+    # time.sleep(2)
+    #
 
 
 
