@@ -3,4 +3,4 @@
 일부러 실패하게 만드는 테스트
 - 올바르지 않은 요소 선택
 - 검색창이 없는 요소를 클릭 시도하여 실패 유발
-","11212","test_fail_screenshot","","Sun Mar 02 13:44:35 UTC 2025","failed","Sun Mar 02 13:44:46 UTC 2025","","","",""
+","11023","test_fail_screenshot","","Sun Mar 02 14:15:14 UTC 2025","failed","Sun Mar 02 14:15:25 UTC 2025","","","",""
