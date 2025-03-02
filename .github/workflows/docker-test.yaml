@@ -37,7 +37,7 @@ jobs:
         run: echo "start=$(date +%s)" >> $GITHUB_ENV
 
       - name: Run Selenium Tests
-        run: docker run --memory=6g --shm-size=4g test-runner pytest src/tests/ui_tests --html=docker_report.html --self-contained-html --maxfail=10 --continue-on-collection-errors
+        run: docker run --memory=6g --shm-size=4g test-runner pytest src/tests/ui_tests --html=docker_report.html --self-contained-html --continue-on-collection-errors
 
       - name: Stop and Remove Containers
         if: always()
