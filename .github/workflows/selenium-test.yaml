@@ -49,22 +49,6 @@ jobs:
         continue-on-error: true
 
 
-      - name: Load Allure Report History # 기존 Allure Report 히스토리 가져오기
-        uses: actions/checkout@v3
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
-
-      - name: Load previous Allure history
-        run: |
-          mkdir -p allure-results
-          if [ -d gh-pages/allure-history ]; then
-            cp -r gh-pages/allure-history allure-results/
-          fi
-
-
       - name: Generate Allure Report
         run: |
           mkdir -p allure-results
@@ -72,14 +56,6 @@ jobs:
           mkdir -p gh-pages/allure-history
           cp -r allure-report/history gh-pages/allure-history
      
-
-      - name: Upload Allure Report Artifact
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: allure-report
-          path: allure-report
-
 
       - name: Upload Allure Report to GitHub Pages #리포트 업로드
         uses: peaceiris/actions-gh-pages@v3
@@ -104,7 +80,6 @@ jobs:
           SLACK_TITLE: "✅ Selenium Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 Allure Report (웹)*: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
-            *📂 Allure Report (다운로드)*:  <${{ env.ARTIFACT_URL }}>
+            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
             ⚠ GitHub Pages 반영까지 시간이 걸릴 수 있습니다. 404 발생 시 잠시 후 다시 확인하세요.
           SLACK_COLOR: "#36a64f"
