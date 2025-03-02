@@ -1,5 +1,6 @@
 import time
 import allure
+import pytest
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from utils.utilites import capture_screenshot
@@ -40,4 +41,4 @@ def test_add_product(driver):
 
     if "과자" not in driver.page_source:
         driver.save_screenshot("unexpected_result.png")
-        assert False, "검색 결과가 기대와 다릅니다."
+        pytest.fail("검색 결과가 기대와 다릅니다.")
