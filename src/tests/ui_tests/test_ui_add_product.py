@@ -30,5 +30,8 @@ def test_add_product(driver):
     cart_add_button.click()
     time.sleep(2)
 
-
     capture_screenshot(driver,"상품 추가","screenshots_add_product")
+
+    if "과자" not in driver.page_source:
+        driver.save_screenshot("unexpected_result.png")
+        assert False, "검색 결과가 기대와 다릅니다."
