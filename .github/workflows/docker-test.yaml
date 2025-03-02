@@ -26,7 +26,6 @@ jobs:
         run: |
           docker compose up -d
           sleep 10
-          
 
       - name: Build Docker image
         run: |
@@ -64,7 +63,7 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
           SLACK_USERNAME: "GitHub Actions"
           SLACK_ICON_EMOJI: ":robot_face:"
-          SLACK_TITLE: "✅ Selenium Test 완료"
+          SLACK_TITLE: "✅ Docker Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
             *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/docker_report.html>
