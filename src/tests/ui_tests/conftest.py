@@ -1,4 +1,6 @@
 import os
+
+import allure
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -44,6 +46,7 @@ def pytest_runtest_makereport(item, call):
         screenshot_path = os.path.join(screenshots_dir, f"{item.name}.png")
 
         driver.save_screenshot(screenshot_path)
+        allure.attach.file(screenshot_path, name="Failure Screenshot", attachment_type=allure.attachment_type.PNG)
 
 
 
