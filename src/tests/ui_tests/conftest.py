@@ -46,7 +46,10 @@ def pytest_runtest_makereport(item, call):
         screenshot_path = os.path.join(screenshots_dir, f"{item.name}.png")
 
         driver.save_screenshot(screenshot_path)
-        allure.attach.file(screenshot_path, name="Failure Screenshot", attachment_type=allure.attachment_type.PNG)
+        allure.attach.file(screenshot_path, name="Failure Screenshot", attachment_type=allure.attachment_type.PNG)\
+
+        # ✅ **테스트 실패를 명확히 Allure Report에서 인식하도록 추가**
+        pytest.fail(f"Test failed: {item.name}", pytrace=False)
 
 
 

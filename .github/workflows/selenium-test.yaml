@@ -53,6 +53,7 @@ jobs:
           venv/bin/python -m pytest src/tests/ui_tests --alluredir=$(pwd)/allure-results
         continue-on-error: true
 
+
       - name: Load Allure Report History # 기존 Allure Report 히스토리 가져오기
         uses: actions/checkout@v3
         if: always()
@@ -75,7 +76,7 @@ jobs:
         run: |
           mkdir -p allure-results
           allure generate allure-results -o allure-report --clean
-          cp -r gh-pages/allure-history allure-report/ || echo "No previous history found"
+          cp -r gh-pages/allure-history allure-report/* gh-pages/allure-history/
      
 
       - name: Upload Allure Report Artifact
