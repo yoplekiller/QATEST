@@ -40,5 +40,14 @@ def test_add_product(driver):
     capture_screenshot(driver,"상품 추가","screenshots_add_product")
 
     if "과자" not in driver.page_source:
-        driver.save_screenshot("unexpected_result.png")
+        screenshot_path = "unexpected_result.png"
+
+        # 스크린샷 저장
+        driver.save_screenshot(screenshot_path)
+
+        # Allure Report에 스크린샷 첨부
+        with open(screenshot_path, "rb") as image_file:
+            allure.attach(image_file.read(), name="Unexpected Search Result",
+                          attachment_type=allure.attachment_type.PNG)
+
         pytest.fail("검색 결과가 기대와 다릅니다.")
