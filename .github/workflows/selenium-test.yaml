@@ -66,11 +66,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: allure-report #현재 디렉토리 내의 모든 파일을 업로드
-          keep_files: true
+          keep_files: false
 
 
       - name: Wait for GitHub Pages Deployment
-        run: sleep 30
+        run: sleep 60
 
 
       - name: Send Slack Notification # Slack 알람
