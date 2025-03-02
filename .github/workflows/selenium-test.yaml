@@ -74,10 +74,12 @@ jobs:
           keep_files: true
 
 
-
-      - name: Wait for GitHub Pages Deployment
-        run: sleep 20
-
+      - name: Copy Screenshots to Allure Results
+        run: |
+          mkdir -p allure-results/screenshots
+          cp -r screenshots/* allure-results/screenshots || true
+          
+          
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
