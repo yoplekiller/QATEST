@@ -1,11 +1,17 @@
 import time
-import pytest
+import allure
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from utils.utilites import capture_screenshot
 
-
+@allure.feature("UI 테스트")
+@allure.story("상품 추가 테스트")
 def test_add_product(driver):
+    """
+       상품을 검색 후 추가하는 테스트
+       - 수량올리기, 수량내리기 기능 구현
+       - 검색 후 상품 선택 후 카트에 추가 구현
+       """
 
     search_box = driver.find_element(By.XPATH, "//input[@id='gnb_search']")
     search_box.send_keys("과1자")

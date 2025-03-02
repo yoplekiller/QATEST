@@ -15,4 +15,5 @@ def test_fail_screenshot(driver):
     try:
         driver.find_element(By.XPATH, "//input[@id='wrong_search_id']").click()
     except Exception:
+        driver.save_screenshot("unexpected_result.png")
         pytest.fail("📌 예상된 실패: 잘못된 XPATH로 인해 클릭할 수 없음")
