@@ -49,3 +49,4 @@ def test_add_product(driver):
         with open(screenshot_path, "rb") as image_file:
             allure.attach(image_file.read(), name="Unexpected Search Result",
                           attachment_type=allure.attachment_type.PNG)
+ 

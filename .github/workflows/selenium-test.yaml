@@ -57,6 +57,11 @@ jobs:
           allure generate allure-results -o allure-report --clean
           mkdir -p gh-pages/allure-history
           cp -r allure-report/history gh-pages/allure-history
+          
+
+      - name: Force Update GitHub Pages
+        run: |
+          date > allure-report/timestamp.txt
      
 
       - name: Upload Allure Report to GitHub Pages #리포트 업로드
@@ -67,6 +72,7 @@ jobs:
           publish_branch: gh-pages
           publish_dir: . #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: true
+
 
 
       - name: Wait for GitHub Pages Deployment
