@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+일부러 실패하게 만드는 테스트
+- 올바르지 않은 요소 선택
+- 검색창이 없는 요소를 클릭 시도하여 실패 유발
+","11371","test_fail_screenshot","","Sun Mar 02 16:33:49 UTC 2025","failed","Sun Mar 02 16:34:00 UTC 2025","","","",""
