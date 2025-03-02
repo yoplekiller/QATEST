@@ -58,7 +58,7 @@ jobs:
 
       - name: Generate Allure Report
         run: |
-          mkdir -p allure-results
+          mkdir -p allure-report-docker
           allure generate allure-results -o allure-report --clean
           mkdir -p gh-pages/allure-history
           cp -r allure-report/history gh-pages/allure-history
@@ -70,7 +70,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: allure-report #현재 디렉토리 내의 모든 파일을 업로드
+          publish_dir: allure-report-docker #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: true
 
 
@@ -87,7 +87,8 @@ jobs:
           SLACK_TITLE: "✅ Docker Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/docker_report/index.html>
+            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/allure-report-docker/index.html>
+            ⚠ GitHub Pages 반영까지 시간이 걸릴 수 있습니다. 404 발생 시 잠시 후 다시 확인하세요.
           SLACK_COLOR: "#36a64f"
 
       - name: Check available memory
