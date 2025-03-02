@@ -31,9 +31,21 @@ jobs:
         run: |
           docker build -t test-runner .    
 
-      - name: Capture start time
-        id: start-time
-        run: echo "start=$(date +%s)" >> $GITHUB_ENV
+
+      - name: Install Allure CLI # Allure CLI 설치
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          wget https://github.com/allure-framework/allure2/releases/download/2.32.2/allure-2.32.2.tgz
+          tar -zxvf allure-2.32.2.tgz
+          sudo mv allure-2.32.2 /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+          
+
+      - name: Clean previous Allure results
+        run: |
+          rm -rf allure-results || true
+
 
       - name: Run Selenium Tests
         run: docker run --memory=6g --shm-size=4g test-runner pytest src/tests/ui_tests --html=docker_report.html --self-contained-html
@@ -43,19 +55,28 @@ jobs:
         if: always()
         run: docker compose down
 
-      - name: Capture end time and calculate duration #수행시간
-        id: test-duration
-        run: |
-          end=$(date +%s)
-          duration=$((end - ${{ env.start }}))
-          echo "time=${duration}초" >> $GITHUB_ENV    
 
-      - name: Upload HTML report to Github Pages #리포트 업로드
+      - name: Generate Allure Report
+        run: |
+          mkdir -p allure-results
+          allure generate allure-results -o allure-report --clean
+          mkdir -p gh-pages/allure-history
+          cp -r allure-report/history gh-pages/allure-history
+     
+
+      - name: Upload Allure Report to GitHub Pages #리포트 업로드
         uses: peaceiris/actions-gh-pages@v3
+        if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: . #현재 디렉토리 내의 모든 파일을 업로드
-          keep_files: false #기존파일 유지
+          publish_branch: gh-pages
+          publish_dir: allure-report #현재 디렉토리 내의 모든 파일을 업로드
+          keep_files: true
+
+
+      - name: Wait for GitHub Pages Deployment
+        run: sleep 20
+
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
@@ -66,8 +87,7 @@ jobs:
           SLACK_TITLE: "✅ Docker Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/docker_report.html>
-            🕒 수행 시간: `${{ env.time }}`
+            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/docker_report/index.html>
           SLACK_COLOR: "#36a64f"
 
       - name: Check available memory
