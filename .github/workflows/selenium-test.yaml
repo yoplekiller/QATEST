@@ -59,6 +59,11 @@ jobs:
         run: ls -al allure-results || true
 
 
+      - name: Preserve Allure History  # 기존 결과 유지
+        run: |
+          mkdir -p allure-report/history
+          cp -r allure-history/* allure-report/history || true      
+          
 
       - name: Generate Allure Report
         run: |
@@ -83,8 +88,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: . #현재 디렉토리 내의 모든 파일을 업로드
-          keep_files: true
+          publish_dir: allure-report #현재 디렉토리 내의 모든 파일을 업로드
+          keep_files: false
 
       - name: Copy Screenshots to Allure Results
         run: |
