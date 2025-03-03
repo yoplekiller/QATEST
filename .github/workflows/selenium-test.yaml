@@ -73,8 +73,8 @@ jobs:
           
 
       - name: Debug Allure Report #리포트 생성 확인
-        run: |
-          ls -al allure-report || true  
+        run: ls -al allure-report || true
+
           
 
       - name: Force Update GitHub Pages  #  강제 변경 사항 추가
