@@ -11,7 +11,7 @@ on:
     branches:
       - main
 
-concurrency:                   #동시에 여러 개의 배포 실행 방지
+concurrency:  #동시에 여러 개의 배포 실행 방지
   group: gh-pages-deploy
   cancel-in-progress: true
 
@@ -109,6 +109,6 @@ jobs:
           SLACK_TITLE: "✅ Selenium Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/index.html>
+            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
             ⚠ GitHub Pages 반영까지 시간이 걸릴 수 있습니다. 404 발생 시 잠시 후 다시 확인하세요.
           SLACK_COLOR: "#36a64f"
