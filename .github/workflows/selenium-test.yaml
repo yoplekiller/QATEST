@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: '0 */4 * * *' # 실행 시간 설정(UTC)
+    - cron: '0 */2 * * *' # 실행 시간 설정(UTC)
   push:
     branches:
       - main
@@ -27,7 +27,6 @@ jobs:
 
       - name: Install Dependencies #의존성 설치
         run: venv/bin/python -m pip install -r requirements.txt allure-pytest
-        
 
 
       - name: Install Allure CLI # Allure CLI 설치, allure 실행을 위해 필요
@@ -51,12 +50,12 @@ jobs:
         continue-on-error: true
 
 
-      - name: Debug Allure Results
-        run: ls -al allure-results || true  #테스트 결과 확인
+      - name: Debug Allure Results  #테스트 결과 확인
+        run: ls -al allure-results || true
 
 
 
-      - name: Generate Allure Report
+      - name: Generate Allure Report #
         run: |
           allure generate allure-results -o allure-report --clean
           mkdir -p allure-report/history
