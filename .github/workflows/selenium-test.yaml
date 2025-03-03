@@ -3,7 +3,7 @@ name: Selenium Test Automation
 on:
   pull_request:
     branches:
-      - main
+      - develop
   workflow_dispatch:
   schedule:
     - cron: '0 */2 * * *' # 실행 시간 설정(UTC)
