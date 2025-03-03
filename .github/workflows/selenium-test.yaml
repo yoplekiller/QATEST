@@ -60,18 +60,13 @@ jobs:
 
 
 
-      - name: Generate Allure Report #
+      - name: Generate Allure Report
         run: |
           allure generate allure-results -o allure-report --clean
           mkdir -p allure-report/history
           cp -r allure-history/* allure-report/history || true
           
 
-      - name: Preserve Allure History  # 기존 결과 유지
-        run: |
-          mkdir -p allure-report/history
-          cp -r allure-history/* allure-report/history || true      
-          
 
       - name: Debug Allure Report #리포트 생성 확인
         run: |
@@ -92,13 +87,11 @@ jobs:
           publish_dir: allure-report #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: true
 
-
       - name: Copy Screenshots to Allure Results
         run: |
           mkdir -p allure-results/screenshots
           cp -r screenshots/* allure-results/screenshots || true
-          
-          
+              
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
