@@ -30,7 +30,7 @@ jobs:
         
 
 
-      - name: Install Allure CLI # Allure CLI 설치
+      - name: Install Allure CLI # Allure CLI 설치, allure 실행을 위해 필요
         run: |
           sudo apt-get update
           sudo apt-get install -y wget unzip
@@ -40,7 +40,7 @@ jobs:
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
           
 
-      - name: Clean previous Allure results
+      - name: Clean previous Allure results #기존 allure-results 삭제
         run: |
           rm -rf allure-results || true
 
@@ -51,18 +51,33 @@ jobs:
         continue-on-error: true
 
 
+      - name: Debug Allure Results
+        run: ls -al allure-results || true  #테스트 결과 확인
+o
+
+
       - name: Generate Allure Report
         run: |
-          mkdir -p allure-results
           allure generate allure-results -o allure-report --clean
-          mkdir -p gh-pages/allure-history
-          cp -r allure-report/history gh-pages/allure-history
+          mkdir -p allure-report/history
+          cp -r allure-history/* allure-report/history || true
           
 
-      - name: Force Update GitHub Pages
+      - name: Preserve Allure History  # 기존 결과 유지
         run: |
-          date > timestamp.txt
-     
+          mkdir -p allure-report/history
+          cp -r allure-history/* allure-report/history || true      
+          
+
+      - name: Debug Allure Report #리포트 생성 확인
+        run: |
+          ls -al allure-report || true  
+          
+
+      - name: Force Update GitHub Pages  #  강제 변경 사항 추가
+        run: |
+          echo $(date) > allure-report/timestamp.txt
+          
 
       - name: Upload Allure Report to GitHub Pages #리포트 업로드
         uses: peaceiris/actions-gh-pages@v3
