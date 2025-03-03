@@ -62,6 +62,11 @@ jobs:
           name: allure-results-ui
           path: allure-results/ui
 
+      - name: Create allure-results Directory (If Missing)
+        run: |
+          mkdir -p allure-results/ui
+          ls -al allure-results
+
       - name: Send Slack Notification for UI Tests
         uses: rtCamp/action-slack-notify@v2
         env:
@@ -91,6 +96,11 @@ jobs:
         with:
           name: allure-results-api
           path: allure-results/api
+
+      - name: Create allure-results Directory (If Missing)
+        run: |
+          mkdir -p allure-results/api
+          ls -al allure-results
 
       - name: Send Slack Notification for API Tests
         uses: rtCamp/action-slack-notify@v2
@@ -136,6 +146,7 @@ jobs:
           allure generate allure-results/ui allure-results/api -o allure-report --clean
           mkdir -p allure-report/history
           cp -r allure-history/* allure-report/history || true
+          
 
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
