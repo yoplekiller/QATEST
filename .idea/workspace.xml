@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50f8fa8c-8739-4a26-8644-4ecb42014873" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/selenium-test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/selenium-test.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="50f8fa8c-8739-4a26-8644-4ecb42014873" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +53,6 @@
     &quot;Python 테스트.test_ui_add_product.py 내 Python 테스트.executor&quot;: &quot;Run&quot;,
     &quot;Python 테스트.test_ui_cart.py 내 Python 테스트.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
@@ -65,7 +62,37 @@
       <recent name="C:\Users\jmlim\Desktop\QA\AutoTest\allure-report" />
     </key>
   </component>
-  <component name="RunManager" selected="Python 테스트.test_ui_cart.py 내 Python 테스트">
+  <component name="RunManager">
+    <configuration name="C:/Users/jmlim/Desktop/QA/AutoTest/src/tests/ui_tests/test_ui_add_product.py 내 Python 테스트" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AutoTest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tests/ui_tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/tests/ui_tests/test_ui_add_product.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/jmlim/Desktop/QA/AutoTest/src/tests/ui_tests/test_ui_cart.py 내 Python 테스트" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AutoTest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tests/ui_tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/tests/ui_tests/test_ui_cart.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_fail_screenshot.test_fail_screenshot의 Python 테스트" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="AutoTest" />
       <option name="ENV_FILES" value="" />
@@ -81,41 +108,11 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test_ui_add_product.py 내 Python 테스트" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="AutoTest" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tests/ui_tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/tests/ui_tests/test_ui_add_product.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_ui_cart.py 내 Python 테스트" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="AutoTest" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tests/ui_tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/tests/ui_tests/test_ui_cart.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python 테스트.test_ui_cart.py 내 Python 테스트" />
+        <item itemvalue="Python 테스트.C:/Users/jmlim/Desktop/QA/AutoTest/src/tests/ui_tests/test_ui_cart.py 내 Python 테스트" />
         <item itemvalue="Python 테스트.test_fail_screenshot.test_fail_screenshot의 Python 테스트" />
-        <item itemvalue="Python 테스트.test_ui_add_product.py 내 Python 테스트" />
+        <item itemvalue="Python 테스트.C:/Users/jmlim/Desktop/QA/AutoTest/src/tests/ui_tests/test_ui_add_product.py 내 Python 테스트" />
       </list>
     </recent_temporary>
   </component>
