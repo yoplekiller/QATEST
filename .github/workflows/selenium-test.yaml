@@ -1,8 +1,11 @@
 name: Selenium Test Automation
 
 on:
+  push:
+    branches:
+      - main
+      - develop
   pull_request:
-    push:
       branches:
         - main
         - develop
@@ -16,7 +19,7 @@ concurrency:  #동시에 여러 개의 배포 실행 방지
   cancel-in-progress: true
 
 jobs:
-  selenium-tests:
+  setup-env:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -33,7 +36,6 @@ jobs:
       - name: Install Dependencies #의존성 설치
         run: venv/bin/python -m pip install -r requirements.txt allure-pytest
 
-
       - name: Install Allure CLI # Allure CLI 설치, allure 실행을 위해 필요
         run: |
           sudo apt-get update
@@ -42,6 +44,102 @@ jobs:
           tar -zxvf allure-2.32.2.tgz
           sudo mv allure-2.32.2 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+
+  outputs:
+    python_path: "/usr/bin/python3"
+
+  selenium-tests:
+    needs: setup-env
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Run Selenium Tests
+        run: |
+          venv/bin/python -m pytest src/tests/ui_tests --alluredir=$(pwd)/allure-results/ui
+        continue-on-error: true
+
+      - name: Preserve Allure History
+        run: |
+          git fetch origin gh-pages
+          mkdir -p allure-history
+          git checkout gh-pages -- allure-report/history || true
+          cp -r allure-history/* allure-report/history || true
+
+      - name: Generate Allure Report
+        run: |
+          allure generate allure-results/ui -o allure-report --clean
+          mkdir -p allure-report/history
+          cp -r allure-history/* allure-report/history || true
+          
+
+      - name: Upload Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: .
+          keep_files: true
+
+
+      - name: Send Slack Notification for UI Tests
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
+          SLACK_USERNAME: "GitHub Actions"
+          SLACK_ICON_EMOJI: ":robot_face:"
+          SLACK_TITLE: "✅ Selenium UI Test 완료"
+          SLACK_MESSAGE: |
+            *📢 Selenium UI 테스트가 끝났습니다!*
+            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/index.html>
+          SLACK_COLOR: "#36a64f"
+
+  api-tests:
+    needs: setup-env
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Run API Tests
+        run: |
+          venv/bin/python -m pytest src/tests/api_tests --alluredir=$(pwd)/allure-results/api
+        continue-on-error: true
+
+      - name: Generate Allure Report for API Tests
+        run: |
+          allure generate allure-results/api -o allure-report --clean
+          mkdir -p allure-report/history
+          cp -r allure-history/* allure-report/history || true
+
+      - name: Upload API Test Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: .
+          keep_files: true
+
+      - name: Send Slack Notification for API Tests
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
+          SLACK_USERNAME: "GitHub Actions"
+          SLACK_ICON_EMOJI: ":robot_face:"
+          SLACK_TITLE: "✅ API Test 완료"
+          SLACK_MESSAGE: |
+            *📢 API 테스트가 끝났습니다!*
+            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/index.html>
+          SLACK_COLOR: "#36a64f"
+
+
+
+
+
+
+
+
           
 
       - name: Clean previous Allure results #기존 allure-results 삭제
@@ -61,7 +159,9 @@ jobs:
 
       - name: Preserve Allure History  # 기존 결과 유지
         run: |
-          mkdir -p allure-report/history
+          git fetch origin gh-pages
+          mkdir -p allure-history
+          git checkout gh-pages -- allure-report/history || true
           cp -r allure-history/* allure-report/history || true      
           
 
@@ -87,8 +187,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./allure-report #현재 디렉토리 내의 모든 파일을 업로드
-          keep_files: false
+          publish_dir: . #현재 디렉토리 내의 모든 파일을 업로드
+          keep_files: true
 
       - name: Copy Screenshots to Allure Results
         run: |
