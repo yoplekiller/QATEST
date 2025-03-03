@@ -53,7 +53,7 @@ jobs:
 
       - name: Debug Allure Results
         run: ls -al allure-results || true  #테스트 결과 확인
-o
+
 
 
       - name: Generate Allure Report
