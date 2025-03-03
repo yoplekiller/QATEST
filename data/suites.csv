@@ -1,28 +1,28 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","4394","test_product_search[TC_005-\ud5e4\ub4dc\uc14b]","src.tests.ui_tests","Mon Mar 03 05:02:25 UTC 2025","passed","Mon Mar 03 05:02:29 UTC 2025","","test_ui_search","",""
-"","4593","test_product_search[TC_008-\ub9c8\uc6b0\uc2a4]","src.tests.ui_tests","Mon Mar 03 05:02:38 UTC 2025","passed","Mon Mar 03 05:02:43 UTC 2025","","test_ui_search","",""
-"","2235","test_cart","src.tests.ui_tests","Mon Mar 03 05:00:40 UTC 2025","passed","Mon Mar 03 05:00:43 UTC 2025","","test_ui_cart","",""
-"
-    일부러 실패하게 만드는 테스트
-    - 올바르지 않은 요소 선택
-    - 검색창이 없는 요소를 클릭 시도하여 실패 유발
-    ","11224","test_fail_screenshot","src.tests.ui_tests","Mon Mar 03 05:00:11 UTC 2025","failed","Mon Mar 03 05:00:22 UTC 2025","","test_fail_screenshot","",""
-"","12091","test_login[TC_005-dla057111233-@h$5N(!$aA9-fTd-error]","src.tests.ui_tests","Mon Mar 03 05:01:53 UTC 2025","broken","Mon Mar 03 05:02:05 UTC 2025","","test_ui_login","",""
-"","4405","test_product_search[TC_009-\ud0a4\ubcf4\ub4dc]","src.tests.ui_tests","Mon Mar 03 05:02:43 UTC 2025","passed","Mon Mar 03 05:02:47 UTC 2025","","test_ui_search","",""
-"","4373","test_product_search[TC_010-\ubb3c]","src.tests.ui_tests","Mon Mar 03 05:02:47 UTC 2025","passed","Mon Mar 03 05:02:52 UTC 2025","","test_ui_search","",""
-"","12651","test_login[TC_001-dla05711--disabled]","src.tests.ui_tests","Mon Mar 03 05:01:03 UTC 2025","broken","Mon Mar 03 05:01:16 UTC 2025","","test_ui_login","",""
-"","12087","test_login[TC_002--@h$5N(!$aA9-fTd-disabled]","src.tests.ui_tests","Mon Mar 03 05:01:16 UTC 2025","broken","Mon Mar 03 05:01:28 UTC 2025","","test_ui_login","",""
-"","4391","test_product_search[TC_003-\ub9e5\ubd81\ud504\ub85c]","src.tests.ui_tests","Mon Mar 03 05:02:16 UTC 2025","passed","Mon Mar 03 05:02:21 UTC 2025","","test_ui_search","",""
+"","12108","test_login[TC_004-dla05711-@h$5N(1111111-error]","src.tests.ui_tests","Mon Mar 03 05:05:46 UTC 2025","broken","Mon Mar 03 05:05:58 UTC 2025","","test_ui_login","",""
+"","4359","test_product_search[TC_005-\ud5e4\ub4dc\uc14b]","src.tests.ui_tests","Mon Mar 03 05:06:30 UTC 2025","passed","Mon Mar 03 05:06:35 UTC 2025","","test_ui_search","",""
+"","12069","test_login[TC_003---disabled]","src.tests.ui_tests","Mon Mar 03 05:05:34 UTC 2025","broken","Mon Mar 03 05:05:46 UTC 2025","","test_ui_login","",""
 "
        상품을 검색 후 추가하는 테스트
        - 수량올리기, 수량내리기 기능 구현
        - 검색 후 상품 선택 후 카트에 추가 구현
-       ","13128","test_add_product","src.tests.ui_tests","Mon Mar 03 05:00:25 UTC 2025","broken","Mon Mar 03 05:00:38 UTC 2025","","test_ui_add_product","",""
-"","4572","test_product_search[TC_002-\uc81c\ub85c\ucf5c\ub77c]","src.tests.ui_tests","Mon Mar 03 05:02:12 UTC 2025","passed","Mon Mar 03 05:02:16 UTC 2025","","test_ui_search","",""
-"","4630","test_product_search[TC_001-\uac24\ub7ed\uc2dcS25]","src.tests.ui_tests","Mon Mar 03 05:02:07 UTC 2025","passed","Mon Mar 03 05:02:12 UTC 2025","","test_ui_search","",""
-"","12108","test_login[TC_003---disabled]","src.tests.ui_tests","Mon Mar 03 05:01:28 UTC 2025","broken","Mon Mar 03 05:01:40 UTC 2025","","test_ui_login","",""
-"","4408","test_product_search[TC_007-\uacfc\uc790\uc138\ud2b8]","src.tests.ui_tests","Mon Mar 03 05:02:34 UTC 2025","passed","Mon Mar 03 05:02:38 UTC 2025","","test_ui_search","",""
-"","16181","test_category","src.tests.ui_tests","Mon Mar 03 05:00:45 UTC 2025","passed","Mon Mar 03 05:01:01 UTC 2025","","test_ui_category","",""
-"","4401","test_product_search[TC_006-\ub178\ud2b8\ubd81]","src.tests.ui_tests","Mon Mar 03 05:02:29 UTC 2025","passed","Mon Mar 03 05:02:34 UTC 2025","","test_ui_search","",""
-"","12094","test_login[TC_004-dla05711-@h$5N(1111111-error]","src.tests.ui_tests","Mon Mar 03 05:01:40 UTC 2025","broken","Mon Mar 03 05:01:53 UTC 2025","","test_ui_login","",""
-"","4327","test_product_search[TC_004-iPhone16]","src.tests.ui_tests","Mon Mar 03 05:02:21 UTC 2025","passed","Mon Mar 03 05:02:25 UTC 2025","","test_ui_search","",""
+       ","13107","test_add_product","src.tests.ui_tests","Mon Mar 03 05:04:29 UTC 2025","broken","Mon Mar 03 05:04:42 UTC 2025","","test_ui_add_product","",""
+"","4343","test_product_search[TC_003-\ub9e5\ubd81\ud504\ub85c]","src.tests.ui_tests","Mon Mar 03 05:06:22 UTC 2025","passed","Mon Mar 03 05:06:26 UTC 2025","","test_ui_search","",""
+"","4306","test_product_search[TC_004-iPhone16]","src.tests.ui_tests","Mon Mar 03 05:06:26 UTC 2025","passed","Mon Mar 03 05:06:30 UTC 2025","","test_ui_search","",""
+"","4371","test_product_search[TC_010-\ubb3c]","src.tests.ui_tests","Mon Mar 03 05:06:52 UTC 2025","passed","Mon Mar 03 05:06:57 UTC 2025","","test_ui_search","",""
+"","4373","test_product_search[TC_006-\ub178\ud2b8\ubd81]","src.tests.ui_tests","Mon Mar 03 05:06:35 UTC 2025","passed","Mon Mar 03 05:06:39 UTC 2025","","test_ui_search","",""
+"","4420","test_product_search[TC_002-\uc81c\ub85c\ucf5c\ub77c]","src.tests.ui_tests","Mon Mar 03 05:06:17 UTC 2025","passed","Mon Mar 03 05:06:22 UTC 2025","","test_ui_search","",""
+"","15733","test_category","src.tests.ui_tests","Mon Mar 03 05:04:51 UTC 2025","passed","Mon Mar 03 05:05:07 UTC 2025","","test_ui_category","",""
+"
+    일부러 실패하게 만드는 테스트
+    - 올바르지 않은 요소 선택
+    - 검색창이 없는 요소를 클릭 시도하여 실패 유발
+    ","11575","test_fail_screenshot","src.tests.ui_tests","Mon Mar 03 05:04:15 UTC 2025","failed","Mon Mar 03 05:04:26 UTC 2025","","test_fail_screenshot","",""
+"","4375","test_product_search[TC_009-\ud0a4\ubcf4\ub4dc]","src.tests.ui_tests","Mon Mar 03 05:06:48 UTC 2025","passed","Mon Mar 03 05:06:52 UTC 2025","","test_ui_search","",""
+"","12125","test_login[TC_002--@h$5N(!$aA9-fTd-disabled]","src.tests.ui_tests","Mon Mar 03 05:05:21 UTC 2025","broken","Mon Mar 03 05:05:33 UTC 2025","","test_ui_login","",""
+"","4376","test_product_search[TC_001-\uac24\ub7ed\uc2dcS25]","src.tests.ui_tests","Mon Mar 03 05:06:13 UTC 2025","passed","Mon Mar 03 05:06:17 UTC 2025","","test_ui_search","",""
+"","2216","test_cart","src.tests.ui_tests","Mon Mar 03 05:04:46 UTC 2025","passed","Mon Mar 03 05:04:48 UTC 2025","","test_ui_cart","",""
+"","12108","test_login[TC_005-dla057111233-@h$5N(!$aA9-fTd-error]","src.tests.ui_tests","Mon Mar 03 05:05:58 UTC 2025","broken","Mon Mar 03 05:06:10 UTC 2025","","test_ui_login","",""
+"","4401","test_product_search[TC_008-\ub9c8\uc6b0\uc2a4]","src.tests.ui_tests","Mon Mar 03 05:06:43 UTC 2025","passed","Mon Mar 03 05:06:48 UTC 2025","","test_ui_search","",""
+"","12120","test_login[TC_001-dla05711--disabled]","src.tests.ui_tests","Mon Mar 03 05:05:09 UTC 2025","broken","Mon Mar 03 05:05:21 UTC 2025","","test_ui_login","",""
+"","4395","test_product_search[TC_007-\uacfc\uc790\uc138\ud2b8]","src.tests.ui_tests","Mon Mar 03 05:06:39 UTC 2025","passed","Mon Mar 03 05:06:43 UTC 2025","","test_ui_search","",""
