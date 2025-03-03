@@ -88,7 +88,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: allure-report #현재 디렉토리 내의 모든 파일을 업로드
+          publish_dir: ./allure-report #현재 디렉토리 내의 모든 파일을 업로드
           keep_files: false
 
       - name: Copy Screenshots to Allure Results
