@@ -71,7 +71,7 @@ jobs:
           SLACK_TITLE: "✅ Selenium UI Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/index.html>
+            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
           SLACK_COLOR: "#36a64f"
 
   api-tests:
@@ -101,7 +101,7 @@ jobs:
           SLACK_TITLE: "✅ API Test 완료"
           SLACK_MESSAGE: |
             *📢 API 테스트가 끝났습니다!*
-            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/index.html>
+            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
           SLACK_COLOR: "#36a64f"
 
   merge-reports:
@@ -137,13 +137,30 @@ jobs:
           mkdir -p allure-report/history
           cp -r allure-history/* allure-report/history || true
 
+      - name: Force Update GitHub Pages
+        run: echo $(date) > allure-report/timestamp.txt
+
+
+      - name: Force Push to GitHub Pages
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git fetch origin gh-pages
+          git checkout gh-pages
+          git pull origin gh-pages || true
+          git add .
+          git commit -m "Update Allure Report"
+          git push --force origin gh-pages
+          
+
       - name: Upload Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: .
-          keep_files: true
+          publish_dir: allure-report
+          keep_files: false
+
 
       - name: Send Slack Notification for Merged Report
         uses: rtCamp/action-slack-notify@v2
@@ -154,5 +171,5 @@ jobs:
           SLACK_TITLE: "✅ Allure Report 업데이트 완료"
           SLACK_MESSAGE: |
             *📢 UI & API 테스트 리포트가 업데이트되었습니다!*
-            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/index.html>
+            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
           SLACK_COLOR: "#36a64f"
