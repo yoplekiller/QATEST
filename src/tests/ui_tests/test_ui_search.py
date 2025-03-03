@@ -1,3 +1,4 @@
+import allure
 import pytest
 from selenium.webdriver import Keys
 import time
@@ -8,6 +9,8 @@ from utils.utilites import capture_screenshot
 
 search_cases = read_search_terms_from_excel(file_path)
 
+@allure.feature("UI 테스트")
+@allure.story("상품 검색 테스트")
 @pytest.mark.parametrize("tc_id, search_term", search_cases)
 def test_product_search(driver, tc_id, search_term):
     print(f"🔍 TC {tc_id}: '{search_term}' 검색 테스트 실행 중...")
