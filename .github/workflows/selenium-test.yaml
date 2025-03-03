@@ -57,7 +57,7 @@ jobs:
         continue-on-error: true
 
       - name: Upload Allure Results for UI Tests
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-results-ui
           path: allure-results/ui
@@ -87,7 +87,7 @@ jobs:
         continue-on-error: true
 
       - name: Upload Allure Results for API Tests
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-results-api
           path: allure-results/api
@@ -112,7 +112,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Download Allure Results for UI Tests
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: allure-results-ui
           path: allure-results/ui
