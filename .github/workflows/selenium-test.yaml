@@ -10,6 +10,11 @@ on:
   push:
     branches:
       - main
+
+concurrency:                   #동시에 여러 개의 배포 실행 방지
+  group: gh-pages-deploy
+  cancel-in-progress: true
+
 jobs:
   selenium-tests:
     runs-on: ubuntu-latest
