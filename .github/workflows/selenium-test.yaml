@@ -75,7 +75,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./allure-report
+          publish_dir: .
           keep_files: true  # ✅ 기존 파일 유지
 
       - name: Send Slack Notification # Slack 알람
