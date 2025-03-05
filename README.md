@@ -44,7 +44,7 @@ source venv/bin/activate  # (Windows 사용자는 venv\Scripts\activate)
 pip install -r requirements.txt
 
 # Selenium UI 테스트 실행
-pytest src/tests/ui_tests --alluredir=allure-results/ui
+pytest src/tests/ui_tests --alluredir=allure-results
 
 # API 테스트 실행 (추가 예정)
 pytest src/tests/api_tests --alluredir=allure-results/api
