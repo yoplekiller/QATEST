@@ -12,7 +12,7 @@ GitHub Actions 기반의 자동화 테스트 프로젝트
 - **CI/CD:** GitHub Actions  
 - **테스트 리포트:** Allure Report (현재 개선 중)  
 - **API 테스트:** pytest(현재 개발 진행 중)  
-- **환경 구성:** Docker & local
+- **환경 구성:** Docker & Local
 
 ## 🏗 주요 기능  
 ### **UI 자동화 테스트 (Selenium)**  
@@ -53,3 +53,14 @@ pytest src/tests/api_tests --alluredir=allure-results/api
 # Allure Report 생성 및 실행
 allure generate allure-results -o allure-report --clean
 allure open allure-report
+```
+### **Docker환경에서 실행**
+````
+# Docker 컨테이너 빌드 및 실행
+docker-compose up --build -d
+
+#실행 중인 컨테이너 내부에서 테스트 실행
+docker exec -it selenium-container pytest src/tests/ui_tests --alluredir=/allure-results/docker
+
+# 테스트 결과 확인 후 Docker 종료
+docker-compose down
