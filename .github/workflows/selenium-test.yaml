@@ -35,7 +35,9 @@ jobs:
 
 
       - name: Install Dependencies # 의존성 설치
-        run: venv/bin/python -m pip install -r requirements.txt allure-pytest
+        run: |
+          python -m venv venv
+          venv/bin/python -m pip install -r requirements.txt allure-pytest
 
 
       - name: Install Allure CLI # Allure CLI 설치
@@ -81,6 +83,7 @@ jobs:
           publish_branch: gh-pages
           publish_dir: allure-report
           keep_files: false
+
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
