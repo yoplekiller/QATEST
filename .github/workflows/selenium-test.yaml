@@ -46,10 +46,6 @@ jobs:
           sudo mv allure-2.32.2 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
           allure --version
-          
-
-      - name: Force Update GitHub Pages
-        run: echo $(date) > allure-report/timestamp.txt
 
       - name: Fetch Allure Report from gh-pages
         run: |
@@ -57,6 +53,11 @@ jobs:
           mkdir -p allure-report
           git checkout gh-pages -- allure-report || true
           ls -al allure-report || echo "❌ allure-report 디렉토리가 없습니다!"
+          
+
+      - name: Force Update GitHub Pages
+        run: echo $(date) > allure-report/timestamp.txt
+
 
       - name: Clean previous Allure results # 기존 allure-results 삭제
         run: rm -rf allure-results || true
