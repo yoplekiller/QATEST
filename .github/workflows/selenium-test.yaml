@@ -46,6 +46,10 @@ jobs:
           sudo mv allure-2.32.2 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
           allure --version
+          
+
+      - name: Force Update GitHub Pages
+        run: echo $(date) > allure-report/timestamp.txt
 
       - name: Fetch Allure Report from gh-pages
         run: |

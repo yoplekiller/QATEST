@@ -1,5 +1,6 @@
 import time
 import allure
+import pytest
 from selenium.webdriver.common.by import By
 from utils.utilites import capture_screenshot
 
