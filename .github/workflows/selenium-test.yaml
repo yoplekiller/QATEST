@@ -79,7 +79,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: .
+          publish_dir: ./allure-report
           keep_files: true  # ✅ 기존 파일 유지
 
       - name: Send Slack Notification # Slack 알람
@@ -91,5 +91,5 @@ jobs:
           SLACK_TITLE: "✅ Selenium Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/index.html>
+            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
           SLACK_COLOR: "#36a64f"
