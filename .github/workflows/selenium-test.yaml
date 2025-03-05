@@ -6,6 +6,7 @@ on:
       - main
       - develop
       - develop-non-docker
+      - selenium-only
   pull_request:
     branches:
       - main
@@ -86,11 +87,6 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./allure-report
           keep_files: true  # ✅ 기존 파일 유지
-
-      - name: Delete Old Artifacts
-        uses: geekyeggo/delete-artifact@v2
-        with:
-          name: github-pages
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
