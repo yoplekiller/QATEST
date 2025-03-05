@@ -6,13 +6,13 @@ on:
       - main
       - develop
       - develop-non-docker
-      - selenium-only
+      - feature/selenium-only
   pull_request:
     branches:
       - main
       - develop
       - develop-non-docker
-      - selenium-only
+      - feature/selenium-only
   workflow_dispatch:
   schedule:
     - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
