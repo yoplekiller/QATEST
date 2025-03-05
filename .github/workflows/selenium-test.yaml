@@ -55,12 +55,8 @@ jobs:
           ls -al allure-report || echo "❌ allure-report 디렉토리가 없습니다!"
           
 
-      - name: Force Update GitHub Pages
-        run: echo $(date) > allure-report/timestamp.txt
-
-
       - name: Clean previous Allure results # 기존 allure-results 삭제
-        run: rm -rf allure-results || true
+        run: rm -rf allure-results allure-report || true
 
       - name: Run Selenium Tests # 테스트 실행
         run: |
@@ -78,14 +74,22 @@ jobs:
           cp -r allure-report/history allure-report/history || true
           ls -al allure-report || echo "❌ allure-report 디렉토리가 없습니다!"
 
+      - name: Force Update GitHub Pages
+        run: echo $(date) > allure-report/timestamp.txt
+
+
       - name: Upload Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./allure-report
           keep_files: true  # ✅ 기존 파일 유지
+
+      - name: Delete Old Artifacts
+        uses: geekyeggo/delete-artifact@v2
+        with:
+          name: github-pages
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
