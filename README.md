@@ -38,10 +38,10 @@ GitHub Actions 기반의 자동화 테스트 프로젝트
 ```bash
 # 가상환경 생성 및 활성화
 python -m venv venv
-source venv/bin/activate  # (Windows 사용자는 venv\Scripts\activate)
+
 
 # 의존성 설치
-pip install -r requirements.txt
+venv/bin/python -m pip install -r requirements.txt allure-pytest
 
 # Selenium UI 테스트 실행
 pytest src/tests/ui_tests --alluredir=allure-results
