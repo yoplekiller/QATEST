@@ -1,11 +1,14 @@
 name: Selenium Test Automation
 
 on:
+  push:
+    branches:
+      - main
+      - develop
   pull_request:
-    push:
-      branches:
-        - main
-        - develop
+    branches:
+      - main
+      - develop
   workflow_dispatch:
   schedule:
     - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
