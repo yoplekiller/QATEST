@@ -24,7 +24,8 @@ GitHub Actions 기반의 자동화 테스트 프로젝트
 ### **CI/CD 파이프라인 (GitHub Actions)**  
 - `push` 및 `pull request` 발생 시 자동으로 테스트 실행  
 - 일정 주기로 (`cron`) 테스트 실행하여 반복 테스트 진행  
-- 테스트 결과를 GitHub Pages를 통해 리포트로 배포  
+- 테스트 결과를 GitHub Pages와 Slack을 통해 Report 배포
+
 
 ### **API 테스트 (추가 예정)**  
 - pytest 기반 API 테스트 추가 예정  
