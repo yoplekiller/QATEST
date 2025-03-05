@@ -4,17 +4,14 @@ on:
   push:
     branches:
       - main
-      - develop
   pull_request:
     branches:
       - main
-      - develop
   workflow_dispatch:
   schedule:
     - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
 
-
-concurrency:  #동시에 여러 개의 배포 실행 방지
+concurrency:  # 동시에 여러 개의 배포 실행 방지
   group: gh-pages-deploy
   cancel-in-progress: true
 
@@ -25,7 +22,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Python #파이썬 설치
+      - name: Set up Python # 파이썬 설치
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
@@ -33,11 +30,10 @@ jobs:
       - name: Create virtual environment
         run: python -m venv venv
 
-      - name: Install Dependencies #의존성 설치
+      - name: Install Dependencies # 의존성 설치
         run: venv/bin/python -m pip install -r requirements.txt allure-pytest
 
-
-      - name: Install Allure CLI # Allure CLI 설치, allure 실행을 위해 필요
+      - name: Install Allure CLI # Allure CLI 설치
         run: |
           sudo apt-get update
           sudo apt-get install -y wget unzip
@@ -45,59 +41,42 @@ jobs:
           tar -zxvf allure-2.32.2.tgz
           sudo mv allure-2.32.2 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
-          
+          allure --version
 
-      - name: Clean previous Allure results #기존 allure-results 삭제
+      - name: Fetch Allure Report from gh-pages
         run: |
-          rm -rf allure-results || true
+          git fetch origin gh-pages
+          mkdir -p allure-report
+          git checkout gh-pages -- allure-report || true
+          ls -al allure-report || echo "❌ allure-report 디렉토리가 없습니다!"
 
+      - name: Clean previous Allure results # 기존 allure-results 삭제
+        run: rm -rf allure-results || true
 
-      - name: Run Selenium Tests #테스트 실행
+      - name: Run Selenium Tests # 테스트 실행
         run: |
-          venv/bin/python -m pytest src/tests/ui_tests --alluredir=$(pwd)/allure-results
+          mkdir -p allure-results
+          venv/bin/python -m pytest src/tests/ui_tests --alluredir=allure-results
         continue-on-error: true
 
-
-      - name: Debug Allure Results  #테스트 결과 확인
-        run: ls -al allure-results || true
-
-
-      - name: Preserve Allure History  # 기존 결과 유지
-        run: |
-          mkdir -p allure-report/history
-          cp -r allure-history/* allure-report/history || true      
-          
+      - name: Debug Allure Results  # 테스트 결과 확인
+        run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!"
 
       - name: Generate Allure Report
         run: |
           allure generate allure-results -o allure-report --clean
           mkdir -p allure-report/history
-          cp -r allure-history/* allure-report/history || true
-          
+          cp -r allure-report/history allure-report/history || true
+          ls -al allure-report || echo "❌ allure-report 디렉토리가 없습니다!"
 
-      - name: Debug Allure Report #리포트 생성 확인
-        run: ls -al allure-report || true
-
-
-      - name: Force Update GitHub Pages  #  강제 변경 사항 추가
-        run: |
-          echo $(date) > allure-report/timestamp.txt
-          
-
-      - name: Upload Allure Report to GitHub Pages #리포트 업로드
+      - name: Upload Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./allure-report #현재 디렉토리 내의 모든 파일을 업로드
-          keep_files: false
-
-      - name: Copy Screenshots to Allure Results
-        run: |
-          mkdir -p allure-results/screenshots
-          cp -r screenshots/* allure-results/screenshots || true
-              
+          publish_dir: ./allure-report
+          keep_files: true  # ✅ 기존 파일 유지
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
@@ -109,5 +88,4 @@ jobs:
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
             *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/index.html>
-            ⚠ GitHub Pages 반영까지 시간이 걸릴 수 있습니다. 404 발생 시 잠시 후 다시 확인하세요.
           SLACK_COLOR: "#36a64f"

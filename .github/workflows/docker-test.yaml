@@ -1,15 +1,15 @@
 name: Docker Test Automation
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
   workflow_dispatch:
 #  schedule:
 #    - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
-  #  push:
-  #    branches:
-  #      - main
 
 concurrency:             #동시에 여러 개의 배포 실행 방지
   group: gh-pages-deploy
