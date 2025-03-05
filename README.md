@@ -12,7 +12,7 @@ GitHub Actions 기반의 자동화 테스트 프로젝트
 - **CI/CD:** GitHub Actions  
 - **테스트 리포트:** Allure Report (현재 개선 중)  
 - **API 테스트:** pytest(현재 개발 진행 중)  
-- **환경 구성:** Docker & local
+- **환경 구성:** Docker & Local
 
 ## 🏗 주요 기능  
 ### **UI 자동화 테스트 (Selenium)**  
@@ -38,7 +38,6 @@ GitHub Actions 기반의 자동화 테스트 프로젝트
 ```bash
 # 가상환경 생성 및 활성화
 python -m venv venv
-
 
 # 의존성 설치
 venv/bin/python -m pip install -r requirements.txt allure-pytest
