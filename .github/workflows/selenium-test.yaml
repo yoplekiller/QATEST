@@ -64,19 +64,12 @@ jobs:
         run: |
           mkdir -p allure-report
           allure generate allure-results -o allure-report --clean || echo "❌ Allure report 생성 실패!"
+          mkdir -p allure-report/history
           ls -al allure-report || echo "❌ allure-report 폴더가 없습니다!"
 
 
       - name: Debug Allure Results  # 테스트 결과 확인
         run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!"
-
-
-      - name: Generate Allure Report
-        run: |
-          allure generate allure-results -o allure-report --clean
-          mkdir -p allure-report/history
-          ls -al allure-report || echo "❌ allure-report 디렉토리가 없습니다!"
-          
 
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
