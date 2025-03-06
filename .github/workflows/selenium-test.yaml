@@ -99,5 +99,5 @@ jobs:
           SLACK_TITLE: "✅ Selenium Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/index.html>
+            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
           SLACK_COLOR: "#36a64f"
