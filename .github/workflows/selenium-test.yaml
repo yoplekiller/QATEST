@@ -23,7 +23,7 @@ concurrency:  # 동시에 여러 개의 배포 실행 방지
   cancel-in-progress: true
 
 jobs:
-  selenium-tests:
+  selenium&api-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -121,7 +121,7 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
           SLACK_USERNAME: "GitHub Actions"
           SLACK_ICON_EMOJI: ":robot_face:"
-          SLACK_TITLE: "✅ Selenium Test 완료"
+          SLACK_TITLE: "✅ Selenium & API Test 완료"
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
             *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
