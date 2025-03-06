@@ -10,11 +10,9 @@ def test_cart(driver):
     try:
       cart_button = driver.find_element(By.XPATH,"//button[@class='css-g25h97 e14oy6dx1']")
       cart_button.click()
-      time.sleep(2)
+      time.sleep(4)
 
-      cart_title= driver.find_element(By.XPATH,"//title[contains(text(),'컬리 - 마켓컬리/뷰티컬리')]")
-      assert cart_title.is_displayed(), "❌ 장바구니 페이지가 열리지 않았습니다!"
-
+      assert "컬리 - 마켓컬리/뷰티컬리" in driver.title, "❌ 장바구니 페이지가 열리지 않았습니다!"
       capture_screenshot(driver,"장바구니","screenshots_cart")
 
     except Exception as e:
