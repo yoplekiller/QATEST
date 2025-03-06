@@ -47,6 +47,5 @@ def test_add_product(driver):
 
         # Allure Report에 스크린샷 첨부
         with open(screenshot_path, "rb") as image_file:
-            allure.attach(image_file.read(), name="Unexpected Search Result",
-                          attachment_type=allure.attachment_type.PNG)
+            allure.attach(image_file.read(), name="Unexpected Search Result", attachment_type=allure.attachment_type.PNG)
  
