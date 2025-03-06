@@ -52,8 +52,7 @@ def test_add_product(driver):
           capture_screenshot(driver, "상품 추가", "screenshots_add_product")
           pytest.fail(f"❌ 상품 추가 실패: {str(e)}")
 
-
-
+      # 검색 결과 확인
       if "과자" not in driver.page_source:
           screenshot_path = "unexpected_result.png"
 
