@@ -1,24 +1,29 @@
-name: Selenium & API Test Automation
+
+name: Selenium Test Automation
 
 on:
   push:
     branches:
       - main
       - develop
+      - develop-non-docker
+      - feature/selenium-only
   pull_request:
     branches:
       - main
       - develop
+      - develop-non-docker
+      - feature/selenium-only
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *' # 실행 시간 설정(UTC)
+    - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
 
 concurrency:  # 동시에 여러 개의 배포 실행 방지
   group: gh-pages-deploy
   cancel-in-progress: true
 
 jobs:
-  setup-env:
+  selenium-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -33,18 +38,12 @@ jobs:
       - name: Install Dependencies # 의존성 설치
         run: |
           python -m venv venv
-          venv/bin/python -m pip install --upgrade pip
           venv/bin/python -m pip install -r requirements.txt allure-pytest
-          
-          
-      - name: Check Python Virtual Environment
-        run: |
-          ls -al venv || echo "❌ venv 디렉토리가 없습니다!"
-          venv/bin/python --version || echo "❌ Python 실행 불가!"
-          venv/bin/python -m pip list || echo "❌ pip 패키지 목록 조회 실패!"
-          
+      - name: Clean previous Allure results # 기존 allure-results 삭제
+        run: rm -rf allure-results || true
 
-      - name: Install Allure CLI # Allure CLI 설치, allure 실행을 위해 필요
+
+      - name: Install Allure CLI # Allure CLI 설치
         run: |
           sudo apt-get update
           sudo apt-get install -y wget unzip
@@ -52,164 +51,64 @@ jobs:
           tar -zxvf allure-2.32.2.tgz
           sudo mv allure-2.32.2 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
-
-  selenium-tests:
-    needs: setup-env
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Run Selenium Tests
-        run: |
-          mkdir -p allure-results/ui
-          venv/bin/python -m pytest src/tests/ui_tests --alluredir=allure-results/ui -v --tb=short
-          ls -al allure-results/ui || echo "❌ allure-results/ui 디렉토리가 없습니다!"
-        continue-on-error: true
-
-      - name: Generate Allure Report
-        run: |
-          allure generate allure-results/ui -o allure-report --clean
-          ls -al allure-report || echo "❌ allure-report 디렉토리가 없습니다!"
-
-
-      - name: Upload Allure Results for UI Tests
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results-ui
-          path: allure-results/ui
-
-      - name: Create allure-results Directory (If Missing)
-        run: |
-          mkdir -p allure-results/ui
-          ls -al allure-results
-
-      - name: Send Slack Notification for UI Tests
-        uses: rtCamp/action-slack-notify@v2
-        env:
-          SLACK_WEBHOOK: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
-          SLACK_USERNAME: "GitHub Actions"
-          SLACK_ICON_EMOJI: ":robot_face:"
-          SLACK_TITLE: "✅ Selenium UI Test 완료"
-          SLACK_MESSAGE: |
-            *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
-          SLACK_COLOR: "#36a64f"
-
-  api-tests:
-    needs: setup-env
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-
-      - name: Check Virtual Environment
-        run: |
-          ls -al venv || echo "❌ venv 디렉토리가 없습니다!"
-          venv/bin/python --version || echo "❌ Python 실행 불가!"
-      - name: Run API Tests
-        run: |
-          mkdir -p allure-results/api
-          venv/bin/python -m pytest src/tests/api_tests --alluredir=allure-results/api
-          ls -al allure-results/api || echo "❌ allure-results/api 디렉토리가 없습니다!"
-        continue-on-error: true
-
-      - name: Generate Allure Report
-        run: |
-          allure generate allure-results/ui -o allure-report --clean
-          ls -al allure-report || echo "❌ allure-report 디렉토리가 없습니다!"
-
-      - name: Upload Allure Results for API Tests
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results-api
-          path: allure-results/api
-
-      - name: Create allure-results Directory (If Missing)
-        run: |
-          mkdir -p allure-results/api
-          ls -al allure-results
-
-      - name: Send Slack Notification for API Tests
-        uses: rtCamp/action-slack-notify@v2
-        env:
-          SLACK_WEBHOOK: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
-          SLACK_USERNAME: "GitHub Actions"
-          SLACK_ICON_EMOJI: ":robot_face:"
-          SLACK_TITLE: "✅ API Test 완료"
-          SLACK_MESSAGE: |
-            *📢 API 테스트가 끝났습니다!*
-            *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
-          SLACK_COLOR: "#36a64f"
-
-  merge-reports:
-    needs: [selenium-tests, api-tests]  # ✅ UI & API 테스트가 끝난 후 실행
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Download Allure Results for UI Tests
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-results-ui
-          path: allure-results/ui
-
-      - name: Download Allure Results for API Tests
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-results-api
-          path: allure-results/api
-
-      - name: Preserve Allure History
+          allure --version
+          
+      - name: Fetch Allure Report from gh-pages
         run: |
           git fetch origin gh-pages
-          mkdir -p allure-history
-          git checkout gh-pages -- allure-report/history || true
-          cp -r allure-report/history allure-history/ || true
-
-      - name: Merge Allure Reports
-        run: |
           mkdir -p allure-report
-          allure generate allure-results/ui allure-results/api -o allure-report --clean
-          mkdir -p allure-report/history
-          cp -r allure-history/* allure-report/history || true
+          git checkout gh-pages -- allure-report || true
+          ls -al allure-report || echo "❌ allure-report 디렉토리가 없습니다!"
           
-
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
 
 
-      - name: Force Push to GitHub Pages
+      - name: Clean previous Allure results # 기존 allure-results 삭제
+        run: rm -rf allure-results allure-report || true
+
+
+      - name: Run Selenium Tests # 테스트 실행
         run: |
-          git config --global user.email "github-actions@github.com"
-          git config --global user.name "GitHub Actions"
+          mkdir -p allure-results
+          venv/bin/python -m pytest src/tests/ui_tests --alluredir=allure-results
+        continue-on-error: true
+
+
+      - name: Clone gh-pages
+        run: |
           git fetch origin gh-pages
-          git checkout gh-pages
-          git pull origin gh-pages || true
-          git add .
-          git commit -m "Update Allure Report"
-          git push --force origin gh-pages
-          
+          git checkout gh-pages || git checkout --orphan gh-pages
+      - name: Generate Allure Report
+        run: |
+          mkdir -p allure-report
+          allure generate allure-results -o allure-report --clean || echo "❌ Allure report 생성 실패!"
+          mkdir -p allure-report/history
+          ls -al allure-report || echo "❌ allure-report 폴더가 없습니다!"
+      - name: Debug Allure Results  # 테스트 결과 확인
+        run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!"
+
+      - name: Force Update GitHub Pages
+        run: echo $(date) > allure-report/timestamp.txt
+
 
       - name: Upload Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: allure-report
-          keep_files: false
+          publish_dir: .
+          keep_files: true
 
 
-      - name: Send Slack Notification for Merged Report
+      - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
           SLACK_USERNAME: "GitHub Actions"
           SLACK_ICON_EMOJI: ":robot_face:"
-          SLACK_TITLE: "✅ Allure Report 업데이트 완료"
+          SLACK_TITLE: "✅ Selenium Test 완료"
           SLACK_MESSAGE: |
-            *📢 UI & API 테스트 리포트가 업데이트되었습니다!*
+            *📢 Selenium UI 테스트가 끝났습니다!*
             *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
           SLACK_COLOR: "#36a64f"
