@@ -47,7 +47,7 @@ def pytest_runtest_makereport(item):
             save_test_result(test_name,"FAIL", str(report.longrepr))
 
 
-            driver = item.funcargs.get("driver")
+            driver = item.funcargs.get("driver", None)
             if driver:
                 screenshots_dir = "failed_screenshots"
                 os.makedirs(screenshots_dir, exist_ok=True)
