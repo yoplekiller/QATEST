@@ -1,17 +1,18 @@
-# 🛠 Selenium Test Automation  
+# 🛠 Selenium & API Test Automation  
 GitHub Actions 기반의 자동화 테스트 프로젝트  
 
 ## 📌 프로젝트 개요  
 이 프로젝트는 **Selenium을 활용한 UI 자동화 테스트 및 GitHub Actions 기반의 CI/CD 파이프라인 구축**을 목표로 진행 중인 프로젝트 입니다.  
-현재 **API 테스트 및 Allure Report 개선 작업이 진행 중**이며, 지속적으로 업데이트될 예정입니다.  
+현재 **API 테스트 및 Allure Report 개선 작업, 테스트 결과를 Excel에 자동 업데이트 하는 작업을 진행 중**이며, 지속적으로 업데이트될 예정입니다.  
 
 ## 🚀 기술 스택  
 - **언어:** Python  
 - **테스트 프레임워크:** pytest  
 - **UI 자동화:** Selenium WebDriver  
 - **CI/CD:** GitHub Actions  
-- **테스트 리포트:** Allure Report (현재 개선 중)  
-- **API 테스트:** pytest(현재 개발 진행 중)  
+- **테스트 리포트:** Allure Report
+- **API 테스트:** pytest & requests (현재 개발 진행 중)  
+- **결과 자동 업데이트:** Excel
 - **환경 구성:** Docker & Local
 
 ## 🏗 주요 기능  
@@ -26,14 +27,21 @@ GitHub Actions 기반의 자동화 테스트 프로젝트
 - 일정 주기로 (`cron`) 테스트 실행하여 반복 테스트 진행  
 - 테스트 결과를 GitHub Pages와 Slack을 통해 Report 배포
 
+### **API 테스트**  
+- pytest & request 기반 API 테스트 실행
+- TMDB 사이트 API_KEY를 활용하여 API 테스트 진행
+- API 테스트 케이스 추가 예정
 
-### **API 테스트 (추가 예정)**  
-- pytest 기반 API 테스트 추가 예정  
-- Selenium UI 테스트와 함께 실행 가능하도록 통합 예정  
-
-### **Allure Report (현재 개선 중)**  
+### **Allure Report**  
 - 테스트 결과를 시각화하여 GitHub Pages에 자동 배포  
-- UI & API 테스트 리포트를 통합하여 확인 가능하도록 개선 예정(현재 UI 테스트 리포트만 업로드 중)  
+- UI & API 테스트 리포트를 통합하여 확인 가능하도록 개선 예정(현재 UI 테스트 리포트만 업로드 중)
+
+### **결과 자동 업데이트(현재 개발 중)**
+- 테스트 결과를 Excel에 자동으로 업데이트 하는 기능(현재 개발 중)
+
+
+
+
 
 ## 🛠 실행 방법  
 ### **로컬에서 실행**  
