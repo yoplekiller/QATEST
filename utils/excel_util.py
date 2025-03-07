@@ -14,7 +14,22 @@ def save_test_result(test_name, status, error_msg=""):
     wb = openpyxl.load_workbook(FILE_PATH)
     sheet = wb.active
 
-    print(f"🟢 엑셀 저장 중: {test_name} - {status}")  # 디버깅 로그 추가
+    sheet.append([test_name, status, error_msg])
+
+    for col in status.columns:
+        max_length = 0
+        col_letter = col[0].column_letter
+
+        for cell in col:
+            try:
+                max_length = max(max_length, len(str(cell.value)))
+            except:
+                pass
+
+        adjusted_width = (max_length + 2)
+        sheet.column_dimensions[col_letter].width = adjusted_width
+
+    print(f"엑셀 저장 중: {test_name} - {status}")  # 디버깅 로그 추가
     sheet.append([test_name, status, error_msg])
     wb.save(FILE_PATH)  # 변경 내용 저장
-    print(f"✅ 엑셀 저장 완료: {FILE_PATH}")
+    print(f"엑셀 저장 완료: {FILE_PATH}")
