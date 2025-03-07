@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from utils.utilites import capture_screenshot
 
 @allure.feature("UI 테스트")
-@allure.story("로그인 실패 테스트")
+@allure.story("로그인 테스트")
 def test_login(driver):
     try:
         # 로그인 버튼 클릭
