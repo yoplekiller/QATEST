@@ -1,26 +1,26 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","4211","test_product_search[TC_005-\ud5e4\ub4dc\uc14b]","src.tests.ui_tests","Sun Mar 16 08:29:25 UTC 2025","passed","Sun Mar 16 08:29:29 UTC 2025","","test_ui_search","",""
-"
-       상품을 검색 후 추가하는 테스트
-       - 수량올리기, 수량내리기 기능 구현
-       - 검색 후 상품 선택 후 카트에 추가 구현
-       ","12504","test_add_product","src.tests.ui_tests","Sun Mar 16 08:27:59 UTC 2025","passed","Sun Mar 16 08:28:12 UTC 2025","","test_ui_add_product","",""
-"","30029","test_category","src.tests.ui_tests","Sun Mar 16 08:28:20 UTC 2025","passed","Sun Mar 16 08:28:50 UTC 2025","","test_ui_category","",""
-"","4269","test_product_search[TC_007-\uacfc\uc790\uc138\ud2b8]","src.tests.ui_tests","Sun Mar 16 08:29:33 UTC 2025","passed","Sun Mar 16 08:29:37 UTC 2025","","test_ui_search","",""
-"","4224","test_product_search[TC_006-\ub178\ud2b8\ubd81]","src.tests.ui_tests","Sun Mar 16 08:29:29 UTC 2025","passed","Sun Mar 16 08:29:33 UTC 2025","","test_ui_search","",""
-"","4215","test_product_search[TC_004-iPhone16]","src.tests.ui_tests","Sun Mar 16 08:29:20 UTC 2025","passed","Sun Mar 16 08:29:25 UTC 2025","","test_ui_search","",""
-"특정 영화 상세 정보 API 테스트","44","test_get_movie_details","src.tests.api_tests","Sun Mar 16 08:29:51 UTC 2025","failed","Sun Mar 16 08:29:51 UTC 2025","","test_tmdb_api","",""
-"","4255","test_product_search[TC_010-\ubb3c]","src.tests.ui_tests","Sun Mar 16 08:29:46 UTC 2025","passed","Sun Mar 16 08:29:50 UTC 2025","","test_ui_search","",""
-"","4168","test_cart","src.tests.ui_tests","Sun Mar 16 08:28:14 UTC 2025","passed","Sun Mar 16 08:28:18 UTC 2025","","test_ui_cart","",""
-"","4267","test_product_search[TC_002-\uc81c\ub85c\ucf5c\ub77c]","src.tests.ui_tests","Sun Mar 16 08:29:12 UTC 2025","passed","Sun Mar 16 08:29:16 UTC 2025","","test_ui_search","",""
-"","4221","test_product_search[TC_009-\ud0a4\ubcf4\ub4dc]","src.tests.ui_tests","Sun Mar 16 08:29:42 UTC 2025","passed","Sun Mar 16 08:29:46 UTC 2025","","test_ui_search","",""
-"","4242","test_product_search[TC_003-\ub9e5\ubd81\ud504\ub85c]","src.tests.ui_tests","Sun Mar 16 08:29:16 UTC 2025","passed","Sun Mar 16 08:29:20 UTC 2025","","test_ui_search","",""
-"","4666","test_product_search[TC_001-\uac24\ub7ed\uc2dcS25]","src.tests.ui_tests","Sun Mar 16 08:29:07 UTC 2025","passed","Sun Mar 16 08:29:12 UTC 2025","","test_ui_search","",""
+"","13081","test_login","src.tests.ui_tests","Sun Mar 16 16:28:19 UTC 2025","failed","Sun Mar 16 16:28:32 UTC 2025","","test_ui_login","",""
 "
     일부러 실패하게 만드는 테스트
     - 올바르지 않은 요소 선택
     - 검색창이 없는 요소를 클릭 시도하여 실패 유발
-    ","11364","test_fail_screenshot","src.tests.ui_tests","Sun Mar 16 08:27:45 UTC 2025","failed","Sun Mar 16 08:27:57 UTC 2025","","test_fail_screenshot","",""
-"영화 검색 테스트","224","test_search_movie","src.tests.api_tests","Sun Mar 16 08:29:51 UTC 2025","failed","Sun Mar 16 08:29:51 UTC 2025","","test_tmdb_api","",""
-"","12310","test_login","src.tests.ui_tests","Sun Mar 16 08:28:52 UTC 2025","failed","Sun Mar 16 08:29:05 UTC 2025","","test_ui_login","",""
-"","4271","test_product_search[TC_008-\ub9c8\uc6b0\uc2a4]","src.tests.ui_tests","Sun Mar 16 08:29:37 UTC 2025","passed","Sun Mar 16 08:29:42 UTC 2025","","test_ui_search","",""
+    ","11319","test_fail_screenshot","src.tests.ui_tests","Sun Mar 16 16:27:15 UTC 2025","failed","Sun Mar 16 16:27:26 UTC 2025","","test_fail_screenshot","",""
+"","4222","test_product_search[TC_006-\ub178\ud2b8\ubd81]","src.tests.ui_tests","Sun Mar 16 16:28:55 UTC 2025","passed","Sun Mar 16 16:29:00 UTC 2025","","test_ui_search","",""
+"","28856","test_category","src.tests.ui_tests","Sun Mar 16 16:27:48 UTC 2025","passed","Sun Mar 16 16:28:17 UTC 2025","","test_ui_category","",""
+"","4240","test_product_search[TC_001-\uac24\ub7ed\uc2dcS25]","src.tests.ui_tests","Sun Mar 16 16:28:34 UTC 2025","passed","Sun Mar 16 16:28:38 UTC 2025","","test_ui_search","",""
+"특정 영화 상세 정보 API 테스트","49","test_get_movie_details","src.tests.api_tests","Sun Mar 16 16:29:17 UTC 2025","failed","Sun Mar 16 16:29:17 UTC 2025","","test_tmdb_api","",""
+"","4218","test_product_search[TC_004-iPhone16]","src.tests.ui_tests","Sun Mar 16 16:28:47 UTC 2025","passed","Sun Mar 16 16:28:51 UTC 2025","","test_ui_search","",""
+"영화 검색 테스트","211","test_search_movie","src.tests.api_tests","Sun Mar 16 16:29:17 UTC 2025","failed","Sun Mar 16 16:29:17 UTC 2025","","test_tmdb_api","",""
+"","4217","test_product_search[TC_005-\ud5e4\ub4dc\uc14b]","src.tests.ui_tests","Sun Mar 16 16:28:51 UTC 2025","passed","Sun Mar 16 16:28:55 UTC 2025","","test_ui_search","",""
+"","4226","test_product_search[TC_009-\ud0a4\ubcf4\ub4dc]","src.tests.ui_tests","Sun Mar 16 16:29:08 UTC 2025","passed","Sun Mar 16 16:29:12 UTC 2025","","test_ui_search","",""
+"","4271","test_product_search[TC_002-\uc81c\ub85c\ucf5c\ub77c]","src.tests.ui_tests","Sun Mar 16 16:28:38 UTC 2025","passed","Sun Mar 16 16:28:43 UTC 2025","","test_ui_search","",""
+"","4176","test_cart","src.tests.ui_tests","Sun Mar 16 16:27:42 UTC 2025","passed","Sun Mar 16 16:27:46 UTC 2025","","test_ui_cart","",""
+"","4252","test_product_search[TC_007-\uacfc\uc790\uc138\ud2b8]","src.tests.ui_tests","Sun Mar 16 16:29:00 UTC 2025","passed","Sun Mar 16 16:29:04 UTC 2025","","test_ui_search","",""
+"
+       상품을 검색 후 추가하는 테스트
+       - 수량올리기, 수량내리기 기능 구현
+       - 검색 후 상품 선택 후 카트에 추가 구현
+       ","10240","test_add_product","src.tests.ui_tests","Sun Mar 16 16:27:29 UTC 2025","passed","Sun Mar 16 16:27:39 UTC 2025","","test_ui_add_product","",""
+"","4242","test_product_search[TC_003-\ub9e5\ubd81\ud504\ub85c]","src.tests.ui_tests","Sun Mar 16 16:28:43 UTC 2025","passed","Sun Mar 16 16:28:47 UTC 2025","","test_ui_search","",""
+"","4275","test_product_search[TC_008-\ub9c8\uc6b0\uc2a4]","src.tests.ui_tests","Sun Mar 16 16:29:04 UTC 2025","passed","Sun Mar 16 16:29:08 UTC 2025","","test_ui_search","",""
+"","4246","test_product_search[TC_010-\ubb3c]","src.tests.ui_tests","Sun Mar 16 16:29:12 UTC 2025","passed","Sun Mar 16 16:29:17 UTC 2025","","test_ui_search","",""
