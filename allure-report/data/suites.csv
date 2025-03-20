@@ -1,3 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"특정 영화 상세 정보 API 테스트","99","test_get_movie_details","src.tests.api_tests","Thu Mar 20 19:12:54 UTC 2025","failed","Thu Mar 20 19:12:54 UTC 2025","","test_tmdb_api","",""
-"영화 검색 테스트","274","test_search_movie","src.tests.api_tests","Thu Mar 20 19:12:54 UTC 2025","failed","Thu Mar 20 19:12:54 UTC 2025","","test_tmdb_api","",""
