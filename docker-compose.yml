@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   selenium:
     image: selenium/standalone-chrome #selenium python 컨테이너 사용
@@ -5,24 +7,6 @@ services:
     ports:
       - "5555:4444"
     shm_size: '4gb'
-
-  chrome:
-    image: selenium/node-chrome:4.6.0
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST: selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT: 4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT: 4443
-
-  firefox:
-    image: selenium/node-firefox:4.6.0
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
   test-runner:
     build: .
