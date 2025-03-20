@@ -1,8 +1,8 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"특정 영화 상세 정보 API 테스트","36","test_get_movie_details","src.tests.api_tests","Thu Mar 20 16:02:25 UTC 2025","failed","Thu Mar 20 16:02:25 UTC 2025","","test_tmdb_api","",""
-"영화 검색 테스트","97","test_search_movie","src.tests.api_tests","Thu Mar 20 16:02:25 UTC 2025","failed","Thu Mar 20 16:02:25 UTC 2025","","test_tmdb_api","",""
+"영화 검색 테스트","103","test_search_movie","src.tests.api_tests","Thu Mar 20 16:09:05 UTC 2025","failed","Thu Mar 20 16:09:05 UTC 2025","","test_tmdb_api","",""
 "
     일부러 실패하게 만드는 테스트
     - 올바르지 않은 요소 선택
     - 검색창이 없는 요소를 클릭 시도하여 실패 유발
-    ","11275","test_fail_screenshot","","Thu Mar 20 16:02:13 UTC 2025","failed","Thu Mar 20 16:02:25 UTC 2025","","","",""
+    ","11494","test_fail_screenshot","","Thu Mar 20 16:08:53 UTC 2025","failed","Thu Mar 20 16:09:04 UTC 2025","","","",""
+"특정 영화 상세 정보 API 테스트","29","test_get_movie_details","src.tests.api_tests","Thu Mar 20 16:09:05 UTC 2025","failed","Thu Mar 20 16:09:05 UTC 2025","","test_tmdb_api","",""
