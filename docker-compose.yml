@@ -1,9 +1,7 @@
-version: "3.8"
-
 services:
-  selenium:
-    image: selenium/standalone-chrome #selenium python 컨테이너 사용
-    container_name: selenium-container
+  selenium-hub:
+#    image: selenium/standalone-chrome #selenium python 컨테이너 사용
+    container_name: selenium-hub
     ports:
       - "4444:4444"
     shm_size: '4gb'
