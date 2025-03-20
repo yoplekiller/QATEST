@@ -52,7 +52,7 @@ def pytest_runtest_makereport(item):
             screenshot_path = os.path.join(screenshots_dir,f"{test_name}.png")
             driver.save_screenshot(screenshot_path)
 
-            allure.attach.file(screenshot_path, name="Failure Screenshot", attachment_type=allure.attachment_type.PNG)
+            allure.attach.file(screenshot_path, name="{test_name}_Failure_Screenshot", attachment_type=allure.attachment_type.PNG)
 
 
 
