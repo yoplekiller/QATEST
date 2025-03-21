@@ -1,40 +1,23 @@
+version: "3.8"
+
 services:
-  selenium-hub:
-    image: selenium/hub:4.6.0
-    container_name: selenium-hub
+  selenium:
+    image: selenium/standalone-chrome #selenium python 컨테이너 사용
+    container_name: selenium-container
     ports:
-      - "4444:4444"
+      - "5555:4444"
     shm_size: '4gb'
-
-  chrome:
-    image: selenium/node-chrome:4.6.0
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-
-  firefox:
-    image: selenium/node-firefox:4.6.0
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
   test-runner:
     build: .
 
     container_name: test-runner
     depends_on:
-      - selenium-hub
+      - selenium
     volumes:
       - .:/app
     working_dir: /app
     environment:
       - SELENIUM_REMOTE_URL=http://selenium:4444/wd/hub
-    command: >
+    command: |
       pytest src/tests/ui_tests --html=ui_test_report.html --self-contained-html && tail -f /dev/null
-      allure gnenrate allure-results -o allure-report --clean
