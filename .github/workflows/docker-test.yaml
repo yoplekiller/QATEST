@@ -66,8 +66,7 @@ jobs:
         run: echo $(date) > allure-report/timestamp.txt
 
 
-
-      - name: Upload HTML report to Github Pages #리포트 업로드
+      - name: Upload Allure report to Github Pages #리포트 업로드
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
