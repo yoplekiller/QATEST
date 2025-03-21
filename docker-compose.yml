@@ -1,5 +1,5 @@
 services:
-  selenium:
+  selenium-hub:
     image: selenium/hub:4.6.0
     container_name: selenium-hub
     ports:
@@ -18,7 +18,7 @@ services:
   firefox:
     image: selenium/node-firefox:4.6.0
     depends_on:
-       - selenium-hub
+      - selenium-hub
     environment:
       SE_EVENT_BUS_HOST: selenium-hub
       SE_EVENT_BUS_PUBLISH_PORT: 4442
@@ -31,10 +31,10 @@ services:
     container_name: test-runner
     depends_on:
       - selenium-hub
+    environment:
+      - SELENIUM_REMOTE_URL=http://selenium:4444/wd/hub
     volumes:
       - .:/app
     working_dir: /app
-    environment:
-      - SELENIUM_REMOTE_URL=http://selenium:4444/wd/hub
     command: |
       pytest src/tests/ui_tests --alluredir=allure-results && tail -f /dev/null
