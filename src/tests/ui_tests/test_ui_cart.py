@@ -7,10 +7,6 @@ from utils.utilites import capture_screenshot
 @allure.feature("UI 테스트")
 @allure.story("장바구니 화면 체크 테스트")
 def test_cart(driver):
-    """
-         장바구니 화면 체크 테스트
-         - 장바구니 버튼 클릭 시, 화면 진입 여부 확인
-    """
     try:
       cart_button = driver.find_element(By.XPATH,"//button[@class='css-g25h97 e14oy6dx1']")
       cart_button.click()
