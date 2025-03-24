@@ -40,7 +40,10 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t test-runner .   
+          docker build -t test-runner .
+
+      - name: Run Docker container
+        run: docker run -dit --name test-runner test-runner
 
       - name: Run Docker Selenium Tests
         run: |
