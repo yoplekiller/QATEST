@@ -9,7 +9,7 @@ RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearm
     && apt-get update && apt-get install -y google-chrome-stable
 
 # Selenium 및 WebDriver Manager 설치
-RUN pip install selenium pytest pytest-html webdriver-manager openpyxl
+RUN pip install selenium pytest pytest-html webdriver-manager openpyxl allure-pytest
 
 # 작업 디렉토리 설정
 WORKDIR /app
