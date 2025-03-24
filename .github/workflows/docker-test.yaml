@@ -61,6 +61,16 @@ jobs:
         if: always()
         run: docker compose down
 
+      - name: Install Allure CLI # Allure CLI 설치
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          wget https://github.com/allure-framework/allure2/releases/download/2.32.2/allure-2.32.2.tgz
+          tar -zxvf allure-2.32.2.tgz
+          sudo mv allure-2.32.2 /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+          allure --version
+
 
       - name: Generate Allure Report
         run: |
