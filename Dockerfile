@@ -18,5 +18,5 @@ WORKDIR /app
 COPY . /app
 
 # WebDriver Manager를 사용하여 ChromeDriver 자동 설치 후 실행
-CMD bash -c "pytest src/tests/ui_tests --alluredir=allure-results/docker || true"
+CMD bash -c "pytest src/tests/ui_tests --alluredir=allure-results/docker || true && tail -f /dev/null"
 
