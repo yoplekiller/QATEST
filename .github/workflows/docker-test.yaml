@@ -42,6 +42,9 @@ jobs:
         run: |
           docker build -t test-runner .
 
+      - name: Remove old container if exists
+        run: docker rm -f test-runner || true
+
       - name: Run Docker container
         run: docker run -dit --name test-runner test-runner
 
