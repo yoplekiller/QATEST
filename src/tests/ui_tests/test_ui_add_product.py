@@ -66,4 +66,5 @@ def test_add_product(driver):
 
     except Exception as e:
         capture_screenshot(driver,"테스트실패","screenshots_add_product")
+        driver.save_screenshot("kurly_debug.png")
         pytest.fail(f"❌ 상품 추가 테스트 실패: {str(e)}")
