@@ -16,7 +16,7 @@ def test_add_product(driver):
     try:
       driver.get("https://www.kurly.com/main")
       time.sleep(3)
-      search_box = driver.find_element(By.XPATH, "//input[@id='gnb_search']")
+      search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
       search_box.send_keys("과자")
       search_box.send_keys(Keys.RETURN)
       time.sleep(3)
@@ -25,7 +25,7 @@ def test_add_product(driver):
           add_button = driver.find_element(By.XPATH, "//a[3]//div[2]//button[1]")
           add_button.click()
       except Exception as e:
-          capture_screenshot(driver,"상품추가 실패","screenshot_add_product")
+          capture_screenshot(driver,"상품추가 g실패","screenshot_add_product")
           pytest.fail(f"❌ 상품 추가 버튼 클릭 실패: {str(e)}")
 
       try:
@@ -68,5 +68,4 @@ def test_add_product(driver):
 
     except Exception as e:
         capture_screenshot(driver,"테스트실패","screenshots_add_product")
-        driver.save_screenshot("kurly_debug.png")
         pytest.fail(f"❌ 상품 추가 테스트 실패: {str(e)}")
