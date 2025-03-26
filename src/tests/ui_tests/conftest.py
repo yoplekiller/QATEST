@@ -13,11 +13,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 def driver():
     chrome_options = Options()
 
-    chrome_options.add_argument("--headless")  # GUI없는 환경에서도 실행 가능
+    chrome_options.add_argument("--headless=new")  # GUI없는 환경에서도 실행 가능
     chrome_options.add_argument("--disable-dev-shm-usage") #메모리 부족 방지
     chrome_options.add_argument("--no-sandbox") #샌드박스 비활성화
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--remote-debugging-port=9222")
+    chrome_options.add_argument("--window-size=1920,1080")
 
 
     service_obj = Service(ChromeDriverManager().install())
