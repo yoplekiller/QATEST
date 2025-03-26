@@ -8,6 +8,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
+import datetime
 
 # 웹 실행
 @pytest.fixture(scope="module")
@@ -45,7 +46,8 @@ def pytest_runtest_makereport(item, call):
         if driver:
             screenshots_dir = "failed_screenshots"
             os.makedirs(screenshots_dir, exist_ok=True)
-            screenshot_path = os.path.join(screenshots_dir, f"{item.name}.png")
+            screenshot_name = f"{item.name}_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+            screenshot_path = os.path.join(screenshots_dir, screenshot_name)
             driver.save_screenshot(screenshot_path)
             allure.attach.file(screenshot_path, name="Failure Screenshot", attachment_type=allure.attachment_type.PNG)
 
