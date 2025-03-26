@@ -14,6 +14,8 @@ def test_add_product(driver):
        - 검색 후 상품 선택 후 카트에 추가 구현
        """
     try:
+      driver.get("https://www.kurly.com/main")
+      time.sleep(3)
       search_box = driver.find_element(By.XPATH, "//input[@id='gnb_search']")
       search_box.send_keys("과자")
       search_box.send_keys(Keys.RETURN)
