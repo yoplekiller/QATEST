@@ -26,17 +26,14 @@ def driver():
     driver = webdriver.Chrome(service=service_obj,options=chrome_options)
 
     driver.get("https://www.kurly.com/main")
-    try:
-        search_box = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//input[@id='gnb_search']"))
-        )
-        search_box.click()
-    except Exception as e:
-        driver.save_screenshot("debug_searchbox_fail.png")
-        raise e
-    yield driver   # 테스트 실행
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, "//input[@id='gnb_search']"))
+    )
 
-    driver.quit()  # 모든 테스트 완료 후 브라우저 종료s
+    driver.find_element(By.XPATH, "//input[@id='gnb_search']").click()
+    yield driver
+    driver.quit()
+
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
