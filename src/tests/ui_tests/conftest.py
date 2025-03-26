@@ -25,7 +25,6 @@ def driver():
     driver = webdriver.Chrome(service=service_obj,options=chrome_options)
 
     driver.get("https://www.kurly.com/main")
-    driver.maximize_window()
     driver.find_element(By.XPATH,"//input[@id='gnb_search']").click()
     driver.implicitly_wait(10)
 
@@ -43,11 +42,14 @@ def pytest_runtest_makereport(item, call):
         if driver:
             screenshots_dir = "failed_screenshots"
             os.makedirs(screenshots_dir, exist_ok=True)
+            screenshot_path = os.path.join(screenshots_dir, f"{item.name}.png")
+            driver.save_screenshot(screenshot_path)
+            allure.attach.file(screenshot_path, name="Failure Screenshot", attachment_type=allure.attachment_type.PNG)
 
-        screenshot_path = os.path.join(screenshots_dir, f"{item.name}.png")
 
-        driver.save_screenshot(screenshot_path)
-        allure.attach.file(screenshot_path, name="Failure Screenshot", attachment_type=allure.attachment_type.PNG)\
+
+
+
 
 
 
