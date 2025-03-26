@@ -1,11 +1,12 @@
 import os
-
+from selenium.webdriver.support import expected_conditions as EC
 import allure
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
 # 웹 실행
@@ -25,9 +26,14 @@ def driver():
     driver = webdriver.Chrome(service=service_obj,options=chrome_options)
 
     driver.get("https://www.kurly.com/main")
-    driver.find_element(By.XPATH,"//input[@id='gnb_search']").click()
-    driver.implicitly_wait(10)
-
+    try:
+        search_box = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, "//input[@id='gnb_search']"))
+        )
+        search_box.click()
+    except Exception as e:
+        driver.save_screenshot("debug_searchbox_fail.png")
+        raise e
     yield driver   # 테스트 실행
 
     driver.quit()  # 모든 테스트 완료 후 브라우저 종료s
