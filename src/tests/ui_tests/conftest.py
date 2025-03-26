@@ -32,19 +32,8 @@ def driver():
             });
         """
     })
-
-    driver.get("https://www.kurly.com/main")
-    WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.XPATH, "//input[@id='gnb_search']"))
-    )
-
-    driver.find_element(By.XPATH, "//input[@id='gnb_search']").click()
     yield driver
     driver.quit()
-
-
-
-
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
