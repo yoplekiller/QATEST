@@ -45,15 +45,8 @@ def pytest_runtest_makereport(item, call):
 
         screenshot_path = os.path.join(screenshots_dir, f"{item.name}.png")
 
-        try:
-            driver.save_screenshot(screenshot_path)
-            allure.attach.file(
-                screenshot_path,
-                name="Failure Screenshot",
-                attachment_type=allure.attachment_type.PNG
-            )
-        except Exception as e:
-            print(f"[WARNING] 스크린샷 저장 실패: {e}")
+        driver.save_screenshot(screenshot_path)
+        allure.attach.file(screenshot_path, name="Failure Screenshot", attachment_type=allure.attachment_type.PNG)\
 
 
 
