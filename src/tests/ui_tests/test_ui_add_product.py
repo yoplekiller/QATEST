@@ -24,6 +24,7 @@ def test_add_product(driver):
       try:
           add_button = driver.find_element(By.XPATH, "//a[3]//div[2]//button[1]")
           add_button.click()
+          time.sleep(3)
       except Exception as e:
           capture_screenshot(driver,"상품추가 g실패","screenshot_add_product")
           pytest.fail(f"❌ 상품 추가 버튼 클릭 실패: {str(e)}")

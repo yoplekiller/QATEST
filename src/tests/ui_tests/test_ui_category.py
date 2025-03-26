@@ -21,7 +21,7 @@ def test_category(driver):
           try:
               category_button = driver.find_element(By.XPATH,f"//a[contains(text(),'{category_name}')]")
               category_button.click()
-              time.sleep(2)
+              time.sleep(4)
               capture_screenshot(driver, screenshot_name, "screenshots_category")
           except Exception as e:
               capture_screenshot(driver,f"{screenshot_name}_실패","screenshots_category")
