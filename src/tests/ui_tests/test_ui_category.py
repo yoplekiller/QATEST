@@ -8,9 +8,12 @@ from utils.utilites import capture_screenshot
 @allure.feature("UI 테스트")
 @allure.story("카테고리 기능 테스트")
 def test_category(driver):
+    driver.get("https://www.kurly.com/main")
+    driver.maximize_window()
+
     try:
       #검색
-      search_box = driver.find_element(By.XPATH, "//input[@id='gnb_search']")
+      search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
       search_box.send_keys("제로콜라")
       search_box.send_keys(Keys.RETURN)
       time.sleep(2)

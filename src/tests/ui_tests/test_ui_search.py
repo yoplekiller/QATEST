@@ -14,8 +14,10 @@ search_cases = read_search_terms_from_excel(file_path)
 @pytest.mark.parametrize("tc_id, search_term", search_cases)
 def test_product_search(driver, tc_id, search_term):
     print(f"🔍 TC {tc_id}: '{search_term}' 검색 테스트 실행 중...")
+
+    driver.get("https://www.kurly.com/main")
     try:
-        search_box = driver.find_element(By.XPATH, "//input[@id='gnb_search']")
+        search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
         time.sleep(2)
         for _ in range(10):
             search_box.send_keys(Keys.BACKSPACE)

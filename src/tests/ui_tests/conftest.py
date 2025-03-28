@@ -22,14 +22,8 @@ def driver():
     service_obj = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service_obj,options=chrome_options)
 
-    driver.get("https://www.kurly.com/main")
-    driver.maximize_window()
-    driver.find_element(By.XPATH,"//input[@id='gnb_search']").click()
-    driver.implicitly_wait(10)
-
     yield driver   # 테스트 실행
-
-    driver.quit()  # 모든 테스트 완료 후 브라우저 종료s
+    driver.quit()  # 모든 테스트 완료 후 브라우저 종료
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
@@ -53,6 +47,7 @@ def pytest_runtest_makereport(item, call):
             )
         except Exception as e:
             print(f"[WARNING] 스크린샷 저장 실패: {e}")
+
 
 
 

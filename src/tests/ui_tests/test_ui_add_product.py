@@ -13,8 +13,11 @@ def test_add_product(driver):
        - 수량올리기, 수량내리기 기능 구현
        - 검색 후 상품 선택 후 카트에 추가 구현
        """
+    driver.get("https://www.kurly.com/main")
+    driver.maximize_window()
+
     try:
-      search_box = driver.find_element(By.XPATH, "//input[@id='gnb_search']")
+      search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
       search_box.send_keys("과자")
       search_box.send_keys(Keys.RETURN)
       time.sleep(3)
