@@ -27,6 +27,7 @@ def test_login(driver):
         login_password_input.send_keys('1232133123')
         login_submit_button.click()
         time.sleep(3)
+
     except Exception as e:
         capture_screenshot(driver, "로그인", "screenshots_login")
         pytest.fail(f"❌ 로그인 실패 :{str(e)}")
