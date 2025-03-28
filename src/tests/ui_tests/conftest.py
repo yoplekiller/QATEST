@@ -1,38 +1,35 @@
 import os
-import datetime
 import allure
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-
+from selenium.webdriver.common.by import By
+from selenium.webdriver.ie.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-
+# 웹 실행
 @pytest.fixture(scope="module")
 def driver():
-    options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--window-size=1920,1080")
-    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+    chrome_options = Options()
 
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=options)
+    chrome_options.add_argument("--disable-dev-shm-usage") #메모리 부족 방지
+    chrome_options.add_argument("--no-sandbox") #샌드박스 비활성화
+    chrome_options.add_argument("--headless=new") #GUI없는 환경에서도 실행 가능
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--remote-debugging-port=9222")
 
-    # ✅ webdriver 감지 우회 (CDP 명령어)
-    driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
-        "source": """
-            Object.defineProperty(navigator, 'webdriver', {
-                get: () => undefined
-            });
-        """
-    })
-    yield driver
-    driver.quit()
+
+    service_obj = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service_obj,options=chrome_options)
+
+    driver.get("https://www.kurly.com/main")
+    driver.maximize_window()
+    driver.find_element(By.XPATH,"//input[@id='gnb_search']").click()
+    driver.implicitly_wait(10)
+
+    yield driver   # 테스트 실행
+
+    driver.quit()  # 모든 테스트 완료 후 브라우저 종료s
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
@@ -44,7 +41,20 @@ def pytest_runtest_makereport(item, call):
         if driver:
             screenshots_dir = "failed_screenshots"
             os.makedirs(screenshots_dir, exist_ok=True)
-            screenshot_name = f"{item.name}_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
-            screenshot_path = os.path.join(screenshots_dir, screenshot_name)
+
+        screenshot_path = os.path.join(screenshots_dir, f"{item.name}.png")
+
+        try:
             driver.save_screenshot(screenshot_path)
-            allure.attach.file(screenshot_path, name="Failure Screenshot", attachment_type=allure.attachment_type.PNG)
+            allure.attach.file(
+                screenshot_path,
+                name="Failure Screenshot",
+                attachment_type=allure.attachment_type.PNG
+            )
+        except Exception as e:
+            print(f"[WARNING] 스크린샷 저장 실패: {e}")
+
+
+
+
+
