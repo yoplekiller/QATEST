@@ -40,6 +40,9 @@ jobs:
           python -m venv venv
           venv/bin/python -m pip install -r requirements.txt allure-pytest
 
+      - name: Clean previous Allure results # 기존 allure-results 삭제
+        run: rm -rf allure-results || true
+
 
       - name: Install Allure CLI # Allure CLI 설치
         run: |
@@ -63,7 +66,7 @@ jobs:
 
 
       - name: Clean previous Allure results # 기존 allure-results 삭제
-        run: rm -rf allure-results/selenium allure-report || true
+        run: rm -rf allure-results allure-report || true
 
       - name: Set API Key Environment Variable
         run: echo "TMDB_API_KEY=${{ secrets.TMDB_API_KEY }}" >> $GITHUB_ENV
@@ -71,8 +74,14 @@ jobs:
 
       - name: Run Selenium Tests # 테스트 실행
         run: |
-          mkdir -p allure-results/selenium
-          venv/bin/python -m pytest src/tests/ui_tests --alluredir=allure-results/selenium
+          mkdir -p allure-results
+          venv/bin/python -m pytest src/tests/ui_tests --alluredir=allure-results
+        continue-on-error: true
+
+
+      - name: Run API Tests
+        run: |
+          venv/bin/python -m pytest src/tests/api_tests --alluredir=allure-results
         continue-on-error: true
 
 
@@ -85,13 +94,13 @@ jobs:
       - name: Generate Allure Report
         run: |
           mkdir -p allure-report
-          allure generate allure-results/selenium -o allure-report --clean || echo "❌ Allure report 생성 실패!"
+          allure generate allure-results -o allure-report --clean || echo "❌ Allure report 생성 실패!"
           mkdir -p allure-report/history
           ls -al allure-report || echo "❌ allure-report 폴더가 없습니다!"
           
 
       - name: Debug Allure Results  # 테스트 결과 확인
-        run: ls -al allure-results/selenium || echo "❌ allure-results 디렉토리가 없습니다!"
+        run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!"
 
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
