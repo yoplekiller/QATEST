@@ -13,10 +13,17 @@ on:
 
 concurrency:             #동시에 여러 개의 배포 실행 방지
   group: gh-pages-deploy
-  cancel-in-progress: true
+  cancel-in-progress: false
+
 jobs:
   docker-tests:
     runs-on: ubuntu-latest
+    services:
+      selenium-hub:
+        image: selenium/hub:4.6.0
+        ports:
+          - 4444:4444
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -33,33 +40,68 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t test-runner .    
+          docker build -t test-runner .
+
+      - name: Remove old container if exists
+        run: docker rm -f test-runner || true
+
+      - name: Run Docker container
+        run: |
+          docker run -dit \
+            --name test-runner \
+            -v ${{ github.workspace}}/allure-results/docker:/app/allure-results \
+            -e TMDB_API_KEY=${{ secrets.TMDB_API_KEY }} \
+            test-runner
+
+      - name: Run Docker Selenium Tests
+        run: |
+          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results || true
+
+      - name: Run API Tests
+        run: |
+          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results || true
+
+      - name: Debug allure-results contents
+        run: ls -R allure-results/docker || echo "❌ No Allure results found"
 
       - name: Capture start time
         id: start-time
         run: echo "start=$(date +%s)" >> $GITHUB_ENV
 
-      - name: Run Selenium Tests
-        run: docker run --memory=6g --shm-size=4g test-runner pytest src/tests/ui_tests --html=docker_report.html --self-contained-html
-        continue-on-error: true
 
       - name: Stop and Remove Containers
         if: always()
         run: docker compose down
 
-      - name: Capture end time and calculate duration #수행시간
-        id: test-duration
+      - name: Install Allure CLI # Allure CLI 설치
         run: |
-          end=$(date +%s)
-          duration=$((end - ${{ env.start }}))
-          echo "time=${duration}초" >> $GITHUB_ENV    
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          wget https://github.com/allure-framework/allure2/releases/download/2.32.2/allure-2.32.2.tgz
+          tar -zxvf allure-2.32.2.tgz
+          sudo mv allure-2.32.2 /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+          allure --version
 
-      - name: Upload HTML report to Github Pages #리포트 업로드
+
+      - name: Generate Allure Report
+        run: |
+          mkdir -p allure-report/docker
+          allure generate allure-results/docker -o allure-report/docker --clean || echo "❌ Report 생성 실패"
+
+
+      - name: Force Update GitHub Pages
+        run: echo $(date) > allure-report/timestamp.txt
+
+
+      - name: Upload Allure report to Github Pages #리포트 업로드
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: . #현재 디렉토리 내의 모든 파일을 업로드
+          publish_dir: allure-report/docker
+          destination_dir: docker
           keep_files: true #기존파일 유지
+
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
@@ -70,7 +112,7 @@ jobs:
           SLACK_TITLE: "✅ Docker Test 완료"
           SLACK_MESSAGE: |
             *📢 Docker Test 테스트가 끝났습니다!*
-            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/docker_report..html>
+            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/docker/index.html>
           SLACK_COLOR: "#36a64f"
 
       - name: Check available memory

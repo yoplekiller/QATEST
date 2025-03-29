@@ -7,6 +7,9 @@ from utils.utilites import capture_screenshot
 @allure.feature("UI 테스트")
 @allure.story("로그인 테스트")
 def test_login(driver):
+    driver.get("https://www.kurly.com/main")
+    driver.maximize_window()
+
     try:
         driver.get("https://www.kurly.com/main")
         time.sleep(2)

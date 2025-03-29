@@ -13,18 +13,28 @@ def test_add_product(driver):
        - 수량올리기, 수량내리기 기능 구현
        - 검색 후 상품 선택 후 카트에 추가 구현
        """
+    driver.get("https://www.kurly.com/main")
+    driver.maximize_window()
+
     try:
+<<<<<<< HEAD
       driver.get("https://www.kurly.com/main")
       time.sleep(3)
+=======
+>>>>>>> develop
       search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
       search_box.send_keys("과자")
       search_box.send_keys(Keys.RETURN)
-      time.sleep(3)
+      time.sleep(4)
 
       try:
           add_button = driver.find_element(By.XPATH, "//a[3]//div[2]//button[1]")
           add_button.click()
+<<<<<<< HEAD
           time.sleep(3)
+=======
+          time.sleep(4)
+>>>>>>> develop
       except Exception as e:
           capture_screenshot(driver,"상품추가 g실패","screenshot_add_product")
           pytest.fail(f"❌ 상품 추가 버튼 클릭 실패: {str(e)}")
@@ -33,7 +43,7 @@ def test_add_product(driver):
           quantity_up_button = driver.find_element(By.XPATH, "//button[@aria-label='수량올리기']")
           for _ in range(2):
               quantity_up_button.click()
-          time.sleep(2)
+          time.sleep(4)
       except Exception as e:
           capture_screenshot(driver,"수량올리기 실패","screenshot_add_product")
           pytest.fail(f"❌ 수량 올리기 실패: {str(e)}")
@@ -42,7 +52,7 @@ def test_add_product(driver):
           quantity_down_button = driver.find_element(By.XPATH, "//button[@aria-label='수량내리기']")
           for _ in range(2):
               quantity_down_button.click()
-          time.sleep(2)
+          time.sleep(4)
       except Exception as e:
           capture_screenshot(driver,"수량내리기 실패","screenshot_add_product")
           pytest.fail(f"❌ 수량 내리기 실패: {str(e)}")
@@ -50,7 +60,7 @@ def test_add_product(driver):
       try:
           cart_add_button = driver.find_element(By.XPATH, "//button[@class='css-ahkst0 e4nu7ef3']")
           cart_add_button.click()
-          time.sleep(2)
+          time.sleep(4)
       except Exception as e:
           capture_screenshot(driver, "상품 추가", "screenshots_add_product")
           pytest.fail(f"❌ 상품 추가 실패: {str(e)}")
