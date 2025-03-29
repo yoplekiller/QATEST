@@ -7,9 +7,11 @@ from utils.utilites import capture_screenshot
 @allure.feature("UI 테스트")
 @allure.story("로그인 테스트")
 def test_login(driver):
+    driver.get("https://www.kurly.com/main")
+    driver.maximize_window()
+
     try:
-        driver.get("https://www.kurly.com/main")
-        time.sleep(2)
+        # 로그인 버튼 클릭
         login_button = driver.find_element(By.XPATH, "//a[contains(text(),'로그인')]")
         login_button.click()
         time.sleep(2)
