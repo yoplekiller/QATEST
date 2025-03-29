@@ -50,12 +50,8 @@ jobs:
           docker run -dit \
             --name test-runner \
             -v ${{ github.workspace}}/allure-results/docker:/app/allure-results \
+            -e TMDB_API_KEY=${{ secrets.TMDB_API_KEY }} \
             test-runner
-          
-
-      - name: Set API Key Environment Variable
-        run: echo "TMDB_API_KEY=${{ secrets.TMDB_API_KEY }}" >> $GITHUB_ENV
-
 
       - name: Run Docker Selenium Tests
         run: |
