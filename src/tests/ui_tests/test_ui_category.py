@@ -12,12 +12,10 @@ def test_category(driver):
     driver.maximize_window()
 
     try:
-<<<<<<< HEAD
       driver.get("https://www.kurly.com/main")
       time.sleep(4)
-=======
+
       #검색
->>>>>>> develop
       search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
       search_box.send_keys("제로콜라")
       search_box.send_keys(Keys.RETURN)
@@ -53,56 +51,6 @@ def test_category(driver):
                       attachment_type=allure.attachment_type.PNG)
         pytest.fail(f"❌ 카테고리 테스트 실패: {str(e)}")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #카테고리별 버튼
-    category_button = driver.find_element(By.XPATH,"//a[contains(text(),'추천순')]")
-    category_button.click()
-    time.sleep(2)
-    capture_screenshot(driver,"추천순","screenshots_category")
-
-
-    category_button = driver.find_element(By.XPATH, "//a[contains(text(),'낮은 가격순')]")
-    category_button.click()
-    time.sleep(2)
-    capture_screenshot(driver, "낮은가격순", "screenshots_category")
-
-
-    category_button = driver.find_element(By.XPATH, "//a[contains(text(),'높은 가격순')]")
-    category_button.click()
-    time.sleep(2)
-    capture_screenshot(driver, "높은가격순", "screenshots_category")
-
-
-    category_button = driver.find_element(By.XPATH, "//a[contains(text(),'판매량순')]")
-    category_button.click()
-    time.sleep(2)
-    capture_screenshot(driver, "판매량순", "screenshots_category")
-
-
-    category_button = driver.find_element(By.XPATH, "//a[contains(text(),'혜택순')]")
-    category_button.click()
-    time.sleep(2)
-    capture_screenshot(driver, "혜택순", "screenshots_category")
-
-
-    category_button = driver.find_element(By.XPATH, "//a[contains(text(),'신상품순')]")
-    category_button.click()
-    time.sleep(2)
-    capture_screenshot(driver, "신상품순", "screenshots_category")
 
 
 
