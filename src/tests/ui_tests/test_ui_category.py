@@ -8,11 +8,9 @@ from utils.utilites import capture_screenshot
 @allure.feature("UI 테스트")
 @allure.story("카테고리 기능 테스트")
 def test_category(driver):
-    driver.get("https://www.kurly.com/main")
-    driver.maximize_window()
-
     try:
-      #검색
+      driver.get("https://www.kurly.com/main")
+      time.sleep(4)
       search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
       search_box.send_keys("제로콜라")
       search_box.send_keys(Keys.RETURN)
@@ -23,7 +21,7 @@ def test_category(driver):
           try:
               category_button = driver.find_element(By.XPATH,f"//a[contains(text(),'{category_name}')]")
               category_button.click()
-              time.sleep(2)
+              time.sleep(4)
               capture_screenshot(driver, screenshot_name, "screenshots_category")
           except Exception as e:
               capture_screenshot(driver,f"{screenshot_name}_실패","screenshots_category")
