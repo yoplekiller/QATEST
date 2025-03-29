@@ -48,13 +48,22 @@ jobs:
       - name: Run Docker container
         run: |
           docker run -dit \
-          --name test-runner test-runner \
-          -v ${{ github.workspace}}/allure-results/docker:/app/allure-results \
-          test-runner
+            --name test-runner test-runner \
+            -v ${{ github.workspace}}/allure-results/docker:/app/allure-results \
+            test-runner
+          
+
+      - name: Set API Key Environment Variable
+        run: echo "TMDB_API_KEY=${{ secrets.TMDB_API_KEY }}" >> $GITHUB_ENV
+
 
       - name: Run Docker Selenium Tests
         run: |
           docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results || true
+
+      - name: Run API Tests
+        run: |
+          venv/bin/python -m pytest src/tests/api_tests --alluredir=/app/allure-results || true
 
       - name: Debug allure-results contents
         run: ls -R allure-results/docker || echo "❌ No Allure results found"
