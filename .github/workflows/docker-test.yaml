@@ -63,7 +63,7 @@ jobs:
 
       - name: Run API Tests
         run: |
-          venv/bin/python -m pytest src/tests/api_tests --alluredir=/app/allure-results || true
+          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results || true
 
       - name: Debug allure-results contents
         run: ls -R allure-results/docker || echo "❌ No Allure results found"

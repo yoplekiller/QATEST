@@ -8,7 +8,7 @@ from selenium.webdriver.ie.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 # 웹 실행
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="function")
 def driver():
     chrome_options = Options()
 
