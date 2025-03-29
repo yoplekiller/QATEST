@@ -7,6 +7,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.ie.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
+# CI 환경 감지 (GitHub Actions, Docker 등)
+IS_CI = os.getenv("GITHUB_ACTIONS") == "true" or os.getenv("CI") == "true"
+
 # 웹 실행
 @pytest.fixture(scope="function")
 def driver():
@@ -18,8 +21,11 @@ def driver():
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--remote-debugging-port=9222")
 
+    if IS_CI:
+        service_obj = Service(ChromeDriverManager(cache_valid_range=0).install())
+    else:
+        service_obj = Service(ChromeDriverManager().install())
 
-    service_obj = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service_obj,options=chrome_options)
 
     yield driver   # 테스트 실행
