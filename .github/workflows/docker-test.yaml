@@ -48,7 +48,7 @@ jobs:
       - name: Run Docker container
         run: |
           docker run -dit \
-            --name test-runner test-runner \
+            --name test-runner \
             -v ${{ github.workspace}}/allure-results/docker:/app/allure-results \
             test-runner
           
