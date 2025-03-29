@@ -1,4 +1,6 @@
 import os
+import shutil
+
 import allure
 import pytest
 from selenium import webdriver
@@ -22,10 +24,11 @@ def driver():
     chrome_options.add_argument("--remote-debugging-port=9222")
 
     if IS_CI:
-        service_obj = Service(ChromeDriverManager(cache_valid_range=0).install())
-    else:
-        service_obj = Service(ChromeDriverManager().install())
+        cache_dir = os.path.expanduser("~/.wdm")
+        if os.path.exists(cache_dir):
+            shutil.rmtree(cache_dir)
 
+    service_obj = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service_obj,options=chrome_options)
 
     yield driver   # 테스트 실행
