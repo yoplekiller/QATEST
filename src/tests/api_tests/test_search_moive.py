@@ -7,7 +7,7 @@ load_dotenv()
 API_KEY = os.getenv("TMDB_API_KEY")
 BASE_URL = "https://api.themoviedb.org/3"
 
-@allure.feature("API 테스트")
+@allure.feature("영화 목록")
 @allure.story("영화 검색 API 테스트")
 def test_search_movie():
     """영화 검색 테스트"""
