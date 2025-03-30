@@ -2,11 +2,17 @@ import os
 import json
 import pandas as pd
 import requests
+from datetime import datetime
 
+#Allure 결과 경로
 ALLURE_RESULT_DIR = "allure-results/docker"
 
-data = []
+#날짜 기반 파일명 생성
+now_str = datetime.now().strftime("%Y-%m-%d-%H-%M")
+execl_filename = f"test-report_{now_str}.xlsx"
 
+
+data = []
 for file_name in os.listdir(ALLURE_RESULT_DIR):
     if file_name.endswith("-result.json"):
         with open(os.path.join(ALLURE_RESULT_DIR, file_name), "r", encoding="utf-8") as f:
@@ -23,7 +29,7 @@ for file_name in os.listdir(ALLURE_RESULT_DIR):
             })
 
 df = pd.DataFrame(data)
-df.to_excel("test-report.xlsx", index=False)
+df.to_excel(execl_filename, index=False)
 print("report 파일 생성 완료")
 
 SLACK_WEBHOOK = os.getenv("SLACK_WEBHOOK_URL")
@@ -33,7 +39,6 @@ with open("test-report.xlsx", "rb") as file:
         files={"file": file},
         data={"filename": "test-report.xlsx", "channels": "#qa"}
     )
-
 if response.status_code == 200:
     print("✅ Slack 업로드 완료!")
 else:
