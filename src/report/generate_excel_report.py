@@ -27,11 +27,6 @@ for file_name in os.listdir(ALLURE_RESULT_DIR):
             time = result.get("time", {}).get("duration", 0) / 1000
             message = result.get("statusDetails", {}).get("message", "")
 
-            print("🔥 파일:", file_name)
-            print("    name:", name)
-            print("    status:", status)
-            print("    duration:", time)
-
             data.append({
                 "테스트 이름": name,
                 "상태": status,

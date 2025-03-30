@@ -124,6 +124,12 @@ jobs:
       - name: Debug Allure Results  # 테스트 결과 확인
         run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!"
 
+      - name: Upload Excel Report as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: excel-test-report
+          path: test-report_*.xlsx
+
 
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
