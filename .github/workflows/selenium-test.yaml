@@ -91,10 +91,11 @@ jobs:
 
       - name: 🧹 Remove Heavy Allure Attachments
         run: |
-          find allure-results -name "*-attachment.png" -delete
-          find allure-results -name "*-attachment.txt" -delete
-          find allure-results -name "*-container.json" -delete
-  
+          echo "🧹 스크린샷 및 컨테이너 파일 삭제 중..."
+          find allure-results -type f \( -iname "*.png" -o -iname "*-attachment.txt" -o -iname "*-container.json" \) -exec rm -f {} +
+
+      - name: Check Allure 디렉토리 사이즈
+        run: du -sh allure-results || echo "❌ 디렉토리 없음"
 
       - name: Clone gh-pages
         run: |
