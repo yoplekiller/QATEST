@@ -64,6 +64,12 @@ jobs:
       - name: Debug allure-results contents
         run: ls -R allure-results/docker || echo "❌ No Allure results found"
 
+      - name: 🧹 Remove Heavy Allure Attachments
+        run: |
+          find allure-results -name "*-attachment.png" -delete
+          find allure-results -name "*-attachment.txt" -delete
+          find allure-results -name "*-container.json" -delete
+
       - name: Capture start time
         id: start-time
         run: echo "start=$(date +%s)" >> $GITHUB_ENV

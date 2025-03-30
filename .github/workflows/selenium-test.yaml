@@ -89,6 +89,13 @@ jobs:
            echo "🧾 allure-results 디렉토리 내용:"
            ls -al allure-results || echo '❌ 결과 파일 없음!'
 
+      - name: 🧹 Remove Heavy Allure Attachments
+        run: |
+          find allure-results -name "*-attachment.png" -delete
+          find allure-results -name "*-attachment.txt" -delete
+          find allure-results -name "*-container.json" -delete
+  
+
       - name: Clone gh-pages
         run: |
           git fetch origin gh-pages
