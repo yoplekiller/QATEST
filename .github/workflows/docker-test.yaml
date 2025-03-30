@@ -94,7 +94,7 @@ jobs:
         run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
 
       - name: Generate Excel Report and Upload to Slack
-        run: python report/excel_and_slack.py
+        run: python src/report/generate_excel_report.py
 
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
