@@ -27,11 +27,6 @@ for file_name in os.listdir(ALLURE_RESULT_DIR):
             time = result.get("time", {}).get("duration", 0) / 1000
             message = result.get("statusDetails", {}).get("message", "")
 
-            print("🔥 파일:", file_name)
-            print("    name:", name)
-            print("    status:", status)
-            print("    duration:", time)
-
             data.append({
                 "테스트 이름": name,
                 "상태": status,
@@ -46,7 +41,7 @@ if not data:
 # Excel 저장
 df = pd.DataFrame(data)
 df.to_excel(excel_filename, index=False)
-print(f"✅ 엑셀 리포트 저장 완료: {excel_filename}")
+
 
 # Slack 업로드
 SLACK_WEBHOOK = os.getenv("SLACK_WEBHOOK_URL")
@@ -57,7 +52,7 @@ if SLACK_WEBHOOK:
             files={"file": file},
             data={
                 "filename": excel_filename,
-                "channels": "#qa",
+                "channels": "qa-report",
                 "initial_comment": f"📊 *자동화 테스트 리포트 업로드 완료!* ({now_str})\n총 {len(df)}건의 테스트 결과가 포함되어 있습니다."
             }
         )
