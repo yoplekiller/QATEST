@@ -4,14 +4,19 @@ import pandas as pd
 import requests
 from datetime import datetime
 
-#Allure 결과 경로
+# Allure 결과 경로
 ALLURE_RESULT_DIR = "allure-results"
 
-#날짜 기반 파일명 생성
-now_str = datetime.now().strftime("%Y-%m-%d-%H-%M")
-execl_filename = f"test-report_{now_str}.xlsx"
+# 디렉토리 존재 확인
+if not os.path.exists(ALLURE_RESULT_DIR):
+    print(f"❌ Allure 결과 디렉토리 없음: {ALLURE_RESULT_DIR}")
+    exit(1)
 
+# 날짜 기반 파일명 생성
+now_str = datetime.now().strftime("%Y-%m-%d_%H-%M")
+excel_filename = f"test-report_{now_str}.xlsx"
 
+# 테스트 결과 파싱
 data = []
 for file_name in os.listdir(ALLURE_RESULT_DIR):
     if file_name.endswith("-result.json"):
@@ -28,9 +33,14 @@ for file_name in os.listdir(ALLURE_RESULT_DIR):
                 "실패 메시지": message
             })
 
+if not data:
+    print("⚠️ 테스트 결과가 없습니다. Excel 리포트 생성을 건너뜁니다.")
+    exit(0)
+
+# Excel 저장
 df = pd.DataFrame(data)
-df.to_excel(execl_filename, index=False)
-print("report 파일 생성 완료")
+df.to_excel(excel_filename, index=False)
+print(f"✅ 엑셀 리포트 저장 완료: {excel_filename}")
 
 # Slack 업로드
 SLACK_WEBHOOK = os.getenv("SLACK_WEBHOOK_URL")
