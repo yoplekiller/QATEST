@@ -5,7 +5,7 @@ import requests
 from datetime import datetime
 
 #Allure 결과 경로
-ALLURE_RESULT_DIR = "allure-results/docker"
+ALLURE_RESULT_DIR = "allure-results"
 
 #날짜 기반 파일명 생성
 now_str = datetime.now().strftime("%Y-%m-%d-%H-%M")
