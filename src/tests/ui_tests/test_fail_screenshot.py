@@ -11,8 +11,8 @@ def test_fail_screenshot(driver):
     - 검색창이 없는 요소를 클릭 시도하여 실패 유발
     """
     driver.get("https://www.kurly.com/main")
-    try:
 
+    try:
         driver.find_element(By.XPATH, "//input[@id='wrong_search_id']").click()
     except Exception:
         driver.save_screenshot("unexpected_result.png")

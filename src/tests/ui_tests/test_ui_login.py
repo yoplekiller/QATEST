@@ -11,8 +11,7 @@ def test_login(driver):
     driver.maximize_window()
 
     try:
-        driver.get("https://www.kurly.com/main")
-        time.sleep(2)
+        # 로그인 버튼 클릭
         login_button = driver.find_element(By.XPATH, "//a[contains(text(),'로그인')]")
         login_button.click()
         time.sleep(2)
@@ -30,7 +29,6 @@ def test_login(driver):
         login_password_input.send_keys('1232133123')
         login_submit_button.click()
         time.sleep(3)
-
     except Exception as e:
         capture_screenshot(driver, "로그인", "screenshots_login")
         pytest.fail(f"❌ 로그인 실패 :{str(e)}")
