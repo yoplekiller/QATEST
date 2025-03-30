@@ -4,8 +4,9 @@ import pytest
 from selenium.webdriver.common.by import By
 from utils.utilites import capture_screenshot
 
-@allure.feature("UI 테스트")
-@allure.story("로그인 테스트")
+@allure.feature("예외 케이스")
+@allure.story("잘못된 ID,PW 입력")
+@allure.title("잘못된 ID,PW 입력 시 화면 확인")
 def test_login(driver):
     driver.get("https://www.kurly.com/main")
     driver.maximize_window()
