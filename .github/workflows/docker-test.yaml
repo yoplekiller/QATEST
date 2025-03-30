@@ -55,11 +55,11 @@ jobs:
 
       - name: Run Docker Selenium Tests
         run: |
-          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results || true
+          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --capture=tee-sys -v || true 
 
       - name: Run API Tests
         run: |
-          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results || true
+          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --capture=tee-sys -v || true
 
       - name: Debug allure-results contents
         run: ls -R allure-results/docker || echo "❌ No Allure results found"
