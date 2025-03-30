@@ -93,6 +93,10 @@ jobs:
       - name: Set Slack Webhook Env
         run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
 
+      - name: Install Python Dependencies for Excel Report
+        run: |
+          pip install pandas openpyxl requests
+
       - name: Generate Excel Report and Upload to Slack
         run: python src/report/generate_excel_report.py
 
