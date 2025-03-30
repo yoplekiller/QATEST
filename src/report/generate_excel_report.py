@@ -32,14 +32,23 @@ df = pd.DataFrame(data)
 df.to_excel(execl_filename, index=False)
 print("report 파일 생성 완료")
 
+# Slack 업로드
 SLACK_WEBHOOK = os.getenv("SLACK_WEBHOOK_URL")
-with open("test-report.xlsx", "rb") as file:
-    response = requests.post(
-        url=SLACK_WEBHOOK,
-        files={"file": file},
-        data={"filename": "test-report.xlsx", "channels": "#qa"}
-    )
-if response.status_code == 200:
-    print("✅ Slack 업로드 완료!")
+if SLACK_WEBHOOK:
+    with open(excel_filename, "rb") as file:
+        response = requests.post(
+            url=SLACK_WEBHOOK,
+            files={"file": file},
+            data={
+                "filename": excel_filename,
+                "channels": "#qa",
+                "initial_comment": f"📊 *자동화 테스트 리포트 업로드 완료!* ({now_str})\n총 {len(df)}건의 테스트 결과가 포함되어 있습니다."
+            }
+        )
+
+    if response.status_code == 200:
+        print("✅ Slack 업로드 완료!")
+    else:
+        print(f"❌ Slack 업로드 실패! 상태 코드: {response.status_code}")
 else:
-    print(f"❌ Slack 업로드 실패! 상태 코드: {response.status_code}")
+    print("❌ SLACK_WEBHOOK_URL 환경변수가 설정되어 있지 않습니다.")
