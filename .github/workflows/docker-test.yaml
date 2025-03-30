@@ -107,7 +107,7 @@ jobs:
         run: python src/report/generate_excel_report.py
 
       - name: Upload Excel Report as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: excel-test-report
           path: test-report_*.xlsx

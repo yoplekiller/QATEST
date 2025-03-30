@@ -125,7 +125,7 @@ jobs:
         run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!"
 
       - name: Upload Excel Report as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: excel-test-report
           path: test-report_*.xlsx

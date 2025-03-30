@@ -41,7 +41,7 @@ if not data:
 # Excel 저장
 df = pd.DataFrame(data)
 df.to_excel(excel_filename, index=False)
-print(f"✅ 엑셀 리포트 저장 완료: {excel_filename}")
+
 
 # Slack 업로드
 SLACK_WEBHOOK = os.getenv("SLACK_WEBHOOK_URL")
