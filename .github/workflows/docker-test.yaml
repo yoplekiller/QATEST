@@ -73,6 +73,7 @@ jobs:
         if: always()
         run: docker compose down
 
+
       - name: Install Allure CLI # Allure CLI 설치
         run: |
           sudo apt-get update
@@ -89,6 +90,11 @@ jobs:
           mkdir -p allure-report/docker
           allure generate allure-results/docker -o allure-report/docker --clean || echo "❌ Report 생성 실패"
 
+      - name: Set Slack Webhook Env
+        run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
+
+      - name: Generate Excel Report and Upload to Slack
+        run: python report/excel_and_slack.py
 
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
