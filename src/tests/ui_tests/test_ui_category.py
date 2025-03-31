@@ -7,6 +7,7 @@ from utils.utilites import capture_screenshot
 
 @allure.feature("UI 테스트")
 @allure.story("카테고리 기능 테스트")
+@allure.title("상품 검색 후 카테고리 버튼들이 동작 하는지 확인")
 def test_category(driver):
     driver.get("https://www.kurly.com/main")
     driver.maximize_window()

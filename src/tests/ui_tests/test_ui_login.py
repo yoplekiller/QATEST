@@ -6,7 +6,7 @@ from utils.utilites import capture_screenshot
 
 @allure.feature("예외 케이스")
 @allure.story("잘못된 ID,PW 입력")
-@allure.title("잘못된 ID,PW 입력 시 화면 확인")
+@allure.title("잘못된 ID,PW 입력 시 로그인이 실패하는지 확인")
 def test_login(driver):
     driver.get("https://www.kurly.com/main")
     driver.maximize_window()
