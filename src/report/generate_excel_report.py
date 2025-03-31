@@ -4,6 +4,8 @@ import pandas as pd
 import requests
 from datetime import datetime
 
+from openpyxl.reader.excel import load_workbook
+
 # Allure 결과 경로
 ALLURE_RESULT_DIR = "allure-results"
 
@@ -33,6 +35,7 @@ for file_name in os.listdir(ALLURE_RESULT_DIR):
                 "소요 시간 (초)": round(time, 2),
                 "실패 메시지": message
             })
+            data.sort(key=lambda x: x["테스트 이름"])
 
 if not data:
     print("⚠️ 테스트 결과가 없습니다. Excel 리포트 생성을 건너뜁니다.")
@@ -41,6 +44,23 @@ if not data:
 # Excel 저장
 df = pd.DataFrame(data)
 df.to_excel(excel_filename, index=False)
+
+
+wb = load_workbook(excel_filename)
+ws = wb.active
+
+for col in ws.colums:
+    max_length = 0
+    column = col[0].column_letter
+    for cell in col:
+        try:
+            max_length = max(max_length, len(str(cell.value)))
+        except:
+            pass
+        ws.column_dimensions[column].width = max_length + 2
+
+wb.save(excel_filename)
+
 
 
 # Slack 업로드
