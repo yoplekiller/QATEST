@@ -7,6 +7,7 @@ from utils.utilites import capture_screenshot
 
 @allure.feature("UI 테스트")
 @allure.story("상품 추가 테스트")
+@allure.title("상품 상세 화면의 UI 기능들이 동작 하는지 확인")
 def test_add_product(driver):
     """
        상품을 검색 후 추가하는 테스트
