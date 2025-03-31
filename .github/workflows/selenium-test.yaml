@@ -128,7 +128,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: excel-test-report
-          path: test-report_*.xlsx
+          path: '**/test-report_*.xlsx'
 
 
       - name: Force Update GitHub Pages
