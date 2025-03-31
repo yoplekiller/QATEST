@@ -52,7 +52,7 @@ if SLACK_WEBHOOK:
             files={"file": file},
             data={
                 "filename": excel_filename,
-                "channels": "qa-report",
+                "channels": "#qa-report",
                 "initial_comment": f"📊 *자동화 테스트 리포트 업로드 완료!* ({now_str})\n총 {len(df)}건의 테스트 결과가 포함되어 있습니다."
             }
         )
