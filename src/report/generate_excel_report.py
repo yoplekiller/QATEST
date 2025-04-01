@@ -42,10 +42,31 @@ for file_name in os.listdir(ALLURE_RESULT_DIR):
 if not data:
     print("⚠️ 테스트 결과가 없습니다. Excel 리포트 생성을 건너뜁니다.")
     exit(0)
+#요약 통계 계산 파트
+pass_count = sum(1 for i in data if i["상태"] == "PASSED")
+fail_count = sum(1 for i in data if i["상태"] == "FAILED")
+skip_count = sum(1 for i in data if i["상태"] == "SKIPPED")
+total = len(data)
+success_rate = round((pass_count / total) * 100, 2)
+total_duration = round(sum(i["소요 시간 (초)"] for i in data), 2)
+
+summary_data = [{
+    "전체 테스트": total,
+    "성공": pass_count,
+    "실패": fail_count,
+    "스킵": skip_count,
+    "성공률 (%)": success_rate,
+    "총 소요 시간 (초)": total_duration
+}]
+summary_df = pd.DataFrame(summary_data)
+
+
 
 # Excel 저장
 df = pd.DataFrame(data)
-df.to_excel(excel_filename, index=False)
+with pd.ExcelWriter(excel_filename, engine="openpyxl") as writer:
+    summary_df.to_excel(writer, sheet_name="요약 통계", index=False)
+    df.to_excel(writer, sheet_name="테스트 상세", index=False)
 
 
 wb = load_workbook(excel_filename)
