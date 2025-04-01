@@ -154,5 +154,5 @@ jobs:
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
             *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
-            *📊 [Excel 리포트 다운로드]* :<https://yoplekiller.github.io/QATEST/actions/runs/14177780422>
+            *📊 <https://github.com/yoplekiller/QATEST/actions/runs/14177780422|Excel 리포트 다운로드>
           SLACK_COLOR: "#36a64f"
