@@ -144,10 +144,7 @@ jobs:
           keep_files: true
 
       - name: Set Slack Message
-        run: |
-          echo "SLACK_MESSAGE=*📢 Selenium UI 테스트가 끝났습니다!*" >> $GITHUB_ENV
-          echo "*📄 Allure Report*: <https://yoplekiller.github.io/QATEST/allure-report/index.html>" >> $GITHUB_ENV
-          echo "*📊 Excel 리포트 다운로드*: <https://github.com/yoplekiller/QATEST/actions/runs/${{ github.run_id }}>" >> $GITHUB_ENV
+        run:
 
 
       - name: Send Slack Notification # Slack 알람
@@ -157,5 +154,8 @@ jobs:
           SLACK_USERNAME: "GitHub Actions"
           SLACK_ICON_EMOJI: ":robot_face:"
           SLACK_TITLE: "✅ Selenium & API Test 완료"
-          SLACK_MESSAGE: ${{ env.SLACK_MESSAGE }}
+          SLACK_MESSAGE: |
+            *📢 Selenium UI 테스트가 끝났습니다!*
+            *📄 Allure Report*: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
+            *📊 Excel 리포트 다운로드*: <https://github.com/yoplekiller/QATEST/actions/runs/${{ github.run_id }}>
           SLACK_COLOR: "#36a64f"
