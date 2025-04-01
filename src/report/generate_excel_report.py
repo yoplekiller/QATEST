@@ -34,7 +34,7 @@ for file_name in os.listdir(ALLURE_RESULT_DIR):
             data.append({
                 "테스트 이름": name,
                 "상태": status,
-                "소요 시간 (초)": round(duration, 2),
+                "소요 시간 (초)": round(duration, 3),
                 "실패 메시지": message
             })
             data.sort(key=lambda x: x["테스트 이름"])
