@@ -3,7 +3,6 @@ import json
 import pandas as pd
 import requests
 from datetime import datetime
-
 from openpyxl.reader.excel import load_workbook
 
 # Allure 결과 경로
@@ -78,7 +77,7 @@ for sheet in wb.worksheets:  # ✅ 모든 시트에 대해 반복
         for cell in column_cells:
             if cell.value:
                 max_length = max(max_length, len(str(cell.value)))
-        sheet.column_dimensions[col_letter].width = max_length + 2
+        sheet.column_dimensions[col_letter].width = max_length + 5
 
 wb.save(excel_filename)
 
