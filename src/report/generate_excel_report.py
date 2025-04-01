@@ -49,7 +49,7 @@ df.to_excel(excel_filename, index=False)
 wb = load_workbook(excel_filename)
 ws = wb.active
 
-for col in ws.colums:
+for col in ws.columns:
     max_length = 0
     column = col[0].column_letter
     for cell in col:
