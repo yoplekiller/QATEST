@@ -11,6 +11,7 @@ BASE_URL = "https://api.themoviedb.org/3"
 @allure.feature("영화 목록")
 @allure.story("인기 영화 조회")
 @allure.title("인기 영화 목록 조회 - 200 응답 확인")
+
 def test_get_popular_movies():
     params = {
         "api_key": API_KEY
