@@ -55,14 +55,20 @@ jobs:
 
       - name: Run Docker Selenium Tests
         run: |
-          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results || true
+          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --capture=tee-sys -v || true 
 
       - name: Run API Tests
         run: |
-          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results || true
+          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --capture=tee-sys -v || true
 
       - name: Debug allure-results contents
         run: ls -R allure-results/docker || echo "❌ No Allure results found"
+
+      - name: 🧹 Remove Heavy Allure Attachments
+        run: |
+          find allure-results -name "*-attachment.png" -delete
+          find allure-results -name "*-attachment.txt" -delete
+          find allure-results -name "*-container.json" -delete
 
       - name: Capture start time
         id: start-time
@@ -72,6 +78,7 @@ jobs:
       - name: Stop and Remove Containers
         if: always()
         run: docker compose down
+
 
       - name: Install Allure CLI # Allure CLI 설치
         run: |
@@ -89,6 +96,21 @@ jobs:
           mkdir -p allure-report/docker
           allure generate allure-results/docker -o allure-report/docker --clean || echo "❌ Report 생성 실패"
 
+      - name: Set Slack Webhook Env
+        run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
+
+      - name: Install Python Dependencies for Excel Report
+        run: |
+          pip install pandas openpyxl requests
+
+      - name: Generate Excel Report and Upload to Slack
+        run: python src/report/generate_excel_report.py
+
+      - name: Upload Excel Report as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: excel-test-report
+          path: '**/test-report_*.xlsx'
 
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt

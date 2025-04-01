@@ -9,6 +9,7 @@ from utils.utilites import capture_screenshot
 
 @allure.feature("UI 테스트")
 @allure.story("장바구니 화면 체크 테스트")
+@allure.title("장바구니 버튼이 동작 하는지 확인")
 def test_cart(driver):
 
     driver.get("https://www.kurly.com/main")

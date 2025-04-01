@@ -11,6 +11,7 @@ search_cases = read_search_terms_from_excel(file_path)
 
 @allure.feature("UI 테스트")
 @allure.story("상품 검색 테스트")
+@allure.title("입력된 상품명으로 검색 시 검색되는지 확인" )
 @pytest.mark.parametrize("tc_id, search_term", search_cases)
 def test_product_search(driver, tc_id, search_term):
     driver.get("https://www.kurly.com/main")

@@ -3,7 +3,8 @@ import allure
 from selenium.webdriver.common.by import By
 
 @allure.feature("UI 테스트")
-@allure.story("검색창 실패 테스트")
+@allure.story("검색창 FAILED 테스트")
+@allure.title("FAILED 기능 동작 하는지 확인")
 def test_fail_screenshot(driver):
     """
     일부러 실패하게 만드는 테스트
