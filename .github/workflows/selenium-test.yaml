@@ -143,9 +143,6 @@ jobs:
           publish_dir: .
           keep_files: true
 
-      - name: Set Slack Message
-        run:
-
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
