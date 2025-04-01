@@ -143,6 +143,11 @@ jobs:
           publish_dir: .
           keep_files: true
 
+      - name: Set Slack Webhook Env
+        run: |
+          echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
+          echo "GITHUB_RUN_ID=${{ github.run_id }}" >> $GITHUB_ENV
+
 
       - name: Send Slack Notification # Slack 알람
         uses: rtCamp/action-slack-notify@v2
@@ -154,5 +159,5 @@ jobs:
           SLACK_MESSAGE: |
             *📢 Selenium UI 테스트가 끝났습니다!*
             *📄 Allure Report *: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
-            *📊 <https://github.com/yoplekiller/QATEST/actions/runs/14177780422|Excel 리포트 다운로드>
+            *📊 <https://github.com/yoplekiller/QATEST/actions/runs/{run_id}|Excel 리포트 다운로드>
           SLACK_COLOR: "#36a64f"
