@@ -3,8 +3,6 @@ import json
 import pandas as pd
 import requests
 from datetime import datetime
-
-import sheet
 from openpyxl.reader.excel import load_workbook
 
 # Allure 결과 경로
