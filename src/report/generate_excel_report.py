@@ -70,15 +70,15 @@ with pd.ExcelWriter(excel_filename, engine="openpyxl") as writer:
 
 
 wb = load_workbook(excel_filename)
-ws = wb.active
 
-for column_cells in ws.columns:
-    max_length = 0
-    column_letter  = column_cells[0].column_letter
-    for cell in column_cells:
-        if cell.value:
-            max_length = max(max_length, len(str(cell.value)))
-        ws.column_dimensions[column_letter].width = max_length + 2
+for sheet in wb.worksheets:  # ✅ 모든 시트에 대해 반복
+    for column_cells in sheet.columns:
+        max_length = 0
+        col_letter = column_cells[0].column_letter
+        for cell in column_cells:
+            if cell.value:
+                max_length = max(max_length, len(str(cell.value)))
+        sheet.column_dimensions[col_letter].width = max_length + 2
 
 wb.save(excel_filename)
 
