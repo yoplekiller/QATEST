@@ -26,13 +26,15 @@ for file_name in os.listdir(ALLURE_RESULT_DIR):
             result = json.load(f)
             name = result.get("name", "No Name")
             status = result.get("status", "unknown").upper()
-            time = result.get("time", {}).get("duration", 0) / 1000
+            start = result.get("time", {}).get("start", 0)
+            stop = result.get("time", {}).get("stop", 0)
+            duration = (stop - start) / 1000
             message = result.get("statusDetails", {}).get("message", "")
 
             data.append({
                 "테스트 이름": name,
                 "상태": status,
-                "소요 시간 (초)": round(time, 2),
+                "소요 시간 (초)": round(duration, 2),
                 "실패 메시지": message
             })
             data.sort(key=lambda x: x["테스트 이름"])
@@ -49,15 +51,13 @@ df.to_excel(excel_filename, index=False)
 wb = load_workbook(excel_filename)
 ws = wb.active
 
-for col in ws.columns:
+for column_cells in ws.columns:
     max_length = 0
-    column = col[0].column_letter
-    for cell in col:
-        try:
+    column_letter  = column_cells[0].column_letter
+    for cell in column_cells:
+        if cell.value:
             max_length = max(max_length, len(str(cell.value)))
-        except:
-            pass
-        ws.column_dimensions[column].width = max_length + 2
+        ws.column_dimensions[column_letter].width = max_length + 2
 
 wb.save(excel_filename)
 
