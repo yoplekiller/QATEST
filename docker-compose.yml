@@ -38,7 +38,10 @@ services:
 
 
   test-runner:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mycompany/test-runner:latest
     container_name: test-runner
     depends_on:
       - selenium-hub
