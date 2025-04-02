@@ -1,28 +1,28 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","8384","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 08:37:00 UTC 2025","passed","Wed Apr 02 08:37:08 UTC 2025","","test_ui_search","",""
-"","8650","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 08:36:26 UTC 2025","passed","Wed Apr 02 08:36:35 UTC 2025","","test_ui_search","",""
-"
-       상품을 검색 후 추가하는 테스트
-       - 수량올리기, 수량내리기 기능 구현
-       - 검색 후 상품 선택 후 카트에 추가 구현
-       ","23835","상품 상세 화면의 UI 기능들이 동작 하는지 확인","src.tests.ui_tests","Wed Apr 02 08:34:46 UTC 2025","passed","Wed Apr 02 08:35:10 UTC 2025","","test_ui_add_product","",""
-"","210","인기 영화 목록 조회 - 200 응답 확인","src.tests.api_tests","Wed Apr 02 08:37:34 UTC 2025","passed","Wed Apr 02 08:37:35 UTC 2025","","test_popular_movie","",""
-"","8512","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 08:37:25 UTC 2025","passed","Wed Apr 02 08:37:34 UTC 2025","","test_ui_search","",""
-"","8619","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 08:36:35 UTC 2025","passed","Wed Apr 02 08:36:43 UTC 2025","","test_ui_search","",""
-"","8193","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 08:36:43 UTC 2025","passed","Wed Apr 02 08:36:51 UTC 2025","","test_ui_search","",""
-"","7613","장바구니 버튼이 동작 하는지 확인","src.tests.ui_tests","Wed Apr 02 08:35:11 UTC 2025","passed","Wed Apr 02 08:35:19 UTC 2025","","test_ui_cart","",""
-"","33","API 키가 잘못되었을 때 401 Unauthorized 확인","src.tests.api_tests","Wed Apr 02 08:37:34 UTC 2025","passed","Wed Apr 02 08:37:34 UTC 2025","","test_moive_invalid_api_key","",""
-"","38703","상품 검색 후 카테고리 버튼들이 동작 하는지 확인","src.tests.ui_tests","Wed Apr 02 08:35:19 UTC 2025","passed","Wed Apr 02 08:35:58 UTC 2025","","test_ui_category","",""
-"","10091","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 08:36:08 UTC 2025","passed","Wed Apr 02 08:36:18 UTC 2025","","test_ui_search","",""
-"","7960","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 08:36:18 UTC 2025","passed","Wed Apr 02 08:36:26 UTC 2025","","test_ui_search","",""
-"","7776","잘못된 ID,PW 입력 시 로그인이 실패하는지 확인","src.tests.ui_tests","Wed Apr 02 08:35:59 UTC 2025","failed","Wed Apr 02 08:36:07 UTC 2025","","test_ui_login","",""
+"","9830","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 16:35:12 UTC 2025","passed","Wed Apr 02 16:35:22 UTC 2025","","test_ui_search","",""
+"","9768","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 16:36:10 UTC 2025","passed","Wed Apr 02 16:36:20 UTC 2025","","test_ui_search","",""
 "
     일부러 실패하게 만드는 테스트
     - 올바르지 않은 요소 선택
     - 검색창이 없는 요소를 클릭 시도하여 실패 유발
-    ","7416","FAILED 기능 동작 하는지 확인","src.tests.ui_tests","Wed Apr 02 08:34:38 UTC 2025","failed","Wed Apr 02 08:34:45 UTC 2025","","test_fail_screenshot","",""
-"영화 검색 테스트","50","영화 검색 기능이 잘 동작 하는지 확인","src.tests.api_tests","Wed Apr 02 08:37:35 UTC 2025","passed","Wed Apr 02 08:37:35 UTC 2025","","test_search_moive","",""
-"","8764","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 08:37:08 UTC 2025","passed","Wed Apr 02 08:37:17 UTC 2025","","test_ui_search","",""
-"","8443","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 08:36:51 UTC 2025","passed","Wed Apr 02 08:37:00 UTC 2025","","test_ui_search","",""
-"특정 영화 상세 정보 API 테스트","191","영화 상세 정보 노출 되는지 확인","src.tests.api_tests","Wed Apr 02 08:37:34 UTC 2025","passed","Wed Apr 02 08:37:34 UTC 2025","","test_moive_details","",""
-"","8142","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 08:37:17 UTC 2025","passed","Wed Apr 02 08:37:25 UTC 2025","","test_ui_search","",""
+    ","4361","FAILED 기능 동작 하는지 확인","src.tests.ui_tests","Wed Apr 02 16:33:46 UTC 2025","failed","Wed Apr 02 16:33:50 UTC 2025","","test_fail_screenshot","",""
+"","7382","장바구니 버튼이 동작 하는지 확인","src.tests.ui_tests","Wed Apr 02 16:34:15 UTC 2025","passed","Wed Apr 02 16:34:23 UTC 2025","","test_ui_cart","",""
+"","8020","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 16:36:20 UTC 2025","passed","Wed Apr 02 16:36:28 UTC 2025","","test_ui_search","",""
+"","8179","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 16:36:28 UTC 2025","passed","Wed Apr 02 16:36:36 UTC 2025","","test_ui_search","",""
+"","8267","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 16:35:30 UTC 2025","passed","Wed Apr 02 16:35:38 UTC 2025","","test_ui_search","",""
+"","104","인기 영화 목록 조회 - 200 응답 확인","src.tests.api_tests","Wed Apr 02 16:36:37 UTC 2025","passed","Wed Apr 02 16:36:37 UTC 2025","","test_popular_movie","",""
+"","7899","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 16:36:02 UTC 2025","passed","Wed Apr 02 16:36:10 UTC 2025","","test_ui_search","",""
+"","7877","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 16:35:55 UTC 2025","passed","Wed Apr 02 16:36:02 UTC 2025","","test_ui_search","",""
+"","8291","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 16:35:38 UTC 2025","passed","Wed Apr 02 16:35:46 UTC 2025","","test_ui_search","",""
+"영화 검색 테스트","101","영화 검색 기능이 잘 동작 하는지 확인","src.tests.api_tests","Wed Apr 02 16:36:37 UTC 2025","passed","Wed Apr 02 16:36:37 UTC 2025","","test_search_moive","",""
+"
+       상품을 검색 후 추가하는 테스트
+       - 수량올리기, 수량내리기 기능 구현
+       - 검색 후 상품 선택 후 카트에 추가 구현
+       ","23442","상품 상세 화면의 UI 기능들이 동작 하는지 확인","src.tests.ui_tests","Wed Apr 02 16:33:51 UTC 2025","passed","Wed Apr 02 16:34:14 UTC 2025","","test_ui_add_product","",""
+"","95","API 키가 잘못되었을 때 401 Unauthorized 확인","src.tests.api_tests","Wed Apr 02 16:36:37 UTC 2025","passed","Wed Apr 02 16:36:37 UTC 2025","","test_moive_invalid_api_key","",""
+"","8162","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 16:35:22 UTC 2025","passed","Wed Apr 02 16:35:30 UTC 2025","","test_ui_search","",""
+"","7977","잘못된 ID,PW 입력 시 로그인이 실패하는지 확인","src.tests.ui_tests","Wed Apr 02 16:35:03 UTC 2025","failed","Wed Apr 02 16:35:11 UTC 2025","","test_ui_login","",""
+"","8062","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Wed Apr 02 16:35:46 UTC 2025","passed","Wed Apr 02 16:35:55 UTC 2025","","test_ui_search","",""
+"","38796","상품 검색 후 카테고리 버튼들이 동작 하는지 확인","src.tests.ui_tests","Wed Apr 02 16:34:23 UTC 2025","passed","Wed Apr 02 16:35:02 UTC 2025","","test_ui_category","",""
+"특정 영화 상세 정보 API 테스트","109","영화 상세 정보 노출 되는지 확인","src.tests.api_tests","Wed Apr 02 16:36:37 UTC 2025","passed","Wed Apr 02 16:36:37 UTC 2025","","test_moive_details","",""
