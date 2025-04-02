@@ -1,75 +1,52 @@
-# 🛠 Selenium & API Test Automation  
-GitHub Actions 기반의 자동화 테스트 프로젝트  
+# QA 자동화 포트폴리오 프로젝트
 
-## 📌 프로젝트 개요  
-이 프로젝트는 **Selenium을 활용한 UI 자동화 테스트 및 GitHub Actions 기반의 CI/CD 파이프라인 구축**을 목표로 진행 중인 프로젝트 입니다.  
-현재 **API 테스트 및 Allure Report 개선 작업, 테스트 결과를 Excel에 자동 업데이트 하는 작업을 진행 중**이며, 지속적으로 업데이트될 예정입니다.  
+## 📌 프로젝트 개요
+- 반복적인 수동 테스트를 자동화하기 위해 Python 기반으로 구현한 QA테스트 자동화 포트폴리오입니다.
+- 실제 웹 서비스(마켓컬리)를 대상으로 Selenium 테스트를 수행하였고,
+- 별도의 영화 홈페이지(https://www.themoviedb.org/) API를 활용한 테스트 자동화도 포함하였습니다.
+- 테스트 결과는 Excel파일로 저장되며, Slack으로 자동 보고됩니다.
 
-## 🚀 기술 스택  
-- **언어:** Python  
-- **테스트 프레임워크:** pytest  
-- **UI 자동화:** Selenium WebDriver  
-- **CI/CD:** GitHub Actions  
-- **테스트 리포트:** Allure Report
-- **API 테스트:** pytest & requests (현재 개발 진행 중)  
-- **결과 자동 업데이트:** Excel
-- **환경 구성:** Docker & Local
+## 🧩 프로젝트 구성
+### 1. 마켓컬리 웹 테스트(Selenium)
+- 상품 검색, 상품 추가, 상품 카테고리 버튼, 장바구니 버튼, 실패 케이스, 로그인 실패케이스 구현
+- 주요 테스트 포인트: UI 요소 정상 작동, XPath 접근, 상품 정보 확인
 
-## 🏗 주요 기능  
-### **UI 자동화 테스트 (Selenium)**  
-- Selenium을 활용하여 웹 애플리케이션의 주요 기능을 자동화  
-- GitHub Actions에서 자동 실행하여 테스트 안정성 확보  
-- 실패 Case 만들어 실패 시 스크린샷 저장 및 Allure Report 생성 (현재 일부 개선 작업 진행 중)
-- 엑셀의 상품 목록과 테스트 연동시켜 코드 간소화
+### 2. 영화 API 테스트
+- TMDB 또는 유사한 무료 영화 API 기반
+- 영화 정보 검색, 장르별 분류, 상세 조회 등 다양한 GET 요청 검증
+- 상태 코드, 응답 시간, 필수 데이터 키 확인 등 포함
 
-### **CI/CD 파이프라인 (GitHub Actions)**  
-- `push` 및 `pull request` 발생 시 자동으로 테스트 실행  
-- 일정 주기로 (`cron`) 테스트 실행하여 반복 테스트 진행  
-- 테스트 결과를 GitHub Pages와 Slack을 통해 Report 배포
+## 🔧 사용 기술
+- Python 3
+- Selenium (웹 자동화)
+- requests (API 테스트)
+- openpyxl (Excel 리포트 자동 저장)
+- Slack Webhook (알림 자동화)
+- Docker / Docker Compose (환경 통합)
+- GitHub Actions (CI 연동)
 
-### **API 테스트**  
-- pytest & request 기반 API 테스트 실행
-- TMDB 사이트 API_KEY를 활용하여 API 테스트 진행
-- API 테스트 케이스 추가 예정
+## ✅ 주요 기능
+- 테스트 결과를 Excel로 정리
+- 테스트 완료 시 Slack으로 자동 전송
+- Docker로 통합 실행 환경 구성
 
-### **Allure Report**  
-- 테스트 결과를 시각화하여 GitHub Pages에 자동 배포  
-- UI & API 테스트 리포트를 통합하여 확인 가능하도록 개선 예정(현재 UI 테스트 리포트만 업로드 중)
+## 🧪 테스트 시나리오 예시
 
-### **결과 자동 업데이트(현재 개발 중)**
-- 테스트 결과를 Excel에 자동으로 업데이트 하는 기능(현재 개발 중)
+### 🛒 마켓컬리
+- [✔] 상품 검색 후 장바구니 추가 → 장바구니 페이지 이동 확인
+- [✔] 잘못된 로그인 시도 → 오류 메시지 노출 여부 확인
+- [✔] 상품 카테고리 버튼 클릭 → 해당 상품 리스트 노출 확인
+
+### 🎬 영화 API
+- [✔] 특정 장르로 영화 검색 → 응답 내 영화 데이터 확인
+- [✔] 영화 상세 정보 요청 → 제목, 평점, 개봉일 등의 필드 확인
+- [✔] 요청 처리 시간 2초 이하인지 확인
+
+## 🔮 TODO
+- 더 다양한 실패 케이스 및 엣지 케이스 테스트 케이스 추가 예정
+- API 테스트에 POST/PUT 등 다양한 요청 방식 테스트 확장
 
 
-
-
-
-## 🛠 실행 방법  
-### **로컬에서 실행**  
-```bash
-# 가상환경 생성 및 활성화
-python -m venv venv
-source venv/bin/activate  # (Windows 사용자는 venv\Scripts\activate)
-
-# 의존성 설치
-venv/bin/python -m pip install -r requirements.txt allure-pytest
-
-# Selenium UI 테스트 실행
-pytest src/tests/ui_tests --alluredir=allure-results
-
-# API 테스트 실행 (추가 예정)
-pytest src/tests/api_tests --alluredir=allure-results/api
-
-# Allure Report 생성 및 실행
-allure generate allure-results -o allure-report --clean
-allure open allure-report
-```
-### **Docker환경에서 실행**
-````
-# Docker 컨테이너 빌드 및 실행
-docker-compose up --build -d
-
-#실행 중인 컨테이너 내부에서 테스트 실행
-docker exec -it selenium-container pytest src/tests/ui_tests --alluredir=/allure-results/docker
-
-# 테스트 결과 확인 후 Docker 종료
-docker-compose down
+## 📨 Contact
+- GitHub: [yoplekiller](https://github.com/yoplekiller)
+- Email: jmlim9244@gmail.com/jmlim9244@naver.com
