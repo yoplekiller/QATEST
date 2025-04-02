@@ -14,7 +14,8 @@ on:
 concurrency:             #동시에 여러 개의 배포 실행 방지
   group: gh-pages-deploy
   cancel-in-progress: false
-
+volumes:
+  - ./allure-results:/zap/allure-results
 jobs:
   docker-tests:
     runs-on: ubuntu-latest
@@ -27,6 +28,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+
 
       - name: Install Docker & Docker Compose
         run: |
@@ -63,6 +65,9 @@ jobs:
 
       - name: Debug allure-results contents
         run: ls -R allure-results/docker || echo "❌ No Allure results found"
+
+      - name: Set proper permissions
+        run: sudo chmod -R 777 allure-results || true
 
       - name: 🧹 Remove Heavy Allure Attachments
         run: |
