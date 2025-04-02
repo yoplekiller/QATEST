@@ -16,6 +16,8 @@ services:
       -config api.disablekey=true
       -config api.addrs.addr.regex=true
       -config api.addrs.addr.name=.*
+    volumes:
+      - ./allure-results:/zap/allure-results
 
   chrome:
     image: selenium/node-chrome:4.6.0
