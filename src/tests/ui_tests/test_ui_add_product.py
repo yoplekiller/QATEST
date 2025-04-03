@@ -8,7 +8,6 @@ from utils.utilites import capture_screenshot
 @allure.feature("UI 테스트")
 @allure.story("상품 추가 테스트")
 @allure.title("상품 상세 화면의 UI 기능들이 동작 하는지 확인")
-@pytest.mark.parametrize("browser", ["chrome", "firefox", "edge"])
 def test_add_product(driver):
     """
        상품을 검색 후 추가하는 테스트
@@ -19,6 +18,8 @@ def test_add_product(driver):
     driver.maximize_window()
 
     try:
+      driver.get("https://www.kurly.com/main")
+
       search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
       search_box.send_keys("과자")
       search_box.send_keys(Keys.RETURN)
@@ -28,8 +29,9 @@ def test_add_product(driver):
           add_button = driver.find_element(By.XPATH, "//a[3]//div[2]//button[1]")
           add_button.click()
           time.sleep(4)
+
       except Exception as e:
-          capture_screenshot(driver,"상품추가 실패","screenshot_add_product")
+          capture_screenshot(driver,"상품추가 g실패","screenshot_add_product")
           pytest.fail(f"❌ 상품 추가 버튼 클릭 실패: {str(e)}")
 
       try:
