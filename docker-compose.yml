@@ -12,10 +12,12 @@ services:
     ports:
       - "9092:8080"
     command: >
-      zap.sh -daemon -host 0.0.0.0 -port 8080
-      -config api.disablekey=true
-      -config api.addrs.addr.regex=true
-      -config api.addrs.addr.name=.*
+      zap.sh -cmd -quickurl http://test-target-site.com
+        -quickout /zap/allure-results/zap-report.html
+        -quickprogress
+        -config api.disablekey=true
+        -config api.addrs.addr.regex=true
+        -config api.addrs.addr.name=.*
     volumes:
       - ./allure-results:/zap/allure-results
 
