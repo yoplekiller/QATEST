@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 @allure.feature("UI 테스트")
 @allure.story("검색창 FAILED 테스트")
 @allure.title("FAILED 기능 동작 하는지 확인")
-@pytest.mark.parametrize("browser", ["chrome", "firefox", "edge"])
 def test_fail_screenshot(driver):
     """
     일부러 실패하게 만드는 테스트
@@ -13,8 +12,8 @@ def test_fail_screenshot(driver):
     - 검색창이 없는 요소를 클릭 시도하여 실패 유발
     """
     driver.get("https://www.kurly.com/main")
-
     try:
+
         driver.find_element(By.XPATH, "//input[@id='wrong_search_id']").click()
     except Exception:
         driver.save_screenshot("unexpected_result.png")
