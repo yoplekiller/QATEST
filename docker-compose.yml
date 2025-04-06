@@ -5,21 +5,6 @@ services:
     ports:
       - "5555:4444"
     shm_size: '4gb'
-  zap:
-    depends_on:
-      - selenium-hub
-    image: ghcr.io/zaproxy/zaproxy
-    ports:
-      - "9092:8080"
-    command: >
-      zap.sh -cmd -quickurl http://test-target-site.com
-        -quickout /zap/allure-results/zap-report.html
-        -quickprogress
-        -config api.disablekey=true
-        -config api.addrs.addr.regex=true
-        -config api.addrs.addr.name=.*
-    volumes:
-      - ./allure-results:/zap/allure-results
 
   chrome:
     image: selenium/node-chrome:4.6.0
@@ -42,10 +27,7 @@ services:
 
 
   test-runner:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: mycompany/test-runner:latest
+    build: .
     container_name: test-runner
     depends_on:
       - selenium-hub
