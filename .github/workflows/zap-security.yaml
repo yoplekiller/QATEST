@@ -1,7 +1,7 @@
 name: Zap Security Scan
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 jobs:
   zap:
