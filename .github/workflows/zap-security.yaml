@@ -15,7 +15,7 @@ jobs:
             -r zap_report.html \
             -J zap_report.json \
             -m 5 \
-            -z "-config api.addrs.addr.regex-true -config api.addrs.addr.name=.*"
+            -z "-config api.addrs.addr.regex=true -config api.addrs.addr.name=.*"
       - name: Upload Zap Report
         uses: actions/upload-artifact@v4
         with:
