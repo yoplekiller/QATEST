@@ -1,5 +1,4 @@
 name: Selenium Test Automation
-
 on:
   push:
     branches:
