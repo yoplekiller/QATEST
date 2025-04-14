@@ -1,0 +1,11 @@
+#PyCharm 세팅파일 무시
+.idea/
+
+#기타 자주 무시하는 파일 예시
+
+__pycahce__/
+*.pyc
+*.log
+.env
+.vscode/
+.DS_Store
