@@ -49,6 +49,7 @@ services:
       - "9090:8080"
     volumes:
       - ./zap-results:/zap/wrk
+    restart: no
     command: >
       zap-baseline.py
       -t http://demo-server:5000
