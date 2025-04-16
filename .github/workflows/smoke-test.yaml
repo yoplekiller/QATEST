@@ -19,5 +19,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Install Allure plugin
+        run: pip install allure-pytest
+
       - name: Run Smoke Tests
         run: pytest src/tests/smoke_tests/ --alluredir=reports/allure-results
