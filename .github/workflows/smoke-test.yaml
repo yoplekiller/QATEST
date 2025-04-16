@@ -1,27 +1,18 @@
-name: Market Kurly Smoke Test
-
+name: Smoke Test
 on:
   pull_request:
-    branches:
-      - main
-      - develop
+    branches: [ main, develop ]
 
 jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      # 파이썬 설치
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-
-      # 호환성 설치
       - name: Install dependencies
         run: pip install -r requirements.txt
-
-      # 스모크 테스트
       - name: Run Smoke Tests
-        run: pytest tests/smoke_tests/ --alluredir=reports/allure-results
+        run: pytest tests/smoke/ --alluredir=reports/allure-results
