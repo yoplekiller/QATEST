@@ -1,20 +1,16 @@
 name: Selenium Test Automation
 on:
-  push:
-    branches:
-      - main
-      - develop
-      - develop-non-docker
-      - feature/selenium-only
   pull_request:
     branches:
       - main
       - develop
-      - develop-non-docker
-      - feature/selenium-only
+  push:
+    branches:
+      - feature/*
+      - temp/*
   workflow_dispatch:
-  schedule:
-    - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
+#  schedule:
+#    - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
 
 concurrency:  # 동시에 여러 개의 배포 실행 방지
   group: gh-pages-deploy
