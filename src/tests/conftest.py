@@ -8,6 +8,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
+from utils.utilites import capture_screenshot
+
 # ✅ CI 환경 감지 (GitHub Actions, Docker)
 IS_CI = os.getenv("GITHUB_ACTIONS") == "true" or os.getenv("CI") == "true"
 
@@ -51,13 +53,9 @@ def pytest_runtest_makereport(item, call):
     if report.when == "call" and report.failed:
         driver = item.funcargs.get("driver")
         if driver:
-            screenshots_dir = "failed_screenshots"
-            os.makedirs(screenshots_dir, exist_ok=True)
-            screenshot_name = f"{item.name}_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
-            screenshot_path = os.path.join(screenshots_dir, screenshot_name)
-            driver.save_screenshot(screenshot_path)
-            allure.attach.file(
-                screenshot_path,
-                name="Failure Screenshot",
-                attachment_type=allure.attachment_type.PNG
+            capture_screenshot(
+                driver,
+                test_case_name=item,
+                base_path="failed_screenshots",
+                attach_to_allure=True
             )
