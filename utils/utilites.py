@@ -19,7 +19,7 @@ def capture_screenshot(driver, test_case_name, base_path ="screenshots", headles
     test_folder = os.path.join(base_path, safe_test_name)
     os.makedirs(test_folder, exist_ok=True)
 
-    #파일명 생d S성
+    #파일명 생성
     file_name = f"{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
     file_path = os.path.join(test_folder, file_name)
 
