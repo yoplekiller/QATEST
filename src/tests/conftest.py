@@ -7,7 +7,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-
 from utils.utilites import capture_screenshot
 
 # ✅ CI 환경 감지 (GitHub Actions, Docker)
@@ -55,7 +54,7 @@ def pytest_runtest_makereport(item, call):
         if driver:
             capture_screenshot(
                 driver,
-                test_case_name=item,
+                test_case_name=item.name,
                 base_path="failed_screenshots",
                 attach_to_allure=True
             )
