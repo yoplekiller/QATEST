@@ -15,9 +15,7 @@ if not os.path.exists(ALLURE_RESULT_DIR):
 
 # 날짜 기반 파일명 생성
 now_str = datetime.now().strftime("%Y-%m-%d_%H-%M")
-output_dir = "result/reports"
-os.makedirs(output_dir, exist_ok=True)
-excel_filename = os.path.join(output_dir, f"test-report_{now_str}.xlsx")
+excel_filename = f"test-report_{now_str}.xlsx"
 
 # 테스트 결과 파싱
 data = []
