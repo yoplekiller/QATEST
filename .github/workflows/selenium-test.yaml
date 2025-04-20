@@ -112,6 +112,11 @@ jobs:
           mkdir -p allure-report/history
           ls -al allure-report || echo "❌ allure-report 폴더가 없습니다!"
 
+      - name: Prepare Results Folder
+        run: |
+          mkdir -p public/results/reports
+          cp results/reports/*.xlsx public/results/reports/ || echo "❌ 리포트 없음"
+
       - name: Set Slack Webhook Env
         run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
 
