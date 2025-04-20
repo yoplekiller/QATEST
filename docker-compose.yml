@@ -27,7 +27,10 @@ services:
 
 
   test-runner:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mycompany/test-runner:latest
     container_name: test-runner
     depends_on:
       - selenium-hub
@@ -38,3 +41,26 @@ services:
     working_dir: /app
     command: |
       pytest src/tests/ui_tests --alluredir=allure-results && tail -f /dev/null
+
+  zap:
+    image: zaproxy/zap-stable
+    container_name: zap
+    ports:
+      - "9090:8080"
+    volumes:
+      - ./zap-results:/zap/wrk
+    restart: no
+    command: >
+      zap-baseline.py
+      -t http://demo-server:5000
+      -r zap_report.html
+      -J zap-report.json
+      -m 3
+      -z "-config api.addrs.addr.regex=true -config api.addrs.addr.name=.*"
+
+  demo-server:
+    build: ./demo-server
+    container_name: demo-server
+    ports:
+      - "5000:5000"
+
