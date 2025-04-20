@@ -53,6 +53,6 @@ def pytest_runtest_makereport(item, call):
             capture_screenshot(
                 driver,
                 test_case_name=item.name,
-                base_path="screenshots",
+                base_path="Failed_screenshots",
                 attach_to_allure=True
             )

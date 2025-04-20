@@ -47,6 +47,14 @@ jobs:
           sudo mv allure-2.32.2 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
           allure --version
+    
+
+      - name: Prepare Results Folder
+        run: |
+          mkdir -p public/results/allure
+          mkdir -p public/results/reports
+          cp -r allure-report/* public/results/allure/
+          find . -name "test-report_*.xlsx" -exec cp {} public/results/reports/ \;
           
       - name: Fetch Allure Report from gh-pages
         run: |
