@@ -54,5 +54,5 @@ def pytest_runtest_makereport(item, call):
                 driver,
                 test_case_name=item.name,
                 base_path="screenshots",
-                attach_to_allure=False
+                attach_to_allure=True
             )
