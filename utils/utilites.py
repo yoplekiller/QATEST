@@ -10,6 +10,7 @@ def capture_screenshot(driver, test_case_name, base_path = "screenshots", headle
 
     test_folder = os.path.join(base_path, test_case_name.replace(" ","_"))
     os.makedirs(test_folder, exist_ok=True)
+    print(f"📁 생성 시도 중: {test_folder}")
 
     #시간 가져오기
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
