@@ -1,7 +1,5 @@
 import os
-import datetime
 import shutil
-import allure
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -55,6 +53,6 @@ def pytest_runtest_makereport(item, call):
             capture_screenshot(
                 driver,
                 test_case_name=item.name,
-                base_path="failed_screenshots",
-                attach_to_allure=True
+                base_path="screenshots",
+                attach_to_allure=False
             )
