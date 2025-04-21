@@ -30,7 +30,7 @@ def capture_screenshot(driver, test_case_name, base_path ="screenshots", headles
     if attach_to_allure:
         allure.attach.file(
             file_path,
-            name="Failure sreenshot",
+            name="Failure screenshot",
             attachment_type=allure.attachment_type.PNG
         )
 
