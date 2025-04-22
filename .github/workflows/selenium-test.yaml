@@ -5,15 +5,9 @@ on:
   push:
     branches:
       - main
-      - develop
-      - develop-non-docker
-      - feature/selenium-only
   pull_request:
     branches:
       - main
-      - develop
-      - develop-non-docker
-      - feature/selenium-only
   workflow_dispatch:
   schedule:
     - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
@@ -141,7 +135,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: .
-          keep_files: true
+          keep_files: false
 
 
       - name: Send Slack Notification # Slack 알람
