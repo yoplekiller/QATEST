@@ -65,6 +65,15 @@ jobs:
       - name: Set API Key Environment Variable
         run: echo "TMDB_API_KEY=${{ secrets.TMDB_API_KEY }}" >> $GITHUB_ENV
 
+      - name: 백업 이전 결과 정리
+        run: |
+          today=$(date +'%Y-%m-%d')
+          mkdir -p backup/reports/$today
+          mkdir -p backup/screenshots/$today
+
+          mv test-report_*.xlsx backup/reports/$today/ || true
+          mv failed_screenshots/* backup/screenshots/$today/ || true
+
 
       - name: Run Selenium Tests # 테스트 실행
         run: |
@@ -136,6 +145,17 @@ jobs:
           publish_branch: gh-pages
           publish_dir: .
           keep_files: false
+          exclude_assets: |
+            .github
+            .gitignore
+            README.md
+            *.py
+            *.yaml
+            pytest.ini
+            conftest.py
+            __pycache__/
+            venv/
+            .venv/
 
 
       - name: Send Slack Notification # Slack 알람

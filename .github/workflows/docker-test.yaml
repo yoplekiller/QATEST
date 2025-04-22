@@ -122,7 +122,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-report/docker
           destination_dir: docker
-          keep_files: true #기존파일 유지
+          keep_files: false #기존파일 유지
 
 
       - name: Send Slack Notification # Slack 알람
