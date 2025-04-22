@@ -1,4 +1,3 @@
-
 name: Selenium Test Automation
 
 on:
@@ -47,14 +46,14 @@ jobs:
           sudo mv allure-2.32.2 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
           allure --version
-          
+
       - name: Fetch Allure Report from gh-pages
         run: |
           git fetch origin gh-pages
           mkdir -p allure-report
           git checkout gh-pages -- allure-report || true
           ls -al allure-report || echo "❌ allure-report 디렉토리가 없습니다!"
-          
+
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
 
@@ -64,15 +63,6 @@ jobs:
 
       - name: Set API Key Environment Variable
         run: echo "TMDB_API_KEY=${{ secrets.TMDB_API_KEY }}" >> $GITHUB_ENV
-
-      - name: 백업 이전 결과 정리
-        run: |
-          today=$(date +'%Y-%m-%d')
-          mkdir -p backup/reports/$today
-          mkdir -p backup/screenshots/$today
-
-          mv test-report_*.xlsx backup/reports/$today/ || true
-          mv failed_screenshots/* backup/screenshots/$today/ || true
 
 
       - name: Run Selenium Tests # 테스트 실행
@@ -87,15 +77,18 @@ jobs:
           venv/bin/python -m pytest src/tests/api_tests --alluredir=allure-results --capture=tee-sys -v
         continue-on-error: true
 
+
       - name: Debug allure-results content
         run: |
            echo "🧾 allure-results 디렉토리 내용:"
            ls -al allure-results || echo '❌ 결과 파일 없음!'
+          
 
       - name: 🧹 Remove Heavy Allure Attachments
         run: |
           echo "🧹 스크린샷 및 컨테이너 파일 삭제 중..."
           find allure-results -type f \( -iname "*.png" -o -iname "*-attachment.txt" -o -iname "*-container.json" \) -exec rm -f {} +
+          
 
       - name: Check Allure 디렉토리 사이즈
         run: du -sh allure-results || echo "❌ 디렉토리 없음"
@@ -119,19 +112,34 @@ jobs:
       - name: Install Python Dependencies for Excel Report
         run: |
           pip install pandas openpyxl requests
+          
 
       - name: Generate Excel Report and Upload to Slack
         run: python src/report/generate_excel_report.py
 
 
+      - name: 백업 이전 결과 정리
+        run: |
+          today=$(date +'%Y-%m-%d')
+          mkdir -p backup/reports/$today
+          mkdir -p backup/screenshots/$today
+          mv test-report_*.xlsx backup/reports/$today/ || true
+          mv failed_screenshots/* backup/screenshots/$today/ || true
+
+
+
       - name: Debug Allure Results  # 테스트 결과 확인
-        run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!"
+        run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!
+
+
 
       - name: Upload Excel Report as Artifact
         uses: actions/upload-artifact@v4
         with:
           name: excel-test-report
           path: '**/test-report_*.xlsx'
+
+
 
 
       - name: Force Update GitHub Pages
