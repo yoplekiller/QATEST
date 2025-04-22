@@ -142,6 +142,8 @@ jobs:
           rm -rf .github
           rm -f .gitignore README.md pytest.ini conftest.py
           rm -rf *.py *.yaml __pycache__/ venv/ .venv/
+          rm -rf .idea src utils screenshots_* allure-results
+          rm -f *.yml *.tgz Dockerfile requirements.txt
 
       - name: Upload Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
