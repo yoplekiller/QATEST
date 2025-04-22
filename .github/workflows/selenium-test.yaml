@@ -137,20 +137,21 @@ jobs:
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
 
-      - name: 배포 전 필요 없는 파일 제거
+      - name: 결과물 복사
         run: |
-          rm -rf .github
-          rm -f .gitignore README.md pytest.ini conftest.py
-          rm -rf *.py *.yaml __pycache__/ venv/ .venv/
-          rm -rf .idea src utils screenshots_* allure-results
-          rm -f *.yml *.tgz Dockerfile requirements.txt
+          mkdir -p deploy_dir
+          cp -r allure-report deploy_dir/
+          cp -r failed_screenshots deploy_dir/
+          cp -r backup deploy_dir/
+          cp test-report_*.xlsx deploy_dir/ || true
+      
 
       - name: Upload Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: .
+          publish_dir: ./deploy_dir
           keep_files: false
 
 
