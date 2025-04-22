@@ -129,7 +129,7 @@ jobs:
 
 
       - name: Debug Allure Results  # 테스트 결과 확인
-        run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!
+        run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!"
 
 
 
