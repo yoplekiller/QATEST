@@ -78,7 +78,7 @@ jobs:
         continue-on-error: true
 
 
-      - name: Debug allure-results content
+      - name: 🧪 [1차] 테스트 후 결과 확인 (UI & API 테스트 직후)
         run: |
            echo "🧾 allure-results 디렉토리 내용:"
            ls -al allure-results || echo '❌ 결과 파일 없음!'
@@ -101,10 +101,11 @@ jobs:
 
       - name: Generate Allure Report
         run: |
-          mkdir -p allure-report
           allure generate allure-results -o allure-report --clean || echo "❌ Allure report 생성 실패!"
+          python prepare_deploy.py
           mkdir -p allure-report/history
           ls -al allure-report || echo "❌ allure-report 폴더가 없습니다!"
+          
 
       - name: Set Slack Webhook Env
         run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
@@ -127,8 +128,7 @@ jobs:
           mv failed_screenshots/* backup/screenshots/$today/ || true
 
 
-
-      - name: Debug Allure Results  # 테스트 결과 확인
+      - name: 🧾 [2차] 리포트 생성/백업 후 결과 최종 확인
         run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!"
 
 
