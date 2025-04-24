@@ -129,13 +129,22 @@ jobs:
         run: echo $(date) > allure-report/timestamp.txt
 
 
+      - name: 결과물 복사
+        run: |
+          mkdir -p deploy_dir
+          cp -r allure-report deploy_dir/
+          cp -r failed_screenshots deploy_dir/
+          cp -r backup deploy_dir/
+          cp test-report_*.xlsx deploy_dir/ || true
+
+
       - name: Upload Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: .
-          keep_files: true
+          publish_dir: ./deploy_dir
+          keep_files: false
 
 
       - name: Send Slack Notification # Slack 알람
