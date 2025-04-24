@@ -2,7 +2,7 @@ import time
 import allure
 import pytest
 from selenium.webdriver.common.by import By
-from utils.utilites import capture_screenshot
+from utils.utilities import capture_screenshot
 
 @allure.feature("Smoke")
 @allure.story("로그인 성공")

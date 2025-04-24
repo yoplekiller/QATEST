@@ -2,7 +2,7 @@ import time
 import allure
 import pytest
 from selenium.webdriver.common.by import By
-from utils.utilites import capture_screenshot
+from utils.utilities import capture_screenshot
 
 @allure.feature("예외 케이스")
 @allure.story("잘못된 ID,PW 입력")
