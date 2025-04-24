@@ -114,6 +114,14 @@ jobs:
       - name: Generate Excel Report and Upload to Slack
         run: python src/report/generate_excel_report.py
 
+      - name: 백업 이전 결과 정리
+        run: |
+          today=$(date +'%Y-%m-%d')
+          mkdir -p backup/reports/$today
+          mkdir -p backup/screenshots/$today
+          mv test-report_*.xlsx backup/reports/$today/ || true
+          mv failed_screenshots/* backup/screenshots/$today/ || true
+
 
       - name: Debug Allure Results  # 테스트 결과 확인
         run: ls -al allure-results || echo "❌ allure-results 디렉토리가 없습니다!"
