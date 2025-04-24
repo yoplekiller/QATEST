@@ -1,11 +1,7 @@
 import allure
 import requests
-import os
-from dotenv import load_dotenv
+from config.api_env_config import BASE_URL
 
-load_dotenv()
-API_KEY = os.getenv("TMDB_API_KEY")
-BASE_URL = "https://api.themoviedb.org/3"
 
 @allure.feature("예외 케이스")
 @allure.story("잘못된 API 키")
