@@ -2,7 +2,7 @@ import allure
 import pytest
 from selenium.webdriver import Keys
 import time
-from utils.excel_reader import read_search_terms_from_excel, file_path
+from utils.read_product_data import read_search_terms_from_excel, file_path
 from selenium.webdriver.common.by import By
 from utils.utilities import capture_screenshot
 
