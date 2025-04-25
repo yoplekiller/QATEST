@@ -1,6 +1,6 @@
 import allure
 from config.api_env_config import API_KEY
-from utils.api_utils import send_get_request
+from utils.api_utils import send_get_request, attach_response
 import json
 
 @allure.feature("영화 목록")
@@ -14,6 +14,7 @@ def test_get_popular_movies():
     }
     response = send_get_request(endpoint, params)
     data = response.json()
+    attach_response(response)
 
 
 

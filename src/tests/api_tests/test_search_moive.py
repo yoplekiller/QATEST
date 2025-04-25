@@ -1,6 +1,7 @@
 import allure
 import requests
 from config.api_env_config import API_KEY, BASE_URL
+from utils.api_utils import attach_response
 
 
 @allure.feature("영화 목록")
@@ -16,6 +17,7 @@ def test_search_movie():
 
     assert response.status_code == 200
     data = response.json()
+    attach_response(response)
 
     assert "results" in data # 검색 결과 존재 여부 확인
     assert len(data["results"]) > 0 # 최소 1개 이상의 결과가 있어야 함
