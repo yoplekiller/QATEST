@@ -143,7 +143,7 @@ jobs:
         run: |
           mkdir -p deploy_dir
           cp -r allure-report deploy_dir/
-          cp -r failed_screenshots deploy_dir/
+          if [ -d failed_screenshots ] ; then cp -r failed_screenshots deploy_dir/
           cp -r backup deploy_dir/
           cp test-report_*.xlsx deploy_dir/ || true
 
