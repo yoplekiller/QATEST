@@ -1,0 +1,24 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","35997","상품 검색 후 카테고리 버튼들이 동작 하는지 확인","src.tests.ui_tests","Thu Apr 03 02:58:55 KST 2025","passed","Thu Apr 03 02:59:31 KST 2025","","test_ui_category","",""
+"","5306","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Thu Apr 03 02:59:43 KST 2025","passed","Thu Apr 03 02:59:48 KST 2025","","test_ui_search","",""
+"","5035","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Thu Apr 03 03:00:03 KST 2025","passed","Thu Apr 03 03:00:08 KST 2025","","test_ui_search","",""
+"","6306","장바구니 버튼이 동작 하는지 확인","src.tests.ui_tests","Thu Apr 03 02:58:48 KST 2025","passed","Thu Apr 03 02:58:55 KST 2025","","test_ui_cart","",""
+"","5057","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Thu Apr 03 03:00:08 KST 2025","passed","Thu Apr 03 03:00:13 KST 2025","","test_ui_search","",""
+"","5139","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Thu Apr 03 03:00:19 KST 2025","passed","Thu Apr 03 03:00:24 KST 2025","","test_ui_search","",""
+"","5106","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Thu Apr 03 03:00:13 KST 2025","passed","Thu Apr 03 03:00:19 KST 2025","","test_ui_search","",""
+"
+상품을 검색 후 추가하는 테스트
+- 수량올리기, 수량내리기 기능 구현
+- 검색 후 상품 선택 후 카트에 추가 구현
+","24626","상품 상세 화면의 UI 기능들이 동작 하는지 확인","src.tests.ui_tests","Thu Apr 03 02:58:23 KST 2025","passed","Thu Apr 03 02:58:48 KST 2025","","test_ui_add_product","",""
+"","5038","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Thu Apr 03 02:59:53 KST 2025","passed","Thu Apr 03 02:59:58 KST 2025","","test_ui_search","",""
+"","5086","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Thu Apr 03 03:00:24 KST 2025","passed","Thu Apr 03 03:00:29 KST 2025","","test_ui_search","",""
+"","4320","잘못된 ID,PW 입력 시 로그인이 실패하는지 확인","src.tests.ui_tests","Thu Apr 03 02:59:31 KST 2025","failed","Thu Apr 03 02:59:36 KST 2025","","test_ui_login","",""
+"","4932","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Thu Apr 03 02:59:48 KST 2025","passed","Thu Apr 03 02:59:53 KST 2025","","test_ui_search","",""
+"","6412","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Thu Apr 03 02:59:37 KST 2025","passed","Thu Apr 03 02:59:43 KST 2025","","test_ui_search","",""
+"
+일부러 실패하게 만드는 테스트
+- 올바르지 않은 요소 선택
+- 검색창이 없는 요소를 클릭 시도하여 실패 유발
+","2700","FAILED 기능 동작 하는지 확인","src.tests.ui_tests","Thu Apr 03 02:58:19 KST 2025","failed","Thu Apr 03 02:58:22 KST 2025","","test_fail_screenshot","",""
+"","4946","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Thu Apr 03 02:59:58 KST 2025","passed","Thu Apr 03 03:00:03 KST 2025","","test_ui_search","",""
