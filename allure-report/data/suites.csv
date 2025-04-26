@@ -1,25 +1,25 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","5154","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 12:39:31 UTC 2025","passed","Sat Apr 26 12:39:36 UTC 2025","","test_ui_search","",""
-"","36523","상품 검색 후 카테고리 버튼들이 동작 하는지 확인","src.tests.ui_tests","Sat Apr 26 12:38:07 UTC 2025","passed","Sat Apr 26 12:38:44 UTC 2025","","test_ui_category","",""
-"","5783","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 12:38:55 UTC 2025","passed","Sat Apr 26 12:39:00 UTC 2025","","test_ui_search","",""
-"","5147","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 12:39:36 UTC 2025","passed","Sat Apr 26 12:39:41 UTC 2025","","test_ui_search","",""
-"
-       상품을 검색 후 추가하는 테스트
-       - 수량올리기, 수량내리기 기능 구현
-       - 검색 후 상품 선택 후 카트에 추가 구현
-       ","22027","상품 상세 화면의 UI 기능들이 동작 하는지 확인","src.tests.ui_tests","Sat Apr 26 12:37:38 UTC 2025","passed","Sat Apr 26 12:38:00 UTC 2025","","test_ui_add_product","",""
-"","2632","잘못된 ID,PW 입력 시 로그인이 실패하는지 확인","src.tests.ui_tests","Sat Apr 26 12:38:45 UTC 2025","failed","Sat Apr 26 12:38:47 UTC 2025","","test_ui_login","",""
-"","6245","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 12:38:48 UTC 2025","passed","Sat Apr 26 12:38:55 UTC 2025","","test_ui_search","",""
-"","5368","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 12:39:00 UTC 2025","passed","Sat Apr 26 12:39:06 UTC 2025","","test_ui_search","",""
-"","4738","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 12:39:16 UTC 2025","passed","Sat Apr 26 12:39:21 UTC 2025","","test_ui_search","",""
-"","5055","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 12:39:21 UTC 2025","passed","Sat Apr 26 12:39:26 UTC 2025","","test_ui_search","",""
-"","5255","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 12:39:06 UTC 2025","passed","Sat Apr 26 12:39:11 UTC 2025","","test_ui_search","",""
+"","36061","상품 검색 후 카테고리 버튼들이 동작 하는지 확인","src.tests.ui_tests","Sat Apr 26 13:57:50 UTC 2025","passed","Sat Apr 26 13:58:26 UTC 2025","","test_ui_category","",""
 "
     일부러 실패하게 만드는 테스트
     - 올바르지 않은 요소 선택
     - 검색창이 없는 요소를 클릭 시도하여 실패 유발
-    ","4316","FAILED 기능 동작 하는지 확인","src.tests.ui_tests","Sat Apr 26 12:37:33 UTC 2025","failed","Sat Apr 26 12:37:37 UTC 2025","","test_fail_screenshot","",""
-"","6139","장바구니 버튼이 동작 하는지 확인","src.tests.ui_tests","Sat Apr 26 12:38:01 UTC 2025","passed","Sat Apr 26 12:38:07 UTC 2025","","test_ui_cart","",""
-"","4788","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 12:39:41 UTC 2025","passed","Sat Apr 26 12:39:46 UTC 2025","","test_ui_search","",""
-"","5135","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 12:39:11 UTC 2025","passed","Sat Apr 26 12:39:16 UTC 2025","","test_ui_search","",""
-"","5114","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 12:39:26 UTC 2025","passed","Sat Apr 26 12:39:31 UTC 2025","","test_ui_search","",""
+    ","3159","FAILED 기능 동작 하는지 확인","src.tests.ui_tests","Sat Apr 26 13:57:15 UTC 2025","failed","Sat Apr 26 13:57:19 UTC 2025","","test_fail_screenshot","",""
+"","5407","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 13:59:13 UTC 2025","passed","Sat Apr 26 13:59:19 UTC 2025","","test_ui_search","",""
+"","6428","장바구니 버튼이 동작 하는지 확인","src.tests.ui_tests","Sat Apr 26 13:57:43 UTC 2025","passed","Sat Apr 26 13:57:49 UTC 2025","","test_ui_cart","",""
+"","4913","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 13:58:42 UTC 2025","passed","Sat Apr 26 13:58:47 UTC 2025","","test_ui_search","",""
+"","5316","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 13:58:47 UTC 2025","passed","Sat Apr 26 13:58:52 UTC 2025","","test_ui_search","",""
+"","6011","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 13:58:30 UTC 2025","passed","Sat Apr 26 13:58:36 UTC 2025","","test_ui_search","",""
+"","5160","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 13:58:52 UTC 2025","passed","Sat Apr 26 13:58:57 UTC 2025","","test_ui_search","",""
+"
+       상품을 검색 후 추가하는 테스트
+       - 수량올리기, 수량내리기 기능 구현
+       - 검색 후 상품 선택 후 카트에 추가 구현
+       ","22221","상품 상세 화면의 UI 기능들이 동작 하는지 확인","src.tests.ui_tests","Sat Apr 26 13:57:20 UTC 2025","passed","Sat Apr 26 13:57:42 UTC 2025","","test_ui_add_product","",""
+"","5178","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 13:59:08 UTC 2025","passed","Sat Apr 26 13:59:13 UTC 2025","","test_ui_search","",""
+"","5548","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 13:58:36 UTC 2025","passed","Sat Apr 26 13:58:42 UTC 2025","","test_ui_search","",""
+"","5112","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 13:59:03 UTC 2025","passed","Sat Apr 26 13:59:08 UTC 2025","","test_ui_search","",""
+"","2224","잘못된 ID,PW 입력 시 로그인이 실패하는지 확인","src.tests.ui_tests","Sat Apr 26 13:58:27 UTC 2025","failed","Sat Apr 26 13:58:29 UTC 2025","","test_ui_login","",""
+"","5484","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 13:58:57 UTC 2025","passed","Sat Apr 26 13:59:03 UTC 2025","","test_ui_search","",""
+"","4910","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 13:59:19 UTC 2025","passed","Sat Apr 26 13:59:24 UTC 2025","","test_ui_search","",""
+"","5757","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sat Apr 26 13:59:24 UTC 2025","passed","Sat Apr 26 13:59:29 UTC 2025","","test_ui_search","",""
