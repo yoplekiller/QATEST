@@ -1,0 +1,25 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5520","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun Apr 27 11:55:18 UTC 2025","passed","Sun Apr 27 11:55:24 UTC 2025","","test_ui_search","",""
+"","5338","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun Apr 27 11:55:02 UTC 2025","passed","Sun Apr 27 11:55:07 UTC 2025","","test_ui_search","",""
+"","5531","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun Apr 27 11:55:07 UTC 2025","passed","Sun Apr 27 11:55:13 UTC 2025","","test_ui_search","",""
+"","5353","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun Apr 27 11:54:46 UTC 2025","passed","Sun Apr 27 11:54:52 UTC 2025","","test_ui_search","",""
+"","37299","상품 검색 후 카테고리 버튼들이 동작 하는지 확인","src.tests.ui_tests","Sun Apr 27 11:53:55 UTC 2025","passed","Sun Apr 27 11:54:33 UTC 2025","","test_ui_category","",""
+"
+    일부러 실패하게 만드는 테스트
+    - 올바르지 않은 요소 선택
+    - 검색창이 없는 요소를 클릭 시도하여 실패 유발
+    ","7919","FAILED 기능 동작 하는지 확인","src.tests.ui_tests","Sun Apr 27 11:53:16 UTC 2025","failed","Sun Apr 27 11:53:24 UTC 2025","","test_fail_screenshot","",""
+"","5188","잘못된 ID,PW 입력 시 로그인이 실패하는지 확인","src.tests.ui_tests","Sun Apr 27 11:54:33 UTC 2025","failed","Sun Apr 27 11:54:38 UTC 2025","","test_ui_login","",""
+"","5070","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun Apr 27 11:55:34 UTC 2025","passed","Sun Apr 27 11:55:39 UTC 2025","","test_ui_search","",""
+"
+       상품을 검색 후 추가하는 테스트
+       - 수량올리기, 수량내리기 기능 구현
+       - 검색 후 상품 선택 후 카트에 추가 구현
+       ","22376","상품 상세 화면의 UI 기능들이 동작 하는지 확인","src.tests.ui_tests","Sun Apr 27 11:53:25 UTC 2025","passed","Sun Apr 27 11:53:47 UTC 2025","","test_ui_add_product","",""
+"","6600","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun Apr 27 11:54:40 UTC 2025","passed","Sun Apr 27 11:54:46 UTC 2025","","test_ui_search","",""
+"","5280","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun Apr 27 11:54:52 UTC 2025","passed","Sun Apr 27 11:54:57 UTC 2025","","test_ui_search","",""
+"","5201","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun Apr 27 11:55:24 UTC 2025","passed","Sun Apr 27 11:55:29 UTC 2025","","test_ui_search","",""
+"","6956","장바구니 버튼이 동작 하는지 확인","src.tests.ui_tests","Sun Apr 27 11:53:48 UTC 2025","passed","Sun Apr 27 11:53:55 UTC 2025","","test_ui_cart","",""
+"","5349","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun Apr 27 11:55:13 UTC 2025","passed","Sun Apr 27 11:55:18 UTC 2025","","test_ui_search","",""
+"","5147","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun Apr 27 11:55:29 UTC 2025","passed","Sun Apr 27 11:55:34 UTC 2025","","test_ui_search","",""
+"","5236","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun Apr 27 11:54:57 UTC 2025","passed","Sun Apr 27 11:55:02 UTC 2025","","test_ui_search","",""
