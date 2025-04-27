@@ -86,10 +86,18 @@ jobs:
 
       - name: Merge Allure Results
         run: |
-          mkdir -p allure-results
-          cp -r allure-results/ui/* allure-results/
-          cp -r allure-results/api/* allure-results/
-
+          mkdir -p allure-results/merged          
+          if [ -d allure-results/ui ]; then
+            cp -r allure-results/ui/* allure-results/merged/
+          else
+            echo "✅ UI 테스트 결과 없음 (건너뜀)"
+          fi    
+          
+          if [ -d allure-results/api ]; then
+            cp -r allure-results/api/* allure-results/merged/
+          else
+            echo "✅ API 테스트 결과 없음 (건너뜀)"
+          fi
       - name: 🧹 Remove Heavy Allure Attachments
         run: |
           echo "🧹 스크린샷 및 컨테이너 파일 삭제 중..."
