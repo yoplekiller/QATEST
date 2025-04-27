@@ -85,11 +85,6 @@ jobs:
            ls -al allure-results || echo '❌ 결과 파일 없음!'
           
 
-      - name: 🧹 Remove Heavy Allure Attachments
-        run: |
-          echo "🧹 스크린샷 및 컨테이너 파일 삭제 중..."
-          find allure-results -type f \( -iname "*.png" -o -iname "*-attachment.txt" -o -iname "*-container.json" \) -exec rm -f {} +
-          
 
       - name: Check Allure 디렉토리 사이즈
         run: du -sh allure-results || echo "❌ 디렉토리 없음"
@@ -106,6 +101,13 @@ jobs:
           allure generate allure-results -o allure-report --clean || echo "❌ Allure report 생성 실패!"
           mkdir -p allure-report/history
           ls -al allure-report || echo "❌ allure-report 폴더가 없습니다!"
+          
+
+      - name: 🧹 Remove Heavy Allure Attachments
+        run: |
+          echo "🧹 스크린샷 및 컨테이너 파일 삭제 중..."
+          find allure-results -type f \( -iname "*.png" -o -iname "*-attachment.txt" -o -iname "*-container.json" \) -exec rm -f {} +
+          
           
 
       - name: Set Slack Webhook Env
@@ -125,8 +127,13 @@ jobs:
           today=$(date +'%Y-%m-%d')
           mkdir -p backup/reports/$today
           mkdir -p backup/screenshots/$today
-          mv test-report_*.xlsx backup/reports/$today/ || true
-          mv failed_screenshots/* backup/screenshots/$today/ || true
+          mv test-report_*.xlsx backup/reports/$today/ || echo "✅ 백업할 엑셀 없음"
+          if [ -d failed_screenshots ]; then
+          mv failed_screenshots/* backup/screenshots/$today/ || echo "✅ 백업할 스크린샷 없음"
+          else
+          echo "✅ failed_screenshots 폴더 없음"
+          fi
+
 
 
       - name: Debug Allure Results  # 테스트 결과 확인
@@ -147,9 +154,6 @@ jobs:
         run: |
           mkdir -p deploy_dir
           cp -r allure-report deploy_dir/
-          cp -r failed_screenshots deploy_dir/
-          cp -r backup deploy_dir/
-          cp test-report_*.xlsx deploy_dir/ || true
 
 
       - name: Upload Allure Report to GitHub Pages
@@ -157,7 +161,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./allure-report
+          publish_dir: ./deploy_dir
           keep_files: false
 
 
