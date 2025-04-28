@@ -1,7 +1,7 @@
 import requests
 import allure
 import json
-from config_utils import get_current_env
+from utils.config_utils import get_current_env
 
 env_data = get_current_env()
 BASE_URL = env_data["base_url"]
