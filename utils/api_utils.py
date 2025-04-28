@@ -1,10 +1,17 @@
 import allure
 import requests
-from config.api_env_config import BASE_URL, API_KEY
 import json
+from utils.config_utils import get_current_env
+
 
 
 def send_get_request(endpoint, params=None):
+
+    env = get_current_env()
+    BASE_URL = env["base_url"]
+    API_KEY = env["api_key"]
+
+    """영화 검색 테스트"""
     url = f"{BASE_URL}{endpoint}"
     default_params = {"api_key": API_KEY}
     if params:

@@ -8,8 +8,6 @@ from utils.config_utils import get_current_env
 @allure.story("영화 검색 API 테스트")
 @allure.title("영화 검색 기능이 잘 동작 하는지 확인")
 def test_search_movie():
-
-
     env = get_current_env()
     BASE_URL = env["base_url"]
     API_KEY = env["api_key"]
