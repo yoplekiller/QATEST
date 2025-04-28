@@ -2,7 +2,7 @@
 
 import os
 import requests
-from utils.parse_test_result import parse_test_results
+from utils.parse_test_result import parse_test_result
 
 def send_slack_summary():
     webhook_url = os.getenv("SLACK_WEBHOOK_URL")
@@ -11,7 +11,7 @@ def send_slack_summary():
         print("❌ Slack Webhook URL이 설정되지 않았습니다.")
         return
 
-    passed, failures, errors, skipped = parse_test_results()
+    passed, failures, errors, skipped = parse_test_result()
 
     # Allure Report URL 직접 작성
     allure_report_url = "https://yoplekiller.github.io/QATEST/allure-report/index.html"

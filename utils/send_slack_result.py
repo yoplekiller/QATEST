@@ -1,10 +1,8 @@
-# utils/send_slack_summary.py
-
 import os
 import requests
 from utils.parse_test_result import parse_test_result
 
-def send_slack_summary():
+def send_slack_result():
     webhook_url = os.getenv("SLACK_WEBHOOK_URL")
     github_run_id = os.getenv("GITHUB_RUN_ID")  # 추가
     if not webhook_url:
@@ -34,4 +32,4 @@ def send_slack_summary():
         print(f"❌ Slack 전송 실패: {response.status_code}, {response.text}")
 
 if __name__ == "__main__":
-    send_slack_summary()
+    send_slack_result()
