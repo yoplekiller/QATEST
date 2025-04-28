@@ -1,24 +1,42 @@
 import requests
 import allure
-
+import json
 
 @allure.step("GET 요청 보내기")
 def send_get_request(endpoint, params=None, headers=None):
+    """
+    GET 요청을 보내고 응답을 반환합니다.
+    """
     try:
         response = requests.get(endpoint, params=params, headers=headers)
+        attach_response(response)
         response.raise_for_status()
         return response
     except requests.exceptions.RequestException as e:
         allure.attach(str(e), name="GET 요청 에러", attachment_type=allure.attachment_type.TEXT)
         raise
 
-
 @allure.step("POST 요청 보내기")
-def send_post_request(endpoint, data=None, json=None, headers=None):
+def send_post_request(endpoint, data=None, json_data=None, headers=None):
+    """
+    POST 요청을 보내고 응답을 반환합니다.
+    """
     try:
-        response = requests.post(endpoint, data=data, json=json, headers=headers)
+        response = requests.post(endpoint, data=data, json=json_data, headers=headers)
+        attach_response(response)
         response.raise_for_status()
         return response
     except requests.exceptions.RequestException as e:
         allure.attach(str(e), name="POST 요청 에러", attachment_type=allure.attachment_type.TEXT)
         raise
+
+
+
+@allure.step("API 응답 결과 첨부")
+def attach_response(response):
+    """Allure 리포트에 API 응답을 JSON 형식으로 첨부"""
+    try:
+        json_body = json.dumps(response.json(), indent=2, ensure_ascii=False)
+        allure.attach(json_body, name="응답 JSON", attachment_type=allure.attachment_type.JSON)
+    except Exception:
+        allure.attach(response.text, name="응답 본문 (raw)", attachment_type=allure.attachment_type.TEXT)
