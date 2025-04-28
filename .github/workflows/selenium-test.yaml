@@ -168,6 +168,6 @@ jobs:
       - name: Send Slack Test Summary
         run: |
           pip install requests
-          python utils/send_slack_summary.py
+          python utils/send_slack_result.py
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
