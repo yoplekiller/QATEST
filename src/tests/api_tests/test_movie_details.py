@@ -1,6 +1,6 @@
 import allure
 import pytest
-from config.api_env_config import API_KEY
+from utils.config_utils import get_current_env
 from utils.api_utils import send_get_request, attach_response
 
 
@@ -15,6 +15,10 @@ from utils.api_utils import send_get_request, attach_response
     ])
 def test_get_movie_details(movie_id, expected_title):
     """특정 영화 상세 정보 API 테스트"""
+
+    env = get_current_env()
+    BASE_URL = env["base_url"]
+    API_KEY = env["api_key"]
 
     endpoint = f"/movie/{movie_id}"
     params = {
