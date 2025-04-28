@@ -1,8 +1,6 @@
-# utils/send_slack_summary.py
-
 import os
 import requests
-from utils.parse_test_result import parse_test_result
+from parse_test_result import parse_test_result
 
 def send_slack_summary():
     webhook_url = os.getenv("SLACK_WEBHOOK_URL")
