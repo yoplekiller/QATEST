@@ -1,14 +1,17 @@
 import requests
 import allure
 import json
+from config_utils import get_current_env
+
+env_data = get_current_env()
+BASE_URL = env_data["base_url"]
+API_KEY = env_data["api_key"]
 
 @allure.step("GET 요청 보내기")
 def send_get_request(endpoint, params=None, headers=None):
-    """
-    GET 요청을 보내고 응답을 반환합니다.
-    """
     try:
-        response = requests.get(endpoint, params=params, headers=headers)
+        full_url = BASE_URL + endpoint
+        response = requests.get(full_url, params=params, headers=headers)
         attach_response(response)
         response.raise_for_status()
         return response
@@ -18,18 +21,15 @@ def send_get_request(endpoint, params=None, headers=None):
 
 @allure.step("POST 요청 보내기")
 def send_post_request(endpoint, data=None, json_data=None, headers=None):
-    """
-    POST 요청을 보내고 응답을 반환합니다.
-    """
     try:
-        response = requests.post(endpoint, data=data, json=json_data, headers=headers)
+        full_url = BASE_URL + endpoint
+        response = requests.post(full_url, data=data, json=json_data, headers=headers)
         attach_response(response)
         response.raise_for_status()
         return response
     except requests.exceptions.RequestException as e:
         allure.attach(str(e), name="POST 요청 에러", attachment_type=allure.attachment_type.TEXT)
         raise
-
 
 
 @allure.step("API 응답 결과 첨부")
