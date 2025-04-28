@@ -142,7 +142,7 @@ jobs:
       - name: Upload Excel Report as Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: excel-test-reportpytest --maxfail=7 --disable-warnings --tb=short --junitxml=report.xml
+          name: excel-test-report
           path: '**/test-report_*.xlsx'
 
 
@@ -165,15 +165,9 @@ jobs:
           keep_files: false
 
 
-      - name: Send Slack Notification # Slack 알람
-        uses: rtCamp/action-slack-notify@v2
+      - name: Send Slack Test Summary
+        run: |
+          pip install requests
+          python utils/send_slack_summary.py
         env:
-          SLACK_WEBHOOK: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
-          SLACK_USERNAME: "GitHub Actions"
-          SLACK_ICON_EMOJI: ":robot_face:"
-          SLACK_TITLE: "✅ Selenium & API Test 완료"
-          SLACK_MESSAGE: |
-            *📢 Selenium UI 테스트가 끝났습니다!*
-            *📄 Allure Report*: <https://yoplekiller.github.io/QATEST/allure-report/index.html>
-            *📊 Excel 리포트 다운로드*: <https://github.com/yoplekiller/QATEST/actions/runs/${{ github.run_id }}>
-          SLACK_COLOR: "#36a64f"
+          SLACK_WEBHOOK_URL: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
