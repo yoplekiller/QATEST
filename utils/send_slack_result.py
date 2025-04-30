@@ -11,8 +11,8 @@ def send_slack_result():
         print("❌ Slack Webhook URL이 설정되지 않았습니다.")
         return
 
-    ui_passed, ui_failures, ui_errors, ui_skipped = parse_test_result("ui_reprot.xml")
-    api_passed, api_failures, api_errors, api_skipped = parse_test_result("report.xml")
+    ui_passed, ui_failures, ui_errors, ui_skipped = parse_test_result("ui_report.xml")
+    api_passed, api_failures, api_errors, api_skipped = parse_test_result("api_report.xml")
 
     passed = ui_passed + api_passed
     failures = ui_failures + api_failures
