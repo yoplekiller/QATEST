@@ -1,6 +1,7 @@
 import os
 import requests
-from parse_test_result import parse_test_result
+from parse_test_result import parse_test_result, get_failed_test_names
+
 
 def send_slack_result():
     webhook_url = os.getenv("SLACK_WEBHOOK_URL")
@@ -14,13 +15,24 @@ def send_slack_result():
     ui_passed, ui_failures, ui_errors, ui_skipped = parse_test_result("ui_report.xml")
     api_passed, api_failures, api_errors, api_skipped = parse_test_result("api_report.xml")
 
+
     passed = ui_passed + api_passed
     failures = ui_failures + api_failures
     errors = ui_errors + api_errors
     skipped = ui_skipped + api_skipped
 
+    failed_ui_tests = get_failed_test_names("ui_report.xml")
+    failed_api_tests = get_failed_test_names("api_report.xml")
+    all_failed_tests = failed_ui_tests + failed_api_tests
+
     allure_report_url = "https://yoplekiller.github.io/QATEST/allure-report/index.html"
     excel_download_url = f"https://github.com/yoplekiller/QATEST/actions/runs/{github_run_id}"
+
+    if all_failed_tests:
+        failed_test_str = "❌ *실패한 테스트 목록:*\n" + "\n".join(f"- {name}" for name in all_failed_tests)
+    else:
+        failed_test_str = "✅ *모든 테스트가 통과되었습니다!* 🎉"
+
 
     message = {
         "text": (
@@ -29,6 +41,7 @@ def send_slack_result():
             f"❌ Failed: {failures}\n"
             f"⚠️ Errors: {errors}\n"
             f"⏭️ Skipped: {skipped}\n\n"
+            f"{failed_test_str}\n\n"        
             f"*📄 Allure Report 보기*: <{allure_report_url}>\n"
             f"*📊 Excel 리포트 다운로드*: <{excel_download_url}>"
         )
