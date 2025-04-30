@@ -5,12 +5,19 @@ from parse_test_result import parse_test_result
 def send_slack_result():
     webhook_url = os.getenv("SLACK_WEBHOOK_URL")
     github_run_id = os.getenv("GITHUB_RUN_ID")  # 추가
+
+
     if not webhook_url:
         print("❌ Slack Webhook URL이 설정되지 않았습니다.")
         return
 
-    passed, failures, errors, skipped = parse_test_result()
+    ui_passed, ui_failures, ui_errors, ui_skipped = parse_test_result("ui_reprot.xml")
+    api_passed, api_failures, api_errors, api_skipped = parse_test_result("report.xml")
 
+    passed = ui_passed + api_passed
+    failures = ui_failures + api_failures
+    errors = ui_errors + api_errors
+    skipped = ui_skipped + api_skipped
 
     allure_report_url = "https://yoplekiller.github.io/QATEST/allure-report/index.html"
     excel_download_url = f"https://github.com/yoplekiller/QATEST/actions/runs/{github_run_id}"
