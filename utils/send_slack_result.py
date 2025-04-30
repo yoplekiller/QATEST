@@ -1,6 +1,6 @@
 import os
 import requests
-from utils.parse_test_result import parse_test_result
+from parse_test_result import parse_test_result
 
 def send_slack_result():
     webhook_url = os.getenv("SLACK_WEBHOOK_URL")
@@ -11,7 +11,7 @@ def send_slack_result():
 
     passed, failures, errors, skipped = parse_test_result()
 
-    # Allure Report URL 직접 작성
+
     allure_report_url = "https://yoplekiller.github.io/QATEST/allure-report/index.html"
     excel_download_url = f"https://github.com/yoplekiller/QATEST/actions/runs/{github_run_id}"
 
