@@ -165,6 +165,18 @@ jobs:
           keep_files: false
 
 
+      - name: 🔍 Check XML report files
+        run: |
+          echo "📄 Current Directory:"
+          pwd
+          ls -al
+
+          echo "📄 Checking ui_report.xml"
+          cat ui_report.xml || echo "❌ ui_report.xml 없음"
+
+          echo "📄 Checking report.xml"
+          cat report.xml || echo "❌ report.xml 없음"
+
       - name: Send Slack Test Summary
         run: |
           pip install requests
