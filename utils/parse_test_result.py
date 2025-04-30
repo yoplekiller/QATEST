@@ -5,14 +5,21 @@ def parse_test_result(xml_path="report.xml"):
         tree = ET.parse(xml_path)
         root = tree.getroot()
 
-        total = int(root.attrib.get("tests", "0"))
-        failures = int(root.attrib.get("failures", "0"))
-        errors = int(root.attrib.get("errors", "0"))
-        skipped = int(root.attrib.get("skipped", "0"))
 
-        passed = total - failures- errors - skipped
+        suite = root.find("testsuite")
+        if suite is None:
+            print("❌ <testsuite> 태그를 찾을 수 없습니다.")
+            return 0, 0, 0, 0
+
+        total = int(suite.attrib.get("tests", "0"))
+        failures = int(suite.attrib.get("failures", "0"))
+        errors = int(suite.attrib.get("errors", "0"))
+        skipped = int(suite.attrib.get("skipped", "0"))
+
+        passed = total - failures - errors - skipped
 
         return passed, failures, errors, skipped
+
     except Exception as e:
         print(f"❌ 테스트 결과 파싱 실패: {e}")
         return 0, 0, 0, 0
