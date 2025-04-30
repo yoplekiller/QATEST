@@ -1,6 +1,5 @@
 import xml.etree.ElementTree as ET
 
-from defusedxml.ElementTree import XMLParse
 
 
 def parse_test_result(xml_path="report.xml"):
