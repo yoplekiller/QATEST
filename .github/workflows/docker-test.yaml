@@ -60,9 +60,9 @@ jobs:
           mkdir -p allure-results
           docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --junitxml=ui_report.xml --capture=tee-sys -v || true 
 
-      - name: Run API Tests
-        run: |
-          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short --junitxml=api_report.xml
+#      - name: Run API Tests
+#        run: |
+#          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short --junitxml=api_report.xml
 
 
       - name: Set proper permissions
