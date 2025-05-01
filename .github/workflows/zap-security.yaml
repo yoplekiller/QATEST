@@ -14,21 +14,16 @@ jobs:
       - name: Create output folder
         run: mkdir -p zap-output
 
-      - name: Run ZAP Scan (in container)
+      - name: Run ZAP Scan in container
         run: |
           docker run --name zapscan \
+            -v ${{ github.workspace }}/zap-output:/zap/wrk \
             zaproxy/zap-stable zap-baseline.py \
             -t https://jsonplaceholder.typicode.com \
-            -r /tmp/zap_report.html \
-            -J /tmp/zap_report.json \
+            -r zap_report.html \
+            -J zap_report.json \
             -m 5 \
             -z "-config api.addrs.addr.regex=.*"
-
-      - name: Copy report files from container
-        run: |
-          docker cp zapscan:/tmp/zap_report.html zap-output/zap_report.html
-          docker cp zapscan:/tmp/zap_report.json zap-output/zap_report.json
-          docker rm zapscan
 
       - name: Upload ZAP Report Artifact
         uses: actions/upload-artifact@v4
