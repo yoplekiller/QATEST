@@ -14,7 +14,7 @@ jobs:
       - name: Create output folder
         run: mkdir -p zap-output
 
-      - name: Run ZAP Scan in container
+      - name: Run ZAP Scan (autooff)
         run: |
           docker run --name zapscan \
             -v ${{ github.workspace }}/zap-output:/zap/wrk \
@@ -23,6 +23,7 @@ jobs:
             -r zap_report.html \
             -J zap_report.json \
             -m 5 \
+            --autooff \
             -z "-config api.addrs.addr.regex=.*"
 
       - name: Upload ZAP Report Artifact
