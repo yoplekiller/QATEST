@@ -17,8 +17,8 @@ jobs:
       - name: Run ZAP Scan (autooff)
         run: |
           docker run --name zapscan \
-            -- rm \
-            - user 1000:1000 \
+            --rm \
+            -- user 1000:1000 \
             -v ${{ github.workspace }}/zap-output:/zap/wrk \
             zaproxy/zap-stable zap-baseline.py \
            -t https://jsonplaceholder.typicode.com \
