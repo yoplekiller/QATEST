@@ -2,7 +2,7 @@ import openpyxl
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-file_path = os.path.join(BASE_DIR, "utils", "test_case.xlsx")
+file_path = os.path.join(BASE_DIR, "src/tests/testcases", "test_case.xlsx")
 
 
 #상품 목록

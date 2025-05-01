@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="4" failures="0" skipped="0" tests="4" time="1.194" timestamp="2025-04-28T18:21:23.449420+09:00" hostname="임재민"><testcase classname="" name="src.tests.api_tests.test_moive_details" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests\test_moive_details.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+src\tests\api_tests\test_moive_details.py:3: in &lt;module&gt;
+    from config.api_env_config import API_KEY
+E   ImportError: cannot import name 'API_KEY' from 'config.api_env_config' (C:\Users\jmlim\OneDrive\Desktop\QATEST\config\api_env_config.py)</error></testcase><testcase classname="" name="src.tests.api_tests.test_moive_invalid_api_key" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests\test_moive_invalid_api_key.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+src\tests\api_tests\test_moive_invalid_api_key.py:2: in &lt;module&gt;
+    from utils.api_utils import send_get_request, attach_response
+utils\api_utils.py:3: in &lt;module&gt;
+    from config.api_env_config import BASE_URL, API_KEY
+E   ImportError: cannot import name 'BASE_URL' from 'config.api_env_config' (C:\Users\jmlim\OneDrive\Desktop\QATEST\config\api_env_config.py)</error></testcase><testcase classname="" name="src.tests.api_tests.test_popular_movie" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests\test_popular_movie.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+src\tests\api_tests\test_popular_movie.py:2: in &lt;module&gt;
+    from config.api_env_config import API_KEY
+E   ImportError: cannot import name 'API_KEY' from 'config.api_env_config' (C:\Users\jmlim\OneDrive\Desktop\QATEST\config\api_env_config.py)</error></testcase><testcase classname="" name="src.tests.api_tests.test_search_movie" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests\test_search_movie.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+src\tests\api_tests\test_search_movie.py:3: in &lt;module&gt;
+    from config.api_env_config import API_KEY, BASE_URL
+E   ImportError: cannot import name 'API_KEY' from 'config.api_env_config' (C:\Users\jmlim\OneDrive\Desktop\QATEST\config\api_env_config.py)</error></testcase></testsuite></testsuites>

@@ -3,7 +3,7 @@ import pytest
 from selenium.webdriver import Keys
 import time
 from selenium.webdriver.common.by import By
-from utils.utilites import capture_screenshot
+from utils.utilities import capture_screenshot
 
 @allure.feature("UI 테스트")
 @allure.story("카테고리 기능 테스트")

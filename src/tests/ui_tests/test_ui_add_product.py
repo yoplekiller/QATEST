@@ -3,7 +3,7 @@ import allure
 import pytest
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
-from utils.utilites import capture_screenshot
+from utils.utilities import capture_screenshot
 
 @allure.feature("UI 테스트")
 @allure.story("상품 추가 테스트")

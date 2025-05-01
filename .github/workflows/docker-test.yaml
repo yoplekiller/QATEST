@@ -15,6 +15,7 @@ concurrency:             #동시에 여러 개의 배포 실행 방지
   group: gh-pages-deploy
   cancel-in-progress: false
 
+
 jobs:
   docker-tests:
     runs-on: ubuntu-latest
@@ -27,6 +28,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+
 
       - name: Install Docker & Docker Compose
         run: |
@@ -55,14 +57,16 @@ jobs:
 
       - name: Run Docker Selenium Tests
         run: |
-          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --capture=tee-sys -v || true 
+          mkdir -p allure-results
+          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --junitxml=ui_report.xml --capture=tee-sys -v || true 
 
-      - name: Run API Tests
-        run: |
-          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --capture=tee-sys -v || true
+#      - name: Run API Tests
+#        run: |
+#          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short --junitxml=api_report.xml
 
-      - name: Debug allure-results contents
-        run: ls -R allure-results/docker || echo "❌ No Allure results found"
+
+      - name: Set proper permissions
+        run: sudo chmod -R 777 allure-results || true
 
       - name: 🧹 Remove Heavy Allure Attachments
         run: |
@@ -106,6 +110,20 @@ jobs:
       - name: Generate Excel Report and Upload to Slack
         run: python src/report/generate_excel_report.py
 
+      - name: 백업 이전 결과 정리
+        run: |
+          today=$(date +'%Y-%m-%d')
+          mkdir -p backup/reports/$today
+          mkdir -p backup/screenshots/$today
+          mv test-report_*.xlsx backup/reports/$today/ || echo "✅ 백업할 엑셀 없음"
+          if [ -d failed_screenshots ]; then
+          mv failed_screenshots/* backup/screenshots/$today/ || echo "✅ 백업할 스크린샷 없음"
+          else
+          echo "✅ failed_screenshots 폴더 없음"
+          fi 
+        
+        
+
       - name: Upload Excel Report as Artifact
         uses: actions/upload-artifact@v4
         with:
@@ -115,27 +133,27 @@ jobs:
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
 
+      - name: 결과물 복사
+        run: |
+          mkdir -p deploy_dir
+          cp -r allure-report deploy_dir/
+
 
       - name: Upload Allure report to Github Pages #리포트 업로드
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: allure-report/docker
-          destination_dir: docker
+          publish_dir: deploy_dir
+          destination_dir: .
           keep_files: false #기존파일 유지
 
 
-      - name: Send Slack Notification # Slack 알람
-        uses: rtCamp/action-slack-notify@v2
+      - name: Send Slack Test Summary
+        run: |
+          pip install requests
+          python utils/send_slack_result.py
         env:
-          SLACK_WEBHOOK: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
-          SLACK_USERNAME: "GitHub Actions"
-          SLACK_ICON_EMOJI: ":robot_face:"
-          SLACK_TITLE: "✅ Docker Test 완료"
-          SLACK_MESSAGE: |
-            *📢 Docker Test 테스트가 끝났습니다!*
-            *📄 리포트 확인*: <https://yoplekiller.github.io/QATEST/docker/index.html>
-          SLACK_COLOR: "#36a64f"
+          SLACK_WEBHOOK_URL: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
 
       - name: Check available memory
         run: free -h

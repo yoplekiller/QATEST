@@ -22,7 +22,6 @@ def driver():
     options.add_argument("--window-size=1920,1080")
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
 
-
     # ✅ CI 환경에서는 캐시 삭제로 손상된 드라이버 방지
     if IS_CI:
         cache_dir = os.path.expanduser("~/.wdm")
@@ -33,7 +32,6 @@ def driver():
     driver = webdriver.Chrome(service=service, options=options)
 
     # ✅ Selenium 감지 우회 (CDP 명령어)
-
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
         "source": """
             Object.defineProperty(navigator, 'webdriver', {
@@ -41,6 +39,7 @@ def driver():
             });
         """
     })
+
     yield driver
     driver.quit()
 
@@ -57,9 +56,11 @@ def pytest_runtest_makereport(item, call):
             screenshot_name = f"{item.name}_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
             screenshot_path = os.path.join(screenshots_dir, screenshot_name)
             driver.save_screenshot(screenshot_path)
-            allure.attach.file(screenshot_path, name="Failure Screenshot", attachment_type=allure.attachment_type.PNG)
-            allure.attach.file(
-                screenshot_path,
-                name="Failure Screenshot",
-                attachment_type=allure.attachment_type.PNG
+
+
+            with open(screenshot_path, "rb") as image_file:
+                allure.attach(
+                    image_file.read(),
+                    name="Failure Screenshot",
+                    attachment_type=allure.attachment_type.PNG
             )
