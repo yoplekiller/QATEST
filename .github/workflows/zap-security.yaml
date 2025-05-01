@@ -23,6 +23,7 @@ jobs:
             -r zap_report.html \
             -J zap_report.json \
             -m 5 \
+            -T 3 \
             --autooff \
             -z "-config api.addrs.addr.regex=.*"
 
