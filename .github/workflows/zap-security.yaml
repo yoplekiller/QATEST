@@ -6,6 +6,7 @@ on:
 jobs:
   zap:
     runs-on: ubuntu-latest
+
     steps:
       - name: Pull ZAP Image and Run Scan
         run: |
@@ -15,7 +16,9 @@ jobs:
             -r zap_report.html \
             -J zap_report.json \
             -m 5 \
-            -z "-config api.addrs.addr.regex=true -config api.addrs.addr.name=.*"
+            -z "-config api.addrs.addr.regex=.*"
+          
+
       - name: Upload Zap Report
         uses: actions/upload-artifact@v4
         with:
