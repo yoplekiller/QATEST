@@ -10,15 +10,17 @@ jobs:
     steps:
       - name: Run ZAP Scan
         run: |
-          mkdir -p zap-output
-          chmod 777 zap-output
-          docker run -v ${{ github.workspace }}/zap-output:/zap/wrk \
+          docker run --name zap-container \
             zaproxy/zap-stable zap-baseline.py \
             -t https://jsonplaceholder.typicode.com \
-            -r zap_report.html \
-            -J zap_report.json \
+            -r /tmp/zap_report.html \
+            -J /tmp/zap_report.json \
             -m 5 \
             -z "-config api.addrs.addr.regex=.*"
+
+          docker cp zap-container:/tmp/zap_report.html zap-output/zap_report.html
+          docker cp zap-container:/tmp/zap_report.json zap-output/zap_report.json
+          docker rm zap-container
 
       - name: Upload Zap Report
         uses: actions/upload-artifact@v4
