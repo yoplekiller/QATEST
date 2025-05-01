@@ -11,7 +11,7 @@ jobs:
       - name: Run ZAP Scan
         run: |
           docker run -v ${{ github.workspace }}:/zap/wrk \
-            ghcr.io/zaproxy/zap-baseline:stable \
+            owasp/zap2docker-stable zap-baseline.py \
             -t https://jsonplaceholder.typicode.com \
             -r zap_report.html \
             -J zap_report.json \
