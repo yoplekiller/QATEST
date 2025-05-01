@@ -4,13 +4,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  zap:
+  zap_scan:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run ZAP Scan
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Create output folder
+        run: mkdir -p zap-output
+
+      - name: Run ZAP Scan (in container)
         run: |
-          docker run --name zap-container \
+          docker run --name zapscan \
             zaproxy/zap-stable zap-baseline.py \
             -t https://jsonplaceholder.typicode.com \
             -r /tmp/zap_report.html \
@@ -18,12 +24,14 @@ jobs:
             -m 5 \
             -z "-config api.addrs.addr.regex=.*"
 
-          docker cp zap-container:/tmp/zap_report.html zap-output/zap_report.html
-          docker cp zap-container:/tmp/zap_report.json zap-output/zap_report.json
-          docker rm zap-container
+      - name: Copy report files from container
+        run: |
+          docker cp zapscan:/tmp/zap_report.html zap-output/zap_report.html
+          docker cp zapscan:/tmp/zap_report.json zap-output/zap_report.json
+          docker rm zapscan
 
-      - name: Upload Zap Report
+      - name: Upload ZAP Report Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: zap-security-report
-          path: zap-results
+          name: zap-report
+          path: zap-output
