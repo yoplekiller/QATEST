@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Pull ZAP Image and Run Scan
+      - name: Run ZAP Scan
         run: |
-          mkdir zap-results
           docker run -v ${{ github.workspace }}:/zap/wrk \
+            ghcr.io/zaproxy/zap-baseline:stable \
             -t https://jsonplaceholder.typicode.com \
             -r zap_report.html \
             -J zap_report.json \
