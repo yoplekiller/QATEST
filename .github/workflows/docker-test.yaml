@@ -47,6 +47,9 @@ jobs:
       - name: Remove old container if exists
         run: docker rm -f test-runner || true
 
+      - name: Prepare allure result dir
+        run: mkdir -p allure-results/docker
+
       - name: Run Docker container
         run: |
           docker run -dit \
@@ -57,8 +60,10 @@ jobs:
 
       - name: Run Docker Selenium Tests
         run: |
-          mkdir -p allure-results
-          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --junitxml=ui_report.xml --capture=tee-sys -v || true 
+          docker exec test-runner pytest src/tests/ui_tests \
+            --alluredir=/app/allure-results \
+            --junitxml=ui_report.xml \
+            --capture=tee-sys -v || true
 
 #      - name: Run API Tests
 #        run: |
@@ -71,7 +76,7 @@ jobs:
       - name: 🧹 Remove Heavy Allure Attachments
         run: |
           find allure-results -name "*-attachment.png" -delete
-          find allure-results -name "*-attachment.txt" -delete
+          find allure-results -name "*-attachment.txt" -delete 
           find allure-results -name "*-container.json" -delete
 
       - name: Capture start time
