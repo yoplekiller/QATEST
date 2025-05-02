@@ -70,8 +70,7 @@ jobs:
 #          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short --junitxml=api_report.xml
 
 
-      - name: Set proper permissions
-        run: sudo chmod -R 777 allure-results || true
+
 
       - name: 🧹 Remove Heavy Allure Attachments
         run: |
@@ -99,11 +98,14 @@ jobs:
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
           allure --version
 
+      - name: Set proper permissions
+        run: |
+          sudo chmod -R 777 allure-results || true
+          sudo mkdir -p allure-results/docker || true 
 
       - name: Generate Allure Report
         run: |
-          mkdir -p allure-report/docker
-          allure generate allure-results/docker -o allure-report/docker --clean || echo "❌ Report 생성 실패"
+          sudo allure generate allure-results/docker -o allure-report/docker --clean || echo "❌ Report 생성 실패"
 
       - name: Set Slack Webhook Env
         run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
