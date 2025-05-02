@@ -47,8 +47,8 @@ jobs:
       - name: Remove old container if exists
         run: docker rm -f test-runner || true
 
-      - name: Prepare allure result dir
-        run: mkdir -p allure-results/docker
+#      - name: Prepare allure result dir
+#        run: mkdir -p allure-results/docker
 
       - name: Run Docker container
         run: |
