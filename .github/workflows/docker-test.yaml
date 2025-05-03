@@ -51,14 +51,14 @@ jobs:
         run: |
           docker run -dit \
             --name test-runner \
-            -v ${{ github.workspace }}/allure-results/docker:/app/allure-results/docker
+            -v ${{ github.workspace}}/allure-results/docker:/app/allure-results \
             -e TMDB_API_KEY=${{ secrets.TMDB_API_KEY }} \
             test-runner
 
       - name: Run Docker Selenium Tests
         run: |
           mkdir -p allure-results
-          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results/docker --junitxml=ui_report.xml --capture=tee-sys -v || true 
+          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --junitxml=ui_report.xml --capture=tee-sys -v || true 
 
 #      - name: Run API Tests
 #        run: |
