@@ -58,7 +58,7 @@ jobs:
       - name: Run Docker Selenium Tests
         run: |
           mkdir -p allure-results
-          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --junitxml=ui_report.xml --capture=tee-sys -v || true 
+          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results/docker --junitxml=ui_report.xml --capture=tee-sys -v || true 
 
 #      - name: Run API Tests
 #        run: |
