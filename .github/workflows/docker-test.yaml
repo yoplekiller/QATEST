@@ -74,10 +74,21 @@ jobs:
           find allure-results -name "*-attachment.txt" -delete
           find allure-results -name "*-container.json" -delete
 
-      - name: Capture start time
-        id: start-time
-        run: echo "start=$(date +%s)" >> $GITHUB_ENV
+      - name: Check Allure 디렉토리 사이즈
+        run: du -sh allure-results || echo "❌ 디렉토리 없음"
 
+      - name: Clone gh-pages
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages || git checkout --orphan gh-pages
+          
+
+      - name: Generate Allure Report
+        run: |
+          mkdir -p allure-report
+          allure generate allure-results -o allure-report --clean || echo "❌ Allure report 생성 실패!"
+          mkdir -p allure-report/history
+          ls -al allure-report || echo "❌ allure-report 폴더가 없습니다!"
 
       - name: Stop and Remove Containers
         if: always()
