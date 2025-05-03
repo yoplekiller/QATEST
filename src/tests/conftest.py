@@ -56,11 +56,8 @@ def pytest_runtest_makereport(item, call):
             screenshot_name = f"{item.name}_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
             screenshot_path = os.path.join(screenshots_dir, screenshot_name)
             driver.save_screenshot(screenshot_path)
-
-
-            with open(screenshot_path, "rb") as image_file:
-                allure.attach(
-                    image_file.read(),
-                    name="Failure Screenshot",
-                    attachment_type=allure.attachment_type.PNG
+            allure.attach.file(
+                screenshot_path,
+                name="Failure Screenshot",
+                attachment_type=allure.attachment_type.PNG
             )
