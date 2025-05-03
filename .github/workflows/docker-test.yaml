@@ -51,7 +51,7 @@ jobs:
         run: |
           docker run -dit \
             --name test-runner \
-            -v ${{ github.workspace}}/allure-results/docker:/app/allure-results \
+            -v ${{ github.workspace}}/allure-results:/app/allure-results \
             -e TMDB_API_KEY=${{ secrets.TMDB_API_KEY }} \
             test-runner
 
