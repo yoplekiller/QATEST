@@ -3,12 +3,16 @@ import allure
 import pytest
 from selenium.webdriver.common.by import By
 <<<<<<< HEAD
+<<<<<<< HEAD
 from utils.utilities import capture_screenshot
 =======
 
 
 
 from utils.utilites import capture_screenshot
+>>>>>>> main
+=======
+from utils.utilities import capture_screenshot
 >>>>>>> main
 
 @allure.feature("UI 테스트")
@@ -20,7 +24,6 @@ def test_cart(driver):
     driver.maximize_window()
 
     try:
-      driver.get("https://www.kurly.com/main")
       cart_button = driver.find_element(By.XPATH,"//button[@class='css-g25h97 e14oy6dx1']")
       cart_button.click()
       time.sleep(4)
