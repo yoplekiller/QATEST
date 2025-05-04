@@ -86,13 +86,6 @@ jobs:
           git checkout gh-pages || git checkout --orphan gh-pages
           
 
-      - name: Generate Allure Report
-        run: |
-          mkdir -p allure-report
-          allure generate allure-results -o allure-report --clean || echo "❌ Allure report 생성 실패!"
-          mkdir -p allure-report/history
-          ls -al allure-report || echo "❌ allure-report 폴더가 없습니다!"
-
       - name: Stop and Remove Containers
         if: always()
         run: docker compose down
