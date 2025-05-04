@@ -15,13 +15,11 @@ def send_slack_result():
         return
 
 
-
     ui_report_path = "reports/ui_report.xml" if is_docker else "ui_report.xml"
     api_report_path = "reports/api_report.xml" if is_docker else "api_report.xml"
 
     ui_passed, ui_failures, ui_errors, ui_skipped = parse_test_result(ui_report_path)
     api_passed, api_failures, api_errors, api_skipped = parse_test_result(api_report_path)
-
 
 
     failed_ui_tests = get_failed_test_names(ui_report_path)
@@ -32,7 +30,6 @@ def send_slack_result():
     failures = ui_failures + api_failures
     errors = ui_errors + api_errors
     skipped = ui_skipped + api_skipped
-
 
 
     allure_report_url = f"https://yoplekiller.github.io/QATEST/allure-report/{branch_name}/index.html"
