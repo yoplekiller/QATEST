@@ -1,33 +1,33 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","8301","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:40:18 UTC 2025","passed","Sun May 04 15:40:26 UTC 2025","","test_ui_search","",""
+"특정 영화 상세 정보 API 테스트","139","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 15:40:35 UTC 2025","passed","Sun May 04 15:40:36 UTC 2025","","test_movie_details","",""
+"","8475","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:40:09 UTC 2025","passed","Sun May 04 15:40:18 UTC 2025","","test_ui_search","",""
+"","205","API 키가 잘못 되었을 때 401 Unauthorized 확인","src.tests.api_tests","Sun May 04 15:40:35 UTC 2025","broken","Sun May 04 15:40:35 UTC 2025","","test_moive_invalid_api_key","",""
+"","6953","장바구니 버튼이 동작 하는지 확인","src.tests.ui_tests","Sun May 04 15:37:59 UTC 2025","passed","Sun May 04 15:38:06 UTC 2025","","test_ui_cart","",""
+"","8469","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:39:18 UTC 2025","passed","Sun May 04 15:39:27 UTC 2025","","test_ui_search","",""
+"특정 영화 상세 정보 API 테스트","139","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 15:40:36 UTC 2025","passed","Sun May 04 15:40:36 UTC 2025","","test_movie_details","",""
+"","9426","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:39:01 UTC 2025","passed","Sun May 04 15:39:10 UTC 2025","","test_ui_search","",""
+"","7914","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:39:43 UTC 2025","passed","Sun May 04 15:39:51 UTC 2025","","test_ui_search","",""
+"특정 영화 상세 정보 API 테스트","228","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 15:40:35 UTC 2025","broken","Sun May 04 15:40:35 UTC 2025","","test_movie_details","",""
+"","7964","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:39:10 UTC 2025","passed","Sun May 04 15:39:18 UTC 2025","","test_ui_search","",""
+"","8660","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:39:51 UTC 2025","passed","Sun May 04 15:40:00 UTC 2025","","test_ui_search","",""
 "
-    일부러 실패하게 만드는 테스트
-    - 올바르지 않은 요소 선택
-    - 검색창이 없는 요소를 클릭 시도하여 실패 유발
-    ","3582","FAILED 기능 동작 하는지 확인","src.tests.ui_tests","Sun May 04 15:28:02 UTC 2025","failed","Sun May 04 15:28:06 UTC 2025","","test_fail_screenshot","",""
-"","7818","잘못된 ID,PW 입력 시 로그인이 실패하는지 확인","src.tests.ui_tests","Sun May 04 15:29:17 UTC 2025","failed","Sun May 04 15:29:25 UTC 2025","","test_ui_login","",""
-"","40","인기 영화 목록 조회 - 200 응답 확인","src.tests.api_tests","Sun May 04 15:31:10 UTC 2025","passed","Sun May 04 15:31:10 UTC 2025","","test_popular_movie","",""
-"","261","API 키가 잘못 되었을 때 401 Unauthorized 확인","src.tests.api_tests","Sun May 04 15:31:09 UTC 2025","broken","Sun May 04 15:31:09 UTC 2025","","test_moive_invalid_api_key","",""
-"","8282","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:30:51 UTC 2025","passed","Sun May 04 15:31:00 UTC 2025","","test_ui_search","",""
-"","37917","상품 검색 후 카테고리 버튼들이 동작 하는지 확인","src.tests.ui_tests","Sun May 04 15:28:39 UTC 2025","passed","Sun May 04 15:29:17 UTC 2025","","test_ui_category","",""
-"","9308","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:29:34 UTC 2025","passed","Sun May 04 15:29:43 UTC 2025","","test_ui_search","",""
-"","35","영화 검색 기능이 잘 동작 하는지 확인","src.tests.api_tests","Sun May 04 15:31:10 UTC 2025","passed","Sun May 04 15:31:10 UTC 2025","","test_search_movie","",""
-"","8890","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:30:43 UTC 2025","passed","Sun May 04 15:30:51 UTC 2025","","test_ui_search","",""
-"","5905","test_ui_quantity","src.tests.ui_tests","Sun May 04 15:29:26 UTC 2025","failed","Sun May 04 15:29:32 UTC 2025","","test_ui_quantity","",""
-"","8686","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:30:08 UTC 2025","passed","Sun May 04 15:30:17 UTC 2025","","test_ui_search","",""
-"","8051","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:30:35 UTC 2025","passed","Sun May 04 15:30:43 UTC 2025","","test_ui_search","",""
-"특정 영화 상세 정보 API 테스트","35","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 15:31:09 UTC 2025","passed","Sun May 04 15:31:09 UTC 2025","","test_movie_details","",""
-"특정 영화 상세 정보 API 테스트","121","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 15:31:09 UTC 2025","passed","Sun May 04 15:31:09 UTC 2025","","test_movie_details","",""
-"","8461","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:30:00 UTC 2025","passed","Sun May 04 15:30:08 UTC 2025","","test_ui_search","",""
-"","8545","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:31:00 UTC 2025","passed","Sun May 04 15:31:08 UTC 2025","","test_ui_search","",""
+상품을 검색 후 추가하는 테스트
+- 수량올리기, 수량내리기 기능 구현
+- 검색 후 상품 선택 후 카트에 추가 구현
+","23651","상품 상세 화면의 UI 기능들이 동작 하는지 확인","src.tests.ui_tests","Sun May 04 15:37:35 UTC 2025","passed","Sun May 04 15:37:58 UTC 2025","","test_ui_add_product","",""
+"","8061","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:39:35 UTC 2025","passed","Sun May 04 15:39:43 UTC 2025","","test_ui_search","",""
+"","133","영화 검색 기능이 잘 동작 하는지 확인","src.tests.api_tests","Sun May 04 15:40:36 UTC 2025","passed","Sun May 04 15:40:36 UTC 2025","","test_search_movie","",""
+"","38539","상품 검색 후 카테고리 버튼들이 동작 하는지 확인","src.tests.ui_tests","Sun May 04 15:38:06 UTC 2025","passed","Sun May 04 15:38:45 UTC 2025","","test_ui_category","",""
+"","8232","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:40:26 UTC 2025","passed","Sun May 04 15:40:34 UTC 2025","","test_ui_search","",""
+"","7540","잘못된 ID,PW 입력 시 로그인이 실패하는지 확인","src.tests.ui_tests","Sun May 04 15:38:46 UTC 2025","failed","Sun May 04 15:38:54 UTC 2025","","test_ui_login","",""
+"","8559","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:39:27 UTC 2025","passed","Sun May 04 15:39:35 UTC 2025","","test_ui_search","",""
 "
-       상품을 검색 후 추가하는 테스트
-       - 수량올리기, 수량내리기 기능 구현
-       - 검색 후 상품 선택 후 카트에 추가 구현
-       ","23555","상품 상세 화면의 UI 기능들이 동작 하는지 확인","src.tests.ui_tests","Sun May 04 15:28:07 UTC 2025","passed","Sun May 04 15:28:31 UTC 2025","","test_ui_add_product","",""
-"특정 영화 상세 정보 API 테스트","39","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 15:31:09 UTC 2025","passed","Sun May 04 15:31:10 UTC 2025","","test_movie_details","",""
-"","7828","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:29:43 UTC 2025","passed","Sun May 04 15:29:51 UTC 2025","","test_ui_search","",""
-"","9017","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:30:26 UTC 2025","passed","Sun May 04 15:30:35 UTC 2025","","test_ui_search","",""
-"","8458","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:30:17 UTC 2025","passed","Sun May 04 15:30:26 UTC 2025","","test_ui_search","",""
-"특정 영화 상세 정보 API 테스트","115","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 15:31:09 UTC 2025","broken","Sun May 04 15:31:09 UTC 2025","","test_movie_details","",""
-"","8791","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:29:51 UTC 2025","passed","Sun May 04 15:30:00 UTC 2025","","test_ui_search","",""
-"","6299","장바구니 버튼이 동작 하는지 확인","src.tests.ui_tests","Sun May 04 15:28:31 UTC 2025","passed","Sun May 04 15:28:38 UTC 2025","","test_ui_cart","",""
+일부러 실패하게 만드는 테스트
+- 올바르지 않은 요소 선택
+- 검색창이 없는 요소를 클릭 시도하여 실패 유발
+","3113","FAILED 기능 동작 하는지 확인","src.tests.ui_tests","Sun May 04 15:37:31 UTC 2025","failed","Sun May 04 15:37:34 UTC 2025","","test_fail_screenshot","",""
+"","4993","test_ui_quantity","src.tests.ui_tests","Sun May 04 15:38:55 UTC 2025","failed","Sun May 04 15:39:00 UTC 2025","","test_ui_quantity","",""
+"","35","인기 영화 목록 조회 - 200 응답 확인","src.tests.api_tests","Sun May 04 15:40:36 UTC 2025","passed","Sun May 04 15:40:36 UTC 2025","","test_popular_movie","",""
+"","9063","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 15:40:00 UTC 2025","passed","Sun May 04 15:40:09 UTC 2025","","test_ui_search","",""
+"특정 영화 상세 정보 API 테스트","147","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 15:40:35 UTC 2025","passed","Sun May 04 15:40:35 UTC 2025","","test_movie_details","",""
