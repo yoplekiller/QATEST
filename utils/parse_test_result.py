@@ -2,8 +2,6 @@ import xml.etree.ElementTree as ET
 
 
 
-
-
 def parse_test_result(xml_path="report.xml"):
     try:
         tree = ET.parse(xml_path)

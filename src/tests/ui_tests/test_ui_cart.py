@@ -2,18 +2,7 @@ import time
 import allure
 import pytest
 from selenium.webdriver.common.by import By
-<<<<<<< HEAD
-<<<<<<< HEAD
 from utils.utilities import capture_screenshot
-=======
-
-
-
-from utils.utilites import capture_screenshot
->>>>>>> main
-=======
-from utils.utilities import capture_screenshot
->>>>>>> main
 
 @allure.feature("UI 테스트")
 @allure.story("장바구니 화면 체크 테스트")
