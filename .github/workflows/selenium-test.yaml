@@ -110,6 +110,9 @@ jobs:
       - name: Set Slack Webhook Env
         run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
 
+      - name: Set BRANCH_NAME env
+        run: echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+
       - name: Install Python Dependencies for Excel Report
         run: |
           pip install pandas openpyxl requests
@@ -164,7 +167,7 @@ jobs:
         run: |
           echo "📄 Current Directory:"
           pwd
-          ls -al
+          ls -al 
 
           echo "📄 Checking ui_report.xml"
           cat ui_report.xml || echo "❌ ui_report.xml 없음"
