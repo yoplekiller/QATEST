@@ -63,4 +63,5 @@ def pytest_runtest_makereport(item, call):
                     image_file.read(),
                     name="Failure Screenshot",
                     attachment_type=allure.attachment_type.PNG
+
             )

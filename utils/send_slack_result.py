@@ -25,7 +25,9 @@ def send_slack_result():
     failed_api_tests = get_failed_test_names("api_report.xml")
     all_failed_tests = failed_ui_tests + failed_api_tests
 
-    allure_report_url = "https://yoplekiller.github.io/QATEST/allure-report/index.html"
+    branch_name = os.getenv("BRANCH_NAME", "main")
+
+    allure_report_url = f"https://yoplekiller.github.io/QATEST/allure-report/{branch_name}/index.html"
     excel_download_url = f"https://github.com/yoplekiller/QATEST/actions/runs/{github_run_id}"
 
     if all_failed_tests:

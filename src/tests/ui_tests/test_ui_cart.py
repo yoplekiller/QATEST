@@ -4,6 +4,7 @@ import pytest
 from selenium.webdriver.common.by import By
 from utils.utilities import capture_screenshot
 
+
 @allure.feature("UI 테스트")
 @allure.story("장바구니 화면 체크 테스트")
 @allure.title("장바구니 버튼이 동작 하는지 확인")
