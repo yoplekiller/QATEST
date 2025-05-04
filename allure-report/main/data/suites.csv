@@ -1,0 +1,33 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+    일부러 실패하게 만드는 테스트
+    - 올바르지 않은 요소 선택
+    - 검색창이 없는 요소를 클릭 시도하여 실패 유발
+    ","3599","FAILED 기능 동작 하는지 확인","src.tests.ui_tests","Sun May 04 09:08:20 UTC 2025","failed","Sun May 04 09:08:24 UTC 2025","","test_fail_screenshot","",""
+"특정 영화 상세 정보 API 테스트","49","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 09:11:25 UTC 2025","passed","Sun May 04 09:11:25 UTC 2025","","test_movie_details","",""
+"","8003","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 09:11:16 UTC 2025","passed","Sun May 04 09:11:24 UTC 2025","","test_ui_search","",""
+"","8017","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 09:10:59 UTC 2025","passed","Sun May 04 09:11:07 UTC 2025","","test_ui_search","",""
+"","8279","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 09:10:34 UTC 2025","passed","Sun May 04 09:10:42 UTC 2025","","test_ui_search","",""
+"","38551","상품 검색 후 카테고리 버튼들이 동작 하는지 확인","src.tests.ui_tests","Sun May 04 09:08:57 UTC 2025","passed","Sun May 04 09:09:35 UTC 2025","","test_ui_category","",""
+"","8967","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 09:10:09 UTC 2025","passed","Sun May 04 09:10:18 UTC 2025","","test_ui_search","",""
+"","9294","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 09:09:51 UTC 2025","passed","Sun May 04 09:10:01 UTC 2025","","test_ui_search","",""
+"","271","API 키가 잘못 되었을 때 401 Unauthorized 확인","src.tests.api_tests","Sun May 04 09:11:24 UTC 2025","broken","Sun May 04 09:11:25 UTC 2025","","test_moive_invalid_api_key","",""
+"특정 영화 상세 정보 API 테스트","29","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 09:11:25 UTC 2025","passed","Sun May 04 09:11:25 UTC 2025","","test_movie_details","",""
+"","8508","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 09:10:26 UTC 2025","passed","Sun May 04 09:10:34 UTC 2025","","test_ui_search","",""
+"","7691","잘못된 ID,PW 입력 시 로그인이 실패하는지 확인","src.tests.ui_tests","Sun May 04 09:09:36 UTC 2025","failed","Sun May 04 09:09:44 UTC 2025","","test_ui_login","",""
+"","7865","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 09:10:18 UTC 2025","passed","Sun May 04 09:10:26 UTC 2025","","test_ui_search","",""
+"","36","영화 검색 기능이 잘 동작 하는지 확인","src.tests.api_tests","Sun May 04 09:11:25 UTC 2025","passed","Sun May 04 09:11:25 UTC 2025","","test_search_movie","",""
+"특정 영화 상세 정보 API 테스트","35","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 09:11:25 UTC 2025","passed","Sun May 04 09:11:25 UTC 2025","","test_movie_details","",""
+"","5083","test_ui_quantity","src.tests.ui_tests","Sun May 04 09:09:45 UTC 2025","broken","Sun May 04 09:09:50 UTC 2025","","test_ui_quantity","",""
+"","8635","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 09:10:51 UTC 2025","passed","Sun May 04 09:10:59 UTC 2025","","test_ui_search","",""
+"","30","인기 영화 목록 조회 - 200 응답 확인","src.tests.api_tests","Sun May 04 09:11:25 UTC 2025","passed","Sun May 04 09:11:25 UTC 2025","","test_popular_movie","",""
+"특정 영화 상세 정보 API 테스트","41","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api_tests","Sun May 04 09:11:25 UTC 2025","broken","Sun May 04 09:11:25 UTC 2025","","test_movie_details","",""
+"","8297","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 09:10:42 UTC 2025","passed","Sun May 04 09:10:51 UTC 2025","","test_ui_search","",""
+"","7968","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 09:10:01 UTC 2025","passed","Sun May 04 09:10:09 UTC 2025","","test_ui_search","",""
+"","8402","입력된 상품명으로 검색 시 검색되는지 확인","src.tests.ui_tests","Sun May 04 09:11:07 UTC 2025","passed","Sun May 04 09:11:16 UTC 2025","","test_ui_search","",""
+"","6689","장바구니 버튼이 동작 하는지 확인","src.tests.ui_tests","Sun May 04 09:08:49 UTC 2025","passed","Sun May 04 09:08:56 UTC 2025","","test_ui_cart","",""
+"
+       상품을 검색 후 추가하는 테스트
+       - 수량올리기, 수량내리기 기능 구현
+       - 검색 후 상품 선택 후 카트에 추가 구현
+       ","23102","상품 상세 화면의 UI 기능들이 동작 하는지 확인","src.tests.ui_tests","Sun May 04 09:08:25 UTC 2025","passed","Sun May 04 09:08:48 UTC 2025","","test_ui_add_product","",""
