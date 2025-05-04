@@ -17,8 +17,8 @@
       "release_date": "2025-04-29",
       "title": "Exterritorial",
       "video": false,
-      "vote_average": 6.956,
-      "vote_count": 102
+      "vote_average": 6.902,
+      "vote_count": 107
     },
     {
       "adult": false,
@@ -33,12 +33,12 @@
       "original_title": "A Working Man",
       "overview": "Levon Cade left behind a decorated military career in the black ops to live a simple life working construction. But when his boss's daughter, who is like family to him, is taken by human traffickers, his search to bring her home uncovers a world of corruption far greater than he ever could have imagined.",
       "popularity": 497.1834,
-      "poster_path": "/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+      "poster_path": "/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg",
       "release_date": "2025-03-26",
       "title": "A Working Man",
       "video": false,
-      "vote_average": 6.498,
-      "vote_count": 548
+      "vote_average": 6.484,
+      "vote_count": 552
     },
     {
       "adult": false,
@@ -75,8 +75,8 @@
       "release_date": "2025-04-24",
       "title": "Havoc",
       "video": false,
-      "vote_average": 6.619,
-      "vote_count": 461
+      "vote_average": 6.608,
+      "vote_count": 468
     },
     {
       "adult": false,
@@ -96,7 +96,7 @@
       "release_date": "2025-03-31",
       "title": "A Minecraft Movie",
       "video": false,
-      "vote_average": 6.186,
+      "vote_average": 6.2,
       "vote_count": 808
     },
     {
@@ -116,8 +116,8 @@
       "release_date": "2025-04-30",
       "title": "Thunderbolts*",
       "video": false,
-      "vote_average": 7.644,
-      "vote_count": 312
+      "vote_average": 7.631,
+      "vote_count": 333
     },
     {
       "adult": false,
@@ -135,7 +135,7 @@
       "release_date": "2025-04-25",
       "title": "Jewel Thief: The Heist Begins",
       "video": false,
-      "vote_average": 6.857,
+      "vote_average": 6.9,
       "vote_count": 28
     },
     {
@@ -155,8 +155,8 @@
       "release_date": "2025-02-27",
       "title": "In the Lost Lands",
       "video": false,
-      "vote_average": 6.325,
-      "vote_count": 320
+      "vote_average": 6.323,
+      "vote_count": 322
     },
     {
       "adult": false,
@@ -175,8 +175,29 @@
       "release_date": "2025-02-12",
       "title": "Captain America: Brave New World",
       "video": false,
-      "vote_average": 6.161,
-      "vote_count": 1710
+      "vote_average": 6.162,
+      "vote_count": 1713
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eDBZN0TbWkxoAB0qIDFagVcPPTN.jpg",
+      "genre_ids": [
+        27,
+        14,
+        35,
+        12
+      ],
+      "id": 1153714,
+      "original_language": "en",
+      "original_title": "Death of a Unicorn",
+      "overview": "A father and daughter accidentally hit and kill a unicorn while en route to a weekend retreat, where his billionaire boss seeks to exploit the creature’s miraculous curative properties.",
+      "popularity": 255.1396,
+      "poster_path": "/lXR32JepFwD1UHkplWqtBP1K79z.jpg",
+      "release_date": "2025-03-27",
+      "title": "Death of a Unicorn",
+      "video": false,
+      "vote_average": 6.197,
+      "vote_count": 132
     },
     {
       "adult": false,
@@ -220,27 +241,6 @@
     },
     {
       "adult": false,
-      "backdrop_path": "/eDBZN0TbWkxoAB0qIDFagVcPPTN.jpg",
-      "genre_ids": [
-        27,
-        14,
-        35,
-        12
-      ],
-      "id": 1153714,
-      "original_language": "en",
-      "original_title": "Death of a Unicorn",
-      "overview": "A father and daughter accidentally hit and kill a unicorn while en route to a weekend retreat, where his billionaire boss seeks to exploit the creature’s miraculous curative properties.",
-      "popularity": 255.1396,
-      "poster_path": "/lXR32JepFwD1UHkplWqtBP1K79z.jpg",
-      "release_date": "2025-03-27",
-      "title": "Death of a Unicorn",
-      "video": false,
-      "vote_average": 6.222,
-      "vote_count": 126
-    },
-    {
-      "adult": false,
       "backdrop_path": "/svLj9iyRmmeNVRsMreANn7DPPZE.jpg",
       "genre_ids": [
         27
@@ -254,8 +254,8 @@
       "release_date": "2025-04-11",
       "title": "Saint Catherine",
       "video": false,
-      "vote_average": 6.583,
-      "vote_count": 12
+      "vote_average": 6.231,
+      "vote_count": 13
     },
     {
       "adult": false,
@@ -274,8 +274,8 @@
       "release_date": "2025-04-16",
       "title": "Sinners",
       "video": false,
-      "vote_average": 7.644,
-      "vote_count": 527
+      "vote_average": 7.643,
+      "vote_count": 536
     },
     {
       "adult": false,
@@ -293,8 +293,8 @@
       "release_date": "2025-02-14",
       "title": "The Monkey",
       "video": false,
-      "vote_average": 5.888,
-      "vote_count": 558
+      "vote_average": 5.896,
+      "vote_count": 559
     },
     {
       "adult": false,
@@ -314,8 +314,8 @@
       "release_date": "2025-04-23",
       "title": "Bullet Train Explosion",
       "video": false,
-      "vote_average": 6.877,
-      "vote_count": 130
+      "vote_average": 6.878,
+      "vote_count": 131
     },
     {
       "adult": false,
@@ -333,7 +333,7 @@
       "release_date": "1979-05-25",
       "title": "Alien",
       "video": false,
-      "vote_average": 8.163,
+      "vote_average": 8.2,
       "vote_count": 15244
     },
     {
@@ -372,8 +372,8 @@
       "release_date": "2025-03-07",
       "title": "Another Simple Favor",
       "video": false,
-      "vote_average": 6.689,
-      "vote_count": 90
+      "vote_average": 6.5,
+      "vote_count": 99
     },
     {
       "adult": false,
@@ -393,9 +393,9 @@
       "title": "Captain Marvel",
       "video": false,
       "vote_average": 6.801,
-      "vote_count": 16001
+      "vote_count": 16002
     }
   ],
-  "total_pages": 50094,
-  "total_results": 1001872
+  "total_pages": 50097,
+  "total_results": 1001937
 }
