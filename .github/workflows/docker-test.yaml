@@ -53,6 +53,7 @@ jobs:
            --name test-runner \
            -v ${{ github.workspace }}/allure-results/docker:/app/allure-results \
            -v ${{ github.workspace }}/ui_report.xml:/app/ui_report.xml \
+           -v ${{ github.workspace }}/api_report.xml:/app/api_report.xml \
            -e TMDB_API_KEY=${{ secrets.TMDB_API_KEY }} \
            test-runner
 
