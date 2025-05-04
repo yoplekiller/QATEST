@@ -5,15 +5,21 @@ from parse_test_result import parse_test_result, get_failed_test_names
 
 def send_slack_result():
     webhook_url = os.getenv("SLACK_WEBHOOK_URL")
-    github_run_id = os.getenv("GITHUB_RUN_ID")  # 추가
+    github_run_id = os.getenv("GITHUB_RUN_ID")
+    branch_name = os.getenv("BRANCH_NAME", "main")
 
 
     if not webhook_url:
         print("❌ Slack Webhook URL이 설정되지 않았습니다.")
         return
 
-    ui_passed, ui_failures, ui_errors, ui_skipped = parse_test_result("ui_report.xml")
-    api_passed, api_failures, api_errors, api_skipped = parse_test_result("api_report.xml")
+    is_docker = os.getenv("DOCKER_ENV", "false").lower() == "true"
+
+    ui_report_path = "reports/ui_report.xml" if is_docker else "ui_report.xml"
+    api_report_path = "reports/api_report.xml" if is_docker else "api_report.xml"
+
+    ui_passed, ui_failures, ui_errors, ui_skipped = parse_test_result(ui_report_path)
+    api_passed, api_failures, api_errors, api_skipped = parse_test_result(api_report_path)
 
 
     passed = ui_passed + api_passed
@@ -25,7 +31,7 @@ def send_slack_result():
     failed_api_tests = get_failed_test_names("api_report.xml")
     all_failed_tests = failed_ui_tests + failed_api_tests
 
-    branch_name = os.getenv("BRANCH_NAME", "main")
+
 
     allure_report_url = f"https://yoplekiller.github.io/QATEST/allure-report/{branch_name}/index.html"
     excel_download_url = f"https://github.com/yoplekiller/QATEST/actions/runs/{github_run_id}"
