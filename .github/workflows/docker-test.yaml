@@ -52,20 +52,19 @@ jobs:
           docker run -dit \
            --name test-runner \
            -v ${{ github.workspace }}/allure-results/docker:/app/allure-results \
-           -v ${{ github.workspace }}/ui_report.xml:/app/ui_report.xml \
-           -v ${{ github.workspace }}/api_report.xml:/app/api_report.xml \
+           -v ${{ github.workspace }}/reports:/app/reports \
            -e TMDB_API_KEY=${{ secrets.TMDB_API_KEY }} \
            test-runner
 
       - name: Run Docker Selenium Tests
         run: |
           mkdir -p allure-results
-          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --junitxml=ui_report.xml --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short
+          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --junitxml=/app/reports/ui_report.xml --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short
         continue-on-error: true
 
       - name: Run API Tests
         run: |
-          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --junitxml=api_report.xml --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short
+          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --junitxml=/app/reports/api_report.xml --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short
         continue-on-error: true
 
 
