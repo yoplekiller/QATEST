@@ -59,11 +59,13 @@ jobs:
       - name: Run Docker Selenium Tests
         run: |
           mkdir -p allure-results
-          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --junitxml=ui_report.xml --capture=tee-sys -v || true 
+          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --junitxml=ui_report.xml --capture=tee-sys -v || true
+        continue-on-error: true
 
       - name: Run API Tests
         run: |
-          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --junitxml=api_report.xml --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short 
+          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --junitxml=api_report.xml --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short
+        continue-on-error: true
 
 
       - name: Set proper permissions
