@@ -108,18 +108,23 @@ jobs:
 
       - name: Generate Allure Report
         run: |
-          mkdir -p allure-report/docker
-          allure generate allure-results/docker -o allure-report/docker --clean || echo "❌ Report 생성 실패"
+          mkdir -p allure-report/${{ github.ref_name }}
+          allure generate allure-results/docker -o allure-report/${{ github.ref_name }} --clean
 
       - name: Set Slack Webhook Env
         run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
 
+      - name: Set BRANCH_NAME env
+        run: echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+
       - name: Install Python Dependencies for Excel Report
         run: |
           pip install pandas openpyxl requests
+          
 
       - name: Generate Excel Report and Upload to Slack
         run: python src/report/generate_excel_report.py
+
 
       - name: 백업 이전 결과 정리
         run: |
@@ -146,8 +151,8 @@ jobs:
 
       - name: 결과물 복사
         run: |
-          mkdir -p deploy_dir
-          cp -r allure-report deploy_dir/
+          mkdir -p deploy_dir/allure-report/${{ github.ref_name }}
+          cp -r allure-report/${{ github.ref_name }} deploy_dir/allure-report/
 
 
       - name: Upload Allure report to Github Pages #리포트 업로드
