@@ -63,7 +63,7 @@ jobs:
 
       - name: Run API Tests
         run: |
-          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short --junitxml=api_report.xml
+          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --junitxml=api_report.xml --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short 
 
 
       - name: Set proper permissions
