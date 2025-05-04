@@ -54,6 +54,7 @@ jobs:
            -v ${{ github.workspace }}/allure-results/docker:/app/allure-results \
            -v ${{ github.workspace }}/reports:/app/reports \
            -e TMDB_API_KEY=${{ secrets.TMDB_API_KEY }} \
+           -e DOCKER_ENV=true \
            test-runner
 
       - name: Run Docker Selenium Tests
