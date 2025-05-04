@@ -7,13 +7,14 @@ def send_slack_result():
     webhook_url = os.getenv("SLACK_WEBHOOK_URL")
     github_run_id = os.getenv("GITHUB_RUN_ID")
     branch_name = os.getenv("BRANCH_NAME", "main")
+    is_docker = os.getenv("DOCKER_ENV", "false").lower() == "true"
 
 
     if not webhook_url:
         print("❌ Slack Webhook URL이 설정되지 않았습니다.")
         return
 
-    is_docker = os.getenv("DOCKER_ENV", "false").lower() == "true"
+
 
     ui_report_path = "reports/ui_report.xml" if is_docker else "ui_report.xml"
     api_report_path = "reports/api_report.xml" if is_docker else "api_report.xml"
@@ -22,14 +23,15 @@ def send_slack_result():
     api_passed, api_failures, api_errors, api_skipped = parse_test_result(api_report_path)
 
 
+
+    failed_ui_tests = get_failed_test_names(ui_report_path)
+    failed_api_tests = get_failed_test_names(api_report_path)
+    all_failed_tests = failed_ui_tests + failed_api_tests
+
     passed = ui_passed + api_passed
     failures = ui_failures + api_failures
     errors = ui_errors + api_errors
     skipped = ui_skipped + api_skipped
-
-    failed_ui_tests = get_failed_test_names("ui_report.xml")
-    failed_api_tests = get_failed_test_names("api_report.xml")
-    all_failed_tests = failed_ui_tests + failed_api_tests
 
 
 
