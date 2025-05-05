@@ -84,7 +84,7 @@ jobs:
 
       - name: 🧹 Remove Heavy Allure Attachments
         run: |
-          find allure-results -name "*-attachment.png" -delete
+#          find allure-results -name "*-attachment.png" -delete
           find allure-results -name "*-attachment.txt" -delete
           find allure-results -name "*-container.json" -delete
 
@@ -151,7 +151,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: excel-test-report
-          path: '**/test-report_*.xlsx'
+          path: test-report_*.xlsx
 
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
