@@ -53,6 +53,11 @@ jobs:
           sudo rm -rf allure-results reports
           sudo mkdir -p allure-results/docker reports
           sudo chmod -R 777 allure-results reports
+                  
+
+      - name: Set Allure Report Folder (Docker용)
+        run: echo "ALLURE_REPORT_DIR=docker" >> $GITHUB_ENV
+
 
       - name: Run Docker container
         run: |
@@ -63,6 +68,7 @@ jobs:
            -e TMDB_API_KEY=${{ secrets.TMDB_API_KEY }} \
            -e DOCKER_ENV=true \
            test-runner
+          
 
       - name: Ensure reports dir exists in container
         run: docker exec test-runner mkdir -p /app/reports
@@ -116,7 +122,7 @@ jobs:
         run: |
           REPORT_DIR="docker"  # Docker인 경우 명시적으로
           mkdir -p allure-report/$REPORT_DIR
-          allure generate allure-results/docker -o allure-report/$REPORT_DIR --clean
+          allure generate allure-results/docker -o allure-report/$ALLURE_REPORT_DIR --clean
 
       - name: Set Slack Webhook Env
         run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
@@ -158,8 +164,8 @@ jobs:
 
       - name: 결과물 복사
         run: |
-          mkdir -p deploy_dir/allure-report/${{ github.ref_name }}
-          cp -r allure-report/${{ github.ref_name }} deploy_dir/allure-report/
+          mkdir -p deploy_dir/allure-report/$ALLURE_REPORT_DIR
+          cp -r allure-report/$ALLURE_REPORT_DIR deploy_dir/allure-report/
 
 
       - name: Upload Allure report to Github Pages #리포트 업로드
