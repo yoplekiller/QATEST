@@ -6,7 +6,8 @@ from datetime import datetime
 from openpyxl.reader.excel import load_workbook
 
 # Allure 결과 경로
-ALLURE_RESULT_DIR = "allure-results"
+IS_DOCKER = os.getenv("DOCKER_ENV", "false").lower() == "true"
+ALLURE_RESULT_DIR = "allure-results/docker" if IS_DOCKER else "allure-results"
 
 # 디렉토리 존재 확인
 if not os.path.exists(ALLURE_RESULT_DIR):
