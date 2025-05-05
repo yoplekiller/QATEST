@@ -57,6 +57,9 @@ jobs:
            -e DOCKER_ENV=true \
            test-runner
 
+      - name: Ensure reports dir exists in container
+        run: docker exec test-runner mkdir -p /app/reports
+
       - name: Run Docker Selenium Tests
         run: |
           mkdir -p allure-results
