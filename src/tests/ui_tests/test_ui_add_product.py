@@ -7,13 +7,9 @@ from utils.utilities import capture_screenshot
 
 @allure.feature("UI 테스트")
 @allure.story("상품 추가 테스트")
-@allure.title("상품 상세 화면의 UI 기능들이 동작 하는지 확인")
+@allure.title("상품 검색 후 장바구니 추가 기능 동작 확인")
 def test_add_product(driver):
-    """
-       상품을 검색 후 추가하는 테스트
-       - 수량올리기, 수량내리기 기능 구현
-       - 검색 후 상품 선택 후 카트에 추가 구현
-       """
+
     driver.get("https://www.kurly.com/main")
     driver.maximize_window()
 
@@ -31,7 +27,7 @@ def test_add_product(driver):
           time.sleep(4)
 
       except Exception as e:
-          capture_screenshot(driver,"상품추가 g실패","screenshot_add_product")
+          capture_screenshot(driver,"상품추가 실패","screenshot_add_product")
           pytest.fail(f"❌ 상품 추가 버튼 클릭 실패: {str(e)}")
 
       try:
