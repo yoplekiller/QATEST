@@ -9,7 +9,6 @@ from utils.utilities import capture_screenshot
 @allure.story("상품 추가 테스트")
 @allure.title("상품 검색 후 장바구니 추가 기능 동작 확인")
 def test_add_product(driver):
-
     driver.get("https://www.kurly.com/main")
     driver.maximize_window()
 
