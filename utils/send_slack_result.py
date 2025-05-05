@@ -6,8 +6,10 @@ from parse_test_result import parse_test_result, get_failed_test_names
 def send_slack_result():
     webhook_url = os.getenv("SLACK_WEBHOOK_URL")
     github_run_id = os.getenv("GITHUB_RUN_ID")
-    branch_name = os.getenv("BRANCH_NAME", "main")
     is_docker = os.getenv("DOCKER_ENV", "false").lower() == "true"
+    branch_name = os.getenv("BRANCH_NAME", "main")
+    branch_or_env = "docker" if is_docker else branch_name
+
 
 
     if not webhook_url:
@@ -32,7 +34,7 @@ def send_slack_result():
     skipped = ui_skipped + api_skipped
 
 
-    allure_report_url = f"https://yoplekiller.github.io/QATEST/allure-report/{branch_name}/index.html"
+    allure_report_url = f"https://yoplekiller.github.io/QATEST/allure-report/{branch_or_env}/index.html"
     excel_download_url = f"https://github.com/yoplekiller/QATEST/actions/runs/{github_run_id}"
 
     if all_failed_tests:
