@@ -50,9 +50,9 @@ jobs:
 
       - name: Prepare mounted directories
         run: |
-          mkdir -p allure-results/docker
-          mkdir -p reports
-          chmod -R 777 allure-results reports
+          sudo rm -rf allure-results reports
+          sudo mkdir -p allure-results/docker reports
+          sudo chmod -R 777 allure-results reports
 
       - name: Run Docker container
         run: |
