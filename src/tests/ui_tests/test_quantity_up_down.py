@@ -18,6 +18,9 @@ def test_quantity_up_down(driver):
     driver.implicitly_wait(3)
 
     try:
+        add_button = driver.find_element(By.XPATH, "//a[3]//div[2]//button[1]")
+        add_button.click()
+
         up_btn = driver.find_element(By.XPATH, "//button[@aria-label='수량올리기']")
         down_btn = driver.find_element(By.XPATH, "//button[@aria-label='수량내리기']")
 
