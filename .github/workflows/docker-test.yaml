@@ -84,7 +84,7 @@ jobs:
 
       - name: 🧹 Remove Heavy Allure Attachments
         run: |
-          find allure-results -name "*-attachment.png" -delete
+#          find allure-results -name "*-attachment.png" -delete
           find allure-results -name "*-attachment.txt" -delete
           find allure-results -name "*-container.json" -delete
 
