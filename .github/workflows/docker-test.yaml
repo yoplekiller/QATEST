@@ -1,20 +1,14 @@
 name: Docker Test Automation
 
 on:
-#  push:
-#    branches:
-#      - main
   pull_request:
     branches:
       - main
   workflow_dispatch:
-#  schedule:
-#    - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
 
-concurrency:             #동시에 여러 개의 배포 실행 방지
+concurrency:
   group: gh-pages-deploy
   cancel-in-progress: false
-
 
 jobs:
   docker-tests:
@@ -29,7 +23,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-
       - name: Install Docker & Docker Compose
         run: |
           sudo apt-get update
@@ -41,23 +34,19 @@ jobs:
           sleep 10
 
       - name: Build Docker image
-        run: |
-          docker build -t test-runner .
+        run: docker build -t test-runner .
 
       - name: Remove old container if exists
         run: docker rm -f test-runner || true
 
-
       - name: Prepare mounted directories
         run: |
-          sudo rm -rf allure-results reports
-          sudo mkdir -p allure-results/docker reports
-          sudo chmod -R 777 allure-results reports
-                  
+          sudo rm -rf allure-results reports screenshots
+          sudo mkdir -p allure-results/docker reports screenshots
+          sudo chmod -R 777 allure-results reports screenshots
 
       - name: Set Allure Report Folder (Docker용)
         run: echo "ALLURE_REPORT_DIR=docker" >> $GITHUB_ENV
-
 
       - name: Run Docker container
         run: |
@@ -65,25 +54,32 @@ jobs:
            --name test-runner \
            -v ${{ github.workspace }}/allure-results/docker:/app/allure-results \
            -v ${{ github.workspace }}/reports:/app/reports \
+           -v ${{ github.workspace }}/screenshots:/app/screenshots \
            -e TMDB_API_KEY=${{ secrets.TMDB_API_KEY }} \
            -e DOCKER_ENV=true \
            test-runner
-          
 
       - name: Ensure reports dir exists in container
         run: docker exec test-runner mkdir -p /app/reports
 
       - name: Run Docker Selenium Tests
         run: |
-          mkdir -p allure-results
-          docker exec test-runner pytest src/tests/ui_tests --alluredir=/app/allure-results --junitxml=/app/reports/ui_report.xml --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short
+          docker exec test-runner pytest src/tests/ui_tests \
+            --alluredir=/app/allure-results \
+            --junitxml=/app/reports/ui_report.xml \
+            --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short
         continue-on-error: true
 
       - name: Run API Tests
         run: |
-          docker exec test-runner pytest src/tests/api_tests --alluredir=/app/allure-results --junitxml=/app/reports/api_report.xml --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short
+          docker exec test-runner pytest src/tests/api_tests \
+            --alluredir=/app/allure-results \
+            --junitxml=/app/reports/api_report.xml \
+            --capture=tee-sys -v --maxfail=7 --disable-warnings --tb=short
         continue-on-error: true
 
+      - name: 🔍 Check Allure result files inside Docker
+        run: docker exec test-runner ls -al /app/allure-results
 
       - name: Set proper permissions
         run: sudo chmod -R 777 allure-results || true
@@ -93,21 +89,16 @@ jobs:
           find allure-results -name "*-attachment.txt" -delete
           find allure-results -name "*-container.json" -delete
 
-      - name: Check Allure 디렉토리 사이즈
-        run: du -sh allure-results || echo "❌ 디렉토리 없음"
-
       - name: Clone gh-pages
         run: |
           git fetch origin gh-pages
           git checkout gh-pages || git checkout --orphan gh-pages
-          
 
       - name: Stop and Remove Containers
         if: always()
         run: docker compose down
 
-
-      - name: Install Allure CLI # Allure CLI 설치
+      - name: Install Allure CLI
         run: |
           sudo apt-get update
           sudo apt-get install -y wget unzip
@@ -117,45 +108,34 @@ jobs:
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
           allure --version
 
-
-      - name: Set Allure Report Folder (Docker용)
+      - name: Generate Allure Report
         run: |
-          echo "ALLURE_REPORT_DIR=docker" >> $GITHUB_ENV
-          echo "DOCKER_ENV=true" >> $GITHUB_ENV
-          echo "BRANCH_NAME=${GITHUB_REF_NAME}" >> $GITHUB_ENV
-          
-          
-          
+          mkdir -p allure-report/${{ env.ALLURE_REPORT_DIR }}
+          allure generate allure-results/docker -o allure-report/${{ env.ALLURE_REPORT_DIR }} --clean
 
-      - name: Set Slack Webhook Env
-        run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
-
-      - name: Set BRANCH_NAME env
-        run: echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
-
-      - name: Install Python Dependencies for Excel Report
+      - name: Set ENV variables
         run: |
-          pip install pandas openpyxl requests
-          
+          echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
+          echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+
+      - name: Install Python Dependencies
+        run: pip install pandas openpyxl requests
 
       - name: Generate Excel Report and Upload to Slack
         run: |
           export DOCKER_ENV=true
           python src/report/generate_excel_report.py
 
-
       - name: 백업 이전 결과 정리
         run: |
           today=$(date +'%Y-%m-%d')
-          mkdir -p backup/reports/$today
-          mkdir -p backup/screenshots/$today
+          mkdir -p backup/reports/$today backup/screenshots/$today
           mv test-report_*.xlsx backup/reports/$today/ || echo "✅ 백업할 엑셀 없음"
           if [ -d failed_screenshots ]; then
-          mv failed_screenshots/* backup/screenshots/$today/ || echo "✅ 백업할 스크린샷 없음"
+            mv failed_screenshots/* backup/screenshots/$today/ || echo "✅ 백업할 스크린샷 없음"
           else
-          echo "✅ failed_screenshots 폴더 없음"
-          fi 
-        
+            echo "✅ failed_screenshots 폴더 없음"
+          fi
 
       - name: Upload Excel Report as Artifact
         uses: actions/upload-artifact@v4
@@ -163,25 +143,23 @@ jobs:
           name: excel-test-report
           path: test-report_*.xlsx
 
-
       - name: Force Update GitHub Pages
-        run: echo $(date) > allure-report/timestamp.txt
-
+        run: |
+          mkdir -p allure-report
+          echo $(date) > allure-report/timestamp.txt
 
       - name: 결과물 복사
         run: |
           mkdir -p deploy_dir/allure-report/${{ env.ALLURE_REPORT_DIR }}
           cp -r allure-report/${{ env.ALLURE_REPORT_DIR }} deploy_dir/allure-report/
 
-
-      - name: Upload Allure report to Github Pages #리포트 업로드
+      - name: Upload Allure report to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: deploy_dir
           destination_dir: .
-          keep_files: false #기존파일 유지
-
+          keep_files: false
 
       - name: Send Slack Test Summary
         run: |
