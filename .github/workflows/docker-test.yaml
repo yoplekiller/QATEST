@@ -118,11 +118,14 @@ jobs:
           allure --version
 
 
-      - name: Generate Allure Report
+      - name: Set Allure Report Folder (Docker용)
         run: |
-          REPORT_DIR="docker"  # Docker인 경우 명시적으로
-          mkdir -p allure-report/$REPORT_DIR
-          allure generate allure-results/docker -o allure-report/$ALLURE_REPORT_DIR --clean
+          echo "ALLURE_REPORT_DIR=docker" >> $GITHUB_ENV
+          echo "DOCKER_ENV=true" >> $GITHUB_ENV
+          echo "BRANCH_NAME=${GITHUB_REF_NAME}" >> $GITHUB_ENV
+          
+          
+          
 
       - name: Set Slack Webhook Env
         run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
@@ -136,7 +139,9 @@ jobs:
           
 
       - name: Generate Excel Report and Upload to Slack
-        run: python src/report/generate_excel_report.py
+        run: |
+          export DOCKER_ENV=true
+          python src/report/generate_excel_report.py
 
 
       - name: 백업 이전 결과 정리
@@ -151,7 +156,6 @@ jobs:
           echo "✅ failed_screenshots 폴더 없음"
           fi 
         
-        
 
       - name: Upload Excel Report as Artifact
         uses: actions/upload-artifact@v4
@@ -159,13 +163,15 @@ jobs:
           name: excel-test-report
           path: test-report_*.xlsx
 
+
       - name: Force Update GitHub Pages
         run: echo $(date) > allure-report/timestamp.txt
 
+
       - name: 결과물 복사
         run: |
-          mkdir -p deploy_dir/allure-report/$ALLURE_REPORT_DIR
-          cp -r allure-report/$ALLURE_REPORT_DIR deploy_dir/allure-report/
+          mkdir -p deploy_dir/allure-report/${{ env.ALLURE_REPORT_DIR }}
+          cp -r allure-report/${{ env.ALLURE_REPORT_DIR }} deploy_dir/allure-report/
 
 
       - name: Upload Allure report to Github Pages #리포트 업로드
@@ -180,6 +186,7 @@ jobs:
       - name: Send Slack Test Summary
         run: |
           pip install requests
+          export DOCKER_ENV=true
           python utils/send_slack_result.py
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
