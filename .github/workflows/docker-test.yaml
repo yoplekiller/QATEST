@@ -114,8 +114,9 @@ jobs:
 
       - name: Generate Allure Report
         run: |
-          mkdir -p allure-report/${{ github.ref_name }}
-          allure generate allure-results/docker -o allure-report/${{ github.ref_name }} --clean
+          REPORT_DIR="docker"  # Docker인 경우 명시적으로
+          mkdir -p allure-report/$REPORT_DIR
+          allure generate allure-results/docker -o allure-report/$REPORT_DIR --clean
 
       - name: Set Slack Webhook Env
         run: echo "SLACK_WEBHOOK_URL=${{ secrets.QA_SLACK_WEBHOOK_URL }}" >> $GITHUB_ENV
