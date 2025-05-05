@@ -150,8 +150,8 @@ jobs:
 
       - name: 결과물 복사
         run: |
-          mkdir -p deploy_dir/allure-report/${{ env.ALLURE_REPORT_DIR }}
-          cp -r allure-report/${{ env.ALLURE_REPORT_DIR }} deploy_dir/allure-report/
+          mkdir -p deploy_dir/allure-report/docker
+          cp -r allure-report/docker/* deploy_dir/allure-report/docker/
 
       - name: Upload Allure report to Github Pages
         uses: peaceiris/actions-gh-pages@v3
