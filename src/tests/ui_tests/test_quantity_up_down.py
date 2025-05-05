@@ -11,20 +11,22 @@ from selenium.webdriver import Keys
 def test_quantity_up_down(driver):
     driver.get("https://www.kurly.com/main")
     driver.maximize_window()
-
-    search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
-    search_box.send_keys("과자")
-    search_box.send_keys(Keys.RETURN)
-    driver.implicitly_wait(3)
-
     try:
+        search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
+        search_box.send_keys("과자")
+        search_box.send_keys(Keys.RETURN)
+        driver.implicitly_wait(3)
+
         add_button = driver.find_element(By.XPATH, "//a[3]//div[2]//button[1]")
         add_button.click()
+        time.sleep(2)
 
         up_btn = driver.find_element(By.XPATH, "//button[@aria-label='수량올리기']")
         down_btn = driver.find_element(By.XPATH, "//button[@aria-label='수량내리기']")
 
         up_btn.click()
+        time.sleep(2)
+
         down_btn.click()
         time.sleep(2)
 
