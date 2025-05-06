@@ -18,7 +18,7 @@ def test_category(driver):
 
       #검색
       search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
-      search_box.send_keys("제로콜라")
+      search_box.send_keys("과자")
       search_box.send_keys(Keys.RETURN)
       time.sleep(4)
 
