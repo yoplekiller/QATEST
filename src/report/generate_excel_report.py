@@ -6,12 +6,19 @@ from datetime import datetime
 from openpyxl.reader.excel import load_workbook
 
 # Allure 결과 경로
-ALLURE_RESULT_DIR = "allure-results"
+IS_DOCKER = os.getenv("DOCKER_ENV", "false").lower() == "true"
+
+ALLURE_RESULT_DIR = "allure-results/docker" if IS_DOCKER else "allure-results"
+print(f"✅ 실행 환경: {'Docker' if IS_DOCKER else 'Local'}")
+print(f"📁 결과 디렉토리: {ALLURE_RESULT_DIR}")
 
 # 디렉토리 존재 확인
 if not os.path.exists(ALLURE_RESULT_DIR):
     print(f"❌ Allure 결과 디렉토리 없음: {ALLURE_RESULT_DIR}")
     exit(1)
+
+files = os.listdir(ALLURE_RESULT_DIR)
+print(f"📄 결과 디렉토리 내 파일 목록: {files}")
 
 # 날짜 기반 파일명 생성
 now_str = datetime.now().strftime("%Y-%m-%d_%H-%M")

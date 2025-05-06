@@ -6,7 +6,7 @@ def parse_test_result(xml_path="report.xml"):
     try:
         tree = ET.parse(xml_path)
         root = tree.getroot()
-        suite = root.find("testsuite")
+        suite = root if root.tag == "testsuite" else root.find("testsuite")
         if suite is None:
             print("❌ <testsuite> 태그를 찾을 수 없습니다.")
             return 0, 0, 0, 0
@@ -29,7 +29,7 @@ def get_failed_test_names(xml_path="report.xml"):
     try:
         tree = ET.parse(xml_path)
         root = tree.getroot()
-        suite = root.find("testsuite")
+        suite = root if root.tag == "testsuite" else root.find("testsuite")
         if suite in None:
             return []
 
