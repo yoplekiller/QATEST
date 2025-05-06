@@ -11,7 +11,6 @@ def test_search_movie():
     env = get_current_env()
     BASE_URL = env["base_url"]
     API_KEY = env["api_key"]
-    """영화 검색 테스트"""
     params = {
         "api_key": API_KEY,
         "query": "Inception"
@@ -24,4 +23,4 @@ def test_search_movie():
 
     assert "results" in data # 검색 결과 존재 여부 확인
     assert len(data["results"]) > 0 # 최소 1개 이상의 결과가 있어야 함
-    assert data["results"][0]["title"] == "Inception" # 첫번째 결과 인셉션 인지 확인
+    assert data["results"][0]["title"] == "Inception" # 첫번째 결과가 인셉션 인지 확인
