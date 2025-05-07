@@ -21,7 +21,7 @@ def test_ui_quantity(driver):
     down_button = driver.find_element(By.XPATH, "//button[@aria-label='수량내리기']")
     down_button.click()
 
-    quantity_input = driver.find_element(By.XPATH, "//button[@aria-label='수량올리기']")
+    quantity_input = driver.find_element(By.XPATH, "//div[@class='count css-6m57y0 e1cqr3m41']")
     assert quantity_input.get_attribute("value") == "2", "수량 조정 실패"
 
 
