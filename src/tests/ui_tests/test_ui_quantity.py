@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
@@ -20,6 +22,7 @@ def test_ui_quantity(driver):
 
     down_button = driver.find_element(By.XPATH, "//button[@aria-label='수량내리기']")
     down_button.click()
+    time.sleep(3)
 
     quantity_input = driver.find_element(By.XPATH, "//div[@class='count css-6m57y0 e1cqr3m41']")
     assert quantity_input.text.strip() == "2", "수량 조절 실패"

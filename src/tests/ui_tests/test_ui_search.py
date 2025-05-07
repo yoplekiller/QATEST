@@ -17,8 +17,6 @@ def test_product_search(driver, tc_id, search_term):
     driver.get("https://www.kurly.com/main")
     time.sleep(2)
     print(f"🔍 TC {tc_id}: '{search_term}' 검색 테스트 실행 중...")
-
-    driver.get("https://www.kurly.com/main")
     try:
         search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
         time.sleep(2)
@@ -28,6 +26,8 @@ def test_product_search(driver, tc_id, search_term):
         search_box.send_keys(search_term)
         search_box.send_keys(Keys.RETURN)
         time.sleep(2)
+        capture_screenshot(driver, "상품 목록", "screenshot_product_search")
+
 
     except Exception as e:
         capture_screenshot(driver, f"{tc_id}_{search_term}", 'screenshots_Search')
