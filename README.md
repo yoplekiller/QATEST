@@ -4,7 +4,7 @@
 - 반복적인 수동 테스트를 자동화하기 위해 Python 기반으로 구현한 QA테스트 자동화 포트폴리오입니다.
 - 실제 웹 서비스(마켓컬리)를 대상으로 Selenium 테스트를 수행하였고,
 - 별도의 영화 홈페이지(https://www.themoviedb.org/) API를 활용한 테스트 자동화도 포함하였습니다.
-- 테스트 결과는 Excel파일로 저장되며, Slack으로 자동 보고됩니다.
+- 테스트 결과는 Allure Report로 시각화되고, Excel파일로 저장되며, Slack으로 자동 보고됩니다.
 
 ## 🧩 프로젝트 구성
 ### 1. 마켓컬리 웹 테스트(Selenium)
@@ -24,6 +24,7 @@
 - Slack Webhook (알림 자동화)
 - Docker / Docker Compose (환경 통합)
 - GitHub Actions (CI 연동)
+- Allure Report(테스트 결과 시각화)
 
 ## ✅ 주요 기능
 - 테스트 결과를 Excel로 정리
@@ -53,4 +54,6 @@
 - DOCKER 기능을 확장하여 완전한 통합 테스트 확장
 - API 테스트 케이스를 추가하여 다양한 테스트 확장
 
+## 🤷‍♀️ 결과
+📄 Allure Report 보기: https://yoplekiller.github.io/QATEST/allure-report/main/index.html
 

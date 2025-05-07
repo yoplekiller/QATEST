@@ -14,14 +14,16 @@ def test_search_invalid_product(driver):
 
     try:
         search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
-        search_box.send_keys("ㅁㄴㅇㄹ")  # 임의의 존재하지 않는 검색어
+        search_box.send_keys("ㅁㄴㅇㄹ")
         search_box.send_keys(Keys.RETURN)
         time.sleep(4)
-
-        if "검색된 상품이 없습니다.다른 검색어를 입력해 주세요." not in driver.page_source:
-            capture_screenshot(driver, "검색 실패", "screenshot_invalid_search")
-            pytest.fail("❌ '검색 결과 없음' 메시지가 노출되지 않음.")
-
     except Exception as e:
-        capture_screenshot(driver, "예외 발생", "screenshot_invalid_search_exception")
-        pytest.fail(f"❌ 예외 발생: {str(e)}")
+        capture_screenshot(driver, "검색 실행 실패", "search_box_error")
+        pytest.fail(f"❌ 검색 입력 중 오류: {str(e)}")
+
+    try:
+        error_msg = driver.find_element(By.XPATH,"//div[@class='css-1d3w5wq e1oh2pka6']")
+        assert error_msg.is_displayed()
+    except Exception as e:
+        capture_screenshot(driver, "결과 메시지 확인 실패", "no_result_msg_error")
+        pytest.fail(f"❌ 결과 메시지 미노출 또는 실패: {str(e)}")

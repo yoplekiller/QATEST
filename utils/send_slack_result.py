@@ -40,7 +40,7 @@ def send_slack_result():
     if all_failed_tests:
         failed_test_str = "❌ *실패한 테스트 목록:*\n" + "\n".join(f"- {name}" for name in all_failed_tests)
     else:
-        failed_test_str = "✅ *모든 테스트가 통과되었습니다!* 🎉"
+        failed_test_str = "✅ *모든 테스트가 완료되었습니다!* 🎉"
 
 
     message = {
