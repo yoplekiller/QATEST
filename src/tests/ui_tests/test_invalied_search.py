@@ -18,7 +18,7 @@ def test_search_invalid_product(driver):
         search_box.send_keys(Keys.RETURN)
         time.sleep(4)
 
-        if "검색 결과" not in driver.page_source:
+        if "검색된 상품이 없습니다.다른 검색어를 입력해 주세요." not in driver.page_source:
             capture_screenshot(driver, "검색 실패", "screenshot_invalid_search")
             pytest.fail("❌ '검색 결과 없음' 메시지가 노출되지 않음.")
 
