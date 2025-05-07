@@ -30,8 +30,6 @@ def test_quantity_up_down(driver):
         down_btn.click()
         time.sleep(2)
 
-        if
-
     except Exception as e:
         capture_screenshot(driver, "수량 조절 실패", "screenshot_qty")
         pytest.fail(f"❌ 수량 조절 실패: {str(e)}")
