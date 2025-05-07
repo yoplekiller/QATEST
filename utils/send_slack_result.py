@@ -48,7 +48,7 @@ def send_slack_result():
             f"*📢 테스트 결과 요약*\n\n"
             f"✅ Passed: {passed}\n"
             f"❌ Failed: {failures}\n"
-            f"⚠️ Errors: {errors}\n"
+            f"⚠️ Broken: {errors}\n"
             f"⏭️ Skipped: {skipped}\n\n"
             f"{failed_test_str}\n\n"        
             f"*📄 Allure Report 보기*: <{allure_report_url}>\n"

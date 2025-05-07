@@ -50,9 +50,12 @@
 
 
 ## 🔮 TODO
-- ZAP 테스트를 도입하여 보안 테스트 구현
-- DOCKER 기능을 확장하여 완전한 통합 테스트 확장
-- API 테스트 케이스를 추가하여 다양한 테스트 확장
+- ⬜ OWASP ZAP 도구를 활용한 보안 테스트 통합
+- ⬜ API 테스트 케이스 추가 및 에러 시나리오 강화
+- ⬜ Docker 환경 최적화 및 다중 서비스 분리 실행
+- ⬜ 테스트 실패 시 자동 이슈 생성 기능 연동 (ex. GitHub Issues, Jira)
+
+
 
 ## 🤷‍♀️ 결과
 📄 Allure Report 보기: https://yoplekiller.github.io/QATEST/allure-report/main/index.html
