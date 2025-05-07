@@ -20,8 +20,8 @@ def send_slack_result():
     ui_report_path = "reports/ui_report.xml" if is_docker else "ui_report.xml"
     api_report_path = "reports/api_report.xml" if is_docker else "api_report.xml"
 
-    ui_passed, ui_failures, ui_broken, ui_skipped = parse_test_result(ui_report_path)
-    api_passed, api_failures, api_broken, api_skipped = parse_test_result(api_report_path)
+    ui_passed, ui_failures, ui_errors, ui_skipped = parse_test_result(ui_report_path)
+    api_passed, api_failures, api_errors, api_skipped = parse_test_result(api_report_path)
 
 
     failed_ui_tests = get_failed_test_names(ui_report_path)
@@ -30,7 +30,7 @@ def send_slack_result():
 
     passed = ui_passed + api_passed
     failures = ui_failures + api_failures
-    broken = ui_broken + api_broken
+    errors = ui_errors + api_errors
     skipped = ui_skipped + api_skipped
 
 
@@ -48,7 +48,7 @@ def send_slack_result():
             f"*📢 테스트 결과 요약*\n\n"
             f"✅ Passed: {passed}\n"
             f"❌ Failed: {failures}\n"
-            f"⚠️ Broken: {broken}\n"
+            f"⚠️ Errors: {errors}\n"
             f"⏭️ Skipped: {skipped}\n\n"
             f"{failed_test_str}\n\n"        
             f"*📄 Allure Report 보기*: <{allure_report_url}>\n"

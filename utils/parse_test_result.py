@@ -13,12 +13,12 @@ def parse_test_result(xml_path="report.xml"):
 
         total = int(suite.attrib.get("tests", "0"))
         failures = int(suite.attrib.get("failures", "0"))
-        broken = int(suite.attrib.get("broken", "0"))
+        errors = int(suite.attrib.get("errors", "0"))
         skipped = int(suite.attrib.get("skipped", "0"))
 
-        passed = total - failures - broken - skipped
+        passed = total - failures - errors - skipped
 
-        return passed, failures, broken, skipped
+        return passed, failures, errors, skipped
 
     except Exception as e:
         print(f"❌ 테스트 결과 파싱 실패: {e}")
@@ -35,7 +35,7 @@ def get_failed_test_names(xml_path="report.xml"):
 
         failed_tests = []
         for testcase in suite.findall("testcase"):
-            if testcase.find("failure") is not None or testcase.find("broken") is not None:
+            if testcase.find("failure") is not None or testcase.find("error") is not None:
                 name = testcase.attrib.get("name", "unknown")
                 failed_tests.append(name)
 
