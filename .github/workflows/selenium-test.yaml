@@ -9,8 +9,8 @@ on:
       - feature/*
       - temp/*
   workflow_dispatch:
-#  schedule:
-#    - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
+  schedule:
+    - cron: '0 */4 * * *' # 실행 시간 설정(UTC)
 
 concurrency:  # 동시에 여러 개의 배포 실행 방지
   group: gh-pages-deploy
@@ -162,18 +162,6 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./deploy_dir
           keep_files: false
-
-      - name: 🔍 Check XML report files
-        run: |
-          echo "📄 Current Directory:"
-          pwd
-          ls -al 
-
-          echo "📄 Checking ui_report.xml"
-          cat ui_report.xml || echo "❌ ui_report.xml 없음"
-
-          echo "📄 Checking report.xml"
-          cat report.xml || echo "❌ report.xml 없음"
 
 
 
