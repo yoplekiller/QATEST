@@ -13,10 +13,6 @@ def test_category(driver):
     driver.maximize_window()
 
     try:
-      driver.get("https://www.kurly.com/main")
-      time.sleep(4)
-
-      #검색
       search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
       search_box.send_keys("과자")
       search_box.send_keys(Keys.RETURN)
@@ -28,12 +24,15 @@ def test_category(driver):
               category_button = driver.find_element(By.XPATH,f"//a[contains(text(),'{category_name}')]")
               category_button.click()
               time.sleep(4)
+
+              assert category_name != category_button, f"❌ '{category_name}' 테스트 실패"
+
               capture_screenshot(driver, screenshot_name, "screenshots_category")
           except Exception as e:
               capture_screenshot(driver,f"{screenshot_name}_실패","screenshots_category")
               allure.attach(driver.get_screenshot_as_png(), name=f"{screenshot_name}_실패",
                             attachment_type=allure.attachment_type.PNG)
-              pytest.fail(f"❌ '{category_name}' 클릭 실패: {str(e)}")
+              pytest.fail(f"❌ '{category_name}' 테스트 실패: {str(e)}")
 
       categories =[
           ("추천순", "추천순"),
@@ -45,6 +44,8 @@ def test_category(driver):
       ]
       for category_name, screenshot_name in categories:
           click_category(category_name, screenshot_name)
+
+
 
     except Exception as e:
         capture_screenshot(driver,"카테고리_테스트실패","screenshots_category")

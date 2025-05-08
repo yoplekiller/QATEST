@@ -34,7 +34,7 @@ def test_login(driver):
         assert success_case.is_displayed(), f"❌ 로그인 실패"
 
     except Exception as e:
-        capture_screenshot(driver, "로그인", "screenshots_login")
+        capture_screenshot(driver, "로그인", "screenshots_login_failed")
         pytest.fail(f"❌ 로그인 실패 :{str(e)}")
 
 

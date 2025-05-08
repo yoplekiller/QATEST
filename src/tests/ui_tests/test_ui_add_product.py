@@ -13,8 +13,6 @@ def test_add_product(driver):
     driver.maximize_window()
 
     try:
-      driver.get("https://www.kurly.com/main")
-
       search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
       search_box.send_keys("과자")
       search_box.send_keys(Keys.RETURN)
