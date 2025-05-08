@@ -1,9 +1,11 @@
 import time
-
+import allure
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
-
+@allure.feature("UI 테스트")
+@allure.story("수량 버튼 동작 테스트")
+@allure.title("수량 증가/감소 버튼 동작 확인")
 def test_ui_quantity(driver):
     driver.get("https://www.kurly.com/main")
     driver.maximize_window()

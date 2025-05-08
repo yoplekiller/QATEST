@@ -22,7 +22,7 @@ def test_search_invalid_product(driver):
             popup = driver.find_element(By.XPATH, "//div[@class='popup-content css-15yaaju e1k5padi2']")
             assert popup.is_displayed(), "❌ 팝업이 표시되지 않았습니다."
 
-            # 팝업 텍스트 확인 (선택사항)
+            # 팝업 텍스트 확인
             popup_text = popup.text
             assert "검색어를 입력해주세요" in popup_text, f"❌ 예기치 않은 팝업 메시지: {popup_text}"
 
