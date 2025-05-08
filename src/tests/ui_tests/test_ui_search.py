@@ -17,6 +17,7 @@ def test_product_search(driver, tc_id, search_term):
     driver.get("https://www.kurly.com/main")
     time.sleep(2)
     print(f"🔍 TC {tc_id}: '{search_term}' 검색 테스트 실행 중...")
+
     try:
         search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
         time.sleep(2)
@@ -25,7 +26,7 @@ def test_product_search(driver, tc_id, search_term):
 
         search_box.send_keys(search_term)
         search_box.send_keys(Keys.RETURN)
-        time.sleep(2)
+        time.sleep(4)
 
         product_elements = driver.find_elements(By.XPATH,"//span[@class='css-1qfsi3d e1yof8003']")
         assert len(product_elements) > 0, f"❌ 검색어 '{search_term}'에 대한 검색 결과가 없음."
