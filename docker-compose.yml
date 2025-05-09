@@ -3,7 +3,7 @@ services:
     image: selenium/hub:4.6.0
     container_name: selenium-hub
     ports:
-      - "5555:4444"
+      - "5555:4445"
       - "4444:4444"
       - "4443:4443"
       - "4442:4442"
@@ -11,21 +11,27 @@ services:
 
   chrome:
     image: selenium/node-chrome:4.6.0
+    container_name: chrome-test
     depends_on:
       - selenium-hub
+    shm_size: '2gb'
     environment:
-      SE_EVENT_BUS_HOST: selenium-hub
-      SE_EVENT_BUS_PUBLISH_PORT: 4442
-      SE_EVENT_BUS_SUBSCRIBE_PORT: 4443
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
 
   firefox:
     image: selenium/node-firefox:4.6.0
+    container_name: firefox-test
     depends_on:
       - selenium-hub
+    shm_size: '2gb'
     environment:
-      SE_EVENT_BUS_HOST: selenium-hub
-      SE_EVENT_BUS_PUBLISH_PORT: 4442
-      SE_EVENT_BUS_SUBSCRIBE_PORT: 4443
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
 
 
 
@@ -33,12 +39,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: mycompany/test-runner:latest
+    image: personal/test-runner:latest
     container_name: test-runner
     depends_on:
       - selenium-hub
     environment:
-      - SELENIUM_REMOTE_URL=http://selenium:4444/wd/hub
+      - SELENIUM_REMOTE_URL=http://selenium-hub:4444/wd/hub
     volumes:
       - .:/app
     working_dir: /app
