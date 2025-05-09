@@ -1,22 +1,26 @@
 import time
 import pytest
 import requests
-from utils.api_utils import env_data
+from utils.api_utils import get_current_env
+
+env_data = get_current_env()
+API_KEY = env_data["api_key"]
+BASE_URL = env_data["base_url"]
 
 SLA_SECONDS = 2
-API_KEY = env_data["api_key"]
 
 @pytest.mark.parametrize("endpoint", [
-    f"https://api.themoviedb.org/3/movie/popular?api_key={API_KEY}",
-    f"https://api.themoviedb.org/3/genre/movie/list?api_key={API_KEY}"
+    f"{BASE_URL}/movie/popular?api_key={API_KEY}",
+    f"{BASE_URL}/genre/movie/list?api_key={API_KEY}"
 ])
 def test_api_sla(endpoint):
     start_time = time.time()
     response = requests.get(endpoint)
     elapsed_time = time.time() - start_time
 
+    print(f"📡 요청 주소: {endpoint}")
+    print(f"✅ 응답 시간: {elapsed_time:.2f}초")
+    print(f"✅ 응답 코드: {response.status_code}")
+
     assert response.status_code == 200, f"❌ 응답 실패: {response.status_code}"
-    assert elapsed_time < SLA_SECONDS, f"❌ SLA 초과: {elapsed_time:.2f}초"
-
-    print(f"✅ SLA 만족: {elapsed_time:.2f}초")
-
+    assert elapsed_time < SLA_SECONDS,
