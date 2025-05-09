@@ -4,6 +4,9 @@ services:
     container_name: selenium-hub
     ports:
       - "5555:4444"
+      - "4444:4444"
+      - "4443:4443"
+      - "4442:4442"
     shm_size: '4gb'
 
   chrome:
