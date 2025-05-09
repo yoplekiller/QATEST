@@ -1,12 +1,14 @@
 import time
 import pytest
 import requests
+from utils.api_utils import env_data
 
 SLA_SECONDS = 2
+API_KEY = env_data["api_key"]
 
 @pytest.mark.parametrize("endpoint", [
-        "https://api.themoviedb.org/3/movie/popular?api_key=api_key",
-        "https://api.themoviedb.org/3/genre/movie/list?api_key=api_key"
+        "https://api.themoviedb.org/3/movie/popular?api_key={API_KEY}",
+        "https://api.themoviedb.org/3/genre/movie/list?api_key={API_KEY}"
 ])
 def test_api_sla(endpoint):
     start_time = time.time()
