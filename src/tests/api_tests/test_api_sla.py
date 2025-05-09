@@ -23,4 +23,4 @@ def test_api_sla(endpoint):
     print(f"✅ 응답 코드: {response.status_code}")
 
     assert response.status_code == 200, f"❌ 응답 실패: {response.status_code}"
-    assert elapsed_time < SLA_SECONDS,
+    assert elapsed_time < SLA_SECONDS, f"❌ SLA 초과: {elapsed_time:.2f}초"
