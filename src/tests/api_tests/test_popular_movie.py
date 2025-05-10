@@ -3,7 +3,7 @@ from utils.config_utils import get_current_env
 from utils.api_utils import send_get_request, attach_response
 import json
 
-@allure.feature("영화 목록")
+@allure.feature("영화 목록 API 테스트")
 @allure.story("인기 영화 조회")
 @allure.title("인기 영화 목록 조회 - 200 응답 확인")
 def test_get_popular_movies():

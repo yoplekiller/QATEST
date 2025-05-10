@@ -4,7 +4,7 @@ from utils.api_utils import attach_response
 from utils.config_utils import get_current_env
 
 
-@allure.feature("영화 목록")
+@allure.feature("영화 목록 API 테스트")
 @allure.story("영화 검색 API 테스트")
 @allure.title("영화 검색 기능이 잘 동작 하는지 확인")
 def test_search_movie():
