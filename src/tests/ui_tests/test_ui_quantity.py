@@ -13,8 +13,9 @@ def test_ui_quantity(driver):
     search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
     search_box.send_keys("과자")
     search_box.send_keys(Keys.RETURN)
+    driver.implicitly_wait(5)
 
-    driver.implicitly_wait(3)
+
     first_product = driver.find_element(By.XPATH, "//a[3]//div[2]//button[1]")
     first_product.click()
 
