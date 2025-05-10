@@ -61,11 +61,13 @@
 📄 Allure Report 보기: https://yoplekiller.github.io/QATEST/allure-report/main/index.html
 
 ## 📹 테스트 자동화 시연 영상
+- 테스트 중 노출되는 실패 케이스들은 의도적인 케이스들 입니다.
 
-1. 🖥️ **로컬 자동화 실행**  
+### 1. 🖥️ **로컬 자동화 실행**  
 [영상 보기 (YouTube)](https://www.youtube.com/watch?v=LYsvUJvG5CI&ab_channel=%EC%9E%84%EC%9E%AC%EB%AF%BC)
+ 
 
-2. ☁️ **CI/CD 자동 실행 (GitHub Actions)**  
+### 2. ☁️ **CI/CD 자동 실행 (GitHub Actions)**  
 [영상 보기 (YouTube)](https://www.youtube.com/watch?v=wx1F2yGFV2s&ab_channel=%EC%9E%84%EC%9E%AC%EB%AF%BC)
 
 

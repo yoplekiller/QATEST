@@ -13,9 +13,9 @@ SLA_SECONDS = 2
 
 
 @allure.feature("영화 목록 API 테스트")
-@allure.story("영화 페이지 SLA 속도 테스트")
-@allure.title("SLA 속도 - 2초 미만")
-@allure.step("SLA 테스트: {endpoint}")
+@allure.story("영화 페이지 SLA 응답 시간 테스트")
+@allure.title("SLA 응답 시간 테스트 - 2초 미만")
+@allure.step("SLA 응답 시간 테스트: {endpoint}")
 @pytest.mark.parametrize("endpoint", [
     f"{BASE_URL}/movie/popular?api_key={API_KEY}",
     f"{BASE_URL}/genre/movie/list?api_key={API_KEY}"
