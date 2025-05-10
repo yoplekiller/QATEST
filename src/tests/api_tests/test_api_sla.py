@@ -11,7 +11,7 @@ BASE_URL = env_data["base_url"]
 
 SLA_SECONDS = 2
 
-@@allure.step("SLA 테스트: {endpoint}")
+@allure.step("SLA 테스트: {endpoint}")
 @pytest.mark.parametrize("endpoint", [
     f"{BASE_URL}/movie/popular?api_key={API_KEY}",
     f"{BASE_URL}/genre/movie/list?api_key={API_KEY}"
