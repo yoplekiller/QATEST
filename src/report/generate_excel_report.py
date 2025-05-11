@@ -52,6 +52,7 @@ if not data:
 pass_count = sum(1 for i in data if i["상태"] == "PASSED")
 fail_count = sum(1 for i in data if i["상태"] == "FAILED")
 skip_count = sum(1 for i in data if i["상태"] == "SKIPPED")
+broken_count = sum(1 for i in data if i ["상태"] == "BROKEN")
 total = len(data)
 success_rate = round((pass_count / total) * 100, 2)
 total_duration = round(sum(i["소요 시간 (초)"] for i in data), 2)
@@ -61,6 +62,7 @@ summary_data = [{
     "성공": pass_count,
     "실패": fail_count,
     "스킵": skip_count,
+    "브로큰": broken_count,
     "성공률 (%)": success_rate,
     "총 소요 시간 (초)": total_duration
 }]
