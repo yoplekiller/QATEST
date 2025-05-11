@@ -116,4 +116,6 @@
 ### 2. ☁️ **CI/CD 자동 실행 (GitHub Actions)**  
 [영상 보기 (YouTube)](https://www.youtube.com/watch?v=wx1F2yGFV2s&ab_channel=%EC%9E%84%EC%9E%AC%EB%AF%BC)
 
+## 📋 테스트 케이스 문서
+- [UI + API 테스트케이스 엑셀 보기](./docs/테스트설계_포트폴리오.xlsx)
 
