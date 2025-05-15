@@ -1,3 +1,3 @@
 📡 요청 주소: https://api.themoviedb.org/3/movie/popular?api_key=040ab6b57016f82bc6cac7e111efe301
-✅ 응답 시간: 0.12초
+✅ 응답 시간: 0.23초
 ✅ 응답 코드: 200
