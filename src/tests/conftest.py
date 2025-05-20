@@ -1,5 +1,6 @@
 import os
 import datetime
+from dotenv import load_dotenv
 import shutil
 import allure
 import pytest
@@ -7,6 +8,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+
+load_dotenv()
 
 # ✅ CI 환경 감지 (GitHub Actions, Docker)
 IS_CI = os.getenv("GITHUB_ACTIONS") == "true" or os.getenv("CI") == "true"
