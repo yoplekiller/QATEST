@@ -33,34 +33,56 @@
 - Allure Report(테스트 결과 시각화)
 
 ## 📁 디렉토리 구조
-<pre>├── .github/
-│   └── workflows/
-│       ├── selenium-test.yaml  # Selenium UI 테스트용 CI 설정
-│       └── docker-test.yaml  # Docker 기반 테스트 CI 설정
+<pre>└── 📁workflows
+    ├── 📄docker-test.yaml
+    └── 📄selenium-test.yaml
+
+└── 📁config
+    └── 📄config.yaml
+
+└── 📁src
+    ├── 📁report
+    │   └── 📄generate_excel_report.py
+    ├── 📁tests
+    │   ├── 📁api_tests
+    │   │   ├── 📄test_api_sla.py
+    │   │   ├── 📄test_moive_invalid_api_key.py
+    │   │   ├── 📄test_movie_details.py
+    │   │   ├── 📄test_popular_movie.py
+    │   │   └── 📄test_search_movie.py
+    │   ├── 📄conftest.py
+    │   ├── 📁testcases
+    │   │   └── 📄test_case.xlsx
+    │   └── 📁ui_tests
+    │       ├── 📄test_blank_search.py
+    │       ├── 📄test_fail_screenshot.py
+    │       ├── 📄test_invalied_search.py
+    │       ├── 📄test_ui_add_product.py
+    │       ├── 📄test_ui_cart.py
+    │       ├── 📄test_ui_category.py
+    │       ├── 📄test_ui_login.py
+    │       ├── 📄test_ui_loing_sucess..py
+    │       ├── 📄test_ui_quantity.py
+    │       └── 📄test_ui_search.py
+
+└── 📁utils
+    ├── 📄api_utils.py
+    ├── 📄config_utils.py
+    ├── 📄parse_test_result.py
+    ├── 📄read_movie_data.py
+    ├── 📄read_product_data.py
+    ├── 📄send_slack_result.py
+    └── 📄utilities.py
 │
-├── allure-results/                  # Allure 결과 저장 폴더
-│
-├── src/
-│   ├── report/
-│   │   └── generate_excel_report.py  # Excel 리포트 생성 모듈
-│   └── tests/
-│       ├── testcases/              # 테스트 목록( ex) test_ui_search 상품목록)
-│       ├── ui_tests/               # UI 테스트 스크립트
-│       ├── api_tests/              # API 테스트 스크립트
-│       └── conftest.py             # Pytest 공통 fixture
-│
-├── utils/                           # 공통 유틸 함수 모음
-├── config/                          # 설정 파일 (config.yaml 등)
-│
-├── report.xml                       # 테스트 결과 요약 파일 (JUnit 형식)
-├── README.md                        # 프로젝트 설명 문서
-├── requirements.txt                 # 의존성 설치 목록
-├── pytest.ini                       # Pytest 설정
-├── docker-compose.yml               # Docker 서비스 정의
-├── Dockerfile                       # Docker 이미지 빌드 정의
-├── docker-clean.sh                  # 도커 환경 초기화 스크립트
-├── .nojekyll                        # GitHub Pages 설정용 파일
-└── .gitignore                       # Git 추적 제외 파일
+├── 📄report.xml                       # 테스트 결과 요약 파일 (JUnit 형식)
+├── 📄README.md                        # 프로젝트 설명 문서
+├── 📄 requirements.txt                 # 의존성 설치 목록
+├── 📄pytest.ini                       # Pytest 설정
+├── 📄docker-compose.yml               # Docker 서비스 정의
+├── 📄Dockerfile                       # Docker 이미지 빌드 정의
+├── 📄docker-clean.sh                  # 도커 환경 초기화 스크립트
+├── 📄.nojekyll                        # GitHub Pages 설정용 파일
+└── 📄.gitignore                       # Git 추적 제외 파일
 </pre>
 
 ## ✅ 주요 기능
