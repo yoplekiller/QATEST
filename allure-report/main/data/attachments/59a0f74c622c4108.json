@@ -19,8 +19,8 @@
       "release_date": "2025-03-31",
       "title": "A Minecraft Movie",
       "video": false,
-      "vote_average": 6.523,
-      "vote_count": 1299
+      "vote_average": 6.516,
+      "vote_count": 1303
     },
     {
       "adult": false,
@@ -39,7 +39,7 @@
       "title": "Final Destination Bloodlines",
       "video": false,
       "vote_average": 7.1,
-      "vote_count": 268
+      "vote_count": 275
     },
     {
       "adult": false,
@@ -77,8 +77,8 @@
       "release_date": "2025-03-26",
       "title": "A Working Man",
       "video": false,
-      "vote_average": 6.608,
-      "vote_count": 855
+      "vote_average": 6.604,
+      "vote_count": 859
     },
     {
       "adult": false,
@@ -115,27 +115,8 @@
       "release_date": "2025-04-09",
       "title": "Warfare",
       "video": false,
-      "vote_average": 7.173,
-      "vote_count": 378
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/jRvhP4AfFnJ03lCQhp1fie7XPSd.jpg",
-      "genre_ids": [
-        28,
-        53
-      ],
-      "id": 977294,
-      "original_language": "en",
-      "original_title": "Tin Soldier",
-      "overview": "An ex-special forces operative seeks revenge against a cult leader who has corrupted his former comrades, the Shinjas. This leader, known as The Bokushi, promises veterans a purpose and protection, but is revealed to be a destructive influence. The ex-soldier, Nash Cavanaugh, joins forces with military operative Emmanuel Ashburn to infiltrate the Bokushi's fortress and expose his reign of terror",
-      "popularity": 237.5439,
-      "poster_path": "/lFFDrFLXywFhy6khHes1LCFVMsL.jpg",
-      "release_date": "2025-05-22",
-      "title": "Tin Soldier",
-      "video": false,
-      "vote_average": 5.042,
-      "vote_count": 24
+      "vote_average": 7.175,
+      "vote_count": 379
     },
     {
       "adult": false,
@@ -159,6 +140,25 @@
     },
     {
       "adult": false,
+      "backdrop_path": "/jRvhP4AfFnJ03lCQhp1fie7XPSd.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 977294,
+      "original_language": "en",
+      "original_title": "Tin Soldier",
+      "overview": "An ex-special forces operative seeks revenge against a cult leader who has corrupted his former comrades, the Shinjas. This leader, known as The Bokushi, promises veterans a purpose and protection, but is revealed to be a destructive influence. The ex-soldier, Nash Cavanaugh, joins forces with military operative Emmanuel Ashburn to infiltrate the Bokushi's fortress and expose his reign of terror",
+      "popularity": 237.5439,
+      "poster_path": "/lFFDrFLXywFhy6khHes1LCFVMsL.jpg",
+      "release_date": "2025-05-22",
+      "title": "Tin Soldier",
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 24
+    },
+    {
+      "adult": false,
       "backdrop_path": "/7ONMDhnErvpkKvkZqM82ud7bzcT.jpg",
       "genre_ids": [
         28,
@@ -174,8 +174,8 @@
       "release_date": "2025-05-17",
       "title": "Mission: Impossible - The Final Reckoning",
       "video": false,
-      "vote_average": 7.322,
-      "vote_count": 101
+      "vote_average": 7.201,
+      "vote_count": 107
     },
     {
       "adult": false,
@@ -195,7 +195,7 @@
       "title": "Thunderbolts*",
       "video": false,
       "vote_average": 7.5,
-      "vote_count": 920
+      "vote_count": 923
     },
     {
       "adult": false,
@@ -215,8 +215,8 @@
       "release_date": "2025-05-06",
       "title": "Last Bullet",
       "video": false,
-      "vote_average": 6.725,
-      "vote_count": 120
+      "vote_average": 6.752,
+      "vote_count": 121
     },
     {
       "adult": false,
@@ -393,6 +393,6 @@
       "vote_count": 42
     }
   ],
-  "total_pages": 50451,
-  "total_results": 1009009
+  "total_pages": 50453,
+  "total_results": 1009043
 }
