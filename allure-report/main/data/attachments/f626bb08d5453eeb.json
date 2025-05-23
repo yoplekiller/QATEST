@@ -1,0 +1,402 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        28
+      ],
+      "id": 950387,
+      "original_language": "en",
+      "original_title": "A Minecraft Movie",
+      "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
+      "popularity": 700.0166,
+      "poster_path": "/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
+      "release_date": "2025-03-31",
+      "title": "A Minecraft Movie",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 1347
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/j0NUh5irX7q2jIRtbLo8TZyRn6y.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 574475,
+      "original_language": "en",
+      "original_title": "Final Destination Bloodlines",
+      "overview": "Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
+      "popularity": 528.9583,
+      "poster_path": "/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
+      "release_date": "2025-05-09",
+      "title": "Final Destination Bloodlines",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 331
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1480799,
+      "original_language": "pt",
+      "original_title": "The Great Escape",
+      "overview": "",
+      "popularity": 384.1793,
+      "poster_path": "/h7shL668vhC2wsZQSBWzxkMuZ8K.jpg",
+      "release_date": "2023-05-26",
+      "title": "The Great Escape",
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1197306,
+      "original_language": "en",
+      "original_title": "A Working Man",
+      "overview": "Levon Cade left behind a decorated military career in the black ops to live a simple life working construction. But when his boss's daughter, who is like family to him, is taken by human traffickers, his search to bring her home uncovers a world of corruption far greater than he ever could have imagined.",
+      "popularity": 308.2204,
+      "poster_path": "/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg",
+      "release_date": "2025-03-26",
+      "title": "A Working Man",
+      "video": false,
+      "vote_average": 6.654,
+      "vote_count": 900
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cJvUJEEQ86LSjl4gFLkYpdCJC96.jpg",
+      "genre_ids": [
+        10752,
+        28
+      ],
+      "id": 1241436,
+      "original_language": "en",
+      "original_title": "Warfare",
+      "overview": "A platoon of Navy SEALs embarks on a dangerous mission in Ramadi, Iraq, with the chaos and brotherhood of war retold through their memories of the event.",
+      "popularity": 267.6585,
+      "poster_path": "/srj9rYrjefyWqkLc6l2xjTGeBGO.jpg",
+      "release_date": "2025-04-09",
+      "title": "Warfare",
+      "video": false,
+      "vote_average": 7.242,
+      "vote_count": 403
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tyfO9jHgkhypUFizRVYD0bytPjP.jpg",
+      "genre_ids": [
+        10751,
+        14
+      ],
+      "id": 447273,
+      "original_language": "en",
+      "original_title": "Snow White",
+      "overview": "Following the benevolent King's disappearance, the Evil Queen dominated the once fair land with a cruel streak. Princess Snow White flees the castle when the Queen, in her jealousy over Snow White's inner beauty, tries to kill her. Deep into the dark woods, she stumbles upon seven magical dwarves and a young bandit named Jonathan. Together, they strive to survive the Queen's relentless pursuit and aspire to take back the kingdom.",
+      "popularity": 273.4646,
+      "poster_path": "/oLxWocqheC8XbXbxqJ3x422j9PW.jpg",
+      "release_date": "2025-03-12",
+      "title": "Snow White",
+      "video": false,
+      "vote_average": 4.316,
+      "vote_count": 903
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1p5aI299YBnqrEEvVGJERk2MXXb.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53
+      ],
+      "id": 575265,
+      "original_language": "en",
+      "original_title": "Mission: Impossible - The Final Reckoning",
+      "overview": "Ethan Hunt and the IMF team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Ethan's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
+      "popularity": 267.7424,
+      "poster_path": "/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
+      "release_date": "2025-05-17",
+      "title": "Mission: Impossible - The Final Reckoning",
+      "video": false,
+      "vote_average": 7.062,
+      "vote_count": 178
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jRvhP4AfFnJ03lCQhp1fie7XPSd.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 977294,
+      "original_language": "en",
+      "original_title": "Tin Soldier",
+      "overview": "An ex-special forces operative seeks revenge against a cult leader who has corrupted his former comrades, the Shinjas. This leader, known as The Bokushi, promises veterans a purpose and protection, but is revealed to be a destructive influence. The ex-soldier, Nash Cavanaugh, joins forces with military operative Emmanuel Ashburn to infiltrate the Bokushi's fortress and expose his reign of terror",
+      "popularity": 207.8589,
+      "poster_path": "/lFFDrFLXywFhy6khHes1LCFVMsL.jpg",
+      "release_date": "2025-05-22",
+      "title": "Tin Soldier",
+      "video": false,
+      "vote_average": 5.4,
+      "vote_count": 27
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        878
+      ],
+      "id": 552524,
+      "original_language": "en",
+      "original_title": "Lilo & Stitch",
+      "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
+      "popularity": 205.7592,
+      "poster_path": "/tUae3mefrDVTgm5mRzqWnZK6fOP.jpg",
+      "release_date": "2025-05-17",
+      "title": "Lilo & Stitch",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 57
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bIh56F8e5EaZ3r2nD1hXAOisItZ.jpg",
+      "genre_ids": [
+        12,
+        10751,
+        99
+      ],
+      "id": 1094473,
+      "original_language": "fr",
+      "original_title": "Bambi, l'histoire d'une vie dans les bois",
+      "overview": "The life of Bambi, a male roe deer, from his birth through childhood, the loss of his mother, the finding of a mate, the lessons he learns from his father, and the experience he gains about the dangers posed by human hunters in the forest.",
+      "popularity": 173.6553,
+      "poster_path": "/vWNVHtwOhcoOEUSrY1iHRGbgH8O.jpg",
+      "release_date": "2024-10-16",
+      "title": "Bambi: A Life in the Woods",
+      "video": false,
+      "vote_average": 5.905,
+      "vote_count": 21
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bfVl8J5sI2T4Bu0p3350WtNwe8o.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1092073,
+      "original_language": "en",
+      "original_title": "The Haunting at Saint Joseph's",
+      "overview": "An engaged Muslim doctor, her fiancé, and their friends go on a holiday at St. Joseph’s Guesthouse, unaware that it was the site of a sacrifice of an innocent centuries before. They soon come to believe that it's haunted and causing them to go crazy, as their emotions spiral out of control.",
+      "popularity": 163.1794,
+      "poster_path": "/eDzQFxs0KTzHUPkIR0c44TSGJUR.jpg",
+      "release_date": "2023-02-26",
+      "title": "The Haunting at Saint Joseph's",
+      "video": false,
+      "vote_average": 4.6,
+      "vote_count": 11
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 986056,
+      "original_language": "en",
+      "original_title": "Thunderbolts*",
+      "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
+      "popularity": 163.71,
+      "poster_path": "/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
+      "release_date": "2025-04-30",
+      "title": "Thunderbolts*",
+      "video": false,
+      "vote_average": 7.469,
+      "vote_count": 950
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bVm6udIB6iKsRqgMdQh6HywuEBj.jpg",
+      "genre_ids": [
+        53,
+        28
+      ],
+      "id": 1233069,
+      "original_language": "de",
+      "original_title": "Exterritorial",
+      "overview": "When her son vanishes inside a US consulate, ex-special forces soldier Sara does everything in her power to find him — and uncovers a dark conspiracy.",
+      "popularity": 155.7648,
+      "poster_path": "/jM2uqCZNKbiyStyzXOERpMqAbdx.jpg",
+      "release_date": "2025-04-29",
+      "title": "Exterritorial",
+      "video": false,
+      "vote_average": 6.705,
+      "vote_count": 366
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jmLfuMFn6o4Rkp7dzT57Vp2GpoQ.jpg",
+      "genre_ids": [
+        28,
+        18,
+        35
+      ],
+      "id": 897160,
+      "original_language": "ko",
+      "original_title": "용감한 시민",
+      "overview": "An expelled boxing champion, who now is a high-school teacher, witnesses intolerable violence and throws her first punch to build justice against it, while putting on a mask.",
+      "popularity": 148.2747,
+      "poster_path": "/6Ea5i6APeTfm4hHh6dg5Z733JVS.jpg",
+      "release_date": "2023-10-25",
+      "title": "Brave Citizen",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 38
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4A5HH9HkCPqAwyYL6CnA0mxbYjn.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53,
+        18
+      ],
+      "id": 1144430,
+      "original_language": "fr",
+      "original_title": "Balle perdue 3",
+      "overview": "Car genius Lino returns to conclude his vendetta against Areski and the corrupt commander who ruined their lives in this turbo-charged trilogy finale.",
+      "popularity": 145.5038,
+      "poster_path": "/lCI5y1KkjgMoTkZiCleqji00XeE.jpg",
+      "release_date": "2025-05-06",
+      "title": "Last Bullet",
+      "video": false,
+      "vote_average": 6.799,
+      "vote_count": 127
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mrmaTVp7PTBkjj5G62cE9pjrENg.jpg",
+      "genre_ids": [
+        27,
+        18
+      ],
+      "id": 1359977,
+      "original_language": "en",
+      "original_title": "Conjuring the Cult",
+      "overview": "After discovering his blood-soaked daughter dead in the bathtub, David Bryson attends a self-help group to help save him from his ghostly nightmares. But when a group of mysterious cult-like women offer to help him resurrect his daughter. David's choices will not just decide his fate... but the fate of his dead daughter's SOUL.",
+      "popularity": 134.1085,
+      "poster_path": "/t4MiAeYpjL7saYvqvcn9xtOfA4K.jpg",
+      "release_date": "2024-10-01",
+      "title": "Conjuring the Cult",
+      "video": false,
+      "vote_average": 5.5,
+      "vote_count": 23
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 324544,
+      "original_language": "en",
+      "original_title": "In the Lost Lands",
+      "overview": "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
+      "popularity": 134.6455,
+      "poster_path": "/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
+      "release_date": "2025-02-27",
+      "title": "In the Lost Lands",
+      "video": false,
+      "vote_average": 6.384,
+      "vote_count": 385
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/d4h5A6tcJYwnU4HI3oSiNrqkgwN.jpg",
+      "genre_ids": [
+        53,
+        878,
+        27
+      ],
+      "id": 1180763,
+      "original_language": "en",
+      "original_title": "From the Shadows",
+      "overview": "When Dr. Joseph Cawl and members of his Hidden Wisdom cult die in a mysterious fire, survivors contact a paranormal expert to find the truth. What they discover makes them the next target of a deranged killer.",
+      "popularity": 112.745,
+      "poster_path": "/22aFuf6UnDaGP9G5CLfF92Cj1nf.jpg",
+      "release_date": "2023-09-22",
+      "title": "From the Shadows",
+      "video": false,
+      "vote_average": 3.1,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dJ1JpHuTCRxtGpRq8bQzk2jBqTi.jpg",
+      "genre_ids": [
+        14,
+        12,
+        10751
+      ],
+      "id": 896536,
+      "original_language": "en",
+      "original_title": "The Legend of Ochi",
+      "overview": "In a remote village on the island of Carpathia, a shy farm girl named Yuri is raised to fear an elusive animal species known as ochi. But when Yuri discovers a wounded baby ochi has been left behind, she escapes on a quest to bring him home.",
+      "popularity": 120.7911,
+      "poster_path": "/wVujUVvY4qvKARAslItQ4ARKqtz.jpg",
+      "release_date": "2025-04-18",
+      "title": "The Legend of Ochi",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 53
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8eifdha9GQeZAkexgtD45546XKx.jpg",
+      "genre_ids": [
+        28,
+        53,
+        878
+      ],
+      "id": 822119,
+      "original_language": "en",
+      "original_title": "Captain America: Brave New World",
+      "overview": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
+      "popularity": 120.1987,
+      "poster_path": "/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+      "release_date": "2025-02-12",
+      "title": "Captain America: Brave New World",
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 1879
+    }
+  ],
+  "total_pages": 50500,
+  "total_results": 1009981
+}
