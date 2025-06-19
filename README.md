@@ -125,8 +125,8 @@ API 테스트는 보안상 CI 환경(GitHub Actions)에서만 실행
 - 테스트 중 노출되는 실패 케이스들은 의도적인 케이스들 입니다.
 
 ### 1. 🖥️ **로컬 자동화 실행**  
-[영상 보기 (YouTube)](https://www.youtube.com/watch?v=LYsvUJvG5CI&ab_channel=%EC%9E%84%EC%9E%AC%EB%AF%BC)
- 
+[마켓컬리 주문 플로우 자동화 구현 영상 보기 (YouTube)](https://studio.youtube.com/channel/UCnez-yE02jHSvAxQojAHfyw)
+
 
 ### 2. ☁️ **CI/CD 자동 실행 (GitHub Actions)**  
 [영상 보기 (YouTube)](https://www.youtube.com/watch?v=wx1F2yGFV2s&ab_channel=%EC%9E%84%EC%9E%AC%EB%AF%BC)
