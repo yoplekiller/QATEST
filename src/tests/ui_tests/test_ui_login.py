@@ -30,7 +30,7 @@ def test_login(driver):
         login_submit_button.click()
         time.sleep(3)
 
-        success_case = driver.find_element(By.XPATH, "//div[@class='swiper-slide swiper-slide-active']//img[@alt='메인배너'")
+        success_case = driver.find_element(By.XPATH, "//div[@class='css-hj3ig8 e15sbxqa2']")
         assert success_case.is_displayed(), f"❌ 로그인 실패"
 
     except Exception as e:

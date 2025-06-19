@@ -1,0 +1,6 @@
+default: dev
+
+env:
+  dev:
+    base_url: "https://api.themoviedb.org/3"
+    api_key: "040ab6b57016f82bc6cac7e111efe301"
