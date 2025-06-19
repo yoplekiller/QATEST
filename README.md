@@ -17,10 +17,11 @@ Excel 자동 리포트 및 Slack 테스트 결과 메시지 전송 기능 구축
 주요 테스트 포인트: UI 요소 접근, XPath 활용, 동작 여부 및 상품 정보 확인
 
 ### 2. 영화 API 테스트
+
 TMDB(Open API) 기반 GET 요청 검증
 테스트 항목: 영화 검색, 장르 분류, 상세 조회
 검증 요소: 응답 코드, 응답 시간(SLA), 필수 키 존재 여부 등
--
+
 ## 🧰 사용 기술
 Python, Selenium, requests, openpyxl, Slack Webhook, Docker, GitHub Actions, Allure Report
 
