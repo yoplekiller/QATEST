@@ -127,6 +127,7 @@ API 테스트는 보안상 CI 환경(GitHub Actions)에서만 실행
 
 ### 1. 🖥️ **로컬 자동화 실행**  
 [마켓컬리 주문 플로우 자동화 구현 영상 보기 (YouTube)](https://www.youtube.com/watch?v=TqsvT2RsYEs)
+[영화의 다양한 값을 가져오는 테스트 영상 (YouTube)](https://studio.youtube.com/channel/UCnez-yE02jHSvAxQojAHfyw)
 
 
 ### 2. ☁️ **CI/CD 자동 실행 (GitHub Actions)**  
