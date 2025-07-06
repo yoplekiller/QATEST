@@ -1,0 +1,401 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/sItIskd5xpiE64bBWYwZintkGf3.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 541671,
+      "original_language": "en",
+      "original_title": "Ballerina",
+      "overview": "Taking place during the events of John Wick: Chapter 3 – Parabellum, Eve Macarro begins her training in the assassin traditions of the Ruska Roma.",
+      "popularity": 759.5684,
+      "poster_path": "/2VUmvqsHb6cEtdfscEA6fqqVzLg.jpg",
+      "release_date": "2025-06-04",
+      "title": "Ballerina",
+      "video": false,
+      "vote_average": 7.33,
+      "vote_count": 669
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/x58Gk2ZGU5AEBp25MQe2nhZhd5z.jpg",
+      "genre_ids": [
+        28,
+        14
+      ],
+      "id": 846422,
+      "original_language": "en",
+      "original_title": "The Old Guard 2",
+      "overview": "Andy and her team of immortal warriors fight with renewed purpose as they face a powerful new foe threatening their mission to protect humanity.",
+      "popularity": 677.2039,
+      "poster_path": "/wqfu3bPLJaEWJVk3QOm0rKhxf1A.jpg",
+      "release_date": "2025-07-01",
+      "title": "The Old Guard 2",
+      "video": false,
+      "vote_average": 6.089,
+      "vote_count": 225
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 986056,
+      "original_language": "en",
+      "original_title": "Thunderbolts*",
+      "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
+      "popularity": 675.957,
+      "poster_path": "/hqcexYHbiTBfDIdDWxrxPtVndBX.jpg",
+      "release_date": "2025-04-30",
+      "title": "Thunderbolts*",
+      "video": false,
+      "vote_average": 7.434,
+      "vote_count": 1535
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xABhldZaMb6wfCH5oigV333OYnb.jpg",
+      "genre_ids": [
+        28,
+        53,
+        35
+      ],
+      "id": 749170,
+      "original_language": "en",
+      "original_title": "Heads of State",
+      "overview": "The UK Prime Minister and US President have a public rivalry that risks their countries' alliance. But when they become targets of a powerful enemy, they're forced to rely on each other as they go on a wild, multinational run. Allied with Noel, a brilliant MI6 agent, they must find a way to thwart a conspiracy that threatens the free world.",
+      "popularity": 523.0202,
+      "poster_path": "/lVgE5oLzf7ABmzyASEVcjYyHI41.jpg",
+      "release_date": "2025-06-24",
+      "title": "Heads of State",
+      "video": false,
+      "vote_average": 7.039,
+      "vote_count": 181
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/962KXsr09uK8wrmUg9TjzmE7c4e.jpg",
+      "genre_ids": [
+        28,
+        53,
+        18
+      ],
+      "id": 1119878,
+      "original_language": "en",
+      "original_title": "Ice Road: Vengeance",
+      "overview": "Big rig ice road driver Mike McCann travels to Nepal to scatter his late brother’s ashes on Mt. Everest. While on a packed tour bus traversing the deadly 12,000 ft. terrain of the infamous Road to the Sky, McCann and his mountain guide encounter a group of mercenaries and must fight to save themselves, the busload of innocent travelers, and the local villagers’ homeland.",
+      "popularity": 495.5744,
+      "poster_path": "/2vHQBX5L4yoExTa55KmGIg2Q5s3.jpg",
+      "release_date": "2025-06-27",
+      "title": "Ice Road: Vengeance",
+      "video": false,
+      "vote_average": 6.964,
+      "vote_count": 55
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/peAzdLKtT6VDWIfPQO9LJD1NCG4.jpg",
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "id": 1234821,
+      "original_language": "en",
+      "original_title": "Jurassic World Rebirth",
+      "overview": "Five years after the events of Jurassic World Dominion, covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure genetic material from the world's three most massive dinosaurs. When Zora's operation intersects with a civilian family whose boating expedition was capsized, they all find themselves stranded on an island where they come face-to-face with a sinister, shocking discovery that's been hidden from the world for decades.",
+      "popularity": 378.9668,
+      "poster_path": "/khohu1IKmgGNvETjEaxZaWBw4fr.jpg",
+      "release_date": "2025-07-01",
+      "title": "Jurassic World Rebirth",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 248
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uIpJPDNFoeX0TVml9smPrs9KUVx.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 574475,
+      "original_language": "en",
+      "original_title": "Final Destination Bloodlines",
+      "overview": "Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
+      "popularity": 338.6228,
+      "poster_path": "/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
+      "release_date": "2025-05-14",
+      "title": "Final Destination Bloodlines",
+      "video": false,
+      "vote_average": 7.209,
+      "vote_count": 1490
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
+      "genre_ids": [
+        10751,
+        878,
+        35,
+        12
+      ],
+      "id": 552524,
+      "original_language": "en",
+      "original_title": "Lilo & Stitch",
+      "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
+      "popularity": 269.803,
+      "poster_path": "/7c5VBuCbjZOk7lSfj9sMpmDIaKX.jpg",
+      "release_date": "2025-05-17",
+      "title": "Lilo & Stitch",
+      "video": false,
+      "vote_average": 7.129,
+      "vote_count": 788
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2rApsSKkGPgsCiju4CVrvgVB0Rr.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1151031,
+      "original_language": "en",
+      "original_title": "Bring Her Back",
+      "overview": "Following the death of their father, a brother and sister are introduced to their new sibling by their foster mother, only to learn that she has a terrifying secret.",
+      "popularity": 250.4252,
+      "poster_path": "/tObSf1VzzHt9xB0csanFtb3DRjf.jpg",
+      "release_date": "2025-05-28",
+      "title": "Bring Her Back",
+      "video": false,
+      "vote_average": 7.172,
+      "vote_count": 148
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/l3ycQYwWmbz7p8otwbomFDXIEhn.jpg",
+      "genre_ids": [
+        16,
+        14,
+        28,
+        35,
+        10402
+      ],
+      "id": 803796,
+      "original_language": "en",
+      "original_title": "KPop Demon Hunters",
+      "overview": "When K-pop superstars Rumi, Mira and Zoey aren't selling out stadiums, they're using their secret powers to protect their fans from supernatural threats.",
+      "popularity": 240.4785,
+      "poster_path": "/jfS5KEfiwsS35ieZvdUdJKkwLlZ.jpg",
+      "release_date": "2025-06-20",
+      "title": "KPop Demon Hunters",
+      "video": false,
+      "vote_average": 8.635,
+      "vote_count": 441
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7HqLLVjdjhXS0Qoz1SgZofhkIpE.jpg",
+      "genre_ids": [
+        14,
+        10751,
+        28
+      ],
+      "id": 1087192,
+      "original_language": "en",
+      "original_title": "How to Train Your Dragon",
+      "overview": "On the rugged isle of Berk, where Vikings and dragons have been bitter enemies for generations, Hiccup stands apart, defying centuries of tradition when he befriends Toothless, a feared Night Fury dragon. Their unlikely bond reveals the true nature of dragons, challenging the very foundations of Viking society.",
+      "popularity": 215.6131,
+      "poster_path": "/3lwlJL8aW6Wor9tKvME8VoMnBkn.jpg",
+      "release_date": "2025-06-06",
+      "title": "How to Train Your Dragon",
+      "video": false,
+      "vote_average": 7.911,
+      "vote_count": 566
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8PHTO4a11JuZwYko7QPBUWq45wJ.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 911430,
+      "original_language": "en",
+      "original_title": "F1",
+      "overview": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team—and mentor a young hotshot driver—while chasing one more chance at glory.",
+      "popularity": 215.2079,
+      "poster_path": "/vqBmyAj0Xm9LnS1xe1MSlMAJyHq.jpg",
+      "release_date": "2025-06-25",
+      "title": "F1",
+      "video": false,
+      "vote_average": 7.688,
+      "vote_count": 519
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3v1WIfoNIWqXXgLtnbplsddet9j.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1278950,
+      "original_language": "en",
+      "original_title": "The Ritual",
+      "overview": "Two priests, one in crisis with his faith and the other confronting a turbulent past, must overcome their differences to perform a risky exorcism.",
+      "popularity": 214.238,
+      "poster_path": "/fy56jsxq9fXG7OWQCViNa4ttpzU.jpg",
+      "release_date": "2025-05-27",
+      "title": "The Ritual",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 77
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iHHWF01W2vNpjI8UzWh2F7tJEZp.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1246369,
+      "original_language": "ja",
+      "original_title": "室町無頼",
+      "overview": "Set in war-torn 15th century Kyoto, on the eve of the Onin War, the movie centers on a band of outlaws led by Hyoe (Oizumi) a scoundrel whose lethal sword skills place him at the tip of the spear in a deadly uprising against the corrupt Shogunate and its army, led by former friend-turned-archrival, Doken (Tsutsumi).",
+      "popularity": 191.7915,
+      "poster_path": "/6U0i0HsSCvhRW4IpGzdead6QRo3.jpg",
+      "release_date": "2025-01-17",
+      "title": "Muromachi Burai",
+      "video": false,
+      "vote_average": 9.125,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xRr7mnOJ39bZtCRmVefrm3sBxX4.jpg",
+      "genre_ids": [
+        80,
+        53,
+        28
+      ],
+      "id": 1090007,
+      "original_language": "en",
+      "original_title": "First Shift",
+      "overview": "NYPD veteran Mike and rookie Angela tackle a high-stakes day on New York's toughest streets, diving headfirst into a vortex of danger and action. Their adrenaline-fueled pursuits and unexpected threats unfold as they navigate perilous encounters. Amidst the chaos, intense challenges forge unbreakable bonds.",
+      "popularity": 151.7356,
+      "poster_path": "/ajsGI4JYaciPIe3gPgiJ3Vw5Vre.jpg",
+      "release_date": "2024-08-30",
+      "title": "First Shift",
+      "video": false,
+      "vote_average": 5.615,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xtnfoFs9vOLBF7Ox13mFmFUovey.jpg",
+      "genre_ids": [
+        28,
+        12,
+        18
+      ],
+      "id": 1311844,
+      "original_language": "en",
+      "original_title": "The Twisters",
+      "overview": "A deadly patchwork of destructive cyclones is on an apocalyptic path of convergence at a populated Midwest city center. There, the twisters will merge into one mega tornado that threatens to obliterate the cities for hundreds of miles around.",
+      "popularity": 148.4589,
+      "poster_path": "/8OP3h80BzIDgmMNANVaYlQ6H4Oc.jpg",
+      "release_date": "2024-06-28",
+      "title": "The Twisters",
+      "video": false,
+      "vote_average": 5.95,
+      "vote_count": 50
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xVoj3HrOsnjOyyhqRD9jt5kTPc4.jpg",
+      "genre_ids": [
+        878,
+        35,
+        28
+      ],
+      "id": 605722,
+      "original_language": "en",
+      "original_title": "Long Distance",
+      "overview": "After crash-landing on an alien planet, an asteroid miner must contend with the challenges of his new surroundings, while making his way across the harsh terrain to the only other survivor – a woman who is trapped in her escape pod.",
+      "popularity": 141.9248,
+      "poster_path": "/m5NKltgQqqyoWJNuK18IqEGRG7J.jpg",
+      "release_date": "2024-07-12",
+      "title": "Long Distance",
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 153
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6WqqEjiycNvDLjbEClM1zCwIbDD.jpg",
+      "genre_ids": [
+        27,
+        53,
+        878
+      ],
+      "id": 1100988,
+      "original_language": "en",
+      "original_title": "28 Years Later",
+      "overview": "Twenty-eight years since the rage virus escaped a biological weapons laboratory, now, still in a ruthlessly enforced quarantine, some have found ways to exist amidst the infected. One such group lives on a small island connected to the mainland by a single, heavily-defended causeway. When one member departs on a mission into the dark heart of the mainland, he discovers secrets, wonders, and horrors that have mutated not only the infected but other survivors as well.",
+      "popularity": 133.1934,
+      "poster_path": "/wnHUip9oKvDJEJUEk62L4rFSYGa.jpg",
+      "release_date": "2025-06-18",
+      "title": "28 Years Later",
+      "video": false,
+      "vote_average": 7.234,
+      "vote_count": 496
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jgrImRKhsRXaa6wlSsQPnFRUQbH.jpg",
+      "genre_ids": [
+        99
+      ],
+      "id": 1412113,
+      "original_language": "ko",
+      "original_title": "오징어 게임: 시즌2 제작 이야기",
+      "overview": "From set designs to character arcs, get exclusive cast and director interviews on how Season 2 of the globally most-watched series was brought to life.",
+      "popularity": 128.2775,
+      "poster_path": "/yQGaui0bQ5Ai3KIFBB45nTeIqad.jpg",
+      "release_date": "2025-01-02",
+      "title": "Squid Game: Making Season 2",
+      "video": false,
+      "vote_average": 8.504,
+      "vote_count": 416
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14
+      ],
+      "id": 950387,
+      "original_language": "en",
+      "original_title": "A Minecraft Movie",
+      "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
+      "popularity": 125.5391,
+      "poster_path": "/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
+      "release_date": "2025-03-31",
+      "title": "A Minecraft Movie",
+      "video": false,
+      "vote_average": 6.465,
+      "vote_count": 2002
+    }
+  ],
+  "total_pages": 51275,
+  "total_results": 1025483
+}
