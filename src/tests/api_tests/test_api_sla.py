@@ -1,5 +1,5 @@
 import time
-
+import json
 import allure
 import pytest
 import requests
@@ -31,3 +31,4 @@ def test_api_sla(endpoint):
 
     assert response.status_code == 200, f"❌ 응답 실패: {response.status_code}"
     assert elapsed_time < SLA_SECONDS, f"❌ SLA 초과: {elapsed_time:.2f}초"
+

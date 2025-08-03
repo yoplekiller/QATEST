@@ -1,5 +1,4 @@
 import allure
-
 from utils.api_utils import send_get_request, attach_response
 import json
 from utils.config_utils import get_current_env
@@ -39,3 +38,6 @@ def test_get_popular_movies():
     assert "results" in data
     assert isinstance(data["results"], list) # 테스트 결과 없을 경우를 위한 디버깅
     assert len(data["results"]) > 0
+
+    print("📦 응답 JSON :")
+    print(json.dumps(data, indent=4, ensure_ascii=False))

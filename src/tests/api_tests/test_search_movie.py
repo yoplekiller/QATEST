@@ -1,5 +1,6 @@
 import allure
 import requests
+import json
 from utils.api_utils import attach_response
 from utils.config_utils import get_current_env
 
@@ -24,3 +25,6 @@ def test_search_movie():
     assert "results" in data # 검색 결과 존재 여부 확인
     assert len(data["results"]) > 0 # 최소 1개 이상의 결과가 있어야 함
     assert data["results"][0]["title"] == "Inception" # 첫번째 결과가 인셉션 인지 확인
+
+    print("📦 응답 JSON :")
+    print(json.dumps(data, indent=4, ensure_ascii=False))

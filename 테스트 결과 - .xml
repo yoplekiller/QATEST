@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun duration="2068" footerText="25. 6. 23. 오후 7:32에서 PyCharm(으)로 생성" name="">
+    <count name="total" value="3"/>
+    <count name="passed" value="3"/>
+    <config configId="tests" name="">
+        <module name="AutoTest"/>
+        <option name="ENV_FILES" value=""/>
+        <option name="INTERPRETER_OPTIONS" value=""/>
+        <option name="PARENT_ENVS" value="true"/>
+        <option name="SDK_HOME" value="C:/Users/jmlim/AppData/Local/Programs/Python/Python313/python.exe"/>
+        <option name="WORKING_DIRECTORY" value="C:/Users/jmlim/OneDrive/Desktop/QATEST/src/tests/api_tests"/>
+        <option name="IS_MODULE_SDK" value="true"/>
+        <option name="ADD_CONTENT_ROOTS" value="true"/>
+        <option name="ADD_SOURCE_ROOTS" value="true"/>
+        <option name="_new_keywords" value="&quot;&quot;"/>
+        <option name="_new_parameters" value="&quot;&quot;"/>
+        <option name="_new_additionalArguments" value="&quot;&quot;"/>
+        <option name="_new_target" value="&quot;C:/Users/jmlim/OneDrive/Desktop/QATEST/src/tests/api_tests/test_movie_details.py&quot;"/>
+        <option name="_new_targetType" value="&quot;PATH&quot;"/>
+        <method v="2"/>
+    </config>
+    <suite duration="2068" locationUrl="python&lt;C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests&gt;://src" name="src" status="passed">
+        <suite duration="2068" locationUrl="python&lt;C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests&gt;://src.tests" name="tests" status="passed">
+            <suite duration="2068" locationUrl="python&lt;C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests&gt;://src.tests.api_tests" name="api_tests" status="passed">
+                <suite duration="2068" locationUrl="python&lt;C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests&gt;://src.tests.api_tests.test_movie_details" name="test_movie_details" status="passed">
+                    <suite duration="2068" locationUrl="python&lt;C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests&gt;://src.tests.api_tests.test_movie_details.test_get_movie_details" name="test_get_movie_details" status="passed">
+                        <test duration="665" locationUrl="python&lt;C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests&gt;://src.tests.api_tests.test_movie_details.test_get_movie_details." name="(550-Fight Club)" metainfo="test_get_movie_details[550-Fight Club]" status="passed">
+                            <output type="stdout">PASSED     [ 33%] 응답 JSON :
+{
+    "adult": false,
+    "backdrop_path": "/xRyINp9KfMLVjRiO5nCsoRDdvvF.jpg",
+    "belongs_to_collection": null,
+    "budget": 63000000,
+    "genres": [
+        {
+            "id": 18,
+            "name": "Drama"
+        }
+    ],
+    "homepage": "http://www.foxmovies.com/movies/fight-club",
+    "id": 550,
+    "imdb_id": "tt0137523",
+    "origin_country": [
+        "US"
+    ],
+    "original_language": "en",
+    "original_title": "Fight Club",
+    "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+    "popularity": 19.9569,
+    "poster_path": "/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+    "production_companies": [
+        {
+            "id": 711,
+            "logo_path": "/tEiIH5QesdheJmDAqQwvtN60727.png",
+            "name": "Fox 2000 Pictures",
+            "origin_country": "US"
+        },
+        {
+            "id": 508,
+            "logo_path": "/7cxRWzi4LsVm4Utfpr1hfARNurT.png",
+            "name": "Regency Enterprises",
+            "origin_country": "US"
+        },
+        {
+            "id": 4700,
+            "logo_path": "/A32wmjrs9Psf4zw0uaixF0GXfxq.png",
+            "name": "Linson Entertainment",
+            "origin_country": "US"
+        },
+        {
+            "id": 25,
+            "logo_path": "/qZCc1lty5FzX30aOCVRBLzaVmcp.png",
+            "name": "20th Century Fox",
+            "origin_country": "US"
+        },
+        {
+            "id": 20555,
+            "logo_path": "/hD8yEGUBlHOcfHYbujp71vD8gZp.png",
+            "name": "Taurus Film",
+            "origin_country": "DE"
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "DE",
+            "name": "Germany"
+        },
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "release_date": "1999-10-15",
+    "revenue": 100853753,
+    "runtime": 139,
+    "spoken_languages": [
+        {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+        }
+    ],
+    "status": "Released",
+    "tagline": "Mischief. Mayhem. Soap.",
+    "title": "Fight Club",
+    "video": false,
+    "vote_average": 8.438,
+    "vote_count": 30376
+}
+</output>
+                        </test>
+                        <test duration="715" locationUrl="python&lt;C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests&gt;://src.tests.api_tests.test_movie_details.test_get_movie_details." name="(603-The Matrix)" metainfo="test_get_movie_details[603-The Matrix]" status="passed">
+                            <output type="stdout">PASSED     [ 66%] 응답 JSON :
+{
+    "adult": false,
+    "backdrop_path": "/icmmSD4vTTDKOq2vvdulafOGw93.jpg",
+    "belongs_to_collection": {
+        "id": 2344,
+        "name": "The Matrix Collection",
+        "poster_path": "/bV9qTVHTVf0gkW0j7p7M0ILD4pG.jpg",
+        "backdrop_path": "/bRm2DEgUiYciDw3myHuYFInD7la.jpg"
+    },
+    "budget": 63000000,
+    "genres": [
+        {
+            "id": 28,
+            "name": "Action"
+        },
+        {
+            "id": 878,
+            "name": "Science Fiction"
+        }
+    ],
+    "homepage": "http://www.warnerbros.com/matrix",
+    "id": 603,
+    "imdb_id": "tt0133093",
+    "origin_country": [
+        "US"
+    ],
+    "original_language": "en",
+    "original_title": "The Matrix",
+    "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+    "popularity": 23.2397,
+    "poster_path": "/p96dm7sCMn4VYAStA6siNz30G1r.jpg",
+    "production_companies": [
+        {
+            "id": 79,
+            "logo_path": "/at4uYdwAAgNRKhZuuFX8ShKSybw.png",
+            "name": "Village Roadshow Pictures",
+            "origin_country": "US"
+        },
+        {
+            "id": 372,
+            "logo_path": null,
+            "name": "Groucho II Film Partnership",
+            "origin_country": ""
+        },
+        {
+            "id": 1885,
+            "logo_path": "/xlvoOZr4s1PygosrwZyolIFe5xs.png",
+            "name": "Silver Pictures",
+            "origin_country": "US"
+        },
+        {
+            "id": 174,
+            "logo_path": "/zhD3hhtKB5qyv7ZeL4uLpNxgMVU.png",
+            "name": "Warner Bros. Pictures",
+            "origin_country": "US"
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "release_date": "1999-03-31",
+    "revenue": 463517383,
+    "runtime": 136,
+    "spoken_languages": [
+        {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+        }
+    ],
+    "status": "Released",
+    "tagline": "Believe the unbelievable.",
+    "title": "The Matrix",
+    "video": false,
+    "vote_average": 8.227,
+    "vote_count": 26476
+}
+</output>
+                        </test>
+                        <test duration="688" locationUrl="python&lt;C:\Users\jmlim\OneDrive\Desktop\QATEST\src\tests\api_tests&gt;://src.tests.api_tests.test_movie_details.test_get_movie_details." name="(157336-Interstellar)" metainfo="test_get_movie_details[157336-Interstellar]" status="passed">
+                            <output type="stdout">PASSED [100%] 응답 JSON :
+{
+    "adult": false,
+    "backdrop_path": "/l33oR0mnvf20avWyIMxW02EtQxn.jpg",
+    "belongs_to_collection": null,
+    "budget": 165000000,
+    "genres": [
+        {
+            "id": 12,
+            "name": "Adventure"
+        },
+        {
+            "id": 18,
+            "name": "Drama"
+        },
+        {
+            "id": 878,
+            "name": "Science Fiction"
+        }
+    ],
+    "homepage": "http://www.interstellarmovie.net/",
+    "id": 157336,
+    "imdb_id": "tt0816692",
+    "origin_country": [
+        "US"
+    ],
+    "original_language": "en",
+    "original_title": "Interstellar",
+    "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+    "popularity": 39.7888,
+    "poster_path": "/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+    "production_companies": [
+        {
+            "id": 923,
+            "logo_path": "/5UQsZrfbfG2dYJbx8DxfoTr2Bvu.png",
+            "name": "Legendary Pictures",
+            "origin_country": "US"
+        },
+        {
+            "id": 9996,
+            "logo_path": "/3tvBqYsBhxWeHlu62SIJ1el93O7.png",
+            "name": "Syncopy",
+            "origin_country": "GB"
+        },
+        {
+            "id": 13769,
+            "logo_path": null,
+            "name": "Lynda Obst Productions",
+            "origin_country": "US"
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "GB",
+            "name": "United Kingdom"
+        },
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "release_date": "2014-11-05",
+    "revenue": 746606706,
+    "runtime": 169,
+    "spoken_languages": [
+        {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+        }
+    ],
+    "status": "Released",
+    "tagline": "Mankind was born on Earth. It was never meant to die here.",
+    "title": "Interstellar",
+    "video": false,
+    "vote_average": 8.455,
+    "vote_count": 37309
+}
+</output>
+                        </test>
+                    </suite>
+                </suite>
+            </suite>
+        </suite>
+    </suite>
+</testrun>
