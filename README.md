@@ -28,37 +28,18 @@ Python, Selenium, requests, openpyxl, Slack Webhook, Docker, GitHub Actions, All
 
 -------------------------------------------------------
 ## 📁 디렉토리 구조
-<pre>src/
-├── report/
-│   └── generate_excel_report.py
-├── tests/
-│   ├── api_tests/
-│   │   ├── test_api_sla.py
-│   │   ├── test_movie_invalid_api_key.py
-│   │   ├── test_movie_details.py
-│   │   ├── test_popular_movie.py
-│   │   └── test_search_movie.py
-│   ├── ui_tests/
-│   │   ├── test_blank_search.py
-│   │   ├── test_fail_screenshot.py
-│   │   ├── test_invalid_search.py
-│   │   ├── test_ui_add_product.py
-│   │   ├── test_ui_cart.py
-│   │   ├── test_ui_category.py
-│   │   ├── test_ui_login.py
-│   │   ├── test_ui_login_success.py
-│   │   ├── test_ui_quantity.py
-│   │   └── test_ui_search.py
-│   └── testcases/
-│       └── test_case.xlsx
-utils/
-├── api_utils.py
-├── config_utils.py
-├── parse_test_result.py
-├── read_movie_data.py
-├── read_product_data.py
-├── send_slack_result.py
-└── utilities.py
+<pre>QATEST/
+│
+├── tests/                  # 테스트 코드
+│   ├── api_tests/          # API 테스트
+│   └── ui_tests/           # UI 테스트 (선택)
+│
+├── utils/                  # 유틸 모듈
+├── data/                   # 테스트 데이터 및 CSV
+├── reports/                # 리포트 출력 폴더
+├── .github/workflows/      # CI/CD 파이프라인
+└── README.md               # 프로젝트 설명
+
 </pre>
 -------------------------------------
 ## ✅ 주요 기능
