@@ -1,0 +1,412 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/xGu5jTd34DjXGwS7JLmDbgvIQ1U.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 1173.1073,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.254,
+      "vote_count": 394
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg",
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "id": 1061474,
+      "original_language": "en",
+      "original_title": "Superman",
+      "overview": "Superman, a journalist in Metropolis, embarks on a journey to reconcile his Kryptonian heritage with his human upbringing as Clark Kent.",
+      "popularity": 731.768,
+      "poster_path": "/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg",
+      "release_date": "2025-07-09",
+      "title": "Superman",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 2482
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/538U9snNc2fpnOmYXAPUh3zn31H.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53
+      ],
+      "id": 575265,
+      "original_language": "en",
+      "original_title": "Mission: Impossible - The Final Reckoning",
+      "overview": "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
+      "popularity": 774.683,
+      "poster_path": "/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
+      "release_date": "2025-05-17",
+      "title": "Mission: Impossible - The Final Reckoning",
+      "video": false,
+      "vote_average": 7.229,
+      "vote_count": 1327
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ZtcGMc204JsNqfjS9lU6udRgpo.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 911430,
+      "original_language": "en",
+      "original_title": "F1",
+      "overview": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team—and mentor a young hotshot driver—while chasing one more chance at glory.",
+      "popularity": 693.3286,
+      "poster_path": "/vN56KYeuW4eAci0Rllp36IGPvSo.jpg",
+      "release_date": "2025-06-25",
+      "title": "F1",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 1274
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zNriRTr0kWwyaXPzdg1EIxf0BWk.jpg",
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "id": 1234821,
+      "original_language": "en",
+      "original_title": "Jurassic World Rebirth",
+      "overview": "Five years after the events of Jurassic World Dominion, covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure genetic material from the world's three most massive dinosaurs. When Zora's operation intersects with a civilian family whose boating expedition was capsized, they all find themselves stranded on an island where they come face-to-face with a sinister, shocking discovery that's been hidden from the world for decades.",
+      "popularity": 415.8709,
+      "poster_path": "/1RICxzeoNCAO5NpcRMIgg1XT6fm.jpg",
+      "release_date": "2025-07-01",
+      "title": "Jurassic World Rebirth",
+      "video": false,
+      "vote_average": 6.367,
+      "vote_count": 1763
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yth78N88nwokepnOe5atwPGfTL1.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1382406,
+      "original_language": "zh",
+      "original_title": "惊天大营救",
+      "overview": "A veteran Muay Thai expert goes on a take-no-prisoners mission of revenge after his wife and daughter are brutally murdered by mysterious forces.",
+      "popularity": 352.2915,
+      "poster_path": "/nML8rOI4GOiiEsXgknuhZeUF8M7.jpg",
+      "release_date": "2024-12-05",
+      "title": "Striking Rescue",
+      "video": false,
+      "vote_average": 7.808,
+      "vote_count": 73
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14,
+        53
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 302.8575,
+      "poster_path": "/aFRDH3P7TX61FVGpaLhKr6QiOC1.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.121,
+      "vote_count": 87
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jvpkBenB6hv19WWYVlaiow8zklq.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        80,
+        12
+      ],
+      "id": 1175942,
+      "original_language": "en",
+      "original_title": "The Bad Guys 2",
+      "overview": "The now-reformed Bad Guys are trying (very, very hard) to be good, but instead find themselves hijacked into a high-stakes, globe-trotting heist, masterminded by a new team of criminals they never saw coming: The Bad Girls.",
+      "popularity": 309.0878,
+      "poster_path": "/26oSPnq0ct59l07QOXZKyzsiRtN.jpg",
+      "release_date": "2025-07-24",
+      "title": "The Bad Guys 2",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 192
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8jeDyvFQKgss36FbGAmGQVzPXlH.jpg",
+      "genre_ids": [
+        53,
+        28,
+        35
+      ],
+      "id": 1151334,
+      "original_language": "en",
+      "original_title": "Eenie Meanie",
+      "overview": "A former teenage getaway driver gets dragged back into her unsavory past when a former employer offers her a chance to save the life of her chronically unreliable ex-boyfriend.",
+      "popularity": 490.3821,
+      "poster_path": "/12Va3oO3oYUdOd75zM57Nx1976a.jpg",
+      "release_date": "2025-08-21",
+      "title": "Eenie Meanie",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kYsU56QEcwEr8jAQ6Vm3M8bXTWz.jpg",
+      "genre_ids": [
+        28,
+        35,
+        18,
+        37
+      ],
+      "id": 1429739,
+      "original_language": "th",
+      "original_title": "เขาชุมทอง คะนองชุมโจร",
+      "overview": "At the tail end of World War II, a bandit leader and his crew go up against his sworn enemy and the Japanese army to rob a train full of gold.",
+      "popularity": 263.5399,
+      "poster_path": "/7j6jZNhCTnsZy5QItpruDwyBWoo.jpg",
+      "release_date": "2025-08-19",
+      "title": "Gold Rush Gang",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ySHUoK4utUOiSfCinw81H1TsV0E.jpg",
+      "genre_ids": [
+        878,
+        28,
+        27
+      ],
+      "id": 1241470,
+      "original_language": "en",
+      "original_title": "Osiris",
+      "overview": "Special Forces commandos on a mission are abducted mid-operation by a mysterious spacecraft. Upon waking aboard, they find themselves prey to a relentless alien race in a fight for survival.",
+      "popularity": 208.7916,
+      "poster_path": "/3YtZHtXPNG5AleisgEatEfZOT2w.jpg",
+      "release_date": "2025-07-25",
+      "title": "Osiris",
+      "video": false,
+      "vote_average": 6.454,
+      "vote_count": 88
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7HqLLVjdjhXS0Qoz1SgZofhkIpE.jpg",
+      "genre_ids": [
+        14,
+        10751,
+        28,
+        12
+      ],
+      "id": 1087192,
+      "original_language": "en",
+      "original_title": "How to Train Your Dragon",
+      "overview": "On the rugged isle of Berk, where Vikings and dragons have been bitter enemies for generations, Hiccup stands apart, defying centuries of tradition when he befriends Toothless, a feared Night Fury dragon. Their unlikely bond reveals the true nature of dragons, challenging the very foundations of Viking society.",
+      "popularity": 208.5054,
+      "poster_path": "/q5pXRYTycaeW6dEgsCrd4mYPmxM.jpg",
+      "release_date": "2025-06-06",
+      "title": "How to Train Your Dragon",
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 1706
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lWeaB9S77Os7VHOt8GH5JdfrBX3.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        12,
+        878
+      ],
+      "id": 1022787,
+      "original_language": "en",
+      "original_title": "Elio",
+      "overview": "Elio, a space fanatic with an active imagination, finds himself on a cosmic misadventure where he must form new bonds with eccentric alien lifeforms, navigate a crisis of intergalactic proportions and somehow discover who he is truly meant to be.",
+      "popularity": 237.6903,
+      "poster_path": "/w2ARwtc1zoh0pyfwmyhpZHwuXgK.jpg",
+      "release_date": "2025-06-18",
+      "title": "Elio",
+      "video": false,
+      "vote_average": 6.96,
+      "vote_count": 302
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nZsKWhwhUL3Eg88SkIaJjuIZzpN.jpg",
+      "genre_ids": [
+        28,
+        35,
+        53
+      ],
+      "id": 1319895,
+      "original_language": "en",
+      "original_title": "Hostile Takeover",
+      "overview": "Follows Pete, a professional hitman, as he faces a group of assassins after the boss of a crime syndicate suspects disloyalty due to his attendance at Workaholics Anonymous meetings.",
+      "popularity": 174.7414,
+      "poster_path": "/vntwlS3CAKfoLTs90GaoK6lymBC.jpg",
+      "release_date": "2025-08-08",
+      "title": "Hostile Takeover",
+      "video": false,
+      "vote_average": 7.579,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kyqM6padQzZ1eYxv84i9smNvZAG.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1078605,
+      "original_language": "en",
+      "original_title": "Weapons",
+      "overview": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+      "popularity": 174.5298,
+      "poster_path": "/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+      "release_date": "2025-08-04",
+      "title": "Weapons",
+      "video": false,
+      "vote_average": 7.489,
+      "vote_count": 550
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/l3ycQYwWmbz7p8otwbomFDXIEhn.jpg",
+      "genre_ids": [
+        16,
+        10402,
+        28,
+        14,
+        35
+      ],
+      "id": 803796,
+      "original_language": "en",
+      "original_title": "KPop Demon Hunters",
+      "overview": "When K-pop superstars Rumi, Mira and Zoey aren't selling out stadiums, they're using their secret powers to protect their fans from supernatural threats.",
+      "popularity": 169.1953,
+      "poster_path": "/22AouvwlhlXbe3nrFcjzL24bvWH.jpg",
+      "release_date": "2025-06-20",
+      "title": "KPop Demon Hunters",
+      "video": false,
+      "vote_average": 8.401,
+      "vote_count": 1090
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2VGfjnT3RpjOKADbwgbmXCFSbH.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1443260,
+      "original_language": "en",
+      "original_title": "Rob1n",
+      "overview": "When a robotics expert channels the grief of losing his 11 year-old son into building 'Robin', a fully functioning robotic doll, a series of horrific events makes it clear Robin will do whatever it takes to have his creator all to himself.",
+      "popularity": 155.3949,
+      "poster_path": "/5lJ2ftNE18iYGCdOQsQirzHHtnX.jpg",
+      "release_date": "2025-03-20",
+      "title": "Rob1n",
+      "video": false,
+      "vote_average": 5.224,
+      "vote_count": 30
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1DTIRhw4cpLJlHlrPPbKzq6amHc.jpg",
+      "genre_ids": [
+        28,
+        18,
+        36
+      ],
+      "id": 1185528,
+      "original_language": "zh",
+      "original_title": "射雕英雄传：侠之大者",
+      "overview": "Under Genghis Khan, the Mongolian army pushes west to destroy the Jin Dynasty, setting its sights on the Song Dynasty next. Amid internal conflicts among martial arts schools, Guo Jing unites the Central Plains' warriors to defend Xiangyang, embodying courage and loyalty in the fight for the nation.",
+      "popularity": 148.5707,
+      "poster_path": "/fUCFEGFlMIFet9ja72JDAeG1he8.jpg",
+      "release_date": "2025-01-29",
+      "title": "Legends of the Condor Heroes: The Gallants",
+      "video": false,
+      "vote_average": 6.639,
+      "vote_count": 54
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9whEVuKte4Qi0LI4TzPf7glinJW.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        14
+      ],
+      "id": 936108,
+      "original_language": "en",
+      "original_title": "Smurfs",
+      "overview": "When Papa Smurf is mysteriously taken by evil wizards, Razamel and Gargamel, Smurfette leads the Smurfs on a mission into the real world to save him. With the help of new friends, the Smurfs must discover what defines their destiny to save the universe.",
+      "popularity": 139.4349,
+      "poster_path": "/8o6lkhL32xQJeB52IIG1us5BVey.jpg",
+      "release_date": "2025-07-05",
+      "title": "Smurfs",
+      "video": false,
+      "vote_average": 6.087,
+      "vote_count": 126
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZztGzckOMByRRQgsFh2yk3udkU.jpg",
+      "genre_ids": [
+        28,
+        27,
+        10749
+      ],
+      "id": 986206,
+      "original_language": "en",
+      "original_title": "Night Carnage",
+      "overview": "A blogger who is also a werewolf meets a dashing playboy with a dark secret of his own. Starring Logan Andrews and Christian Howard.",
+      "popularity": 146.7101,
+      "poster_path": "/w0wjPQKhlqisSbylf1sWZiNyc2h.jpg",
+      "release_date": "2025-07-29",
+      "title": "Night Carnage",
+      "video": false,
+      "vote_average": 5.905,
+      "vote_count": 42
+    }
+  ],
+  "total_pages": 52069,
+  "total_results": 1041372
+}
