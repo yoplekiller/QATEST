@@ -4,18 +4,19 @@ from selenium.webdriver import Keys
 import time
 from selenium.webdriver.common.by import By
 from utils.utilities import capture_screenshot
+from config.constants import URLs, Timeouts, Selectors, PopupSelectors,ErrorMessages, Buttons
 
 
 @allure.feature("UI 테스트")
 @allure.story("카테고리 기능 테스트")
 @allure.title("상품 검색 후 카테고리 버튼들이 동작하는지 확인")
 def test_ui_sort_button(driver):
-    driver.get("https://www.kurly.com/main")
+    driver.get(URLs.KURLY_MAIN)
     driver.maximize_window()
 
     try:
         # 검색어 입력
-        search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
+        search_box = driver.find_element(*Selectors.SEARCH_BOX)
         search_box.send_keys("과자")
         search_box.send_keys(Keys.RETURN)
         time.sleep(4)

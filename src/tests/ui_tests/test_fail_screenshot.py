@@ -2,6 +2,8 @@ import pytest
 import allure
 from selenium.webdriver.common.by import By
 from utils.utilities import capture_screenshot
+from config.constants import URLs, Timeouts, Selectors, PopupSelectors
+
 
 @allure.feature("UI 테스트")
 @allure.story("검색창 FAILED 테스트")
@@ -12,7 +14,7 @@ def test_fail_screenshot(driver):
     - 올바르지 않은 요소 선택
     - 검색창이 없는 요소를 클릭 시도하여 실패 유발
     """
-    driver.get("https://www.kurly.com/main")
+    driver.get(URLs.KURLY_MAIN)
     try:
         driver.find_element(By.XPATH, "//input[@id='wrong_search_id']").click()
     except Exception:

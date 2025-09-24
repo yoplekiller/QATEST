@@ -3,23 +3,24 @@ import allure
 import pytest
 from selenium.webdriver.common.by import By
 from utils.utilities import capture_screenshot
+from config.constants import URLs, Selectors, Buttons
 
 @allure.feature("예외 케이스")
 @allure.story("잘못된 ID,PW 입력")
 @allure.title("잘못된 ID,PW 입력 시 로그인이 실패하는지 확인")
 def test_login(driver):
-    driver.get("https://www.kurly.com/main")
+    driver.get(URLs.KURLY_MAIN)
     driver.maximize_window()
 
     try:
-        login_button = driver.find_element(By.XPATH, "//a[contains(text(),'로그인')]")
+        login_button = driver.find_element(*Buttons.LOGIN_BUTTON)
         login_button.click()
         time.sleep(2)
 
         #아이디 패스워드 입력
-        login_username_input = driver.find_element(By.XPATH, "//input[@placeholder='아이디를 입력해주세요']")
-        login_password_input = driver.find_element(By.XPATH, "//input[@placeholder='비밀번호를 입력해주세요']")
-        login_submit_button = driver.find_element(By.XPATH,"//button[@type='submit']")
+        login_username_input = driver.find_element(*Selectors.LOGIN_USERNAME_INPUT)
+        login_password_input = driver.find_element(*Selectors.LOGIN_PASSWORD_INPUT)
+        login_submit_button = driver.find_element(*Buttons.LOGIN_SUBMIT)
 
         login_username_input.clear()
         login_password_input.clear()

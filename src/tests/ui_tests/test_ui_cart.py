@@ -2,6 +2,7 @@ import time
 import allure
 import pytest
 from selenium.webdriver.common.by import By
+from config.constants import URLs, Timeouts, Selectors, PopupSelectors,ErrorMessages, Buttons
 from utils.utilities import capture_screenshot
 
 
@@ -10,11 +11,11 @@ from utils.utilities import capture_screenshot
 @allure.title("장바구니 버튼이 동작 하는지 확인")
 def test_cart(driver):
 
-    driver.get("https://www.kurly.com/main")
+    driver.get(URLs.KURLY_MAIN)
     driver.maximize_window()
 
     try:
-      cart_button = driver.find_element(By.XPATH,"//button[@class='css-g25h97 e14oy6dx1']")
+      cart_button = driver.find_element(*Buttons.CART_BUTTON)
       cart_button.click()
       time.sleep(4)
 

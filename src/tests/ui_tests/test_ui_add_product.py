@@ -3,52 +3,58 @@ import allure
 import pytest
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from utils.utilities import capture_screenshot
+from config.constants import URLs, Timeouts, Selectors, PopupSelectors,ErrorMessages, Buttons
 
 @allure.feature("UI 테스트")
 @allure.story("상품 추가 테스트")
 @allure.title("상품 검색 후 장바구니 추가 기능 동작 확인")
 def test_add_product(driver):
-    driver.get("https://www.kurly.com/main")
+    driver.get(URLs.KURLY_MAIN)
     driver.maximize_window()
 
     try:
-      search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
+      search_box = WebDriverWait(driver, Timeouts.MEDIUM).until(EC.element_to_be_clickable(Selectors.SEARCH_BOX))
       search_box.send_keys("과자")
       search_box.send_keys(Keys.RETURN)
-      time.sleep(4)
+      time.sleep(3)
 
       try:
-          add_button = driver.find_element(By.XPATH, "//a[3]//div[2]//button[1]")
+          add_button = WebDriverWait(driver, Timeouts.MEDIUM).until(EC.element_to_be_clickable(Buttons.ADD_TO_CART))
           add_button.click()
-          time.sleep(4)
+          driver.implicitly_wait(Timeouts.MEDIUM)
 
       except Exception as e:
           capture_screenshot(driver,"상품추가 실패","screenshot_add_product")
           pytest.fail(f"❌ 상품 추가 버튼 클릭 실패: {str(e)}")
 
       try:
-          quantity_up_button = driver.find_element(By.XPATH, "//button[@aria-label='수량올리기']")
-          for _ in range(2):
+          quantity_up_button = driver.find_element(*Buttons.INCREASE_QUANTITY)
+          for _ in range(3):
               quantity_up_button.click()
-          time.sleep(4)
+              time.sleep(1)  # 클릭 간 약간의 대기 시간 추가
+
       except Exception as e:
           capture_screenshot(driver,"수량올리기 실패","screenshot_add_product")
           pytest.fail(f"❌ 수량 올리기 실패: {str(e)}")
 
       try:
-          quantity_down_button = driver.find_element(By.XPATH, "//button[@aria-label='수량내리기']")
+          quantity_down_button = driver.find_element(*Buttons.DECREASE_QUANTITY)
           for _ in range(2):
               quantity_down_button.click()
-          time.sleep(4)
+              time.sleep(1)  # 클릭 간 약간의 대기 시간 추가
+
       except Exception as e:
           capture_screenshot(driver,"수량내리기 실패","screenshot_add_product")
           pytest.fail(f"❌ 수량 내리기 실패: {str(e)}")
 
       try:
-          cart_add_button = driver.find_element(By.XPATH, "//button[@class='css-ahkst0 e4nu7ef3']")
+          cart_add_button = driver.find_element(*Buttons.ADD_TO_CART_2)
           cart_add_button.click()
-          time.sleep(4)
+          time.sleep(1)  # 클릭 간 약간의 대기 시간 추가
+
       except Exception as e:
           capture_screenshot(driver, "상품 추가", "screenshots_add_product")
           pytest.fail(f"❌ 상품 추가 실패: {str(e)}")

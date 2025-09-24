@@ -1,9 +1,20 @@
 import os
+import sys
 import datetime
 from dotenv import load_dotenv
 import shutil
 import allure
 import pytest
+
+# Add project root and src directories to Python path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(os.path.dirname(current_dir))  # Go up two levels to project root
+src_dir = os.path.dirname(current_dir)  # Go up one level to src directory
+
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+if src_dir not in sys.path:
+    sys.path.insert(0, src_dir)
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -24,6 +35,16 @@ def driver():
     options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+    
+    # 🚀 성능 최적화 옵션 추가 (안전한 버전)
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-plugins")
+    options.add_argument("--disable-images")  # 이미지 로딩 비활성화로 속도 향상
+    options.add_argument("--aggressive-cache-discard")
+    options.add_argument("--disable-background-timer-throttling")
+    
+    # 🔧 페이지 로딩 전략 설정 (eager = DOM 로딩 완료 시 즉시 진행)
+    options.page_load_strategy = 'eager'
 
     # ✅ CI 환경에서는 캐시 삭제로 손상된 드라이버 방지
     if IS_CI:

@@ -5,7 +5,7 @@ import time
 from utils.read_product_data import read_search_terms_from_excel, file_path
 from selenium.webdriver.common.by import By
 from utils.utilities import capture_screenshot
-
+from config.constants import URLs, Timeouts, Selectors, PopupSelectors,ErrorMessages, Buttons
 
 search_cases = read_search_terms_from_excel(file_path)
 
@@ -14,12 +14,12 @@ search_cases = read_search_terms_from_excel(file_path)
 @allure.title("입력된 상품명으로 검색 시 검색되는지 확인" )
 @pytest.mark.parametrize("tc_id, search_term", search_cases)
 def test_product_search(driver, tc_id, search_term):
-    driver.get("https://www.kurly.com/main")
+    driver.get(URLs.KURLY_MAIN)
     time.sleep(2)
     print(f"🔍 TC {tc_id}: '{search_term}' 검색 테스트 실행 중...")
 
     try:
-        search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
+        search_box = driver.find_element(*Selectors.SEARCH_BOX)
         time.sleep(2)
         for _ in range(10):
             search_box.send_keys(Keys.BACKSPACE)
