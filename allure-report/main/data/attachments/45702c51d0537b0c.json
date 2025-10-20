@@ -1,0 +1,400 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/7QirCB1o80NEFpQGlQRZerZbQEp.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1156594,
+      "original_language": "es",
+      "original_title": "Culpa nuestra",
+      "overview": "Jenna and Lion's wedding brings about the long-awaited reunion between Noah and Nick after their breakup. Nick's inability to forgive Noah stands as an insurmountable barrier. He, heir to his grandfather's businesses, and she, starting her professional life, resist fueling a flame that's still alive. But now that their paths have crossed again, will love be stronger than resentment?",
+      "popularity": 1160.9712,
+      "poster_path": "/yzqHt4m1SeY9FbPrfZ0C2Hi9x1s.jpg",
+      "release_date": "2025-10-15",
+      "title": "Our Fault",
+      "video": false,
+      "vote_average": 7.937,
+      "vote_count": 270
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2yo2k8CmgZxfBQYAZ8TnHIYzEme.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1072699,
+      "original_language": "pl",
+      "original_title": "Druga Furioza",
+      "overview": "In the wake of murder, new Furioza leader Golden claims the reins of his violent and formidable hooligan gang and takes on a new focus across borders.",
+      "popularity": 407.1937,
+      "poster_path": "/dbe1zKVKNBIczdmRcm7jxEphYLz.jpg",
+      "release_date": "2025-10-14",
+      "title": "Inside Furioza",
+      "video": false,
+      "vote_average": 6.333,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/efQIfpxegsg6KHfTcVngrPO09cs.jpg",
+      "genre_ids": [
+        12,
+        28,
+        27
+      ],
+      "id": 1511789,
+      "original_language": "en",
+      "original_title": "Captain Hook - The Cursed Tides",
+      "overview": "In the aftermath of a devastating defeat by his archnemesis Admiral Smee, the notorious Captain James Hook finds refuge in the coastal town of Eldritch Landing, where he forms an unlikely alliance with Silas Blackweather, a local blacksmith seeking retribution for his sister's murder. As they evade Smee's Redcoat Soldiers in the island's dense woodland, ruthless sword fights, ancient curses and conflicting motives will challenge their shared quest for revenge. Together, Hook and Silas navigate uncharted waters to confront the treacherous Admiral Smee, embarking on a journey that will redefine Captain Hook's enduring legacy.",
+      "popularity": 373.5845,
+      "poster_path": "/7SHFZKfd270y47sXN2WsURUO3ml.jpg",
+      "release_date": "2025-07-11",
+      "title": "Captain Hook - The Cursed Tides",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/Fb8gyhkAQorxr98jllYoXurWvj.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1038392,
+      "original_language": "en",
+      "original_title": "The Conjuring: Last Rites",
+      "overview": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+      "popularity": 327.0111,
+      "poster_path": "/7JzOmJ1fIU43I3gLHYsY8UzNzjG.jpg",
+      "release_date": "2025-09-03",
+      "title": "The Conjuring: Last Rites",
+      "video": false,
+      "vote_average": 6.978,
+      "vote_count": 1048
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 348.4541,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.4,
+      "vote_count": 642
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14,
+        53
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 299.4665,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 470
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qcDDn7WeKBenM4nLlOPXAeJ4hpg.jpg",
+      "genre_ids": [
+        53,
+        28,
+        12
+      ],
+      "id": 1280450,
+      "original_language": "en",
+      "original_title": "Stolen Girl",
+      "overview": "In 1993, Maureen’s six-year-old daughter Amina is snuck out of the country by her ex-husband, Karim. After years of unsuccessful attempts to find her, Maureen intersects with a professional retriever of internationally abducted children who promises to help her find Amina in exchange for her collaboration.",
+      "popularity": 259.397,
+      "poster_path": "/fZlNXEHZsBp7unqw009MeBbMv87.jpg",
+      "release_date": "2025-09-04",
+      "title": "Stolen Girl",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 27
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pKIRUTnwY3YYU9urSdsuobdcliP.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53
+      ],
+      "id": 1109086,
+      "original_language": "hi",
+      "original_title": "वॉर 2",
+      "overview": "Years ago Agent Kabir went rogue, became India’s greatest villain ever.  As he descends further into the deepest shadows... India sends its deadliest, most lethal agent after him, Agent Vikram  A Special Units Officer who is more than Kabir’s equal and a relentless Terminator driven by his own demons, determined to put a bullet into Kabir’s skull.",
+      "popularity": 238.4,
+      "poster_path": "/2Yc8Kl2ldPpDzLrG2M5Ddv62FXB.jpg",
+      "release_date": "2025-08-13",
+      "title": "War 2",
+      "video": false,
+      "vote_average": 5.214,
+      "vote_count": 28
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oz4U9eA6ilYf1tyiVuGmkftdLac.jpg",
+      "genre_ids": [
+        18,
+        10749,
+        53
+      ],
+      "id": 1010581,
+      "original_language": "es",
+      "original_title": "Culpa mía",
+      "overview": "Noah must leave her city, boyfriend, and friends to move into William Leister's mansion, the flashy and wealthy husband of her mother Rafaela. As a proud and independent 17 year old, Noah resists living in a mansion surrounded by luxury. However, it is there where she meets Nick, her new stepbrother, and the clash of their strong personalities becomes evident from the very beginning.",
+      "popularity": 221.9507,
+      "poster_path": "/w46Vw536HwNnEzOa7J24YH9DPRS.jpg",
+      "release_date": "2023-06-08",
+      "title": "My Fault",
+      "video": false,
+      "vote_average": 7.766,
+      "vote_count": 3863
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ax2qCKU6tUhdkStiCnrDdXKA5xC.jpg",
+      "genre_ids": [
+        28,
+        12
+      ],
+      "id": 1086910,
+      "original_language": "en",
+      "original_title": "The Lost Princess",
+      "overview": "After an Ayahuasca vision transports him to a haunted castle, Alec meets Hanna who tales him the story of her mother's forced marriage and how the forbidden passion with her father was in danger when the princess pregnancy became obvious",
+      "popularity": 193.8143,
+      "poster_path": "/31S2ISsDtbnxb0kuXZl1SxSMD0K.jpg",
+      "release_date": "2025-10-16",
+      "title": "The Lost Princess",
+      "video": false,
+      "vote_average": 6.407,
+      "vote_count": 28
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/a6RkQIOZ6wThQOEDv6lHsfH53hD.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1186350,
+      "original_language": "ml",
+      "original_title": "മാർക്കോ",
+      "overview": "The adoptive son of the Adattu family, Marco, sets off on a ruthless quest for vengeance after his brother is brutally murdered, finding only betrayal, loss and unimaginable brutality at every step.",
+      "popularity": 189.3854,
+      "poster_path": "/il3ao5gcF6fZNqo1o9o7lusmEyU.jpg",
+      "release_date": "2024-12-20",
+      "title": "Marco",
+      "video": false,
+      "vote_average": 6.459,
+      "vote_count": 73
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5jHMDT9Jpu8U9ArKOLGyphhl5JF.jpg",
+      "genre_ids": [
+        28,
+        35,
+        878
+      ],
+      "id": 338969,
+      "original_language": "en",
+      "original_title": "The Toxic Avenger Unrated",
+      "overview": "When a downtrodden janitor, Winston Gooze, is exposed to a catastrophic toxic accident, he’s transformed into a new kind of hero: The Toxic Avenger. Now, Toxie must rise from outcast to savior, taking on ruthless corporate overlords and corrupt forces who threaten his son, his friends, and his community.",
+      "popularity": 196.8808,
+      "poster_path": "/sIonGSpGNtH72OzbJllPOEMNjVU.jpg",
+      "release_date": "2025-08-28",
+      "title": "The Toxic Avenger Unrated",
+      "video": false,
+      "vote_average": 6.336,
+      "vote_count": 137
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5A01YSCPYoCOZOhh9tU7F3Htxkf.jpg",
+      "genre_ids": [
+        28,
+        14,
+        27,
+        53
+      ],
+      "id": 793387,
+      "original_language": "ko",
+      "original_title": "거룩한 밤: 데몬 헌터스",
+      "overview": "When a devil-worshipping criminal network plunges Seoul into chaos, the police turn to Holy Night—a trio of supernatural demon hunters—to restore order and defeat the rising evil.",
+      "popularity": 187.4005,
+      "poster_path": "/v3Mo77Qjp6pctpD4eJaNT6kFRSB.jpg",
+      "release_date": "2025-04-30",
+      "title": "Holy Night: Demon Hunters",
+      "video": false,
+      "vote_average": 6.615,
+      "vote_count": 52
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hBvaanw3RfMEs1m1blY7xwRXzul.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 617126,
+      "original_language": "en",
+      "original_title": "The Fantastic 4: First Steps",
+      "overview": "Against the vibrant backdrop of a 1960s-inspired, retro-futuristic world, Marvel's First Family is forced to balance their roles as heroes with the strength of their family bond, while defending Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
+      "popularity": 187.5392,
+      "poster_path": "/cm8TNGBGG0aBfWj0LgrESHv8tir.jpg",
+      "release_date": "2025-07-23",
+      "title": "The Fantastic 4: First Steps",
+      "video": false,
+      "vote_average": 7.124,
+      "vote_count": 2017
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sSaUmM4bnZJ7PW5dlyRi7iONB65.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1010756,
+      "original_language": "en",
+      "original_title": "The Strangers: Chapter 2",
+      "overview": "When The Strangers learn that one of their victims, Maya, is still alive, they return to finish what they’ve started.",
+      "popularity": 197.5594,
+      "poster_path": "/pqADzs5SJvI2jC0DThPVMuNJcWS.jpg",
+      "release_date": "2025-09-25",
+      "title": "The Strangers: Chapter 2",
+      "video": false,
+      "vote_average": 5.634,
+      "vote_count": 56
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/k24eZq5I3jyz4htPkZCRpnUmBzE.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 1156593,
+      "original_language": "es",
+      "original_title": "Culpa tuya",
+      "overview": "The love between Noah and Nick seems unwavering despite their parents' attempts to separate them. But his job and her entry into college open up their lives to new relationships that will shake the foundations of both their relationship and the Leister family itself.",
+      "popularity": 170.1676,
+      "poster_path": "/1sQA7lfcF9yUyoLYC0e6Zo3jmxE.jpg",
+      "release_date": "2024-12-26",
+      "title": "Your Fault",
+      "video": false,
+      "vote_average": 7.135,
+      "vote_count": 1404
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4KIg3yxQcWbuXJ5xgiTLGguCtC.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        14
+      ],
+      "id": 927254,
+      "original_language": "en",
+      "original_title": "The Twits",
+      "overview": "When the meanest, nastiest villains pull a trick to take over their town, two brave children team up with a family of magical animals to bring them down.",
+      "popularity": 161.1194,
+      "poster_path": "/izYZGeOHhPWiga8Hb5P4JYfcH8T.jpg",
+      "release_date": "2025-10-17",
+      "title": "The Twits",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 21
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/k6tdiMTO39RQj3dhfspuzprfoe0.jpg",
+      "genre_ids": [
+        80
+      ],
+      "id": 941109,
+      "original_language": "en",
+      "original_title": "Play Dirty",
+      "overview": "Expert thief Parker gets a shot at a major heist, but to pull it off he and his team must outsmart a South American dictator, the New York mob, and the world's richest man.",
+      "popularity": 154.9456,
+      "poster_path": "/ovZ0zq0NwRghtWI1oLaM0lWuoEw.jpg",
+      "release_date": "2025-09-30",
+      "title": "Play Dirty",
+      "video": false,
+      "vote_average": 6.628,
+      "vote_count": 336
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7QMsQ465YlyCFstLJUeUdpEwNUd.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1197137,
+      "original_language": "en",
+      "original_title": "Black Phone 2",
+      "overview": "Four years after escaping The Grabber, Finney Blake is struggling with his life after captivity. When his sister Gwen begins receiving calls in her dreams from the black phone and seeing disturbing visions of three boys being stalked at a winter camp, the siblings become determined to solve the mystery and confront a killer who has grown more powerful in death and more significant to them than either could imagine.",
+      "popularity": 154.1022,
+      "poster_path": "/evbguUd1BwExQgXMjG9n9AHMQpN.jpg",
+      "release_date": "2025-10-15",
+      "title": "Black Phone 2",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 66
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w3Bi0wygeFQctn6AqFTwhGNXRwL.jpg",
+      "genre_ids": [
+        14,
+        10402,
+        35,
+        16
+      ],
+      "id": 803796,
+      "original_language": "en",
+      "original_title": "KPop Demon Hunters",
+      "overview": "When K-pop superstars Rumi, Mira and Zoey aren't selling out stadiums, they're using their secret powers to protect their fans from supernatural threats.",
+      "popularity": 159.0261,
+      "poster_path": "/AjlRXTpRLAIiuofNqKcqrpUfPCZ.jpg",
+      "release_date": "2025-06-20",
+      "title": "KPop Demon Hunters",
+      "video": false,
+      "vote_average": 8.259,
+      "vote_count": 1702
+    }
+  ],
+  "total_pages": 53147,
+  "total_results": 1062925
+}
