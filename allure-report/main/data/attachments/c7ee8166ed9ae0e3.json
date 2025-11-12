@@ -1,0 +1,400 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/hpXBJxLD2SEf8l2CspmSeiHrBKX.jpg",
+      "genre_ids": [
+        18,
+        27,
+        14
+      ],
+      "id": 1062722,
+      "original_language": "en",
+      "original_title": "Frankenstein",
+      "overview": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+      "popularity": 1011.0264,
+      "poster_path": "/v9NLaLBbrkDwq44qG51v8T6sPuI.jpg",
+      "release_date": "2025-10-17",
+      "title": "Frankenstein",
+      "video": false,
+      "vote_average": 7.937,
+      "vote_count": 923
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/82lM4GJ9uuNvNDOEpxFy77uv4Ak.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 336.7196,
+      "poster_path": "/sMybEeAn3aFXsIUUcWPSFXlS6qS.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.162,
+      "vote_count": 232
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oe2TOWykcLSGq67XPH4Bb0N1oU3.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1197137,
+      "original_language": "en",
+      "original_title": "Black Phone 2",
+      "overview": "Four years after escaping The Grabber, Finney Blake is struggling with his life after captivity. When his sister Gwen begins receiving calls in her dreams from the black phone and seeing disturbing visions of three boys being stalked at a winter camp, the siblings become determined to solve the mystery and confront a killer who has grown more powerful in death and more significant to them than either could imagine.",
+      "popularity": 321.3047,
+      "poster_path": "/xUWUODKPIilQoFUzjHM6wKJkP3Y.jpg",
+      "release_date": "2025-10-15",
+      "title": "Black Phone 2",
+      "video": false,
+      "vote_average": 7.223,
+      "vote_count": 412
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tLf5hjuO4gx62lVojPiHsIzCroh.jpg",
+      "genre_ids": [
+        53,
+        28
+      ],
+      "id": 1025527,
+      "original_language": "fr",
+      "original_title": "Six jours",
+      "overview": "11 years ago, inspector Malik couldn’t solve a kidnapping case and a little girl died. Now with only a few days before the crime gets classified, he decides to reopen the case. Malik owes it to the mother and to himself. As he digs into the past, a child is kidnapped again. The pattern is the same one as a decade ago, it’s no coincidence. Malik knows he has a few days to make things right and to bring justice.",
+      "popularity": 227.9496,
+      "poster_path": "/foyiQu23zq4WhmffnQkFiNAvqcJ.jpg",
+      "release_date": "2024-12-11",
+      "title": "Abyss",
+      "video": false,
+      "vote_average": 5.875,
+      "vote_count": 64
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vZK3f5N8Fv2LcyFYLwt6dz0HE1H.jpg",
+      "genre_ids": [
+        28,
+        35
+      ],
+      "id": 1161617,
+      "original_language": "en",
+      "original_title": "Code 3",
+      "overview": "A burned-out paramedic tries to survive his last 24 hours on the job while training a new recruit.",
+      "popularity": 274.9442,
+      "poster_path": "/gIAYMDb5mIAeCAj76q1sRsKjkzo.jpg",
+      "release_date": "2025-09-12",
+      "title": "Code 3",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 82
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qskMJe62v9kPj4tD9UawIGW0WxD.jpg",
+      "genre_ids": [
+        80,
+        28
+      ],
+      "id": 1096563,
+      "original_language": "en",
+      "original_title": "End of Loyalty",
+      "overview": "When the head of a notorious crime family is murdered, his son Grant is hell bent on payback and the only person that can stop him from tearing the city apart and destroying himself in the process is his best friend and federal agent, Ray Rose.",
+      "popularity": 248.8452,
+      "poster_path": "/c4QA1rFQcyBZKaOOdUrDeL1G9Er.jpg",
+      "release_date": "2023-03-07",
+      "title": "End of Loyalty",
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 251.791,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.333,
+      "vote_count": 701
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kfXgo2rMF1A19celCwLyQ4Xwpf8.jpg",
+      "genre_ids": [
+        16,
+        28,
+        10749,
+        14
+      ],
+      "id": 1218925,
+      "original_language": "ja",
+      "original_title": "チェンソーマン レゼ篇",
+      "overview": "In a brutal war between devils, hunters, and secret enemies, a mysterious girl named Reze has stepped into Denji's world, and he faces his deadliest battle yet, fueled by love in a world where survival knows no rules.",
+      "popularity": 181.8341,
+      "poster_path": "/xdzLBZjCVSEsic7m7nJc4jNJZVW.jpg",
+      "release_date": "2025-09-19",
+      "title": "Chainsaw Man - The Movie: Reze Arc",
+      "video": false,
+      "vote_average": 8.24,
+      "vote_count": 169
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ajIRfvb5MkpH8spMJ5OCyg2enVS.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1561969,
+      "original_language": "hi",
+      "original_title": "बारामूला",
+      "overview": "A cop's inquiry into child kidnappings unravels chilling secrets as supernatural events endanger his family and the peaceful town of Baramulla.",
+      "popularity": 172.2023,
+      "poster_path": "/xm5ER19nTk7iuWFaiNRUYe3Zlz.jpg",
+      "release_date": "2025-11-06",
+      "title": "Baramulla",
+      "video": false,
+      "vote_average": 5.833,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14,
+        53
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 156.765,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.81,
+      "vote_count": 519
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ygOR390GzOX5Quv0kAAcUNDG7fp.jpg",
+      "genre_ids": [
+        12,
+        28,
+        27
+      ],
+      "id": 1511789,
+      "original_language": "en",
+      "original_title": "Captain Hook: The Cursed Tides",
+      "overview": "In the aftermath of a devastating defeat by his archnemesis Admiral Smee, Captain Hook finds refuge in the coastal town of Eldritch Landing.",
+      "popularity": 131.4804,
+      "poster_path": "/bcP7FtskwsNp1ikpMQJzDPjofP5.jpg",
+      "release_date": "2025-07-11",
+      "title": "Captain Hook: The Cursed Tides",
+      "video": false,
+      "vote_average": 5.057,
+      "vote_count": 35
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kHOfxq7cMTXyLbj0UmdoGhT540O.jpg",
+      "genre_ids": [
+        878,
+        28,
+        35
+      ],
+      "id": 507244,
+      "original_language": "en",
+      "original_title": "Afterburn",
+      "overview": "Set against the backdrop of a postapocalyptic Earth whose Eastern Hemisphere was destroyed by a massive solar flare, leaving what life remains mutated from radiation and fallout. The story revolves around a group of treasure hunters who extract such objects as the Mona Lisa, the Rosetta Stone and the Crown Jewels while facing rival hunters, mutants and pirates.",
+      "popularity": 127.1093,
+      "poster_path": "/hrze9JXp2QJpc2WjLfSUtRxyYSb.jpg",
+      "release_date": "2025-08-20",
+      "title": "Afterburn",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 110
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qwK9soQmmJ7kRdjLZVXblw3g7AQ.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53,
+        80,
+        18
+      ],
+      "id": 7451,
+      "original_language": "en",
+      "original_title": "xXx",
+      "overview": "Xander Cage is your standard adrenaline junkie with no fear and a lousy attitude. When the US Government \"recruits\" him to go on a mission, he's not exactly thrilled. His mission: to gather information on an organization that may just be planning the destruction of the world, led by the nihilistic Yorgi.",
+      "popularity": 145.1775,
+      "poster_path": "/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg",
+      "release_date": "2002-08-09",
+      "title": "xXx",
+      "video": false,
+      "vote_average": 5.966,
+      "vote_count": 4631
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tcBX2dtkNozZ0uDLVaxXrE6rqyN.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1038392,
+      "original_language": "en",
+      "original_title": "The Conjuring: Last Rites",
+      "overview": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+      "popularity": 90.2424,
+      "poster_path": "/7JzOmJ1fIU43I3gLHYsY8UzNzjG.jpg",
+      "release_date": "2025-09-03",
+      "title": "The Conjuring: Last Rites",
+      "video": false,
+      "vote_average": 6.998,
+      "vote_count": 1261
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hBvaanw3RfMEs1m1blY7xwRXzul.jpg",
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "id": 617126,
+      "original_language": "en",
+      "original_title": "The Fantastic 4: First Steps",
+      "overview": "Against the vibrant backdrop of a 1960s-inspired, retro-futuristic world, Marvel's First Family is forced to balance their roles as heroes with the strength of their family bond, while defending Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
+      "popularity": 114.2105,
+      "poster_path": "/cm8TNGBGG0aBfWj0LgrESHv8tir.jpg",
+      "release_date": "2025-07-23",
+      "title": "The Fantastic 4: First Steps",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 2318
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1leYKN0DPNffpldGnCWnbXaiWoD.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1305717,
+      "original_language": "en",
+      "original_title": "Hunting Grounds",
+      "overview": "Desperate to find refuge for her children, Chloe Marvino runs away from her Mafia tied husband, and finds shelter in a cabin with a recluse drifter named Jake. But as her husband's henchmen draw closer to her, it turns out that Jake is the biggest enemy of them all.",
+      "popularity": 105.2382,
+      "poster_path": "/cgZjpqRQt9sk6XMCwZ3B1NPAaoy.jpg",
+      "release_date": "2025-05-16",
+      "title": "Hunting Grounds",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 56
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/f2SUTv6qGGQK9k8gInnG0z9mBN3.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1373276,
+      "original_language": "es",
+      "original_title": "Eran brujas",
+      "overview": "Mia, an expert speaker in witchcraft, takes a trip to see a therapist. On the way she meets a group of young people who will begin to die one by one to bring an evil spirit back from death.",
+      "popularity": 88.6451,
+      "poster_path": "/85rlLCjpHbY0puR1FSL7jYyN1cu.jpg",
+      "release_date": "2025-09-08",
+      "title": "They Were Witches",
+      "video": false,
+      "vote_average": 2.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/42xAe6kVeTjml9Tww6vRoWa5tay.jpg",
+      "genre_ids": [
+        28,
+        18,
+        53
+      ],
+      "id": 861451,
+      "original_language": "kn",
+      "original_title": "Martin",
+      "overview": "Martin revolves around Lt. Brigadier Arjun Saxena, whose journey takes him from Pakistan to India to discover his real identity and fight against black market dealers, who are involved with terrorists to orchestrate massive attacks in the country.",
+      "popularity": 92.0522,
+      "poster_path": "/bYe2ZjUhb4Kje0BpWE6kN34u2hv.jpg",
+      "release_date": "2024-10-11",
+      "title": "Martin",
+      "video": false,
+      "vote_average": 3.5,
+      "vote_count": 20
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qcDDn7WeKBenM4nLlOPXAeJ4hpg.jpg",
+      "genre_ids": [
+        53,
+        28,
+        12
+      ],
+      "id": 1280450,
+      "original_language": "en",
+      "original_title": "Stolen Girl",
+      "overview": "In 1993, Maureen’s six-year-old daughter Amina is snuck out of the country by her ex-husband, Karim. After years of unsuccessful attempts to find her, Maureen intersects with a professional retriever of internationally abducted children who promises to help her find Amina in exchange for her collaboration.",
+      "popularity": 88.0421,
+      "poster_path": "/fZlNXEHZsBp7unqw009MeBbMv87.jpg",
+      "release_date": "2025-09-04",
+      "title": "Stolen Girl",
+      "video": false,
+      "vote_average": 6.667,
+      "vote_count": 72
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w3Bi0wygeFQctn6AqFTwhGNXRwL.jpg",
+      "genre_ids": [
+        14,
+        10402,
+        35,
+        16
+      ],
+      "id": 803796,
+      "original_language": "en",
+      "original_title": "KPop Demon Hunters",
+      "overview": "When K-pop superstars Rumi, Mira and Zoey aren't selling out stadiums, they're using their secret powers to protect their fans from supernatural threats.",
+      "popularity": 93.093,
+      "poster_path": "/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg",
+      "release_date": "2025-06-20",
+      "title": "KPop Demon Hunters",
+      "video": false,
+      "vote_average": 8.224,
+      "vote_count": 1862
+    }
+  ],
+  "total_pages": 53620,
+  "total_results": 1072381
+}
