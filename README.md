@@ -82,6 +82,8 @@ API 테스트는 보안상 CI 환경(GitHub Actions)에서만 실행
 - ⬜ API 테스트 케이스 추가 및 에러 시나리오 강화
 - ⬜ Docker 환경 최적화 및 다중 서비스 분리 실행
 - ⬜ 테스트 실패 시 자동 이슈 생성 기능 연동 (ex. GitHub Issues, Jira)
+- ⬜ APPIUM 테스트 기기 및 케이스 추가
+- ⬜ SQL을 이용한 DB 자동화 테스트 구현
 
 
 
