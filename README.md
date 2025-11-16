@@ -14,7 +14,7 @@ Excel 자동 리포트 및 Slack 테스트 결과 메시지 전송 기능 구축
 ## 🧱 프로젝트 구성
 ### 1. 마켓컬리 웹 테스트 (Selenium)
 상품 검색, 장바구니 추가, 카테고리 버튼 클릭, 로그인 실패 등 다양한 시나리오 테스트
-주요 테스트 포인트: UI 요소 접근, XPath 활용, 동작 여부 및 상품 정보 확인
+주요 테스트 포인트: UI 요소 접근, XPath 활용, 동작 여부 및 상품 정보 확인, 웹/앱 자동화 테스트
 
 ### 2. 영화 API 테스트
 
@@ -23,44 +23,10 @@ TMDB(Open API) 기반 GET 요청 검증
 검증 요소: 응답 코드, 응답 시간(SLA), 필수 키 존재 여부 등
 
 ## 🧰 사용 기술
-Python, Selenium, requests, openpyxl, Slack Webhook, Docker, GitHub Actions, Allure Report
+Python, Selenium, requests, openpyxl, Slack Webhook, Docker, GitHub Actions, Allure Report, APPIUM
 
 
--------------------------------------------------------
-## 📁 디렉토리 구조
-<pre>src/
-├── report/
-│   └── generate_excel_report.py
-├── tests/
-│   ├── api_tests/
-│   │   ├── test_api_sla.py
-│   │   ├── test_movie_invalid_api_key.py
-│   │   ├── test_movie_details.py
-│   │   ├── test_popular_movie.py
-│   │   └── test_search_movie.py
-│   ├── ui_tests/
-│   │   ├── test_blank_search.py
-│   │   ├── test_fail_screenshot.py
-│   │   ├── test_invalid_search.py
-│   │   ├── test_ui_add_product.py
-│   │   ├── test_ui_cart.py
-│   │   ├── test_ui_category.py
-│   │   ├── test_ui_login.py
-│   │   ├── test_ui_login_success.py
-│   │   ├── test_ui_quantity.py
-│   │   └── test_ui_search.py
-│   └── testcases/
-│       └── test_case.xlsx
-utils/
-├── api_utils.py
-├── config_utils.py
-├── parse_test_result.py
-├── read_movie_data.py
-├── read_product_data.py
-├── send_slack_result.py
-└── utilities.py
-</pre>
--------------------------------------
+
 ## ✅ 주요 기능
 - 테스트 결과를 Excel로 정리
 - 테스트 완료 시 Slack으로 자동 전송
