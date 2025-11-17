@@ -1,12 +1,12 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","0","장바구니 버튼이 동작 하는지 확인","src.tests.ui_tests","Mon Nov 17 04:08:42 UTC 2025","broken","Mon Nov 17 04:08:42 UTC 2025","","test_ui_cart","",""
-"","0","로그인 후 상품 추가하고 상품이 장바구니에 담겨 있는지 확인","src.tests.ui_tests","Mon Nov 17 04:08:43 UTC 2025","broken","Mon Nov 17 04:08:43 UTC 2025","","test_ui_product_add_flow","",""
+"","0","잘못된 ID,PW 입력 시 로그인이 실패하는지 확인","src.tests.ui_tests","Mon Nov 17 08:06:18 UTC 2025","broken","Mon Nov 17 08:06:18 UTC 2025","","test_ui_login","",""
+"","0","존재하지 않는 상품 검색 시, 결과 없음 메시지 확인","src.tests.ui_tests","Mon Nov 17 08:06:16 UTC 2025","broken","Mon Nov 17 08:06:16 UTC 2025","","test_invalied_search","",""
+"","0","공백 입력 시, 팝업 노출 확인","src.tests.ui_tests","Mon Nov 17 08:06:09 UTC 2025","broken","Mon Nov 17 08:06:09 UTC 2025","","test_blank_search","",""
+"","0","로그인 후 상품 추가하고 상품이 장바구니에 담겨 있는지 확인","src.tests.ui_tests","Mon Nov 17 08:06:18 UTC 2025","broken","Mon Nov 17 08:06:18 UTC 2025","","test_ui_product_add_flow","",""
+"","0","장바구니 버튼이 동작 하는지 확인","src.tests.ui_tests","Mon Nov 17 08:06:17 UTC 2025","broken","Mon Nov 17 08:06:17 UTC 2025","","test_ui_cart","",""
 "
     일부러 실패하게 만드는 테스트
     - 올바르지 않은 요소 선택
     - 검색창이 없는 요소를 클릭 시도하여 실패 유발
-    ","0","FAILED 기능 동작 하는지 확인","src.tests.ui_tests","Mon Nov 17 04:08:39 UTC 2025","broken","Mon Nov 17 04:08:39 UTC 2025","","test_fail_screenshot","",""
-"","0","잘못된 ID,PW 입력 시 로그인이 실패하는지 확인","src.tests.ui_tests","Mon Nov 17 04:08:42 UTC 2025","broken","Mon Nov 17 04:08:42 UTC 2025","","test_ui_login","",""
-"","0","존재하지 않는 상품 검색 시, 결과 없음 메시지 확인","src.tests.ui_tests","Mon Nov 17 04:08:40 UTC 2025","broken","Mon Nov 17 04:08:40 UTC 2025","","test_invalied_search","",""
-"","0","공백 입력 시, 팝업 노출 확인","src.tests.ui_tests","Mon Nov 17 04:08:36 UTC 2025","broken","Mon Nov 17 04:08:36 UTC 2025","","test_blank_search","",""
-"","0","상품 검색 후 장바구니 추가 기능 동작 확인","src.tests.ui_tests","Mon Nov 17 04:08:41 UTC 2025","broken","Mon Nov 17 04:08:41 UTC 2025","","test_ui_add_product","",""
+    ","0","FAILED 기능 동작 하는지 확인","src.tests.ui_tests","Mon Nov 17 08:06:15 UTC 2025","broken","Mon Nov 17 08:06:15 UTC 2025","","test_fail_screenshot","",""
+"","0","상품 검색 후 장바구니 추가 기능 동작 확인","src.tests.ui_tests","Mon Nov 17 08:06:17 UTC 2025","broken","Mon Nov 17 08:06:17 UTC 2025","","test_ui_add_product","",""
