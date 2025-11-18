@@ -5,7 +5,6 @@ from utils.csv_utils import get_timestamped_filename, save_movies_to_csv
 
 def test_rated_movie_consistency():
     env = get_current_env()
-    BASE_URL = env["base_url"]
     API_KEY = env["api_key"]
 
     endpoint = "/movie/top_rated"

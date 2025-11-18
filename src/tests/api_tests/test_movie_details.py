@@ -14,7 +14,6 @@ def test_get_movie_details(movie_id, expected_title):
     """특정 영화 상세 정보 API 테스트"""
 
     env = get_current_env()
-    BASE_URL = env["base_url"]
     API_KEY = env["api_key"]
 
     endpoint = f"/movie/{movie_id}"

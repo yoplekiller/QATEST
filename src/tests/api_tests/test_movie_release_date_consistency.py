@@ -9,7 +9,6 @@ from utils.data_loader import load_movie_test_data
 @pytest.mark.parametrize(["movie_id", "expected_title"], load_movie_test_data())
 def test_movie_release_date_consistency(movie_id, expected_title):
     env = get_current_env()
-    BASE_URL = env["base_url"]
     API_KEY = env["api_key"]
 
     endpoint = f"/movie/{movie_id}"

@@ -3,9 +3,6 @@ from utils.api_utils import send_get_request, attach_response
 import json
 from utils.config_utils import get_current_env
 
-env = get_current_env()
-base_url = env["base_url"]
-api_key = env["api_key"]
 
 @allure.feature("영화 목록 API 테스트")
 @allure.story("인기 영화 조회")
@@ -13,7 +10,6 @@ api_key = env["api_key"]
 def test_get_popular_movies():
 
     env = get_current_env()
-    BASE_URL = env["base_url"]
     API_KEY = env["api_key"]
 
 

@@ -4,7 +4,6 @@ from utils.config_utils import get_current_env
 
 def test_movie_videos():
     env = get_current_env()
-    BASE_URL = env["base_url"]
     API_KEY = env["api_key"]
 
     movie_id = 550  # 예시로 Fight Club의 ID 사용
