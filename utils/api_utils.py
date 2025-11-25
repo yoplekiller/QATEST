@@ -1,9 +1,9 @@
 import requests
 import allure
 import json
-from utils.config_utils import get_current_env
+from utils.config_utils import load_config
 
-env_data = get_current_env()
+env_data = load_config()
 BASE_URL = env_data["base_url"]
 API_KEY = env_data["api_key"]
 
@@ -31,10 +31,8 @@ def send_post_request(endpoint, data=None, json_data=None, headers=None):
         allure.attach(str(e), name="POST 요청 에러", attachment_type=allure.attachment_type.TEXT)
         raise
 
-
 @allure.step("API 응답 결과 첨부")
 def attach_response(response):
-    """Allure 리포트에 API 응답을 JSON 형식으로 첨부"""
     try:
         json_body = json.dumps(response.json(), indent=2, ensure_ascii=False)
         allure.attach(json_body, name="응답 JSON", attachment_type=allure.attachment_type.JSON)

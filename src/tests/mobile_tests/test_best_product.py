@@ -7,7 +7,6 @@ import time
 
 @pytest.fixture
 def driver():
-
     caps = {
         "platformName": "Android",
         "deviceName": "R3CX70ALSLB",
@@ -23,7 +22,6 @@ def driver():
 
 @pytest.fixture
 def best_product(driver):
-
     element = driver.find_element(
         AppiumBy.ANDROID_UIAUTOMATOR,
         'new UiScrollable(new UiSelector().scrollable(true))'
@@ -36,7 +34,6 @@ def best_product(driver):
 @allure.feature("베스트 메뉴")
 def test_best_product(driver, best_product):
     # 성공 시 스크린 샷
-
     try:
         time.sleep(2)
         screenshot = driver.get_screenshot_as_png()
