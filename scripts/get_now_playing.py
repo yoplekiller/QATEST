@@ -1,15 +1,16 @@
 import csv
 import os
-
 import requests
-from src.tests.api_tests.test_popular_movie import env
+from src.tests.api_tests.test_popular_movie import env, load_config
+
+env = load_config()
 
 BASE_URL = env["base_url"]
 API_KEY = env["api_key"]
 endpoint = "/movie/now_playing"
 
 params={
-    API_KEY: "api_key",
+    "api_key": API_KEY,
     "language": "en-US",
     "page": 1
 }

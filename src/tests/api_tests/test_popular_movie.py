@@ -22,7 +22,6 @@ def test_get_popular_movies():
     attach_response(response)
 
 
-
     # Allure에 응답 JSON 전체 첨부
     allure.attach(
         body=json.dumps(data, indent=2, ensure_ascii=False),

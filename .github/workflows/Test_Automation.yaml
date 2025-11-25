@@ -1,4 +1,4 @@
-name: Selenium Test Automation
+name: Test Automation
 on:
   pull_request:
     branches:

@@ -1,5 +1,5 @@
 import allure
-from utils.api_utils import send_get_request, attach_response
+from utils.api_utils import send_get_request_no_raise, attach_response
 
 
 @allure.feature("예외 케이스")
@@ -12,7 +12,6 @@ def test_movie_invalid_api_key():
         "api_key": "invalid_key",
         "query": "Inception"
     }
-    response = send_get_request(endpoint, params)
-    attach_response(response)
-
-    assert  response.status_code == 401
+    response = send_get_request_no_raise(endpoint, params)
+    
+    assert response.status_code == 401

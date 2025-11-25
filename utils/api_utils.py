@@ -31,6 +31,14 @@ def send_post_request(endpoint, data=None, json_data=None, headers=None):
         allure.attach(str(e), name="POST 요청 에러", attachment_type=allure.attachment_type.TEXT)
         raise
 
+@allure.step("GET 요청 보내기 (상태 코드 확인하지 않음)")
+def send_get_request_no_raise(endpoint, params=None, headers=None):
+    """상태 코드를 확인하지 않고 응답을 반환하는 GET 요청 함수"""
+    full_url = BASE_URL + endpoint
+    response = requests.get(full_url, params=params, headers=headers)
+    attach_response(response)
+    return response
+
 @allure.step("API 응답 결과 첨부")
 def attach_response(response):
     try:

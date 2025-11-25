@@ -2,7 +2,7 @@ import time
 import allure
 import pytest
 import requests
-from utils.api_utils import get_current_env
+from utils.config_utils import get_current_env
 
 env_data = get_current_env()
 API_KEY = env_data["api_key"]
