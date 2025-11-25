@@ -1,0 +1,2 @@
+현재 URL: https://www.kurly.com/cart
+🎉 테스트 성공! (실패했을 때만 자동 스크린샷 저장)
