@@ -1,7 +1,9 @@
 import pytest
 import allure
 from selenium.webdriver.common.by import By
-from utils.utilities import capture_screenshot
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from utils.utilities import FailureScreenshot
 
 @allure.feature("UI 테스트")
 @allure.story("검색창 FAILED 테스트")
@@ -13,7 +15,7 @@ def test_fail_screenshot(driver):
     - 검색창이 없는 요소를 클릭 시도하여 실패 유발
     """
     driver.get("https://www.kurly.com/main")
-    try:
+    wait = WebDriverWait(driver, 10)
+    
+    with FailureScreenshot(driver, "검색창_FAILED", "screenshots_fail_screenshot"):
         driver.find_element(By.XPATH, "//input[@id='wrong_search_id']").click()
-    except Exception:
-        pytest.fail("📌 예상된 실패: 잘못된 XPATH로 인해 클릭할 수 없음")

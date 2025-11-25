@@ -1,9 +1,11 @@
 import time
 import allure
 import pytest
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
-from utils.utilities import capture_screenshot
+from utils.utilities import FailureScreenshot, capture_screenshot
 
 @allure.feature("UI 테스트")
 @allure.story("상품 추가 테스트")
@@ -12,59 +14,38 @@ def test_add_product(driver):
     driver.get("https://www.kurly.com/main")
     driver.maximize_window()
 
-    try:
-      search_box = driver.find_element(By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
-      search_box.send_keys("과자")
-      search_box.send_keys(Keys.RETURN)
-      time.sleep(4)
+    wait = WebDriverWait(driver, 10)
 
-      try:
-          add_button = driver.find_element(By.XPATH, "//a[3]//div[2]//button[1]")
-          add_button.click()
-          time.sleep(4)
-
-      except Exception as e:
-          capture_screenshot(driver,"상품추가 실패","screenshot_add_product")
-          pytest.fail(f"❌ 상품 추가 버튼 클릭 실패: {str(e)}")
-
-      try:
-          quantity_up_button = driver.find_element(By.XPATH, "//button[@aria-label='수량올리기']")
-          for _ in range(2):
-              quantity_up_button.click()
-          time.sleep(4)
-      except Exception as e:
-          capture_screenshot(driver,"수량올리기 실패","screenshot_add_product")
-          pytest.fail(f"❌ 수량 올리기 실패: {str(e)}")
-
-      try:
-          quantity_down_button = driver.find_element(By.XPATH, "//button[@aria-label='수량내리기']")
-          for _ in range(2):
-              quantity_down_button.click()
-          time.sleep(4)
-      except Exception as e:
-          capture_screenshot(driver,"수량내리기 실패","screenshot_add_product")
-          pytest.fail(f"❌ 수량 내리기 실패: {str(e)}")
-
-      try:
-          cart_add_button = driver.find_element(By.XPATH, "//button[@class='css-ahkst0 e4nu7ef3']")
-          cart_add_button.click()
-          time.sleep(4)
-      except Exception as e:
-          capture_screenshot(driver, "상품 추가", "screenshots_add_product")
-          pytest.fail(f"❌ 상품 추가 실패: {str(e)}")
-
-      # 검색 결과 확인
-      if "과자" not in driver.page_source:
-          screenshot_path = "unexpected_result.png"
-
-          # 스크린샷 저장
-          driver.save_screenshot(screenshot_path)
-
-          # Allure Report에 스크린샷 첨부
-          with open(screenshot_path, "rb") as image_file:
-              allure.attach(image_file.read(), name="Unexpected Search Result", attachment_type=allure.attachment_type.PNG)
-          pytest.fail("❌ 검색 결과에서 '과자'가 포함되지 않음.")
-
-    except Exception as e:
-        capture_screenshot(driver,"테스트실패","screenshots_add_product")
-        pytest.fail(f"❌ 상품 추가 테스트 실패: {str(e)}")
+    with FailureScreenshot(driver, "상품추가", "screenshots_add_product"):
+        # 검색
+        search_box = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")))
+        search_box.send_keys("과자")
+        search_box.send_keys(Keys.RETURN)
+        time.sleep(4)
+        
+        # 상품 추가
+        add_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[3]//div[2]//button[1]")))
+        add_button.click()
+        time.sleep(1)
+        
+        # 수량 올리기
+        quantity_up_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='수량올리기']")))
+        for _ in range(2):
+            quantity_up_button.click()
+        time.sleep(1)
+        
+        # 수량 내리기
+        quantity_down_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='수량내리기']")))
+        for _ in range(2):
+            quantity_down_button.click()
+        time.sleep(1)
+        
+        # 장바구니 담기
+        cart_add_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='css-ahkst0 e4nu7ef3']")))
+        cart_add_button.click()
+        time.sleep(2)
+        
+        # 결과 확인
+        assert "과자" in driver.page_source, "❌ 검색 결과에서 '과자'가 포함되지 않음"
+        
+        print("🎉 상품 추가 테스트 성공!")
