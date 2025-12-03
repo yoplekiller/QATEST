@@ -1,0 +1,404 @@
+📦 응답 JSON :
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/5h2EsPKNDdB3MAtOk9MB9Ycg9Rz.jpg",
+            "genre_ids": [
+                16,
+                10751,
+                35,
+                12,
+                9648
+            ],
+            "id": 1084242,
+            "original_language": "en",
+            "original_title": "Zootopia 2",
+            "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De’Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+            "popularity": 577.2135,
+            "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+            "release_date": "2025-11-26",
+            "title": "Zootopia 2",
+            "video": false,
+            "vote_average": 7.729,
+            "vote_count": 269
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+            "genre_ids": [
+                28,
+                80,
+                53
+            ],
+            "id": 1419406,
+            "original_language": "zh",
+            "original_title": "捕风追影",
+            "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+            "popularity": 286.3787,
+            "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+            "release_date": "2025-08-16",
+            "title": "The Shadow's Edge",
+            "video": false,
+            "vote_average": 6.345,
+            "vote_count": 129
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lf8IZ86ajGpgbuyHCZrXUeAMmvy.jpg",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "id": 1033462,
+            "original_language": "zh",
+            "original_title": "749局",
+            "overview": "A traumatized young man with physical abnormalities is forced to join a mysterious bureau to confront a disaster spreading across the earth caused by an unknown creature. He embarks on an adventure uncovering mysteries about his life.",
+            "popularity": 235.4213,
+            "poster_path": "/flykCMw22y6yv8vKnBjmsW3pneo.jpg",
+            "release_date": "2024-10-01",
+            "title": "Bureau 749",
+            "video": false,
+            "vote_average": 5.913,
+            "vote_count": 46
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/pAyImoslSnpMgjRwhaS5ZEdl8UI.jpg",
+            "genre_ids": [
+                28,
+                53,
+                80
+            ],
+            "id": 1448560,
+            "original_language": "en",
+            "original_title": "Wildcat",
+            "overview": "An ex-black ops team reunite to pull off a desperate heist in order to save the life of their leader’s eight-year-old daughter.",
+            "popularity": 232.0316,
+            "poster_path": "/h893ImjM6Fsv5DFhKJdlZFZIJno.jpg",
+            "release_date": "2025-11-19",
+            "title": "Wildcat",
+            "video": false,
+            "vote_average": 6.4,
+            "vote_count": 22
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/8lqfrOBQ2EcY7znD3LxTYcvlh25.jpg",
+            "genre_ids": [
+                28,
+                80
+            ],
+            "id": 949709,
+            "original_language": "zh",
+            "original_title": "危机航线",
+            "overview": "\"Anyone? There is ......\" A mysterious message from Gao Haojun comes from ten thousand meters in the air. A five-star A380 ultra-luxury airliner was hijacked on its international maiden voyage, and international security expert Gao Haojun stood up to a group of thugs, his daughter Xiaojun was trapped in the cabin, and Mike, the leader of the hijackers, threatened the lives of more than 800 people in the plane as a bargaining chip, and Xiaojun's mother, Fu Yuan, was also in danger. ...... Will the passengers on board be able to land safely and how should this crisis be resolved?",
+            "popularity": 247.6237,
+            "poster_path": "/v8ySgr4CE45SrrIt4PqqYc1diW6.jpg",
+            "release_date": "2024-09-29",
+            "title": "High Forces",
+            "video": false,
+            "vote_average": 6.1,
+            "vote_count": 22
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/q9bvjUkpKltPE0S9oxci2pmD1Zx.jpg",
+            "genre_ids": [
+                878,
+                28
+            ],
+            "id": 1309012,
+            "original_language": "en",
+            "original_title": "Altered",
+            "overview": "In an alternate present, genetically enhanced humans dominate society. Outcasts Leon and Chloe fight for justice against corrupt politicians exploiting genetic disparity, risking everything to challenge the oppressive system.",
+            "popularity": 200.9637,
+            "poster_path": "/6QlAcGRaUrgHcZ4WTBh5lsPnzKx.jpg",
+            "release_date": "2025-09-18",
+            "title": "Altered",
+            "video": false,
+            "vote_average": 6.489,
+            "vote_count": 45
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/otSXrUWOTX7tTigLBMFKOV8n47r.jpg",
+            "genre_ids": [
+                27,
+                14,
+                10749
+            ],
+            "id": 1246049,
+            "original_language": "fr",
+            "original_title": "Dracula",
+            "overview": "When a 15th-century prince denounces God after the devastating loss of his wife, he inherits an eternal curse: he becomes Dracula. Condemned to wander the centuries, he defies fate and death itself, guided by a single hope — to be reunited with his lost love.",
+            "popularity": 242.7993,
+            "poster_path": "/ykyRfv7JDofLxXLAwtLXaSuaFfM.jpg",
+            "release_date": "2025-07-30",
+            "title": "Dracula",
+            "video": false,
+            "vote_average": 7.046,
+            "vote_count": 487
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ytCi1wg6YHpYcFRWCO2jpzN31Kf.jpg",
+            "genre_ids": [
+                28,
+                53,
+                80
+            ],
+            "id": 1196573,
+            "original_language": "en",
+            "original_title": "She Rides Shotgun",
+            "overview": "Newly released from prison and marked for death by unrelenting enemies, Nate must now protect his estranged 11-year-old daughter, Polly, at all costs. With scant resources and no one to trust, Nate and Polly forge a bond under fire as he shows her how to fight and survive—and she teaches him the true meaning of unconditional love.",
+            "popularity": 178.292,
+            "poster_path": "/nvqW8mOm818QDio3GKKmPLK8kXj.jpg",
+            "release_date": "2025-07-31",
+            "title": "She Rides Shotgun",
+            "video": false,
+            "vote_average": 7.102,
+            "vote_count": 113
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tRdorrIjlybrGsebXOzgF7vRyYy.jpg",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "id": 1469354,
+            "original_language": "en",
+            "original_title": "Border Hunters",
+            "overview": "After his police officer brother is killed by a drug dealer who flees to the protection of his cartel-connected uncle in Mexico, an American man with a diverse law enforcement/military background goes south of the border to get revenge",
+            "popularity": 190.9987,
+            "poster_path": "/6TNFZnJ5CU0uFQxGaO9dbqriiI7.jpg",
+            "release_date": "2025-10-20",
+            "title": "Border Hunters",
+            "video": false,
+            "vote_average": 8.8,
+            "vote_count": 6
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/7nAVXGHHtaNcdsqvDXmY6R9N0fG.jpg",
+            "genre_ids": [
+                28,
+                35
+            ],
+            "id": 1363123,
+            "original_language": "en",
+            "original_title": "The Family Plan 2",
+            "overview": "Now that Dan's assassin days are behind him, all he wants for Christmas is quality time with his kids. But when he learns his daughter has her own plans, he books a family trip to London—putting them all in the crosshairs of an unexpected enemy.",
+            "popularity": 171.4991,
+            "poster_path": "/semFxuYx6HcrkZzslgAkBqfJvZk.jpg",
+            "release_date": "2025-11-11",
+            "title": "The Family Plan 2",
+            "video": false,
+            "vote_average": 6.687,
+            "vote_count": 278
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/l8pwO23MCvqYumzozpxynCNfck1.jpg",
+            "genre_ids": [
+                14,
+                12,
+                10749
+            ],
+            "id": 967941,
+            "original_language": "en",
+            "original_title": "Wicked: For Good",
+            "overview": "As an angry mob rises against the Wicked Witch, Glinda and Elphaba will need to come together one final time. With their singular friendship now the fulcrum of their futures, they will need to truly see each other, with honesty and empathy, if they are to change themselves, and all of Oz, for good.",
+            "popularity": 179.3955,
+            "poster_path": "/si9tolnefLSUKaqQEGz1bWArOaL.jpg",
+            "release_date": "2025-11-19",
+            "title": "Wicked: For Good",
+            "video": false,
+            "vote_average": 6.772,
+            "vote_count": 358
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ebyxeBh56QNXxSJgTnmz7fXAlwk.jpg",
+            "genre_ids": [
+                28,
+                878,
+                12
+            ],
+            "id": 1242898,
+            "original_language": "en",
+            "original_title": "Predator: Badlands",
+            "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+            "popularity": 192.8758,
+            "poster_path": "/ef2QSeBkrYhAdfsWGXmp0lvH0T1.jpg",
+            "release_date": "2025-11-05",
+            "title": "Predator: Badlands",
+            "video": false,
+            "vote_average": 7.389,
+            "vote_count": 526
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/cVzAhirOhKh91AB1TFcGn0Rh5c3.jpg",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "id": 1208561,
+            "original_language": "en",
+            "original_title": "Art of Eight Limbs",
+            "overview": "Four canisters of deadly VX nerve gas have fallen into the hands of an international arms dealer in Myanmar. A CIA recruit delivers a high-tech detection device to an agent already on the ground.",
+            "popularity": 144.6175,
+            "poster_path": "/tZRypLd2SU3Eeqg5tD5cwkk5CdL.jpg",
+            "release_date": "2024-08-16",
+            "title": "Art of Eight Limbs",
+            "video": false,
+            "vote_average": 6.484,
+            "vote_count": 32
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/6bzabqH399ioM3nZScwZtzGaHIy.jpg",
+            "genre_ids": [
+                878,
+                12,
+                28
+            ],
+            "id": 533533,
+            "original_language": "en",
+            "original_title": "TRON: Ares",
+            "overview": "A highly sophisticated Program called Ares is sent from the digital world into the real world on a dangerous mission, marking humankind's first encounter with A.I. beings.",
+            "popularity": 412.9015,
+            "poster_path": "/chpWmskl3aKm1aTZqUHRCtviwPy.jpg",
+            "release_date": "2025-10-08",
+            "title": "TRON: Ares",
+            "video": false,
+            "vote_average": 6.352,
+            "vote_count": 463
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/hpXBJxLD2SEf8l2CspmSeiHrBKX.jpg",
+            "genre_ids": [
+                18,
+                14,
+                27
+            ],
+            "id": 1062722,
+            "original_language": "en",
+            "original_title": "Frankenstein",
+            "overview": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+            "popularity": 149.7549,
+            "poster_path": "/g4JtvGlQO7DByTI6frUobqvSL3R.jpg",
+            "release_date": "2025-10-17",
+            "title": "Frankenstein",
+            "video": false,
+            "vote_average": 7.768,
+            "vote_count": 2028
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lZYMXx74pWmbj5Q5jp1QaMvmuuR.jpg",
+            "genre_ids": [
+                28,
+                14,
+                53
+            ],
+            "id": 1180831,
+            "original_language": "no",
+            "original_title": "Troll 2",
+            "overview": "When a dangerous new troll unleashes devastation across their homeland, Nora, Andreas and Major Kris embark on their most perilous mission yet.",
+            "popularity": 423.2374,
+            "poster_path": "/p6xAExLNFbHcLfvSuvLPoM8aqZU.jpg",
+            "release_date": "2025-11-30",
+            "title": "Troll 2",
+            "video": false,
+            "vote_average": 6.893,
+            "vote_count": 56
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+            "genre_ids": [
+                878,
+                53
+            ],
+            "id": 755898,
+            "original_language": "en",
+            "original_title": "War of the Worlds",
+            "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+            "popularity": 154.7204,
+            "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+            "release_date": "2025-07-29",
+            "title": "War of the Worlds",
+            "video": false,
+            "vote_average": 4.298,
+            "vote_count": 761
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/1hDUJFAYkLJUCoiXzDi2cLmFh4m.jpg",
+            "genre_ids": [
+                28,
+                18,
+                14
+            ],
+            "id": 1083637,
+            "original_language": "kn",
+            "original_title": "ಕಾಂತಾರ: ಅಧ್ಯಾಯ - ೧",
+            "overview": "During the Kadamba reign, King Vijayendra, the ruler of the fictional feudatory land of Bangra, meets his final fate while venturing into the mystical forest of Kantara. Witnessing this, his son Rajashekara seals the borders of their realm. Later, Prince Kulashekara reopens them through a brutal massacre. The protagonist, Berme, in search of prosperity, crosses the divide and ignites a conflict of faith, power, and destiny between the Kingdom and Nature.",
+            "popularity": 283.9145,
+            "poster_path": "/zBvw25afDn93embB8L7FzvTT2xq.jpg",
+            "release_date": "2025-10-01",
+            "title": "Kantara - A Legend: Chapter 1",
+            "video": false,
+            "vote_average": 7.4,
+            "vote_count": 35
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/eMBYlgFTHfZaTz96eJxlkeMsKo9.jpg",
+            "genre_ids": [
+                16,
+                28
+            ],
+            "id": 1539104,
+            "original_language": "ja",
+            "original_title": "劇場版 呪術廻戦「渋谷事変 特別編集版」×「死滅回游 先行上映」",
+            "overview": "A veil abruptly descends over the busy Shibuya area amid the bustling Halloween crowds, trapping countless civilians inside. Satoru Gojo, the strongest jujutsu sorcerer, steps into the chaos. But lying in wait are curse users and spirits scheming to seal him away. Yuji Itadori, accompanied by his classmates and other top-tier jujutsu sorcerers, enters the fray in an unprecedented clash of curses — the Shibuya Incident. In the aftermath, ten colonies across Japan are transformed into dens of curses in a plan orchestrated by Noritoshi Kamo. As the deadly Culling Game starts, Special Grade sorcerer Yuta Okkotsu is assigned to carry out Yuji's execution for his perceived crimes. A compilation movie of Shibuya Incident including the first two episodes of the Culling Games arc.",
+            "popularity": 125.7399,
+            "poster_path": "/tc7RrVW5FGvyO2tsgW6LIN1esHI.jpg",
+            "release_date": "2025-11-07",
+            "title": "JUJUTSU KAISEN: Execution -Shibuya Incident x The Culling Game Begins-",
+            "video": false,
+            "vote_average": 4.8,
+            "vote_count": 40
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/9tOkjBEiiGcaClgJFtwocStZvIT.jpg",
+            "genre_ids": [
+                16,
+                12,
+                10751,
+                35
+            ],
+            "id": 269149,
+            "original_language": "en",
+            "original_title": "Zootopia",
+            "overview": "Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case - even if it means partnering with scam-artist fox Nick Wilde to solve the mystery.",
+            "popularity": 132.9982,
+            "poster_path": "/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg",
+            "release_date": "2016-02-11",
+            "title": "Zootopia",
+            "video": false,
+            "vote_average": 7.755,
+            "vote_count": 17170
+        }
+    ],
+    "total_pages": 53999,
+    "total_results": 1079979
+}
