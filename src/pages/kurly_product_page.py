@@ -44,7 +44,7 @@ class KurlyProductPage(BasePage):
 
     
     # Locators - 메시지
-    SUCCESS_MESSAGE = (By.XPATH, "//*[contains(text(),'장바구니에 담겼습니다')]")
+    SUCCESS_MESSAGE = (By.XPATH, "//*[contains(text(),'장바구니에 담았습니다')]")
     NO_RESULT_MESSAGE = (By.XPATH, "//*[contains(text(),'검색 결과가 없습니다')]")
 
     def __init__(self, driver):

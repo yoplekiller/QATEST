@@ -9,7 +9,6 @@ from src.pages.kurly_product_page import KurlyProductPage
 def test_add_product_to_cart_flow(kurly_product_page):
     """
     상품을 장바구니에 추가하는 전체 플로우 테스트
-    
     Steps:
         1. 세 번째 상품의 추가 버튼 클릭
         2. 수량 2회 증가
