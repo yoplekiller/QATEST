@@ -1,0 +1,4 @@
+movie_id,expected_genres
+550,Drama|Thriller
+603,Action|Science Fiction
+157336,Adventure|Drama|Science Fiction
