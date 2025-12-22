@@ -1,0 +1,103 @@
+name: Test Automation
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+  push:
+    branches:
+      - feature/*
+      - temp/*
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */8 * * *' # 실행 시간 설정(UTC)
+
+concurrency:  # 동시에 여러 개의 배포 실행 방지
+  group: gh-pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  ui_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set RUN_TS (timestamp)
+        run: |
+          echo "RUN_TS=$(TZ=Asia/Seoul date +'%Y%m%d_%H%M%S')" >> $GITHUB_ENV
+          echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: |
+          python -m venv venv
+          venv/bin/python -m pip install -r requirements.txt allure-pytest
+
+      - name: Install Allure CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          wget https://github.com/allure-framework/allure2/releases/download/2.32.2/allure-2.32.2.tgz
+          tar -zxvf allure-2.32.2.tgz
+          sudo mv allure-2.32.2 /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+          allure --version
+
+      - name: Run UI Tests
+        run: |
+          rm -rf allure-results-ui || true
+          mkdir -p allure-results-ui
+          venv/bin/python -m pytest src/tests/ui \
+            --alluredir=allure-results-ui \
+            --junitxml=ui_report.xml \
+            --capture=tee-sys -v
+        continue-on-error: true
+
+  api_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set RUN_TS (timestamp)
+        run: |
+          echo "RUN_TS=$(TZ=Asia/Seoul date +'%Y%m%d_%H%M%S')" >> $GITHUB_ENV
+          echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: |
+          python -m venv venv
+          venv/bin/python -m pip install -r requirements.txt allure-pytest
+
+      - name: Install Allure CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          wget https://github.com/allure-framework/allure2/releases/download/2.32.2/allure-2.32.2.tgz
+          tar -zxvf allure-2.32.2.tgz
+          sudo mv allure-2.32.2 /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+          allure --version
+
+      - name: Set API Key Environment Variable
+        run: echo "TMDB_API_KEY=${{ secrets.TMDB_API_KEY }}" >> $GITHUB_ENV
+
+      - name: Run API Tests
+        run: |
+          rm -rf allure-results-api || true
+          mkdir -p allure-results-api
+          venv/bin/python -m pytest src/tests/api \
+            --alluredir=allure-results-api \
+            --junitxml=api_report.xml \
+            --capture=tee-sys -v \
+            --maxfail=7 --disable-warnings --tb=short
+        continue-on-error: true        
+
