@@ -1,0 +1,235 @@
+"""
+Kurly 메인 페이지 Page Object
+마켓컬리 웹사이트의 메인 페이지 기능을 담당하는 페이지 오브젝트
+"""
+from typing import List, Optional
+from selenium.webdriver.common.by import By
+from selenium.webdriver.remote.webelement import WebElement
+from selenium.common.exceptions import NoSuchElementException
+from src.pages.base_page import BasePage
+
+
+class KurlyMainPage(BasePage):
+    """
+    마켓컬리 메인 페이지 객체
+
+    기능:
+        - 상품 검색
+        - 카테고리 탐색
+        - 장바구니 접근
+        - 상품 목록 확인
+    """
+
+    # URL
+    KURLY_MAIN_URL = "https://www.kurly.com/main"
+
+    # Locators - 검색
+    SEARCH_INPUT = (By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
+    SEARCH_BUTTON = (By.XPATH, "(//button[@id='submit'])[1]")
+    SEARCH_RESULTS = (By.XPATH, "//div[contains(@class,'product-list')]//a")
+    NO_RESULTS_MESSAGE = (By.XPATH, "//div[@class='popup-content css-15yaaju e1k5padi2']") 
+
+    # Locators - 카테고리
+    CATEGORY_MENU = (By.XPATH, "//button[contains(text(),'카테고리')]")
+    CATEGORY_LIST = (By.XPATH, "//div[contains(@class,'category-list')]//a")
+
+    # Locators - 상품
+    PRODUCT_ITEMS = (By.XPATH, "//div[contains(@class,'product-card')]")
+    PRODUCT_TITLE = (By.XPATH, ".//span[contains(@class,'product-name')]")
+    PRODUCT_PRICE = (By.XPATH, ".//span[contains(@class,'price')]")
+    ADD_TO_CART_BUTTON = (By.XPATH, "//button[contains(text(),'장바구니')]")
+
+    # Locators - 장바구니
+    CART_ICON = (By.XPATH, "//a[contains(@href,'/cart')]")
+    CART_COUNT = (By.XPATH, "//span[contains(@class,'cart-count')]")
+
+    # 팝업
+    POPUP_CLOSE_BUTTON = (By.XPATH, "//button[contains(text(),'확인')]")
+    POPUP_TEXT = (By.XPATH, "//div[@class='popup-content css-15yaaju e1k5padi2']")
+
+    def __init__(self, driver):
+        super().__init__(driver)
+
+    def open_main_page(self) -> None:
+        """메인 페이지 열기"""
+        self.open(self.KURLY_MAIN_URL)
+
+    def enter_search_keyword(self, keyword: str) -> None:
+        """
+        검색어 입력
+        
+        Args:
+            keyword: 입력할 검색 키워드
+        """
+        self.send_keys(self.SEARCH_INPUT, keyword)
+
+    def click_search_button(self) -> None:
+        """검색 버튼 클릭"""
+        self.click(self.SEARCH_BUTTON)
+
+    def search_product(self, keyword: str) -> None:
+        """
+        상품 검색 (입력 + 클릭)
+        
+        Args:
+            keyword: 검색할 상품 키워드
+        """
+        self.enter_search_keyword(keyword)
+        self.click_search_button()
+
+    def get_search_results_count(self) -> int:
+        """
+        검색 결과 개수 반환
+        
+        Returns:
+            int: 검색 결과 상품 개수
+        """
+        results = self.find_elements(self.SEARCH_RESULTS)
+        return len(results)
+
+    def get_search_results(self) -> List[WebElement]:
+        """
+        검색 결과 요소 목록 반환
+        
+        Returns:
+            List[WebElement]: 검색된 상품 요소 리스트
+        """
+        return self.find_elements(self.SEARCH_RESULTS)
+
+    def is_no_results_message_displayed(self) -> bool:
+        """
+        검색 결과가 없을 때 표시되는 메시지 확인
+
+        Returns:
+            bool: 메시지 표시 여부
+        """
+        return self.is_displayed(self.NO_RESULTS_MESSAGE, timeout=5)
+
+    def click_search_result(self, index: int = 0) -> None:
+        """
+        검색 결과 중 특정 인덱스의 상품 클릭
+
+        Args:
+            index: 클릭할 상품 인덱스 (0부터 시작, 기본값=0)
+
+        Raises:
+            NoSuchElementException: 검색 결과가 없을 때
+            IndexError: 인덱스가 범위를 벗어났을 때
+        """
+        try:
+            self.click_element_by_index(self.SEARCH_RESULTS, index)
+        except IndexError as e:
+            results_count = self.get_elements_count(self.SEARCH_RESULTS)
+            if results_count == 0:
+                raise NoSuchElementException("검색 결과가 없습니다")
+            raise IndexError(f"인덱스 {index}가 범위 초과 (총 {results_count}개)")
+
+    def click_first_search_result(self) -> None:
+        """
+        검색 결과 중 첫 번째 상품 클릭
+        
+        Raises:
+            NoSuchElementException: 검색 결과가 없을 때
+        """
+        self.click_search_result(0)
+
+    def open_category_menu(self) -> None:
+        """카테고리 메뉴 열기"""
+        self.click(self.CATEGORY_MENU)
+
+    def get_category_list(self) -> List[str]:
+        """
+        카테고리 목록 반환
+
+        Returns:
+            List[str]: 카테고리 이름 리스트
+        """
+        categories = self.find_elements(self.CATEGORY_LIST)
+        return [cat.text for cat in categories if cat.text]
+
+    def select_category(self, category_name: str) -> None:
+        """
+        특정 이름의 카테고리 클릭
+
+        Args:
+            category_name: 선택할 카테고리 이름
+        """
+        locator = (By.XPATH, f"//div[contains(@class,'category-list')]//a[contains(text(),'{category_name}')]")
+        self.click(locator)
+
+    def go_to_cart(self) -> None:
+        """장바구니 페이지로 이동"""
+        self.click(self.CART_ICON)
+
+    def get_cart_count(self) -> int:
+        """
+        장바구니에 담긴 상품 개수 반환
+
+        Returns:
+            int: 장바구니 상품 개수
+        """
+        if self.is_displayed(self.CART_COUNT):
+            count_text = self.get_text(self.CART_COUNT)
+            try:
+                return int(count_text)
+            except ValueError:
+                return 0
+        return 0
+
+    def get_product_count(self) -> int:
+        """
+        현재 페이지에 표시된 상품 개수 반환
+
+        Returns:
+            int: 상품 개수
+        """
+        return self.get_elements_count(self.PRODUCT_ITEMS)
+
+    def get_products(self) -> List[WebElement]:
+        """
+        현재 페이지의 상품 요소 목록 반환
+        
+        Returns:
+            List[WebElement]: 상품 요소 리스트
+        """
+        return self.find_elements(self.PRODUCT_ITEMS)
+
+    def click_product(self, index: int = 0) -> None:
+        """
+        상품 목록에서 특정 인덱스의 상품 클릭
+
+        Args:
+            index: 클릭할 상품 인덱스 (0부터 시작, 기본값=0)
+
+        Raises:
+            NoSuchElementException: 상품이 없을 때
+            IndexError: 인덱스가 범위를 벗어났을 때
+        """
+        try:
+            self.click_element_by_index(self.PRODUCT_ITEMS, index)
+        except IndexError as e:
+            products_count = self.get_elements_count(self.PRODUCT_ITEMS)
+            if products_count == 0:
+                raise NoSuchElementException("상품 목록이 비어있습니다")
+            raise IndexError(f"인덱스 {index}가 범위 초과 (총 {products_count}개)")
+
+    def click_first_product(self) -> None:
+        """
+        상품 목록에서 첫 번째 상품 클릭
+        
+        Raises:
+            NoSuchElementException: 상품이 없을 때
+        """
+        self.click_product(0)
+    
+    def is_search_keyword_required_popup_displayed(self) -> bool:
+        """
+        '검색어를 입력해주세요' 팝업 메시지 확인
+        
+        Returns:
+            bool: 팝업 표시 여부
+        """
+        if self.is_displayed(self.POPUP_TEXT, timeout=5):
+            popup_text = self.get_text(self.POPUP_TEXT)
+            return "검색어를 입력해주세요" in popup_text
+        return False
