@@ -53,11 +53,12 @@ class KurlyProductPage(BasePage):
     def get_product_count(self) -> int:
         """
         상품 목록의 상품 개수 반환
-
+        
         Returns:
             int: 검색 결과 상품 개수
         """
-        return self.get_elements_count(self.PRODUCT_LIST)
+        products = self.find_elements(self.PRODUCT_LIST)
+        return len(products)
 
     def get_products(self) -> List[WebElement]:
         """
@@ -83,7 +84,8 @@ class KurlyProductPage(BasePage):
         Args:
             times: 클릭 횟수 (기본값: 1)
         """
-        self.change_quantity(self.QUANTITY_UP_BUTTON, times)
+        for _ in range(times):
+            self.click(self.QUANTITY_UP_BUTTON)
 
     def decrease_quantity(self, times: int = 1) -> None:
         """
@@ -92,7 +94,8 @@ class KurlyProductPage(BasePage):
         Args:
             times: 클릭 횟수 (기본값: 1)
         """
-        self.change_quantity(self.QUANTITY_DOWN_BUTTON, times)
+        for _ in range(times):
+            self.click(self.QUANTITY_DOWN_BUTTON)
 
     def get_quantity(self) -> int:
         """
@@ -111,32 +114,23 @@ class KurlyProductPage(BasePage):
         """상품 상세 팝업에서 '장바구니 담기' 버튼 클릭"""
         self.click(self.ADD_TO_CART_BUTTON_IN_POPUP)
 
-    def add_product_to_cart_flow(self, increase_count: int = 0, decrease_count: int = 0) -> None:
-        """
-        상품을 장바구니에 추가하는 전체 플로우
-
-        Args:
-            increase_count: 수량 증가 횟수 (기본값: 0)
-            decrease_count: 수량 감소 횟수 (기본값: 0)
-
-        플로우:
-            1. 세 번째 상품의 장바구니 추가 버튼 클릭
-            2. 수량 조절 (증가/감소)
-            3. 장바구니 담기 버튼 클릭
-        """
-        # Step 1: 세 번째 상품의 추가 버튼 클릭
+    def add_product_to_cart_flow(self, increase_count: int = 0, decrease_count: int = 0) -> bool:
+        #세번째 상품을 장바구니에 추가하는 플로우
         self.click_third_product_add_button()
-
-        # Step 2: 수량 증가
+        #   수량 증가
         if increase_count > 0:
-            self.increase_quantity(times=increase_count)
-
-        # Step 3: 수량 감소
+            self.increase_quantity(increase_count)
+            #수량 감소
         if decrease_count > 0:
-            self.decrease_quantity(times=decrease_count)
+            self.decrease_quantity(decrease_count)
 
-        # Step 4: 장바구니 담기 버튼 클릭
+
         self.click_add_to_cart_in_popup()
+
+         # 성공 메시지 확인 (선택)
+        return self.is_add_to_cart_success()
+    
+
 
     def is_add_to_cart_success(self) -> bool:
         """

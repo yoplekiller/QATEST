@@ -9,17 +9,23 @@
 
 ## 💡 프로젝트 요약
 
-QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으로 **Page Object Model (POM) 패턴**을 적용하여 재사용성과 유지보수성을 극대화했습니다.
+QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으로 **Page Object Model (POM) 패턴**을 적용하여 재사용성과 유지보수성을 극대화하였습니다.
 
-실제 운영 중인 마켓컬리 웹사이트를 대상으로 UI/Mobile 테스트를 구현했으며, TMDB API를 활용한 API 테스트도 포함되어 있습니다.
+실제 운영 중인 **마켓컬리 웹사이트**를 대상으로 UI/Mobile 테스트를 구현했으며, **TMDB API**를 활용한 API 테스트를 구현하였습니다.
 
-### 🎯 **프로젝트 특징**
+### 🎯 프로젝트 특징
 - ✅ **POM 패턴 적용**: 체계적인 테스트 구조로 실무 표준 준수
 - ✅ **환경변수 관리**: 보안을 고려한 API 키 및 계정 정보 관리
 - ✅ **CI/CD 자동화**: GitHub Actions를 통한 자동 테스트 및 배포
-- ✅ **시각적 리포팅**: Allure Report로 상세한 테스트 결과 제공
-- ✅ **Slack 알림**: 테스트 결과 실시간 알림
-- ✅ **국제화 문서**: 한국어/영문 문서 지원
+- ✅ **시각화한 리포팅**: Allure Report로 상세한 테스트 결과 제공
+- ✅ **다중 플랫폼 테스트**: Web (Selenium) + Mobile (Appium) + API (Requests)
+- ✅ **영문 문서**: 한국어/영문 문서 지원
+
+### 📊 프로젝트 통계
+- **총 테스트 케이스**: 23개 (UI: 11개 | API: 9개 | Mobile: 3개)
+- **Page Objects**: 6개 (897줄)
+- **Utilities**: 10개 (442줄)
+- **CI/CD**: GitHub Actions (자동 테스트 + Allure Report 배포)
 
 ## 🧰 Tech Stack
 
@@ -28,20 +34,24 @@ QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으
 - **Selenium 4.27**: 웹 UI 자동화
 - **Pytest 8.3**: 테스트 실행 및 관리
 - **Appium**: Android 모바일 테스트
+- **Requests 2.32**: API 테스트
 
 ### 리포팅 & 모니터링
-- **Allure Report**: 시각적 테스트 리포트
-- **Slack Bot**: 테스트 결과 자동 알림
-- **Excel Report**: 상세 테스트 실행 리포트
+- **Allure Report 2.13**: 시각적 테스트 리포트
+- **pytest-html**: HTML 테스트 리포트
+- **Excel Report**: 상세 테스트 실행 리포트 (pandas + openpyxl)
+- **Logging**: 파일 + 콘솔 로깅 시스템
 
 ### CI/CD & DevOps
 - **GitHub Actions**: 자동화된 테스트 실행
 - **GitHub Pages**: Allure Report 배포
+- **Slack 알림**: 테스트 결과 실시간 알림 (구현 완료)
 
 ### 아키텍처 패턴
 - **Page Object Model (POM)**: 유지보수성 향상
 - **Explicit Wait**: 안정적인 테스트 실행
 - **Environment Variables**: 보안 강화
+- **BDD 스타일**: Given-When-Then 패턴 적용
 
 ## 📖 빠른 시작
 
@@ -49,12 +59,13 @@ QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으
 - Python 3.11 이상
 - Chrome 브라우저
 - Git
+- (선택) Android 디바이스 + Appium (Mobile 테스트)
 
 ### 설치 및 실행
 
 ```bash
 # 1. 저장소 클론
-git clone https://github.com/yourusername/QATEST.git
+git clone https://github.com/yoplekiller/QATEST.git
 cd QATEST
 
 # 2. 가상환경 생성 및 활성화
@@ -101,9 +112,14 @@ TEST_ENV=dev
 pytest --alluredir=./allure-results
 
 # 특정 테스트 스위트 실행
-pytest src/tests/api_tests --alluredir=./allure-results  # API 테스트
-pytest src/tests/ui_tests --alluredir=./allure-results   # UI 테스트
-pytest src/tests/mobile_tests --alluredir=./allure-results  # Mobile 테스트
+pytest src/tests/api --alluredir=./allure-results    # API 테스트
+pytest src/tests/ui --alluredir=./allure-results     # UI 테스트
+pytest src/tests/mobile --alluredir=./allure-results # Mobile 테스트
+
+# 마커로 실행
+pytest -m ui          # UI 테스트만
+pytest -m api         # API 테스트만
+pytest -m mobile      # Mobile 테스트만
 
 # Allure 리포트 확인
 allure serve ./allure-results
@@ -111,176 +127,338 @@ allure serve ./allure-results
 
 ## 📊 테스트 결과 — Allure Report
 
-📄 [Live Allure Report 보기](https://yoplekiller.github.io/QATEST/allure-report/main/index.html)
+📄 [Live Allure Report 보기](https://yoplekiller.github.io/QATEST/)
 
-![Allure Report Preview](https://via.placeholder.com/800x400?text=Allure+Report+Preview)
+Allure Report는 다음 정보를 제공합니다:
+- ✅ 테스트 성공/실패 통계
+- ✅ 단계별 실행 과정 (Allure Steps)
+- ✅ API 응답 데이터
+- ✅ 실패 시 스크린샷
+- ✅ 실행 시간 분석
 
 ## 🔄 CI/CD 워크플로우 (GitHub Actions)
 
 ```mermaid
 graph LR
-    A[Push to GitHub] --> B[Pytest 실행]
-    B --> C[Allure Report 생성]
-    C --> D[GitHub Pages 배포]
-    D --> E[Slack 알림 전송]
+    A[Push/PR to GitHub] --> B[UI 테스트 실행]
+    A --> C[API 테스트 실행]
+    B --> D[Allure Report 생성]
+    C --> D
+    D --> E[GitHub Pages 배포]
+    E --> F[Slack 알림]
 ```
+
+### CI/CD 실행 조건
+- **Pull Request**: `main`, `develop` 브랜치
+- **Push**: `feature/*`, `temp/*` 브랜치
+- **스케줄**: 매 8시간마다 자동 실행
+- **수동**: GitHub Actions 탭에서 수동 실행 가능
 
 ## 🧪 테스트 커버리지
 
-### 🛒 **마켓컬리 UI 테스트 (10개)**
+### 🛒 마켓컬리 UI 테스트 (11개)
 
-| 테스트 카테고리 | 검증 내용 | 파일 |
-|--------------|---------|------|
-| **로그인** | 유효/무효 로그인, 빈 입력 처리 | `test_ui_login.py` |
-| **상품 검색** | 정상 검색, 빈 검색, 특수문자 검색 | `test_ui_search.py` |
-| **장바구니** | 장바구니 접근 및 확인 | `test_ui_cart.py` |
-| **상품 추가** | 상품 담기 → 수량 조절 → 장바구니 | `test_ui_add_product.py` |
-| **E2E 플로우** | 로그인 → 검색 → 추가 → 장바구니 | `test_ui_product_add_flow.py` |
+| 테스트 카테고리 | 검증 내용 | 파일 | 테스트 수 |
+|--------------|---------|------|----------|
+| **로그인** | 유효/무효 로그인, 빈 입력 처리 | `test_ui_login.py` | 3개 |
+| **상품 검색** | 정상 검색, 빈 검색, 특수문자 검색, 검색결과 클릭 | `test_ui_search.py` | 5개 |
+| **장바구니** | 장바구니 접근 및 확인 | `test_ui_cart.py` | 1개 |
+| **상품 추가** | 상품 담기 → 수량 조절 → 장바구니 | `test_ui_add_product.py` | 1개 |
+| **E2E 플로우** | 로그인 → 검색 → 추가 → 장바구니 | `test_ui_product_add_flow.py` | 1개 |
+| **수량 조절** | 수량 증가/감소 버튼 테스트 | `test_ui_quantity.py` | 1개 |
+| **정렬 기능** | 상품 정렬 버튼 테스트 | `test_ui_sort_button.py` | 1개 |
+| **에러 처리** | 빈 검색, 잘못된 검색, 실패 스크린샷 | `test_blank_search.py` 외 | 3개 |
 
-### 🎬 **TMDB API 테스트 (9개)**
+**테스트 대상**: https://www.kurly.com
 
-| 테스트 카테고리 | 검증 내용 | 파일 |
-|--------------|---------|------|
-| **영화 상세** | 상세 정보 필드 검증 | `test_movie_details.py` |
-| **인기 영화** | 응답 코드 및 데이터 개수 | `test_popular_movie.py` |
-| **영화 검색** | 검색 기능 동작 확인 | `test_search_movie.py` |
-| **SLA 테스트** | 응답 시간 검증 | `test_api_sla.py` |
-| **에러 처리** | 잘못된 API 키, 에러 시나리오 | `test_movie_invalid_api_key.py` |
-| **데이터 일관성** | 장르 포함 여부, 개봉일 일관성 | `test_movie_genre_inclusion.py` |
+### 🎬 TMDB API 테스트 (9개)
 
-### 📱 **Mobile 테스트 (3개)**
+| 테스트 카테고리 | 검증 내용 | 파일 | SLA |
+|--------------|---------|------|-----|
+| **인기 영화 조회** | 상태코드 200, results 필드, 데이터 개수 | `test_popular_movie.py` | ✅ |
+| **영화 검색** | 검색 기능 동작 확인 | `test_search_movie.py` | ✅ |
+| **영화 상세 정보** | 필수 필드 검증 (id, title, overview) | `test_movie_details.py` | ✅ |
+| **영화 비디오** | 비디오 데이터 검증 | `test_movie_videos.py` | ✅ |
+| **SLA 응답 시간** | 응답 시간 < 2초 검증 | `test_api_sla.py` | ⚡ |
+| **잘못된 API 키** | 401 에러 처리 확인 | `test_movie_invalid_api_key.py` | ✅ |
+| **장르 포함 여부** | genre_ids 필드 검증 | `test_movie_genre_inclusion.py` | ✅ |
+| **개봉일 일관성** | release_date 형식 검증 (YYYY-MM-DD) | `test_movie_release_date_consistency.py` | ✅ |
+| **평점 일관성** | vote_average 범위 검증 (0-10) | `test_top_rated_movie_consistency.py` | ✅ |
 
-| 테스트 카테고리 | 검증 내용 | 파일 |
-|--------------|---------|------|
-| **베스트 상품** | 베스트 메뉴 진입 | `test_best_product.py` |
-| **저가 상품** | 저가 필터 기능 | `test_low_price.py` |
-| **신상품** | 신상품 표시 기능 | `test_new_product.py` |
+**테스트 대상**: https://api.themoviedb.org/3
+
+### 📱 Mobile 테스트 (3개)
+
+| 테스트 카테고리 | 검증 내용 | 파일 | 플랫폼 |
+|--------------|---------|------|--------|
+| **베스트 상품** | 베스트 메뉴 진입 | `test_best_product.py` | Android |
+| **저가 상품** | 저가 필터 기능 | `test_low_price.py` | Android |
+| **신상품** | 신상품 표시 기능 | `test_new_product.py` | Android |
+
+**테스트 대상**: 마켓컬리 모바일 앱 (com.dbs.kurly.m2)
+**자동화 도구**: Appium + UiAutomator2
 
 ## 🏗️ 프로젝트 구조
 
 ```
 QATEST/
 ├── src/
-│   ├── pages/              # Page Object Model
-│   │   ├── base_page.py            # 기본 페이지 클래스
-│   │   ├── kurly_login_page.py     # 로그인 페이지
-│   │   ├── kurly_main_page.py      # 메인 페이지
-│   │   ├── kurly_cart_page.py      # 장바구니 페이지
-│   │   └── kurly_product_page.py   # 상품 페이지
+│   ├── pages/                      # Page Object Model (897줄)
+│   │   ├── base_page.py           # 기본 페이지 클래스 (202줄)
+│   │   ├── kurly_login_page.py    # 로그인 페이지 (110줄)
+│   │   ├── kurly_main_page.py     # 메인 페이지 (236줄)
+│   │   ├── kurly_cart_page.py     # 장바구니 페이지 (81줄)
+│   │   ├── kurly_product_page.py  # 상품 페이지
+│   │   └── kurly_search_page.py   # 검색 페이지
 │   │
-│   ├── config/             # 설정 파일
-│   │   └── config.yaml
+│   ├── config/                     # 설정 파일
+│   │   ├── config.yaml            # API 엔드포인트 설정
+│   │   └── constants.py           # 타임아웃, URL 상수
 │   │
-│   ├── report/             # 리포트 생성
+│   ├── report/                     # 리포트 생성
 │   │   └── generate_excel_report.py
 │   │
-│   └── tests/              # 테스트 케이스
-│       ├── api_tests/      # API 테스트 (9개)
-│       ├── ui_tests/       # UI 테스트 (10개)
-│       └── mobile_tests/   # Mobile 테스트 (3개)
+│   └── tests/                      # 테스트 케이스 (1,358줄)
+│       ├── conftest.py            # Pytest 설정 및 Fixture
+│       ├── api/                   # API 테스트 (9개)
+│       │   ├── test_popular_movie.py
+│       │   ├── test_search_movie.py
+│       │   ├── test_movie_details.py
+│       │   ├── test_api_sla.py
+│       │   └── ... (5개 더)
+│       ├── ui/                    # UI 테스트 (11개)
+│       │   ├── test_ui_login.py
+│       │   ├── test_ui_search.py
+│       │   ├── test_ui_cart.py
+│       │   ├── test_ui_add_product.py
+│       │   └── ... (7개 더)
+│       └── mobile/                # Mobile 테스트 (3개)
+│           ├── conftest.py        # Appium 설정
+│           ├── test_best_product.py
+│           ├── test_low_price.py
+│           └── test_new_product.py
 │
-├── utils/                  # 유틸리티 함수
-│   ├── api_utils.py
-│   ├── config_utils.py
-│   ├── logger.py           # 로깅 시스템
-│   └── utilities.py
+├── utils/                          # 유틸리티 (442줄)
+│   ├── logger.py                  # 로깅 시스템
+│   ├── api_utils.py               # API 요청 래퍼
+│   ├── config_utils.py            # 환경 설정 로더
+│   ├── utilities.py               # 기타 헬퍼 함수
+│   ├── data_loader.py             # 테스트 데이터 로딩
+│   ├── csv_utils.py               # CSV 처리
+│   ├── send_slack_result.py       # Slack 알림
+│   └── ... (3개 더)
 │
-├── docs/                   # 문서
-│   ├── POM_GUIDE.md                    # POM 가이드
-│   ├── POM_STRUCTURE_EXAMPLE.md        # POM 구조 예시
-│   └── PRODUCTION_READY_CHECKLIST.md   # 실무 준비도 체크리스트
+├── testdata/                       # 테스트 데이터
+│   ├── genre_expectations.csv
+│   └── movie_list.csv
 │
 ├── .github/
 │   └── workflows/
-│       └── Test_Automation.yaml  # CI/CD 설정
+│       └── Test_Automation.yaml   # CI/CD 설정
 │
-├── .env.example            # 환경변수 템플릿
-├── requirements.txt        # Python 의존성
-├── pytest.ini             # Pytest 설정
-├── README.md              # 한국어 문서
-├── README.en.md           # 영문 문서
-└── SETUP.md               # 설치 가이드
+├── .env.example                    # 환경변수 템플릿
+├── requirements.txt                # Python 의존성
+├── pytest.ini                      # Pytest 설정
+├── README.md                       # 한국어 문서
+├── README.en.md                    # 영문 문서
+├── SETUP.md                        # 설치 가이드
+├── GIT_CLEANUP_PLAN.md            # Git 정리 계획
+└── REFACTORING_LOG.md             # 리팩토링 이력
 ```
 
 ## 🎯 주요 기능
 
-### ✅ **이미 구현된 기능**
+### 1. Page Object Model (POM) 패턴
 
-#### 1. **Page Object Model (POM) 패턴**
+재사용 가능한 페이지 객체로 테스트 코드 중복 제거:
+
 ```python
-# 재사용 가능한 페이지 객체
+# src/pages/kurly_login_page.py
 class KurlyLoginPage(BasePage):
-    def login(self, username, password):
-        self.enter_username(username)
-        self.enter_password(password)
+    @allure.step("사용자 '{username}'로 로그인 시도")
+    def login(self, username=None, password=None):
+        """로그인 수행"""
+        username = username or os.getenv('KURLY_TEST_USERNAME')
+        password = password or os.getenv('KURLY_TEST_PASSWORD')
+
+        self.navigate_to_main()
         self.click_login_button()
+        self.input_text(LoginPageLocators.USERNAME_INPUT, username)
+        self.input_text(LoginPageLocators.PASSWORD_INPUT, password)
+        self.click(LoginPageLocators.SUBMIT_BUTTON)
 
 # 여러 테스트에서 재사용
 def test_login_success():
-    login_page.login("user", "pass")
-
-def test_login_fail():
-    login_page.login("wrong", "wrong")
+    login_page.login()  # 한 줄로 로그인!
 ```
 
-#### 2. **보안 강화**
-- 환경변수로 API 키 및 계정 정보 관리
-- `.gitignore`로 민감 정보 보호
-- `.env.example` 템플릿 제공
+### 2. BasePage - 공통 메서드
 
-#### 3. **Allure 리포트 통합**
+모든 페이지 객체가 상속하는 기본 클래스:
+
 ```python
-@allure.step("로그인")
-def login(self, username, password):
-    """단계별 리포팅"""
-    self.enter_username(username)
-    self.enter_password(password)
+class BasePage:
+    """
+    모든 페이지 객체의 부모 클래스
+
+    주요 메서드:
+    - open(url)                      # 페이지 열기
+    - find_element(locator)          # 요소 찾기 (Explicit Wait)
+    - click(locator)                 # 클릭
+    - send_keys(locator, text)       # 텍스트 입력
+    - is_displayed(locator)          # 표시 여부 확인
+    - take_screenshot(name)          # 스크린샷 캡처
+    - wait_until_invisible(locator)  # 사라질 때까지 대기
+    """
 ```
 
-#### 4. **로깅 시스템**
+### 3. 환경 설정 관리
+
+환경변수와 YAML 파일을 조합한 유연한 설정:
+
+```python
+# utils/config_utils.py
+def load_config():
+    """환경변수 → .env → config.yaml 순서로 로드"""
+    api_key = os.getenv('TMDB_API_KEY')  # 환경변수 우선
+    if not api_key:
+        api_key = yaml_config.get('api_key')  # config.yaml 폴백
+    return api_key
+```
+
+### 4. Allure Report 통합
+
+단계별 실행 과정 시각화:
+
+```python
+@allure.step("'{keyword}' 검색")
+def search(self, keyword: str):
+    """검색 수행"""
+    self.input_text(SearchPageLocators.SEARCH_BOX, keyword)
+    self.send_keys(SearchPageLocators.SEARCH_BOX, Keys.RETURN)
+
+@allure.step("API 응답 검증")
+def verify_response(response):
+    """응답 검증 및 첨부"""
+    allure.attach(
+        json.dumps(response.json(), indent=2),
+        name="Response",
+        attachment_type=allure.attachment_type.JSON
+    )
+```
+
+### 5. 로깅 시스템
+
+파일 + 콘솔 로깅:
+
 ```python
 from utils.logger import logger
 
 logger.info("테스트 시작")
 logger.error("에러 발생", exc_info=True)
+
+# 출력:
+# logs/test_20251222_120000.log에 기록됨
 ```
 
-### 🔮 **향후 계획 (Roadmap)**
+### 6. CI/CD 자동화
 
-- [ ] OWASP ZAP 보안 테스트 통합
-- [ ] API 테스트 케이스 확장 (Negative 케이스 추가)
-- [ ] Docker 환경 최적화
-- [ ] 테스트 실패 시 자동 이슈 생성 (GitHub Issues/Jira)
-- [ ] 추가 Mobile 테스트 케이스
-- [ ] SQL을 이용한 DB 자동화 테스트
-- [ ] 성능 테스트 추가 (Locust/K6)
-- [ ] Visual Regression 테스트
+GitHub Actions로 자동 테스트:
 
-## 📹 데모 영상
+```yaml
+# .github/workflows/Test_Automation.yaml
+on:
+  push:
+    branches: [feature/*, temp/*]
+  pull_request:
+    branches: [main, develop]
+  schedule:
+    - cron: '0 */8 * * *'  # 매 8시간
 
-### 1. 🖥️ **로컬 자동화 실행**
-[마켓컬리 주문 플로우 자동화 구현 영상 보기 (YouTube)](https://www.youtube.com/watch?v=TqsvT2RsYEs)
+jobs:
+  ui_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: UI 테스트 실행
+        run: pytest src/tests/ui --alluredir=allure-results-ui
+
+  api_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: API 테스트 실행
+        run: pytest src/tests/api --alluredir=allure-results-api
+```
 
 ## 🛡️ 보안
 
-- API 키 및 계정 정보는 `.env` 파일에 저장 (Git에서 제외)
-- `.env.example`은 템플릿만 제공
-- 모든 민감 정보는 환경변수로 관리
+### 민감정보 관리
+
+- ✅ API 키 및 계정 정보는 `.env` 파일에 저장 (Git에서 제외)
+- ✅ `.env.example`은 템플릿만 제공
+- ✅ 모든 민감 정보는 환경변수로 관리
+- ✅ GitHub Secrets로 CI/CD 환경변수 보호
+
+### .gitignore 설정
+
+```gitignore
+# 환경변수
+.env
+.env.*.local
+
+# 로그 및 리포트
+logs/
+allure-results/
+allure-report/
+screenshots/
+
+# 데이터베이스
+*.db
+*.sqlite3
+
+# 가상환경
+venv/
+```
 
 **⚠️ 주의:** `.env` 파일을 절대 Git에 커밋하지 마세요!
+
+## 📹 데모 영상
+
+### 🖥️ 로컬 자동화 실행
+[마켓컬리 주문 플로우 자동화 구현 영상 보기 (YouTube)](https://www.youtube.com/watch?v=TqsvT2RsYEs)
 
 ## 📚 추가 문서
 
 ### 시작하기
 - **[SETUP.md](./SETUP.md)**: 환경 설정 완벽 가이드
+- **[README.en.md](./README.en.md)**: English Documentation
 
-### POM 패턴 학습
-- **[POM_GUIDE.md](./docs/POM_GUIDE.md)**: Page Object Model 가이드
-- **[POM_STRUCTURE_EXAMPLE.md](./docs/POM_STRUCTURE_EXAMPLE.md)**: POM 구조 예시
+### Git 정리 및 리팩토링
+- **[GIT_CLEANUP_COMPLETED_20251222.md](./GIT_CLEANUP_COMPLETED_20251222.md)**: Git 클린업 작업 보고서
+- **[REFACTORING_LOG.md](./REFACTORING_LOG.md)**: 리팩토링 이력
 
-### 실무 준비
-- **[PRODUCTION_READY_CHECKLIST.md](./docs/PRODUCTION_READY_CHECKLIST.md)**: 실무 준비도 체크리스트
-- **[INTERVIEW_PREP.md](./docs/INTERVIEW_PREP.md)**: 🔥 면접 대비 가이드 (필수!)
+## 🔮 향후 계획 (Roadmap)
+
+- [ ] OWASP ZAP 보안 테스트 통합
+- [ ] API 테스트 케이스 확장 (Negative 케이스 추가)
+- [ ] Docker 환경 최적화
+- [ ] 테스트 실패 시 자동 이슈 생성 (GitHub Issues)
+- [ ] 추가 Mobile 테스트 케이스
+- [ ] 성능 테스트 추가 (Locust/K6)
+- [ ] Visual Regression 테스트
+
+## 💬 프로젝트 노트
+
+### 커밋 히스토리에 대하여
+
+이 프로젝트의 커밋 히스토리는 2025년 12월 22일에 정리되었습니다.
+
+- **초기 개발**: 2025년 11월 ~ 12월 (실제 코드 작성 기간)
+- **히스토리 정리**: 2025년 12월 22일 (포트폴리오 개선을 위한 커밋 재구성)
+
+초기 개발 시 커밋 관리가 미흡하여 "fix fix fix..." 형태의 커밋이 많았습니다.
+포트폴리오 품질 향상을 위해 의미 있는 9개의 커밋으로 재구성했습니다.
+
+**배운 점**: 처음부터 명확한 커밋 메시지와 체계적인 커밋 관리의 중요성을 깨달았습니다.
 
 ## 🤝 기여
 
