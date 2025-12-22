@@ -1,4 +1,5 @@
 import allure
+import pytest
 from utils.api_utils import send_get_request_no_raise, attach_response
 
 

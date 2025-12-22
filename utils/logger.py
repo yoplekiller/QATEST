@@ -12,19 +12,8 @@ class TestLogger:
     테스트 실행 로그를 기록하는 클래스
     실무에서는 로그 분석을 통해 디버깅 및 모니터링을 수행합니다.
     """
-
     @staticmethod
     def setup_logger(name="test_automation", level=logging.INFO):
-        """
-        로거 설정 및 반환
-
-        Args:
-            name: 로거 이름
-            level: 로그 레벨 (DEBUG, INFO, WARNING, ERROR, CRITICAL)
-
-        Returns:
-            logging.Logger: 설정된 로거 인스턴스
-        """
         # 로그 디렉토리 생성
         log_dir = "logs"
         os.makedirs(log_dir, exist_ok=True)
