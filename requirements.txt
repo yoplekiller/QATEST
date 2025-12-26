@@ -8,9 +8,6 @@ allure-pytest==2.13.5
 selenium==4.27.0
 webdriver-manager==4.0.2
 
-# Mobile Automation
-Appium-Python-Client==4.2.1
-
 # API Testing
 requests==2.32.3
 requests-toolbelt==1.0.0

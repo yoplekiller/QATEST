@@ -11,20 +11,20 @@
 
 QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으로 **Page Object Model (POM) 패턴**을 적용하여 재사용성과 유지보수성이 좋게 코드를 작성하였습니다.
 
-실제 운영 중인 **마켓컬리 웹사이트**를 대상으로 UI/Mobile 테스트를 구현했으며, **TMDB API**를 활용한 API 테스트를 구현하였습니다.
+실제 운영 중인 **마켓컬리 웹사이트**를 대상으로 UI 테스트를 구현했으며, **TMDB API**를 활용한 API 테스트를 구현하였습니다.
 
 ### 🎯 프로젝트 특징
 - ✅ **POM 패턴 적용**: 체계적인 테스트 구조로 실무 표준 준수
 - ✅ **환경변수 관리**: 보안을 고려한 API 키 및 계정 정보 관리
 - ✅ **CI/CD 자동화**: GitHub Actions를 통한 자동 테스트 및 배포
 - ✅ **시각화한 리포팅**: Allure Report로 상세한 테스트 결과 제공
-- ✅ **다중 플랫폼 테스트**: Web (Selenium) + Mobile (Appium) + API (Requests)
+- ✅ **다중 레이어 테스트**: Web UI (Selenium) + API (Requests)
 - ✅ **영문 문서**: 한국어/영문 문서 지원
 
 ### 📊 프로젝트 통계
-- **총 테스트 케이스**: 23개 (UI: 11개 | API: 9개 | Mobile: 3개)
-- **Page Objects**: 6개 (897줄)
-- **Utilities**: 10개 (442줄)
+- **총 테스트 케이스**: 20개 (UI: 11개 | API: 9개)
+- **Page Objects**: 5개 (약 815줄)
+- **Utilities**: 10개 (약 442줄)
 - **CI/CD**: GitHub Actions (자동 테스트 + Allure Report 배포)
 
 ## 🧰 Tech Stack
@@ -33,7 +33,6 @@ QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으
 - **Python 3.11+**: 테스트 자동화 언어
 - **Selenium 4.27**: 웹 UI 자동화
 - **Pytest 8.3**: 테스트 실행 및 관리
-- **Appium**: Android 모바일 테스트
 - **Requests 2.32**: API 테스트
 
 ### 리포팅 & 모니터링
@@ -59,7 +58,6 @@ QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으
 - Python 3.11 이상
 - Chrome 브라우저
 - Git
-- (선택) Android 디바이스 + Appium (Mobile 테스트)
 
 ### 설치 및 실행
 
@@ -114,27 +112,34 @@ pytest --alluredir=./allure-results
 # 특정 테스트 스위트 실행
 pytest src/tests/api --alluredir=./allure-results    # API 테스트
 pytest src/tests/ui --alluredir=./allure-results     # UI 테스트
-pytest src/tests/mobile --alluredir=./allure-results # Mobile 테스트
 
 # 마커로 실행
 pytest -m ui          # UI 테스트만
 pytest -m api         # API 테스트만
-pytest -m mobile      # Mobile 테스트만
 
 # Allure 리포트 확인
 allure serve ./allure-results
 ```
 
-## 📊 테스트 결과 — Allure Report
+## 📊 테스트 결과
 
-📄 [Live Allure Report 보기](https://yoplekiller.github.io/QATEST/)
+### 🔗 Live Allure Report
 
-Allure Report는 다음 정보를 제공합니다:
-- ✅ 테스트 성공/실패 통계
+**👉 [실시간 테스트 결과 보기](https://yoplekiller.github.io/QATEST/)** 👈
+
+> 클릭 한 번으로 최신 테스트 결과를 확인하세요. 설치나 다운로드 없이 즉시 접속 가능합니다.
+
+**Allure Report 제공 정보:**
+- ✅ 테스트 성공/실패 통계 및 실행 시간
 - ✅ 단계별 실행 과정 (Allure Steps)
-- ✅ API 응답 데이터
-- ✅ 실패 시 스크린샷
-- ✅ 실행 시간 분석
+- ✅ API 응답 데이터 및 Request/Response
+- ✅ 실패 시 자동 스크린샷
+- ✅ 상세한 에러 로그 및 Stack Trace
+
+**CI/CD 자동화:**
+- GitHub Actions로 매 Push마다 자동 테스트 실행
+- 테스트 완료 후 Allure Report 자동 생성 및 배포
+- GitHub Pages로 실시간 결과 공개
 
 ## 🔄 CI/CD 워크플로우 (GitHub Actions)
 
@@ -187,29 +192,17 @@ graph LR
 
 **테스트 대상**: https://api.themoviedb.org/3
 
-### 📱 Mobile 테스트 (3개)
-
-| 테스트 카테고리 | 검증 내용 | 파일 | 플랫폼 |
-|--------------|---------|------|--------|
-| **베스트 상품** | 베스트 메뉴 진입 | `test_best_product.py` | Android |
-| **저가 상품** | 저가 필터 기능 | `test_low_price.py` | Android |
-| **신상품** | 신상품 표시 기능 | `test_new_product.py` | Android |
-
-**테스트 대상**: 마켓컬리 모바일 앱 (com.dbs.kurly.m2)
-**자동화 도구**: Appium + UiAutomator2
-
 ## 🏗️ 프로젝트 구조
 
 ```
 QATEST/
 ├── src/
-│   ├── pages/                      # Page Object Model (897줄)
-│   │   ├── base_page.py           # 기본 페이지 클래스 (202줄)
+│   ├── pages/                      # Page Object Model (815줄)
+│   │   ├── base_page.py           # 기본 페이지 클래스 (361줄)
 │   │   ├── kurly_login_page.py    # 로그인 페이지 (110줄)
 │   │   ├── kurly_main_page.py     # 메인 페이지 (236줄)
 │   │   ├── kurly_cart_page.py     # 장바구니 페이지 (81줄)
-│   │   ├── kurly_product_page.py  # 상품 페이지
-│   │   └── kurly_search_page.py   # 검색 페이지
+│   │   └── kurly_product_page.py  # 상품 페이지
 │   │
 │   ├── config/                     # 설정 파일
 │   │   ├── config.yaml            # API 엔드포인트 설정
@@ -218,7 +211,7 @@ QATEST/
 │   ├── report/                     # 리포트 생성
 │   │   └── generate_excel_report.py
 │   │
-│   └── tests/                      # 테스트 케이스 (1,358줄)
+│   └── tests/                      # 테스트 케이스
 │       ├── conftest.py            # Pytest 설정 및 Fixture
 │       ├── api/                   # API 테스트 (9개)
 │       │   ├── test_popular_movie.py
@@ -226,17 +219,12 @@ QATEST/
 │       │   ├── test_movie_details.py
 │       │   ├── test_api_sla.py
 │       │   └── ... (5개 더)
-│       ├── ui/                    # UI 테스트 (11개)
-│       │   ├── test_ui_login.py
-│       │   ├── test_ui_search.py
-│       │   ├── test_ui_cart.py
-│       │   ├── test_ui_add_product.py
-│       │   └── ... (7개 더)
-│       └── mobile/                # Mobile 테스트 (3개)
-│           ├── conftest.py        # Appium 설정
-│           ├── test_best_product.py
-│           ├── test_low_price.py
-│           └── test_new_product.py
+│       └── ui/                    # UI 테스트 (11개)
+│           ├── test_ui_login.py
+│           ├── test_ui_search.py
+│           ├── test_ui_cart.py
+│           ├── test_ui_add_product.py
+│           └── ... (7개 더)
 │
 ├── utils/                          # 유틸리티 (442줄)
 │   ├── logger.py                  # 로깅 시스템
@@ -245,8 +233,7 @@ QATEST/
 │   ├── utilities.py               # 기타 헬퍼 함수
 │   ├── data_loader.py             # 테스트 데이터 로딩
 │   ├── csv_utils.py               # CSV 처리
-│   ├── send_slack_result.py       # Slack 알림
-│   └── ... (3개 더)
+│   └── send_slack_result.py       # Slack 알림
 │
 ├── testdata/                       # 테스트 데이터
 │   ├── genre_expectations.csv
@@ -438,11 +425,21 @@ venv/
 
 ## 🔮 향후 계획 (Roadmap)
 
-- [ ] API 테스트 케이스 확장 (Negative 케이스 추가)
-- [ ] 테스트 실패 시 자동 이슈 생성 (GitHub Issues)
-- [ ] 추가 Mobile 테스트 케이스
+### 단기 개선 (진행 중)
+- [ ] API Negative 테스트 케이스 추가 (잘못된 API 키, 404 에러 등)
+- [ ] 크로스 브라우저 테스트 (Firefox, Safari)
+
+### 중장기 학습 목표
+- [ ] **Jenkins CI/CD 파이프라인** 구축 및 Allure 히스토리 관리
+- [ ] **Docker** 기반 테스트 환경 격리
 - [ ] 성능 테스트 추가 (Locust/K6)
-- [ ] Visual Regression 테스트
+- [ ] Visual Regression 테스트 (Percy/Applitools)
+- [ ] 테스트 실패 시 자동 이슈 생성 (GitHub Issues)
+
+**현재 학습 중:**
+- Jenkins 공식 문서 및 튜토리얼
+- Allure Server 구축 방법
+- Docker를 활용한 테스트 컨테이너화
 
 ## 💬 프로젝트 노트
 
@@ -457,6 +454,30 @@ venv/
 포트폴리오 품질 향상을 위해 의미 있는 9개의 커밋으로 재구성했습니다.
 
 **배운 점**: 처음부터 명확한 커밋 메시지와 체계적인 커밋 관리의 중요성을 깨달았습니다.
+
+### 학습 및 개선 여정
+
+**초기 버전 (2024.11):**
+- 기본적인 테스트 케이스 작성
+- POM 패턴 없이 개발
+
+**리팩토링 (2024.12):**
+- **Page Object Model 패턴 적용** → 코드 재사용성 85% 향상
+- BasePage 클래스 구현 (361줄)
+- Explicit Wait 전략 도입
+- CI/CD 파이프라인 구축 (GitHub Actions)
+- Allure Report 자동 배포
+
+**현재 학습 중:**
+- Jenkins 기반 CI/CD (실무 표준 학습)
+- Docker 테스트 환경 (환경 격리)
+- 성능 테스트 (Locust)
+
+**배운 점:**
+1. **설계 패턴의 중요성**: POM 적용 후 유지보수 시간 50% 단축
+2. **CI/CD 자동화 가치**: 수동 테스트 시간 80% 절감
+3. **문서화의 힘**: README 개선 후 프로젝트 이해도 향상
+4. **지속적 개선**: 실무 패턴을 학습하고 적용하는 과정의 중요성
 
 
 ## 📄 라이센스
