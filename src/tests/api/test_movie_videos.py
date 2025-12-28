@@ -2,6 +2,9 @@ from utils.api_utils import send_get_request, attach_response
 from utils.config_utils import get_current_env
 
 
+
+@pytest.mark.api
+@pytest.mark.parametrize([], [])
 def test_movie_videos():
     env = get_current_env()
     API_KEY = env["api_key"]

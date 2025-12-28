@@ -5,6 +5,8 @@ from utils.config_utils import get_current_env
 from utils.csv_utils import get_timestamped_filename, save_movies_to_csv
 from utils.data_loader import load_movie_test_data
 
+
+@pytest.mark.api
 @allure.title("영화 개봉일 확인")
 @pytest.mark.parametrize(["movie_id", "expected_title"], load_movie_test_data())
 def test_movie_release_date_consistency(movie_id, expected_title):

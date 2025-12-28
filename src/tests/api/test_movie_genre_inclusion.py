@@ -4,7 +4,7 @@ from utils.api_utils import send_get_request, attach_response
 from utils.config_utils import get_current_env
 from utils.data_loader import load_genre_test_data
 
-
+@pytest.mark.api
 @pytest.mark.parametrize(["movie_id", "expected_genres"], load_genre_test_data())
 def test_movie_genre_inclusion(movie_id, expected_genres):
 

@@ -8,6 +8,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from src.pages.kurly_main_page import KurlyMainPage
 
 load_dotenv()
 
@@ -53,7 +54,7 @@ def driver():
 @pytest.fixture
 def kurly_main_page(driver):
     """마켓컬리 메인 페이지 객체"""
-    from src.pages.kurly_main_page import KurlyMainPage
+
     return KurlyMainPage(driver)
 
 
