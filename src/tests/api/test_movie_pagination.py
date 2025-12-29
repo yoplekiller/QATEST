@@ -1,10 +1,5 @@
 import pytest
 import allure
-from utils.api_utils import send_get_request
-from utils.config_utils import get_current_env
-
-env_data = get_current_env()
-API_KEY = env_data["api_key"]
 
 
 @pytest.mark.api
@@ -13,7 +8,11 @@ API_KEY = env_data["api_key"]
 class TestMoviePagination:
     @allure.title("페이지 1 조회 - 기본 페이지네이션")
     @allure.description("영화 목록의 첫 번째 페이지를 조회하여 정상 동작을 확인합니다.")
-    def test_movie_pagination_page_1(self):
+    def test_movie_pagination_page_1(self, send_get_request,  api_env):
+
+        api_env = load_config()
+        API_KEY = api_env["api_key"]
+
         endpoint = "/movie/popular"
         params = {"api_key": API_KEY, "page": 1}
 
