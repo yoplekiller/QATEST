@@ -11,20 +11,7 @@ from src.pages.kurly_main_page import KurlyMainPage
 @allure.feature("상품 검색")
 @allure.story("검색 기능")
 @allure.severity(allure.severity_level.CRITICAL)
-class TestSearchWithPOM:
-    """
-    검색 기능 테스트 클래스 (POM 적용)
-    """
-
-    @pytest.fixture(autouse=True)
-    def setup(self, driver):
-        """
-        각 테스트 메서드 실행 전 자동으로 실행되는 설정
-
-        Args:
-            driver: conftest.py에서 제공하는 WebDriver fixture
-        """
-        self.main_page = KurlyMainPage(driver)
+class TestSearch:
 
     @allure.title("정상적인 검색어로 상품 검색")
     @allure.description("""
@@ -39,23 +26,22 @@ class TestSearchWithPOM:
     **예상 결과:** 검색어와 관련된 상품이 1개 이상 표시됨
     """)
     @pytest.mark.parametrize("keyword", ["사과", "우유", "계란"])
-    def test_search_valid_keyword(self, driver, keyword):
+    def test_search_valid_keyword(self, kurly_main_page, keyword):
         """
         유효한 검색어로 검색 시 결과가 표시되는지 확인
         """
         # Given: 메인 페이지로 이동
         with allure.step("마켓컬리 메인 페이지로 이동"):
-            self.main_page.open_main_page()
-
+            kurly_main_page.open_main_page()
         # When: 상품 검색
         with allure.step(f"'{keyword}' 검색"):
-            self.main_page.search_product(keyword)
+            kurly_main_page.search_product(keyword)
 
         # Then: 검색 결과가 표시되어야 함
         with allure.step("검색 결과 확인"):
-            self.main_page.take_screenshot(f"{keyword}_검색_결과")
+            kurly_main_page.take_screenshot(f"{keyword}_검색_결과")
 
-            results_count = self.main_page.get_search_results_count()
+            results_count = kurly_main_page.get_search_results_count()
             allure.attach(
                 f"검색 결과 개수: {results_count}",
                 name="검색_결과_개수",
@@ -76,26 +62,26 @@ class TestSearchWithPOM:
 
     **예상 결과:** 검색이 실행되지 않거나 에러 메시지 표시
     """)
-    def test_search_with_empty_keyword(self, driver):
+    def test_search_with_empty_keyword(self, kurly_main_page):
         """
         빈 검색어로 검색 시 적절한 처리가 되는지 확인
         """
         # Given: 메인 페이지로 이동
-        self.main_page.open_main_page()
-        initial_url = self.main_page.get_current_url()
+        kurly_main_page.open_main_page()
+        initial_url = kurly_main_page.get_current_url()
 
         # When: 빈 검색어로 검색 시도
         with allure.step("빈 검색어로 검색 시도"):
-            self.main_page.enter_search_keyword("")
-            self.main_page.click_search_button()
+            kurly_main_page.enter_search_keyword("")
+            kurly_main_page.click_search_button()
 
         # Then: 페이지가 변경되지 않거나 에러 메시지 표시
         with allure.step("에러 처리 확인"):
-            self.main_page.take_screenshot("빈_검색어_검색")
+            kurly_main_page.take_screenshot("빈_검색어_검색")
 
-            current_url = self.main_page.get_current_url()
+            current_url = kurly_main_page.get_current_url()
             # URL이 변경되지 않았거나, 검색 결과 페이지에서 "결과 없음" 표시
-            assert initial_url == current_url or self.main_page.is_no_results_message_displayed(), \
+            assert initial_url == current_url or kurly_main_page.is_no_results_message_displayed(), \
                 "❌ 빈 검색어에 대한 적절한 처리가 없습니다"
 
     @allure.title("존재하지 않는 상품명으로 검색")
@@ -111,7 +97,7 @@ class TestSearchWithPOM:
     **예상 결과:** 검색 결과가 없다는 메시지가 표시됨
     """)
     @pytest.mark.parametrize("keyword", ["xyzabc123", "!@#$%", "가나다라마바사아자차카타파하"])
-    def test_search_non_existent_product(self, driver, keyword):
+    def test_search_non_existent_product(self, drer, keyword):
         """
         존재하지 않는 상품명으로 검색 시 적절한 메시지가 표시되는지 확인
         """
@@ -185,21 +171,21 @@ class TestSearchWithPOM:
     **예상 결과:** 에러 없이 검색이 수행되며, 결과가 있거나 "결과 없음" 메시지 표시
     """)
     @pytest.mark.parametrize("keyword", ["<script>", "' OR 1=1--", "사과!@#"])
-    def test_search_with_special_characters(self, driver, keyword):
+    def test_search_with_special_characters(self, kurly_main_page, keyword):
         """
         특수문자를 포함한 검색어 처리 확인
         """
         # Given: 메인 페이지로 이동
-        self.main_page.open_main_page()
+        kurly_main_page.open_main_page()
 
         # When: 특수문자 포함 검색어로 검색
         with allure.step(f"특수문자 포함 검색어 '{keyword}' 검색"):
-            self.main_page.search_product(keyword)
+            kurly_main_page.search_product(keyword)
 
         # Then: 에러 없이 검색이 완료되어야 함
         with allure.step("검색 처리 확인"):
-            self.main_page.take_screenshot(f"특수문자_검색_{keyword}")
+            kurly_main_page.take_screenshot(f"특수문자_검색_{keyword}")
 
             # 페이지가 정상적으로 로드되었는지 확인
-            page_title = self.main_page.get_title()
+            page_title = kurly_main_page.get_title()
             assert page_title, "❌ 페이지가 정상적으로 로드되지 않았습니다"

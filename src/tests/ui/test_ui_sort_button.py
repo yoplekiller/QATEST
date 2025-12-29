@@ -3,8 +3,6 @@
 마켓컬리 검색 결과 페이지의 다양한 정렬 옵션이 정상 동작하는지 검증
 """
 import allure
-from src.pages.kurly_main_page import KurlyMainPage
-from src.pages.kurly_search_page import KurlySearchPage
 import pytest
 
 
@@ -14,7 +12,7 @@ import pytest
 @allure.feature("검색 및 필터링")
 @allure.story("상품 정렬")
 @allure.severity(allure.severity_level.NORMAL)
-def test_all_sort_options(driver, sort_type):
+def test_all_sort_options(driver, sort_type, kurly_main_page, kurly_search_page):
     """
     검색 결과에서 모든 정렬 옵션이 정상 동작하는지 확인
 
@@ -36,19 +34,16 @@ def test_all_sort_options(driver, sort_type):
         선택한 정렬 옵션에 따라 상품 목록이 올바르게 정렬됨
     """
 
-    main_page = KurlyMainPage(driver)
-    search_page = KurlySearchPage(driver)
-
     with allure.step("마켓컬리 메인 페이지로 이동"):
-        main_page.open_main_page()
+        kurly_main_page.open_main_page()
 
     with allure.step("상품 검색"):
-        main_page.search_product("과자")
+        kurly_main_page.search_product("과자")
 
     with allure.step(f"정렬 옵션 '{sort_type}' 선택"):
-        search_page.select_sort_option(sort_type)
-
+        kurly_search_page.select_sort_option(sort_type)
+        
     with allure.step("정렬 결과 확인"):
-        assert search_page.is_sorted_correctly(sort_type), f"❌ '{sort_type}' 정렬이 올바르게 적용되지 않음"
+        assert kurly_search_page.is_sorted_correctly(sort_type), f"❌ '{sort_type}' 정렬이 올바르게 적용되지 않음"
 
     
