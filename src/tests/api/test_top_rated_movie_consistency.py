@@ -2,7 +2,9 @@ from utils.api_utils import send_get_request, attach_response
 from utils.config_utils import get_current_env
 from utils.csv_utils import get_timestamped_filename, save_movies_to_csv
 import pytest
-@Pytest.mark.api
+
+
+@pytest.mark.api
 def test_rated_movie_consistency():
     env = get_current_env()
     API_KEY = env["api_key"]

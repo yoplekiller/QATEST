@@ -56,11 +56,11 @@ class KurlyCartPage(BasePage):
         """장바구니 페이지 열기"""
         self.open(self.CART_URL)
 
-    def wait_until_url_contains(self, text, timeout=10):
-        """URL에 특정 텍스트가 포함될 때까지 대기"""
-        WebDriverWait(self.driver, timeout).until(
-            EC.url_contains(text)
-        )
+    def change_quantity(self, button_locator, times=1):
+        """수량 변경"""
+        for _ in range(times):
+            self.click(button_locator)
+            self.sleep(0.5)  # UI 반영 대기
 
     def increase_quantity(self, times=1):
         """수량 증가"""

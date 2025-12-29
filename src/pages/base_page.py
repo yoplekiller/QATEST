@@ -1,5 +1,6 @@
 import os
 import re
+import time
 from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -149,6 +150,30 @@ class BasePage:
         except TimeoutException:
             logger.warning(f"요소가 사라지지 않음: {locator}")
             return False
+        
+    def wait_until_url_contains(self, text: str, timeout: Optional[int] = None) -> bool:
+        """
+        URL에 특정 텍스트가 포함될 때까지 대기
+
+        Returns:
+            bool: 포함되면 True, timeout이면 False
+        """
+        wait = self._get_wait(timeout)
+        try:
+            return wait.until(EC.url_contains(text))
+        except TimeoutException:
+            logger.warning(f"URL에 텍스트가 포함되지 않음: {text}")
+            return False
+        
+    def sleep(self, seconds: float) -> None:
+        """
+        명시적 대기 (권장하지 않음, 불가피할 때만 사용)
+
+        Args:
+            seconds: 대기 시간(초)
+        """
+        logger.info(f"{seconds}초 명시적 대기 시작")
+        time.sleep(seconds)
 
     # =========================
     # 스크린샷
@@ -346,6 +371,7 @@ class BasePage:
 
         # 해당 요소 클릭
         elements[index].click()
+        
 
     # =========================
     # 상태 정보
