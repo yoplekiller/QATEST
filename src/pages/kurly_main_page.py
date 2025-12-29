@@ -233,3 +233,12 @@ class KurlyMainPage(BasePage):
             popup_text = self.get_text(self.POPUP_TEXT)
             return "검색어를 입력해주세요" in popup_text
         return False
+    
+    def is_on_main_page(self) -> bool:
+        """
+        현재 페이지가 메인 페이지인지 확인
+        
+        Returns:
+            bool: 메인 페이지 여부
+        """
+        return "kurly.com/main" in self.get_current_url()

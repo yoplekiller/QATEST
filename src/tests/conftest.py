@@ -1,14 +1,15 @@
 import os
-import datetime
 from dotenv import load_dotenv
 import shutil
-import allure
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from src.pages.kurly_main_page import KurlyMainPage
+from src.pages.kurly_cart_page import KurlyCartPage
+from src.pages.kurly_login_page import KurlyLoginPage
+from src.pages.kurly_product_page import KurlyProductPage
 
 load_dotenv()
 
@@ -54,26 +55,30 @@ def driver():
 @pytest.fixture
 def kurly_main_page(driver):
     """마켓컬리 메인 페이지 객체"""
-
     return KurlyMainPage(driver)
 
 
 @pytest.fixture
 def kurly_login_page(driver):
     """마켓컬리 로그인 페이지 객체"""
-    from src.pages.kurly_login_page import KurlyLoginPage
     return KurlyLoginPage(driver)
 
 
 @pytest.fixture
 def kurly_product_page(driver):
     """마켓컬리 상품 페이지 객체"""
-    from src.pages.kurly_product_page import KurlyProductPage
     return KurlyProductPage(driver)
 
 
 @pytest.fixture
 def kurly_cart_page(driver):
     """마켓컬리 장바구니 페이지 객체"""
-    from src.pages.kurly_cart_page import KurlyCartPage
     return KurlyCartPage(driver)
+
+@pytest.fixture
+def test_credentials():
+    """테스트용 계정 정보 제공"""
+    return {
+        "username": os.getenv("KURLY_TEST_USERNAME", "testuser"),
+        "password": os.getenv("KURLY_TEST_PASSWORD", "testpass")
+    }

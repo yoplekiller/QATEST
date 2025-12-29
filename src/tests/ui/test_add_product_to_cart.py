@@ -1,6 +1,5 @@
 import allure
 import pytest
-from src.pages.kurly_product_page import KurlyProductPage
 
 
 @pytest.mark.ui

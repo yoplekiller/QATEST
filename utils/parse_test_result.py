@@ -30,7 +30,7 @@ def get_failed_test_names(xml_path="report.xml"):
         tree = ET.parse(xml_path)
         root = tree.getroot()
         suite = root if root.tag == "testsuite" else root.find("testsuite")
-        if suite in None:
+        if suite is None:
             return []
 
         failed_tests = []
