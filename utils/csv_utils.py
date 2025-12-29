@@ -2,6 +2,7 @@ from datetime import datetime
 import csv
 import os
 
+"""CSV 파일 관련 유틸리티 함수들"""
 def get_timestamped_filename(base_name: str, extension: str = "csv") -> str:
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     return f"{base_name}_{timestamp}.{extension}"

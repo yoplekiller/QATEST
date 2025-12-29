@@ -3,8 +3,6 @@ Kurly 장바구니 페이지 Page Object
 마켓컬리 웹사이트의 장바구니 기능을 담당하는 페이지 오브젝트
 """
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
 from src.pages.base_page import BasePage
 
 

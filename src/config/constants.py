@@ -41,3 +41,15 @@ SCREENSHOT_DIR = "screenshots"
 
 LOG_DIR = "logs"
 """로그 파일 저장 디렉토리"""
+
+# Page URLs
+PAGE_URLS = {
+    "MAIN": "https://www.kurly.com",
+    "CART": "https://www.kurly.com/cart",
+    "LOGIN": "https://www.kurly.com"  # LOGIN과 MAIN이 동일
+}
+
+# 영향받는 파일:
+#  - kurly_login_page.py:20 - KURLY_MAIN_URL 제거, constants 사용
+#  - kurly_main_page.py:24 - KURLY_MAIN_URL 제거, constants 사용
+#  - kurly_cart_page.py:22 - CART_URL 제거, constants 사용

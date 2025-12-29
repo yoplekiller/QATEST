@@ -1,5 +1,34 @@
+"""
+Configuration Utilities
+
+이 모듈은 테스트 환경 설정 및 환경변수 관리를 담당합니다.
+
+환경변수 로딩 순서:
+1. 시스템 환경변수 (os.getenv)
+2. .env 파일 (load_dotenv로 로드)
+3. config.yaml 파일 (폴백)
+
+주요 함수:
+- load_config(): 현재 환경 설정 로드 (base_url, api_key 포함)
+- get_current_env(): Deprecated - load_config() 사용 권장
+- get_test_credentials(): 테스트 계정 정보 로드 (username, password)
+
+사용 예:
+    from utils.config_utils import load_config, get_test_credentials
+
+    # API 설정 로드
+    config = load_config()
+    api_key = config['api_key']
+    base_url = config['base_url']
+
+    # 테스트 계정 정보 로드
+    creds = get_test_credentials()
+    username = creds['username']
+    password = creds['password']
+"""
 import os
 import yaml
+import warnings
 from dotenv import load_dotenv
 
 
@@ -53,8 +82,12 @@ def load_config():
         raise Exception(f"❌ 설정 파일 로드 실패: {e}")
 
 
-def get_current_env():
+def get_current_env() -> str:
     """현재 환경 설정을 반환 (load_config와 동일)"""
+    warnings.warn(
+        "get_current_env 함수는 곧 deprecated 될 예정입니다. 대신 load_config 함수를 사용하세요.",
+        DeprecationWarning
+    )
     return load_config()
 
 

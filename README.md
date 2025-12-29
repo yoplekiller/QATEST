@@ -22,9 +22,9 @@ QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으
 - ✅ **영문 문서**: 한국어/영문 문서 지원
 
 ### 📊 프로젝트 통계
-- **총 테스트 케이스**: 20개 (UI: 11개 | API: 9개)
-- **Page Objects**: 5개 (약 815줄)
-- **Utilities**: 10개 (약 442줄)
+- **총 테스트 케이스**: 39개 (UI: 19개 | API: 20개)
+- **Page Objects**: 6개 (약 1,086줄)
+- **Utilities**: 10개 (약 474줄)
 - **CI/CD**: GitHub Actions (자동 테스트 + Allure Report 배포)
 
 ## 🧰 Tech Stack
@@ -161,34 +161,34 @@ graph LR
 
 ## 🧪 테스트 커버리지
 
-### 🛒 마켓컬리 UI 테스트 (11개)
+### 🛒 마켓컬리 UI 테스트 (19개)
 
 | 테스트 카테고리 | 검증 내용 | 파일 | 테스트 수 |
 |--------------|---------|------|----------|
-| **로그인** | 유효/무효 로그인, 빈 입력 처리 | `test_ui_login.py` | 3개 |
-| **상품 검색** | 정상 검색, 빈 검색, 특수문자 검색, 검색결과 클릭 | `test_ui_search.py` | 5개 |
-| **장바구니** | 장바구니 접근 및 확인 | `test_ui_cart.py` | 1개 |
-| **상품 추가** | 상품 담기 → 수량 조절 → 장바구니 | `test_ui_add_product.py` | 1개 |
+| **로그인** | 유효/무효 로그인, 빈 입력 처리, 페이지 요소 확인 | `test_ui_login.py` | 3개 |
+| **상품 검색** | 정상 검색, 빈 검색, 특수문자 검색, 검색결과 클릭, 존재하지 않는 상품 | `test_ui_search.py` 외 | 7개 |
+| **장바구니** | 장바구니 접근, 상품 추가, 여러 상품 추가, 상품 제거 | `test_ui_cart.py` 외 | 4개 |
+| **상품 추가** | 상품 담기, 상품 추가 플로우 | `test_ui_add_product.py` 외 | 2개 |
 | **E2E 플로우** | 로그인 → 검색 → 추가 → 장바구니 | `test_ui_product_add_flow.py` | 1개 |
 | **수량 조절** | 수량 증가/감소 버튼 테스트 | `test_ui_quantity.py` | 1개 |
-| **정렬 기능** | 상품 정렬 버튼 테스트 | `test_ui_sort_button.py` | 1개 |
-| **에러 처리** | 빈 검색, 잘못된 검색, 실패 스크린샷 | `test_blank_search.py` 외 | 3개 |
+| **정렬 기능** | 상품 정렬 버튼 테스트 (추천순, 신상품순, 판매량순, 낮은가격순, 높은가격순, 혜택순) | `test_ui_sort_button.py` | 1개 |
 
 **테스트 대상**: https://www.kurly.com
 
-### 🎬 TMDB API 테스트 (9개)
+### 🎬 TMDB API 테스트 (20개)
 
-| 테스트 카테고리 | 검증 내용 | 파일 | SLA |
-|--------------|---------|------|-----|
-| **인기 영화 조회** | 상태코드 200, results 필드, 데이터 개수 | `test_popular_movie.py` | ✅ |
-| **영화 검색** | 검색 기능 동작 확인 | `test_search_movie.py` | ✅ |
-| **영화 상세 정보** | 필수 필드 검증 (id, title, overview) | `test_movie_details.py` | ✅ |
-| **영화 비디오** | 비디오 데이터 검증 | `test_movie_videos.py` | ✅ |
-| **SLA 응답 시간** | 응답 시간 < 2초 검증 | `test_api_sla.py` | ⚡ |
-| **잘못된 API 키** | 401 에러 처리 확인 | `test_movie_invalid_api_key.py` | ✅ |
-| **장르 포함 여부** | genre_ids 필드 검증 | `test_movie_genre_inclusion.py` | ✅ |
-| **개봉일 일관성** | release_date 형식 검증 (YYYY-MM-DD) | `test_movie_release_date_consistency.py` | ✅ |
-| **평점 일관성** | vote_average 범위 검증 (0-10) | `test_top_rated_movie_consistency.py` | ✅ |
+| 테스트 카테고리 | 검증 내용 | 파일 | 테스트 수 |
+|--------------|---------|------|----------|
+| **인기 영화 조회** | 상태코드 200, results 필드, 데이터 개수 | `test_popular_movie.py` | 1개 |
+| **영화 검색** | 검색 기능 동작 확인 | `test_search_movie.py` | 1개 |
+| **영화 상세 정보** | 필수 필드 검증 (id, title, overview) | `test_movie_details.py` | 1개 |
+| **영화 비디오** | 비디오 데이터 검증 | `test_movie_videos.py` | 1개 |
+| **페이지네이션** | 페이지네이션 동작 검증, 잘못된 페이지 번호 처리 | `test_movie_pagination.py` | 4개 |
+| **SLA 응답 시간** | 응답 시간 < 2초 검증 | `test_api_sla.py` | 1개 |
+| **장르 포함 여부** | genre_ids 필드 검증 | `test_movie_genre_inclusion.py` | 1개 |
+| **개봉일 일관성** | release_date 형식 검증 (YYYY-MM-DD) | `test_movie_release_date_consistency.py` | 1개 |
+| **평점 일관성** | vote_average 범위 검증 (0-10) | `test_top_rated_movie_consistency.py` | 1개 |
+| **에러 처리** | 404, 401, 422 에러 검증 (잘못된 API 키, 존재하지 않는 리소스, 잘못된 파라미터 등) | `test_movie_api_errors.py` | 8개 |
 
 **테스트 대상**: https://api.themoviedb.org/3
 
