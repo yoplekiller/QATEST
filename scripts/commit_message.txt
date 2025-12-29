@@ -1,0 +1,10 @@
+refactor: get_now_playing.py 코드 품질 개선
+
+- PEP 8 준수: 할당 연산자 양쪽 공백 추가
+- 불필요한 인라인 주석 제거
+- csv_path 변수를 실제로 사용하도록 수정 (하드코딩 제거)
+
+변경 사항:
+* params, response 변수 할당 시 공백 추가
+* "# scripts 폴더 기준" 주석 삭제
+* open() 함수에서 하드코딩된 경로 대신 csv_path 변수 사용
