@@ -13,7 +13,8 @@ def send_slack_result():
     github_run_id = os.getenv("GITHUB_RUN_ID")
     is_docker = os.getenv("DOCKER_ENV", "false").lower() == "true"
     branch_name = os.getenv("BRANCH_NAME", "main")
-    branch_or_env = "docker" if is_docker else branch_name
+    '''미사용 코드'''
+    # branch_or_env = "docker" if is_docker else branch_name
 
     print(f"🔍 [DEBUG] Branch: {branch_name}")
     print(f"🔍 [DEBUG] GitHub Run ID: {github_run_id}")
@@ -131,8 +132,7 @@ def send_slack_result():
                             "text": "🔍 GitHub Actions",
                             "emoji": True
                         },
-                        "url": excel_download_url,
-                        "style": "danger"
+                        "url": excel_download_url
                        
                     }
                 ]
