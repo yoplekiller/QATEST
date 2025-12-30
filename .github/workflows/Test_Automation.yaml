@@ -6,6 +6,7 @@ on:
       - develop
   push:
     branches:
+      - main
       - feature/*
       - temp/*
   workflow_dispatch:
@@ -64,6 +65,7 @@ jobs:
         with:
           name: allure-results-ui
           path: allure-results-ui
+          retention-days: 7
 
       - name: Upload UI Test Report
         if: always()
@@ -71,6 +73,7 @@ jobs:
         with:
           name: ui-test-report
           path: ui_report.xml
+          retention-days: 7
 
   api_tests:
     runs-on: ubuntu-latest
@@ -122,6 +125,7 @@ jobs:
         with:
           name: allure-results-api
           path: allure-results-api
+          retention-days: 7
 
       - name: Upload API Test Report
         if: always()
@@ -129,6 +133,7 @@ jobs:
         with:
           name: api-test-report
           path: api_report.xml
+          retention-days: 7
 
   # ==========================================
   # Allure Report 배포 (GitHub Pages)
@@ -215,7 +220,7 @@ jobs:
 
       - name: Send Slack Notification
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
           GITHUB_RUN_ID: ${{ github.run_id }}
           BRANCH_NAME: ${{ github.ref_name }}
         run: |
