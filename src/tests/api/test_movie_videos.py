@@ -14,12 +14,14 @@ def test_movie_videos(api_env, send_get_request, attach_response):
       movie_id = 550  # 예시로 Fight Club의 ID 사용
       endpoint = f"/movie/{movie_id}/videos"
       params = {"api_key": API_KEY}
-      
-    with allure.step("GET 요청 전송 및 응답 수신"):
+
+    
+    with allure.step(f"영화 ID {movie_id}에 대한 비디오 정보 조회"):
       response = send_get_request(endpoint, params)
       attach_response(response)
       data = response.json()
 
+    
     with allure.step("응답 데이터의 비디오 정보 검증"):
       assert "results" in data, "검색 실패"
       assert len(data["results"]) > 0, "비디오 결과가 없습니다"

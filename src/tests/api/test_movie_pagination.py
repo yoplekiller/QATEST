@@ -105,10 +105,10 @@ class TestMoviePagination:
         endpoint = "/movie/popular"
         params = {
             "api_key": API_KEY,
-            "page": 99999
+            "page": 999
         }
 
-        with allure.step("GET 요청: page=99999"):
+        with allure.step("GET 요청: page=999"):
             response = send_get_request(endpoint, params=params)
 
         data = response.json()

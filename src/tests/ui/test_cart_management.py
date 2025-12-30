@@ -49,22 +49,22 @@ class TestCartManagement:
 
     @allure.title("장바구니에서 상품 삭제")
     @allure.description("장바구니에 담긴 상품을 삭제하고 개수가 줄어드는지 확인")
-    def test_remove_item_from_cart(self, driver):
+    def test_remove_item_from_cart(self, kurly_main_page, kurly_product_page, kurly_cart_page):
         """장바구니에서 상품 삭제 기능 테스트"""
 
         with allure.step("메인 페이지 접속 및 검색"):
-            self.main_page.open_main_page()
-            self.main_page.search_product("과자")
+            kurly_main_page.open_main_page()
+            kurly_main_page.search_product("과자")
 
         with allure.step("상품을 장바구니에 담기"):
-            self.product_page.click_nth_add_button(n=1)
-            self.product_page.click_add_to_cart_in_popup()
+            kurly_product_page.click_nth_add_button(n=1)
+            kurly_product_page.click_add_to_cart_in_popup()
 
         with allure.step("장바구니 페이지로 이동"):
-            self.cart_page.go_to_cart()
+            kurly_cart_page.go_to_cart()
 
         with allure.step("장바구니에 상품이 있는지 확인"):
-            initial_count = self.cart_page.get_cart_item_count()
+            initial_count = kurly_cart_page.get_cart_item_count()
             assert initial_count > 0, "장바구니에 상품이 없습니다"
 
             allure.attach(
@@ -74,11 +74,11 @@ class TestCartManagement:
             )
 
         with allure.step("첫 번째 상품 삭제"):
-            self.cart_page.remove_first_item()
+            kurly_cart_page.remove_first_item()
             time.sleep(1)  # 삭제 처리 대기
 
         with allure.step("상품이 삭제되었는지 확인"):
-            final_count = self.cart_page.get_cart_item_count()
+            final_count = kurly_cart_page.get_cart_item_count()
 
             allure.attach(
                 f"삭제 후 상품 개수: {final_count}",
