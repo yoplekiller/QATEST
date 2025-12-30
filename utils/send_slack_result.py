@@ -73,7 +73,7 @@ def send_slack_result():
                 "type": "header",
                 "text": {
                     "type": "plain_text",
-                    "text": f"{status_icon} 테스트 실행 완료",
+                    "text": f"{status_icon} 테스트 실행 결과",
                     "emoji": True
                 }
             },
