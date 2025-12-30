@@ -54,7 +54,8 @@ jobs:
           venv/bin/python -m pytest src/tests/ui \
             --alluredir=allure-results-ui \
             --junitxml=ui_report.xml \
-            --capture=tee-sys -v
+            --capture=tee-sys -v \
+            --maxfail=100 --disable-warnings --tb=short
         continue-on-error: true
 
       - name: Upload UI Allure Results
@@ -112,19 +113,19 @@ jobs:
             --alluredir=allure-results-api \
             --junitxml=api_report.xml \
             --capture=tee-sys -v \
-            --maxfail=7 --disable-warnings --tb=short
+            --maxfail=100 --disable-warnings --tb=short
         continue-on-error: true
 
       - name: Upload API Allure Results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-results-api
           path: allure-results-api
 
       - name: Upload API Test Report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: api-test-report
           path: api_report.xml
@@ -137,17 +138,17 @@ jobs:
     runs-on: ubuntu-latest
     if: always()
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Download UI Allure Results
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: allure-results-ui
           path: allure-results-ui
         continue-on-error: true
 
       - name: Download API Allure Results
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: allure-results-api
           path: allure-results-api
@@ -173,7 +174,7 @@ jobs:
           allure generate allure-results -o allure-report --clean
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
@@ -188,7 +189,7 @@ jobs:
     runs-on: ubuntu-latest
     if: always()
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -199,14 +200,14 @@ jobs:
         run: pip install requests
 
       - name: Download UI Test Report
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ui-test-report
           path: .
         continue-on-error: true
 
       - name: Download API Test Report
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: api-test-report
           path: .
