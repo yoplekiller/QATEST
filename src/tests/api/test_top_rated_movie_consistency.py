@@ -9,7 +9,7 @@ import pytest
 @allure.title("3페이지 최고 평점 영화 목록 일관성 테스트")
 def test_rated_movie_consistency(api_env, send_get_request, attach_response):
 
-    API_KEY = api_env["api_key"]
+    API_KEY = api_env.api_key
     
     with allure.step("최고 평점 영화 목록 조회"):
       endpoint = "/movie/top_rated"

@@ -10,7 +10,7 @@ class ErrorHandlingTests:
     @allure.title("존재하지 않는 영화 ID로 조회 시 404 반환")
     def test_movie_not_found(self, api_env, send_get_request_no_raise, attach_response):
 
-        API_KEY = api_env["api_key"]
+        API_KEY = api_env.api_key
 
         with allure.step("존재하지 않는 영화 ID로 요청 전송"):  
             endpoint = "/movie/0"  # 존재하지 않는 영화 ID

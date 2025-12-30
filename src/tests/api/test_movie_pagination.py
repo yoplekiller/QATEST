@@ -11,7 +11,7 @@ class TestMoviePagination:
     @allure.description("영화 목록의 첫 번째 페이지를 조회하여 정상 동작을 확인합니다.")
     def test_movie_pagination_page_1(self, send_get_request,  api_env):
 
-        API_KEY = api_env["api_key"]
+        API_KEY =  api_env.api_key
 
         endpoint = "/movie/popular"
         params = {"api_key": API_KEY, "page": 1}
@@ -43,7 +43,7 @@ class TestMoviePagination:
     @allure.description("영화 목록의 두 번째 페이지를 조회하여 첫 페이지와 다른 결과를 반환하는지 검증.")
     def test_movie_pagination_page_2(self, send_get_request, api_env):
 
-        API_KEY = api_env["api_key"]
+        API_KEY = api_env.api_key
 
         endpoint = "/movie/popular"
         
@@ -77,7 +77,7 @@ class TestMoviePagination:
     def test_pagination_invalid_page_zero(self, api_env, send_get_request):
         """페이지 번호 0 요청 시 처리"""
 
-        API_KEY = api_env["api_key"]
+        API_KEY = api_env.api_key
 
         endpoint = "/movie/popular"
         params = {
@@ -100,7 +100,7 @@ class TestMoviePagination:
     def test_pagination_out_of_range(self, api_env, send_get_request):
         """범위를 초과한 페이지 번호 요청"""
 
-        API_KEY = api_env["api_key"]
+        API_KEY = api_env.api_key
 
         endpoint = "/movie/popular"
         params = {

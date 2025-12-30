@@ -49,3 +49,20 @@ class APIEnv:
             allure.attach(json_body, name="응답 JSON", attachment_type=allure.attachment_type.JSON)
         except Exception:
             allure.attach(response.text, name="응답 본문 (raw)", attachment_type=allure.attachment_type.TEXT)
+            
+
+    @allure.step("API 응답 상태 코드 첨부")
+    def allure_attach_status_code(self, response):
+        try:
+            status_code_info = f"응답 상태 코드: {response.status_code}"
+            allure.attach(status_code_info, name="응답 상태 코드", attachment_type=allure.attachment_type.TEXT)
+        except Exception as e:
+            allure.attach(str(e), name="상태 코드 첨부 에러", attachment_type=allure.attachment_type.TEXT)
+
+    @allure.step("API 응답 전체 첨부")
+    def allure_attach_response(self, response):
+        try:
+            self.allure_attach_status_code(response)
+            self.attach_response(response)
+        except Exception as e:
+            allure.attach(str(e), name="응답 첨부 에러", attachment_type=allure.attachment_type.TEXT)

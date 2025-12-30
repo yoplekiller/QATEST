@@ -8,7 +8,7 @@ import pytest
 @allure.title("영화 ID {movie_id}의 비디오 정보 테스트")
 def test_movie_videos(api_env, send_get_request, attach_response):
 
-    API_KEY = api_env["api_key"]
+    API_KEY = api_env.api_key
     
     with allure.step("영화 비디오 정보 조회"):
       movie_id = 550  # 예시로 Fight Club의 ID 사용

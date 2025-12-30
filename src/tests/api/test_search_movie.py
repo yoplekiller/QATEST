@@ -9,7 +9,7 @@ import pytest
 @allure.title("영화 검색 기능이 잘 동작 하는지 확인")
 def test_search_movie(api_env, send_get_request, attach_response):
 
-    API_KEY = api_env["api_key"]
+    API_KEY = api_env.api_key
 
     with allure.step("영화 검색 API 호출 - Inception"):
         endpoint = "/search/movie"

@@ -10,7 +10,7 @@ from utils.data_loader import load_movie_test_data
 @allure.title("영화 ID {movie_id}의 개봉일 일관성 테스트")
 @pytest.mark.parametrize(["movie_id", "expected_title"], load_movie_test_data())
 def test_movie_release_date_consistency(movie_id, expected_title, api_env, send_get_request, attach_response):
-    API_KEY = api_env["api_key"]
+    API_KEY =  api_env.api_key
 
     with allure.step(f"영화 ID {movie_id}에 대한 상세 정보 조회"):
       endpoint = f"/movie/{movie_id}"
