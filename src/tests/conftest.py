@@ -116,3 +116,7 @@ def send_get_request_no_raise(api_env):
 @pytest.fixture
 def allure_attach_response(api_env):
     return api_env.attach_response
+
+@pytest.fixture
+def attach_response(api_env):
+    return api_env.attach_response
