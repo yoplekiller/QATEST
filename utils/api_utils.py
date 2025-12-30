@@ -3,15 +3,12 @@ import allure
 import json
 from utils.config_utils import load_config
 
-env_data = load_config()
-BASE_URL = env_data["base_url"]
-API_KEY = env_data["api_key"]
-
 
 class APIEnv:
-    def __init__(self, base_url, api_key):
-        self.base_url = base_url
-        self.api_key = api_key
+    def __init__(self):
+        env_data = load_config()
+        self.base_url = env_data["base_url"]
+        self.api_key = env_data["api_key"]
 
     @allure.step("GET 요청 보내기")
     def send_get_request(self, endpoint, params=None, headers=None):
