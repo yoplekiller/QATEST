@@ -3,6 +3,9 @@ from src.pages.base_page import BasePage
 
 class KurlySearchPage(BasePage):
 
+    # Search page URL example:
+    SEARCH_URL = "https://www.kurly.com/search?sword={keyword}&page=1"
+
     RESULT_TITLE = (By.XPATH, "//*[contains(normalize-space(), '에 대한 검색결과')]")
     PRODUCT_CARDS = (By.CSS_SELECTOR, "a[href*='/goods/']")
     NO_RESULT_TEXT = (By.XPATH, "//*[contains(normalize-space(), '검색된 상품이 없습니다') or contains(normalize-space(),'없')]" )
@@ -102,3 +105,13 @@ class KurlySearchPage(BasePage):
             int: 상품 개수
         """
         return self.get_elements_count(self.PRODUCT_CARDS)
+    
+    def search_product(self, keyword: str) -> None:
+        """
+        검색어로 검색 페이지 열기
+
+        Args:
+            keyword: 검색어
+        """
+        search_url = self.SEARCH_URL.format(keyword=keyword)
+        self.open(search_url)

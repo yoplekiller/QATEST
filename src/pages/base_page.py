@@ -73,7 +73,6 @@ class BasePage:
             url: 이동할 URL
             maximize: 창 최대화 여부(헤드리스 환경에서는 의미 없을 수 있음)
         """
-        # 어디로 이동하는지 로그로 남김
         logger.info(f"페이지 열기: {url}")
 
         # 페이지 이동

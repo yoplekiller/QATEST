@@ -42,30 +42,100 @@ def send_slack_result():
     skipped = ui_skipped + api_skipped
 
 
-    # GitHub Pages는 루트에 배포됨 (keep_files: false이므로 브랜치별 경로 없음)
-    allure_report_url = "https://yoplekiller.github.io/QATEST/"
+    # 브랜치별 Allure Report URL (슬래시를 대시로 변환)
+    safe_branch = branch_name.replace("/", "-")
+    allure_report_url = f"https://yoplekiller.github.io/QATEST/{safe_branch}/"
     excel_download_url = f"https://github.com/yoplekiller/QATEST/actions/runs/{github_run_id}"
 
     print(f"🔗 Allure Report URL: {allure_report_url}")
     print(f"🔗 GitHub Actions URL: {excel_download_url}")
 
+    # 실패 테스트 요약 (최대 5개만 표시)
+    MAX_DISPLAY_FAILURES = 5
     if all_failed_tests:
-        failed_test_str = "❌ *실패한 테스트 목록:*\n" + "\n".join(f"- {name}" for name in all_failed_tests)
+        displayed_failures = all_failed_tests[:MAX_DISPLAY_FAILURES]
+        remaining_count = len(all_failed_tests) - MAX_DISPLAY_FAILURES
+
+        failed_test_str = "❌ *실패한 테스트:*\n" + "\n".join(f"  • `{name}`" for name in displayed_failures)
+        if remaining_count > 0:
+            failed_test_str += f"\n  _...and {remaining_count} more (전체 보기: <{allure_report_url}|Allure Report>)_"
     else:
         failed_test_str = "✅ *모든 테스트가 완료되었습니다!* 🎉"
 
+    # 성공/실패에 따른 아이콘
+    status_icon = "✅" if failures == 0 and errors == 0 else "❌"
+    total_tests = passed + failures + errors + skipped
 
     message = {
-        "text": (
-            f"*📢 테스트 결과 요약*\n\n"
-            f"✅ Passed: {passed}\n"
-            f"❌ Failed: {failures}\n"
-            f"⚠️ Errors: {errors}\n"
-            f"⏭️ Skipped: {skipped}\n\n"
-            f"{failed_test_str}\n\n"        
-            f"*📄 Allure Report 보기*: <{allure_report_url}>\n"
-            f"*📊 Excel 리포트 다운로드*: <{excel_download_url}>"
-        )
+        "text": f"{status_icon} 테스트 결과: {passed}/{total_tests} passed",
+        "blocks": [
+            {
+                "type": "header",
+                "text": {
+                    "type": "plain_text",
+                    "text": f"{status_icon} 테스트 실행 완료",
+                    "emoji": True
+                }
+            },
+            {
+                "type": "section",
+                "fields": [
+                    {
+                        "type": "mrkdwn",
+                        "text": f"*✅ Passed:*\n{passed}"
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": f"*❌ Failed:*\n{failures}"
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": f"*⚠️ Errors:*\n{errors}"
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": f"*⏭️ Skipped:*\n{skipped}"
+                    }
+                ]
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": failed_test_str
+                }
+            },
+            {
+                "type": "divider"
+            },
+            {
+                "type": "actions",
+                "elements": [
+                    {
+                        "type": "button",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "📊 Allure Report",
+                            "emoji": True
+                        },
+                        "url": allure_report_url,
+                        "style": "primary"
+                    },
+                    {
+                        "type": "button",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "🔍 GitHub Actions",
+                            "emoji": True
+                        },
+                        "url": excel_download_url
+                    }
+                ]
+            }
+        ]
     }
 
     print("📤 Slack으로 메시지 전송 중...")

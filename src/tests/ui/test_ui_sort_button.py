@@ -7,18 +7,18 @@ import pytest
 
 
 @pytest.mark.ui
-@pytest.mark.parametrize("sort_type", ["recommend", "new", "low_price", "high_price"])
 @allure.title("정렬 옵션 테스트: {sort_type}")
 @allure.feature("검색 및 필터링")
 @allure.story("상품 정렬")
 @allure.severity(allure.severity_level.NORMAL)
-def test_all_sort_options(driver, sort_type, kurly_main_page, kurly_search_page):
+@pytest.mark.parametrize("sort_type", ["recommend", "new", "low_price", "high_price"])
+def test_all_sort_options(sort_type, kurly_main_page, kurly_search_page):
     """
     검색 결과에서 모든 정렬 옵션이 정상 동작하는지 확인
 
     테스트 시나리오:
         1. 마켓컬리 메인 페이지 접속
-        2. 특정 키워드('과자')로 검색
+        2. 특정 키워드('과자')로 검색       
         3. 정렬 옵션 선택 (추천순/신상품순/낮은가격순/높은가격순)
         4. 정렬이 올바르게 적용되었는지 확인
 

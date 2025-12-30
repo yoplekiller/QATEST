@@ -7,6 +7,7 @@ def get_timestamped_filename(base_name: str, extension: str = "csv") -> str:
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     return f"{base_name}_{timestamp}.{extension}"
 
+# 저장할 영화 정보 리스트를 CSV 파일로 저장하는 함수
 def save_movies_to_csv(movies, filename, folder="results"):
     os.makedirs(folder, exist_ok=True)
     filepath = os.path.join(folder, filename)

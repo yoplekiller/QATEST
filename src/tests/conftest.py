@@ -10,6 +10,7 @@ from src.pages.kurly_main_page import KurlyMainPage
 from src.pages.kurly_cart_page import KurlyCartPage
 from src.pages.kurly_login_page import KurlyLoginPage
 from src.pages.kurly_product_page import KurlyProductPage
+from src.pages.kurly_search_page import KurlySearchPage
 from utils.config_utils import load_config
 
 
@@ -64,6 +65,10 @@ def kurly_login_page(driver):
     """마켓컬리 로그인 페이지 객체"""
     return KurlyLoginPage(driver)
 
+@pytest.fixture
+def kurly_search_page(driver):
+    """마켓컬리 검색 페이지 객체"""
+    return KurlySearchPage(driver)
 
 @pytest.fixture
 def kurly_product_page(driver):

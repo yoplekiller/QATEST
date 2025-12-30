@@ -145,6 +145,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set Branch Name
+        run: |
+          echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+          # 브랜치 이름을 경로로 사용 (슬래시를 대시로 변환)
+          SAFE_BRANCH=$(echo "${{ github.ref_name }}" | sed 's/\//-/g')
+          echo "SAFE_BRANCH=$SAFE_BRANCH" >> $GITHUB_ENV
+
       - name: Download UI Allure Results
         uses: actions/download-artifact@v4
         with:
@@ -176,7 +183,124 @@ jobs:
 
       - name: Generate Allure Report
         run: |
-          allure generate allure-results -o allure-report --clean
+          # 브랜치별 경로에 리포트 생성
+          allure generate allure-results -o allure-report/${{ env.SAFE_BRANCH }} --clean
+
+      - name: Create Index Page
+        run: |
+          cat > allure-report/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="ko">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>QATEST - Test Reports</title>
+              <style>
+                  * { margin: 0; padding: 0; box-sizing: border-box; }
+                  body {
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      min-height: 100vh;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding: 20px;
+                  }
+                  .container {
+                      background: white;
+                      border-radius: 16px;
+                      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+                      padding: 40px;
+                      max-width: 800px;
+                      width: 100%;
+                  }
+                  h1 {
+                      color: #333;
+                      margin-bottom: 10px;
+                      font-size: 2.5em;
+                  }
+                  .subtitle {
+                      color: #666;
+                      margin-bottom: 40px;
+                      font-size: 1.1em;
+                  }
+                  .branch-list {
+                      list-style: none;
+                  }
+                  .branch-item {
+                      margin-bottom: 15px;
+                  }
+                  .branch-link {
+                      display: flex;
+                      align-items: center;
+                      padding: 20px;
+                      background: #f8f9fa;
+                      border-radius: 12px;
+                      text-decoration: none;
+                      color: #333;
+                      transition: all 0.3s ease;
+                      border: 2px solid transparent;
+                  }
+                  .branch-link:hover {
+                      background: #667eea;
+                      color: white;
+                      transform: translateX(10px);
+                      border-color: #667eea;
+                  }
+                  .branch-icon {
+                      font-size: 24px;
+                      margin-right: 15px;
+                  }
+                  .branch-name {
+                      font-size: 1.2em;
+                      font-weight: 600;
+                  }
+                  .current {
+                      background: #e7f3ff;
+                      border-color: #667eea;
+                  }
+                  .footer {
+                      margin-top: 40px;
+                      text-align: center;
+                      color: #666;
+                      font-size: 0.9em;
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="container">
+                  <h1>🧪 QATEST</h1>
+                  <p class="subtitle">Test Automation Reports</p>
+
+                  <ul class="branch-list">
+                      <li class="branch-item">
+                          <a href="./main/" class="branch-link current">
+                              <span class="branch-icon">🌿</span>
+                              <span class="branch-name">main</span>
+                          </a>
+                      </li>
+                      <li class="branch-item">
+                          <a href="./develop/" class="branch-link">
+                              <span class="branch-icon">🔧</span>
+                              <span class="branch-name">develop</span>
+                          </a>
+                      </li>
+                      <li class="branch-item">
+                          <a href="./${{ env.SAFE_BRANCH }}/" class="branch-link">
+                              <span class="branch-icon">🚀</span>
+                              <span class="branch-name">${{ env.BRANCH_NAME }}</span>
+                          </a>
+                      </li>
+                  </ul>
+
+                  <div class="footer">
+                      <p>Last updated: $(date '+%Y-%m-%d %H:%M:%S UTC')</p>
+                      <p>Branch: ${{ env.BRANCH_NAME }} | Run: <a href="https://github.com/yoplekiller/QATEST/actions/runs/${{ github.run_id }}" target="_blank">#${{ github.run_id }}</a></p>
+                  </div>
+              </div>
+          </body>
+          </html>
+          EOF
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -184,7 +308,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
           publish_branch: gh-pages
-          keep_files: false
+          keep_files: true
+          destination_dir: .
 
   # ==========================================
   # Slack 알림

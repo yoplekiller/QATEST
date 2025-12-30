@@ -18,6 +18,8 @@ class KurlyProductPage(BasePage):
         - 장바구니 담기
         - 수량 조절
     """
+    #Product page URL
+    URL = "https://www.kurly.com/shop/search.php"
 
     # Locators - 검색 결과 상품
     PRODUCT_LIST = (By.XPATH, "//a[@class='css-11geqae e1c07x4811']")

@@ -5,7 +5,8 @@ import pytest
 @pytest.mark.ui
 @allure.feature("장바구니 기능")
 @allure.story("상품 추가 플로우")
-def test_add_product_to_cart_flow(kurly_product_page):
+@allure.title("상품을 장바구니에 추가하는 전체 플로우 테스트")
+def test_add_product_to_cart_flow(kurly_search_page, kurly_product_page):
     """
     상품을 장바구니에 추가하는 전체 플로우 테스트
     Steps:
@@ -16,7 +17,10 @@ def test_add_product_to_cart_flow(kurly_product_page):
     """
     increase_count = 2
     decrease_count = 2
-    
+    # 0. 검색 결과 페이지로 이동
+    with allure.step("검색"):
+        kurly_search_page.search_product("과자")
+
     # 1. 상품 추가 버튼 클릭
     with allure.step("상품 추가 버튼 클릭"):
         kurly_product_page.click_third_product_add_button()
