@@ -58,7 +58,7 @@ def send_slack_result():
 
         failed_test_str = "❌ *실패한 테스트:*\n" + "\n".join(f"  • `{name}`" for name in displayed_failures)
         if remaining_count > 0:
-            failed_test_str += f"\n  _...and {remaining_count} more (전체 보기: <{allure_report_url}|Allure Report>)_"
+            failed_test_str += f"\n  _...and {remaining_count}   more (전체 보기: <{allure_report_url}|Allure Report>)_"
     else:
         failed_test_str = "✅ *모든 테스트가 완료되었습니다!* 🎉"
 
@@ -131,7 +131,9 @@ def send_slack_result():
                             "text": "🔍 GitHub Actions",
                             "emoji": True
                         },
-                        "url": excel_download_url
+                        "url": excel_download_url,
+                        "style": "danger"
+                       
                     }
                 ]
             }
