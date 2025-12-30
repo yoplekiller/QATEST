@@ -1,10 +1,10 @@
 import allure
 import pytest
 
-
 @pytest.mark.api
 @allure.feature("TMDB API - Error Handling")
 @allure.story("404 Not Found")
+@allure.title("TMDB API 오류 처리 테스트")
 class ErrorHandlingTests:
               
     @allure.title("존재하지 않는 영화 ID로 조회 시 404 반환")
@@ -98,6 +98,7 @@ class ErrorHandlingTests:
         
         with allure.step("존재하지 않는 엔드포인트로 요청 전송"):
             response = send_get_request_no_raise(endpoint, params={"api_key": API_KEY})
+
         with allure.step("응답 상태 코드 검증"):
             assert response.status_code == 404, "상태 코드가 404가 아닙니다"
             attach_response(response)

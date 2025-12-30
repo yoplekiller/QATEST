@@ -1,8 +1,6 @@
 import allure
 import pytest
 import json
-from utils.config_utils import get_current_env
-from utils.api_utils import send_get_request, attach_response
 from utils.data_loader import load_movie_test_data
 
 
@@ -21,9 +19,11 @@ def test_get_movie_details(movie_id, expected_title, api_env, send_get_request, 
         params = {
             "api_key": API_KEY
         }
-    response = send_get_request(endpoint, params)
-    data= response.json()
-    attach_response(response)
+
+    with allure.step("GET 요청 전송 및 응답 수신"):
+      response = send_get_request(endpoint, params)
+      data= response.json()
+      attach_response(response)
  
     with allure.step("응답 상태 코드 및 데이터 검증"):
         assert response.status_code == 200, 'FAILED'

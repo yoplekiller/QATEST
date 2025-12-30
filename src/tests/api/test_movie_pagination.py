@@ -1,14 +1,15 @@
 import pytest
 import allure
-
+ 
 
 @pytest.mark.api
+@allure.feature("영화 목록 API 테스트")
+@allure.story("영화 페이지네이션 테스트")
 @allure.title("영화 목록 페이지네이션 테스트")
-@allure.story("영화 API 테스트")
 class TestMoviePagination:
     @allure.title("페이지 1 조회 - 기본 페이지네이션")
     @allure.description("영화 목록의 첫 번째 페이지를 조회하여 정상 동작을 확인합니다.")
-    def test_movie_pagination_page_1(send_get_request, api_env):
+    def test_movie_pagination_page_1(self, send_get_request,  api_env):
 
         API_KEY = api_env["api_key"]
 
@@ -25,7 +26,7 @@ class TestMoviePagination:
 
         with allure.step("페이지 번호 검증"):
             assert data["page"] == 1, "페이지 번호가 1이 아닙니다."
-
+    
         with allure.step("총 페이지 수 검증"):
             assert data["total_pages"] >= 1, "총 페이지 수가 1보다 작습니다."
 
@@ -40,12 +41,11 @@ class TestMoviePagination:
 
     @allure.title("페이지 2 조회 - 페이지네이션 테스트")
     @allure.description("영화 목록의 두 번째 페이지를 조회하여 첫 페이지와 다른 결과를 반환하는지 검증.")
-    def test_movie_pagination_page_2(send_get_request, api_env):
+    def test_movie_pagination_page_2(self, send_get_request, api_env):
 
         API_KEY = api_env["api_key"]
 
         endpoint = "/movie/popular"
-        
         
         with allure.step("페이지 1 조회"):
             param_page_1 = {"api_key": API_KEY, "page": 1}
@@ -74,7 +74,7 @@ class TestMoviePagination:
 
     @allure.title("잘못된 페이지 번호 - 0 이하")
     @allure.description("페이지 번호가 0 이하일 때 에러 처리 또는 기본값으로 처리되는지 검증")
-    def test_pagination_invalid_page_zero(send_get_request, api_env):
+    def test_pagination_invalid_page_zero(self, api_env, send_get_request):
         """페이지 번호 0 요청 시 처리"""
 
         API_KEY = api_env["api_key"]
@@ -97,13 +97,12 @@ class TestMoviePagination:
 
     @allure.title("범위 초과 페이지 번호")
     @allure.description("존재하지 않는 큰 페이지 번호 요청 시 처리 검증")
-    def test_pagination_out_of_range(send_get_request, api_env):
+    def test_pagination_out_of_range(self, api_env, send_get_request):
         """범위를 초과한 페이지 번호 요청"""
 
         API_KEY = api_env["api_key"]
-        endpoint = "/movie/popular"
-        
 
+        endpoint = "/movie/popular"
         params = {
             "api_key": API_KEY,
             "page": 99999

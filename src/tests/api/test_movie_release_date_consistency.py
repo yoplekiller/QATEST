@@ -1,25 +1,23 @@
 import allure
 import pytest
-from utils.api_utils import send_get_request, attach_response
-from utils.config_utils import get_current_env
 from utils.csv_utils import get_timestamped_filename, save_movies_to_csv
 from utils.data_loader import load_movie_test_data
 
 
 @pytest.mark.api
-@allure.title("영화 개봉일 확인")
+@allure.feature("영화 상세 정보 API 테스트")
+@allure.story("영화 개봉일 일관성 테스트")
+@allure.title("영화 ID {movie_id}의 개봉일 일관성 테스트")
 @pytest.mark.parametrize(["movie_id", "expected_title"], load_movie_test_data())
 def test_movie_release_date_consistency(movie_id, expected_title, api_env, send_get_request, attach_response):
     API_KEY = api_env["api_key"]
 
-
     with allure.step(f"영화 ID {movie_id}에 대한 상세 정보 조회"):
       endpoint = f"/movie/{movie_id}"
       params = {"api_key": API_KEY}
-
-    response = send_get_request(endpoint, params)
-    attach_response(response)
-    data = response.json()
+      response = send_get_request(endpoint, params)
+      attach_response(response)
+      data = response.json()
 
 
     with allure.step("응답 데이터의 개봉일 및 제목 검증"):
