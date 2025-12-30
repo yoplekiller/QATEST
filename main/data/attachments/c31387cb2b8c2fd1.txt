@@ -1,0 +1,4 @@
+2025-12-30 06:30:49 - test_automation - INFO - 페이지 열기: https://www.kurly.com/search?sword=과자&page=1
+2025-12-30 06:30:54 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/search?sword=과자&page=1
+2025-12-30 06:31:02 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath___contains_text_장바구니에_담았습니다__20251230_063102.png
+2025-12-30 06:31:02 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "//*[contains(text(),'장바구니에 담았습니다')]")

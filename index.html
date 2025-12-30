@@ -1,34 +1,111 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html lang="ko">
 <head>
-    <meta charset="utf-8">
-    <title>Allure Report</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="plugin/screen-diff/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QATEST - Test Reports</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        .branch-list {
+            list-style: none;
+        }
+        .branch-item {
+            margin-bottom: 15px;
+        }
+        .branch-link {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .branch-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateX(10px);
+            border-color: #667eea;
+        }
+        .branch-icon {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        .branch-name {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        .current {
+            background: #e7f3ff;
+            border-color: #667eea;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <div id="alert"></div>
-    <div id="content">
-        <span class="spinner">
-            <span class="spinner__circle"></span>
-        </span>
+    <div class="container">
+        <h1>🧪 QATEST</h1>
+        <p class="subtitle">Test Automation Reports</p>
+
+        <ul class="branch-list">
+            <li class="branch-item">
+                <a href="./main/" class="branch-link current">
+                    <span class="branch-icon">🌿</span>
+                    <span class="branch-name">main</span>
+                </a>
+            </li>
+            <li class="branch-item">
+                <a href="./develop/" class="branch-link">
+                    <span class="branch-icon">🔧</span>
+                    <span class="branch-name">develop</span>
+                </a>
+            </li>
+            <li class="branch-item">
+                <a href="./main/" class="branch-link">
+                    <span class="branch-icon">🚀</span>
+                    <span class="branch-name">main</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="footer">
+            <p>Last updated: $(date '+%Y-%m-%d %H:%M:%S UTC')</p>
+            <p>Branch: main | Run: <a href="https://github.com/yoplekiller/QATEST/actions/runs/20590500421" target="_blank">#20590500421</a></p>
+        </div>
     </div>
-    <div id="popup"></div>
-    <script src="app.js"></script>
-    <script src="plugin/behaviors/index.js"></script>
-    <script src="plugin/packages/index.js"></script>
-    <script src="plugin/screen-diff/index.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVWC4GKEYS"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FVWC4GKEYS', {
-          'allureVersion': '2.32.2',
-          'reportUuid': '1a468ff9-a5a2-4d52-8add-6f462fbb8306',
-          'single_file': false
-        });
-    </script>
 </body>
 </html>
