@@ -165,3 +165,13 @@ class KurlyProductPage(BasePage):
             bool: 포함되어 있으면 True
         """
         return keyword in self.driver.page_source
+
+    def click_nth_add_button(self, n: int) -> None:
+        """
+        n번째 상품의 장바구니 추가 버튼 클릭
+
+        Args:
+            n: 클릭할 상품의 순번 (1부터 시작)
+        """
+        nth_add_button_locator = (By.XPATH, f"(//button[@aria-label='장바구니 담기'])[{n}]")
+        self.click(nth_add_button_locator)

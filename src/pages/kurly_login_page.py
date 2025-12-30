@@ -107,3 +107,5 @@ class KurlyLoginPage(BasePage):
             bool: 로그인 성공 여부
         """
         return self.is_displayed(self.USER_MENU, timeout=timeout)
+    
+    

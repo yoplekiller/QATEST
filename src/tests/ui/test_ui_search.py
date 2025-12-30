@@ -33,6 +33,7 @@ class TestSearch:
         # Given: 메인 페이지로 이동
         with allure.step("마켓컬리 메인 페이지로 이동"):
             kurly_main_page.open_main_page()
+            
         # When: 상품 검색
         with allure.step(f"'{keyword}' 검색"):
             kurly_main_page.search_product(keyword)
@@ -137,24 +138,24 @@ class TestSearch:
 
     **예상 결과:** 상품 상세 페이지로 정상 이동
     """)
-    def test_search_and_click_first_result(self, driver):
+    def test_search_and_click_first_result(self, kurly_main_page):
         """
         검색 후 첫 번째 결과를 클릭하여 상세 페이지로 이동
         """
         # Given: 메인 페이지에서 검색 실행
-        self.main_page.open_main_page()
-        self.main_page.search_product("사과")
+        kurly_main_page.open_main_page()
+        kurly_main_page.search_product("사과")
 
         # When: 첫 번째 검색 결과 클릭
         with allure.step("첫 번째 검색 결과 클릭"):
-            initial_url = self.main_page.get_current_url()
-            self.main_page.click_first_search_result()
+            initial_url = kurly_main_page.get_current_url()
+            kurly_main_page.click_first_search_result()
 
         # Then: 페이지가 변경되어야 함 (상세 페이지로 이동)
         with allure.step("상세 페이지 이동 확인"):
-            self.main_page.take_screenshot("상품_상세_페이지")
+            kurly_main_page.take_screenshot("상품_상세_페이지")
 
-            current_url = self.main_page.get_current_url()
+            current_url = kurly_main_page.get_current_url()
             assert current_url != initial_url, \
                 "❌ 상품 클릭 후 페이지가 변경되지 않았습니다"
 
