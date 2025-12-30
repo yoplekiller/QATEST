@@ -1,3 +1,0 @@
-2025-12-30 05:02:08 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
-2025-12-30 05:02:09 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
-2025-12-30 05:02:10 - test_automation - INFO - 스크린샷 저장: screenshots/특수문자_검색_script_20251230_050210.png

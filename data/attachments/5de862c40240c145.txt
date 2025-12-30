@@ -1,0 +1,2 @@
+2025-12-30 05:20:00 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath___a_3_div_2_button_1__20251230_052000.png
+2025-12-30 05:20:00 - test_automation - ERROR - 클릭 실패: ('xpath', '//a[3]//div[2]//button[1]')
