@@ -12,7 +12,7 @@ from utils.data_loader import load_movie_test_data
 def test_get_movie_details(movie_id, expected_title, api_env, send_get_request, attach_response):
     """특정 영화 상세 정보 API 테스트"""
     
-    API_KEY = api_env["api_key"]
+    API_KEY = api_env.api_key
     
     with allure.step(f"영화 ID {movie_id}에 대한 상세 정보 조회"):
         endpoint = f"/movie/{movie_id}"

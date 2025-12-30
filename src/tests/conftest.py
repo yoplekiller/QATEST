@@ -10,7 +10,7 @@ from src.pages.kurly_main_page import KurlyMainPage
 from src.pages.kurly_cart_page import KurlyCartPage
 from src.pages.kurly_login_page import KurlyLoginPage
 from src.pages.kurly_product_page import KurlyProductPage
-from utils.config_utils import get_current_env, load_config
+from utils.config_utils import load_config
 
 
 
@@ -92,20 +92,21 @@ def test_credentials():
 @pytest.fixture(scope="session")
 def api_env():
     """API 테스트용 환경 변수 및 APIEnv 인스턴스 제공"""
+    env = load_config()
     return APIEnv()
 
 
 # APIEnv 인스턴스의 메서드를 fixture로 제공
 @pytest.fixture
-def send_get_request_fixture(api_env):
+def send_get_request(api_env):
     return api_env.send_get_request
 
 @pytest.fixture
-def send_post_request_fixture(api_env):
+def send_post_request(api_env):
     return api_env.send_post_request
 
 @pytest.fixture
-def send_get_request_no_raise_fixture(api_env):
+def send_get_request_no_raise(api_env):
     return api_env.send_get_request_no_raise
 
 

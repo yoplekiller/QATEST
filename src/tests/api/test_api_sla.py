@@ -16,8 +16,8 @@ SLA_SECONDS = 2
 def test_api_sla(api_env, send_get_request, endpoint):
 
 
-    api_key = api_env["api_key"]
-    base_url = api_env["base_url"]
+    api_key = api_env.api_key
+    base_url = api_env.base_url
     endpoint = f"{base_url}{endpoint}?api_key={api_key}"
     
     with allure.step(f"요청 보내기: {endpoint}"):
@@ -28,7 +28,7 @@ def test_api_sla(api_env, send_get_request, endpoint):
         print(f"📡 요청 주소: {endpoint}")
         print(f"✅ 응답 시간: {elapsed_time:.2f}초")
         print(f"✅ 응답 코드: {response.status_code}")
-        
+
     with allure.step("응답 시간 첨부"):
       allure.attach(f"응답 시간: {elapsed_time:.2f}초", name="Response Time", attachment_type=allure.attachment_type.TEXT)
 
