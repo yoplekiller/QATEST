@@ -92,8 +92,7 @@ def test_credentials():
 @pytest.fixture(scope="session")
 def api_env():
     """API 테스트용 환경 변수 및 APIEnv 인스턴스 제공"""
-    env = load_config()
-    return APIEnv(base_url=env["base_url"], api_key=env["api_key"])
+    return APIEnv()
 
 
 # APIEnv 인스턴스의 메서드를 fixture로 제공
