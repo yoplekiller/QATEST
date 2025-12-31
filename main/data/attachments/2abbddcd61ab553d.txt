@@ -1,0 +1,6 @@
+2025-12-31 01:31:29 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2025-12-31 01:31:31 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2025-12-31 01:31:34 - test_automation - INFO - 페이지 열기: https://www.kurly.com/cart
+2025-12-31 01:31:35 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/cart
+2025-12-31 01:31:41 - test_automation - WARNING - find_elements 타임아웃: ('css selector', 'div.kpds_j1jks20 > p')
+2025-12-31 01:31:41 - test_automation - INFO - 스크린샷 저장: screenshots/find_elements_failed__css_selector___div.kpds_j1jks20__p__20251231_013141.png

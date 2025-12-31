@@ -1,0 +1,5 @@
+2025-12-31 01:32:31 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2025-12-31 01:32:33 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2025-12-31 01:32:33 - test_automation - INFO - 스크린샷 저장: screenshots/우유_검색_결과_20251231_013233.png
+2025-12-31 01:32:38 - test_automation - WARNING - find_elements 타임아웃: ('xpath', "//div[contains(@class,'product-list')]//a")
+2025-12-31 01:32:38 - test_automation - INFO - 스크린샷 저장: screenshots/find_elements_failed__xpath__div_contains_class_product-list_a__20251231_013238.png
