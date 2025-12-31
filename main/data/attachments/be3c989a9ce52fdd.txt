@@ -1,0 +1,5 @@
+2025-12-31 01:36:56 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2025-12-31 01:36:58 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2025-12-31 01:36:59 - test_automation - INFO - 스크린샷 저장: screenshots/로그인_실패_화면_20251231_013659.png
+2025-12-31 01:37:04 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath__div_class_css-hj3ig8_e15sbxqa2__20251231_013704.png
+2025-12-31 01:37:04 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "//div[@class='css-hj3ig8 e15sbxqa2']")
