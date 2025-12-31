@@ -22,8 +22,8 @@ QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으
 - ✅ **영문 문서**: 한국어/영문 문서 지원
 
 ### 📊 프로젝트 통계
-- **총 테스트 케이스**: 39개 (UI: 19개 | API: 20개)
-- **Page Objects**: 6개 (약 1,086줄)
+- **총 테스트 케이스**: 21개 (UI: 11개 파일 | API: 10개 파일)
+- **Page Objects**: 6개 (약 1,141줄)
 - **Utilities**: 10개 (약 474줄)
 - **CI/CD**: GitHub Actions (자동 테스트 + Allure Report 배포)
 
@@ -197,12 +197,13 @@ graph LR
 ```
 QATEST/
 ├── src/
-│   ├── pages/                      # Page Object Model (815줄)
-│   │   ├── base_page.py           # 기본 페이지 클래스 (361줄)
-│   │   ├── kurly_login_page.py    # 로그인 페이지 (110줄)
-│   │   ├── kurly_main_page.py     # 메인 페이지 (236줄)
-│   │   ├── kurly_cart_page.py     # 장바구니 페이지 (81줄)
-│   │   └── kurly_product_page.py  # 상품 페이지
+│   ├── pages/                      # Page Object Model (1,141줄)
+│   │   ├── base_page.py           # 기본 페이지 클래스 (모든 페이지의 부모)
+│   │   ├── kurly_login_page.py    # 로그인 페이지
+│   │   ├── kurly_main_page.py     # 메인 페이지 (검색 입력, 카테고리)
+│   │   ├── kurly_search_page.py   # 검색 결과 페이지 (상품 목록, 정렬)
+│   │   ├── kurly_product_page.py  # 상품 상세 팝업 (수량 조절, 장바구니 담기)
+│   │   └── kurly_cart_page.py     # 장바구니 페이지
 │   │
 │   ├── config/                     # 설정 파일
 │   │   ├── config.yaml            # API 엔드포인트 설정
@@ -260,24 +261,34 @@ QATEST/
 재사용 가능한 페이지 객체로 테스트 코드 중복 제거:
 
 ```python
-# src/pages/kurly_login_page.py
-class KurlyLoginPage(BasePage):
-    @allure.step("사용자 '{username}'로 로그인 시도")
-    def login(self, username=None, password=None):
-        """로그인 수행"""
-        username = username or os.getenv('KURLY_TEST_USERNAME')
-        password = password or os.getenv('KURLY_TEST_PASSWORD')
+# src/pages/kurly_search_page.py - 검색 결과 페이지
+class KurlySearchPage(BasePage):
+    """검색 결과 페이지: 상품 목록, 정렬, 장바구니 추가 버튼"""
 
-        self.navigate_to_main()
-        self.click_login_button()
-        self.input_text(LoginPageLocators.USERNAME_INPUT, username)
-        self.input_text(LoginPageLocators.PASSWORD_INPUT, password)
-        self.click(LoginPageLocators.SUBMIT_BUTTON)
+    def click_nth_add_button(self, n: int):
+        """n번째 상품의 장바구니 추가 버튼 클릭"""
+        nth_add_button = (By.XPATH, f"(//a//div[2]//button[1])[{n}]")
+        self.click(nth_add_button)
 
-# 여러 테스트에서 재사용
-def test_login_success():
-    login_page.login()  # 한 줄로 로그인!
+# src/pages/kurly_product_page.py - 상품 상세 팝업
+class KurlyProductPage(BasePage):
+    """상품 상세 팝업: 수량 조절, 장바구니 담기"""
+
+    def increase_quantity(self, times: int = 1):
+        """팝업에서 수량 증가"""
+        for _ in range(times):
+            self.click(self.QUANTITY_UP_BUTTON)
+
+# 테스트에서 페이지별 역할 분리
+def test_add_product_to_cart(kurly_search_page, kurly_product_page):
+    kurly_search_page.click_third_product_add_button()  # 검색 결과에서 선택
+    kurly_product_page.increase_quantity(2)             # 팝업에서 수량 조절
+    kurly_product_page.click_add_to_cart_in_popup()     # 팝업에서 담기
 ```
+
+**페이지별 책임 분리:**
+- `KurlySearchPage`: 검색 결과 페이지 (URL: `/search`)
+- `KurlyProductPage`: 상품 상세 팝업 (수량 조절, 장바구니 담기)
 
 ### 2. BasePage - 공통 메서드
 

@@ -1,15 +1,38 @@
+"""
+Kurly 검색 결과 페이지 Page Object
+마켓컬리 웹사이트의 검색 결과 기능을 담당하는 페이지 오브젝트
+"""
+from typing import List
 from selenium.webdriver.common.by import By
+from selenium.webdriver.remote.webelement import WebElement
 from src.pages.base_page import BasePage
 
 class KurlySearchPage(BasePage):
+    """
+    마켓컬리 검색 결과 페이지 객체
 
-    # Search page URL example:
+    기능:
+        - 상품 검색
+        - 검색 결과 확인
+        - 상품 목록 조회
+        - 정렬 옵션 선택
+        - 검색 결과에서 상품 선택 및 장바구니 담기
+    """
+
+    # Search page URL
     SEARCH_URL = "https://www.kurly.com/search?sword={keyword}&page=1"
 
+    # Locators - 검색 결과
     RESULT_TITLE = (By.XPATH, "//*[contains(normalize-space(), '에 대한 검색결과')]")
     PRODUCT_CARDS = (By.CSS_SELECTOR, "a[href*='/goods/']")
-    NO_RESULT_TEXT = (By.XPATH, "//*[contains(normalize-space(), '검색된 상품이 없습니다') or contains(normalize-space(),'없')]" )
-    
+    PRODUCT_LIST = (By.XPATH, "//a[@class='css-11geqae e1c07x4811']")  # 대체 선택자
+    NO_RESULT_TEXT = (By.XPATH, "//*[contains(normalize-space(), '검색된 상품이 없습니다') or contains(normalize-space(),'없')]")
+
+    # Locators - 장바구니 추가 버튼 (검색 결과 내)
+    ADD_TO_CART_BUTTONS = (By.XPATH, "//a//div[2]//button[1]")
+    FIRST_ADD_BUTTON = (By.XPATH, "(//a//div[2]//button[1])[1]")
+    THIRD_ADD_BUTTON = (By.XPATH, "(//a//div[2]//button[1])[3]")
+
     # Locators - 정렬
     SORT_SALE = (By.XPATH, "//a[contains(text(),'판매량순')]")
     SORT_RECOMMEND = (By.XPATH, "//a[contains(text(),'추천순')]")
@@ -115,3 +138,42 @@ class KurlySearchPage(BasePage):
         """
         search_url = self.SEARCH_URL.format(keyword=keyword)
         self.open(search_url)
+
+    def get_products(self) -> List[WebElement]:
+        """
+        검색 결과 상품 목록 요소 반환
+
+        Returns:
+            List[WebElement]: 상품 요소 리스트
+        """
+        return self.find_elements(self.PRODUCT_CARDS)
+
+    def click_first_product_add_button(self) -> None:
+        """첫 번째 상품의 장바구니 추가 버튼 클릭"""
+        self.click(self.FIRST_ADD_BUTTON)
+
+    def click_third_product_add_button(self) -> None:
+        """세 번째 상품의 장바구니 추가 버튼 클릭"""
+        self.click(self.THIRD_ADD_BUTTON)
+
+    def click_nth_add_button(self, n: int) -> None:
+        """
+        n번째 상품의 장바구니 추가 버튼 클릭
+
+        Args:
+            n: 클릭할 상품의 순번 (1부터 시작)
+        """
+        nth_add_button = (By.XPATH, f"(//a//div[2]//button[1])[{n}]")
+        self.click(nth_add_button)
+
+    def is_keyword_in_page_source(self, keyword: str) -> bool:
+        """
+        페이지 소스에 특정 키워드가 포함되어 있는지 확인
+
+        Args:
+            keyword: 확인할 키워드
+
+        Returns:
+            bool: 포함되어 있으면 True
+        """
+        return keyword in self.driver.page_source

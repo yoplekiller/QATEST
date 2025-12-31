@@ -12,7 +12,7 @@ class TestCartManagement:
    
     @allure.title("여러 상품을 장바구니에 담기")
     @allure.description("여러 상품을 장바구니에 담고 모두 장바구니에 있는지 확인")
-    def test_add_multiple_items_to_cart(self, kurly_main_page, kurly_product_page, kurly_cart_page):
+    def test_add_multiple_items_to_cart(self, kurly_main_page, kurly_search_page, kurly_product_page, kurly_cart_page):
 
           """여러 상품을 장바구니에 담는 테스트"""
 
@@ -26,16 +26,15 @@ class TestCartManagement:
 
           with allure.step(f"{items_to_add}개 상품을 장바구니에 담기"):
               for i in range(1, items_to_add + 1):
-                  with allure.step(f"{i}번째 상품 담기"):
-                      kurly_product_page.click_nth_add_button(n=i)
-                      kurly_product_page.click_add_to_cart_in_popup()
-                      time.sleep(1)  # 팝업 닫힐 때까지 대기
+                kurly_search_page.click_nth_add_button(n=i)
+                kurly_product_page.click_add_to_cart_in_popup()
+                time.sleep(1)  # 팝업 닫힐 때까지 대기
 
           with allure.step("장바구니로 이동"):
-              kurly_cart_page.go_to_cart()
+              kurly_cart_page.open_cart_page()
 
           with allure.step(f"장바구니에 {items_to_add}개 상품이 있는지 확인"):
-              cart_count = self.cart_page.get_cart_item_count()
+              cart_count = kurly_cart_page.get_cart_item_count()
 
               allure.attach(
                   f"예상: {items_to_add}개, 실제: {cart_count}개",
@@ -49,7 +48,7 @@ class TestCartManagement:
 
     @allure.title("장바구니에서 상품 삭제")
     @allure.description("장바구니에 담긴 상품을 삭제하고 개수가 줄어드는지 확인")
-    def test_remove_item_from_cart(self, kurly_main_page, kurly_product_page, kurly_cart_page):
+    def test_remove_item_from_cart(self, kurly_main_page, kurly_search_page, kurly_product_page, kurly_cart_page):
         """장바구니에서 상품 삭제 기능 테스트"""
 
         with allure.step("메인 페이지 접속 및 검색"):
@@ -57,11 +56,11 @@ class TestCartManagement:
             kurly_main_page.search_product("과자")
 
         with allure.step("상품을 장바구니에 담기"):
-            kurly_product_page.click_nth_add_button(n=1)
+            kurly_search_page.click_nth_add_button(n=1)
             kurly_product_page.click_add_to_cart_in_popup()
 
         with allure.step("장바구니 페이지로 이동"):
-            kurly_cart_page.go_to_cart()
+            kurly_cart_page.open_cart_page()
 
         with allure.step("장바구니에 상품이 있는지 확인"):
             initial_count = kurly_cart_page.get_cart_item_count()

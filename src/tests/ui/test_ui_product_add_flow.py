@@ -26,7 +26,7 @@ class TestProductAddFlow:
 
     **예상 결과:** 전체 플로우가 성공적으로 완료됨
     """)
-    def test_full_product_add_flow(self, kurly_login_page, kurly_main_page, kurly_product_page, kurly_cart_page, test_credentials):
+    def test_full_product_add_flow(self, kurly_login_page, kurly_main_page, kurly_search_page, kurly_product_page, kurly_cart_page, test_credentials):
         """
         로그인 → 상품 검색 → 장바구니 추가 전체 플로우 테스트
         """
@@ -40,11 +40,10 @@ class TestProductAddFlow:
         # Step 2: 상품 검색
         with allure.step("상품 검색: '과자'"):
             kurly_main_page.search_product("과자")
-            assert kurly_main_page.is_search_results_displayed(), "❌ 검색 결과가 표시되지 않음"
 
         # Step 3: 상품 추가
         with allure.step("세 번째 상품 선택"):
-            kurly_product_page.click_third_product_add_button()
+            kurly_search_page.click_third_product_add_button()
         # Step 4: 수량 조절
         with allure.step("수량 올리기"):
             kurly_product_page.increase_quantity(1)

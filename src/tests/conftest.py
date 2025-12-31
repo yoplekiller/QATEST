@@ -87,7 +87,14 @@ def test_credentials():
     return {
         "username": os.getenv("KURLY_TEST_USERNAME", "testuser"),
         "password": os.getenv("KURLY_TEST_PASSWORD", "testpass")
+    }
 
+@pytest.fixture
+def test_credentials_invalid():
+    """테스트용 잘못된 계정 정보 제공"""
+    return {
+        "username": "invalid_user_12345",
+        "password": "wrong_password_67890"
     }
 # =================================
 # API Fixtures

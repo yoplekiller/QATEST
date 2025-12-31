@@ -29,10 +29,15 @@ class KurlyCartPage(BasePage):
 
     # Locators - 버튼
     DELETE_BUTTON = (By.XPATH, "//button[normalize-space()='선택삭제']")
+    DELETE_SELECTED_BUTTON = (By.XPATH, "//button[contains(text(), '선택삭제')]")
+    FIRST_ITEM_CHECKBOX = (By.XPATH, "(//input[@type='checkbox'])[2]")  # 첫 번째는 전체선택, 두 번째가 첫 상품
     LOGIN_IN_CART = (By.XPATH, "//button[contains(text(),'로그인')]")
 
     # Locators - 메시지
     EMPTY_CART_MESSAGE = (By.XPATH, "//*[contains(text(),'장바구니가 비어')]")
+
+    # Locators - 수량 확인
+    CART_ITEM_COUNT = (By.CSS_SELECTOR, "div.kpds_j1jks20 > p")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -76,3 +81,30 @@ class KurlyCartPage(BasePage):
     def has_kurly_in_title(self):
         """페이지 제목에 '컬리'가 포함되어 있는지 확인"""
         return "컬리" in self.get_title()
+    
+    def get_cart_item_count(self) -> int:
+        """
+        장바구니에 담긴 상품 종류 개수 반환
+        (각 상품의 수량이 아닌, 서로 다른 상품의 개수)
+
+        Returns:
+            int: 장바구니 상품 종류 개수
+        """
+        item_elements = self.find_elements(self.CART_ITEM_COUNT)
+        return len(item_elements)
+
+    def remove_first_item(self) -> None:
+        """
+        장바구니의 첫 번째 상품을 선택하여 삭제
+
+        Steps:
+            1. 첫 번째 상품 체크박스 선택
+            2. 선택삭제 버튼 클릭
+        """
+        # 첫 번째 상품 체크박스 선택
+        self.click(self.FIRST_ITEM_CHECKBOX)
+        self.sleep(0.5)  # UI 반영 대기
+
+        # 선택삭제 버튼 클릭
+        self.click(self.DELETE_SELECTED_BUTTON)
+        self.sleep(0.5)  # 삭제 처리 대기   
