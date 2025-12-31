@@ -30,8 +30,6 @@ class KurlySearchPage(BasePage):
 
     # Locators - 장바구니 추가 버튼 (검색 결과 내)
     ADD_TO_CART_BUTTONS = (By.XPATH, "//a//div[2]//button[1]")
-    FIRST_ADD_BUTTON = (By.XPATH, "(//a//div[2]//button[1])[1]")
-    THIRD_ADD_BUTTON = (By.XPATH, "(//a//div[2]//button[1])[3]")
 
     # Locators - 정렬
     SORT_SALE = (By.XPATH, "//a[contains(text(),'판매량순')]")
@@ -147,14 +145,6 @@ class KurlySearchPage(BasePage):
             List[WebElement]: 상품 요소 리스트
         """
         return self.find_elements(self.PRODUCT_CARDS)
-
-    def click_first_product_add_button(self) -> None:
-        """첫 번째 상품의 장바구니 추가 버튼 클릭"""
-        self.click(self.FIRST_ADD_BUTTON)
-
-    def click_third_product_add_button(self) -> None:
-        """세 번째 상품의 장바구니 추가 버튼 클릭"""
-        self.click(self.THIRD_ADD_BUTTON)
 
     def click_nth_add_button(self, n: int) -> None:
         """

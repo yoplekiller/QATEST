@@ -5,6 +5,7 @@ Page Object Model을 사용하여 리팩토링된 수량 조절 테스트
 import allure
 import pytest
 from src.pages.kurly_main_page import KurlyMainPage
+from src.pages.kurly_search_page import KurlySearchPage
 from src.pages.kurly_product_page import KurlyProductPage
 
 
@@ -23,6 +24,7 @@ class TestQuantityWithPOM:
         각 테스트 메서드 실행 전 자동으로 실행되는 설정
         """
         self.main_page = KurlyMainPage(driver)
+        self.search_page = KurlySearchPage(driver)
         self.product_page = KurlyProductPage(driver)
 
     @allure.title("수량 증가/감소 버튼 동작 확인")
@@ -51,7 +53,7 @@ class TestQuantityWithPOM:
             self.main_page.search_product("과자")
 
         with allure.step("세 번째 상품의 장바구니 추가 버튼 클릭"):
-            self.product_page.click_third_product_add_button()
+            self.search_page.click_nth_add_button(3)
 
         # When: 수량 조절
         with allure.step("수량 2회 증가"):

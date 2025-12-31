@@ -24,7 +24,7 @@ def test_add_product_to_cart_flow(kurly_search_page, kurly_product_page):
 
     # 2. 상품 추가 버튼 클릭
     with allure.step("세 번째 상품 추가 버튼 클릭"):
-        kurly_search_page.click_third_product_add_button()
+        kurly_search_page.click_nth_add_button(3)
 
     # 3. 수량 올리기
     with allure.step(f"수량 {increase_count}회 증가"):

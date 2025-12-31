@@ -40,7 +40,7 @@ class TestAddProduct:
 
         # When: 상품 추가 플로우 실행
         with allure.step("세 번째 상품의 장바구니 추가 버튼 클릭"):
-            kurly_search_page.click_third_product_add_button()
+            kurly_search_page.click_nth_add_button(3)
 
         with allure.step("수량 조절 (2회 증가, 2회 감소)"):
             kurly_product_page.increase_quantity(2)

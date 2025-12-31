@@ -43,7 +43,7 @@ class TestProductAddFlow:
 
         # Step 3: 상품 추가
         with allure.step("세 번째 상품 선택"):
-            kurly_search_page.click_third_product_add_button()
+            kurly_search_page.click_nth_add_button(3)
         # Step 4: 수량 조절
         with allure.step("수량 올리기"):
             kurly_product_page.increase_quantity(1)
