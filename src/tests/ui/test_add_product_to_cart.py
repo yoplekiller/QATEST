@@ -18,26 +18,27 @@ def test_add_product_to_cart_flow(kurly_search_page, kurly_product_page):
     """
     increase_count = 2
     decrease_count = 2
+
     # 1. 검색 결과 페이지로 이동
     with allure.step("검색"):
         kurly_search_page.search_product("과자")
 
     # 2. 상품 추가 버튼 클릭
-    with allure.step("세 번째 상품 추가 버튼 클릭"):
+    with allure.step("세 번째 상품 담기 버튼 클릭"):
         kurly_search_page.click_nth_add_button(3)
 
     # 3. 수량 올리기
     with allure.step(f"수량 {increase_count}회 증가"):
-        kurly_product_page.increase_quantity(increase_count)
+        kurly_search_page.increase_quantity_of_nth_product_in_alt(increase_count)
 
     # 4. 수량 내리기
     with allure.step(f"수량 {decrease_count}회 감소"):
-        kurly_product_page.decrease_quantity(decrease_count)
+        kurly_search_page.decrease_quantity_of_nth_product_in_alt(decrease_count)
 
     # 5. 장바구니 담기
     with allure.step("장바구니에 담기"):
-        kurly_product_page.click_add_to_cart_in_popup()
+        kurly_search_page.click_add_to_cart_in_alt()
 
     # 6. 성공 검증
     with allure.step("장바구니 담기 성공 확인"):
-        assert kurly_product_page.is_add_to_cart_success(), "장바구니 담기가 실패했습니다"
+        assert kurly_search_page.is_add_to_cart_success(), "장바구니 담기가 실패했습니다"
