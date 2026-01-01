@@ -26,7 +26,7 @@ class KurlySearchPage(BasePage):
     RESULT_TITLE = (By.XPATH, "//*[contains(normalize-space(), '에 대한 검색결과')]")
     PRODUCT_CARDS = (By.CSS_SELECTOR, "a[href*='/goods/']")
     PRODUCT_LIST = (By.XPATH, "//a[@class='css-11geqae e1c07x4811']")  # 대체 선택자
-    NO_RESULT_TEXT = (By.XPATH, "//*[contains(normalize-space(), '검색된 상품이 없습니다') or contains(normalize-space(),'없')]")
+    NO_RESULT_TEXT = (By.XPATH, "//*[contains(normalize-space(), '검색된 상품이 없습니다.') or contains(normalize-space(),'없')]")
 
     # Locators - 장바구니 추가 버튼 (검색 결과 내)
     ADD_TO_CART_BUTTONS = (By.XPATH, "//a//div[2]//button[1]")
@@ -38,6 +38,13 @@ class KurlySearchPage(BasePage):
     SORT_LOW_PRICE = (By.XPATH, "//a[contains(text(),'낮은 가격순')]")
     SORT_HIGH_PRICE = (By.XPATH, "//a[contains(text(),'높은 가격순')]")
     SORT_BONUS = (By.XPATH, "//a[contains(text(),'혜택순')]")
+
+    # Locators - 팝업 내 요소
+    QUANTITY_UP_BUTTON_ALT = (By.XPATH, "//button[@aria-label='수량올리기']")
+    QUANTITY_DOWN_BUTTON_ALT = (By.XPATH, "//button[@aria-label='수량내리기']")
+    ADD_TO_CART_BUTTON_ALT = (By.XPATH, "//button[@class='css-ahkst0 e4nu7ef3']")
+    SUCCESS_MESSAGE_ALT = (By.XPATH, "//*[contains(text(),'장바구니에 상품을 담았습니다.')]")
+
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -172,12 +179,7 @@ class KurlySearchPage(BasePage):
     # 팝업(Alt) 관련 메서드
     # ========================================
 
-    # Locators - 팝업 내 요소
-    QUANTITY_UP_BUTTON_ALT = (By.XPATH, "//button[@aria-label='수량올리기']")
-    QUANTITY_DOWN_BUTTON_ALT = (By.XPATH, "//button[@aria-label='수량내리기']")
-    ADD_TO_CART_BUTTON_ALT = (By.XPATH, "//button[@class='css-ahkst0 e4nu7ef3']")
-    SUCCESS_MESSAGE_ALT = (By.XPATH, "//*[contains(text(),'장바구니에 상품을 담았습니다.')]")
-
+    
     def increase_quantity_of_nth_product_in_alt(self, times: int = 1) -> None:
         """
         팝업에서 수량 증가
