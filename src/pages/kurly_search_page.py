@@ -167,3 +167,48 @@ class KurlySearchPage(BasePage):
             bool: 포함되어 있으면 True
         """
         return keyword in self.driver.page_source
+
+    # ========================================
+    # 팝업(Alt) 관련 메서드
+    # ========================================
+
+    # Locators - 팝업 내 요소
+    QUANTITY_UP_BUTTON_ALT = (By.XPATH, "//button[@aria-label='수량올리기']")
+    QUANTITY_DOWN_BUTTON_ALT = (By.XPATH, "//button[@aria-label='수량내리기']")
+    ADD_TO_CART_BUTTON_ALT = (By.XPATH, "//button[@class='css-ahkst0 e4nu7ef3']")
+    SUCCESS_MESSAGE_ALT = (By.XPATH, "//*[contains(text(),'장바구니에 상품을 담았습니다.')]")
+
+    def increase_quantity_of_nth_product_in_alt(self, times: int = 1) -> None:
+        """
+        팝업에서 수량 증가
+
+        Args:
+            times: 증가 횟수
+        """
+        for _ in range(times):
+            self.click(self.QUANTITY_UP_BUTTON_ALT)
+            self.sleep(0.3)
+
+    def decrease_quantity_of_nth_product_in_alt(self, times: int = 1) -> None:
+        """
+        팝업에서 수량 감소
+
+        Args:
+            times: 감소 횟수
+        """
+        for _ in range(times):
+            self.click(self.QUANTITY_DOWN_BUTTON_ALT)
+            self.sleep(0.3)
+
+    def click_add_to_cart_in_alt(self) -> None:
+        """팝업에서 장바구니 담기 버튼 클릭"""
+        self.click(self.ADD_TO_CART_BUTTON_ALT)
+
+    def is_add_to_cart_success(self) -> bool:
+        """
+        장바구니 담기 성공 메시지 확인
+
+        Returns:
+            bool: 성공 메시지가 표시되면 True
+        """
+        return self.is_displayed(self.SUCCESS_MESSAGE_ALT, timeout=5)
