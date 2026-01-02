@@ -66,7 +66,7 @@ class KurlyMainPage(BasePage):
         """검색 버튼 클릭"""
         self.click(self.SEARCH_BUTTON)
 
-    def search_product(self, keyword: str) -> None:
+    def search_goods(self, keyword: str) -> None:
         """
         상품 검색 (입력 + 클릭)
         
