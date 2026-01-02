@@ -201,3 +201,12 @@ class KurlySearchPage(BasePage):
         """
         for _ in range(times):
             self.click(self.QUANTITY_DOWN_BUTTON_IN_ALT)
+
+    def click_first_good(self) -> None:
+        """
+        상품 목록에서 첫 번째 상품 클릭
+        
+        Raises:
+            NoSuchElementException: 상품이 없을 때
+        """
+        self.click_product(0)

@@ -18,10 +18,14 @@ class KurlyGoodsPage(BasePage):
     #URL
     GOODS_URL = "https://www.kurly.com/goods/{good_id}"
 
+    GOODS_ITEMS = (By.XPATH, "//div[contains(@class,'goods-card')]")
+    GOODS_TITLE = (By.XPATH, ".//span[contains(@class,'goods-name')]")
+    GOODS_PRICE = (By.XPATH, ".//span[contains(@class,'goods-price')]")
+
     # Locators - 상품 상세 팝업
-    GOODS_DETAIL_POPUP = (By.XPATH, "//div[contains(@class,'good-detail-modal')]")
-    GOODS_NAME = (By.XPATH, "//h1[contains(@class,'good-name')]")
-    GOODS_PRICE = (By.XPATH, "//span[contains(@class,'good-price')]")
+    GOODS_DETAIL_POPUP = (By.XPATH, "//div[contains(@class,'goods-detail-modal')]")
+    GOODS_TITLE = (By.XPATH, "//h1[contains(@class,'goods-name')]")
+    GOODS_PRICE = (By.XPATH, "//span[contains(@class,'goods-price')]")
 
     # Locators - 수량 조절 (팝업 내)
     QUANTITY_INPUT = (By.XPATH, "//input[@type='number']")
@@ -101,3 +105,7 @@ class KurlyGoodsPage(BasePage):
             str: 상품 가격
         """
         return self.get_text(self.GOODS_PRICE)
+    
+    def click_first_search_result(self) -> None:
+        """검색 결과에서 첫 번째 상품 클릭"""
+        self.click_first_good()

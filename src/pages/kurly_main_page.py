@@ -27,15 +27,17 @@ class KurlyMainPage(BasePage):
     SEARCH_INPUT = (By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
     SEARCH_BUTTON = (By.XPATH, "(//button[@id='submit'])[1]")
 
+    # Locators - 상품 목록
+    GOODS_ITEMS = (By.XPATH, "//div[contains(@class,'goods-card')]")
+    GOODS_TITLE = (By.XPATH, ".//span[contains(@class,'goods-name')]")
+    GOODS_PRICE = (By.XPATH, ".//span[contains(@class,'goods-price')]")
+
 
     # Locators - 카테고리
     CATEGORY_MENU = (By.XPATH, "//button[contains(text(),'카테고리')]")
     CATEGORY_LIST = (By.XPATH, "//div[contains(@class,'category-list')]//a")
 
     # Locators - 상품
-    PRODUCT_ITEMS = (By.XPATH, "//div[contains(@class,'product-card')]")
-    PRODUCT_TITLE = (By.XPATH, ".//span[contains(@class,'product-name')]")
-    PRODUCT_PRICE = (By.XPATH, ".//span[contains(@class,'price')]")
     ADD_TO_CART_BUTTON = (By.XPATH, "//button[contains(text(),'장바구니')]")
 
     # Locators - 장바구니
@@ -136,7 +138,7 @@ class KurlyMainPage(BasePage):
         Returns:
             int: 상품 개수
         """
-        return self.get_elements_count(self.PRODUCT_ITEMS)
+        return self.get_elements_count(self.GOODS_ITEMS)
 
     def get_goods(self) -> List[WebElement]:
         """
@@ -145,7 +147,7 @@ class KurlyMainPage(BasePage):
         Returns:
             List[WebElement]: 상품 요소 리스트
         """
-        return self.find_elements(self.PRODUCT_ITEMS)
+        return self.find_elements(self.GOODS_ITEMS)
 
     def click_good(self, index: int = 0) -> None:
         """
@@ -166,14 +168,7 @@ class KurlyMainPage(BasePage):
                 raise NoSuchElementException("상품 목록이 비어있습니다")
             raise IndexError(f"인덱스 {index}가 범위 초과 (총 {products_count}개)")
 
-    def click_first_good(self) -> None:
-        """
-        상품 목록에서 첫 번째 상품 클릭
-        
-        Raises:
-            NoSuchElementException: 상품이 없을 때
-        """
-        self.click_product(0)
+    
     
     def is_search_keyword_required_popup_displayed(self) -> bool:
         """
