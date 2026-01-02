@@ -1,0 +1,2 @@
+2026-01-02 02:26:51 - test_automation - INFO - 페이지 열기: https://www.kurly.com/search?sword=과자&page=1
+2026-01-02 02:26:55 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/search?sword=과자&page=1
