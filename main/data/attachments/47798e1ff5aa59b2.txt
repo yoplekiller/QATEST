@@ -1,0 +1,10 @@
+[32mINFO    [0m test_automation:base_page.py:76 페이지 열기: https://www.kurly.com/main
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:56797/session/3d8596eaab08ff0449ed56c7da69874a/url {'url': 'https://www.kurly.com/main'}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 http://localhost:56797 "POST /session/3d8596eaab08ff0449ed56c7da69874a/url HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:56797/session/3d8596eaab08ff0449ed56c7da69874a/window/maximize {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 http://localhost:56797 "POST /session/3d8596eaab08ff0449ed56c7da69874a/window/maximize HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":{"height":600,"width":800,"x":0,"y":0}} | headers=HTTPHeaderDict({'Content-Length': '48', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[32mINFO    [0m test_automation:base_page.py:88 페이지 로드 요청 완료: https://www.kurly.com/main
