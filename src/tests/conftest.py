@@ -21,7 +21,7 @@ IS_CI = os.getenv("GITHUB_ACTIONS") == "true" or os.getenv("CI") == "true"
 @pytest.fixture(scope="module")
 def driver():
     options = Options()
-    options.add_argument("--headless") # 헤드리스 모드
+    # options.add_argument("--headless") # 헤드리스 모드
     options.add_argument("--disable-blink-features=AutomationControlled") # 자동화 감지 방지
     options.add_argument("--no-sandbox") # 샌드박스 비활성화
     options.add_argument("--disable-dev-shm-usage") # /dev/shm 사용 안함
@@ -55,34 +55,34 @@ def driver():
 # =================================
 
 @pytest.fixture
-def kurly_main_page(driver):
+def kurly_main_page(driver) -> KurlyMainPage:
     """마켓컬리 메인 페이지 객체"""
     return KurlyMainPage(driver)
 
 
 @pytest.fixture
-def kurly_login_page(driver):
+def kurly_login_page(driver) -> KurlyLoginPage:
     """마켓컬리 로그인 페이지 객체"""
     return KurlyLoginPage(driver)
 
 @pytest.fixture
-def kurly_search_page(driver):
+def kurly_search_page(driver) -> KurlySearchPage:
     """마켓컬리 검색 페이지 객체"""
     return KurlySearchPage(driver)
 
 @pytest.fixture
-def kurly_product_page(driver):
+def kurly_product_page(driver) -> KurlyProductPage:
     """마켓컬리 상품 페이지 객체"""
     return KurlyProductPage(driver)
 
 
 @pytest.fixture
-def kurly_cart_page(driver):
+def kurly_cart_page(driver) -> KurlyCartPage:
     """마켓컬리 장바구니 페이지 객체"""
     return KurlyCartPage(driver)
 
 @pytest.fixture
-def test_credentials():
+def test_credentials() -> dict:
     """테스트용 계정 정보 제공"""
     return {
         "username": os.getenv("KURLY_TEST_USERNAME", "testuser"),
@@ -90,19 +90,20 @@ def test_credentials():
     }
 
 @pytest.fixture
-def test_credentials_invalid():
+def test_credentials_invalid() -> dict:
     """테스트용 잘못된 계정 정보 제공"""
     return {
         "username": "invalid_user_12345",
         "password": "wrong_password_67890"
     }
+
 # =================================
 # API Fixtures
 # =================================
 
 # APIEnv 인스턴스 fixture
 @pytest.fixture(scope="session")
-def api_env():
+def api_env() -> APIEnv:
     """API 테스트용 환경 변수 및 APIEnv 인스턴스 제공"""
     env = load_config()
     return APIEnv()
@@ -110,15 +111,15 @@ def api_env():
 
 # APIEnv 인스턴스의 메서드를 fixture로 제공
 @pytest.fixture
-def send_get_request(api_env):
+def send_get_request(api_env) -> callable:
     return api_env.send_get_request
 
 @pytest.fixture
-def send_post_request(api_env):
+def send_post_request(api_env) -> callable:
     return api_env.send_post_request
 
 @pytest.fixture
-def send_get_request_no_raise(api_env):
+def send_get_request_no_raise(api_env) -> callable:
     return api_env.send_get_request_no_raise
 
 
@@ -126,9 +127,9 @@ def send_get_request_no_raise(api_env):
 # ALLURE Fixtures
 # =================================
 @pytest.fixture
-def allure_attach_response(api_env):
+def allure_attach_response(api_env) -> callable:
     return api_env.attach_response
 
 @pytest.fixture
-def attach_response(api_env):
+def attach_response(api_env) -> callable:
     return api_env.attach_response

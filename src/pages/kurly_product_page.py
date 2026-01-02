@@ -32,8 +32,7 @@ class KurlyProductPage(BasePage):
     ADD_TO_CART_BUTTON_IN_POPUP = (By.XPATH, "//button[@class='css-ahkst0 e4nu7ef3']")
     ADD_TO_CART_CONFIRM = (By.XPATH, "//button[contains(text(),'장바구니')]")
 
-    # Locators - 메시지
-    SUCCESS_MESSAGE = (By.XPATH, "//*[contains(text(),'장바구니에 상품을 담았습니다.')]")
+    
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -75,14 +74,6 @@ class KurlyProductPage(BasePage):
         """상품 상세 팝업에서 '장바구니 담기' 버튼 클릭"""
         self.click(self.ADD_TO_CART_BUTTON_IN_POPUP)
 
-    def is_add_to_cart_success(self) -> bool:
-        """
-        장바구니 담기 성공 메시지 표시 여부 확인
-
-        Returns:
-            bool: 성공 메시지가 표시되면 True
-        """
-        return self.is_displayed(self.SUCCESS_MESSAGE, timeout=5)
 
     def is_popup_displayed(self) -> bool:
         """

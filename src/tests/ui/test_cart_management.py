@@ -70,7 +70,7 @@ class TestCartManagement:
             kurly_search_page.click_add_to_cart_in_alt()
 
         with allure.step("장바구니 페이지로 이동"):
-            kurly_cart_page.go_to_cart()    
+            kurly_main_page.go_to_cart()    
 
         with allure.step("장바구니에 상품이 있는지 확인"):
             initial_count = kurly_cart_page.get_cart_item_count()

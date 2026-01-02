@@ -26,7 +26,6 @@ class KurlyMainPage(BasePage):
     # Locators - 검색
     SEARCH_INPUT = (By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
     SEARCH_BUTTON = (By.XPATH, "(//button[@id='submit'])[1]")
-    SEARCH_RESULTS = (By.XPATH, "//div[contains(@class,'product-list')]//a")
     NO_RESULTS_MESSAGE = (By.XPATH, "//div[@class='popup-content css-15yaaju e1k5padi2']") 
 
     # Locators - 카테고리
@@ -40,8 +39,8 @@ class KurlyMainPage(BasePage):
     ADD_TO_CART_BUTTON = (By.XPATH, "//button[contains(text(),'장바구니')]")
 
     # Locators - 장바구니
-    CART_ICON = (By.XPATH, "//a[contains(@href,'/cart')]")
-    CART_COUNT = (By.XPATH, "//span[contains(@class,'cart-count')]")
+    CART_ICON = (By.CSS_SELECTOR, ".css-1o9e4kz")
+    CART_COUNT = (By.CSS_SELECTOR, ".css-5ojige")
 
     # 팝업
     POPUP_CLOSE_BUTTON = (By.XPATH, "//button[contains(text(),'확인')]")
@@ -77,24 +76,6 @@ class KurlyMainPage(BasePage):
         self.enter_search_keyword(keyword)
         self.click_search_button()
 
-    def get_search_results_count(self) -> int:
-        """
-        검색 결과 개수 반환
-        
-        Returns:
-            int: 검색 결과 상품 개수
-        """
-        results = self.find_elements(self.SEARCH_RESULTS)
-        return len(results)
-
-    def get_search_results(self) -> List[WebElement]:
-        """
-        검색 결과 요소 목록 반환
-        
-        Returns:
-            List[WebElement]: 검색된 상품 요소 리스트
-        """
-        return self.find_elements(self.SEARCH_RESULTS)
 
     def is_no_results_message_displayed(self) -> bool:
         """
@@ -104,38 +85,13 @@ class KurlyMainPage(BasePage):
             bool: 메시지 표시 여부
         """
         return self.is_displayed(self.NO_RESULTS_MESSAGE, timeout=5)
-
-    def click_search_result(self, index: int = 0) -> None:
-        """
-        검색 결과 중 특정 인덱스의 상품 클릭
-
-        Args:
-            index: 클릭할 상품 인덱스 (0부터 시작, 기본값=0)
-
-        Raises:
-            NoSuchElementException: 검색 결과가 없을 때
-            IndexError: 인덱스가 범위를 벗어났을 때
-        """
-        try:
-            self.click_element_by_index(self.SEARCH_RESULTS, index)
-        except IndexError as e:
-            results_count = self.get_elements_count(self.SEARCH_RESULTS)
-            if results_count == 0:
-                raise NoSuchElementException("검색 결과가 없습니다")
-            raise IndexError(f"인덱스 {index}가 범위 초과 (총 {results_count}개)")
-
-    def click_first_search_result(self) -> None:
-        """
-        검색 결과 중 첫 번째 상품 클릭
-        
-        Raises:
-            NoSuchElementException: 검색 결과가 없을 때
-        """
-        self.click_search_result(0)
+    
+    
 
     def open_category_menu(self) -> None:
         """카테고리 메뉴 열기"""
         self.click(self.CATEGORY_MENU)
+        
 
     def get_category_list(self) -> List[str]:
         """
@@ -159,7 +115,15 @@ class KurlyMainPage(BasePage):
 
     def go_to_cart(self) -> None:
         """장바구니 페이지로 이동"""
-        self.click(self.CART_ICON)
+        # 모든 가림막/팝업 숨기기
+        self.driver.execute_script("""
+            document.querySelectorAll('.css-5ojige, .css-1ieq8u5').forEach(el => el.style.display = 'none');
+        """)
+        # 장바구니 아이콘 스크롤 이동
+        cart_icon_el = self.driver.find_element(*self.CART_ICON)
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", cart_icon_el)
+        # JS로 직접 클릭
+        self.driver.execute_script("arguments[0].click();", cart_icon_el)
 
     def get_cart_count(self) -> int:
         """

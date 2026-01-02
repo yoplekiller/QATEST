@@ -13,7 +13,7 @@ from src.pages.kurly_product_page import KurlyProductPage
 @allure.feature("상품 관리")
 @allure.story("수량 조절")
 @allure.severity(allure.severity_level.NORMAL)
-class TestQuantityWithPOM:
+class TestQuantity:
     """
     상품 수량 조절 기능 테스트 클래스 (POM 적용)
     """
