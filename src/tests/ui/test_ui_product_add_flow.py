@@ -10,7 +10,7 @@ import pytest
 @allure.feature("E2E 플로우")
 @allure.story("로그인 후 상품 추가")
 @allure.severity(allure.severity_level.CRITICAL)
-class TestProductAddFlow:
+class TestGoodAddFlow:
     @allure.title("로그인 후 상품 추가 및 장바구니 확인")
     @allure.description("""
     **목적:** 로그인부터 장바구니 담기까지 전체 플로우가 정상 동작하는지 확인
@@ -26,7 +26,7 @@ class TestProductAddFlow:
 
     **예상 결과:** 전체 플로우가 성공적으로 완료됨
     """)
-    def test_full_product_add_flow(self, kurly_login_page, kurly_main_page, kurly_search_page, kurly_product_page, kurly_cart_page, test_credentials):
+    def test_full_good_add_flow(self, kurly_login_page, kurly_main_page, kurly_search_page, kurly_cart_page, test_credentials):
         """
         로그인 → 상품 검색 → 장바구니 추가 전체 플로우 테스트
         """

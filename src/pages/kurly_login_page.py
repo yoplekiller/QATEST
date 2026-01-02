@@ -30,7 +30,7 @@ class KurlyLoginPage(BasePage):
     USER_MENU = (By.XPATH, "//button[contains(@class,'css-')]")
 
     #로그인 실패시 표시되는 에러 메시지 요소
-    LOGIN_ACCOUNT_MISMATCH_MESSAGE = (By.XPATH, "//div[contains(text(),'아이디,비밀번호를 확인해주세요.')]")
+    LOGIN_ACCOUNT_MISMATCH_MESSAGE = (By.XPATH, "//div[@class='popup-content css-15yaaju e1k5padi2']")
     LOGIN_FAILURE_MESSAGE = (By.XPATH, "//div[contains(text(),'로그인에 실패하였습니다.')]")
     
     def __init__(self, driver):
@@ -87,8 +87,8 @@ class KurlyLoginPage(BasePage):
         Returns:
             bool: 에러 메시지 표시 여부
         """
-        return self.is_displayed(self.LOGIN_ACCOUNT_MISMATCH_MESSAGE)
-    
+        text = self.get_text(self.LOGIN_ACCOUNT_MISMATCH_MESSAGE)
+        return "아이디 또는 비밀번호가 일치하지 않습니다" in text if text else False
 
     def is_error_message_displayed(self) -> bool:
         """

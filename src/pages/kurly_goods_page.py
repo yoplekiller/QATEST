@@ -16,12 +16,12 @@ class KurlyGoodsPage(BasePage):
         - 장바구니 담기 (팝업 내)
     """
     #URL
-    GOODS_URL = "https://www.kurly.com/goods/{product_id}"
+    GOODS_URL = "https://www.kurly.com/goods/{good_id}"
 
     # Locators - 상품 상세 팝업
-    GOODS_DETAIL_POPUP = (By.XPATH, "//div[contains(@class,'product-detail-modal')]")
-    GOODS_NAME = (By.XPATH, "//h1[contains(@class,'product-name')]")
-    GOODS_PRICE = (By.XPATH, "//span[contains(@class,'product-price')]")
+    GOODS_DETAIL_POPUP = (By.XPATH, "//div[contains(@class,'good-detail-modal')]")
+    GOODS_NAME = (By.XPATH, "//h1[contains(@class,'good-name')]")
+    GOODS_PRICE = (By.XPATH, "//span[contains(@class,'good-price')]")
 
     # Locators - 수량 조절 (팝업 내)
     QUANTITY_INPUT = (By.XPATH, "//input[@type='number']")
@@ -84,7 +84,7 @@ class KurlyGoodsPage(BasePage):
         """
         return self.is_displayed(self.GOODS_DETAIL_POPUP, timeout=3)
 
-    def get_product_name(self) -> str:
+    def get_good_name(self) -> str:
         """
         팝업에 표시된 상품명 반환
 
@@ -93,7 +93,7 @@ class KurlyGoodsPage(BasePage):
         """
         return self.get_text(self.GOODS_NAME)
 
-    def get_product_price(self) -> str:
+    def get_good_price(self) -> str:
         """
         팝업에 표시된 상품 가격 반환
 

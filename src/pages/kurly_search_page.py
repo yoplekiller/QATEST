@@ -158,7 +158,7 @@ class KurlySearchPage(BasePage):
         Returns:
             List[WebElement]: 상품 요소 리스트
         """
-        return self.find_elements(self.PRODUCT_CARDS)
+        return self.find_elements(self.GOOD_CARDS)
 
     def click_nth_add_button(self, n: int) -> None:
         """

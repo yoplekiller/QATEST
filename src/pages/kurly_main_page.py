@@ -76,7 +76,6 @@ class KurlyMainPage(BasePage):
         self.enter_search_keyword(keyword)
         self.click_search_button()
 
-    
 
     def open_category_menu(self) -> None:
         """카테고리 메뉴 열기"""
@@ -130,7 +129,7 @@ class KurlyMainPage(BasePage):
                 return 0
         return 0
 
-    def get_product_count(self) -> int:
+    def get_goods_count(self) -> int:
         """
         현재 페이지에 표시된 상품 개수 반환
 
@@ -139,7 +138,7 @@ class KurlyMainPage(BasePage):
         """
         return self.get_elements_count(self.PRODUCT_ITEMS)
 
-    def get_products(self) -> List[WebElement]:
+    def get_goods(self) -> List[WebElement]:
         """
         현재 페이지의 상품 요소 목록 반환
         
@@ -148,7 +147,7 @@ class KurlyMainPage(BasePage):
         """
         return self.find_elements(self.PRODUCT_ITEMS)
 
-    def click_product(self, index: int = 0) -> None:
+    def click_good(self, index: int = 0) -> None:
         """
         상품 목록에서 특정 인덱스의 상품 클릭
 
@@ -167,7 +166,7 @@ class KurlyMainPage(BasePage):
                 raise NoSuchElementException("상품 목록이 비어있습니다")
             raise IndexError(f"인덱스 {index}가 범위 초과 (총 {products_count}개)")
 
-    def click_first_product(self) -> None:
+    def click_first_good(self) -> None:
         """
         상품 목록에서 첫 번째 상품 클릭
         

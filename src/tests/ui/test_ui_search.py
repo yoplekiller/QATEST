@@ -36,7 +36,7 @@ class TestSearch:
             
         # When: 상품 검색
         with allure.step(f"'{keyword}' 검색"):
-            kurly_main_page.search_product(keyword)
+            kurly_main_page.search_good(keyword)
 
         # Then: 검색 결과가 표시되어야 함
         with allure.step("검색 결과 확인"):
@@ -98,7 +98,7 @@ class TestSearch:
     **예상 결과:** 검색 결과가 없다는 메시지가 표시됨
     """)
     @pytest.mark.parametrize("keyword", ["xyzabc123", "!@#$%", "가나다라마바사아자차카타파하"])
-    def test_search_non_existent_product(self,kurly_main_page, kurly_search_page, keyword):
+    def test_search_non_existent_good(self,kurly_main_page, kurly_search_page, keyword):
         """
         존재하지 않는 상품명으로 검색 시 적절한 메시지가 표시되는지 확인
         """
@@ -107,7 +107,7 @@ class TestSearch:
 
         # When: 존재하지 않는 상품 검색
         with allure.step(f"'{keyword}' 검색"):
-            kurly_main_page.search_product(keyword)
+            kurly_main_page.search_good(keyword)
         # Then: "결과 없음" 메시지가 표시되거나 결과가 0개여야 함
         with allure.step("검색 결과 없음 확인"):
             kurly_search_page.take_screenshot(f"{keyword}_검색_결과_없음")
@@ -143,7 +143,7 @@ class TestSearch:
         """
         # Given: 메인 페이지에서 검색 실행
         kurly_main_page.open_main_page()
-        kurly_main_page.search_product("사과")
+        kurly_main_page.search_good("사과")
 
         # When: 첫 번째 검색 결과 클릭
         with allure.step("첫 번째 검색 결과 클릭"):
@@ -180,7 +180,7 @@ class TestSearch:
 
         # When: 특수문자 포함 검색어로 검색
         with allure.step(f"특수문자 포함 검색어 '{keyword}' 검색"):
-            kurly_main_page.search_product(keyword)
+            kurly_main_page.search_good(keyword)
 
         # Then: 에러 없이 검색이 완료되어야 함
         with allure.step("검색 처리 확인"):
