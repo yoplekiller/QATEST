@@ -21,7 +21,7 @@ def test_add_good_to_cart_flow(kurly_search_page, kurly_good_page):
 
     # 1. 검색 결과 페이지로 이동
     with allure.step("검색"):
-        kurly_search_page.search_good("과자")
+        kurly_search_page.search_goods("과자")
 
     # 2. 상품 추가 버튼 클릭
     with allure.step("세 번째 상품 담기 버튼 클릭"):
