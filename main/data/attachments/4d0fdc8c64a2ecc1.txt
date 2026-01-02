@@ -1,0 +1,4 @@
+2026-01-02 01:51:43 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-01-02 01:51:45 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-01-02 01:51:54 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath__a_contains_href_cart__20260102_015154.png
+2026-01-02 01:51:54 - test_automation - ERROR - 클릭 실패: ('xpath', "//a[contains(@href,'/cart')]")
