@@ -43,10 +43,10 @@ class TestLogin:
         with allure.step("로그인 실패 메시지 확인"):
             kurly_login_page.take_screenshot("로그인_실패_화면")
 
-            assert kurly_login_page.is_error_message_displayed(), \
+            assert kurly_login_page.is_mismatch_error_message_displayed(), \
                 "❌ 로그인 실패 메시지가 표시되지 않음"
 
-            error_text = kurly_login_page.get_error_message_text()
+            error_text = kurly_login_page.get_mismatch_error_message_text()
             allure.attach(
                 f"에러 메시지: {error_text}",
                 name="에러_메시지_내용",
