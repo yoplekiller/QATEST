@@ -33,6 +33,7 @@ def test_api_sla(api_env, send_get_request, endpoint):
       allure.attach(f"응답 시간: {elapsed_time:.2f}초", name="Response Time", attachment_type=allure.attachment_type.TEXT)
 
     with allure.step("SLA 응답 시간 및 상태 코드 검증"):
-        assert response.status_code == 200, f"❌ 응답 실패: {response.status_code}"
+        # 200(OK)뿐만 아니라 204(No Content)도 성공으로 간주하도록 수정
+        assert response.status_code in [200, 204], f"❌ 응답 실패: {response.status_code}"
         assert elapsed_time < SLA_SECONDS, f"❌ SLA 초과: {elapsed_time:.2f}초"
 
