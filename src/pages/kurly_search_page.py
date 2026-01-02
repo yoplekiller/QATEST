@@ -36,8 +36,8 @@ class KurlySearchPage(BasePage):
     # Locators - ALT 기능 (검색 결과 내 수량 조절 및 확인)
     QUANTITY_UP_BUTTON_IN_ALT = (By.XPATH, "//button[@aria-label='수량올리기']")
     QUANTITY_DOWN_BUTTON_IN_ALT = (By.XPATH, "//button[@aria-label='수량내리기']")
-    QUANTITY_DISPLAY_IN_ALT = (By.CSS_SELECTOR, "div.count")
-    ADD_TO_CART_BUTTONS_IN_ALT = (By.CSS_SELECTOR, ".css-ahkst0.e4nu7ef3")
+    QUANTITY_DISPLAY_IN_ALT = (By.CSS_SELECTOR, "div.count") # 수량 표시 요소 ALT 내
+    ADD_TO_CART_BUTTONS_IN_ALT = (By.CSS_SELECTOR, ".css-ahkst0.e4nu7ef3") # 장바구니 담기 버튼 ALT 내
     
 
     # Locators - 정렬
@@ -205,6 +205,10 @@ class KurlySearchPage(BasePage):
         """
         for _ in range(times):
             self.click(self.QUANTITY_DOWN_BUTTON_IN_ALT)
+        
+    def add_to_cart_in_alt(self) -> None:
+        """ALT에서 장바구니 담기 버튼 클릭"""
+        self.click(self.ADD_TO_CART_BUTTONS_IN_ALT)
 
     def click_first_good(self) -> None:
         """

@@ -4,6 +4,7 @@
 """
 import allure
 import pytest
+import time
 
 
 @pytest.mark.ui
@@ -37,6 +38,7 @@ class TestGoodAddFlow:
             kurly_login_page.enter_username(test_credentials['username'])
             kurly_login_page.enter_password(test_credentials['password'])
             kurly_login_page.click_login_button()
+            time.sleep(2)  # 로그인 처리 대기
 
         # Step 2: 상품 검색
         with allure.step("상품 검색: '과자'"):

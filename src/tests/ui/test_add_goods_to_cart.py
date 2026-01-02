@@ -32,12 +32,11 @@ def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_goods_p
 
     # 3. 수량 올리기
     with allure.step(f"수량 {increase_count}회 증가"):
-        kurly_search_page.increase_quantity_of_nth_good_in_alt(increase_count)
+        kurly_search_page.quantity_up_in_alt(increase_count)
 
     # 4. 수량 내리기
     with allure.step(f"수량 {decrease_count}회 감소"):
-        kurly_search_page.decrease_quantity_of_nth_good_in_alt(decrease_count)
-
+        kurly_search_page.quantity_down_in_alt(decrease_count)
     # 5. 장바구니 담기
     with allure.step("장바구니에 담기"):
         kurly_search_page.click_add_to_cart_in_alt()
