@@ -147,8 +147,8 @@ class TestSearch:
 
         # When: 첫 번째 검색 결과 클릭
         with allure.step("첫 번째 검색 결과 클릭"):
-            initial_url = kurly_main_page.get_current_url()
-            kurly_main_page.click_first_search_result()
+            initial_url = kurly_search_page.get_current_url()
+            kurly_search_page.click_first_good()
 
         # Then: 페이지가 변경되어야 함 (상세 페이지로 이동)
         with allure.step("상세 페이지 이동 확인"):

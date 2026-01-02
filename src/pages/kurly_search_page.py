@@ -137,9 +137,13 @@ class KurlySearchPage(BasePage):
         검색 결과 상품 개수 반환
 
         Returns:
-            int: 상품 개수
+            int: 상품 개수 (검색 결과가 없으면 0)
         """
-        return self.get_elements_count(self.GOODS_CARDS)
+        try:
+            return self.get_elements_count(self.GOODS_CARDS)
+        except Exception:
+            # 검색 결과가 없는 경우 0 반환
+            return 0
     
     def search_goods(self, keyword: str) -> None:
         """
@@ -158,7 +162,7 @@ class KurlySearchPage(BasePage):
         Returns:
             List[WebElement]: 상품 요소 리스트
         """
-        return self.find_elements(self.GOOD_CARDS)
+        return self.find_elements(self.GOODS_CARDS)
 
     def click_nth_add_button(self, n: int) -> None:
         """
