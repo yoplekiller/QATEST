@@ -12,6 +12,7 @@ from src.pages.kurly_main_page import KurlyMainPage
 from src.pages.kurly_login_page import KurlyLoginPage
 from src.pages.kurly_search_page import KurlySearchPage
 from src.pages.kurly_cart_page import KurlyCartPage
+from src.pages.kurly_product_page import KurlyProductPage
 from utils.api_utils import APIEnv
 
 load_dotenv()

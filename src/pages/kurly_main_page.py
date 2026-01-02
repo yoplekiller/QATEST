@@ -40,7 +40,7 @@ class KurlyMainPage(BasePage):
 
     # Locators - 장바구니
     CART_ICON = (By.CSS_SELECTOR, ".css-1o9e4kz")
-    CART_COUNT = (By.CSS_SELECTOR, ".css-5ojige")
+    CART_COUNT = (By.CSS_SELECTOR, ".css-5ojige") 
 
     # 팝업
     POPUP_CLOSE_BUTTON = (By.XPATH, "//button[contains(text(),'확인')]")

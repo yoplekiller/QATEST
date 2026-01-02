@@ -48,6 +48,11 @@ jobs:
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
           allure --version
 
+      - name: Set Test credentials
+        run: |
+          echo "KURLY_TEST_USER_EMAIL=${{ secrets.KURLY_TEST_USERNAME }}" >> $GITHUB_ENV
+          echo "KURLY_TEST_USER_PASSWORD=${{ secrets.KURLY_TEST_PASSWORD }}" >> $GITHUB_ENV
+
       - name: Run UI Tests
         run: |
           rm -rf allure-results-ui || true
