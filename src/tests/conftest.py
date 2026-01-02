@@ -12,7 +12,7 @@ from src.pages.kurly_main_page import KurlyMainPage
 from src.pages.kurly_login_page import KurlyLoginPage
 from src.pages.kurly_search_page import KurlySearchPage
 from src.pages.kurly_cart_page import KurlyCartPage
-from src.pages.kurly_product_page import KurlyProductPage
+from src.pages.kurly_goods_page import KurlyGoodsPage
 from utils.api_utils import APIEnv
 
 load_dotenv()
@@ -65,7 +65,6 @@ def kurly_main_page(driver) -> KurlyMainPage:
 @pytest.fixture
 def kurly_login_page(driver) -> KurlyLoginPage:
     """마켓컬리 로그인 페이지 객체"""
-
     return KurlyLoginPage(driver)
 
 @pytest.fixture
@@ -74,16 +73,14 @@ def kurly_search_page(driver):
     return KurlySearchPage(driver)
 
 @pytest.fixture
-def kurly_product_page(driver) -> KurlyProductPage:
+def kurly_goods_page(driver) -> KurlyGoodsPage:
     """마켓컬리 상품 페이지 객체"""
-    from src.pages.kurly_product_page import KurlyProductPage
-    return KurlyProductPage(driver)
+    return KurlyGoodsPage(driver)
 
 
 @pytest.fixture
 def kurly_cart_page(driver) -> KurlyCartPage:
     """마켓컬리 장바구니 페이지 객체"""
-    from src.pages.kurly_cart_page import KurlyCartPage
     return KurlyCartPage(driver)
 
 

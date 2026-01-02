@@ -25,8 +25,8 @@ class KurlySearchPage(BasePage):
 
     # Locators - 검색 결과
     RESULT_TITLE = (By.XPATH, "//*[contains(normalize-space(), '에 대한 검색결과')]")
-    PRODUCT_CARDS = (By.CSS_SELECTOR, "a[href*='/goods/']")
-    PRODUCT_LIST = (By.XPATH, "//a[@class='css-11geqae e1c07x4811']")  # 대체 선택자
+    GOODS_CARDS = (By.CSS_SELECTOR, "a[href*='/goods/']")
+    GOODS_LIST = (By.XPATH, "//a[@class='css-11geqae e1c07x4811']")  # 대체 선택자
     NO_RESULT_TEXT = (By.XPATH, "//*[contains(normalize-space(), '검색된 상품이 없습니다') or contains(normalize-space(),'없')]")
 
     # Locators - 장바구니 추가 버튼 (검색 결과 내)
@@ -89,6 +89,11 @@ class KurlySearchPage(BasePage):
         self.click(sort_locators[sort_type])
 
     def is_no_result_message_displayed(self) -> bool:
+        """
+        검색 결과가 없을 때 표시되는 메시지 확인
+        Returns:
+            bool: 메시지 표시 여부
+        """
         return self.is_displayed(self.NO_RESULT_TEXT)
 
     def is_sorted_correctly(self, sort_type: str) -> bool:
@@ -105,8 +110,8 @@ class KurlySearchPage(BasePage):
         self.sleep(1)
         
         # 상품이 있는지 확인
-        products = self.find_elements(self.PRODUCT_CARDS)
-        if len(products) == 0:
+        goods = self.find_elements(self.GOODS_CARDS)
+        if len(goods) == 0:
             return False
         
         # URL에 정렬 파라미터가 포함되었는지 확인
@@ -125,18 +130,18 @@ class KurlySearchPage(BasePage):
             return True  # 상품이 있으면 정렬이 적용된 것으로 간주
         
         expected_param = sort_params.get(sort_type, "")
-        return expected_param in current_url or len(products) > 0
+        return expected_param in current_url or len(goods) > 0
 
-    def get_product_count(self) -> int:
+    def get_goods_count(self) -> int:
         """
         검색 결과 상품 개수 반환
 
         Returns:
             int: 상품 개수
         """
-        return self.get_elements_count(self.PRODUCT_CARDS)
+        return self.get_elements_count(self.GOODS_CARDS)
     
-    def search_product(self, keyword: str) -> None:
+    def search_goods(self, keyword: str) -> None:
         """
         검색어로 검색 페이지 열기
 
@@ -146,7 +151,7 @@ class KurlySearchPage(BasePage):
         search_url = self.SEARCH_URL.format(keyword=keyword)
         self.open(search_url)
 
-    def get_products(self) -> List[WebElement]:
+    def get_goods(self) -> List[WebElement]:
         """
         검색 결과 상품 목록 요소 반환
 
@@ -176,3 +181,23 @@ class KurlySearchPage(BasePage):
             bool: 포함되어 있으면 True
         """
         return keyword in self.driver.page_source
+    
+    def quantity_up_in_alt(self, times: int =1) -> None:
+        """
+        ALT에서 수량 올리기
+
+        Args:
+            times: 클릭 횟수 (기본값: 1)
+        """
+        for _ in range(times):
+            self.click(self.QUANTITY_UP_BUTTON_IN_ALT)
+    
+    def quantity_down_in_alt(self, times: int =1) -> None:
+        """
+        ALT에서 수량 내리기
+
+        Args:
+            times: 클릭 횟수 (기본값: 1)
+        """
+        for _ in range(times):
+            self.click(self.QUANTITY_DOWN_BUTTON_IN_ALT)

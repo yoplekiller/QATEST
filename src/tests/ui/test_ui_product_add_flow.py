@@ -37,21 +37,22 @@ class TestProductAddFlow:
             kurly_login_page.enter_username(test_credentials['username'])
             kurly_login_page.enter_password(test_credentials['password'])
             kurly_login_page.click_login_button()
+
         # Step 2: 상품 검색
         with allure.step("상품 검색: '과자'"):
-            kurly_main_page.search_product("과자")
+            kurly_main_page.search_goods("과자")
 
         # Step 3: 상품 추가
         with allure.step("세 번째 상품 선택"):
             kurly_search_page.click_nth_add_button(3)
         # Step 4: 수량 조절
         with allure.step("수량 올리기"):
-            kurly_product_page.increase_quantity(1)
+            kurly_search_page.quantity_up_in_alt(1)
 
         # Step 5: 장바구니 담기
         with allure.step("장바구니 담기"):
-            kurly_product_page.click_add_to_cart_in_popup()
-        # Step 6: 장바구니로 이동
+            kurly_search_page.click_add_to_cart_in_popup()
+            
         with allure.step("장바구니 페이지로 이동"):
             kurly_cart_page.click_cart_icon()
 

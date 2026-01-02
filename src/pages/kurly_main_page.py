@@ -26,7 +26,7 @@ class KurlyMainPage(BasePage):
     # Locators - 검색
     SEARCH_INPUT = (By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
     SEARCH_BUTTON = (By.XPATH, "(//button[@id='submit'])[1]")
-    NO_RESULTS_MESSAGE = (By.XPATH, "//div[@class='popup-content css-15yaaju e1k5padi2']") 
+
 
     # Locators - 카테고리
     CATEGORY_MENU = (By.XPATH, "//button[contains(text(),'카테고리')]")
@@ -76,16 +76,6 @@ class KurlyMainPage(BasePage):
         self.enter_search_keyword(keyword)
         self.click_search_button()
 
-
-    def is_no_results_message_displayed(self) -> bool:
-        """
-        검색 결과가 없을 때 표시되는 메시지 확인
-
-        Returns:
-            bool: 메시지 표시 여부
-        """
-        return self.is_displayed(self.NO_RESULTS_MESSAGE, timeout=5)
-    
     
 
     def open_category_menu(self) -> None:

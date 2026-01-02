@@ -26,7 +26,7 @@ class TestSearch:
     **예상 결과:** 검색어와 관련된 상품이 1개 이상 표시됨
     """)
     @pytest.mark.parametrize("keyword", ["사과", "우유", "계란"])
-    def test_search_valid_keyword(self, kurly_main_page, keyword):
+    def test_search_valid_keyword(self, kurly_main_page, kurly_search_page, keyword):
         """
         유효한 검색어로 검색 시 결과가 표시되는지 확인
         """
@@ -40,9 +40,9 @@ class TestSearch:
 
         # Then: 검색 결과가 표시되어야 함
         with allure.step("검색 결과 확인"):
-            kurly_main_page.take_screenshot(f"{keyword}_검색_결과")
+            kurly_search_page.take_screenshot(f"{keyword}_검색_결과")
 
-            results_count = kurly_main_page.get_search_results_count()
+            results_count = kurly_search_page.get_goods_count()
             allure.attach(
                 f"검색 결과 개수: {results_count}",
                 name="검색_결과_개수",
@@ -82,7 +82,7 @@ class TestSearch:
 
             current_url = kurly_main_page.get_current_url()
             # URL이 변경되지 않았거나, 검색 결과 페이지에서 "결과 없음" 표시
-            assert initial_url == current_url or kurly_main_page.is_no_results_message_displayed(), \
+            assert initial_url == current_url or kurly_main_page.is_search_keyword_required_popup_displayed(), \
                 "❌ 빈 검색어에 대한 적절한 처리가 없습니다"
 
     @allure.title("존재하지 않는 상품명으로 검색")
@@ -98,23 +98,22 @@ class TestSearch:
     **예상 결과:** 검색 결과가 없다는 메시지가 표시됨
     """)
     @pytest.mark.parametrize("keyword", ["xyzabc123", "!@#$%", "가나다라마바사아자차카타파하"])
-    def test_search_non_existent_product(self, driver, keyword):
+    def test_search_non_existent_product(self,kurly_main_page, kurly_search_page, keyword):
         """
         존재하지 않는 상품명으로 검색 시 적절한 메시지가 표시되는지 확인
         """
         # Given: 메인 페이지로 이동
-        self.main_page.open_main_page()
+        kurly_main_page.open_main_page()
 
         # When: 존재하지 않는 상품 검색
         with allure.step(f"'{keyword}' 검색"):
-            self.main_page.search_product(keyword)
-
+            kurly_main_page.search_product(keyword)
         # Then: "결과 없음" 메시지가 표시되거나 결과가 0개여야 함
         with allure.step("검색 결과 없음 확인"):
-            self.main_page.take_screenshot(f"{keyword}_검색_결과_없음")
+            kurly_search_page.take_screenshot(f"{keyword}_검색_결과_없음")
 
-            results_count = self.main_page.get_search_results_count()
-            has_no_results_message = self.main_page.is_no_results_message_displayed()
+            results_count = kurly_search_page.get_goods_count()
+            has_no_results_message = kurly_search_page.is_no_result_message_displayed()
 
             allure.attach(
                 f"검색 결과 개수: {results_count}\n결과 없음 메시지: {has_no_results_message}",
@@ -138,7 +137,7 @@ class TestSearch:
 
     **예상 결과:** 상품 상세 페이지로 정상 이동
     """)
-    def test_search_and_click_first_result(self, kurly_main_page):
+    def test_search_and_click_first_result(self, kurly_main_page, kurly_search_page):
         """
         검색 후 첫 번째 결과를 클릭하여 상세 페이지로 이동
         """
@@ -153,9 +152,9 @@ class TestSearch:
 
         # Then: 페이지가 변경되어야 함 (상세 페이지로 이동)
         with allure.step("상세 페이지 이동 확인"):
-            kurly_main_page.take_screenshot("상품_상세_페이지")
+            kurly_search_page.take_screenshot("상품_상세_페이지")
 
-            current_url = kurly_main_page.get_current_url()
+            current_url = kurly_search_page.get_current_url()
             assert current_url != initial_url, \
                 "❌ 상품 클릭 후 페이지가 변경되지 않았습니다"
 
