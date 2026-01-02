@@ -73,9 +73,9 @@ class TestMoviePagination:
 
 
     @allure.title("잘못된 페이지 번호 - 0 이하")
-    @allure.description("페이지 번호가 0 이하일 때 에러 처리 또는 기본값으로 처리되는지 검증")
-    def test_pagination_invalid_page_zero(self, api_env, send_get_request):
-        """페이지 번호 0 요청 시 처리"""
+    @allure.description("페이지 번호가 0 이하일 때 에러 응답을 반환하는지 검증")
+    def test_pagination_invalid_page_zero(self, api_env):
+        """페이지 번호 0 요청 시 400 에러 반환"""
 
         API_KEY = api_env.api_key
 
@@ -86,19 +86,23 @@ class TestMoviePagination:
         }
 
         with allure.step("GET 요청: page=0"):
-            response = send_get_request(endpoint, params=params)
+            response = api_env.send_get_request_no_raise(endpoint, params=params)
+
+        with allure.step("400 에러 응답 검증"):
+            assert response.status_code == 400, f"예상: 400, 실제: {response.status_code}"
 
         data = response.json()
 
-        with allure.step("응답 검증 (페이지 1로 처리되거나 에러)"):
-            # TMDB API는 page=0을 page=1로 처리함
-            assert data["page"] >= 1, "페이지는 1 이상이어야 합니다"
+        with allure.step("에러 메시지 검증"):
+            assert data["success"] == False, "success 필드가 False여야 합니다"
+            assert "status_code" in data, "status_code 필드가 있어야 합니다"
+            assert "status_message" in data, "status_message 필드가 있어야 합니다"
 
 
     @allure.title("범위 초과 페이지 번호")
-    @allure.description("존재하지 않는 큰 페이지 번호 요청 시 처리 검증")
-    def test_pagination_out_of_range(self, api_env, send_get_request):
-        """범위를 초과한 페이지 번호 요청"""
+    @allure.description("페이지 번호가 500 초과일 때 에러 응답을 반환하는지 검증")
+    def test_pagination_out_of_range(self, api_env):
+        """범위를 초과한 페이지 번호(>500) 요청 시 400 에러 반환"""
 
         API_KEY = api_env.api_key
 
@@ -109,18 +113,14 @@ class TestMoviePagination:
         }
 
         with allure.step("GET 요청: page=999"):
-            response = send_get_request(endpoint, params=params)
+            response = api_env.send_get_request_no_raise(endpoint, params=params)
+
+        with allure.step("400 에러 응답 검증"):
+            assert response.status_code == 400, f"예상: 400, 실제: {response.status_code}"
 
         data = response.json()
 
-        with allure.step("응답 검증"):
-            # 범위 초과 시 빈 결과 또는 마지막 페이지 반환
-            assert response.status_code == 200, "상태 코드는 200이어야 합니다"
-            # 결과가 비어있거나 마지막 페이지를 반환
-            if data["results"]:
-                assert data["page"] <= data["total_pages"], \
-                    "페이지 번호는 총 페이지 수를 초과할 수 없습니다"
-
-        with allure.step("결과 항목 수 검증"):
-            assert "results" in data, "검색 실패"
-            assert len(data["results"]) > 0, "영화 결과가 없습니다"
+        with allure.step("에러 메시지 검증"):
+            assert data["success"] == False, "success 필드가 False여야 합니다"
+            assert data["status_code"] == 22, "status_code는 22(Invalid page)여야 합니다"
+            assert "Invalid page" in data["status_message"], "에러 메시지에 'Invalid page'가 포함되어야 합니다"

@@ -98,7 +98,7 @@ class TestSearch:
     **예상 결과:** 검색 결과가 없다는 메시지가 표시됨
     """)
     @pytest.mark.parametrize("keyword", ["xyzabc123", "!@#$%", "가나다라마바사아자차카타파하"])
-    def test_search_non_existent_product(self, drer, keyword):
+    def test_search_non_existent_product(self, driver, keyword):
         """
         존재하지 않는 상품명으로 검색 시 적절한 메시지가 표시되는지 확인
         """

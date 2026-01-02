@@ -28,7 +28,6 @@ class KurlySearchPage(BasePage):
     PRODUCT_CARDS = (By.CSS_SELECTOR, "a[href*='/goods/']")
     PRODUCT_LIST = (By.XPATH, "//a[@class='css-11geqae e1c07x4811']")  # 대체 선택자
     NO_RESULT_TEXT = (By.XPATH, "//*[contains(normalize-space(), '검색된 상품이 없습니다') or contains(normalize-space(),'없')]")
-    SEARCH_RESULTS = (By.XPATH, "//div[contains(@class,'product-list')]//a")
 
     # Locators - 장바구니 추가 버튼 (검색 결과 내)
     ADD_TO_CART_BUTTONS = (By.XPATH, "//a//div[2]//button[1]")
@@ -48,9 +47,6 @@ class KurlySearchPage(BasePage):
     SORT_LOW_PRICE = (By.XPATH, "//a[contains(text(),'낮은 가격순')]")
     SORT_HIGH_PRICE = (By.XPATH, "//a[contains(text(),'높은 가격순')]")
     SORT_BONUS = (By.XPATH, "//a[contains(text(),'혜택순')]")
-
-    # Locators - 메시지
-    SUCCESS_MESSAGE = (By.XPATH, "//*[contains(text(),'장바구니에 상품을 담았습니다.')]")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -180,113 +176,3 @@ class KurlySearchPage(BasePage):
             bool: 포함되어 있으면 True
         """
         return keyword in self.driver.page_source
-    
-    def get_search_results_count(self) -> int:
-        """
-        검색 결과 개수 반환
-        
-        Returns:
-            int: 검색 결과 상품 개수
-        """
-        results = self.find_elements(self.SEARCH_RESULTS)
-        return len(results)
-    
-    def get_search_results(self) -> List[WebElement]:
-        """
-        검색 결과 요소 목록 반환
-        
-        Returns:
-            List[WebElement]: 검색된 상품 요소 리스트
-        """
-        return self.find_elements(self.SEARCH_RESULTS)
-    
-    def click_search_result(self, index: int = 0) -> None:
-        """
-        검색 결과 중 특정 인덱스의 상품 클릭
-
-        Args:
-            index: 클릭할 상품 인덱스 (0부터 시작, 기본값=0)
-
-        Raises:
-            NoSuchElementException: 검색 결과가 없을 때
-            IndexError: 인덱스가 범위를 벗어났을 때
-        """
-        try:
-            self.click_element_by_index(self.SEARCH_RESULTS, index)
-        except IndexError as e:
-            results_count = self.get_elements_count(self.SEARCH_RESULTS)
-            if results_count == 0:
-                raise NoSuchElementException("검색 결과가 없습니다")
-            raise IndexError(f"인덱스 {index}가 범위 초과 (총 {results_count}개)")
-
-    def click_first_search_result(self) -> None:
-        """
-        검색 결과 중 첫 번째 상품 클릭
-        
-        Raises:
-            NoSuchElementException: 검색 결과가 없을 때
-        """
-        self.click_search_result(0)
-
-    def is_add_to_cart_success(self) -> bool:
-        """
-        장바구니 담기 성공 메시지 표시 여부 확인
-
-        Returns:
-            bool: 성공 메시지가 표시되면 True
-        """
-        return self.is_displayed(self.SUCCESS_MESSAGE, timeout=5)   
-
-    # =========================
-    #  상품 추가 ALT 기능
-    # =========================
-
-    def get_quantity_of_nth_product_in_alt(self, nth: int = 1) -> int:
-        """
-        n번째 상품의 선택된 수량 반환
-
-        Args:
-            n: 상품의 순번 (1부터 시작)
-
-        Returns:
-            int: 선택된 수량
-        """
-        quantity_display = (By.XPATH, f"(//div[@class='count'])[{nth}]")
-        quantity_text = self.get_text(quantity_display)
-        try:
-            return int(quantity_text)
-        except (ValueError, TypeError):
-            return 0
-        
-    def increase_quantity_of_nth_product_in_alt(self, nth: int = 1, times: int = 1) -> None:
-        """
-        n번째 상품의 수량 올리기
-
-        Args:
-            n: 상품의 순번 (1부터 시작)
-            times: 클릭 횟수 (기본값: 1)
-        """
-        for _ in range(times):
-            self.click(self.QUANTITY_UP_BUTTON_IN_ALT)
-    
-    def decrease_quantity_of_nth_product_in_alt(self, nth: int = 1, times: int = 1) -> None:
-        """
-        n번째 상품의 수량 내리기
-
-        Args:
-            n: 상품의 순번 (1부터 시작)
-            times: 클릭 횟수 (기본값: 1)
-        """
-        for _ in range(times):
-            self.click(self.QUANTITY_DOWN_BUTTON_IN_ALT)
-
-    def click_add_to_cart_in_alt(self) -> None:
-        """
-         ALT 내 장바구니 담기 버튼 클릭
-
-        Returns:
-            None
-            
-        """
-        add_to_cart_button = (self.ADD_TO_CART_BUTTONS_IN_ALT)
-        self.click(add_to_cart_button)

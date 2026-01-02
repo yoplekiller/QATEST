@@ -1,19 +1,20 @@
 import os
+import datetime
+from dotenv import load_dotenv
 import shutil
+import allure
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-from utils.api_utils import APIEnv
 from webdriver_manager.chrome import ChromeDriverManager
 from src.pages.kurly_main_page import KurlyMainPage
-from src.pages.kurly_cart_page import KurlyCartPage
 from src.pages.kurly_login_page import KurlyLoginPage
-from src.pages.kurly_product_page import KurlyProductPage
 from src.pages.kurly_search_page import KurlySearchPage
-from utils.config_utils import load_config
+from src.pages.kurly_cart_page import KurlyCartPage
+from utils.api_utils import APIEnv
 
-
+load_dotenv()
 
 # ✅ CI 환경 감지 (GitHub Actions, Docker)
 IS_CI = os.getenv("GITHUB_ACTIONS") == "true" or os.getenv("CI") == "true"
@@ -21,7 +22,7 @@ IS_CI = os.getenv("GITHUB_ACTIONS") == "true" or os.getenv("CI") == "true"
 @pytest.fixture(scope="module")
 def driver():
     options = Options()
-    # options.add_argument("--headless") # 헤드리스 모드
+    options.add_argument("--headless") # 헤드리스 모드
     options.add_argument("--disable-blink-features=AutomationControlled") # 자동화 감지 방지
     options.add_argument("--no-sandbox") # 샌드박스 비활성화
     options.add_argument("--disable-dev-shm-usage") # /dev/shm 사용 안함
@@ -50,9 +51,9 @@ def driver():
     yield driver
     driver.quit()
 
-# =================================
+# ========================================
 # Page Object Fixtures
-# =================================
+# ========================================
 
 @pytest.fixture
 def kurly_main_page(driver) -> KurlyMainPage:
@@ -63,26 +64,30 @@ def kurly_main_page(driver) -> KurlyMainPage:
 @pytest.fixture
 def kurly_login_page(driver) -> KurlyLoginPage:
     """마켓컬리 로그인 페이지 객체"""
+
     return KurlyLoginPage(driver)
 
 @pytest.fixture
-def kurly_search_page(driver) -> KurlySearchPage:
+def kurly_search_page(driver):
     """마켓컬리 검색 페이지 객체"""
     return KurlySearchPage(driver)
 
 @pytest.fixture
 def kurly_product_page(driver) -> KurlyProductPage:
     """마켓컬리 상품 페이지 객체"""
+    from src.pages.kurly_product_page import KurlyProductPage
     return KurlyProductPage(driver)
 
 
 @pytest.fixture
 def kurly_cart_page(driver) -> KurlyCartPage:
     """마켓컬리 장바구니 페이지 객체"""
+    from src.pages.kurly_cart_page import KurlyCartPage
     return KurlyCartPage(driver)
 
+
 @pytest.fixture
-def test_credentials() -> dict:
+def test_credentials():
     """테스트용 계정 정보 제공"""
     return {
         "username": os.getenv("KURLY_TEST_USERNAME", "testuser"),
@@ -90,36 +95,35 @@ def test_credentials() -> dict:
     }
 
 @pytest.fixture
-def test_credentials_invalid() -> dict:
+def test_credentials_invalid():
     """테스트용 잘못된 계정 정보 제공"""
     return {
-        "username": "invalid_user_12345",
-        "password": "wrong_password_67890"
+        "username": "invalid_user@example.com",
+        "password": "wrong_password123"
     }
-
 # =================================
 # API Fixtures
 # =================================
 
 # APIEnv 인스턴스 fixture
+
+
 @pytest.fixture(scope="session")
-def api_env() -> APIEnv:
+def api_env():
     """API 테스트용 환경 변수 및 APIEnv 인스턴스 제공"""
-    env = load_config()
     return APIEnv()
 
 
-# APIEnv 인스턴스의 메서드를 fixture로 제공
 @pytest.fixture
-def send_get_request(api_env) -> callable:
+def send_get_request(api_env):
     return api_env.send_get_request
 
 @pytest.fixture
-def send_post_request(api_env) -> callable:
+def send_post_request(api_env):
     return api_env.send_post_request
 
 @pytest.fixture
-def send_get_request_no_raise(api_env) -> callable:
+def send_get_request_no_raise(api_env):
     return api_env.send_get_request_no_raise
 
 
@@ -127,9 +131,9 @@ def send_get_request_no_raise(api_env) -> callable:
 # ALLURE Fixtures
 # =================================
 @pytest.fixture
-def allure_attach_response(api_env) -> callable:
+def allure_attach_response(api_env):
     return api_env.attach_response
 
 @pytest.fixture
-def attach_response(api_env) -> callable:
+def attach_response(api_env):
     return api_env.attach_response

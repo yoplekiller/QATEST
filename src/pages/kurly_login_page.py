@@ -24,10 +24,13 @@ class KurlyLoginPage(BasePage):
     USERNAME_INPUT = (By.XPATH, "//input[@placeholder='아이디를 입력해주세요']")
     PASSWORD_INPUT = (By.XPATH, "//input[@placeholder='비밀번호를 입력해주세요']")
     SUBMIT_BUTTON = (By.XPATH, "//button[@type='submit']")
-    ERROR_MESSAGE = (By.XPATH, "//div[@class='css-hj3ig8 e15sbxqa2']")
+  
 
     # 로그인 성공 후 표시되는 요소 (사용자 메뉴 등)
     USER_MENU = (By.XPATH, "//button[contains(@class,'css-')]")
+
+    #로그인 실패시 표시되는 에러 메시지 요소
+    LOGIN_FAILURE_MESSAGE = (By.XPATH, "//div[contains(text(),'아이디, 비밀번호를 확인해주세요.')]")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -83,18 +86,9 @@ class KurlyLoginPage(BasePage):
         Returns:
             bool: 에러 메시지 표시 여부
         """
-        return self.is_displayed(self.ERROR_MESSAGE)
+        return self.is_displayed(self.LOGIN_FAILURE_MESSAGE)
 
-    def get_error_message_text(self) -> str:
-        """
-        에러 메시지의 텍스트를 가져옴
 
-        Returns:
-            str: 에러 메시지 텍스트 (없으면 빈 문자열)
-        """
-        if self.is_error_message_displayed():
-            return self.get_text(self.ERROR_MESSAGE)
-        return ""
 
     def is_login_successful(self, timeout: int = 5) -> bool:
         """
