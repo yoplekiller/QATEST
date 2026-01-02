@@ -38,7 +38,7 @@ def test_all_sort_options(sort_type, kurly_main_page, kurly_search_page):
         kurly_main_page.open_main_page()
 
     with allure.step("상품 검색"):
-        kurly_main_page.search_product("과자")
+        kurly_main_page.search_goods("과자")
 
     with allure.step(f"정렬 옵션 '{sort_type}' 선택"):
         kurly_search_page.select_sort_option(sort_type)

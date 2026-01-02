@@ -205,8 +205,8 @@ class KurlySearchPage(BasePage):
     def click_first_good(self) -> None:
         """
         상품 목록에서 첫 번째 상품 클릭
-        
+
         Raises:
             NoSuchElementException: 상품이 없을 때
         """
-        self.click_product(0)
+        self.click_element_by_index(self.GOODS_CARDS, 0)

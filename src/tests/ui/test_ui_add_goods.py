@@ -10,7 +10,7 @@ import pytest
 @allure.feature("상품 관리")
 @allure.story("상품 추가")
 @allure.severity(allure.severity_level.CRITICAL)
-class TestAddProduct:
+class TestAddGoods:
 
     @allure.title("상품 검색 후 장바구니 추가 테스트")
     @allure.description("""
@@ -27,7 +27,7 @@ class TestAddProduct:
 
     **예상 결과:** 상품이 장바구니에 정상적으로 담김
     """)
-    def test_add_product_to_cart(self, kurly_main_page, kurly_search_page, kurly_product_page):
+    def test_add_goods_to_cart(self, kurly_main_page, kurly_search_page, kurly_goods_page):
         """
         상품 검색 후 장바구니에 추가하는 전체 플로우 테스트
         """
@@ -36,18 +36,18 @@ class TestAddProduct:
             kurly_main_page.open_main_page()
 
         with allure.step("'과자' 검색"):
-            kurly_main_page.search_product("과자")
+            kurly_main_page.search_goods("과자")
 
         # When: 상품 추가 플로우 실행
         with allure.step("세 번째 상품의 장바구니 추가 버튼 클릭"):
             kurly_search_page.click_nth_add_button(3)
 
         with allure.step("수량 조절 (2회 증가, 2회 감소)"):
-            kurly_product_page.increase_quantity(2)
-            kurly_product_page.decrease_quantity(2)
+            kurly_goods_page.increase_quantity(2)
+            kurly_goods_page.decrease_quantity(2)
 
         with allure.step("장바구니에 담기"):
-            kurly_product_page.click_add_to_cart_in_popup()
+            kurly_goods_page.click_add_to_cart_in_popup()
 
         # Then: 검색 결과 및 추가 성공 확인
         with allure.step("결과 확인"):

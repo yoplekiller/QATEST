@@ -19,7 +19,7 @@ class TestCartManagement:
               kurly_main_page.open_main_page()
 
           with allure.step("'과자' 검색"):
-              kurly_main_page.search_product("과자")
+              kurly_main_page.search_goods("과자")
 
           items_to_add = 3
 
@@ -63,7 +63,7 @@ class TestCartManagement:
 
         with allure.step("메인 페이지 접속 및 검색"):
             kurly_main_page.open_main_page()
-            kurly_main_page.search_product("과자")
+            kurly_main_page.search_goods("과자")
 
         with allure.step("상품을 장바구니에 담기"):
             kurly_search_page.click_nth_add_button(n=1)

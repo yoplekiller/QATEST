@@ -161,9 +161,9 @@ class KurlyMainPage(BasePage):
             IndexError: 인덱스가 범위를 벗어났을 때
         """
         try:
-            self.click_element_by_index(self.PRODUCT_ITEMS, index)
+            self.click_element_by_index(self.GOODS_ITEMS, index)
         except IndexError as e:
-            products_count = self.get_elements_count(self.PRODUCT_ITEMS)
+            products_count = self.get_elements_count(self.GOODS_ITEMS)
             if products_count == 0:
                 raise NoSuchElementException("상품 목록이 비어있습니다")
             raise IndexError(f"인덱스 {index}가 범위 초과 (총 {products_count}개)")
