@@ -39,7 +39,7 @@ def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_goods_p
         kurly_search_page.quantity_down_in_alt(decrease_count)
     # 5. 장바구니 담기
     with allure.step("장바구니에 담기"):
-        kurly_search_page.click_add_to_cart_in_alt()
+        kurly_search_page.add_to_cart_in_alt()
 
     # 6. 성공 검증
     with allure.step("장바구니 담기 성공 확인"):

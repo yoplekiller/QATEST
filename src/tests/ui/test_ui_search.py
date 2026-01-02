@@ -142,8 +142,11 @@ class TestSearch:
         검색 후 첫 번째 결과를 클릭하여 상세 페이지로 이동
         """
         # Given: 메인 페이지에서 검색 실행
-        kurly_main_page.open_main_page()
-        kurly_main_page.search_goods("사과")
+        with allure.step("메인 페이지에서 검색"):
+            kurly_main_page.open_main_page()
+            kurly_main_page.search_goods("사과")
+            # 검색 페이지로 이동 대기
+            kurly_search_page.wait_until_url_contains("/search", timeout=10)
 
         # When: 첫 번째 검색 결과 클릭
         with allure.step("첫 번째 검색 결과 클릭"):
