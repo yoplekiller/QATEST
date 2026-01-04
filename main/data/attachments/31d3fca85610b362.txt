@@ -1,0 +1,3 @@
+2026-01-04 08:12:44 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-01-04 08:12:45 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-01-04 08:12:45 - test_automation - INFO - 스크린샷 저장: screenshots/빈_검색어_검색_20260104_081245.png
