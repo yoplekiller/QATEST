@@ -17,6 +17,10 @@ concurrency:  # 동시에 여러 개의 배포 실행 방지
   group: gh-pages-deploy
   cancel-in-progress: true
 
+env:
+  SAFE_BRANCH: ${{ github.ref_name }}
+  BRANCH_NAME: ${{ github.ref_name }}
+
 jobs:
   ui_tests:
     runs-on: ubuntu-latest
@@ -192,6 +196,9 @@ jobs:
           # 브랜치별 경로에 리포트 생성
           allure generate allure-results -o allure-report/${{ env.SAFE_BRANCH }} --clean
 
+      - name: Set Last Updated Time
+        run: echo "LAST_UPDATED=$(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_ENV
+
 
       # ALLURE INDEX PAGE 생성
       - name: Create Index Page
@@ -302,7 +309,7 @@ jobs:
                   </ul>
 
                   <div class="footer">
-                      <p>Last updated: $(date '+%Y-%m-%d %H:%M:%S UTC')</p>
+                      <p>Last updated: ${{ env.LAST_UPDATED }}</p>
                       <p>Branch: ${{ env.BRANCH_NAME }} | Run: <a href="https://github.com/yoplekiller/QATEST/actions/runs/${{ github.run_id }}" target="_blank">#${{ github.run_id }}</a></p>
                   </div>
               </div>

@@ -38,7 +38,7 @@ class KurlyCartPage(BasePage):
     EMPTY_CART_MESSAGE = (By.XPATH, "//*[contains(text(),'장바구니가 비어')]")
 
     # Locators - 수량 확인
-    CART_ITEM_COUNT = (By.CSS_SELECTOR, "p.kpds_97oqoup")
+    CART_ITEM_COUNT = (By.XPATH, "//p[@class='kpds_97oqoup kpds_97oqouw kpds_97oqou6 kpds_ldmw177h kpds_97oqou1a kpds_97oqouk kpds_ldmw177x kpds_97oqou12 kpds_97oqouc kpds_ldmw177p kpds_126coma4 kpds_126coma7 kpds_126coma8 kpds_126coma3 kpds_ldmw171a0']")
     CART_QUANTITY_DISPLAY = (By.CSS_SELECTOR, "p.kpds_97oqoup")
 
     def __init__(self, driver):
@@ -91,7 +91,7 @@ class KurlyCartPage(BasePage):
         Returns:
             int: 장바구니 상품 종류 개수
         """
-        element = self.find_element(self.CART_ITEM_COUNT, timeout=0.5)
+        element = self.get_text(self.CART_ITEM_COUNT, timeout=0.5)
         text = element.text  # 예: '전체선택 */*'
         try:
             # '*/ *'에서 뒤의 숫자만 추출
