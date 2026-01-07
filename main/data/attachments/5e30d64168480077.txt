@@ -1,0 +1,4 @@
+2026-01-07 00:34:04 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-01-07 00:34:06 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-01-07 00:34:12 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__css_selector___.css-ahkst0.e4nu7ef3__20260107_003412.png
+2026-01-07 00:34:12 - test_automation - ERROR - 클릭 실패: ('css selector', '.css-ahkst0.e4nu7ef3')
