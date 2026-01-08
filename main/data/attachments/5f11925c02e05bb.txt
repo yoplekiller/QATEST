@@ -1,0 +1,4 @@
+2026-01-08 00:34:52 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-01-08 00:34:54 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-01-08 00:34:58 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath__p_class_kpds_97oqoup_kpds_97oqouw_kpds_97oqou6_kpds_ldmw177h_kpds_97oqou1a_kpds_97oqouk_kpds_20260108_003458.png
+2026-01-08 00:34:58 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "//p[@class='kpds_97oqoup kpds_97oqouw kpds_97oqou6 kpds_ldmw177h kpds_97oqou1a kpds_97oqouk kpds_ldmw177x kpds_97oqou12 kpds_97oqouc kpds_ldmw177p kpds_126coma4 kpds_126coma7 kpds_126coma8 kpds_126coma3 kpds_ldmw171a0']")
