@@ -11,7 +11,7 @@
 
 Production-ready QA test automation portfolio built with Python and Selenium. Implements **Page Object Model (POM) pattern** to maximize reusability and maintainability.
 
-Includes UI/Mobile tests for the live Kurly e-commerce website and API tests using The Movie Database (TMDB) API.
+Includes UI tests for the live Kurly e-commerce website and API tests using The Movie Database (TMDB) API.
 
 ### 🎯 **Key Features**
 - ✅ **POM Pattern**: Industry-standard test architecture
@@ -27,7 +27,6 @@ Includes UI/Mobile tests for the live Kurly e-commerce website and API tests usi
 - **Python 3.11+**: Test automation language
 - **Selenium 4.27**: Web UI automation
 - **Pytest 8.3**: Test execution and management
-- **Appium**: Android mobile testing
 
 ### Reporting & Monitoring
 - **Allure Report**: Visual test reports
@@ -101,9 +100,8 @@ TEST_ENV=dev
 pytest --alluredir=./allure-results
 
 # Run specific test suite
-pytest src/tests/api_tests --alluredir=./allure-results  # API tests
-pytest src/tests/ui_tests --alluredir=./allure-results   # UI tests
-pytest src/tests/mobile_tests --alluredir=./allure-results  # Mobile tests
+pytest src/tests/api --alluredir=./allure-results  # API tests
+pytest src/tests/ui --alluredir=./allure-results   # UI tests
 
 # View Allure report
 allure serve ./allure-results
@@ -127,17 +125,17 @@ graph LR
 
 ## 🧪 Test Coverage
 
-### 🛒 **Kurly UI Tests (10 tests)**
+### 🛒 **Kurly UI Tests (26 tests)**
 
 | Test Category | Validation | File |
 |--------------|------------|------|
 | **Login** | Valid/Invalid login, empty input handling | `test_ui_login.py` |
 | **Product Search** | Normal search, empty search, special characters | `test_ui_search.py` |
 | **Shopping Cart** | Cart access and verification | `test_ui_cart.py` |
-| **Add Product** | Add to cart → quantity adjustment → cart | `test_ui_add_product.py` |
-| **E2E Flow** | Login → search → add → cart | `test_ui_product_add_flow.py` |
+| **Add to Cart** | Add to cart → quantity adjustment → cart | `test_ui_add_goods.py` |
+| **E2E Flow** | Login → search → add → cart | `test_ui_goods_add_flow.py` |
 
-### 🎬 **TMDB API Tests (9 tests)**
+### 🎬 **TMDB API Tests (20 tests)**
 
 | Test Category | Validation | File |
 |--------------|------------|------|
@@ -147,14 +145,6 @@ graph LR
 | **SLA Testing** | Response time validation | `test_api_sla.py` |
 | **Error Handling** | Invalid API key, error scenarios | `test_movie_invalid_api_key.py` |
 | **Data Consistency** | Genre inclusion, release date consistency | `test_movie_genre_inclusion.py` |
-
-### 📱 **Mobile Tests (3 tests)**
-
-| Test Category | Validation | File |
-|--------------|------------|------|
-| **Best Products** | Best menu access | `test_best_product.py` |
-| **Low Price** | Low price filter | `test_low_price.py` |
-| **New Products** | New product display | `test_new_product.py` |
 
 ## 🏗️ Project Structure
 
@@ -166,7 +156,7 @@ QATEST/
 │   │   ├── kurly_login_page.py     # Login page
 │   │   ├── kurly_main_page.py      # Main page
 │   │   ├── kurly_cart_page.py      # Cart page
-│   │   └── kurly_product_page.py   # Product page
+│   │   └── kurly_goods_page.py     # Product details page
 │   │
 │   ├── config/             # Configuration files
 │   │   └── config.yaml
@@ -175,21 +165,20 @@ QATEST/
 │   │   └── generate_excel_report.py
 │   │
 │   └── tests/              # Test cases
-│       ├── api_tests/      # API tests (9 tests)
-│       ├── ui_tests/       # UI tests (10 tests)
-│       └── mobile_tests/   # Mobile tests (3 tests)
+│       ├── api/            # API tests (20 tests)
+│       └── ui/             # UI tests (26 tests)
 │
-├── utils/                  # Utility functions
+├── utils/                  # Utility functions (11 files)
 │   ├── api_utils.py
 │   ├── config_utils.py
 │   ├── logger.py           # Logging system
-│   └── utilities.py
-│
-├── docs/                   # Documentation
-│   ├── POM_GUIDE.md                    # POM guide
-│   ├── POM_STRUCTURE_EXAMPLE.md        # POM structure examples
-│   ├── PRODUCTION_READY_CHECKLIST.md   # Production readiness checklist
-│   └── INTERVIEW_PREP.md               # Interview preparation guide
+│   ├── utilities.py
+│   ├── data_loader.py
+│   ├── csv_utils.py
+│   ├── send_slack_result.py
+│   ├── parse_test_result.py
+│   ├── read_movie_data.py
+│   └── read_product_data.py
 │
 ├── .github/
 │   └── workflows/
@@ -246,16 +235,17 @@ logger.info("Test started")
 logger.error("Error occurred", exc_info=True)
 ```
 
-### 🔮 **Future Plans (Roadmap)**
+### 🔮 **Future Plans**
 
 - [ ] OWASP ZAP security testing integration
-- [ ] Expand API test cases (negative scenarios)
 - [ ] Docker environment optimization
 - [ ] Auto-create issues on test failure (GitHub Issues/Jira)
-- [ ] Additional mobile test cases
 - [ ] SQL-based database automation testing
 - [ ] Performance testing (Locust/K6)
-- [ ] Visual regression testing
+- [ ] Visual regression testing (Percy/Applitools)
+- [ ] Cross-browser testing (Firefox, Safari)
+- [ ] Playwright automation scripts (TypeScript)
+- [ ] Appium mobile automation scripts
 
 ## 📹 Demo Videos
 
@@ -272,16 +262,8 @@ logger.error("Error occurred", exc_info=True)
 
 ## 📚 Additional Documentation
 
-### Getting Started
 - **[SETUP.md](./SETUP.md)**: Complete setup guide
-
-### POM Pattern Learning
-- **[POM_GUIDE.md](./docs/POM_GUIDE.md)**: Page Object Model guide
-- **[POM_STRUCTURE_EXAMPLE.md](./docs/POM_STRUCTURE_EXAMPLE.md)**: POM structure examples
-
-### Production Readiness
-- **[PRODUCTION_READY_CHECKLIST.md](./docs/PRODUCTION_READY_CHECKLIST.md)**: Production readiness checklist
-- **[INTERVIEW_PREP.md](./docs/INTERVIEW_PREP.md)**: 🔥 Interview preparation guide (Essential!)
+- **[README.md](./README.md)**: Korean documentation
 
 ## 🤝 Contributing
 

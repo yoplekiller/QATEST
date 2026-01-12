@@ -7,8 +7,6 @@ on:
   push:
     branches:
       - main
-      - feature/*
-      - temp/*
   workflow_dispatch:
   schedule:
     - cron: '0 */4 * * *' # 실행 시간 설정(UTC)

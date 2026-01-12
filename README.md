@@ -9,7 +9,7 @@
 
 ## 💡 프로젝트 요약
 
-QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으로 **Page Object Model (POM) 패턴**을 적용하여 재사용성과 유지보수성이 좋게 코드를 작성하였습니다.
+QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으로 **Page Object Model (POM) 패턴**을 적용하여 재사용성과 유지보수성이 용이하도록 코드를 작성하였습니다.
 
 실제 운영 중인 **마켓컬리 웹사이트**를 대상으로 UI 테스트를 구현했으며, **TMDB API**를 활용한 API 테스트를 구현하였습니다.
 
@@ -22,9 +22,10 @@ QA 테스트 자동화 포트폴리오입니다. Python과 Selenium을 기반으
 - ✅ **영문 문서**: 한국어/영문 문서 지원
 
 ### 📊 프로젝트 통계
-- **총 테스트 케이스**: 21개 (UI: 11개 파일 | API: 10개 파일)
-- **Page Objects**: 6개 (약 1,141줄)
-- **Utilities**: 10개 (약 474줄)
+- **총 테스트 케이스**: 46개 테스트 함수 (UI: 26개 | API: 20개)
+- **테스트 파일**: 21개 (UI: 11개 파일 | API: 10개 파일)
+- **Page Objects**: 6개 (약 1,180줄)
+- **Utilities**: 11개 (약 578줄)
 - **CI/CD**: GitHub Actions (자동 테스트 + Allure Report 배포)
 
 ## 🧰 Tech Stack
@@ -155,21 +156,21 @@ graph LR
 
 ### CI/CD 실행 조건
 - **Pull Request**: `main`, `develop` 브랜치
-- **Push**: `feature/*`, `temp/*` 브랜치
-- **스케줄**: 매 8시간마다 자동 실행
+- **Push**: `main` 브랜치
+- **스케줄**: 매 4시간마다 자동 실행
 - **수동**: GitHub Actions 탭에서 수동 실행 가능
 
 ## 🧪 테스트 커버리지
 
-### 🛒 마켓컬리 UI 테스트 (19개)
+### 🛒 마켓컬리 UI 테스트 (26개)
 
 | 테스트 카테고리 | 검증 내용 | 파일 | 테스트 수 |
 |--------------|---------|------|----------|
 | **로그인** | 유효/무효 로그인, 빈 입력 처리, 페이지 요소 확인 | `test_ui_login.py` | 3개 |
 | **상품 검색** | 정상 검색, 빈 검색, 특수문자 검색, 검색결과 클릭, 존재하지 않는 상품 | `test_ui_search.py` 외 | 7개 |
 | **장바구니** | 장바구니 접근, 상품 추가, 여러 상품 추가, 상품 제거 | `test_ui_cart.py` 외 | 4개 |
-| **상품 추가** | 상품 담기, 상품 추가 플로우 | `test_ui_add_product.py` 외 | 2개 |
-| **E2E 플로우** | 로그인 → 검색 → 추가 → 장바구니 | `test_ui_product_add_flow.py` | 1개 |
+| **상품 추가** | 상품 담기, 상품 추가 플로우 | `test_ui_add_goods.py` 외 | 2개 |
+| **E2E 플로우** | 로그인 → 검색 → 추가 → 장바구니 | `test_ui_goods_add_flow.py` | 1개 |
 | **수량 조절** | 수량 증가/감소 버튼 테스트 | `test_ui_quantity.py` | 1개 |
 | **정렬 기능** | 상품 정렬 버튼 테스트 (추천순, 신상품순, 판매량순, 낮은가격순, 높은가격순, 혜택순) | `test_ui_sort_button.py` | 1개 |
 
@@ -197,12 +198,12 @@ graph LR
 ```
 QATEST/
 ├── src/
-│   ├── pages/                      # Page Object Model (1,141줄)
+│   ├── pages/                      # Page Object Model (1,180줄)
 │   │   ├── base_page.py           # 기본 페이지 클래스 (모든 페이지의 부모)
 │   │   ├── kurly_login_page.py    # 로그인 페이지
 │   │   ├── kurly_main_page.py     # 메인 페이지 (검색 입력, 카테고리)
 │   │   ├── kurly_search_page.py   # 검색 결과 페이지 (상품 목록, 정렬)
-│   │   ├── kurly_product_page.py  # 상품 상세 팝업 (수량 조절, 장바구니 담기)
+│   │   ├── kurly_goods_page.py    # 상품 상세 팝업 (수량 조절, 장바구니 담기)
 │   │   └── kurly_cart_page.py     # 장바구니 페이지
 │   │
 │   ├── config/                     # 설정 파일
@@ -220,21 +221,26 @@ QATEST/
 │       │   ├── test_movie_details.py
 │       │   ├── test_api_sla.py
 │       │   └── ... (5개 더)
-│       └── ui/                    # UI 테스트 (11개)
+│       └── ui/                    # UI 테스트 (11개 파일, 26개 함수)
 │           ├── test_ui_login.py
 │           ├── test_ui_search.py
 │           ├── test_ui_cart.py
-│           ├── test_ui_add_product.py
-│           └── ... (7개 더)
+│           ├── test_ui_add_goods.py
+│           ├── test_ui_goods_add_flow.py
+│           ├── test_add_goods_to_cart.py
+│           └── ... (5개 더)
 │
-├── utils/                          # 유틸리티 (442줄)
+├── utils/                          # 유틸리티 (11개, 578줄)
 │   ├── logger.py                  # 로깅 시스템
 │   ├── api_utils.py               # API 요청 래퍼
 │   ├── config_utils.py            # 환경 설정 로더
 │   ├── utilities.py               # 기타 헬퍼 함수
 │   ├── data_loader.py             # 테스트 데이터 로딩
 │   ├── csv_utils.py               # CSV 처리
-│   └── send_slack_result.py       # Slack 알림
+│   ├── send_slack_result.py       # Slack 알림
+│   ├── parse_test_result.py       # 테스트 결과 파싱
+│   ├── read_movie_data.py         # 영화 데이터 읽기
+│   └── read_product_data.py       # 상품 데이터 읽기
 │
 ├── testdata/                       # 테스트 데이터
 │   ├── genre_expectations.csv
@@ -270,8 +276,8 @@ class KurlySearchPage(BasePage):
         nth_add_button = (By.XPATH, f"(//a//div[2]//button[1])[{n}]")
         self.click(nth_add_button)
 
-# src/pages/kurly_product_page.py - 상품 상세 팝업
-class KurlyProductPage(BasePage):
+# src/pages/kurly_goods_page.py - 상품 상세 팝업
+class KurlyGoodsPage(BasePage):
     """상품 상세 팝업: 수량 조절, 장바구니 담기"""
 
     def increase_quantity(self, times: int = 1):
@@ -280,15 +286,15 @@ class KurlyProductPage(BasePage):
             self.click(self.QUANTITY_UP_BUTTON)
 
 # 테스트에서 페이지별 역할 분리
-def test_add_product_to_cart(kurly_search_page, kurly_product_page):
-    kurly_search_page.click_third_product_add_button()  # 검색 결과에서 선택
-    kurly_product_page.increase_quantity(2)             # 팝업에서 수량 조절
-    kurly_product_page.click_add_to_cart_in_popup()     # 팝업에서 담기
+def test_add_goods_to_cart(kurly_search_page, kurly_goods_page):
+    kurly_search_page.click_nth_add_button(2)           # 검색 결과에서 선택
+    kurly_goods_page.increase_quantity(2)               # 팝업에서 수량 조절
+    kurly_goods_page.click_add_to_cart_in_popup()       # 팝업에서 담기
 ```
 
 **페이지별 책임 분리:**
 - `KurlySearchPage`: 검색 결과 페이지 (URL: `/search`)
-- `KurlyProductPage`: 상품 상세 팝업 (수량 조절, 장바구니 담기)
+- `KurlyGoodsPage`: 상품 상세 팝업 (수량 조절, 장바구니 담기)
 
 ### 2. BasePage - 공통 메서드
 
@@ -312,7 +318,7 @@ class BasePage:
 
 ### 3. 환경 설정 관리
 
-환경변수와 YAML 파일을 조합한 유연한 설정:
+환경변수와 YAML 파일을 조합한 설정:
 
 ```python
 # utils/config_utils.py
@@ -371,7 +377,7 @@ on:
   pull_request:
     branches: [main, develop]
   schedule:
-    - cron: '0 */8 * * *'  # 매 8시간
+    - cron: '0 */4 * * *'  # 매 4시간
 
 jobs:
   ui_tests:
@@ -430,64 +436,56 @@ venv/
 - **[SETUP.md](./SETUP.md)**: 환경 설정 완벽 가이드
 - **[README.en.md](./README.en.md)**: English Documentation
 
-### Git 정리 및 리팩토링
-- **[GIT_CLEANUP_COMPLETED_20251222.md](./GIT_CLEANUP_COMPLETED_20251222.md)**: Git 클린업 작업 보고서
-- **[REFACTORING_LOG.md](./REFACTORING_LOG.md)**: 리팩토링 이력
 
 ## 🔮 향후 계획 (Roadmap)
 
 ### 단기 개선 (진행 중)
 - [ ] API Negative 테스트 케이스 추가 (잘못된 API 키, 404 에러 등)
-- [ ] 크로스 브라우저 테스트 (Firefox, Safari)
 
 ### 중장기 학습 목표
 - [ ] **Jenkins CI/CD 파이프라인** 구축 및 Allure 히스토리 관리
 - [ ] **Docker** 기반 테스트 환경 격리
-- [ ] 성능 테스트 추가 (Locust/K6)
-- [ ] Visual Regression 테스트 (Percy/Applitools)
 - [ ] 테스트 실패 시 자동 이슈 생성 (GitHub Issues)
+- [ ] Playwright로 자동화 테스트 스크립트 구현
+- [ ] Appium을 활용하여 앱 자동화 테스트 스크립트 구현
 
 **현재 학습 중:**
-- Jenkins 공식 문서 및 튜토리얼
-- Allure Server 구축 방법
-- Docker를 활용한 테스트 컨테이너화
+- TypeScript를 활용하여 Playwright로 자동화 스크립트 구현 중
+- Appium을 활용하여 앱 자동화 스크립트 구현 중
+- Docker 기본 개념 학습 중
 
 ## 💬 프로젝트 노트
 
 ### 커밋 히스토리에 대하여
 
-이 프로젝트의 커밋 히스토리는 2025년 12월 22일에 정리되었습니다.
+이 프로젝트의 커밋 히스토리는 2026년 01월 12일에 정리되었습니다.
 
-- **초기 개발**: 2025년 11월 ~ 12월 (실제 코드 작성 기간)
-- **히스토리 정리**: 2025년 12월 22일 (포트폴리오 개선을 위한 커밋 재구성)
+- **초기 개발**: 2025년 07월 ~ 12월 (실제 코드 작성 기간)
+- **히스토리 정리**: 2026년 01월 12일 (포트폴리오 개선을 위한 커밋 재구성)
 
 초기 개발 시 커밋 관리가 미흡하여 "fix fix fix..." 형태의 커밋이 많았습니다.
-포트폴리오 품질 향상을 위해 의미 있는 9개의 커밋으로 재구성했습니다.
+포트폴리오 품질 향상을 위해 Claude의 도움을 받아 의미 있는 9개의 커밋으로 재구성했습니다.
 
 **배운 점**: 처음부터 명확한 커밋 메시지와 체계적인 커밋 관리의 중요성을 깨달았습니다.
 
 ### 학습 및 개선 여정
 
-**초기 버전 (2024.11):**
+**초기 버전 (2025.07):**
 - 기본적인 테스트 케이스 작성
 - POM 패턴 없이 개발
 
-**리팩토링 (2024.12):**
+**리팩토링 (2025.12):**
 - **Page Object Model 패턴 적용** → 코드 재사용성 85% 향상
 - BasePage 클래스 구현 (361줄)
 - Explicit Wait 전략 도입
 - CI/CD 파이프라인 구축 (GitHub Actions)
 - Allure Report 자동 배포
 
-**현재 학습 중:**
-- Jenkins 기반 CI/CD (실무 표준 학습)
-- Docker 테스트 환경 (환경 격리)
-- 성능 테스트 (Locust)
 
 **배운 점:**
-1. **설계 패턴의 중요성**: POM 적용 후 유지보수 시간 50% 단축
-2. **CI/CD 자동화 가치**: 수동 테스트 시간 80% 절감
-3. **문서화의 힘**: README 개선 후 프로젝트 이해도 향상
+1. **설계 패턴의 중요성**: POM 적용 후 유지보수 시간 단축
+2. **CI/CD 자동화 가치**: 수동 테스트 시간 단축 및 테스트 자동화로 인한 테스트 편의성 증가
+3. **문서화의 힘**: README 개선 & AI 활용 후 작업 내용 문서화를 통한 프로젝트 이해도 향상
 4. **지속적 개선**: 실무 패턴을 학습하고 적용하는 과정의 중요성
 
 
