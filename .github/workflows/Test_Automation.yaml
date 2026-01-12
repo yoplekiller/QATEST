@@ -298,12 +298,7 @@ jobs:
                               <span class="branch-name">develop</span>
                           </a>
                       </li>
-                      <li class="branch-item">
-                          <a href="./${{ env.SAFE_BRANCH }}/" class="branch-link">
-                              <span class="branch-icon">🚀</span>
-                              <span class="branch-name">${{ env.BRANCH_NAME }}</span>
-                          </a>
-                      </li>
+                      <!-- Add more branches as needed -->
                   </ul>
 
                   <div class="footer">

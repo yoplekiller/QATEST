@@ -160,6 +160,13 @@ graph LR
 - **스케줄**: 매 4시간마다 자동 실행
 - **수동**: GitHub Actions 탭에서 수동 실행 가능
 
+## 📋 테스트 케이스 명세서
+체계적인 테스트 계획 및 실행을 위한 문서(최신화 필요):
+  - **[test_case.xlsx](./src/tests/testcases/test_case.xlsx)**: 상세 테스트 케이스 명세서
+    - 테스트 시나리오 및 예상 결과 정의
+    - 테스트 우선순위 및 실행 상태 관리
+    - 버그 리포트 및 개선 사항 추적
+
 ## 🧪 테스트 커버리지
 
 ### 🛒 마켓컬리 UI 테스트 (26개)
@@ -284,17 +291,58 @@ class KurlyGoodsPage(BasePage):
         """팝업에서 수량 증가"""
         for _ in range(times):
             self.click(self.QUANTITY_UP_BUTTON)
+```
+**페이지별 책임 분리:**
+- `KurlySearchPage`: 검색 결과 페이지 (URL: `/search`)
+- `KurlyGoodsPage`: 상품 상세 팝업 (수량 조절, 장바구니 담기)
 
 # 테스트에서 페이지별 역할 분리
 def test_add_goods_to_cart(kurly_search_page, kurly_goods_page):
     kurly_search_page.click_nth_add_button(2)           # 검색 결과에서 선택
     kurly_goods_page.increase_quantity(2)               # 팝업에서 수량 조절
     kurly_goods_page.click_add_to_cart_in_popup()       # 팝업에서 담기
-```
+
 
 **페이지별 책임 분리:**
 - `KurlySearchPage`: 검색 결과 페이지 (URL: `/search`)
 - `KurlyGoodsPage`: 상품 상세 팝업 (수량 조절, 장바구니 담기)
+
+
+### 1-1. API Client (POM 패턴 적용)
+
+  API 테스트도 동일하게 POM 패턴을 적용:
+
+  ```python
+  # src/api/tmdb_api_client.py
+  class TMDBApiClient:
+      """TMDB API를 위한 Page Object Model 패턴 구현"""
+
+      def get_popular_movies(self, page=1):
+          """인기 영화 목록 조회"""
+          endpoint = "/movie/popular"
+          params = {"api_key": self.api_key, "page": page}
+          return send_get_request(endpoint, params)
+
+      def search_movie(self, query: str):
+          """영화 검색"""
+          endpoint = "/search/movie"
+          params = {"api_key": self.api_key, "query": query}
+          return send_get_request(endpoint, params)
+
+      def get_movie_details(self, movie_id: int):
+          """영화 상세 정보 조회"""
+          endpoint = f"/movie/{movie_id}"
+          params = {"api_key": self.api_key}
+          return send_get_request(endpoint, params)
+
+      # Negative Test Cases
+      def get_movie_details_invalid_id(self, movie_id: str):
+          """잘못된 ID로 조회 (에러 테스트)"""
+          endpoint = f"/movie/{movie_id}"
+          params = {"api_key": self.api_key}
+          return send_get_request(endpoint, params) 
+                
+```
 
 ### 2. BasePage - 공통 메서드
 
