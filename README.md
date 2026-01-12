@@ -303,11 +303,6 @@ def test_add_goods_to_cart(kurly_search_page, kurly_goods_page):
     kurly_goods_page.click_add_to_cart_in_popup()       # 팝업에서 담기
 
 
-**페이지별 책임 분리:**
-- `KurlySearchPage`: 검색 결과 페이지 (URL: `/search`)
-- `KurlyGoodsPage`: 상품 상세 팝업 (수량 조절, 장바구니 담기)
-
-
 ### 1-1. API Client (POM 패턴 적용)
 
   API 테스트도 동일하게 POM 패턴을 적용:
