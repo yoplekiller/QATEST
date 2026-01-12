@@ -218,3 +218,13 @@ class KurlySearchPage(BasePage):
             NoSuchElementException: 상품이 없을 때
         """
         self.click_element_by_index(self.GOODS_CARDS, 0)
+
+    def is_add_to_cart_success(self) -> bool:
+        """
+        장바구니 담기 성공 여부 확인
+
+        Returns:
+            bool: 성공했으면 True
+        """
+        success_message_locator = (By.XPATH, "//*[contains(text(),'장바구니에 상품을 담았습니다.')]")
+        return self.is_displayed(success_message_locator)

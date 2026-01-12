@@ -24,16 +24,16 @@ class TestCart:
         """
         장바구니 버튼 클릭 시 장바구니 페이지로 이동하는지 확인
         """
-        # Given: 메인 페이지로 이동
+        
         with allure.step("마켓컬리 메인 페이지로 이동"):
             kurly_main_page.open_main_page()
             assert kurly_main_page.is_on_main_page(), "❌ 메인 페이지에 접속하지 못했습니다."
 
-        # When: 장바구니 아이콘 클릭
+        
         with allure.step("장바구니 아이콘 클릭"):
             kurly_cart_page.click_cart_icon()   
 
-        # Then: 장바구니 페이지로 이동되어야 함
+        
         with allure.step("장바구니 페이지 확인"):
             kurly_cart_page.take_screenshot("장바구니_페이지")
 

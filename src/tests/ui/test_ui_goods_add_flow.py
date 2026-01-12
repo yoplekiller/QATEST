@@ -39,6 +39,8 @@ class TestGoodAddFlow:
             kurly_login_page.enter_password(test_credentials['password'])
             kurly_login_page.click_login_button()
             time.sleep(2)  # 로그인 처리 대기
+            assert kurly_login_page.is_login_successful(), "로그인에 실패했습니다"
+
 
         # Step 2: 상품 검색
         with allure.step("상품 검색: '과자'"):
@@ -47,6 +49,7 @@ class TestGoodAddFlow:
         # Step 3: 상품 추가
         with allure.step("세 번째 상품 선택"):
             kurly_search_page.click_nth_add_button(3)
+            
         # Step 4: 수량 조절
         with allure.step("수량 올리기"):
             kurly_search_page.quantity_up_in_alt(1)
