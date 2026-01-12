@@ -1,0 +1,3 @@
+2026-01-12 00:37:54 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-01-12 00:37:55 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-01-12 00:37:56 - test_automation - INFO - 스크린샷 저장: screenshots/우유_검색_결과_20260112_003756.png
