@@ -19,7 +19,7 @@ class TestCartManagement:
               kurly_main_page.open_main_page()
 
           with allure.step("'과자' 검색"):
-              kurly_main_page.search_goods("과자")
+              kurly_main_page.search_product("과자")
 
           items_to_add = 3
 
@@ -29,7 +29,7 @@ class TestCartManagement:
                   while retry < 2:
                       try:
                           kurly_search_page.click_nth_add_button(n=i)
-                          kurly_search_page.add_to_cart_in_alt()
+                          kurly_search_page.click_add_to_cart_in_alt()
                           time.sleep(1)  # 팝업 닫힐 때까지 대기
                           break
                       except Exception as e:
@@ -63,11 +63,11 @@ class TestCartManagement:
 
         with allure.step("메인 페이지 접속 및 검색"):
             kurly_main_page.open_main_page()
-            kurly_main_page.search_goods("과자")
+            kurly_main_page.search_product("과자")
 
         with allure.step("상품을 장바구니에 담기"):
             kurly_search_page.click_nth_add_button(n=1)
-            kurly_search_page.add_to_cart_in_alt()
+            kurly_search_page.click_add_to_cart_in_alt()
 
         with allure.step("장바구니 페이지로 이동"):
             kurly_main_page.go_to_cart()    
