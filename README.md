@@ -296,12 +296,13 @@ class KurlyGoodsPage(BasePage):
 - `KurlySearchPage`: 검색 결과 페이지 (URL: `/search`)
 - `KurlyGoodsPage`: 상품 상세 팝업 (수량 조절, 장바구니 담기)
 
-# 테스트에서 페이지별 역할 분리
+### 테스트에서 페이지별 역할 분리
+```
 def test_add_goods_to_cart(kurly_search_page, kurly_goods_page):
     kurly_search_page.click_nth_add_button(2)           # 검색 결과에서 선택
     kurly_goods_page.increase_quantity(2)               # 팝업에서 수량 조절
     kurly_goods_page.click_add_to_cart_in_popup()       # 팝업에서 담기
-
+ ```
 
 ### 1-1. API Client (POM 패턴 적용)
 
