@@ -228,3 +228,27 @@ class KurlySearchPage(BasePage):
         """
         success_message_locator = (By.XPATH, "//*[contains(text(),'장바구니에 상품을 담았습니다.')]")
         return self.is_displayed(success_message_locator)
+    
+    def is_check_url(self, substring: str) -> bool:
+        """
+        현재 URL에 특정 문자열이 포함되어 있는지 확인
+
+        Args:
+            substring: 확인할 문자열
+
+        Returns:
+            bool: 포함되어 있으면 True
+        """
+        current_url = self.get_current_url()
+        return substring in current_url
+    
+
+    def wait_until_url_contains(self, substring: str, timeout: int = 10) -> None:
+        """
+        현재 URL이 특정 문자열을 포함할 때까지 대기
+
+        Args:
+            substring: 포함될 문자열
+            timeout: 최대 대기 시간 (초)
+        """
+        self.wait_until(lambda driver: substring in driver.current_url, timeout=timeout)

@@ -4,7 +4,6 @@ Page Object Model을 사용하여 리팩토링된 검색 테스트
 """
 import allure
 import pytest
-from src.pages.kurly_main_page import KurlyMainPage
 
 
 @pytest.mark.ui
@@ -30,19 +29,22 @@ class TestSearch:
         """
         유효한 검색어로 검색 시 결과가 표시되는지 확인
         """
-        # Given: 메인 페이지로 이동
+       
         with allure.step("마켓컬리 메인 페이지로 이동"):
             kurly_main_page.open_main_page()
             
-        # When: 상품 검색
+       
         with allure.step(f"'{keyword}' 검색"):
             kurly_main_page.search_goods(keyword)
+            kurly_search_page.wait_until_url_contains("/search", timeout=10)
 
-        # Then: 검색 결과가 표시되어야 함
+        
         with allure.step("검색 결과 확인"):
             kurly_search_page.take_screenshot(f"{keyword}_검색_결과")
-
             results_count = kurly_search_page.get_goods_count()
+            assert kurly_search_page.is_check_url(keyword), "❌ 검색 결과 페이지로 이동하지 않았습니다"
+            
+
             allure.attach(
                 f"검색 결과 개수: {results_count}",
                 name="검색_결과_개수",
@@ -141,19 +143,19 @@ class TestSearch:
         """
         검색 후 첫 번째 결과를 클릭하여 상세 페이지로 이동
         """
-        # Given: 메인 페이지에서 검색 실행
+        
         with allure.step("메인 페이지에서 검색"):
             kurly_main_page.open_main_page()
             kurly_main_page.search_goods("사과")
             # 검색 페이지로 이동 대기
             kurly_search_page.wait_until_url_contains("/search", timeout=10)
 
-        # When: 첫 번째 검색 결과 클릭
+        
         with allure.step("첫 번째 검색 결과 클릭"):
             initial_url = kurly_search_page.get_current_url()
             kurly_search_page.click_first_good()
 
-        # Then: 페이지가 변경되어야 함 (상세 페이지로 이동)
+        
         with allure.step("상세 페이지 이동 확인"):
             kurly_search_page.take_screenshot("상품_상세_페이지")
 
