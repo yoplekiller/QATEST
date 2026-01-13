@@ -259,13 +259,4 @@ class KurlySearchPage(BasePage):
         current_url = self.get_current_url()
         return substring in current_url
     
-
-    def wait_until_url_contains(self, substring: str, timeout: int = 10) -> None:
-        """
-        현재 URL이 특정 문자열을 포함할 때까지 대기
-
-        Args:
-            substring: 포함될 문자열
-            timeout: 최대 대기 시간 (초)
-        """
-        self.wait_until(lambda driver: substring in driver.current_url, timeout=timeout)
+  

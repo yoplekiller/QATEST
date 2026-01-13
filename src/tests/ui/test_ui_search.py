@@ -36,7 +36,7 @@ class TestSearch:
        
         with allure.step(f"'{keyword}' 검색"):
             kurly_main_page.search_goods(keyword)
-            kurly_search_page.wait_until_url_contains("/search", timeout=10)
+           
 
         
         with allure.step("검색 결과 확인"):
@@ -69,16 +69,16 @@ class TestSearch:
         """
         빈 검색어로 검색 시 적절한 처리가 되는지 확인
         """
-        # Given: 메인 페이지로 이동
+        
         kurly_main_page.open_main_page()
         initial_url = kurly_main_page.get_current_url()
 
-        # When: 빈 검색어로 검색 시도
+        
         with allure.step("빈 검색어로 검색 시도"):
             kurly_main_page.enter_search_keyword("")
             kurly_main_page.click_search_button()
 
-        # Then: 페이지가 변경되지 않거나 에러 메시지 표시
+       
         with allure.step("에러 처리 확인"):
             kurly_main_page.take_screenshot("빈_검색어_검색")
 
@@ -104,13 +104,13 @@ class TestSearch:
         """
         존재하지 않는 상품명으로 검색 시 적절한 메시지가 표시되는지 확인
         """
-        # Given: 메인 페이지로 이동
+       
         kurly_main_page.open_main_page()
 
-        # When: 존재하지 않는 상품 검색
+        
         with allure.step(f"'{keyword}' 검색"):
             kurly_main_page.search_goods(keyword)
-        # Then: "결과 없음" 메시지가 표시되거나 결과가 0개여야 함
+        
         with allure.step("검색 결과 없음 확인"):
             kurly_search_page.take_screenshot(f"{keyword}_검색_결과_없음")
 
