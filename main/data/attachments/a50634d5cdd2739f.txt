@@ -1,0 +1,4 @@
+2026-01-13 04:23:23 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-01-13 04:23:27 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-01-13 04:23:33 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath__button_aria-label_수량올리기__20260113_042333.png
+2026-01-13 04:23:33 - test_automation - ERROR - 클릭 실패: ('xpath', "//button[@aria-label='수량올리기']")
