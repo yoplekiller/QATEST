@@ -205,6 +205,23 @@ class KurlySearchPage(BasePage):
         """
         for _ in range(times):
             self.click(self.QUANTITY_DOWN_BUTTON_IN_ALT)
+    
+    def is_diplayed_quantity_in_alt(self, expected_quantity: int) -> bool:
+        """
+        ALT에서 표시된 수량이 예상 수량과 일치하는지 확인
+
+        Args:
+            expected_quantity: 예상 수량
+
+        Returns:
+            bool: 일치하면 True
+        """
+        quantity_text = self.get_text(self.QUANTITY_DISPLAY_IN_ALT)
+        try:
+            current_quantity = int(quantity_text)
+            return current_quantity == expected_quantity
+        except ValueError:
+            return False
         
     def add_to_cart_in_alt(self) -> None:
         """ALT에서 장바구니 담기 버튼 클릭"""
