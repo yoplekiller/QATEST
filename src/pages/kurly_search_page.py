@@ -2,7 +2,6 @@
 Kurly 검색 결과 페이지 Page Object
 마켓컬리 웹사이트의 검색 결과 기능을 담당하는 페이지 오브젝트
 """
-from email.utils import quote
 from typing import List
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
@@ -247,20 +246,17 @@ class KurlySearchPage(BasePage):
         success_message_locator = (By.XPATH, "//*[contains(text(),'장바구니에 상품을 담았습니다.')]")
         return self.is_displayed(success_message_locator)
     
-
-
     def is_check_url(self, substring: str) -> bool:
-      """
-      현재 URL에 특정 문자열이 포함되어 있는지 확인
+        """
+        현재 URL에 특정 문자열이 포함되어 있는지 확인
 
-      Args:
-          substring: 확인할 문자열
+        Args:
+            substring: 확인할 문자열
 
-      Returns:
-          bool: 포함되어 있으면 True
-      """
-      current_url = self.get_current_url()
-      # 원본 문자열과 URL 인코딩된 문자열 둘 다 확인
-      return substring in current_url or quote(substring) in current_url
+        Returns:
+            bool: 포함되어 있으면 True
+        """
+        current_url = self.get_current_url()
+        return substring in current_url
     
   
