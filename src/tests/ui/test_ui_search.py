@@ -2,6 +2,7 @@
 검색 기능 테스트 (POM 패턴 적용)
 Page Object Model을 사용하여 리팩토링된 검색 테스트
 """
+from email.utils import quote
 import allure
 import pytest
 
@@ -42,7 +43,8 @@ class TestSearch:
         with allure.step("검색 결과 확인"):
             kurly_search_page.take_screenshot(f"{keyword}_검색_결과")
             results_count = kurly_search_page.get_goods_count()
-            assert kurly_search_page.is_check_url(keyword), "❌ 검색 결과 페이지로 이동하지 않았습니다"
+            encoded_keyword = quote(keyword)
+            assert kurly_search_page.is_check_url(encoded_keyword), "❌ 검색 결과 페이지로 이동하지 않았습니다"
             
 
             allure.attach(
