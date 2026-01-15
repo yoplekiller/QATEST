@@ -7,6 +7,7 @@ import allure
 import pytest
 
 
+
 @pytest.mark.ui
 @allure.feature("상품 검색")
 @allure.story("검색 기능")
@@ -177,21 +178,21 @@ class TestSearch:
     **예상 결과:** 에러 없이 검색이 수행되며, 결과가 있거나 "결과 없음" 메시지 표시
     """)
     @pytest.mark.parametrize("keyword", ["<script>", "' OR 1=1--", "사과!@#"])
-    def test_search_with_special_characters(self, kurly_main_page, keyword):
+    def test_search_with_special_characters(self, kurly_main_page, kurly_search_page, keyword):
         """
         특수문자를 포함한 검색어 처리 확인
         """
-        # Given: 메인 페이지로 이동
+       
         kurly_main_page.open_main_page()
 
         # When: 특수문자 포함 검색어로 검색
         with allure.step(f"특수문자 포함 검색어 '{keyword}' 검색"):
             kurly_main_page.search_goods(keyword)
 
-        # Then: 에러 없이 검색이 완료되어야 함
+        
         with allure.step("검색 처리 확인"):
             kurly_main_page.take_screenshot(f"특수문자_검색_{keyword}")
 
             # 페이지가 정상적으로 로드되었는지 확인
-            page_title = kurly_main_page.get_title()
+            page_title = kurly_search_page.get_title()
             assert page_title, "❌ 페이지가 정상적으로 로드되지 않았습니다"
