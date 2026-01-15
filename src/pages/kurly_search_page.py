@@ -211,7 +211,7 @@ class KurlySearchPage(BasePage):
         """
         ALT에서 표시된 수량이 예상 수량과 일치하는지 확인
 
-        Args:
+        Args:add_to_cart_in_alt
             expected_quantity: 예상 수량
 
         Returns://button[contains(text(),'3,070원 장바구니 담기')]

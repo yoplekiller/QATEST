@@ -43,12 +43,11 @@ class TestAddGoods:
             kurly_search_page.click_nth_add_button(3)
 
         with allure.step("수량 조절 (2회 증가, 2회 감소)"):
-            kurly_goods_page.quantity_up_in_alt(2)
-            kurly_goods_page.quantity_down_in_alt(2)
+            kurly_search_page.quantity_up_in_alt(2)
+            kurly_search_page.quantity_down_in_alt(2)
 
         with allure.step("장바구니에 담기"):
-            kurly_goods_page.click_add_to_cart_in_popup()
-
+            kurly_search_page.add_to_cart_in_alt()
         # Then: 검색 결과 및 추가 성공 확인
         with allure.step("결과 확인"):
             kurly_search_page.take_screenshot("상품_추가_완료")
