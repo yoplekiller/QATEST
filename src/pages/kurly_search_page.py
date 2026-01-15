@@ -37,7 +37,8 @@ class KurlySearchPage(BasePage):
     QUANTITY_UP_BUTTON_IN_ALT = (By.XPATH, "//button[@class='kpds_j1jks21 kpds_j1jks25']")
     QUANTITY_DOWN_BUTTON_IN_ALT = (By.XPATH, "//button[@class='kpds_j1jks21 kpds_j1jks24']")
     QUANTITY_DISPLAY_IN_ALT = (By.CSS_SELECTOR, "div.count") # 수량 표시 요소 ALT 내
-    ADD_TO_CART_BUTTONS_IN_ALT = (By.CSS_SELECTOR, ".css-ahkst0.e4nu7ef3") # 장바구니 담기 버튼 ALT 내
+    ADD_TO_CART_BUTTONS_IN_ALT = (By.XPATH, "//button[contains(text(),'원 장바구니 담기')]") # 금액이 앞에 붙은 장바구니 담기 버튼 ALT 내
+
     
 
     # Locators - 정렬
@@ -213,7 +214,7 @@ class KurlySearchPage(BasePage):
         Args:
             expected_quantity: 예상 수량
 
-        Returns:
+        Returns://button[contains(text(),'3,070원 장바구니 담기')]
             bool: 일치하면 True
         """
         quantity_text = self.get_text(self.QUANTITY_DISPLAY_IN_ALT)
