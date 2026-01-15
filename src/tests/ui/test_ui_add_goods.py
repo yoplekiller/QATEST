@@ -43,8 +43,8 @@ class TestAddGoods:
             kurly_search_page.click_nth_add_button(3)
 
         with allure.step("수량 조절 (2회 증가, 2회 감소)"):
-            kurly_goods_page.increase_quantity(2)
-            kurly_goods_page.decrease_quantity(2)
+            kurly_goods_page.quantity_up_in_alt(2)
+            kurly_goods_page.quantity_down_in_alt(2)
 
         with allure.step("장바구니에 담기"):
             kurly_goods_page.click_add_to_cart_in_popup()
