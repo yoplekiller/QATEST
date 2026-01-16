@@ -1,0 +1,409 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/zpEWFNqoN8Qg1SzMMHmaGyOBTdW.jpg",
+      "genre_ids": [
+        53,
+        80,
+        28
+      ],
+      "id": 1054867,
+      "original_language": "en",
+      "original_title": "One Battle After Another",
+      "overview": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+      "popularity": 81.4258,
+      "poster_path": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
+      "release_date": "2025-09-23",
+      "title": "One Battle After Another",
+      "video": false,
+      "vote_average": 7.439,
+      "vote_count": 2419
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ncI1PlBcANixIkgQSnjsSRz4OyT.jpg",
+      "genre_ids": [
+        28,
+        53,
+        9648
+      ],
+      "id": 1439112,
+      "original_language": "en",
+      "original_title": "Muzzle: City of Wolves",
+      "overview": "LAPD officer Jake Rosser endeavors to lead a peaceful life with his family and retired K-9 officer, Socks. However, tranquility dissolves into chaos when a gang targets them in a brutal attack. Alongside his new K-9 partner Argos, Jake launches into a relentless pursuit of justice, determined to protect his loved ones.",
+      "popularity": 75.8032,
+      "poster_path": "/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg",
+      "release_date": "2025-11-13",
+      "title": "Muzzle: City of Wolves",
+      "video": false,
+      "vote_average": 6.769,
+      "vote_count": 91
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9pdoEzieGdUTlRWTAO7QP8q1tIo.jpg",
+      "genre_ids": [
+        80,
+        28,
+        35,
+        18,
+        53
+      ],
+      "id": 1137179,
+      "original_language": "ko",
+      "original_title": "야당",
+      "overview": "Navigating both the criminal underworld and law enforcement agencies, professional snitches called \"yadang\" provide covert information about the drug world to prosecutors and police. When a drug bust at a party attended by high-profile second-generation VIPs entangles those involved into a dangerous conspiracy, a seasoned yadang must do everything in his power not just to make it out on top, but alive.",
+      "popularity": 77.6448,
+      "poster_path": "/y7dsDbG8zVWkrkyOhA6ckZXX1uC.jpg",
+      "release_date": "2025-04-16",
+      "title": "Yadang: The Snitch",
+      "video": false,
+      "vote_average": 6.97,
+      "vote_count": 33
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wNyAyZ7M9dtOo6tbx1OVigLGdBf.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1445698,
+      "original_language": "en",
+      "original_title": "The Pearl Comb",
+      "overview": "A doctor, hell-bent on proving a woman’s place is in the home and not practising medicine, is sent to investigate her miraculous claim - only to discover the source of her unearthly power...",
+      "popularity": 70.0676,
+      "poster_path": "/737hppvYVz8Wx9I2McyQPHCD7PB.jpg",
+      "release_date": "2025-03-06",
+      "title": "The Pearl Comb",
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg",
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "id": 533533,
+      "original_language": "en",
+      "original_title": "TRON: Ares",
+      "overview": "A highly sophisticated Program called Ares is sent from the digital world into the real world on a dangerous mission, marking humankind's first encounter with A.I. beings.",
+      "popularity": 76.9937,
+      "poster_path": "/chpWmskl3aKm1aTZqUHRCtviwPy.jpg",
+      "release_date": "2025-10-08",
+      "title": "TRON: Ares",
+      "video": false,
+      "vote_average": 6.544,
+      "vote_count": 1007
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nZFJgk5nWSZju9JW76hbv5lUegw.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1491902,
+      "original_language": "th",
+      "original_title": "ปัง",
+      "overview": "Follows a ruthless hitman who, after narrowly escaping a fatal attempt on his life, betrays his gang in an effort to find forgiveness but ends up becoming a target himself.",
+      "popularity": 77.1153,
+      "poster_path": "/8SUzKOqe2ectvhYdSnR7Vq2F3n1.jpg",
+      "release_date": "2025-07-11",
+      "title": "Bang",
+      "video": false,
+      "vote_average": 6.411,
+      "vote_count": 45
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cd8YDn7M0lfaHhZdU6MvCDxPalP.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 76600,
+      "original_language": "en",
+      "original_title": "Avatar: The Way of Water",
+      "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+      "popularity": 69.6713,
+      "poster_path": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+      "release_date": "2022-12-14",
+      "title": "Avatar: The Way of Water",
+      "video": false,
+      "vote_average": 7.604,
+      "vote_count": 13522
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/h2SEtzuABKmcZAnKBJ1za3kETTY.jpg",
+      "genre_ids": [
+        16,
+        35,
+        27,
+        12,
+        878
+      ],
+      "id": 1205229,
+      "original_language": "en",
+      "original_title": "Night of the Zoopocalypse",
+      "overview": "A wolf and mountain lion team up when a meteor unleashes a virus turning zoo animals into zombies. They join forces with other survivors to rescue the zoo and stop the deranged mutant leader from spreading the virus.",
+      "popularity": 73.6607,
+      "poster_path": "/nCejOVZcOxKS27nnbh28NKXOdXF.jpg",
+      "release_date": "2025-01-23",
+      "title": "Night of the Zoopocalypse",
+      "video": false,
+      "vote_average": 6.61,
+      "vote_count": 68
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fepnF3W4VP3s8ui8nDtrlsFVYwO.jpg",
+      "genre_ids": [
+        28,
+        9648,
+        18
+      ],
+      "id": 1247002,
+      "original_language": "ko",
+      "original_title": "파과",
+      "overview": "Aging assassin Hornclaw has seen it all, but she never expected to mentor a reckless rookie like Bullfight. As their unlikely bond deepens, cracks form in the underworld they navigate together. When Hornclaw discovers someone wants her dead, she's thrust into a deadly game of deception. With enemies closing in and trust in short supply, survival means staying sharp—both blade and mind.",
+      "popularity": 70.2897,
+      "poster_path": "/wbmxnsv41vsg5UEaNDlf203dOWw.jpg",
+      "release_date": "2025-04-30",
+      "title": "The Old Woman with the Knife",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 49
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gtKglOSEq3d4MgQE4VsrT1sRkd0.jpg",
+      "genre_ids": [
+        16,
+        28
+      ],
+      "id": 1539104,
+      "original_language": "ja",
+      "original_title": "劇場版 呪術廻戦「渋谷事変 特別編集版」×「死滅回游 先行上映」",
+      "overview": "A veil abruptly descends over the busy Shibuya area amid the bustling Halloween crowds, trapping countless civilians inside. Satoru Gojo, the strongest jujutsu sorcerer, steps into the chaos. But lying in wait are curse users and spirits scheming to seal him away. Yuji Itadori, accompanied by his classmates and other top-tier jujutsu sorcerers, enters the fray in an unprecedented clash of curses — the Shibuya Incident. In the aftermath, ten colonies across Japan are transformed into dens of curses in a plan orchestrated by Noritoshi Kamo. As the deadly Culling Game starts, Special Grade sorcerer Yuta Okkotsu is assigned to carry out Yuji's execution for his perceived crimes. A compilation movie of Shibuya Incident including the first two episodes of the Culling Games arc.",
+      "popularity": 67.5166,
+      "poster_path": "/v0s3dx6am0RzfsuK3KdEy8ZoCDs.jpg",
+      "release_date": "2025-11-07",
+      "title": "JUJUTSU KAISEN: Execution",
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 77
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 24428,
+      "original_language": "en",
+      "original_title": "The Avengers",
+      "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+      "popularity": 65.2961,
+      "poster_path": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+      "release_date": "2012-04-25",
+      "title": "The Avengers",
+      "video": false,
+      "vote_average": 7.906,
+      "vote_count": 35095
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gtKWn9l32PolrFwCuZQsujEAEoc.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "Having found the safety of the Greenland bunker after the comet Clarke decimated the Earth, the Garrity family must now risk everything to embark on a perilous journey across the wasteland of Europe to find a new home.",
+      "popularity": 67.3388,
+      "poster_path": "/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg",
+      "release_date": "2026-01-07",
+      "title": "Greenland 2: Migration",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 50
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hFjLNzQFA85vMVEDDupOnajkbkU.jpg",
+      "genre_ids": [
+        10751,
+        14,
+        35
+      ],
+      "id": 1181765,
+      "original_language": "de",
+      "original_title": "Die Schule der magischen Tiere 3",
+      "overview": "Ida wants to perform with her class at the annual Forest Day to campaign for the protection of the local forest. Even Helene is there, as she hopes to use the footage of the performance to build up her influencer channel. What nobody knows is that Helene's family is on the verge of bankruptcy and Helene urgently needs followers to avert the threat of bankruptcy. Helene is also under pressure from the high expectations of her magical animal, Karajan the cat from Paris, who imagines a life of pure luxury.",
+      "popularity": 65.1235,
+      "poster_path": "/yuwPuKYdXUch49sEb757bNs4t0b.jpg",
+      "release_date": "2024-09-26",
+      "title": "School of Magical Animals 3",
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 23
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/A1prqBBKiwfnahBnNgM1t5y5vmA.jpg",
+      "genre_ids": [
+        27,
+        53,
+        35
+      ],
+      "id": 1255674,
+      "original_language": "es",
+      "original_title": "Vieja loca",
+      "overview": "Pedro receives a desperate message from an ex-girlfriend asking him to look after her senile mother, Alicia. What seems like a simple mission soon becomes his worst nightmare. Pedro needs to escape; but Alicia won’t let him...",
+      "popularity": 64.643,
+      "poster_path": "/a2EdW8sk22fNCvrpOiaHbR2hOuZ.jpg",
+      "release_date": "2025-10-10",
+      "title": "Crazy Old Lady",
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14,
+        878
+      ],
+      "id": 19995,
+      "original_language": "en",
+      "original_title": "Avatar",
+      "overview": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+      "popularity": 62.8235,
+      "poster_path": "/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
+      "release_date": "2009-12-16",
+      "title": "Avatar",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 33251
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yCatt8lmp3oRFEcOZF8KHhsiASQ.jpg",
+      "genre_ids": [
+        28,
+        10752
+      ],
+      "id": 1223601,
+      "original_language": "fi",
+      "original_title": "Sisu 2",
+      "overview": "Returning to the house where his family was brutally murdered during the war, \"the man who refuses to die\" dismantles it, loads it on a truck, and is determined to rebuild it somewhere safe in their honor. When the commander who killed his family comes back hellbent on finishing the job, a relentless, eye-popping cross-country chase ensues.",
+      "popularity": 63.9669,
+      "poster_path": "/jNsttCWZyPtW66MjhUozBzVsRb7.jpg",
+      "release_date": "2025-10-21",
+      "title": "Sisu: Road to Revenge",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 456
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4mZ06VpfpAPuaUPn1SEV0brbbxe.jpg",
+      "genre_ids": [
+        878,
+        28,
+        27
+      ],
+      "id": 1196067,
+      "original_language": "en",
+      "original_title": "Worldbreaker",
+      "overview": "Five years ago, a tear in the fabric of reality brought creatures to our world from an alternate dimension bent on our destruction. A father hides his daughter on an island to keep her safe while he prepares her for survival and the battles to come. But when the world is about to break, no place is safe.",
+      "popularity": 62.6886,
+      "poster_path": "/7K8w6mdrJp0oaSoKWGyjSZ4Zv2z.jpg",
+      "release_date": "2025-10-30",
+      "title": "Worldbreaker",
+      "video": false,
+      "vote_average": 6.259,
+      "vote_count": 58
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2OHa6ukEq3Hce7Pc2kvu8wkmMFY.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53,
+        80,
+        18
+      ],
+      "id": 7451,
+      "original_language": "en",
+      "original_title": "xXx",
+      "overview": "Xander Cage is your standard adrenaline junkie with no fear and a lousy attitude. When the US Government \"recruits\" him to go on a mission, he's not exactly thrilled. His mission: to gather information on an organization that may just be planning the destruction of the world, led by the nihilistic Yorgi.",
+      "popularity": 69.2444,
+      "poster_path": "/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg",
+      "release_date": "2002-08-09",
+      "title": "xXx",
+      "video": false,
+      "vote_average": 5.982,
+      "vote_count": 4729
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yo41R39airbREp0PYfG30Ofxtgt.jpg",
+      "genre_ids": [
+        12,
+        35,
+        27
+      ],
+      "id": 1234731,
+      "original_language": "en",
+      "original_title": "Anaconda",
+      "overview": "A group of friends facing mid-life crises head to the rainforest with the intention of remaking their favorite movie from their youth, only to find themselves in a fight for their lives against natural disasters, giant snakes and violent criminals.",
+      "popularity": 60.9881,
+      "poster_path": "/5MDnvvkOqthhE5gQebzkcOhD1p5.jpg",
+      "release_date": "2025-12-24",
+      "title": "Anaconda",
+      "video": false,
+      "vote_average": 5.9,
+      "vote_count": 156
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bAYEj5QmPKxxEuwhOtDtcaBYdnm.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 772462,
+      "original_language": "es",
+      "original_title": "No Me Sigas",
+      "overview": "Obsessed with going viral with her videos of ghosts and paranormal events, aspiring influencer Carla moves into a famous haunted building. There, she begins faking ghostly apparitions to gain more followers, unaware that a real evil entity resides in her apartment and will torment her until no one, not even she, can distinguish what's real and what isn't.",
+      "popularity": 53.4187,
+      "poster_path": "/wBYicLV0zfdtXweWXcoiou3moNu.jpg",
+      "release_date": "2025-10-30",
+      "title": "Don't Follow Me",
+      "video": false,
+      "vote_average": 6.333,
+      "vote_count": 30
+    }
+  ],
+  "total_pages": 54698,
+  "total_results": 1093960
+}
