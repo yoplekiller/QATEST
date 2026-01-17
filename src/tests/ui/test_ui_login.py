@@ -26,23 +26,21 @@ class TestLogin:
         """
         잘못된 계정 정보로 로그인 시도 시 실패하는지 확인
         """
-        # Given: 로그인 페이지로 이동
+        
         with allure.step("마켓컬리 메인 페이지로 이동"):
             kurly_login_page.open_main_page()
 
         with allure.step("로그인 페이지로 이동"):
             kurly_login_page.go_to_login_page()
 
-        # When: 잘못된 계정 정보로 로그인 시도
+       
         with allure.step("잘못된 계정 정보 입력 및 로그인 시도"):
             kurly_login_page.enter_username(test_credentials_invalid['username'])
             kurly_login_page.enter_password(test_credentials_invalid['password'])
             kurly_login_page.click_login_button()
 
-        # Then: 에러 메시지가 표시되어야 함
+        
         with allure.step("로그인 실패 메시지 확인"):
-            kurly_login_page.take_screenshot("로그인_실패_화면")
-
             assert kurly_login_page.is_mismatch_error_message_displayed(), \
                 "❌ 로그인 실패 메시지가 표시되지 않음"
 
