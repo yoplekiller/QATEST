@@ -37,7 +37,7 @@ class KurlySearchPage(BasePage):
     QUANTITY_UP_BUTTON_IN_ALT = (By.XPATH, "//button[@class='kpds_j1jks21 kpds_j1jks25']")
     QUANTITY_DOWN_BUTTON_IN_ALT = (By.XPATH, "//button[@class='kpds_j1jks21 kpds_j1jks24']")
     QUANTITY_DISPLAY_IN_ALT = (By.CSS_SELECTOR, "div.count") # 수량 표시 요소 ALT 내
-    ADD_TO_CART_BUTTONS_IN_ALT = (By.XPATH, "//button[contains(text(),'원 장바구니 담기')]") # 금액이 앞에 붙은 장바구니 담기 버튼 ALT 내
+    ADD_TO_CART_BUTTONS_IN_ALT = (By.XPATH, "//button[contains(text(),'장바구니 담기')]") # 금액이 앞에 붙은 장바구니 담기 버튼 ALT 내
 
     
 
