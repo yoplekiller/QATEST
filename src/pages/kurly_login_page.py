@@ -88,7 +88,7 @@ class KurlyLoginPage(BasePage):
             bool: 에러 메시지 표시 여부
         """
         text = self.get_text(self.LOGIN_ACCOUNT_MISMATCH_MESSAGE)
-        return "아이디 또는 비밀번호가 일치하지 않습니다" in text if text else False
+        return "아이디, 비밀번호를 확인해주세요." in text if text else False
 
     def is_error_message_displayed(self) -> bool:
         """

@@ -86,7 +86,7 @@ class TestLogin:
             assert is_still_on_login_page or has_error_message, \
                 "❌ 빈 계정 정보로 로그인이 진행되어서는 안 됨"
 
-    @allure.title("로그인 페이지 요소 표시 확인")
+    @allure.title("로그인 페이지 요소 표시 확인") 
     @allure.description("""
     **목적:** 로그인 페이지의 모든 필수 요소가 올바르게 표시되는지 확인
 
