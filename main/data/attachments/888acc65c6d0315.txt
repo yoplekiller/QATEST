@@ -1,0 +1,4 @@
+2026-01-17 00:33:19 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-01-17 00:33:22 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-01-17 00:33:28 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath__button_contains_text_원_장바구니_담기__20260117_003328.png
+2026-01-17 00:33:28 - test_automation - ERROR - 클릭 실패: ('xpath', "//button[contains(text(),'원 장바구니 담기')]")
