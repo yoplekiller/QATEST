@@ -1,0 +1,4 @@
+2026-01-17 16:09:38 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-01-17 16:09:40 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-01-17 16:09:56 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__css_selector___div.count__20260117_160956.png
+2026-01-17 16:09:56 - test_automation - ERROR - 요소 찾기 실패: ('css selector', 'div.count')
