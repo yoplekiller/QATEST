@@ -1,56 +1,5 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"영화 목록의 두 번째 페이지를 조회하여 첫 페이지와 다른 결과를 반환하는지 검증.","48","페이지 2 조회 - 페이지네이션 테스트","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","failed","Sat Jan 17 16:08:06 UTC 2026","TestMoviePagination","test_movie_pagination","",""
-"특정 영화 상세 정보 API 테스트","24","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_movie_details","",""
-"
-    **목적:** 존재하지 않는 상품명으로 검색 시 '결과 없음' 메시지가 표시되는지 확인
-
-    **테스트 단계:**
-    1. 마켓컬리 메인 페이지 접속
-    2. 검색창에 존재하지 않는 상품명 입력
-    3. 검색 버튼 클릭
-    4. ""검색 결과가 없습니다"" 메시지 확인
-
-    **예상 결과:** 검색 결과가 없다는 메시지가 표시됨
-    ","3839","존재하지 않는 상품명으로 검색","src.tests.ui","Sat Jan 17 16:10:17 UTC 2026","passed","Sat Jan 17 16:10:21 UTC 2026","TestSearch","test_ui_search","",""
-"","26","영화 검색 기능이 잘 동작 하는지 확인","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_search_movie","",""
-"특정 영화의 상세 정보에서 장르 포함 여부 테스트","26","영화 ID 550의 장르 포함 여부 테스트","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_movie_genre_inclusion","",""
-"
-    **목적:** 특수문자를 포함한 검색어에 대한 적절한 처리 확인
-
-    **테스트 단계:**
-    1. 마켓컬리 메인 페이지 접속
-    2. 특수문자가 포함된 검색어 입력
-    3. 검색 실행
-    4. 에러 없이 검색이 완료되는지 확인
-
-    **예상 결과:** 에러 없이 검색이 수행되며, 결과가 있거나 ""결과 없음"" 메시지 표시
-    ","1528","특수문자 검색 처리","src.tests.ui","Sat Jan 17 16:10:25 UTC 2026","passed","Sat Jan 17 16:10:26 UTC 2026","TestSearch","test_ui_search","",""
-"페이지 번호가 500 초과일 때 에러 응답을 반환하는지 검증","71","범위 초과 페이지 번호","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","TestMoviePagination","test_movie_pagination","",""
-"
-    **목적:** 특수문자를 포함한 검색어에 대한 적절한 처리 확인
-
-    **테스트 단계:**
-    1. 마켓컬리 메인 페이지 접속
-    2. 특수문자가 포함된 검색어 입력
-    3. 검색 실행
-    4. 에러 없이 검색이 완료되는지 확인
-
-    **예상 결과:** 에러 없이 검색이 수행되며, 결과가 있거나 ""결과 없음"" 메시지 표시
-    ","6516","특수문자 검색 처리","src.tests.ui","Sat Jan 17 16:10:26 UTC 2026","broken","Sat Jan 17 16:10:33 UTC 2026","TestSearch","test_ui_search","",""
-"여러 상품을 장바구니에 담고 모두 장바구니에 있는지 확인","8684","여러 상품을 장바구니에 담기","src.tests.ui","Sat Jan 17 16:08:37 UTC 2026","broken","Sat Jan 17 16:08:46 UTC 2026","TestCartManagement","test_cart_management","",""
-"특정 영화의 상세 정보에서 장르 포함 여부 테스트","23","영화 ID 603의 장르 포함 여부 테스트","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_movie_genre_inclusion","",""
-"","24","영화 ID 603의 개봉일 일관성 테스트","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_movie_release_date_consistency","",""
-"
-    **목적:** 유효한 검색어로 검색 시 적절한 검색 결과가 표시되는지 확인
-
-    **테스트 단계:**
-    1. 마켓컬리 메인 페이지 접속
-    2. 검색창에 검색어 입력 (예: ""사과"")
-    3. 검색 버튼 클릭
-    4. 검색 결과 확인
-
-    **예상 결과:** 검색어와 관련된 상품이 1개 이상 표시됨
-    ","2490","정상적인 검색어로 상품 검색","src.tests.ui","Sat Jan 17 16:10:00 UTC 2026","passed","Sat Jan 17 16:10:03 UTC 2026","TestSearch","test_ui_search","",""
+"영화 목록의 첫 번째 페이지를 조회하여 정상 동작을 확인합니다.","40","페이지 1 조회 - 기본 페이지네이션","src.tests.api","Sat Jan 17 20:08:28 UTC 2026","passed","Sat Jan 17 20:08:28 UTC 2026","TestMoviePagination","test_movie_pagination","",""
 "
     검색 결과에서 모든 정렬 옵션이 정상 동작하는지 확인
 
@@ -70,14 +19,45 @@
 
     Expected:
         선택한 정렬 옵션에 따라 상품 목록이 올바르게 정렬됨
-    ","5307","정렬 옵션 테스트: new","src.tests.ui","Sat Jan 17 16:10:40 UTC 2026","passed","Sat Jan 17 16:10:45 UTC 2026","","test_ui_sort_button","",""
+    ","6613","정렬 옵션 테스트: recommend","src.tests.ui","Sat Jan 17 20:10:43 UTC 2026","passed","Sat Jan 17 20:10:49 UTC 2026","","test_ui_sort_button","",""
+"영화 목록의 두 번째 페이지를 조회하여 첫 페이지와 다른 결과를 반환하는지 검증.","53","페이지 2 조회 - 페이지네이션 테스트","src.tests.api","Sat Jan 17 20:08:28 UTC 2026","failed","Sat Jan 17 20:08:28 UTC 2026","TestMoviePagination","test_movie_pagination","",""
 "
-    빈 검색어로 검색 시 '검색 결과가 없습니다' 메시지 확인 테스트
-    ","2910","빈 검색어로 검색 시 '검색 결과가 없습니다' 메시지 확인 테스트","src.tests.ui","Sat Jan 17 16:08:34 UTC 2026","passed","Sat Jan 17 16:08:37 UTC 2026","","test_blank_search","",""
-"","273","SLA 응답 시간 테스트 - 2초 미만","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_api_sla","",""
-"특정 영화 상세 정보 API 테스트","24","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_movie_details","",""
-"특정 영화 상세 정보 API 테스트","26","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_movie_details","",""
-"영화 목록의 첫 번째 페이지를 조회하여 정상 동작을 확인합니다.","25","페이지 1 조회 - 기본 페이지네이션","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","TestMoviePagination","test_movie_pagination","",""
+    **목적:** 장바구니 아이콘 클릭 시 장바구니 페이지로 정상 이동하는지 확인
+
+    **테스트 단계:**
+    1. 마켓컬리 메인 페이지 접속
+    2. 장바구니 아이콘 클릭
+    3. URL에 'cart' 포함 확인
+    4. 페이지 제목 확인
+
+    **예상 결과:** 장바구니 페이지로 정상 이동
+    ","4003","장바구니 페이지 접근 테스트","src.tests.ui","Sat Jan 17 20:09:26 UTC 2026","passed","Sat Jan 17 20:09:30 UTC 2026","TestCart","test_ui_cart","",""
+"","55","SLA 응답 시간 테스트 - 2초 미만","src.tests.api","Sat Jan 17 20:08:27 UTC 2026","passed","Sat Jan 17 20:08:27 UTC 2026","","test_api_sla","",""
+"","67","SLA 응답 시간 테스트 - 2초 미만","src.tests.api","Sat Jan 17 20:08:27 UTC 2026","passed","Sat Jan 17 20:08:27 UTC 2026","","test_api_sla","",""
+"특정 영화의 상세 정보에서 장르 포함 여부 테스트","10","영화 ID 603의 장르 포함 여부 테스트","src.tests.api","Sat Jan 17 20:08:27 UTC 2026","passed","Sat Jan 17 20:08:28 UTC 2026","","test_movie_genre_inclusion","",""
+"
+    **목적:** 존재하지 않는 상품명으로 검색 시 '결과 없음' 메시지가 표시되는지 확인
+
+    **테스트 단계:**
+    1. 마켓컬리 메인 페이지 접속
+    2. 검색창에 존재하지 않는 상품명 입력
+    3. 검색 버튼 클릭
+    4. ""검색 결과가 없습니다"" 메시지 확인
+
+    **예상 결과:** 검색 결과가 없다는 메시지가 표시됨
+    ","7031","존재하지 않는 상품명으로 검색","src.tests.ui","Sat Jan 17 20:10:21 UTC 2026","passed","Sat Jan 17 20:10:28 UTC 2026","TestSearch","test_ui_search","",""
+"","41","영화 검색 기능이 잘 동작 하는지 확인","src.tests.api","Sat Jan 17 20:08:28 UTC 2026","passed","Sat Jan 17 20:08:28 UTC 2026","","test_search_movie","",""
+"
+    **목적:** 빈 검색어로 검색 시 적절한 처리가 되는지 확인
+
+    **테스트 단계:**
+    1. 마켓컬리 메인 페이지 접속
+    2. 검색창에 아무것도 입력하지 않음
+    3. 검색 버튼 클릭
+    4. 에러 처리 또는 기본 페이지 유지 확인
+
+    **예상 결과:** 검색이 실행되지 않거나 에러 메시지 표시
+    ","1770","빈 검색어로 검색 시도","src.tests.ui","Sat Jan 17 20:10:19 UTC 2026","passed","Sat Jan 17 20:10:21 UTC 2026","TestSearch","test_ui_search","",""
 "
     **목적:** 검색 결과에서 상품을 클릭하여 상세 페이지로 이동할 수 있는지 확인
 
@@ -89,50 +69,7 @@
     5. 상세 페이지로 이동 확인
 
     **예상 결과:** 상품 상세 페이지로 정상 이동
-    ","2193","검색 후 첫 번째 상품 클릭","src.tests.ui","Sat Jan 17 16:10:21 UTC 2026","failed","Sat Jan 17 16:10:23 UTC 2026","TestSearch","test_ui_search","",""
-"
-    검색 결과에서 모든 정렬 옵션이 정상 동작하는지 확인
-
-    테스트 시나리오:
-        1. 마켓컬리 메인 페이지 접속
-        2. 특정 키워드('과자')로 검색       
-        3. 정렬 옵션 선택 (추천순/신상품순/낮은가격순/높은가격순)
-        4. 정렬이 올바르게 적용되었는지 확인
-
-    Args:
-        driver: WebDriver fixture
-        sort_type: 테스트할 정렬 타입
-            - recommend: 추천순
-            - new: 신상품순
-            - low_price: 낮은 가격순
-            - high_price: 높은 가격순
-
-    Expected:
-        선택한 정렬 옵션에 따라 상품 목록이 올바르게 정렬됨
-    ","4730","정렬 옵션 테스트: low_price","src.tests.ui","Sat Jan 17 16:10:45 UTC 2026","passed","Sat Jan 17 16:10:50 UTC 2026","","test_ui_sort_button","",""
-"
-    **목적:** 상품 상세 팝업에서 수량 조절 버튼이 정상 작동하는지 확인
-
-    **테스트 단계:**
-    1. 마켓컬리 메인 페이지 접속
-    2. '과자' 검색
-    3. 세 번째 상품의 장바구니 추가 버튼 클릭
-    4. 수량 올리기 버튼 2회 클릭
-    5. 수량 내리기 버튼 1회 클릭
-    6. 최종 수량이 2인지 확인
-
-    **예상 결과:** 수량이 올바르게 조절됨 (최종 수량: 2)
-    ","18595","수량 증가/감소 버튼 동작 확인","src.tests.ui","Sat Jan 17 16:09:38 UTC 2026","broken","Sat Jan 17 16:09:56 UTC 2026","TestQuantity","test_ui_quantity","",""
-"
-    **목적:** 아이디나 비밀번호를 입력하지 않고 로그인 시도 시 적절한 처리가 되는지 확인
-
-    **테스트 단계:**
-    1. 마켓컬리 메인 페이지 접속
-    2. 로그인 버튼 클릭
-    3. 아이디와 비밀번호를 입력하지 않음
-    4. 로그인 버튼 클릭
-    5. 에러 메시지 또는 유효성 검사 메시지 표시 확인
-    ","3241","빈 계정 정보로 로그인 실패 테스트","src.tests.ui","Sat Jan 17 16:09:32 UTC 2026","broken","Sat Jan 17 16:09:35 UTC 2026","TestLogin","test_ui_login","",""
+    ","2061","검색 후 첫 번째 상품 클릭","src.tests.ui","Sat Jan 17 20:10:34 UTC 2026","failed","Sat Jan 17 20:10:36 UTC 2026","TestSearch","test_ui_search","",""
 "
     **목적:** 유효한 검색어로 검색 시 적절한 검색 결과가 표시되는지 확인
 
@@ -143,89 +80,7 @@
     4. 검색 결과 확인
 
     **예상 결과:** 검색어와 관련된 상품이 1개 이상 표시됨
-    ","3374","정상적인 검색어로 상품 검색","src.tests.ui","Sat Jan 17 16:09:57 UTC 2026","passed","Sat Jan 17 16:10:00 UTC 2026","TestSearch","test_ui_search","",""
-"","25","영화 ID {movie_id}의 비디오 정보 테스트","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_movie_videos","",""
-"특정 영화의 상세 정보에서 장르 포함 여부 테스트","24","영화 ID 157336의 장르 포함 여부 테스트","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_movie_genre_inclusion","",""
-"","28","SLA 응답 시간 테스트 - 2초 미만","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_api_sla","",""
-"
-    검색 결과에서 모든 정렬 옵션이 정상 동작하는지 확인
-
-    테스트 시나리오:
-        1. 마켓컬리 메인 페이지 접속
-        2. 특정 키워드('과자')로 검색       
-        3. 정렬 옵션 선택 (추천순/신상품순/낮은가격순/높은가격순)
-        4. 정렬이 올바르게 적용되었는지 확인
-
-    Args:
-        driver: WebDriver fixture
-        sort_type: 테스트할 정렬 타입
-            - recommend: 추천순
-            - new: 신상품순
-            - low_price: 낮은 가격순
-            - high_price: 높은 가격순
-
-    Expected:
-        선택한 정렬 옵션에 따라 상품 목록이 올바르게 정렬됨
-    ","4612","정렬 옵션 테스트: high_price","src.tests.ui","Sat Jan 17 16:10:50 UTC 2026","passed","Sat Jan 17 16:10:55 UTC 2026","","test_ui_sort_button","",""
-"
-    **목적:** 유효한 검색어로 검색 시 적절한 검색 결과가 표시되는지 확인
-
-    **테스트 단계:**
-    1. 마켓컬리 메인 페이지 접속
-    2. 검색창에 검색어 입력 (예: ""사과"")
-    3. 검색 버튼 클릭
-    4. 검색 결과 확인
-
-    **예상 결과:** 검색어와 관련된 상품이 1개 이상 표시됨
-    ","2027","정상적인 검색어로 상품 검색","src.tests.ui","Sat Jan 17 16:10:03 UTC 2026","passed","Sat Jan 17 16:10:05 UTC 2026","TestSearch","test_ui_search","",""
-"
-    상품을 장바구니에 추가하는 전체 플로우 테스트
-    Steps:
-        1. 상품 검색
-        2. 세 번째 상품의 추가 버튼 클릭
-        3. 수량 2회 증가
-        4. 수량 2회 감소
-        5. 장바구니에 담기
-    ","19706","상품을 장바구니에 추가하는 전체 플로우 테스트","src.tests.ui","Sat Jan 17 16:08:13 UTC 2026","broken","Sat Jan 17 16:08:33 UTC 2026","","test_add_goods_to_cart","",""
-"
-    **목적:** 상품 검색 → 수량 조절 → 장바구니 담기 플로우가 정상 동작하는지 확인
-
-    **테스트 단계:**
-    1. 마켓컬리 메인 페이지 접속
-    2. '과자' 검색
-    3. 세 번째 상품의 장바구니 추가 버튼 클릭
-    4. 수량 올리기 (2회)
-    5. 수량 내리기 (2회)
-    6. 장바구니 담기 버튼 클릭
-    7. 검색 결과 확인
-
-    **예상 결과:** 상품이 장바구니에 정상적으로 담김
-    ","18769","상품 검색 후 장바구니 추가 테스트","src.tests.ui","Sat Jan 17 16:08:58 UTC 2026","broken","Sat Jan 17 16:09:17 UTC 2026","TestAddGoods","test_ui_add_goods","",""
-"
-    검색 결과에서 모든 정렬 옵션이 정상 동작하는지 확인
-
-    테스트 시나리오:
-        1. 마켓컬리 메인 페이지 접속
-        2. 특정 키워드('과자')로 검색       
-        3. 정렬 옵션 선택 (추천순/신상품순/낮은가격순/높은가격순)
-        4. 정렬이 올바르게 적용되었는지 확인
-
-    Args:
-        driver: WebDriver fixture
-        sort_type: 테스트할 정렬 타입
-            - recommend: 추천순
-            - new: 신상품순
-            - low_price: 낮은 가격순
-            - high_price: 높은 가격순
-
-    Expected:
-        선택한 정렬 옵션에 따라 상품 목록이 올바르게 정렬됨
-    ","6439","정렬 옵션 테스트: recommend","src.tests.ui","Sat Jan 17 16:10:34 UTC 2026","passed","Sat Jan 17 16:10:40 UTC 2026","","test_ui_sort_button","",""
-"","23","영화 ID 550의 개봉일 일관성 테스트","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_movie_release_date_consistency","",""
-"페이지 번호가 0 이하일 때 에러 응답을 반환하는지 검증","30","잘못된 페이지 번호 - 0 이하","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","TestMoviePagination","test_movie_pagination","",""
-"
-    빈 검색어로 검색 시 '검색 결과가 없습니다' 메시지 확인 테스트
-    ","4241","빈 검색어로 검색 시 '검색 결과가 없습니다' 메시지 확인 테스트","src.tests.ui","Sat Jan 17 16:08:53 UTC 2026","passed","Sat Jan 17 16:08:57 UTC 2026","","test_invalid_search","",""
+    ","3735","정상적인 검색어로 상품 검색","src.tests.ui","Sat Jan 17 20:10:06 UTC 2026","passed","Sat Jan 17 20:10:10 UTC 2026","TestSearch","test_ui_search","",""
 "
     **목적:** 존재하지 않는 상품명으로 검색 시 '결과 없음' 메시지가 표시되는지 확인
 
@@ -236,18 +91,52 @@
     4. ""검색 결과가 없습니다"" 메시지 확인
 
     **예상 결과:** 검색 결과가 없다는 메시지가 표시됨
-    ","6733","존재하지 않는 상품명으로 검색","src.tests.ui","Sat Jan 17 16:10:07 UTC 2026","passed","Sat Jan 17 16:10:13 UTC 2026","TestSearch","test_ui_search","",""
+    ","2438","존재하지 않는 상품명으로 검색","src.tests.ui","Sat Jan 17 20:10:32 UTC 2026","passed","Sat Jan 17 20:10:34 UTC 2026","TestSearch","test_ui_search","",""
+"","41","영화 ID {movie_id}의 비디오 정보 테스트","src.tests.api","Sat Jan 17 20:08:28 UTC 2026","passed","Sat Jan 17 20:08:28 UTC 2026","","test_movie_videos","",""
+"특정 영화의 상세 정보에서 장르 포함 여부 테스트","16","영화 ID 157336의 장르 포함 여부 테스트","src.tests.api","Sat Jan 17 20:08:28 UTC 2026","passed","Sat Jan 17 20:08:28 UTC 2026","","test_movie_genre_inclusion","",""
 "
-    **목적:** 빈 검색어로 검색 시 적절한 처리가 되는지 확인
+    **목적:** 아이디나 비밀번호를 입력하지 않고 로그인 시도 시 적절한 처리가 되는지 확인
 
     **테스트 단계:**
     1. 마켓컬리 메인 페이지 접속
-    2. 검색창에 아무것도 입력하지 않음
-    3. 검색 버튼 클릭
-    4. 에러 처리 또는 기본 페이지 유지 확인
+    2. 로그인 버튼 클릭
+    3. 아이디와 비밀번호를 입력하지 않음
+    4. 로그인 버튼 클릭
+    5. 에러 메시지 또는 유효성 검사 메시지 표시 확인
+    ","3652","빈 계정 정보로 로그인 실패 테스트","src.tests.ui","Sat Jan 17 20:09:48 UTC 2026","broken","Sat Jan 17 20:09:51 UTC 2026","TestLogin","test_ui_login","",""
+"
+    **목적:** 존재하지 않는 상품명으로 검색 시 '결과 없음' 메시지가 표시되는지 확인
 
-    **예상 결과:** 검색이 실행되지 않거나 에러 메시지 표시
-    ","1795","빈 검색어로 검색 시도","src.tests.ui","Sat Jan 17 16:10:05 UTC 2026","passed","Sat Jan 17 16:10:07 UTC 2026","TestSearch","test_ui_search","",""
+    **테스트 단계:**
+    1. 마켓컬리 메인 페이지 접속
+    2. 검색창에 존재하지 않는 상품명 입력
+    3. 검색 버튼 클릭
+    4. ""검색 결과가 없습니다"" 메시지 확인
+
+    **예상 결과:** 검색 결과가 없다는 메시지가 표시됨
+    ","3917","존재하지 않는 상품명으로 검색","src.tests.ui","Sat Jan 17 20:10:28 UTC 2026","passed","Sat Jan 17 20:10:32 UTC 2026","TestSearch","test_ui_search","",""
+"여러 상품을 장바구니에 담고 모두 장바구니에 있는지 확인","14312","여러 상품을 장바구니에 담기","src.tests.ui","Sat Jan 17 20:08:38 UTC 2026","broken","Sat Jan 17 20:08:52 UTC 2026","TestCartManagement","test_cart_management","",""
+"특정 영화 상세 정보 API 테스트","46","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api","Sat Jan 17 20:08:27 UTC 2026","passed","Sat Jan 17 20:08:27 UTC 2026","","test_movie_details","",""
+"특정 영화 상세 정보 API 테스트","46","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api","Sat Jan 17 20:08:27 UTC 2026","passed","Sat Jan 17 20:08:27 UTC 2026","","test_movie_details","",""
+"","10","영화 ID 157336의 개봉일 일관성 테스트","src.tests.api","Sat Jan 17 20:08:28 UTC 2026","passed","Sat Jan 17 20:08:28 UTC 2026","","test_movie_release_date_consistency","",""
+"
+    **목적:** 로그인 페이지의 모든 필수 요소가 올바르게 표시되는지 확인
+
+    **확인 항목:**
+    - 아이디 입력 필드
+    - 비밀번호 입력 필드
+    - 로그인 버튼
+    ","1819","로그인 페이지 요소 표시 확인","src.tests.ui","Sat Jan 17 20:09:51 UTC 2026","passed","Sat Jan 17 20:09:53 UTC 2026","TestLogin","test_ui_login","",""
+"
+    상품을 장바구니에 추가하는 전체 플로우 테스트
+    Steps:
+        1. 상품 검색
+        2. 세 번째 상품의 추가 버튼 클릭
+        3. 수량 2회 증가
+        4. 수량 2회 감소
+        5. 장바구니에 담기
+    ","8903","상품을 장바구니에 추가하는 전체 플로우 테스트","src.tests.ui","Sat Jan 17 20:08:25 UTC 2026","passed","Sat Jan 17 20:08:34 UTC 2026","","test_add_goods_to_cart","",""
+"장바구니에 담긴 상품을 삭제하고 개수가 줄어드는지 확인","6252","장바구니에서 상품 삭제","src.tests.ui","Sat Jan 17 20:08:52 UTC 2026","broken","Sat Jan 17 20:08:58 UTC 2026","TestCartManagement","test_cart_management","",""
 "
     **목적:** 로그인부터 장바구니 담기까지 전체 플로우가 정상 동작하는지 확인
 
@@ -261,18 +150,36 @@
     7. 장바구니 페이지로 이동
 
     **예상 결과:** 전체 플로우가 성공적으로 완료됨
-    ","4782","로그인 후 상품 추가 및 장바구니 확인","src.tests.ui","Sat Jan 17 16:09:22 UTC 2026","broken","Sat Jan 17 16:09:26 UTC 2026","TestGoodAddFlow","test_ui_goods_add_flow","",""
+    ","10673","로그인 후 상품 추가 및 장바구니 확인","src.tests.ui","Sat Jan 17 20:09:31 UTC 2026","failed","Sat Jan 17 20:09:42 UTC 2026","TestGoodAddFlow","test_ui_goods_add_flow","",""
 "
-    **목적:** 장바구니 아이콘 클릭 시 장바구니 페이지로 정상 이동하는지 확인
+    **목적:** 상품 검색 → 수량 조절 → 장바구니 담기 플로우가 정상 동작하는지 확인
 
     **테스트 단계:**
     1. 마켓컬리 메인 페이지 접속
-    2. 장바구니 아이콘 클릭
-    3. URL에 'cart' 포함 확인
-    4. 페이지 제목 확인
+    2. '과자' 검색
+    3. 세 번째 상품의 장바구니 추가 버튼 클릭
+    4. 수량 올리기 (2회)
+    5. 수량 내리기 (2회)
+    6. 장바구니 담기 버튼 클릭
+    7. 검색 결과 확인
 
-    **예상 결과:** 장바구니 페이지로 정상 이동
-    ","3732","장바구니 페이지 접근 테스트","src.tests.ui","Sat Jan 17 16:09:17 UTC 2026","passed","Sat Jan 17 16:09:21 UTC 2026","TestCart","test_ui_cart","",""
+    **예상 결과:** 상품이 장바구니에 정상적으로 담김
+    ","19333","상품 검색 후 장바구니 추가 테스트","src.tests.ui","Sat Jan 17 20:09:06 UTC 2026","broken","Sat Jan 17 20:09:26 UTC 2026","TestAddGoods","test_ui_add_goods","",""
+"","13","영화 ID 603의 개봉일 일관성 테스트","src.tests.api","Sat Jan 17 20:08:28 UTC 2026","passed","Sat Jan 17 20:08:28 UTC 2026","","test_movie_release_date_consistency","",""
+"
+    **목적:** 상품 상세 팝업에서 수량 조절 버튼이 정상 작동하는지 확인
+
+    **테스트 단계:**
+    1. 마켓컬리 메인 페이지 접속
+    2. '과자' 검색
+    3. 세 번째 상품의 장바구니 추가 버튼 클릭
+    4. 수량 올리기 버튼 2회 클릭
+    5. 수량 내리기 버튼 1회 클릭
+    6. 최종 수량이 2인지 확인
+
+    **예상 결과:** 수량이 올바르게 조절됨 (최종 수량: 2)
+    ","11634","수량 증가/감소 버튼 동작 확인","src.tests.ui","Sat Jan 17 20:09:54 UTC 2026","broken","Sat Jan 17 20:10:06 UTC 2026","TestQuantity","test_ui_quantity","",""
+"","49","인기 영화 목록 조회 - 200 응답 확인","src.tests.api","Sat Jan 17 20:08:28 UTC 2026","passed","Sat Jan 17 20:08:28 UTC 2026","","test_popular_movie","",""
 "
     **목적:** 특수문자를 포함한 검색어에 대한 적절한 처리 확인
 
@@ -283,8 +190,96 @@
     4. 에러 없이 검색이 완료되는지 확인
 
     **예상 결과:** 에러 없이 검색이 수행되며, 결과가 있거나 ""결과 없음"" 메시지 표시
-    ","1777","특수문자 검색 처리","src.tests.ui","Sat Jan 17 16:10:23 UTC 2026","passed","Sat Jan 17 16:10:25 UTC 2026","TestSearch","test_ui_search","",""
-"","26","인기 영화 목록 조회 - 200 응답 확인","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_popular_movie","",""
+    ","1733","특수문자 검색 처리","src.tests.ui","Sat Jan 17 20:10:36 UTC 2026","passed","Sat Jan 17 20:10:38 UTC 2026","TestSearch","test_ui_search","",""
+"
+    검색 결과에서 모든 정렬 옵션이 정상 동작하는지 확인
+
+    테스트 시나리오:
+        1. 마켓컬리 메인 페이지 접속
+        2. 특정 키워드('과자')로 검색       
+        3. 정렬 옵션 선택 (추천순/신상품순/낮은가격순/높은가격순)
+        4. 정렬이 올바르게 적용되었는지 확인
+
+    Args:
+        driver: WebDriver fixture
+        sort_type: 테스트할 정렬 타입
+            - recommend: 추천순
+            - new: 신상품순
+            - low_price: 낮은 가격순
+            - high_price: 높은 가격순
+
+    Expected:
+        선택한 정렬 옵션에 따라 상품 목록이 올바르게 정렬됨
+    ","5252","정렬 옵션 테스트: new","src.tests.ui","Sat Jan 17 20:10:49 UTC 2026","passed","Sat Jan 17 20:10:54 UTC 2026","","test_ui_sort_button","",""
+"
+    빈 검색어로 검색 시 '검색 결과가 없습니다' 메시지 확인 테스트
+    ","5545","빈 검색어로 검색 시 '검색 결과가 없습니다' 메시지 확인 테스트","src.tests.ui","Sat Jan 17 20:09:00 UTC 2026","passed","Sat Jan 17 20:09:06 UTC 2026","","test_invalid_search","",""
+"","11","영화 ID 550의 개봉일 일관성 테스트","src.tests.api","Sat Jan 17 20:08:28 UTC 2026","passed","Sat Jan 17 20:08:28 UTC 2026","","test_movie_release_date_consistency","",""
+"
+    **목적:** 유효한 검색어로 검색 시 적절한 검색 결과가 표시되는지 확인
+
+    **테스트 단계:**
+    1. 마켓컬리 메인 페이지 접속
+    2. 검색창에 검색어 입력 (예: ""사과"")
+    3. 검색 버튼 클릭
+    4. 검색 결과 확인
+
+    **예상 결과:** 검색어와 관련된 상품이 1개 이상 표시됨
+    ","5109","정상적인 검색어로 상품 검색","src.tests.ui","Sat Jan 17 20:10:10 UTC 2026","passed","Sat Jan 17 20:10:15 UTC 2026","TestSearch","test_ui_search","",""
+"
+    **목적:** 특수문자를 포함한 검색어에 대한 적절한 처리 확인
+
+    **테스트 단계:**
+    1. 마켓컬리 메인 페이지 접속
+    2. 특수문자가 포함된 검색어 입력
+    3. 검색 실행
+    4. 에러 없이 검색이 완료되는지 확인
+
+    **예상 결과:** 에러 없이 검색이 수행되며, 결과가 있거나 ""결과 없음"" 메시지 표시
+    ","1600","특수문자 검색 처리","src.tests.ui","Sat Jan 17 20:10:40 UTC 2026","passed","Sat Jan 17 20:10:42 UTC 2026","TestSearch","test_ui_search","",""
+"
+    검색 결과에서 모든 정렬 옵션이 정상 동작하는지 확인
+
+    테스트 시나리오:
+        1. 마켓컬리 메인 페이지 접속
+        2. 특정 키워드('과자')로 검색       
+        3. 정렬 옵션 선택 (추천순/신상품순/낮은가격순/높은가격순)
+        4. 정렬이 올바르게 적용되었는지 확인
+
+    Args:
+        driver: WebDriver fixture
+        sort_type: 테스트할 정렬 타입
+            - recommend: 추천순
+            - new: 신상품순
+            - low_price: 낮은 가격순
+            - high_price: 높은 가격순
+
+    Expected:
+        선택한 정렬 옵션에 따라 상품 목록이 올바르게 정렬됨
+    ","5496","정렬 옵션 테스트: low_price","src.tests.ui","Sat Jan 17 20:10:54 UTC 2026","passed","Sat Jan 17 20:11:00 UTC 2026","","test_ui_sort_button","",""
+"
+    **목적:** 유효한 검색어로 검색 시 적절한 검색 결과가 표시되는지 확인
+
+    **테스트 단계:**
+    1. 마켓컬리 메인 페이지 접속
+    2. 검색창에 검색어 입력 (예: ""사과"")
+    3. 검색 버튼 클릭
+    4. 검색 결과 확인
+
+    **예상 결과:** 검색어와 관련된 상품이 1개 이상 표시됨
+    ","4078","정상적인 검색어로 상품 검색","src.tests.ui","Sat Jan 17 20:10:15 UTC 2026","passed","Sat Jan 17 20:10:19 UTC 2026","TestSearch","test_ui_search","",""
+"페이지 번호가 500 초과일 때 에러 응답을 반환하는지 검증","41","범위 초과 페이지 번호","src.tests.api","Sat Jan 17 20:08:28 UTC 2026","passed","Sat Jan 17 20:08:28 UTC 2026","TestMoviePagination","test_movie_pagination","",""
+"
+    **목적:** 특수문자를 포함한 검색어에 대한 적절한 처리 확인
+
+    **테스트 단계:**
+    1. 마켓컬리 메인 페이지 접속
+    2. 특수문자가 포함된 검색어 입력
+    3. 검색 실행
+    4. 에러 없이 검색이 완료되는지 확인
+
+    **예상 결과:** 에러 없이 검색이 수행되며, 결과가 있거나 ""결과 없음"" 메시지 표시
+    ","2013","특수문자 검색 처리","src.tests.ui","Sat Jan 17 20:10:38 UTC 2026","passed","Sat Jan 17 20:10:40 UTC 2026","TestSearch","test_ui_search","",""
 "
     **목적:** 잘못된 아이디와 비밀번호로 로그인 시도 시 적절한 에러 메시지가 표시되는지 확인
 
@@ -297,25 +292,30 @@
     6. 에러 메시지 표시 확인
 
     **예상 결과:** 로그인 실패 메시지가 화면에 표시됨
-    ","4897","잘못된 계정 정보로 로그인 실패 테스트","src.tests.ui","Sat Jan 17 16:09:27 UTC 2026","broken","Sat Jan 17 16:09:32 UTC 2026","TestLogin","test_ui_login","",""
+    ","5257","잘못된 계정 정보로 로그인 실패 테스트","src.tests.ui","Sat Jan 17 20:09:42 UTC 2026","failed","Sat Jan 17 20:09:48 UTC 2026","TestLogin","test_ui_login","",""
 "
-    **목적:** 존재하지 않는 상품명으로 검색 시 '결과 없음' 메시지가 표시되는지 확인
+    검색 결과에서 모든 정렬 옵션이 정상 동작하는지 확인
 
-    **테스트 단계:**
-    1. 마켓컬리 메인 페이지 접속
-    2. 검색창에 존재하지 않는 상품명 입력
-    3. 검색 버튼 클릭
-    4. ""검색 결과가 없습니다"" 메시지 확인
+    테스트 시나리오:
+        1. 마켓컬리 메인 페이지 접속
+        2. 특정 키워드('과자')로 검색       
+        3. 정렬 옵션 선택 (추천순/신상품순/낮은가격순/높은가격순)
+        4. 정렬이 올바르게 적용되었는지 확인
 
-    **예상 결과:** 검색 결과가 없다는 메시지가 표시됨
-    ","3622","존재하지 않는 상품명으로 검색","src.tests.ui","Sat Jan 17 16:10:13 UTC 2026","passed","Sat Jan 17 16:10:17 UTC 2026","TestSearch","test_ui_search","",""
+    Args:
+        driver: WebDriver fixture
+        sort_type: 테스트할 정렬 타입
+            - recommend: 추천순
+            - new: 신상품순
+            - low_price: 낮은 가격순
+            - high_price: 높은 가격순
+
+    Expected:
+        선택한 정렬 옵션에 따라 상품 목록이 올바르게 정렬됨
+    ","4956","정렬 옵션 테스트: high_price","src.tests.ui","Sat Jan 17 20:11:00 UTC 2026","passed","Sat Jan 17 20:11:05 UTC 2026","","test_ui_sort_button","",""
+"특정 영화의 상세 정보에서 장르 포함 여부 테스트","11","영화 ID 550의 장르 포함 여부 테스트","src.tests.api","Sat Jan 17 20:08:27 UTC 2026","passed","Sat Jan 17 20:08:27 UTC 2026","","test_movie_genre_inclusion","",""
+"특정 영화 상세 정보 API 테스트","46","유효한 movie_id에 대한 상세 정보 조회 테스트","src.tests.api","Sat Jan 17 20:08:27 UTC 2026","passed","Sat Jan 17 20:08:27 UTC 2026","","test_movie_details","",""
 "
-    **목적:** 로그인 페이지의 모든 필수 요소가 올바르게 표시되는지 확인
-
-    **확인 항목:**
-    - 아이디 입력 필드
-    - 비밀번호 입력 필드
-    - 로그인 버튼
-    ","1738","로그인 페이지 요소 표시 확인","src.tests.ui","Sat Jan 17 16:09:35 UTC 2026","passed","Sat Jan 17 16:09:37 UTC 2026","TestLogin","test_ui_login","",""
-"장바구니에 담긴 상품을 삭제하고 개수가 줄어드는지 확인","6375","장바구니에서 상품 삭제","src.tests.ui","Sat Jan 17 16:08:46 UTC 2026","broken","Sat Jan 17 16:08:52 UTC 2026","TestCartManagement","test_cart_management","",""
-"","24","영화 ID 157336의 개봉일 일관성 테스트","src.tests.api","Sat Jan 17 16:08:06 UTC 2026","passed","Sat Jan 17 16:08:06 UTC 2026","","test_movie_release_date_consistency","",""
+    빈 검색어로 검색 시 '검색 결과가 없습니다' 메시지 확인 테스트
+    ","2924","빈 검색어로 검색 시 '검색 결과가 없습니다' 메시지 확인 테스트","src.tests.ui","Sat Jan 17 20:08:34 UTC 2026","passed","Sat Jan 17 20:08:37 UTC 2026","","test_blank_search","",""
+"페이지 번호가 0 이하일 때 에러 응답을 반환하는지 검증","40","잘못된 페이지 번호 - 0 이하","src.tests.api","Sat Jan 17 20:08:28 UTC 2026","passed","Sat Jan 17 20:08:28 UTC 2026","TestMoviePagination","test_movie_pagination","",""
