@@ -191,11 +191,3 @@ class KurlyMainPage(BasePage):
         """
         return "kurly.com/main" in self.get_current_url()
     
-    def get_title(self) -> str:
-        """
-        현재 페이지의 제목 반환
-        
-        Returns:
-            str: 페이지 제목
-        """
-        return self.driver.title

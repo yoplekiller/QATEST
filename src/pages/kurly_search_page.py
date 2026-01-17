@@ -194,8 +194,12 @@ class KurlySearchPage(BasePage):
         Args:
             times: 클릭 횟수 (기본값: 1)
         """
-        for _ in range(times):
-            self.click(self.QUANTITY_UP_BUTTON_IN_ALT)
+        try:
+            self.wait_clickable(self.QUANTITY_UP_BUTTON_IN_ALT, timeout=5)
+            for _ in range(times):
+                self.click(self.QUANTITY_UP_BUTTON_IN_ALT)
+        except Exception:
+            return False
     
     def quantity_down_in_alt(self, times: int =1) -> None:
         """
@@ -204,8 +208,13 @@ class KurlySearchPage(BasePage):
         Args:
             times: 클릭 횟수 (기본값: 1)
         """
-        for _ in range(times):
-            self.click(self.QUANTITY_DOWN_BUTTON_IN_ALT)
+        try:
+            self.wait_clickable(self.QUANTITY_DOWN_BUTTON_IN_ALT, timeout=5)
+            for _ in range(times):
+                self.click(self.QUANTITY_DOWN_BUTTON_IN_ALT)
+        except Exception:
+            return False
+        
     
     def is_diplayed_quantity_in_alt(self, expected_quantity: int) -> bool:
         """
