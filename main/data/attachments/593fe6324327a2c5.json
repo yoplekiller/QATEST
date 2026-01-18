@@ -1,0 +1,406 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/ebyxeBh56QNXxSJgTnmz7fXAlwk.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 420.2485,
+      "poster_path": "/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.795,
+      "vote_count": 1483
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gQimJqYMKCkwHIo8wwYKhmnCfBr.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1242501,
+      "original_language": "en",
+      "original_title": "Icefall",
+      "overview": "A young Indigenous game warden arrests an infamous poacher only to discover that the poacher knows the location of a plane carrying millions of dollars that has crashed in a frozen lake. When a group of criminals and dirty cops are alerted to the poacher’s whereabouts, the warden and the poacher team up to fight back and escape across the treacherous lake before the ice melts.",
+      "popularity": 291.7639,
+      "poster_path": "/5Byv6nznAb2Izd0gHpODOXnuSbo.jpg",
+      "release_date": "2025-10-16",
+      "title": "Icefall",
+      "video": false,
+      "vote_average": 6.616,
+      "vote_count": 82
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kwNIQW7egAmI66sb0zIugMbpCfU.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80,
+        18,
+        9648
+      ],
+      "id": 1306368,
+      "original_language": "en",
+      "original_title": "The Rip",
+      "overview": "Trust frays when a team of Miami cops discovers millions in cash inside a run-down stash house, calling everyone — and everything — into question.",
+      "popularity": 291.2808,
+      "poster_path": "/p4bW2sJKAwcHuLpfoZK7Zo63osA.jpg",
+      "release_date": "2026-01-13",
+      "title": "The Rip",
+      "video": false,
+      "vote_average": 7.143,
+      "vote_count": 251
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 285.5173,
+      "poster_path": "/lE9KpVwgeWHMwgwkNaeH5nEFh20.jpg",
+      "release_date": "2025-12-17",
+      "title": "Avatar: Fire and Ash",
+      "video": false,
+      "vote_average": 7.355,
+      "vote_count": 1476
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7nfpkR9XsQ1lBNCXSSHxGV7Dkxe.jpg",
+      "genre_ids": [
+        16,
+        35,
+        12,
+        10751,
+        9648
+      ],
+      "id": 1084242,
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 201.7295,
+      "poster_path": "/bjUWGw0Ao0qVWxagN3VCwBJHVo6.jpg",
+      "release_date": "2025-11-26",
+      "title": "Zootopia 2",
+      "video": false,
+      "vote_average": 7.61,
+      "vote_count": 1105
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vMxOmgmBGegjVObjlb8ugsjGgkD.jpg",
+      "genre_ids": [
+        10752,
+        28,
+        18
+      ],
+      "id": 1252037,
+      "original_language": "de",
+      "original_title": "Der Tiger",
+      "overview": "A German Tiger tank crew is sent on a dangerous mission to rescue the missing officer Paul von Hardenburg from a top-secret bunker behind enemy lines. As they make their way through the lethal no-man's land, they must confront not only the enemy, but also their own fears and inner demons. Fueled by the Wehrmacht's methamphetamine, their mission increasingly becomes a journey into the heart of darkness.",
+      "popularity": 187.6576,
+      "poster_path": "/65Jr1JAgWlu9em8zHhAfrNJJQBt.jpg",
+      "release_date": "2025-09-18",
+      "title": "The Tank",
+      "video": false,
+      "vote_average": 7.013,
+      "vote_count": 235
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sK3z0Naed3H1Wuh7a21YRVMxYqt.jpg",
+      "genre_ids": [
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 186.2816,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.189,
+      "vote_count": 409
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mFDQ8f2lPHorGwtuE0fjnUIbKLF.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 62029,
+      "original_language": "it",
+      "original_title": "Bingo Bongo",
+      "overview": "The ape-man, found somewhere in the jungles of Congo, transferred to Milan and named Bingo Bongo. The only one who believes in the human qualities of him is Laura, a woman anthropologist , so their affection for each other even grows to love.",
+      "popularity": 164.3929,
+      "poster_path": "/5ve4VuCwi7Xas5s50ynEB7uFjM2.jpg",
+      "release_date": "1982-12-23",
+      "title": "Bingo Bongo",
+      "video": false,
+      "vote_average": 5.711,
+      "vote_count": 166
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 136.4181,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.222,
+      "vote_count": 841
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oIJjO1CvEdTMFNkWfHaV0RB584G.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 628847,
+      "original_language": "en",
+      "original_title": "Trap House",
+      "overview": "An undercover DEA agent and his partner embark on a game of cat and mouse with an audacious, and surprising group of thieves - their own rebellious teenagers, who have begun robbing from a dangerous cartel, using their parents' tactics and top-secret intel to do it.",
+      "popularity": 120.4269,
+      "poster_path": "/6tpAPeuuqbVnYWWPoOLEDLSBU7a.jpg",
+      "release_date": "2025-11-14",
+      "title": "Trap House",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 157
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 127.4235,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 662
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wCwZ4ljSsWyZyTiyk1tGQtBHTDx.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1511417,
+      "original_language": "te",
+      "original_title": "Baahubali: The Epic",
+      "overview": "When a mysterious child is found by a tribal couple near a roaring waterfall, they raise him as their own. As he grows, Sivudu is drawn to the world beyond the cliffs, where he discovers the ancient kingdom of Mahishmati, ruled by a cruel tyrant, haunted by rebellion, and bound to his past. What begins as a quest for love soon unravels a legacy of betrayal, sacrifice, and a forgotten prince.",
+      "popularity": 115.5531,
+      "poster_path": "/z9YIo2qscyaXYgRqIdRJtND3bw8.jpg",
+      "release_date": "2025-10-29",
+      "title": "Bāhubali: The Epic",
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 22
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qth56RA3rkUlhbDRDKGeMJEssdi.jpg",
+      "genre_ids": [
+        10749,
+        35,
+        18
+      ],
+      "id": 1034716,
+      "original_language": "en",
+      "original_title": "People We Meet on Vacation",
+      "overview": "Poppy's a free spirit. Alex loves a plan. After years of summer vacations, these polar-opposite pals wonder if they could be a perfect romantic match.",
+      "popularity": 94.5774,
+      "poster_path": "/xzZaU0MN6L9oc1pl0RUXSB7hWwD.jpg",
+      "release_date": "2026-01-06",
+      "title": "People We Meet on Vacation",
+      "video": false,
+      "vote_average": 7.154,
+      "vote_count": 254
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 108.9707,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.146,
+      "vote_count": 297
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fP6L6V42980QmuoyyGXCmWphwpT.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "id": 1131759,
+      "original_language": "ko",
+      "original_title": "전지적 독자 시점",
+      "overview": "Kim Dok-ja, an ordinary man in his 20s, is the only reader of an obscure web novel titled \"Three Ways to Survive the Apocalypse\". After having read the last chapter, the novel suddenly becomes reality, and its omnipotent hero Yu Jung-hyeok appears before Kim. As the only person who knows how to survive in this world, Kim and his companions strive to save the world by writing his own, new ending.",
+      "popularity": 105.772,
+      "poster_path": "/3R3dXO2nm8JyR5NG7SEfii7RzlV.jpg",
+      "release_date": "2025-07-23",
+      "title": "Omniscient Reader: The Prophecy",
+      "video": false,
+      "vote_average": 6.722,
+      "vote_count": 45
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dHSz0tSFuO2CsXJ1CApSauP9Ncl.jpg",
+      "genre_ids": [
+        53,
+        80,
+        9648
+      ],
+      "id": 425274,
+      "original_language": "en",
+      "original_title": "Now You See Me: Now You Don't",
+      "overview": "The original Four Horsemen reunite with a new generation of illusionists to take on powerful diamond heiress Veronika Vanderberg, who leads a criminal empire built on money laundering and trafficking. The new and old magicians must overcome their differences to work together on their most ambitious heist yet.",
+      "popularity": 103.9344,
+      "poster_path": "/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg",
+      "release_date": "2025-11-12",
+      "title": "Now You See Me: Now You Don't",
+      "video": false,
+      "vote_average": 6.6,
+      "vote_count": 892
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/j3OksPD3jY3vhqf1sKOWXWLQEMB.jpg",
+      "genre_ids": [
+        27,
+        28,
+        878
+      ],
+      "id": 1301122,
+      "original_language": "en",
+      "original_title": "Erbsünde - Veil of Sin",
+      "overview": "A group of journalism students ventures into a remote forest and awakens a long-frozen World War II experiment a superhuman Nazi soldier. Hunted through cursed woods where trust crumbles and survival is slim, they soon learn that some sins demand blood.",
+      "popularity": 90.1256,
+      "poster_path": "/3daBOc5ZcICXMzAVNhzJTSgweaP.jpg",
+      "release_date": "2024-10-13",
+      "title": "Nazi Supersoldier",
+      "video": false,
+      "vote_average": 5.357,
+      "vote_count": 14
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ufuabtiOem0kHeYz6b8x8MjBb2L.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1208348,
+      "original_language": "en",
+      "original_title": "Rental Family",
+      "overview": "An American actor in Tokyo struggles to find purpose until he lands an unusual gig: working for a Japanese 'rental family' agency, playing stand-in roles for strangers. As he immerses himself in his clients' worlds, he begins to form genuine bonds that blur the lines between performance and reality.",
+      "popularity": 103.1799,
+      "poster_path": "/A5lswNlytTUrnMWsuD0NFfhZlf3.jpg",
+      "release_date": "2025-11-20",
+      "title": "Rental Family",
+      "video": false,
+      "vote_average": 7.885,
+      "vote_count": 152
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dT1p0K1szMAUBuE2bibouDQdNb8.jpg",
+      "genre_ids": [
+        27,
+        53,
+        878
+      ],
+      "id": 1272837,
+      "original_language": "en",
+      "original_title": "28 Years Later: The Bone Temple",
+      "overview": "Dr. Kelson finds himself in a shocking new relationship - with consequences that could change the world as they know it - and Spike's encounter with Jimmy Crystal becomes a nightmare he can't escape.",
+      "popularity": 96.3689,
+      "poster_path": "/kK1BGkG3KAvWB0WMV1DfOx9yTMZ.jpg",
+      "release_date": "2026-01-14",
+      "title": "28 Years Later: The Bone Temple",
+      "video": false,
+      "vote_average": 7.015,
+      "vote_count": 100
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/novE5UrqfLIFEMe5QBnjm18GG4E.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1512623,
+      "original_language": "en",
+      "original_title": "Risqué",
+      "overview": "Fired from a strip club, a vengeful dancer masterminds a high-stakes heist with fellow strippers to take down the corrupt boss and the men who underestimate them.",
+      "popularity": 95.7737,
+      "poster_path": "/h6OsRrDwbspLnKMvlFl57QFDP7d.jpg",
+      "release_date": "2025-08-01",
+      "title": "Risqué",
+      "video": false,
+      "vote_average": 7.544,
+      "vote_count": 45
+    }
+  ],
+  "total_pages": 54733,
+  "total_results": 1094650
+}
