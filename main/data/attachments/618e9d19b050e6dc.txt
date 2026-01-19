@@ -1,0 +1,3 @@
+2026-01-19 08:14:57 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-01-19 08:14:58 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-01-19 08:14:58 - test_automation - INFO - 스크린샷 저장: screenshots/xyzabc123_검색_결과_없음_20260119_081458.png
