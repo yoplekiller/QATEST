@@ -1,0 +1,4 @@
+2026-01-21 04:26:58 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-01-21 04:27:01 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-01-21 04:27:09 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath__button_contains_class_css-__20260121_042709.png
+2026-01-21 04:27:09 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "//button[contains(@class,'css-')]")
