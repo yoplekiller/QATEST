@@ -3,8 +3,10 @@
 Page Object Model을 사용하여 리팩토링된 검색 테스트
 """
 from email.utils import quote
+import time
 import allure
 import pytest
+
 
 
 
@@ -141,7 +143,7 @@ class TestSearch:
 
     **예상 결과:** 상품 상세 페이지로 정상 이동
     """)
-    def test_search_and_click_first_result(self, kurly_main_page, kurly_search_page):
+    def test_search_and_click_first_result(self, kurly_main_page, kurly_search_page, kurly_goods_page):
         """
         검색 후 첫 번째 결과를 클릭하여 상세 페이지로 이동
         """
@@ -152,16 +154,16 @@ class TestSearch:
 
         
         with allure.step("첫 번째 검색 결과 클릭"):
-            initial_url = kurly_search_page.get_current_url()
             kurly_search_page.click_first_good()
-
+            time.sleep(5)  # 페이지 로딩 대기
+        
         
         with allure.step("상세 페이지 이동 확인"):
             kurly_search_page.take_screenshot("상품_상세_페이지")
 
-            current_url = kurly_search_page.get_current_url()
-            assert current_url != initial_url, \
-                "❌ 상품 클릭 후 페이지가 변경되지 않았습니다"
+            assert kurly_goods_page.is_product_detail_displayed(), "❌ 상품 상세 페이지로 이동하지 않았습니다"
+            
+            
 
     @allure.title("특수문자 검색 처리")
     @allure.description("""

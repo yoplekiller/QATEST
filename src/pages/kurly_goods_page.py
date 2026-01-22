@@ -23,8 +23,8 @@ class KurlyGoodsPage(BasePage):
     GOODS_PRICE = (By.XPATH, ".//span[contains(@class,'goods-price')]")
 
     # Locators - 상품 상세 팝업
-    GOODS_DETAIL_POPUP = (By.XPATH, "//div[contains(@class,'goods-detail-modal')]")
-    GOODS_TITLE = (By.XPATH, "//h1[contains(@class,'goods-name')]")
+    GOODS_DETAIL_POPUP = (By.XPATH, "//div[contains(@class,'goods-detail-modal')]") 
+    GOODS_TITLE = (By.XPATH, "//h1[contains(@class, 'css-11t2v30')]")
     GOODS_PRICE = (By.XPATH, "//span[contains(@class,'goods-price')]")
 
     # Locators - 수량 조절 (팝업 내)
@@ -106,6 +106,15 @@ class KurlyGoodsPage(BasePage):
         """
         return self.get_text(self.GOODS_PRICE)
     
-    def click_first_search_result(self) -> None:
-        """검색 결과에서 첫 번째 상품 클릭"""
-        self.click_first_good()
+    def is_product_detail_displayed(self) -> bool:
+        """
+        상품 상세 페이지가 표시되는지 확인
+
+        Returns:
+            bool: 상세 페이지가 표시되면 True
+        """
+        try:
+            self.wait_visible(self.GOODS_TITLE, timeout=5)
+        except Exception:
+            return False
+
