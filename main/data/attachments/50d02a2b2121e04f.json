@@ -1,0 +1,404 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/8vLt9TYFZdAwYtqImvggTM5yFnF.jpg",
+      "genre_ids": [
+        878,
+        12,
+        18
+      ],
+      "id": 982843,
+      "original_language": "ko",
+      "original_title": "대홍수",
+      "overview": "When a raging flood traps a researcher and her young son, a call to a crucial mission puts their escape — and the future of humanity — on the line.",
+      "popularity": 70.2963,
+      "poster_path": "/1tUOZQDgZaGqZtrB21MieiXARL2.jpg",
+      "release_date": "2025-09-18",
+      "title": "The Great Flood",
+      "video": false,
+      "vote_average": 6.039,
+      "vote_count": 509
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kHHVzOGE23kavlvFOxeHaBmrgBJ.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1317288,
+      "original_language": "en",
+      "original_title": "Marty Supreme",
+      "overview": "In 1950s New York, table tennis player Marty Mauser, a young man with a dream no one respects, goes to Hell and back in pursuit of greatness.",
+      "popularity": 74.2056,
+      "poster_path": "/firAhZA0uQvRL2slp7v3AnOj0ZX.jpg",
+      "release_date": "2025-12-19",
+      "title": "Marty Supreme",
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 187
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nZFJgk5nWSZju9JW76hbv5lUegw.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1491902,
+      "original_language": "th",
+      "original_title": "ปัง",
+      "overview": "Follows a ruthless hitman who, after narrowly escaping a fatal attempt on his life, betrays his gang in an effort to find forgiveness but ends up becoming a target himself.",
+      "popularity": 70.8355,
+      "poster_path": "/8SUzKOqe2ectvhYdSnR7Vq2F3n1.jpg",
+      "release_date": "2025-07-11",
+      "title": "Bang",
+      "video": false,
+      "vote_average": 6.56,
+      "vote_count": 50
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 24428,
+      "original_language": "en",
+      "original_title": "The Avengers",
+      "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+      "popularity": 73.7481,
+      "poster_path": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+      "release_date": "2012-04-25",
+      "title": "The Avengers",
+      "video": false,
+      "vote_average": 7.917,
+      "vote_count": 35307
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/54BOXpX2ieTXMDzHymdDMnUIzYG.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1228246,
+      "original_language": "en",
+      "original_title": "Five Nights at Freddy's 2",
+      "overview": "One year since the supernatural nightmare at Freddy Fazbear's Pizza, the stories about what transpired there have been twisted into a campy local legend, inspiring the town's first ever Fazfest. With the truth kept from her, Abby sneaks out to reconnect with Freddy, Bonnie, Chica, and Foxy, setting into motion a terrifying series of events that will reveal dark secrets about the real origin of Freddy's, and unleash a decades-hidden horror.",
+      "popularity": 64.6528,
+      "poster_path": "/udAxQEORq2I5wxI97N2TEqdhzBE.jpg",
+      "release_date": "2025-12-03",
+      "title": "Five Nights at Freddy's 2",
+      "video": false,
+      "vote_average": 6.757,
+      "vote_count": 647
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zpEWFNqoN8Qg1SzMMHmaGyOBTdW.jpg",
+      "genre_ids": [
+        53,
+        80,
+        28
+      ],
+      "id": 1054867,
+      "original_language": "en",
+      "original_title": "One Battle After Another",
+      "overview": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+      "popularity": 68.3969,
+      "poster_path": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
+      "release_date": "2025-09-23",
+      "title": "One Battle After Another",
+      "video": false,
+      "vote_average": 7.43,
+      "vote_count": 2534
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ncI1PlBcANixIkgQSnjsSRz4OyT.jpg",
+      "genre_ids": [
+        28,
+        53,
+        9648
+      ],
+      "id": 1439112,
+      "original_language": "en",
+      "original_title": "Muzzle: City of Wolves",
+      "overview": "LAPD officer Jake Rosser endeavors to lead a peaceful life with his family and retired K-9 officer, Socks. However, tranquility dissolves into chaos when a gang targets them in a brutal attack. Alongside his new K-9 partner Argos, Jake launches into a relentless pursuit of justice, determined to protect his loved ones.",
+      "popularity": 63.2386,
+      "poster_path": "/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg",
+      "release_date": "2025-11-13",
+      "title": "Muzzle: City of Wolves",
+      "video": false,
+      "vote_average": 6.742,
+      "vote_count": 97
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/A1prqBBKiwfnahBnNgM1t5y5vmA.jpg",
+      "genre_ids": [
+        27,
+        53,
+        35
+      ],
+      "id": 1255674,
+      "original_language": "es",
+      "original_title": "Vieja loca",
+      "overview": "Pedro receives a desperate message from an ex-girlfriend asking him to look after her senile mother, Alicia. What seems like a simple mission soon becomes his worst nightmare. Pedro needs to escape; but Alicia won’t let him...",
+      "popularity": 59.5134,
+      "poster_path": "/a2EdW8sk22fNCvrpOiaHbR2hOuZ.jpg",
+      "release_date": "2025-10-10",
+      "title": "Crazy Old Lady",
+      "video": false,
+      "vote_average": 5.533,
+      "vote_count": 15
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9pdoEzieGdUTlRWTAO7QP8q1tIo.jpg",
+      "genre_ids": [
+        80,
+        28,
+        35,
+        18,
+        53
+      ],
+      "id": 1137179,
+      "original_language": "ko",
+      "original_title": "야당",
+      "overview": "Navigating both the criminal underworld and law enforcement agencies, professional snitches called \"yadang\" provide covert information about the drug world to prosecutors and police. When a drug bust at a party attended by high-profile second-generation VIPs entangles those involved into a dangerous conspiracy, a seasoned yadang must do everything in his power not just to make it out on top, but alive.",
+      "popularity": 64.0623,
+      "poster_path": "/y7dsDbG8zVWkrkyOhA6ckZXX1uC.jpg",
+      "release_date": "2025-04-16",
+      "title": "Yadang: The Snitch",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 34
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ufuabtiOem0kHeYz6b8x8MjBb2L.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1208348,
+      "original_language": "en",
+      "original_title": "Rental Family",
+      "overview": "An American actor in Tokyo struggles to find purpose until he lands an unusual gig: working for a Japanese 'rental family' agency, playing stand-in roles for strangers. As he immerses himself in his clients' worlds, he begins to form genuine bonds that blur the lines between performance and reality.",
+      "popularity": 51.8455,
+      "poster_path": "/A5lswNlytTUrnMWsuD0NFfhZlf3.jpg",
+      "release_date": "2025-11-20",
+      "title": "Rental Family",
+      "video": false,
+      "vote_average": 7.749,
+      "vote_count": 231
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w3Bi0wygeFQctn6AqFTwhGNXRwL.jpg",
+      "genre_ids": [
+        14,
+        10402,
+        35,
+        16
+      ],
+      "id": 803796,
+      "original_language": "en",
+      "original_title": "KPop Demon Hunters",
+      "overview": "When K-pop superstars Rumi, Mira and Zoey aren't selling out stadiums, they're using their secret powers to protect their fans from supernatural threats.",
+      "popularity": 59.8109,
+      "poster_path": "/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg",
+      "release_date": "2025-06-20",
+      "title": "KPop Demon Hunters",
+      "video": false,
+      "vote_average": 8.1,
+      "vote_count": 2266
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eeGRpU64sIrRApjWXvTpK5Lep2K.jpg",
+      "genre_ids": [
+        80,
+        18,
+        53
+      ],
+      "id": 1220564,
+      "original_language": "pt",
+      "original_title": "O Agente Secreto",
+      "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
+      "popularity": 59.4194,
+      "poster_path": "/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
+      "release_date": "2025-07-23",
+      "title": "The Secret Agent",
+      "video": false,
+      "vote_average": 7.686,
+      "vote_count": 199
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fepnF3W4VP3s8ui8nDtrlsFVYwO.jpg",
+      "genre_ids": [
+        28,
+        9648,
+        18
+      ],
+      "id": 1247002,
+      "original_language": "ko",
+      "original_title": "파과",
+      "overview": "Aging assassin Hornclaw has seen it all, but she never expected to mentor a reckless rookie like Bullfight. As their unlikely bond deepens, cracks form in the underworld they navigate together. When Hornclaw discovers someone wants her dead, she's thrust into a deadly game of deception. With enemies closing in and trust in short supply, survival means staying sharp—both blade and mind.",
+      "popularity": 53.1591,
+      "poster_path": "/wbmxnsv41vsg5UEaNDlf203dOWw.jpg",
+      "release_date": "2025-04-30",
+      "title": "The Old Woman with the Knife",
+      "video": false,
+      "vote_average": 6.441,
+      "vote_count": 51
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg",
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "id": 533533,
+      "original_language": "en",
+      "original_title": "TRON: Ares",
+      "overview": "A highly sophisticated Program called Ares is sent from the digital world into the real world on a dangerous mission, marking humankind's first encounter with A.I. beings.",
+      "popularity": 55.0835,
+      "poster_path": "/chpWmskl3aKm1aTZqUHRCtviwPy.jpg",
+      "release_date": "2025-10-08",
+      "title": "TRON: Ares",
+      "video": false,
+      "vote_average": 6.515,
+      "vote_count": 1068
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yCatt8lmp3oRFEcOZF8KHhsiASQ.jpg",
+      "genre_ids": [
+        28,
+        10752
+      ],
+      "id": 1223601,
+      "original_language": "fi",
+      "original_title": "Sisu 2",
+      "overview": "Returning to the house where his family was brutally murdered during the war, \"the man who refuses to die\" dismantles it, loads it on a truck, and is determined to rebuild it somewhere safe in their honor. When the commander who killed his family comes back hellbent on finishing the job, a relentless, eye-popping cross-country chase ensues.",
+      "popularity": 51.245,
+      "poster_path": "/jNsttCWZyPtW66MjhUozBzVsRb7.jpg",
+      "release_date": "2025-10-21",
+      "title": "Sisu: Road to Revenge",
+      "video": false,
+      "vote_average": 7.425,
+      "vote_count": 484
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/j3OksPD3jY3vhqf1sKOWXWLQEMB.jpg",
+      "genre_ids": [
+        27,
+        28,
+        878
+      ],
+      "id": 1301122,
+      "original_language": "en",
+      "original_title": "Erbsünde - Veil of Sin",
+      "overview": "A group of journalism students ventures into a remote forest and awakens a long-frozen World War II experiment a superhuman Nazi soldier. Hunted through cursed woods where trust crumbles and survival is slim, they soon learn that some sins demand blood.",
+      "popularity": 51.4813,
+      "poster_path": "/3daBOc5ZcICXMzAVNhzJTSgweaP.jpg",
+      "release_date": "2024-10-13",
+      "title": "Nazi Supersoldier",
+      "video": false,
+      "vote_average": 5.211,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/y6MgDckBAzPfvRDCR093UNaWItQ.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        10749
+      ],
+      "id": 1366745,
+      "original_language": "es",
+      "original_title": "Papá x dos",
+      "overview": "Santiago decides to start a family with his girlfriend Ana, even though she is pregnant with her ex, Pancho's. However, the real challenge will come when Pancho unexpectedly returns from Miami to get involved in the pregnancy, unleashing a series of comical and chaotic situations in his home.",
+      "popularity": 51.9223,
+      "poster_path": "/yd1FqtFNV7ubC1PvnwN6Qfl0hkB.jpg",
+      "release_date": "2025-09-18",
+      "title": "Papá x dos",
+      "video": false,
+      "vote_average": 4.2,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4mZ06VpfpAPuaUPn1SEV0brbbxe.jpg",
+      "genre_ids": [
+        878,
+        28,
+        27
+      ],
+      "id": 1196067,
+      "original_language": "en",
+      "original_title": "Worldbreaker",
+      "overview": "Five years ago, a tear in the fabric of reality brought creatures to our world from an alternate dimension bent on our destruction. A father hides his daughter on an island to keep her safe while he prepares her for survival and the battles to come. But when the world is about to break, no place is safe.",
+      "popularity": 53.4056,
+      "poster_path": "/7K8w6mdrJp0oaSoKWGyjSZ4Zv2z.jpg",
+      "release_date": "2025-10-30",
+      "title": "Worldbreaker",
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 61
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cd8YDn7M0lfaHhZdU6MvCDxPalP.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 76600,
+      "original_language": "en",
+      "original_title": "Avatar: The Way of Water",
+      "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+      "popularity": 52.3821,
+      "poster_path": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+      "release_date": "2022-12-14",
+      "title": "Avatar: The Way of Water",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 13576
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ceyakefyCRAgyeFhefa2bz6d9QO.jpg",
+      "genre_ids": [
+        18,
+        14,
+        27
+      ],
+      "id": 1062722,
+      "original_language": "en",
+      "original_title": "Frankenstein",
+      "overview": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+      "popularity": 52.1778,
+      "poster_path": "/g4JtvGlQO7DByTI6frUobqvSL3R.jpg",
+      "release_date": "2025-10-17",
+      "title": "Frankenstein",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 2697
+    }
+  ],
+  "total_pages": 54816,
+  "total_results": 1096302
+}
