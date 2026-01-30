@@ -1,0 +1,405 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/uiSaYXR0jLLWma0EPA1tcBhX6wT.jpg",
+      "genre_ids": [
+        53,
+        18
+      ],
+      "id": 1608982,
+      "original_language": "ar",
+      "original_title": "جرس إنذار: الحفرة",
+      "overview": "Trapped in an underground pit during a storm, three students from an all-girls school must confront their personal conflicts as they fight to survive.",
+      "popularity": 85.8485,
+      "poster_path": "/iwZIR8wp1lqj69zsbWmZKhXTTIU.jpg",
+      "release_date": "2026-01-21",
+      "title": "From the Ashes: The Pit",
+      "video": false,
+      "vote_average": 3.8,
+      "vote_count": 15
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uHavtqbnMDcwqVK9Y94ZQSWxtCw.jpg",
+      "genre_ids": [
+        53,
+        80,
+        18
+      ],
+      "id": 1443762,
+      "original_language": "it",
+      "original_title": "Il falsario",
+      "overview": "Toni Chichiarelli arrives in Rome with the dream of becoming a painter, but his talent leads him elsewhere — from art galleries to state secrets. Between art, crime, and power, his signature ends up everywhere — even in the history of Italy.",
+      "popularity": 75.6598,
+      "poster_path": "/A188B94iDLdB6499QBYbz74WgOF.jpg",
+      "release_date": "2025-10-19",
+      "title": "The Big Fake",
+      "video": false,
+      "vote_average": 6.47,
+      "vote_count": 83
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qKWDHofjMHPSEOTLaixkC9ZmjTT.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1317288,
+      "original_language": "en",
+      "original_title": "Marty Supreme",
+      "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
+      "popularity": 75.6494,
+      "poster_path": "/firAhZA0uQvRL2slp7v3AnOj0ZX.jpg",
+      "release_date": "2025-12-19",
+      "title": "Marty Supreme",
+      "video": false,
+      "vote_average": 7.867,
+      "vote_count": 360
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ufqytAlziHq5pljKByGJ8IKhtEZ.jpg",
+      "genre_ids": [
+        53,
+        80,
+        9648
+      ],
+      "id": 425274,
+      "original_language": "en",
+      "original_title": "Now You See Me: Now You Don't",
+      "overview": "The original Four Horsemen reunite with a new generation of illusionists to take on powerful diamond heiress Veronika Vanderberg, who leads a criminal empire built on money laundering and trafficking. The new and old magicians must overcome their differences to work together on their most ambitious heist yet.",
+      "popularity": 73.0255,
+      "poster_path": "/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg",
+      "release_date": "2025-11-12",
+      "title": "Now You See Me: Now You Don't",
+      "video": false,
+      "vote_average": 6.558,
+      "vote_count": 974
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tVwFrpeGPYyk75rS82benPjtK6.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "id": 1131759,
+      "original_language": "ko",
+      "original_title": "전지적 독자 시점",
+      "overview": "Kim Dok-ja, an ordinary man in his 20s, is the only reader of an obscure web novel titled \"Three Ways to Survive the Apocalypse\". After having read the last chapter, the novel suddenly becomes reality, and its omnipotent hero Yu Jung-hyeok appears before Kim. As the only person who knows how to survive in this world, Kim and his companions strive to save the world by writing his own, new ending.",
+      "popularity": 70.087,
+      "poster_path": "/3R3dXO2nm8JyR5NG7SEfii7RzlV.jpg",
+      "release_date": "2025-07-23",
+      "title": "Omniscient Reader: The Prophecy",
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 52
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2OHa6ukEq3Hce7Pc2kvu8wkmMFY.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53,
+        80,
+        18
+      ],
+      "id": 7451,
+      "original_language": "en",
+      "original_title": "xXx",
+      "overview": "Xander Cage is your standard adrenaline junkie with no fear and a lousy attitude. When the US Government \"recruits\" him to go on a mission, he's not exactly thrilled. His mission: to gather information on an organization that may just be planning the destruction of the world, led by the nihilistic Yorgi.",
+      "popularity": 74.4831,
+      "poster_path": "/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg",
+      "release_date": "2002-08-09",
+      "title": "xXx",
+      "video": false,
+      "vote_average": 5.982,
+      "vote_count": 4761
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oIJjO1CvEdTMFNkWfHaV0RB584G.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 628847,
+      "original_language": "en",
+      "original_title": "Trap House",
+      "overview": "An undercover DEA agent and his partner embark on a game of cat and mouse with an audacious, and surprising group of thieves - their own rebellious teenagers, who have begun robbing from a dangerous cartel, using their parents' tactics and top-secret intel to do it.",
+      "popularity": 72.071,
+      "poster_path": "/6tpAPeuuqbVnYWWPoOLEDLSBU7a.jpg",
+      "release_date": "2025-11-14",
+      "title": "Trap House",
+      "video": false,
+      "vote_average": 6.644,
+      "vote_count": 191
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wCwZ4ljSsWyZyTiyk1tGQtBHTDx.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1511417,
+      "original_language": "te",
+      "original_title": "Baahubali: The Epic",
+      "overview": "When a mysterious child is found by a tribal couple near a roaring waterfall, they raise him as their own. As he grows, Sivudu is drawn to the world beyond the cliffs, where he discovers the ancient kingdom of Mahishmati, ruled by a cruel tyrant, haunted by rebellion, and bound to his past. What begins as a quest for love soon unravels a legacy of betrayal, sacrifice, and a forgotten prince.",
+      "popularity": 68.5994,
+      "poster_path": "/z9YIo2qscyaXYgRqIdRJtND3bw8.jpg",
+      "release_date": "2025-10-29",
+      "title": "Bāhubali: The Epic",
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mHC8tSRYfAKGh2jaSNQMSzGdbOW.jpg",
+      "genre_ids": [
+        878,
+        28,
+        53
+      ],
+      "id": 1236153,
+      "original_language": "en",
+      "original_title": "Mercy",
+      "overview": "In the near future, a detective stands on trial accused of murdering his wife. He has ninety minutes to prove his innocence to the advanced AI Judge he once championed, before it determines his fate.",
+      "popularity": 66.5702,
+      "poster_path": "/1LzdlxK9ctsnx7nXoGF1ImHKddl.jpg",
+      "release_date": "2026-01-19",
+      "title": "Mercy",
+      "video": false,
+      "vote_average": 6.861,
+      "vote_count": 79
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9cd1zsxcOAcBW01WDOWz8EODTS0.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1206008,
+      "original_language": "en",
+      "original_title": "Ella McCay",
+      "overview": "An idealistic young politician juggles familial issues and a challenging work life while preparing to take over the job of her mentor, the state’s longtime incumbent governor.",
+      "popularity": 69.6312,
+      "poster_path": "/iQCtK477yqp6xnHHrQG2P0lXoow.jpg",
+      "release_date": "2025-12-11",
+      "title": "Ella McCay",
+      "video": false,
+      "vote_average": 5.4,
+      "vote_count": 33
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/si68lkhkMfIospVeLEBtl7HWKDh.jpg",
+      "genre_ids": [
+        53,
+        80,
+        28
+      ],
+      "id": 1054867,
+      "original_language": "en",
+      "original_title": "One Battle After Another",
+      "overview": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+      "popularity": 64.0761,
+      "poster_path": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
+      "release_date": "2025-09-23",
+      "title": "One Battle After Another",
+      "video": false,
+      "vote_average": 7.421,
+      "vote_count": 2622
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        53,
+        27,
+        18
+      ],
+      "id": 1475490,
+      "original_language": "en",
+      "original_title": "The Calling Witch",
+      "overview": "A brother and sister are terrorized by what seems to be their late-author mother's most sinister literary creation - The Calling Witch.",
+      "popularity": 73.8631,
+      "poster_path": "/q8o2NzIH4ze28NAVs1eRkejAJIk.jpg",
+      "release_date": "2026-01-20",
+      "title": "The Calling Witch",
+      "video": false,
+      "vote_average": 6.25,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dT1p0K1szMAUBuE2bibouDQdNb8.jpg",
+      "genre_ids": [
+        27,
+        53,
+        878
+      ],
+      "id": 1272837,
+      "original_language": "en",
+      "original_title": "28 Years Later: The Bone Temple",
+      "overview": "Dr. Kelson finds himself in a shocking new relationship - with consequences that could change the world as they know it - and Spike's encounter with Jimmy Crystal becomes a nightmare he can't escape.",
+      "popularity": 62.638,
+      "poster_path": "/kK1BGkG3KAvWB0WMV1DfOx9yTMZ.jpg",
+      "release_date": "2026-01-14",
+      "title": "28 Years Later: The Bone Temple",
+      "video": false,
+      "vote_average": 7.235,
+      "vote_count": 268
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hO2jx1H3XafR7Y8QbFgVH1sHTY9.jpg",
+      "genre_ids": [
+        27,
+        53,
+        35
+      ],
+      "id": 1198994,
+      "original_language": "en",
+      "original_title": "Send Help",
+      "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+      "popularity": 77.8243,
+      "poster_path": "/mlV70IuchLZXcXKowjwSpSfdfUB.jpg",
+      "release_date": "2026-01-22",
+      "title": "Send Help",
+      "video": false,
+      "vote_average": 6.92,
+      "vote_count": 25
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 24428,
+      "original_language": "en",
+      "original_title": "The Avengers",
+      "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+      "popularity": 63.978,
+      "poster_path": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+      "release_date": "2012-04-25",
+      "title": "The Avengers",
+      "video": false,
+      "vote_average": 7.924,
+      "vote_count": 35488
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sW0X1265yuRHUorLKCrJDv9TJD7.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1491902,
+      "original_language": "th",
+      "original_title": "ปัง",
+      "overview": "Follows a ruthless hitman who, after narrowly escaping a fatal attempt on his life, betrays his gang in an effort to find forgiveness but ends up becoming a target himself.",
+      "popularity": 60.5388,
+      "poster_path": "/8SUzKOqe2ectvhYdSnR7Vq2F3n1.jpg",
+      "release_date": "2025-07-11",
+      "title": "Bang",
+      "video": false,
+      "vote_average": 6.639,
+      "vote_count": 61
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/54BOXpX2ieTXMDzHymdDMnUIzYG.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1228246,
+      "original_language": "en",
+      "original_title": "Five Nights at Freddy's 2",
+      "overview": "One year since the supernatural nightmare at Freddy Fazbear's Pizza, the stories about what transpired there have been twisted into a campy local legend, inspiring the town's first ever Fazfest. With the truth kept from her, Abby sneaks out to reconnect with Freddy, Bonnie, Chica, and Foxy, setting into motion a terrifying series of events that will reveal dark secrets about the real origin of Freddy's, and unleash a decades-hidden horror.",
+      "popularity": 60.7693,
+      "poster_path": "/udAxQEORq2I5wxI97N2TEqdhzBE.jpg",
+      "release_date": "2025-12-03",
+      "title": "Five Nights at Freddy's 2",
+      "video": false,
+      "vote_average": 6.733,
+      "vote_count": 674
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w3Bi0wygeFQctn6AqFTwhGNXRwL.jpg",
+      "genre_ids": [
+        14,
+        10402,
+        35,
+        16
+      ],
+      "id": 803796,
+      "original_language": "en",
+      "original_title": "KPop Demon Hunters",
+      "overview": "When K-pop superstars Rumi, Mira and Zoey aren't selling out stadiums, they're using their secret powers to protect their fans from supernatural threats.",
+      "popularity": 57.2999,
+      "poster_path": "/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg",
+      "release_date": "2025-06-20",
+      "title": "KPop Demon Hunters",
+      "video": false,
+      "vote_average": 8.11,
+      "vote_count": 2295
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3kps0wiGFMRVkSXxbebbAUeWrN3.jpg",
+      "genre_ids": [
+        12,
+        16,
+        28,
+        10770,
+        35
+      ],
+      "id": 1147411,
+      "original_language": "fr",
+      "original_title": "Miraculous World : Tokyo, Stellar Force",
+      "overview": "Kagami drags Marinette to Tokyo to help the Stellars defeat a new supervillain, but Marinette soon realizes her friend has another, untold reason for this trip to Japan.",
+      "popularity": 59.1186,
+      "poster_path": "/vFaopnGXRXxRf4z2Z3IgA1QtOyV.jpg",
+      "release_date": "2025-12-07",
+      "title": "Miraculous World: Tokyo, Stellar Force",
+      "video": false,
+      "vote_average": 9.111,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8vLt9TYFZdAwYtqImvggTM5yFnF.jpg",
+      "genre_ids": [
+        878,
+        12,
+        18
+      ],
+      "id": 982843,
+      "original_language": "ko",
+      "original_title": "대홍수",
+      "overview": "When a raging flood traps a researcher and her young son, a call to a crucial mission puts their escape — and the future of humanity — on the line.",
+      "popularity": 58.45,
+      "poster_path": "/1tUOZQDgZaGqZtrB21MieiXARL2.jpg",
+      "release_date": "2025-09-18",
+      "title": "The Great Flood",
+      "video": false,
+      "vote_average": 5.994,
+      "vote_count": 544
+    }
+  ],
+  "total_pages": 54926,
+  "total_results": 1098508
+}
