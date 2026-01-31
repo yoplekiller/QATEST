@@ -1,0 +1,3 @@
+2026-01-31 04:38:46 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-01-31 04:38:48 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-01-31 04:38:49 - test_automation - INFO - 스크린샷 저장: screenshots/계란_검색_결과_20260131_043848.png
