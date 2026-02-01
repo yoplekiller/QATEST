@@ -1,0 +1,5 @@
+2026-02-01 20:11:53 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-02-01 20:11:53 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-02-01 20:11:54 - test_automation - INFO - 스크린샷 저장: screenshots/가나다라마바사아자차카타파하_검색_결과_없음_20260201_201154.png
+2026-02-01 20:11:59 - test_automation - WARNING - find_elements 타임아웃: ('css selector', "a[href*='/goods/']")
+2026-02-01 20:11:59 - test_automation - INFO - 스크린샷 저장: screenshots/find_elements_failed__css_selector__a_href_goods__20260201_201159.png
