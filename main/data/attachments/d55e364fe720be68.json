@@ -1,0 +1,408 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/e4OnHU8HNAhdS6C4Ypk6NA26kPQ.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80
+      ],
+      "id": 1168190,
+      "original_language": "en",
+      "original_title": "The Wrecking Crew",
+      "overview": "Estranged half-brothers Jonny and James reunite after their father's mysterious death. As they search for the truth, buried secrets reveal a conspiracy threatening to tear their family apart.",
+      "popularity": 820.4968,
+      "poster_path": "/gbVwHl4YPSq6BcC92TQpe7qUTh6.jpg",
+      "release_date": "2026-01-28",
+      "title": "The Wrecking Crew",
+      "video": false,
+      "vote_average": 6.536,
+      "vote_count": 253
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tyjXlexbNZQ0ZT1KEJslQtBirqc.jpg",
+      "genre_ids": [
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "Having found the safety of the Greenland bunker after the comet Clarke decimated the Earth, the Garrity family must now risk everything to embark on a perilous journey across the wasteland of Europe to find a new home.",
+      "popularity": 713.1506,
+      "poster_path": "/1mF4othta76CEXcL1YFInYudQ7K.jpg",
+      "release_date": "2026-01-07",
+      "title": "Greenland 2: Migration",
+      "video": false,
+      "vote_average": 6.509,
+      "vote_count": 271
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5h2EsPKNDdB3MAtOk9MB9Ycg9Rz.jpg",
+      "genre_ids": [
+        16,
+        35,
+        12,
+        10751,
+        9648
+      ],
+      "id": 1084242,
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 428.3987,
+      "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "release_date": "2025-11-26",
+      "title": "Zootopia 2",
+      "video": false,
+      "vote_average": 7.64,
+      "vote_count": 1465
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 405.1294,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.192,
+      "vote_count": 382
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/swxhEJsAWms6X1fDZ4HdbvYBSf9.jpg",
+      "genre_ids": [
+        12,
+        35,
+        27
+      ],
+      "id": 1234731,
+      "original_language": "en",
+      "original_title": "Anaconda",
+      "overview": "A group of friends facing mid-life crises head to the rainforest with the intention of remaking their favorite movie from their youth, only to find themselves in a fight for their lives against natural disasters, giant snakes and violent criminals.",
+      "popularity": 287.9495,
+      "poster_path": "/qxMv3HwAB3XPuwNLMhVRg795Ktp.jpg",
+      "release_date": "2025-12-24",
+      "title": "Anaconda",
+      "video": false,
+      "vote_average": 5.948,
+      "vote_count": 400
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lAtuFCx6cYkNBmTMSNnLE0qlCLx.jpg",
+      "genre_ids": [
+        28,
+        80,
+        10749
+      ],
+      "id": 1271895,
+      "original_language": "zh",
+      "original_title": "96分鐘",
+      "overview": "Former bomb disposal expert, Song Kang-Ren, and his fiancée, Huang Xin, board a high-speed train that contains a bomb. At the same time, Liu Kai, a well-known physics teacher who was involved in an affair scandal, also boards this same train in order to win back his wife, Ting Juan, who took the prior high-speed rail to return home in frustration…  After all, can the bomb be successfully defused this time? and resolve the crisis?",
+      "popularity": 241.8764,
+      "poster_path": "/gWKZ1iLhukvLoh8XY2N4tMvRQ2M.jpg",
+      "release_date": "2025-09-05",
+      "title": "96 Minutes",
+      "video": false,
+      "vote_average": 6.125,
+      "vote_count": 20
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eUERZRVjCTNdgnESlQxyaOJ2d4K.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1584215,
+      "original_language": "en",
+      "original_title": "The Internship",
+      "overview": "A CIA-trained assassin recruits other graduates from her secret childhood program, The Internship, to violently destroy the organization. The CIA fights back with deadly force.",
+      "popularity": 235.8614,
+      "poster_path": "/fYqSOkix4rbDiZW0ACNnvZCpT6X.jpg",
+      "release_date": "2026-01-13",
+      "title": "The Internship",
+      "video": false,
+      "vote_average": 6.194,
+      "vote_count": 36
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6D6M5z4reppUxo2cnBEKI02Csp1.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1601243,
+      "original_language": "en",
+      "original_title": "Oscar Shaw",
+      "overview": "After retiring from the police force, a relentless detective haunted by the tragic loss of his closest friend sets out on a perilous quest for vengeance, seeking redemption and fighting to restore justice to the streets he once swore to protect.",
+      "popularity": 228.086,
+      "poster_path": "/tsE3nySukwrfUjouz8vzvKTcXNC.jpg",
+      "release_date": "2026-01-09",
+      "title": "Oscar Shaw",
+      "video": false,
+      "vote_average": 6.182,
+      "vote_count": 11
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3F2EXWF1thX0BdrVaKvnm6mAhqh.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 1306368,
+      "original_language": "en",
+      "original_title": "The Rip",
+      "overview": "Trust frays when a team of Miami cops discovers millions in cash inside a run-down stash house, calling everyone — and everything — into question.",
+      "popularity": 168.6813,
+      "poster_path": "/eZo31Dhl5BQ6GfbMNf3oU0tUvPZ.jpg",
+      "release_date": "2026-01-13",
+      "title": "The Rip",
+      "video": false,
+      "vote_average": 7.025,
+      "vote_count": 1009
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ebyxeBh56QNXxSJgTnmz7fXAlwk.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 181.4584,
+      "poster_path": "/pHpq9yNUIo6aDoCXEBzjSolywgz.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 1772
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3Dqievkc7krcTtDE2hjRkIsEzB1.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 178.6639,
+      "poster_path": "/5bxrxnRaxZooBAxgUVBZ13dpzC7.jpg",
+      "release_date": "2025-12-17",
+      "title": "Avatar: Fire and Ash",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 1674
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gLXibzLQ4qegvjdqDC0f8yTij2P.jpg",
+      "genre_ids": [
+        9648,
+        53,
+        28
+      ],
+      "id": 1310568,
+      "original_language": "en",
+      "original_title": "Murder at the Embassy",
+      "overview": "1934. Private detective Miranda Green investigates a murder perpetrated in the British Embassy in Cairo, where a top secret document was stolen, risking to jeopardize both Buckingham Palace and the peace of the world. All those present in this closed place are suspected: the American photographer, the English student, the American actress, the Egyptian security guard, the ambassador interpreter, the Egyptian gardener and - why not? — the Ambassador himself. But who would have expected that a small group of Nazis would be behind a plot, risking to jeopardize both Buckingham Palace and the peace of the world?",
+      "popularity": 226.4926,
+      "poster_path": "/3DBmBItPdy0A2ol59jgHhS54Lua.jpg",
+      "release_date": "2025-11-14",
+      "title": "Murder at the Embassy",
+      "video": false,
+      "vote_average": 5.5,
+      "vote_count": 30
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oN4TQ1TxchynXlFiXFBL3NHLT54.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        18
+      ],
+      "id": 1167307,
+      "original_language": "en",
+      "original_title": "David",
+      "overview": "From the songs of his mother’s heart to the whispers of a faithful God, David’s story begins in quiet devotion. When the giant Goliath rises to terrorize a nation, a young shepherd armed with only a sling, a few stones, and unshakable faith steps forward. Pursued by power and driven by purpose, his journey tests the limits of loyalty, love, and courage—culminating in a battle not just for a crown, but for the soul of a kingdom.",
+      "popularity": 160.1383,
+      "poster_path": "/bESlrLOrsQ9gKzaGQGHXKOyIUtX.jpg",
+      "release_date": "2025-12-14",
+      "title": "David",
+      "video": false,
+      "vote_average": 8.145,
+      "vote_count": 62
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/AecGG1XVCmkk7fT10ko3FC0dLIP.jpg",
+      "genre_ids": [
+        28,
+        14,
+        53
+      ],
+      "id": 1043197,
+      "original_language": "en",
+      "original_title": "Dust Bunny",
+      "overview": "Ten-year-old Aurora asks her hitman neighbor to kill the monster under her bed that she claims ate her family. To protect her, he must battle an onslaught of assassins while accepting that some monsters are real.",
+      "popularity": 124.9517,
+      "poster_path": "/vobigFZFvbYPf6ElYJu07P9rH8C.jpg",
+      "release_date": "2025-12-11",
+      "title": "Dust Bunny",
+      "video": false,
+      "vote_average": 6.618,
+      "vote_count": 142
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xGbNoh7aWmU81oYuxJoFI07Rz5I.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 1326878,
+      "original_language": "en",
+      "original_title": "Strangers",
+      "overview": "Seeking revenge on her abusive husband, a woman's life takes a dark turn when she meets a mysterious hitman. Drawn into a whirlwind romance, she spirals into a dangerous vigilante spree. As the body count rises, she begins to unravel the true nature of her partner and the secrets they both conceal.",
+      "popularity": 106.6163,
+      "poster_path": "/v6hYeC1asK2ZRU7Ygukn4tV1zlS.jpg",
+      "release_date": "2024-08-16",
+      "title": "Strangers",
+      "video": false,
+      "vote_average": 5.845,
+      "vote_count": 29
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 118.4287,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.215,
+      "vote_count": 874
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jo17HPxcJqT9jpSw3Xv92mQBY1h.jpg",
+      "genre_ids": [
+        27,
+        53,
+        35
+      ],
+      "id": 1198994,
+      "original_language": "en",
+      "original_title": "Send Help",
+      "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+      "popularity": 125.0082,
+      "poster_path": "/mlV70IuchLZXcXKowjwSpSfdfUB.jpg",
+      "release_date": "2026-01-22",
+      "title": "Send Help",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 118
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kVSUUWiXoNwq2wVCZ4Mcqkniqvr.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        12,
+        14
+      ],
+      "id": 991494,
+      "original_language": "en",
+      "original_title": "The SpongeBob Movie: Search for SquarePants",
+      "overview": "Desperate to be a big guy, SpongeBob sets out to prove his bravery to Mr. Krabs by following The Flying Dutchman – a mysterious swashbuckling ghost pirate – on a seafaring adventure that takes him to the deepest depths of the deep sea, where no Sponge has gone before.",
+      "popularity": 106.8769,
+      "poster_path": "/pDWYW9v8fmJdA7N0I1MOdQA3ETq.jpg",
+      "release_date": "2025-12-16",
+      "title": "The SpongeBob Movie: Search for SquarePants",
+      "video": false,
+      "vote_average": 6.713,
+      "vote_count": 162
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tNONILTe9OJz574KZWaLze4v6RC.jpg",
+      "genre_ids": [
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 115.1733,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 582
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gQimJqYMKCkwHIo8wwYKhmnCfBr.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1242501,
+      "original_language": "en",
+      "original_title": "Icefall",
+      "overview": "A young Indigenous game warden arrests an infamous poacher only to discover that the poacher knows the location of a plane carrying millions of dollars that has crashed in a frozen lake. When a group of criminals and dirty cops are alerted to the poacher’s whereabouts, the warden and the poacher team up to fight back and escape across the treacherous lake before the ice melts.",
+      "popularity": 95.8766,
+      "poster_path": "/5Byv6nznAb2Izd0gHpODOXnuSbo.jpg",
+      "release_date": "2025-10-16",
+      "title": "Icefall",
+      "video": false,
+      "vote_average": 6.446,
+      "vote_count": 111
+    }
+  ],
+  "total_pages": 55016,
+  "total_results": 1100320
+}
