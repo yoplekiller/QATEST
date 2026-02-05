@@ -1,0 +1,404 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 90.9839,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.683,
+      "vote_count": 694
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lALfCsv7YMNrqpWzIaxjS81JKOm.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1454741,
+      "original_language": "en",
+      "original_title": "The Confession",
+      "overview": "A woman finds her late father’s tape confessing to murder tied to an evil force—now her son shows the same darkness, and she must fight to stop it.",
+      "popularity": 89.9017,
+      "poster_path": "/xJCwYlJX6UfYQuUmLfWWcRP27gK.jpg",
+      "release_date": "2026-01-08",
+      "title": "The Confession",
+      "video": false,
+      "vote_average": 5.235,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kv8kCuvfhSQ50YxjowqpVn1QqhJ.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 801937,
+      "original_language": "en",
+      "original_title": "Silent Night, Deadly Night",
+      "overview": "After witnessing his parents' brutal murder on Christmas Eve, Billy transforms into a Killer Santa, delivering a yearly spree of calculated, chilling violence. This year, his blood-soaked mission collides with love, as a young woman challenges him to confront his darkness.",
+      "popularity": 88.5697,
+      "poster_path": "/xCdSd7NnRdnL8DGLVhI95WhUNoi.jpg",
+      "release_date": "2025-12-11",
+      "title": "Silent Night, Deadly Night",
+      "video": false,
+      "vote_average": 6.214,
+      "vote_count": 63
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/73BClq9FOcrWrutnpiqhCNEWEwJ.jpg",
+      "genre_ids": [
+        18,
+        10749,
+        36
+      ],
+      "id": 858024,
+      "original_language": "en",
+      "original_title": "Hamnet",
+      "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
+      "popularity": 88.3802,
+      "poster_path": "/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
+      "release_date": "2025-11-26",
+      "title": "Hamnet",
+      "video": false,
+      "vote_average": 7.751,
+      "vote_count": 229
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xGbNoh7aWmU81oYuxJoFI07Rz5I.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 1326878,
+      "original_language": "en",
+      "original_title": "Strangers",
+      "overview": "Seeking revenge on her abusive husband, a woman's life takes a dark turn when she meets a mysterious hitman. Drawn into a whirlwind romance, she spirals into a dangerous vigilante spree. As the body count rises, she begins to unravel the true nature of her partner and the secrets they both conceal.",
+      "popularity": 87.3379,
+      "poster_path": "/v6hYeC1asK2ZRU7Ygukn4tV1zlS.jpg",
+      "release_date": "2024-08-16",
+      "title": "Strangers",
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 29
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gQimJqYMKCkwHIo8wwYKhmnCfBr.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1242501,
+      "original_language": "en",
+      "original_title": "Icefall",
+      "overview": "A young Indigenous game warden arrests an infamous poacher only to discover that the poacher knows the location of a plane carrying millions of dollars that has crashed in a frozen lake. When a group of criminals and dirty cops are alerted to the poacher’s whereabouts, the warden and the poacher team up to fight back and escape across the treacherous lake before the ice melts.",
+      "popularity": 87.1374,
+      "poster_path": "/5Byv6nznAb2Izd0gHpODOXnuSbo.jpg",
+      "release_date": "2025-10-16",
+      "title": "Icefall",
+      "video": false,
+      "vote_average": 6.446,
+      "vote_count": 111
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/YCunHbbBUBKx6daM9XZAXkOH8k.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1291608,
+      "original_language": "hi",
+      "original_title": "धुरंधर",
+      "overview": "In the early 2000s, an Indian undercover operative infiltrates Karachi’s underworld, breaking into its inner circle to dismantle a violent nexus from within.",
+      "popularity": 84.0241,
+      "poster_path": "/8FHOtUpNIk5ZPEay2N2EY5lrxkv.jpg",
+      "release_date": "2025-12-05",
+      "title": "Dhurandhar",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 180
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aFqLp6XfmzrYNSVlyKoQU7WT1PX.jpg",
+      "genre_ids": [
+        53,
+        27,
+        18
+      ],
+      "id": 1475490,
+      "original_language": "en",
+      "original_title": "The Calling Witch",
+      "overview": "A brother and sister are terrorized by what seems to be their late-author mother's most sinister literary creation - The Calling Witch.",
+      "popularity": 83.2084,
+      "poster_path": "/q8o2NzIH4ze28NAVs1eRkejAJIk.jpg",
+      "release_date": "2026-01-20",
+      "title": "The Calling Witch",
+      "video": false,
+      "vote_average": 6.143,
+      "vote_count": 7
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2OHa6ukEq3Hce7Pc2kvu8wkmMFY.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53,
+        80,
+        18
+      ],
+      "id": 7451,
+      "original_language": "en",
+      "original_title": "xXx",
+      "overview": "Xander Cage is your standard adrenaline junkie with no fear and a lousy attitude. When the US Government \"recruits\" him to go on a mission, he's not exactly thrilled. His mission: to gather information on an organization that may just be planning the destruction of the world, led by the nihilistic Yorgi.",
+      "popularity": 71.6869,
+      "poster_path": "/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg",
+      "release_date": "2002-08-09",
+      "title": "xXx",
+      "video": false,
+      "vote_average": 5.98,
+      "vote_count": 4768
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ykigHs1OIyqqV04zfFqIlSHp546.jpg",
+      "genre_ids": [
+        53,
+        27,
+        28,
+        9648,
+        878
+      ],
+      "id": 1412598,
+      "original_language": "en",
+      "original_title": "Killer Whale",
+      "overview": "Follows best friends Maddie and Trish as they find themselves trapped in a remote lagoon with the dangerous killer whale named Ceto.",
+      "popularity": 70.7908,
+      "poster_path": "/cqbXxAw9sUr4tJ5ffEwtnz6IL9o.jpg",
+      "release_date": "2026-01-16",
+      "title": "Killer Whale",
+      "video": false,
+      "vote_average": 5.91,
+      "vote_count": 50
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vMxOmgmBGegjVObjlb8ugsjGgkD.jpg",
+      "genre_ids": [
+        10752,
+        28,
+        18
+      ],
+      "id": 1252037,
+      "original_language": "de",
+      "original_title": "Der Tiger",
+      "overview": "A German Tiger tank crew is sent on a dangerous mission to rescue the missing officer Paul von Hardenburg from a top-secret bunker behind enemy lines. As they make their way through the lethal no-man's land, they must confront not only the enemy, but also their own fears and inner demons. Fueled by the Wehrmacht's methamphetamine, their mission increasingly becomes a journey into the heart of darkness.",
+      "popularity": 66.9196,
+      "poster_path": "/65Jr1JAgWlu9em8zHhAfrNJJQBt.jpg",
+      "release_date": "2025-09-18",
+      "title": "The Tank",
+      "video": false,
+      "vote_average": 7.031,
+      "vote_count": 306
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ufqytAlziHq5pljKByGJ8IKhtEZ.jpg",
+      "genre_ids": [
+        53,
+        80,
+        9648
+      ],
+      "id": 425274,
+      "original_language": "en",
+      "original_title": "Now You See Me: Now You Don't",
+      "overview": "The original Four Horsemen reunite with a new generation of illusionists to take on powerful diamond heiress Veronika Vanderberg, who leads a criminal empire built on money laundering and trafficking. The new and old magicians must overcome their differences to work together on their most ambitious heist yet.",
+      "popularity": 60.449,
+      "poster_path": "/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg",
+      "release_date": "2025-11-12",
+      "title": "Now You See Me: Now You Don't",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 1006
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/si68lkhkMfIospVeLEBtl7HWKDh.jpg",
+      "genre_ids": [
+        53,
+        80,
+        28
+      ],
+      "id": 1054867,
+      "original_language": "en",
+      "original_title": "One Battle After Another",
+      "overview": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+      "popularity": 59.0363,
+      "poster_path": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
+      "release_date": "2025-09-23",
+      "title": "One Battle After Another",
+      "video": false,
+      "vote_average": 7.426,
+      "vote_count": 2707
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9cd1zsxcOAcBW01WDOWz8EODTS0.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1206008,
+      "original_language": "en",
+      "original_title": "Ella McCay",
+      "overview": "An idealistic young politician juggles familial issues and a challenging work life while preparing to take over the job of her mentor, the state’s longtime incumbent governor.",
+      "popularity": 58.8082,
+      "poster_path": "/iQCtK477yqp6xnHHrQG2P0lXoow.jpg",
+      "release_date": "2025-12-11",
+      "title": "Ella McCay",
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 42
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oIJjO1CvEdTMFNkWfHaV0RB584G.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 628847,
+      "original_language": "en",
+      "original_title": "Trap House",
+      "overview": "An undercover DEA agent and his partner embark on a game of cat and mouse with an audacious, and surprising group of thieves - their own rebellious teenagers, who have begun robbing from a dangerous cartel, using their parents' tactics and top-secret intel to do it.",
+      "popularity": 58.2543,
+      "poster_path": "/6tpAPeuuqbVnYWWPoOLEDLSBU7a.jpg",
+      "release_date": "2025-11-14",
+      "title": "Trap House",
+      "video": false,
+      "vote_average": 6.635,
+      "vote_count": 203
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 24428,
+      "original_language": "en",
+      "original_title": "The Avengers",
+      "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+      "popularity": 58.1466,
+      "poster_path": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+      "release_date": "2012-04-25",
+      "title": "The Avengers",
+      "video": false,
+      "vote_average": 7.932,
+      "vote_count": 35650
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6h7w8R4BA7vubEmEEW5vYEjuoz6.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1317288,
+      "original_language": "en",
+      "original_title": "Marty Supreme",
+      "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
+      "popularity": 57.9553,
+      "poster_path": "/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+      "release_date": "2025-12-19",
+      "title": "Marty Supreme",
+      "video": false,
+      "vote_average": 7.813,
+      "vote_count": 455
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+      "genre_ids": [
+        27,
+        28,
+        53
+      ],
+      "id": 1233413,
+      "original_language": "en",
+      "original_title": "Sinners",
+      "overview": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+      "popularity": 55.3448,
+      "poster_path": "/qTvFWCGeGXgBRaINLY1zqgTPSpn.jpg",
+      "release_date": "2025-04-16",
+      "title": "Sinners",
+      "video": false,
+      "vote_average": 7.49,
+      "vote_count": 3564
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w3Bi0wygeFQctn6AqFTwhGNXRwL.jpg",
+      "genre_ids": [
+        14,
+        10402,
+        35,
+        16
+      ],
+      "id": 803796,
+      "original_language": "en",
+      "original_title": "KPop Demon Hunters",
+      "overview": "When K-pop superstars Rumi, Mira and Zoey aren't selling out stadiums, they're using their secret powers to protect their fans from supernatural threats.",
+      "popularity": 54.0021,
+      "poster_path": "/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg",
+      "release_date": "2025-06-20",
+      "title": "KPop Demon Hunters",
+      "video": false,
+      "vote_average": 8.102,
+      "vote_count": 2322
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/54BOXpX2ieTXMDzHymdDMnUIzYG.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1228246,
+      "original_language": "en",
+      "original_title": "Five Nights at Freddy's 2",
+      "overview": "One year since the supernatural nightmare at Freddy Fazbear's Pizza, the stories about what transpired there have been twisted into a campy local legend, inspiring the town's first ever Fazfest. With the truth kept from her, Abby sneaks out to reconnect with Freddy, Bonnie, Chica, and Foxy, setting into motion a terrifying series of events that will reveal dark secrets about the real origin of Freddy's, and unleash a decades-hidden horror.",
+      "popularity": 53.9516,
+      "poster_path": "/udAxQEORq2I5wxI97N2TEqdhzBE.jpg",
+      "release_date": "2025-12-03",
+      "title": "Five Nights at Freddy's 2",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 697
+    }
+  ],
+  "total_pages": 55039,
+  "total_results": 1100768
+}
