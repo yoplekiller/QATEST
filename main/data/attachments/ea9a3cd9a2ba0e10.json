@@ -1,0 +1,409 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 83.523,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 696
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3Y0HoplrL57V9HRiEhz7k2HEgak.jpg",
+      "genre_ids": [
+        10751,
+        35
+      ],
+      "id": 41228,
+      "original_language": "cs",
+      "original_title": "Pyšná princezna",
+      "overview": "It's very human and nice story about lofty princess (her father is amiable but incapable - unforgettable performance of S. Neumann) and good, nice, kind and well-principled young king (prince) who tries to make tender her calm heart to get married with her. After being refused (she's very capricious), he conclude to make her better. He start to work as a gardener at her castle (in secret) and successively bring she to her senses...The story continues when already reformed princess and the young king (she learn about his real identity later) have to take refuge from troops, that princess father (old king) has sent (of course he took a bad and mean counsellors advice). They have to take shelter by several ordinary and poor families, which are always very friendly and give them a help... Of course the tale has happy end.",
+      "popularity": 55.1587,
+      "poster_path": "/dNDKXugpW5FkW2VzrSBG8GlA5yk.jpg",
+      "release_date": "1952-09-26",
+      "title": "The Proud Princess",
+      "video": false,
+      "vote_average": 7.097,
+      "vote_count": 31
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kVSUUWiXoNwq2wVCZ4Mcqkniqvr.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        12,
+        14
+      ],
+      "id": 991494,
+      "original_language": "en",
+      "original_title": "The SpongeBob Movie: Search for SquarePants",
+      "overview": "Desperate to be a big guy, SpongeBob sets out to prove his bravery to Mr. Krabs by following The Flying Dutchman – a mysterious swashbuckling ghost pirate – on a seafaring adventure that takes him to the deepest depths of the deep sea, where no Sponge has gone before.",
+      "popularity": 80.9722,
+      "poster_path": "/pDWYW9v8fmJdA7N0I1MOdQA3ETq.jpg",
+      "release_date": "2025-12-16",
+      "title": "The SpongeBob Movie: Search for SquarePants",
+      "video": false,
+      "vote_average": 6.682,
+      "vote_count": 173
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2OHa6ukEq3Hce7Pc2kvu8wkmMFY.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53,
+        80,
+        18
+      ],
+      "id": 7451,
+      "original_language": "en",
+      "original_title": "xXx",
+      "overview": "Xander Cage is your standard adrenaline junkie with no fear and a lousy attitude. When the US Government \"recruits\" him to go on a mission, he's not exactly thrilled. His mission: to gather information on an organization that may just be planning the destruction of the world, led by the nihilistic Yorgi.",
+      "popularity": 78.2459,
+      "poster_path": "/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg",
+      "release_date": "2002-08-09",
+      "title": "xXx",
+      "video": false,
+      "vote_average": 5.98,
+      "vote_count": 4772
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gqGQ0zADV5FIcgMWtWX8FcGQjFp.jpg",
+      "genre_ids": [
+        27,
+        878,
+        9648
+      ],
+      "id": 1116201,
+      "original_language": "en",
+      "original_title": "Iron Lung",
+      "overview": "The stars are gone. The planets have disappeared. Only individuals aboard space stations or starships were left to give the end a name -- The Quiet Rapture. After decades of decay and crumbling infrastructure, the Consolidation of Iron has made a discovery on a barren moon designated AT-5. An ocean of blood. Hoping to discover desperately needed resources they immediately launch an expedition. A submarine is crafted and a convict is welded inside. Due to the pressure and depth of the ocean the forward viewport has been encased in metal. If successful, they will earn their freedom. If not, another will follow. This will be the 13th expedition.",
+      "popularity": 78.1911,
+      "poster_path": "/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
+      "release_date": "2026-01-29",
+      "title": "Iron Lung",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 64
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kv8kCuvfhSQ50YxjowqpVn1QqhJ.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 801937,
+      "original_language": "en",
+      "original_title": "Silent Night, Deadly Night",
+      "overview": "After witnessing his parents' brutal murder on Christmas Eve, Billy transforms into a Killer Santa, delivering a yearly spree of calculated, chilling violence. This year, his blood-soaked mission collides with love, as a young woman challenges him to confront his darkness.",
+      "popularity": 65.0792,
+      "poster_path": "/xCdSd7NnRdnL8DGLVhI95WhUNoi.jpg",
+      "release_date": "2025-12-11",
+      "title": "Silent Night, Deadly Night",
+      "video": false,
+      "vote_average": 6.257,
+      "vote_count": 70
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/YCunHbbBUBKx6daM9XZAXkOH8k.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1291608,
+      "original_language": "hi",
+      "original_title": "धुरंधर",
+      "overview": "In the early 2000s, an Indian undercover operative infiltrates Karachi’s underworld, breaking into its inner circle to dismantle a violent nexus from within.",
+      "popularity": 68.1121,
+      "poster_path": "/8FHOtUpNIk5ZPEay2N2EY5lrxkv.jpg",
+      "release_date": "2025-12-05",
+      "title": "Dhurandhar",
+      "video": false,
+      "vote_average": 6.934,
+      "vote_count": 183
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gQimJqYMKCkwHIo8wwYKhmnCfBr.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1242501,
+      "original_language": "en",
+      "original_title": "Icefall",
+      "overview": "A young Indigenous game warden arrests an infamous poacher only to discover that the poacher knows the location of a plane carrying millions of dollars that has crashed in a frozen lake. When a group of criminals and dirty cops are alerted to the poacher’s whereabouts, the warden and the poacher team up to fight back and escape across the treacherous lake before the ice melts.",
+      "popularity": 72.7376,
+      "poster_path": "/5Byv6nznAb2Izd0gHpODOXnuSbo.jpg",
+      "release_date": "2025-10-16",
+      "title": "Icefall",
+      "video": false,
+      "vote_average": 6.446,
+      "vote_count": 111
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eftVUg9R1lys3wT8kHJqMaK64m7.jpg",
+      "genre_ids": [
+        27,
+        53,
+        9648
+      ],
+      "id": 1212742,
+      "original_language": "en",
+      "original_title": "The Rule of Jenny Pen",
+      "overview": "Confined to a secluded rest home and trapped within his stroke-ridden body, a former Judge must stop an elderly psychopath who employs a child's puppet to abuse the home's residents with deadly consequences.",
+      "popularity": 79.4737,
+      "poster_path": "/5vqK1wbrgmUvqHn6yPt9b6qT9iL.jpg",
+      "release_date": "2025-03-07",
+      "title": "The Rule of Jenny Pen",
+      "video": false,
+      "vote_average": 6.017,
+      "vote_count": 120
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xGbNoh7aWmU81oYuxJoFI07Rz5I.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 1326878,
+      "original_language": "en",
+      "original_title": "Strangers",
+      "overview": "Seeking revenge on her abusive husband, a woman's life takes a dark turn when she meets a mysterious hitman. Drawn into a whirlwind romance, she spirals into a dangerous vigilante spree. As the body count rises, she begins to unravel the true nature of her partner and the secrets they both conceal.",
+      "popularity": 62.4434,
+      "poster_path": "/v6hYeC1asK2ZRU7Ygukn4tV1zlS.jpg",
+      "release_date": "2024-08-16",
+      "title": "Strangers",
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 29
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hmEbQB5UlcwobldcSDNlLZiUnmA.jpg",
+      "genre_ids": [
+        10752,
+        28,
+        18
+      ],
+      "id": 193756,
+      "original_language": "en",
+      "original_title": "Lone Survivor",
+      "overview": "Four Navy SEALs on a covert mission to neutralize a high-level Taliban operative must make an impossible moral decision in the mountains of Afghanistan that leads them into an enemy ambush. As they confront unthinkable odds, the SEALs must find reserves of strength and resilience to fight to the finish.",
+      "popularity": 49.3686,
+      "poster_path": "/zlT3RSPO6GlSyb5QrLrFcDmhrQ7.jpg",
+      "release_date": "2013-12-24",
+      "title": "Lone Survivor",
+      "video": false,
+      "vote_average": 7.432,
+      "vote_count": 4628
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aFqLp6XfmzrYNSVlyKoQU7WT1PX.jpg",
+      "genre_ids": [
+        53,
+        27,
+        18
+      ],
+      "id": 1475490,
+      "original_language": "en",
+      "original_title": "The Calling Witch",
+      "overview": "A brother and sister are terrorized by what seems to be their late-author mother's most sinister literary creation - The Calling Witch.",
+      "popularity": 48.7497,
+      "poster_path": "/q8o2NzIH4ze28NAVs1eRkejAJIk.jpg",
+      "release_date": "2026-01-20",
+      "title": "The Calling Witch",
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 7
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iL5eGI9ctHdUOV4yG6dyGKctSEX.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1466115,
+      "original_language": "ko",
+      "original_title": "오늘 밤, 세계에서 이 사랑이 사라진다 해도",
+      "overview": "A high school girl wakes up each day with no memory of yesterday. When she agrees to date a shy classmate, can their love grow with every new beginning?",
+      "popularity": 67.8573,
+      "poster_path": "/5eNN8KLDPUXDqIkTdCbmn1gx5P7.jpg",
+      "release_date": "2025-12-24",
+      "title": "Even If This Love Disappears Tonight",
+      "video": false,
+      "vote_average": 7.091,
+      "vote_count": 11
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vMxOmgmBGegjVObjlb8ugsjGgkD.jpg",
+      "genre_ids": [
+        10752,
+        28,
+        18
+      ],
+      "id": 1252037,
+      "original_language": "de",
+      "original_title": "Der Tiger",
+      "overview": "A German Tiger tank crew is sent on a dangerous mission to rescue the missing officer Paul von Hardenburg from a top-secret bunker behind enemy lines. As they make their way through the lethal no-man's land, they must confront not only the enemy, but also their own fears and inner demons. Fueled by the Wehrmacht's methamphetamine, their mission increasingly becomes a journey into the heart of darkness.",
+      "popularity": 55.776,
+      "poster_path": "/65Jr1JAgWlu9em8zHhAfrNJJQBt.jpg",
+      "release_date": "2025-09-18",
+      "title": "The Tank",
+      "video": false,
+      "vote_average": 7.05,
+      "vote_count": 310
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ufqytAlziHq5pljKByGJ8IKhtEZ.jpg",
+      "genre_ids": [
+        53,
+        80,
+        9648
+      ],
+      "id": 425274,
+      "original_language": "en",
+      "original_title": "Now You See Me: Now You Don't",
+      "overview": "The original Four Horsemen reunite with a new generation of illusionists to take on powerful diamond heiress Veronika Vanderberg, who leads a criminal empire built on money laundering and trafficking. The new and old magicians must overcome their differences to work together on their most ambitious heist yet.",
+      "popularity": 58.0405,
+      "poster_path": "/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg",
+      "release_date": "2025-11-12",
+      "title": "Now You See Me: Now You Don't",
+      "video": false,
+      "vote_average": 6.542,
+      "vote_count": 1012
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dFdFQaffaBNBNM5hzinc6Q0oWDZ.jpg",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "id": 1433842,
+      "original_language": "en",
+      "original_title": "Relationship Goals",
+      "overview": "When TV producer Leah Caldwell aims to become the first woman running New York's top morning show, her ex competes for the same role. Leah stays focused on her career, until chemistry with her ex challenges her priorities.",
+      "popularity": 54.6521,
+      "poster_path": "/o7dVxvZIKnAB7k1eeeWp2k14Es7.jpg",
+      "release_date": "2026-02-04",
+      "title": "Relationship Goals",
+      "video": false,
+      "vote_average": 5.2,
+      "vote_count": 25
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 24428,
+      "original_language": "en",
+      "original_title": "The Avengers",
+      "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+      "popularity": 59.0248,
+      "poster_path": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+      "release_date": "2012-04-25",
+      "title": "The Avengers",
+      "video": false,
+      "vote_average": 7.934,
+      "vote_count": 35696
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/knn3OIa9T4yeLjkmeQgJ8JLwdG0.jpg",
+      "genre_ids": [
+        35,
+        10751,
+        10402,
+        10770
+      ],
+      "id": 1548113,
+      "original_language": "en",
+      "original_title": "The Muppet Show",
+      "overview": "Music, comedy, and a whole lot of chaos is bound to ensue when The Muppets once again take the stage of the original Muppet Theatre with their very special guest, Sabrina Carpenter!",
+      "popularity": 63.5686,
+      "poster_path": "/tcwar1rL0neoLvnklL7DzYw7sN8.jpg",
+      "release_date": "2026-02-03",
+      "title": "The Muppet Show",
+      "video": false,
+      "vote_average": 6.794,
+      "vote_count": 34
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uCvu5UgkP1VMicA54QzzNXqFzWF.jpg",
+      "genre_ids": [
+        18,
+        10402,
+        35
+      ],
+      "id": 89924,
+      "original_language": "en",
+      "original_title": "Wild Guitar",
+      "overview": "A young rock &amp; roll hopeful is given a shot at the big time by the unscrupulous owner of a small record company.",
+      "popularity": 38.2006,
+      "poster_path": "/wH5KslajuatYp9XOwm0tgUeBfJl.jpg",
+      "release_date": "1962-12-01",
+      "title": "Wild Guitar",
+      "video": false,
+      "vote_average": 4.5,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ykigHs1OIyqqV04zfFqIlSHp546.jpg",
+      "genre_ids": [
+        53,
+        27,
+        28,
+        9648,
+        878
+      ],
+      "id": 1412598,
+      "original_language": "en",
+      "original_title": "Killer Whale",
+      "overview": "Follows best friends Maddie and Trish as they find themselves trapped in a remote lagoon with the dangerous killer whale named Ceto.",
+      "popularity": 52.6427,
+      "poster_path": "/cqbXxAw9sUr4tJ5ffEwtnz6IL9o.jpg",
+      "release_date": "2026-01-16",
+      "title": "Killer Whale",
+      "video": false,
+      "vote_average": 5.915,
+      "vote_count": 53
+    }
+  ],
+  "total_pages": 55088,
+  "total_results": 1101759
+}
