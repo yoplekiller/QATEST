@@ -1,0 +1,4 @@
+2026-02-08 04:51:04 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-02-08 04:51:08 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-02-08 04:51:19 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath___adiv_2_button_1_4__20260208_045118.png
+2026-02-08 04:51:19 - test_automation - ERROR - 클릭 실패: ('xpath', '(//a//div[2]//button[1])[4]')
