@@ -1,0 +1,4 @@
+2026-02-08 12:15:11 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-02-08 12:15:14 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-02-08 12:15:33 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath___contains_text_장바구니에_상품을_담았습니다.__20260208_121532.png
+2026-02-08 12:15:33 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "//*[contains(text(),'장바구니에 상품을 담았습니다.')]")
