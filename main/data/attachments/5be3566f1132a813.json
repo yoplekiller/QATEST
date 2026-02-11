@@ -1,0 +1,401 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/vbkW4KerpshPZnP84w9qwSfYrhu.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1198984,
+      "original_language": "en",
+      "original_title": "We Bury the Dead",
+      "overview": "After a catastrophic military disaster, the dead don't just rise—they hunt. The military insists they are harmless and slow-moving, offering hope to grieving families. But when Ava enters a quarantine zone searching for her missing husband, she uncovers the horrifying truth: the undead are growing more violent, more relentless, and more dangerous with every passing hour.",
+      "popularity": 85.1175,
+      "poster_path": "/xZqo0yPARmyF8TACVNyaOACkYWG.jpg",
+      "release_date": "2026-01-01",
+      "title": "We Bury the Dead",
+      "video": false,
+      "vote_average": 6.145,
+      "vote_count": 76
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lNYympQM5O6QSInusbyG9eJDIe4.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 81.6191,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.688,
+      "vote_count": 698
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hO2jx1H3XafR7Y8QbFgVH1sHTY9.jpg",
+      "genre_ids": [
+        27,
+        53,
+        35
+      ],
+      "id": 1198994,
+      "original_language": "en",
+      "original_title": "Send Help",
+      "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+      "popularity": 78.8445,
+      "poster_path": "/mlV70IuchLZXcXKowjwSpSfdfUB.jpg",
+      "release_date": "2026-01-22",
+      "title": "Send Help",
+      "video": false,
+      "vote_average": 7.018,
+      "vote_count": 223
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eftVUg9R1lys3wT8kHJqMaK64m7.jpg",
+      "genre_ids": [
+        27,
+        53,
+        9648
+      ],
+      "id": 1212742,
+      "original_language": "en",
+      "original_title": "The Rule of Jenny Pen",
+      "overview": "Confined to a secluded rest home and trapped within his stroke-ridden body, a former Judge must stop an elderly psychopath who employs a child's puppet to abuse the home's residents with deadly consequences.",
+      "popularity": 77.8261,
+      "poster_path": "/5vqK1wbrgmUvqHn6yPt9b6qT9iL.jpg",
+      "release_date": "2025-03-07",
+      "title": "The Rule of Jenny Pen",
+      "video": false,
+      "vote_average": 6.037,
+      "vote_count": 123
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kVSUUWiXoNwq2wVCZ4Mcqkniqvr.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        12,
+        14
+      ],
+      "id": 991494,
+      "original_language": "en",
+      "original_title": "The SpongeBob Movie: Search for SquarePants",
+      "overview": "Desperate to be a big guy, SpongeBob sets out to prove his bravery to Mr. Krabs by following The Flying Dutchman – a mysterious swashbuckling ghost pirate – on a seafaring adventure that takes him to the deepest depths of the deep sea, where no Sponge has gone before.",
+      "popularity": 72.4837,
+      "poster_path": "/pDWYW9v8fmJdA7N0I1MOdQA3ETq.jpg",
+      "release_date": "2025-12-16",
+      "title": "The SpongeBob Movie: Search for SquarePants",
+      "video": false,
+      "vote_average": 6.69,
+      "vote_count": 184
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gQimJqYMKCkwHIo8wwYKhmnCfBr.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1242501,
+      "original_language": "en",
+      "original_title": "Icefall",
+      "overview": "A young Indigenous game warden arrests an infamous poacher only to discover that the poacher knows the location of a plane carrying millions of dollars that has crashed in a frozen lake. When a group of criminals and dirty cops are alerted to the poacher’s whereabouts, the warden and the poacher team up to fight back and escape across the treacherous lake before the ice melts.",
+      "popularity": 71.3543,
+      "poster_path": "/5Byv6nznAb2Izd0gHpODOXnuSbo.jpg",
+      "release_date": "2025-10-16",
+      "title": "Icefall",
+      "video": false,
+      "vote_average": 6.388,
+      "vote_count": 121
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eTodr0PX3fIDM4VFKJakpPGMZbp.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        53
+      ],
+      "id": 1528660,
+      "original_language": "en",
+      "original_title": "Holy Ghost",
+      "overview": "A kidnapped girl in Augusta claims her rescuer was Jim, a deceased cop. Detective Wells probes the case as another child vanishes, revealing old murders and raising questions about a ghostly presence.",
+      "popularity": 66.5313,
+      "poster_path": "/z1lwn6GWAjJ7CSn80ZcURb0Cj4G.jpg",
+      "release_date": "2025-08-11",
+      "title": "Holy Ghost",
+      "video": false,
+      "vote_average": 5.667,
+      "vote_count": 6
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iL5eGI9ctHdUOV4yG6dyGKctSEX.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1466115,
+      "original_language": "ko",
+      "original_title": "오늘 밤, 세계에서 이 사랑이 사라진다 해도",
+      "overview": "A high school girl wakes up each day with no memory of yesterday. When she agrees to date a shy classmate, can their love grow with every new beginning?",
+      "popularity": 65.9939,
+      "poster_path": "/5eNN8KLDPUXDqIkTdCbmn1gx5P7.jpg",
+      "release_date": "2025-12-24",
+      "title": "Even If This Love Disappears Tonight",
+      "video": false,
+      "vote_average": 8.042,
+      "vote_count": 36
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lALfCsv7YMNrqpWzIaxjS81JKOm.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1454741,
+      "original_language": "en",
+      "original_title": "The Confession",
+      "overview": "A woman finds her late father’s tape confessing to murder tied to an evil force—now her son shows the same darkness, and she must fight to stop it.",
+      "popularity": 62.4993,
+      "poster_path": "/7tmMQwSVVbijKV4lquYpBld3P9K.jpg",
+      "release_date": "2026-01-08",
+      "title": "The Confession",
+      "video": false,
+      "vote_average": 5.3,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cJEfGBcVQElkQwD6nop9AcZy8X.jpg",
+      "genre_ids": [
+        80,
+        53,
+        27,
+        9648
+      ],
+      "id": 1194388,
+      "original_language": "et",
+      "original_title": "Vari",
+      "overview": "Juhan Liiv, a struggling poet and an unlikely detective, solves gruesome murder cases in Estonia, the Wild West of the crumbling Russian Empire in the 1890s. Investigations take him to miserable dwellings of the local Estonian peasants, luxurious castles of German nobility that have sworn allegiance to the Czar, and to the depths of ancient forests where witchcraft is still practiced. Juhan is fighting crime and his own inner demons. He is considered mad and pronounced crazy. But by standing for justice and truth, at the end of the day, he is the sanest of them all.",
+      "popularity": 62.0342,
+      "poster_path": "/t6hPGT2hGxn4E5VMWjEiLjkGNzt.jpg",
+      "release_date": "2024-10-18",
+      "title": "The Shadow",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ufqytAlziHq5pljKByGJ8IKhtEZ.jpg",
+      "genre_ids": [
+        53,
+        80,
+        9648
+      ],
+      "id": 425274,
+      "original_language": "en",
+      "original_title": "Now You See Me: Now You Don't",
+      "overview": "The original Four Horsemen reunite with a new generation of illusionists to take on powerful diamond heiress Veronika Vanderberg, who leads a criminal empire built on money laundering and trafficking. The new and old magicians must overcome their differences to work together on their most ambitious heist yet.",
+      "popularity": 61.56,
+      "poster_path": "/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg",
+      "release_date": "2025-11-12",
+      "title": "Now You See Me: Now You Don't",
+      "video": false,
+      "vote_average": 6.6,
+      "vote_count": 1022
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 24428,
+      "original_language": "en",
+      "original_title": "The Avengers",
+      "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+      "popularity": 58.417,
+      "poster_path": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+      "release_date": "2012-04-25",
+      "title": "The Avengers",
+      "video": false,
+      "vote_average": 7.937,
+      "vote_count": 35776
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kHyN3PejjlYWYz1Eah3jS64oV0g.jpg",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "id": 1370814,
+      "original_language": "en",
+      "original_title": "The Plague",
+      "overview": "A socially awkward tween endures the ruthless hierarchy at a water polo camp, his anxiety spiraling into psychological turmoil over the summer.",
+      "popularity": 57.0124,
+      "poster_path": "/b0RWuqzgvyfiIYU4QfgJHhmxZF4.jpg",
+      "release_date": "2025-12-24",
+      "title": "The Plague",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 36
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sYM02XfZhqvlixmRkDcseQ6Xllk.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 1316092,
+      "original_language": "en",
+      "original_title": "“Wuthering Heights”",
+      "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
+      "popularity": 56.6846,
+      "poster_path": "/ywRO5dyE8RyyXJd6cvd69jLZeic.jpg",
+      "release_date": "2026-02-11",
+      "title": "“Wuthering Heights”",
+      "video": false,
+      "vote_average": 8.4,
+      "vote_count": 20
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cAaLaaOa6n6sH932IUIVZtKtOef.jpg",
+      "genre_ids": [
+        878
+      ],
+      "id": 1590097,
+      "original_language": "en",
+      "original_title": "Afterlight",
+      "overview": "In a future shaped by war, AI, and fractured timelines, five interconnected sci-fi stories explore humanity’s fight for connection, survival, and meaning across time and space.",
+      "popularity": 54.4393,
+      "poster_path": "/7bzMCW1E1sOWEbjVuQ8iRGrdpcw.jpg",
+      "release_date": "2025-11-27",
+      "title": "Afterlight",
+      "video": false,
+      "vote_average": 5.227,
+      "vote_count": 11
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vMxOmgmBGegjVObjlb8ugsjGgkD.jpg",
+      "genre_ids": [
+        10752,
+        28,
+        18
+      ],
+      "id": 1252037,
+      "original_language": "de",
+      "original_title": "Der Tiger",
+      "overview": "A German Tiger tank crew is sent on a dangerous mission to rescue the missing officer Paul von Hardenburg from a top-secret bunker behind enemy lines. As they make their way through the lethal no-man's land, they must confront not only the enemy, but also their own fears and inner demons. Fueled by the Wehrmacht's methamphetamine, their mission increasingly becomes a journey into the heart of darkness.",
+      "popularity": 53.5108,
+      "poster_path": "/65Jr1JAgWlu9em8zHhAfrNJJQBt.jpg",
+      "release_date": "2025-09-18",
+      "title": "The Tank",
+      "video": false,
+      "vote_average": 7.058,
+      "vote_count": 321
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/knn3OIa9T4yeLjkmeQgJ8JLwdG0.jpg",
+      "genre_ids": [
+        35,
+        10751,
+        10402,
+        10770
+      ],
+      "id": 1548113,
+      "original_language": "en",
+      "original_title": "The Muppet Show",
+      "overview": "Music, comedy, and a whole lot of chaos is bound to ensue when The Muppets once again take the stage of the original Muppet Theatre with their very special guest, Sabrina Carpenter!",
+      "popularity": 52.4571,
+      "poster_path": "/tcwar1rL0neoLvnklL7DzYw7sN8.jpg",
+      "release_date": "2026-02-03",
+      "title": "The Muppet Show",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 51
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8jYyd9mGx5O28FX2OvfcqZfs5tB.jpg",
+      "genre_ids": [
+        27,
+        14,
+        10749
+      ],
+      "id": 1246049,
+      "original_language": "fr",
+      "original_title": "Dracula",
+      "overview": "In late 15th-century Eastern Europe, Prince Vlad II’s bride is brutally murdered. As a result, he renounces God and damns Heaven itself. Cursed with eternal life, Vlad is reborn as Dracula, an immortal warlord who defies fate in a blood-soaked crusade to wrench his lost love back from death.",
+      "popularity": 50.4365,
+      "poster_path": "/ykyRfv7JDofLxXLAwtLXaSuaFfM.jpg",
+      "release_date": "2025-07-30",
+      "title": "Dracula",
+      "video": false,
+      "vote_average": 7.139,
+      "vote_count": 816
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3cVrg7tzSf5AgEecYWDOSAzXAeX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1408208,
+      "original_language": "ja",
+      "original_title": "８番出口",
+      "overview": "A man trapped in an endless sterile subway passageway sets out to find Exit 8. The rules of his quest are simple: do not overlook anything out of the ordinary. If you discover an anomaly, turn back immediately. If you don’t, carry on. Then leave from Exit 8. But even a single oversight will send him back to the beginning. Will he ever reach his goal and escape this infinite corridor?",
+      "popularity": 50.3041,
+      "poster_path": "/cWHmaDXnRPAC9HBbjUBfJW7MxO0.jpg",
+      "release_date": "2025-08-28",
+      "title": "Exit 8",
+      "video": false,
+      "vote_average": 6.315,
+      "vote_count": 165
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nTbO6UF944b0VZrgypMK5rFYRSW.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 680493,
+      "original_language": "en",
+      "original_title": "Return to Silent Hill",
+      "overview": "When James receives a mysterious letter from his lost love Mary, he is drawn to Silent Hill—a once-familiar town now consumed by darkness. As he searches for her, James faces monstrous creatures and unravels a terrifying truth that will push him to the edge of his sanity.",
+      "popularity": 49.52,
+      "poster_path": "/fqAGFN2K2kDL0EHxvJaXzaMUkkt.jpg",
+      "release_date": "2026-01-21",
+      "title": "Return to Silent Hill",
+      "video": false,
+      "vote_average": 5.228,
+      "vote_count": 125
+    }
+  ],
+  "total_pages": 55146,
+  "total_results": 1102904
+}
