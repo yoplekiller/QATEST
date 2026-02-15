@@ -1,0 +1,406 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/AecGG1XVCmkk7fT10ko3FC0dLIP.jpg",
+      "genre_ids": [
+        14,
+        28,
+        53
+      ],
+      "id": 1043197,
+      "original_language": "en",
+      "original_title": "Dust Bunny",
+      "overview": "Ten-year-old Aurora asks her hitman neighbor to kill the monster under her bed that she claims ate her family. To protect her, he must battle an onslaught of assassins while accepting that some monsters are real.",
+      "popularity": 85.0571,
+      "poster_path": "/vobigFZFvbYPf6ElYJu07P9rH8C.jpg",
+      "release_date": "2025-12-11",
+      "title": "Dust Bunny",
+      "video": false,
+      "vote_average": 6.675,
+      "vote_count": 167
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/73BClq9FOcrWrutnpiqhCNEWEwJ.jpg",
+      "genre_ids": [
+        18,
+        10749,
+        36
+      ],
+      "id": 858024,
+      "original_language": "en",
+      "original_title": "Hamnet",
+      "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
+      "popularity": 82.4111,
+      "poster_path": "/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
+      "release_date": "2025-11-26",
+      "title": "Hamnet",
+      "video": false,
+      "vote_average": 7.77,
+      "vote_count": 503
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lNYympQM5O6QSInusbyG9eJDIe4.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 81.0113,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.691,
+      "vote_count": 706
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ez8EB8pWGZYDWx9OEVqDR5r9hQc.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1503900,
+      "original_language": "en",
+      "original_title": "Die'ced: Reloaded",
+      "overview": "Benny escapes an asylum on Halloween, masked as a scarecrow and hungry for blood. In 1980s Seattle, the hunt is on - and no one is safe.",
+      "popularity": 85.8625,
+      "poster_path": "/haFDZfpKszHq7DXvuQd5Zz7shQW.jpg",
+      "release_date": "2025-08-08",
+      "title": "Die'ced: Reloaded",
+      "video": false,
+      "vote_average": 4.0,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qg6wGnkBhCcsGfNz1eGtPMtKGDs.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1373198,
+      "original_language": "en",
+      "original_title": "Twisted",
+      "overview": "Two millennials make quick money by leasing incredible New York City apartments they don’t own to people who don’t know they are being scammed. The con works brilliantly until they run into an apartment owner with a dark secret who flips the game on them.",
+      "popularity": 78.0409,
+      "poster_path": "/rF6txsM6cgF9vg6Ra5sNbkvUwrw.jpg",
+      "release_date": "2026-02-06",
+      "title": "Twisted",
+      "video": false,
+      "vote_average": 4.346,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2t25zHKX3PAUZWppuLD36JGdgCA.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 1171145,
+      "original_language": "en",
+      "original_title": "Crime 101",
+      "overview": "An elusive thief, eyeing his final score, encounters a disillusioned insurance broker at her own crossroads. As their paths intertwine, a relentless detective trails them hoping to thwart the multi-million dollar heist they are planning.",
+      "popularity": 91.1549,
+      "poster_path": "/2HoR2x23bqKpopluoBD1FH3tBi7.jpg",
+      "release_date": "2026-02-11",
+      "title": "Crime 101",
+      "video": false,
+      "vote_average": 7.808,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4lo5yNZrMLPKBh47t2CoZkbAUur.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        28
+      ],
+      "id": 1297842,
+      "original_language": "en",
+      "original_title": "GOAT",
+      "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'!",
+      "popularity": 87.5884,
+      "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+      "release_date": "2026-02-11",
+      "title": "GOAT",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 18
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eTodr0PX3fIDM4VFKJakpPGMZbp.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        53
+      ],
+      "id": 1528660,
+      "original_language": "en",
+      "original_title": "Holy Ghost",
+      "overview": "A kidnapped girl in Augusta claims her rescuer was Jim, a deceased cop. Detective Wells probes the case as another child vanishes, revealing old murders and raising questions about a ghostly presence.",
+      "popularity": 75.2676,
+      "poster_path": "/z1lwn6GWAjJ7CSn80ZcURb0Cj4G.jpg",
+      "release_date": "2025-08-11",
+      "title": "Holy Ghost",
+      "video": false,
+      "vote_average": 6.286,
+      "vote_count": 7
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vbkW4KerpshPZnP84w9qwSfYrhu.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1198984,
+      "original_language": "en",
+      "original_title": "We Bury the Dead",
+      "overview": "After a catastrophic military disaster, the dead don't just rise—they hunt. The military insists they are harmless and slow-moving, offering hope to grieving families. But when Ava enters a quarantine zone searching for her missing husband, she uncovers the horrifying truth: the undead are growing more violent, more relentless, and more dangerous with every passing hour.",
+      "popularity": 68.2593,
+      "poster_path": "/xZqo0yPARmyF8TACVNyaOACkYWG.jpg",
+      "release_date": "2026-01-01",
+      "title": "We Bury the Dead",
+      "video": false,
+      "vote_average": 6.174,
+      "vote_count": 92
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nHxWyy18SvAZ8jJeemtS8k1UNjM.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1290821,
+      "original_language": "en",
+      "original_title": "Shelter",
+      "overview": "A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.",
+      "popularity": 64.3196,
+      "poster_path": "/903mfuYcAEC20o52mxOMAkCCS3M.jpg",
+      "release_date": "2026-01-28",
+      "title": "Shelter",
+      "video": false,
+      "vote_average": 7.659,
+      "vote_count": 41
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eyvIBnJSxZDyek4s7YytUNmtstR.jpg",
+      "genre_ids": [
+        27,
+        53,
+        35
+      ],
+      "id": 1198994,
+      "original_language": "en",
+      "original_title": "Send Help",
+      "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+      "popularity": 69.0692,
+      "poster_path": "/mlV70IuchLZXcXKowjwSpSfdfUB.jpg",
+      "release_date": "2026-01-22",
+      "title": "Send Help",
+      "video": false,
+      "vote_average": 7.037,
+      "vote_count": 255
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gQimJqYMKCkwHIo8wwYKhmnCfBr.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1242501,
+      "original_language": "en",
+      "original_title": "Icefall",
+      "overview": "A young Indigenous game warden arrests an infamous poacher only to discover that the poacher knows the location of a plane carrying millions of dollars that has crashed in a frozen lake. When a group of criminals and dirty cops are alerted to the poacher’s whereabouts, the warden and the poacher team up to fight back and escape across the treacherous lake before the ice melts.",
+      "popularity": 66.399,
+      "poster_path": "/5Byv6nznAb2Izd0gHpODOXnuSbo.jpg",
+      "release_date": "2025-10-16",
+      "title": "Icefall",
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 124
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14,
+        878
+      ],
+      "id": 19995,
+      "original_language": "en",
+      "original_title": "Avatar",
+      "overview": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+      "popularity": 81.8847,
+      "poster_path": "/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
+      "release_date": "2009-12-16",
+      "title": "Avatar",
+      "video": false,
+      "vote_average": 7.599,
+      "vote_count": 33444
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gbjK8p5S1aLXWCwOoXqr9aWZvqG.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        12,
+        14
+      ],
+      "id": 991494,
+      "original_language": "en",
+      "original_title": "The SpongeBob Movie: Search for SquarePants",
+      "overview": "Desperate to be a big guy, SpongeBob sets out to prove his bravery to Mr. Krabs by following The Flying Dutchman – a mysterious swashbuckling ghost pirate – on a seafaring adventure that takes him to the deepest depths of the deep sea, where no Sponge has gone before.",
+      "popularity": 63.5265,
+      "poster_path": "/pDWYW9v8fmJdA7N0I1MOdQA3ETq.jpg",
+      "release_date": "2025-12-16",
+      "title": "The SpongeBob Movie: Search for SquarePants",
+      "video": false,
+      "vote_average": 6.721,
+      "vote_count": 188
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cJEfGBcVQElkQwD6nop9AcZy8X.jpg",
+      "genre_ids": [
+        80,
+        53,
+        27,
+        9648
+      ],
+      "id": 1194388,
+      "original_language": "et",
+      "original_title": "Vari",
+      "overview": "Juhan Liiv, a struggling poet and an unlikely detective, solves gruesome murder cases in Estonia, the Wild West of the crumbling Russian Empire in the 1890s. Investigations take him to miserable dwellings of the local Estonian peasants, luxurious castles of German nobility that have sworn allegiance to the Czar, and to the depths of ancient forests where witchcraft is still practiced. Juhan is fighting crime and his own inner demons. He is considered mad and pronounced crazy. But by standing for justice and truth, at the end of the day, he is the sanest of them all.",
+      "popularity": 59.7007,
+      "poster_path": "/3MAPtbKtRdndw2HhnoR7fxBhSFN.jpg",
+      "release_date": "2024-10-18",
+      "title": "The Shadow",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dHSz0tSFuO2CsXJ1CApSauP9Ncl.jpg",
+      "genre_ids": [
+        53,
+        80,
+        9648
+      ],
+      "id": 425274,
+      "original_language": "en",
+      "original_title": "Now You See Me: Now You Don't",
+      "overview": "The original Four Horsemen reunite with a new generation of illusionists to take on powerful diamond heiress Veronika Vanderberg, who leads a criminal empire built on money laundering and trafficking. The new and old magicians must overcome their differences to work together on their most ambitious heist yet.",
+      "popularity": 69.5051,
+      "poster_path": "/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg",
+      "release_date": "2025-11-12",
+      "title": "Now You See Me: Now You Don't",
+      "video": false,
+      "vote_average": 6.543,
+      "vote_count": 1040
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 24428,
+      "original_language": "en",
+      "original_title": "The Avengers",
+      "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+      "popularity": 59.6919,
+      "poster_path": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+      "release_date": "2012-04-25",
+      "title": "The Avengers",
+      "video": false,
+      "vote_average": 7.94,
+      "vote_count": 35856
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/azngdzPQWI3WukfR7j6WosrhT03.jpg",
+      "genre_ids": [
+        35,
+        80
+      ],
+      "id": 261930,
+      "original_language": "en",
+      "original_title": "Traveling Husbands",
+      "overview": "A salesman gets in trouble with a party girl and a debutante in Detroit.",
+      "popularity": 51.6719,
+      "poster_path": "/51CPcDcqIbDI6QB9jSZRv4DDCWV.jpg",
+      "release_date": "1931-08-15",
+      "title": "Traveling Husbands",
+      "video": false,
+      "vote_average": 4.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vMxOmgmBGegjVObjlb8ugsjGgkD.jpg",
+      "genre_ids": [
+        10752,
+        28,
+        18
+      ],
+      "id": 1252037,
+      "original_language": "de",
+      "original_title": "Der Tiger",
+      "overview": "A German Tiger tank crew is sent on a dangerous mission to rescue the missing officer Paul von Hardenburg from a top-secret bunker behind enemy lines. As they make their way through the lethal no-man's land, they must confront not only the enemy, but also their own fears and inner demons. Fueled by the Wehrmacht's methamphetamine, their mission increasingly becomes a journey into the heart of darkness.",
+      "popularity": 52.1193,
+      "poster_path": "/65Jr1JAgWlu9em8zHhAfrNJJQBt.jpg",
+      "release_date": "2025-09-18",
+      "title": "The Tank",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 324
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3cVrg7tzSf5AgEecYWDOSAzXAeX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1408208,
+      "original_language": "ja",
+      "original_title": "８番出口",
+      "overview": "A man trapped in an endless sterile subway passageway sets out to find Exit 8. The rules of his quest are simple: do not overlook anything out of the ordinary. If you discover an anomaly, turn back immediately. If you don’t, carry on. Then leave from Exit 8. But even a single oversight will send him back to the beginning. Will he ever reach his goal and escape this infinite corridor?",
+      "popularity": 50.7896,
+      "poster_path": "/cWHmaDXnRPAC9HBbjUBfJW7MxO0.jpg",
+      "release_date": "2025-08-28",
+      "title": "Exit 8",
+      "video": false,
+      "vote_average": 6.337,
+      "vote_count": 175
+    }
+  ],
+  "total_pages": 55196,
+  "total_results": 1103907
+}
