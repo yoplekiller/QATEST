@@ -1,0 +1,404 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/tyjXlexbNZQ0ZT1KEJslQtBirqc.jpg",
+      "genre_ids": [
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "Having found the safety of the Greenland bunker after the comet Clarke decimated the Earth, the Garrity family must now risk everything to embark on a perilous journey across the wasteland of Europe to find a new home.",
+      "popularity": 322.113,
+      "poster_path": "/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg",
+      "release_date": "2026-01-07",
+      "title": "Greenland 2: Migration",
+      "video": false,
+      "vote_average": 6.548,
+      "vote_count": 452
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w1Z1I9PqTK5UjG6RVAFXLCjp1Sw.jpg",
+      "genre_ids": [
+        878,
+        28,
+        53
+      ],
+      "id": 434853,
+      "original_language": "en",
+      "original_title": "Space/Time",
+      "overview": "After a fatal test shuts down their project, a disgraced team of scientists enters the criminal underworld to rebuild a forbidden space-bending engine that could rescue humanity or annihilate it entirely.",
+      "popularity": 323.6168,
+      "poster_path": "/uje1ecKMnNpZp0at5TxlvVgVXqI.jpg",
+      "release_date": "2025-05-01",
+      "title": "Space/Time",
+      "video": false,
+      "vote_average": 5.4,
+      "vote_count": 20
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9uakM2woks0JV8HKIc4oatIVS88.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1315303,
+      "original_language": "en",
+      "original_title": "Primate",
+      "overview": "Lucy, a college student, along with her friends, spend their vacation at her family's home in Hawaii, which includes her pet chimpanzee, Ben. However, when Ben contracts rabies after being bitten by a rabid animal, the group must fight for their lives in order to avoid the now-violent chimp.",
+      "popularity": 258.307,
+      "poster_path": "/57cyAMc9c8iveudogTRuDOQjujn.jpg",
+      "release_date": "2026-01-01",
+      "title": "Primate",
+      "video": false,
+      "vote_average": 6.668,
+      "vote_count": 318
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80,
+        9648
+      ],
+      "id": 1168190,
+      "original_language": "en",
+      "original_title": "The Wrecking Crew",
+      "overview": "Estranged half-brothers Jonny and James reunite after their father's mysterious death. As they search for the truth, buried secrets reveal a conspiracy threatening to tear their family apart.",
+      "popularity": 223.5958,
+      "poster_path": "/gbVwHl4YPSq6BcC92TQpe7qUTh6.jpg",
+      "release_date": "2026-01-28",
+      "title": "The Wrecking Crew",
+      "video": false,
+      "vote_average": 6.855,
+      "vote_count": 604
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1Xdsq7U7bvJJd2X7Jg4qNaKVkYO.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80,
+        18
+      ],
+      "id": 1426964,
+      "original_language": "pt",
+      "original_title": "Salve Geral: Irmandade",
+      "overview": "As São Paulo erupts in an unprecedented wave of violence, a lawyer with underworld ties must strike a deal with the police to rescue her kidnapped niece.",
+      "popularity": 228.4808,
+      "poster_path": "/3Eaqedg8MAlnP51GYY8MCSIdTnV.jpg",
+      "release_date": "2026-02-10",
+      "title": "State of Fear",
+      "video": false,
+      "vote_average": 4.857,
+      "vote_count": 28
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7nfpkR9XsQ1lBNCXSSHxGV7Dkxe.jpg",
+      "genre_ids": [
+        16,
+        35,
+        12,
+        10751,
+        9648
+      ],
+      "id": 1084242,
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 207.1132,
+      "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "release_date": "2025-11-26",
+      "title": "Zootopia 2",
+      "video": false,
+      "vote_average": 7.606,
+      "vote_count": 1711
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tNONILTe9OJz574KZWaLze4v6RC.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 199.5804,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.205,
+      "vote_count": 1141
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vSQSYd2zZTqc0zmHImwWEGGluMI.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1316092,
+      "original_language": "en",
+      "original_title": "“Wuthering Heights”",
+      "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
+      "popularity": 192.2175,
+      "poster_path": "/ywRO5dyE8RyyXJd6cvd69jLZeic.jpg",
+      "release_date": "2026-02-11",
+      "title": "“Wuthering Heights”",
+      "video": false,
+      "vote_average": 6.712,
+      "vote_count": 193
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/82lM4GJ9uuNvNDOEpxFy77uv4Ak.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 181.6124,
+      "poster_path": "/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.731,
+      "vote_count": 1987
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/o0jRpVznKXuLvoXQX9UTKVtGjxK.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1317672,
+      "original_language": "en",
+      "original_title": "Love Me Love Me",
+      "overview": "After her brother's death, June moves to Milan for a fresh start, finding comfort in Will, the perfect honor student at her new international school. But when his troubled best friend James-hiding a dangerous life in clandestine MMA fights-sparks a rivalry that quickly turns into irresistible attraction, June must choose between safety and a love that upends everything she thought she wanted.",
+      "popularity": 179.2684,
+      "poster_path": "/4QWAPETLYZosiwXQCTMu1KerXxI.jpg",
+      "release_date": "2026-02-12",
+      "title": "Love Me Love Me",
+      "video": false,
+      "vote_average": 5.933,
+      "vote_count": 82
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6D6M5z4reppUxo2cnBEKI02Csp1.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1601243,
+      "original_language": "en",
+      "original_title": "Oscar Shaw",
+      "overview": "After retiring from the police force, a relentless detective haunted by the tragic loss of his closest friend sets out on a perilous quest for vengeance, seeking redemption and fighting to restore justice to the streets he once swore to protect.",
+      "popularity": 148.0321,
+      "poster_path": "/tsE3nySukwrfUjouz8vzvKTcXNC.jpg",
+      "release_date": "2026-01-09",
+      "title": "Oscar Shaw",
+      "video": false,
+      "vote_average": 6.19,
+      "vote_count": 21
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zXINNssll2zsPGqd7F7Llrw7Uql.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 196.6615,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.207,
+      "vote_count": 433
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bHtlDAORBQiYKCJMwDP9WBgcQHM.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1317288,
+      "original_language": "en",
+      "original_title": "Marty Supreme",
+      "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
+      "popularity": 146.89,
+      "poster_path": "/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+      "release_date": "2025-12-19",
+      "title": "Marty Supreme",
+      "video": false,
+      "vote_average": 7.596,
+      "vote_count": 764
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sdZSjtGUTSN8B3al5o0f2WoQfQQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 133.5732,
+      "poster_path": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+      "release_date": "2025-12-17",
+      "title": "Avatar: Fire and Ash",
+      "video": false,
+      "vote_average": 7.283,
+      "vote_count": 1769
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 121.5799,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.221,
+      "vote_count": 888
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eUERZRVjCTNdgnESlQxyaOJ2d4K.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1584215,
+      "original_language": "en",
+      "original_title": "The Internship",
+      "overview": "A CIA-trained assassin recruits other graduates from her secret childhood program, The Internship, to violently destroy the organization. The CIA fights back with deadly force.",
+      "popularity": 104.842,
+      "poster_path": "/fYqSOkix4rbDiZW0ACNnvZCpT6X.jpg",
+      "release_date": "2026-01-13",
+      "title": "The Internship",
+      "video": false,
+      "vote_average": 6.255,
+      "vote_count": 49
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1qwhYqg7YEZajh3Q4biqbuQoDq8.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        28
+      ],
+      "id": 1297842,
+      "original_language": "en",
+      "original_title": "GOAT",
+      "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'!",
+      "popularity": 112.5227,
+      "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+      "release_date": "2026-02-11",
+      "title": "GOAT",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 34
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ez8EB8pWGZYDWx9OEVqDR5r9hQc.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1503900,
+      "original_language": "en",
+      "original_title": "Die'ced: Reloaded",
+      "overview": "Benny escapes an asylum on Halloween, masked as a scarecrow and hungry for blood. In 1980s Seattle, the hunt is on - and no one is safe.",
+      "popularity": 102.9423,
+      "poster_path": "/haFDZfpKszHq7DXvuQd5Zz7shQW.jpg",
+      "release_date": "2025-08-08",
+      "title": "Die'ced: Reloaded",
+      "video": false,
+      "vote_average": 4.25,
+      "vote_count": 6
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lAtuFCx6cYkNBmTMSNnLE0qlCLx.jpg",
+      "genre_ids": [
+        28,
+        80,
+        10749
+      ],
+      "id": 1271895,
+      "original_language": "zh",
+      "original_title": "96分鐘",
+      "overview": "Former bomb disposal expert, Song Kang-Ren, and his fiancée, Huang Xin, board a high-speed train that contains a bomb. At the same time, Liu Kai, a well-known physics teacher who was involved in an affair scandal, also boards this same train in order to win back his wife, Ting Juan, who took the prior high-speed rail to return home in frustration…  After all, can the bomb be successfully defused this time? and resolve the crisis?",
+      "popularity": 96.4982,
+      "poster_path": "/gWKZ1iLhukvLoh8XY2N4tMvRQ2M.jpg",
+      "release_date": "2025-09-05",
+      "title": "96 Minutes",
+      "video": false,
+      "vote_average": 5.765,
+      "vote_count": 51
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3F2EXWF1thX0BdrVaKvnm6mAhqh.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 1306368,
+      "original_language": "en",
+      "original_title": "The Rip",
+      "overview": "Trust frays when a team of Miami cops discovers millions in cash inside a run-down stash house, calling everyone — and everything — into question.",
+      "popularity": 91.833,
+      "poster_path": "/eZo31Dhl5BQ6GfbMNf3oU0tUvPZ.jpg",
+      "release_date": "2026-01-13",
+      "title": "The Rip",
+      "video": false,
+      "vote_average": 7.064,
+      "vote_count": 1189
+    }
+  ],
+  "total_pages": 55229,
+  "total_results": 1104570
+}
