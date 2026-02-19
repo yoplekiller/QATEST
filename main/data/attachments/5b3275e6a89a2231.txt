@@ -1,0 +1,5 @@
+2026-02-19 04:45:01 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-02-19 04:45:02 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-02-19 04:45:03 - test_automation - INFO - 스크린샷 저장: screenshots/가나다라마바사아자차카타파하_검색_결과_없음_20260219_044502.png
+2026-02-19 04:45:09 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath___contains_normalize-space___검색된_상품이_없습니다__or_contains_normalize-space_없__20260219_044509.png
+2026-02-19 04:45:09 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "//*[contains(normalize-space(), '검색된 상품이 없습니다') or contains(normalize-space(),'없')]")
