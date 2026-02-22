@@ -1,6 +1,5 @@
 import allure
 import pytest
-import json
 from utils.data_loader import load_movie_test_data
 
 
@@ -30,6 +29,5 @@ def test_get_movie_details(movie_id, expected_title, api_env, send_get_request, 
         assert data["id"] == movie_id, 'FAILED'     
         assert data["title"] == expected_title, 'FAILED'
 
-    print("📦 응답 JSON :")
-    print(json.dumps(data, indent=4, ensure_ascii=False))
+
 

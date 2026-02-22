@@ -24,8 +24,3 @@ def test_movie_genre_inclusion(movie_id, expected_genres, send_get_request, allu
             assert "genres" in data, "검색 실패"
             assert [genre["name"] for genre in data["genres"]] == expected_genres
 
-
-    print(data["genres"])
-
-
-

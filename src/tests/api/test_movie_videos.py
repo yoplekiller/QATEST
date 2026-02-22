@@ -26,7 +26,10 @@ def test_movie_videos(api_env, send_get_request, attach_response):
       assert "results" in data, "검색 실패"
       assert len(data["results"]) > 0, "비디오 결과가 없습니다"
 
-    with allure.step("비디오 정보 출력"):
-      print("\n🎬 비디오 정보")
+    with allure.step("비디오 정보 확인"):
       for video in data["results"]:
-          print(f"📹 제목: {video['name']}, 유형: {video['type']}, 키: {video['key']}")
+          allure.attach(
+              f"제목: {video['name']}, 유형: {video['type']}, 키: {video['key']}",
+              name=f"Video: {video['name']}",
+              attachment_type=allure.attachment_type.TEXT
+          )

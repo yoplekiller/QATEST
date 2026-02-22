@@ -7,278 +7,220 @@
 [![Selenium](https://img.shields.io/badge/selenium-4.27-green.svg)](https://www.selenium.dev/)
 [![Pytest](https://img.shields.io/badge/pytest-8.3-red.svg)](https://pytest.org/)
 
-## 💡 Project Overview
+> UI/API Test Automation for Kurly (Korean E-commerce) Website
 
-Production-ready QA test automation portfolio built with Python and Selenium. Implements **Page Object Model (POM) pattern** to maximize reusability and maintainability.
+[Live Allure Report](https://yoplekiller.github.io/QATEST/)
 
-Includes UI tests for the live Kurly e-commerce website and API tests using The Movie Database (TMDB) API.
+---
 
-### 🎯 **Key Features**
-- ✅ **POM Pattern**: Industry-standard test architecture
-- ✅ **Environment Variables**: Secure API key and credential management
-- ✅ **CI/CD Automation**: Automated testing via GitHub Actions
-- ✅ **Visual Reporting**: Detailed test results with Allure Report
-- ✅ **Slack Integration**: Real-time test result notifications
-- ✅ **Internationalization**: Korean/English documentation
+## Project Overview
 
-## 🧰 Tech Stack
+QA Engineer portfolio -- test automation for Kurly, a live e-commerce site, using Python + Selenium for UI tests and TMDB API for API tests.
 
-### Testing Framework
-- **Python 3.11+**: Test automation language
-- **Selenium 4.27**: Web UI automation
-- **Pytest 8.3**: Test execution and management
+### Key Features
 
-### Reporting & Monitoring
-- **Allure Report**: Visual test reports
-- **Slack Bot**: Automated test result notifications
-- **Excel Report**: Detailed test execution reports
+| Feature | Description |
+|---------|-------------|
+| **Page Object Model** | 6 page classes for structured automation |
+| **Multi-Platform** | Web (Selenium) + Mobile (Appium) + API (Requests) |
+| **CI/CD** | GitHub Actions with 8-hour scheduled runs |
+| **Allure Report** | Step-by-step execution visualization |
+| **Environment Variables** | .env-based API key/credential protection |
+| **Slack Notifications** | Real-time test result alerts |
 
-### CI/CD & DevOps
-- **GitHub Actions**: Automated test execution
-- **GitHub Pages**: Allure Report deployment
+---
 
-### Architecture Patterns
-- **Page Object Model (POM)**: Enhanced maintainability
-- **Explicit Wait**: Stable test execution
-- **Environment Variables**: Enhanced security
+## Tech Stack
 
-## 📖 Quick Start
+| Category | Technology |
+|----------|------------|
+| Language | Python 3.11 |
+| Web UI | Selenium 4.27 |
+| Mobile | Appium + UiAutomator2 |
+| API | Requests 2.32 |
+| Framework | Pytest 8.3 |
+| Reporting | Allure Report |
+| CI/CD | GitHub Actions + GitHub Pages |
 
-### Prerequisites
-- Python 3.11 or higher
-- Chrome browser
-- Git
+---
 
-### Installation & Execution
+## Project Structure
 
-```bash
-# 1. Clone repository
-git clone https://github.com/yourusername/QATEST.git
-cd QATEST
-
-# 2. Create and activate virtual environment
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Configure environment variables
-cp .env.example .env
-# Edit .env file with actual API keys and credentials
+```
+QATEST/
+├── src/
+│   ├── pages/                     # Page Object Model
+│   │   ├── base_page.py           # Common methods
+│   │   ├── kurly_login_page.py    # Login
+│   │   ├── kurly_main_page.py     # Main (search, navigation)
+│   │   ├── kurly_cart_page.py     # Shopping cart
+│   │   ├── kurly_product_page.py  # Product details
+│   │   └── kurly_search_page.py   # Search results
+│   │
+│   ├── config/
+│   │   ├── config.yaml            # API endpoint config
+│   │   └── constants.py           # Timeouts, URL constants
+│   │
+│   ├── report/
+│   │   └── generate_excel_report.py
+│   │
+│   └── tests/
+│       ├── conftest.py            # Pytest Fixtures
+│       ├── api/                   # API tests (9)
+│       ├── ui/                    # UI tests (11)
+│       └── mobile/                # Mobile tests (3)
+│
+├── utils/
+│   ├── logger.py
+│   ├── api_utils.py
+│   ├── config_utils.py
+│   └── ...
+│
+├── testdata/
+│   ├── genre_expectations.csv
+│   └── movie_list.csv
+│
+├── .github/workflows/
+│   └── Test_Automation.yaml       # CI/CD config
+│
+├── .env.example
+├── requirements.txt
+├── pytest.ini
+└── README.md
 ```
 
-📖 **Detailed Setup Guide:** [SETUP.md](./SETUP.md)
-
-### Environment Variable Configuration
-
-Create `.env` file with the following content:
+## Installation & Execution
 
 ```bash
-# TMDB API Key (Required)
-TMDB_API_KEY=your_tmdb_api_key
+# Clone repository
+git clone https://github.com/yoplekiller/QATEST.git
+cd QATEST
 
-# Test Account Credentials (Required)
-KURLY_TEST_USERNAME=your_test_username
-KURLY_TEST_PASSWORD=your_test_password
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# Slack Webhook (Optional)
-SLACK_WEBHOOK_URL=your_slack_webhook_url
+# Install dependencies
+pip install -r requirements.txt
 
-# Test Environment
-TEST_ENV=dev
+# Configure environment variables
+cp .env.example .env
+# Edit .env with actual API keys and credentials
+```
+
+### Environment Variables (.env)
+
+```env
+TMDB_API_KEY=your_tmdb_api_key              # Required
+KURLY_TEST_USERNAME=your_test_username       # Required
+KURLY_TEST_PASSWORD=your_test_password       # Required
+SLACK_WEBHOOK_URL=your_slack_webhook_url     # Optional
 ```
 
 ### Running Tests
 
 ```bash
-# Run all tests
+# All tests
 pytest --alluredir=./allure-results
 
-# Run specific test suite
-pytest src/tests/api --alluredir=./allure-results  # API tests
-pytest src/tests/ui --alluredir=./allure-results   # UI tests
+# By test suite
+pytest src/tests/api --alluredir=./allure-results
+pytest src/tests/ui --alluredir=./allure-results
+pytest src/tests/mobile --alluredir=./allure-results
+
+# By marker
+pytest -m api
+pytest -m ui
+pytest -m mobile
 
 # View Allure report
 allure serve ./allure-results
 ```
 
-## 📊 Test Results — Allure Report
+## Test Cases
 
-📄 [View Live Allure Report](https://yoplekiller.github.io/QATEST/allure-report/main/index.html)
+### Kurly UI Tests (11 tests)
 
-![Allure Report Preview](https://via.placeholder.com/800x400?text=Allure+Report+Preview)
+| Test | Validation |
+|------|------------|
+| `test_ui_login` | Valid/invalid login, empty input handling |
+| `test_ui_search` | Normal search, blank search, special chars, result click |
+| `test_ui_cart` | Cart access and verification |
+| `test_ui_add_product` | Add to cart, quantity adjustment |
+| `test_ui_product_add_flow` | Login, search, add, cart E2E flow |
+| `test_ui_quantity` | Quantity increase/decrease buttons |
+| `test_ui_sort_button` | Product sorting |
 
-## 🔄 CI/CD Workflow (GitHub Actions)
+Target: https://www.kurly.com
 
-```mermaid
-graph LR
-    A[Push to GitHub] --> B[Run Pytest]
-    B --> C[Generate Allure Report]
-    C --> D[Deploy to GitHub Pages]
-    D --> E[Send Slack Notification]
+### TMDB API Tests (9 tests)
+
+| Test | Validation |
+|------|------------|
+| `test_popular_movie` | Popular movies list (200, results field) |
+| `test_search_movie` | Movie search functionality |
+| `test_movie_details` | Required fields (id, title, overview) |
+| `test_movie_videos` | Video data validation |
+| `test_api_sla` | Response time under 2s SLA |
+| `test_movie_invalid_api_key` | 401 error handling |
+| `test_movie_genre_inclusion` | Genre inclusion check |
+| `test_movie_release_date_consistency` | Release date format (YYYY-MM-DD) |
+| `test_top_rated_movie_consistency` | Rating range (0-10) |
+
+Target: https://api.themoviedb.org/3
+
+### Mobile Tests (3 tests)
+
+| Test | Validation |
+|------|------------|
+| `test_best_product` | Best menu access |
+| `test_low_price` | Low price filter |
+| `test_new_product` | New product display |
+
+Target: Kurly mobile app (Appium + UiAutomator2)
+
+## Key Implementations
+
+### Page Object Model
+
+```
+BasePage (common: open, find_element, click, send_keys, is_displayed, take_screenshot)
+  ├── KurlyLoginPage     Login handling
+  ├── KurlyMainPage      Search, navigation
+  ├── KurlySearchPage    Search results, sorting
+  ├── KurlyProductPage   Product details
+  └── KurlyCartPage      Shopping cart
 ```
 
-## 🧪 Test Coverage
+### CI/CD
 
-### 🛒 **Kurly UI Tests (26 tests)**
-
-| Test Category | Validation | File |
-|--------------|------------|------|
-| **Login** | Valid/Invalid login, empty input handling | `test_ui_login.py` |
-| **Product Search** | Normal search, empty search, special characters | `test_ui_search.py` |
-| **Shopping Cart** | Cart access and verification | `test_ui_cart.py` |
-| **Add to Cart** | Add to cart → quantity adjustment → cart | `test_ui_add_goods.py` |
-| **E2E Flow** | Login → search → add → cart | `test_ui_goods_add_flow.py` |
-
-### 🎬 **TMDB API Tests (20 tests)**
-
-| Test Category | Validation | File |
-|--------------|------------|------|
-| **Movie Details** | Detail field validation | `test_movie_details.py` |
-| **Popular Movies** | Status code and data count | `test_popular_movie.py` |
-| **Movie Search** | Search functionality | `test_search_movie.py` |
-| **SLA Testing** | Response time validation | `test_api_sla.py` |
-| **Error Handling** | Invalid API key, error scenarios | `test_movie_invalid_api_key.py` |
-| **Data Consistency** | Genre inclusion, release date consistency | `test_movie_genre_inclusion.py` |
-
-## 🏗️ Project Structure
+- `main`, `develop` branch PR / `feature/*`, `temp/*` push
+- 8-hour scheduled runs / Manual execution
 
 ```
-QATEST/
-├── src/
-│   ├── pages/              # Page Object Model
-│   │   ├── base_page.py            # Base page class
-│   │   ├── kurly_login_page.py     # Login page
-│   │   ├── kurly_main_page.py      # Main page
-│   │   ├── kurly_cart_page.py      # Cart page
-│   │   └── kurly_goods_page.py     # Product details page
-│   │
-│   ├── config/             # Configuration files
-│   │   └── config.yaml
-│   │
-│   ├── report/             # Report generation
-│   │   └── generate_excel_report.py
-│   │
-│   └── tests/              # Test cases
-│       ├── api/            # API tests (20 tests)
-│       └── ui/             # UI tests (26 tests)
-│
-├── utils/                  # Utility functions (11 files)
-│   ├── api_utils.py
-│   ├── config_utils.py
-│   ├── logger.py           # Logging system
-│   ├── utilities.py
-│   ├── data_loader.py
-│   ├── csv_utils.py
-│   ├── send_slack_result.py
-│   ├── parse_test_result.py
-│   ├── read_movie_data.py
-│   └── read_product_data.py
-│
-├── .github/
-│   └── workflows/
-│       └── Test_Automation.yaml  # CI/CD configuration
-│
-├── .env.example            # Environment variable template
-├── requirements.txt        # Python dependencies
-├── pytest.ini             # Pytest configuration
-├── README.md              # Korean documentation
-├── README.en.md           # English documentation
-└── SETUP.md               # Installation guide
+Checkout → Install deps → Run UI/API tests
+→ Generate Allure Report → Deploy to GitHub Pages → Slack notification
 ```
 
-## 🎯 Key Features
+## Demo
 
-### ✅ **Implemented Features**
+[Kurly Order Flow Automation (YouTube)](https://www.youtube.com/watch?v=TqsvT2RsYEs)
 
-#### 1. **Page Object Model (POM) Pattern**
-```python
-# Reusable page objects
-class KurlyLoginPage(BasePage):
-    def login(self, username, password):
-        self.enter_username(username)
-        self.enter_password(password)
-        self.click_login_button()
+## Related Projects
 
-# Reused across multiple tests
-def test_login_success():
-    login_page.login("user", "pass")
-
-def test_login_fail():
-    login_page.login("wrong", "wrong")
-```
-
-#### 2. **Enhanced Security**
-- API keys and credentials managed via environment variables
-- Sensitive information protected with `.gitignore`
-- `.env.example` template provided
-
-#### 3. **Allure Report Integration**
-```python
-@allure.step("Login")
-def login(self, username, password):
-    """Step-by-step reporting"""
-    self.enter_username(username)
-    self.enter_password(password)
-```
-
-#### 4. **Logging System**
-```python
-from utils.logger import logger
-
-logger.info("Test started")
-logger.error("Error occurred", exc_info=True)
-```
-
-### 🔮 **Future Plans**
-
-- [ ] OWASP ZAP security testing integration
-- [ ] Docker environment optimization
-- [ ] Auto-create issues on test failure (GitHub Issues/Jira)
-- [ ] SQL-based database automation testing
-- [ ] Performance testing (Locust/K6)
-- [ ] Visual regression testing (Percy/Applitools)
-- [ ] Cross-browser testing (Firefox, Safari)
-- [ ] Playwright automation scripts (TypeScript)
-- [ ] Appium mobile automation scripts
-
-## 📹 Demo Videos
-
-### 1. 🖥️ **Local Automation Execution**
-[Watch Kurly Order Flow Automation Demo (YouTube)](https://www.youtube.com/watch?v=TqsvT2RsYEs)
-
-## 🛡️ Security
-
-- API keys and credentials stored in `.env` file (excluded from Git)
-- `.env.example` provides template only
-- All sensitive information managed via environment variables
-
-**⚠️ Warning:** Never commit `.env` file to Git!
-
-## 📚 Additional Documentation
-
-- **[SETUP.md](./SETUP.md)**: Complete setup guide
-- **[README.md](./README.md)**: Korean documentation
-
-## 🤝 Contributing
-
-While this is a portfolio project, suggestions for improvement and bug reports are welcome!
-
-## 📄 License
-
-This project is for portfolio purposes only.
-
-## 📧 Contact
-
-For questions or feedback about the project, please leave an issue.
+- [PlaywrightQA](https://github.com/yoplekiller/PlaywrightQA) - Playwright/TypeScript E2E Testing
+- [woongjinAppTest](https://github.com/yoplekiller/woongjinAppTest) - Python/Appium Mobile Testing
 
 ---
 
-**Made with ❤️ by QA Engineer**
+## Author
 
-*This project showcases QA automation skills and industry best practices.*
+**LIM JAE MIN**
+- GitHub: [@YopleKiller](https://github.com/YopleKiller)
+- Email: jmlim9244@gmail.com
+
+---
+
+## License
+
+MIT License

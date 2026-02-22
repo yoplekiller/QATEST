@@ -1,5 +1,4 @@
 import allure
-import json
 import pytest
 
 
@@ -29,5 +28,3 @@ def test_search_movie(api_env, send_get_request, attach_response):
       assert len(data["results"]) > 0 # 최소 1개 이상의 결과가 있어야 함
       assert data["results"][0]["title"] == "Inception" # 첫번째 결과가 인셉션 인지 확인
 
-      print("📦 응답 JSON :")
-      print(json.dumps(data, indent=4, ensure_ascii=False))

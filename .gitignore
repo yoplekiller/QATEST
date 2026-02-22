@@ -25,6 +25,11 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
+# 테스트 결과 및 출력
+results/
+release_date/
+logs/
+
 # 스크린샷 및 임시 파일
 screenshots/
 failed_screenshots/

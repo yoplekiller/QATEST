@@ -25,10 +25,6 @@ def test_api_sla(api_env, send_get_request, endpoint):
         response = send_get_request(endpoint)
         elapsed_time = time.time() - start_time
 
-        print(f"📡 요청 주소: {endpoint}")
-        print(f"✅ 응답 시간: {elapsed_time:.2f}초")
-        print(f"✅ 응답 코드: {response.status_code}")
-
     with allure.step("응답 시간 첨부"):
       allure.attach(f"응답 시간: {elapsed_time:.2f}초", name="Response Time", attachment_type=allure.attachment_type.TEXT)
 

@@ -2,7 +2,7 @@
 검색 기능 테스트 (POM 패턴 적용)
 Page Object Model을 사용하여 리팩토링된 검색 테스트
 """
-from email.utils import quote
+
 import time
 import allure
 import pytest

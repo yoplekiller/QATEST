@@ -26,15 +26,8 @@ def test_movie_release_date_consistency(movie_id, expected_title, api_env, send_
       assert len(data["release_date"]) == 10,  "검색 실패"
       assert data["title"] == expected_title
 
-    print("\n🎬 테스트 결과")
-    print(f"📌 기대 제목: {expected_title}")
-    print(f"📥 API 응답 제목: {data['title']}")
-    print("개봉일:", data["release_date"])
-    print("\n")
-
-
     with allure.step("개봉일 정보 CSV로 저장"):
-    # ✅ CSV 저장용 딕셔너리 리스트 구성
+      # CSV 저장용 딕셔너리 리스트 구성
       movie_info = [{
           "movie_id": movie_id,
           "title": expected_title,
