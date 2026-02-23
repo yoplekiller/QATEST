@@ -38,6 +38,7 @@ QA 엔지니어 포트폴리오 프로젝트입니다. Python + Selenium 기반�
 | Web UI | Selenium 4.27 |
 | Mobile | Appium + UiAutomator2 |
 | API | Requests 2.32 |
+| Performance | JMeter 5.6.3 |
 | Framework | Pytest 8.3 |
 | Reporting | Allure Report |
 | CI/CD | GitHub Actions + GitHub Pages |
@@ -68,7 +69,9 @@ QATEST/
 │       ├── conftest.py            # Pytest Fixture
 │       ├── api/                   # API 테스트 (9개)
 │       ├── ui/                    # UI 테스트 (11개)
-│       └── mobile/                # Mobile 테스트 (3개)
+│       ├── mobile/                # Mobile 테스트 (3개)
+│       └── performance/           # 성능 테스트 (JMeter)
+│           └── tmdb_load_test.jmx
 │
 ├── utils/
 │   ├── logger.py
@@ -178,6 +181,25 @@ allure serve ./allure-results
 | `test_new_product` | 신상품 표시 |
 
 테스트 대상: 마켓컬리 앱 (Appium + UiAutomator2)
+
+### TMDB API 성능 테스트 (JMeter)
+
+TMDB API가 동시 사용자 부하 상황에서도 SLA(3초 이내)를 충족하는지 검증합니다.
+
+| 시나리오 | 동시 사용자 | 평균 응답시간 | Max | 에러율 | TPS | SLA 충족 |
+|---|---|---|---|---|---|---|
+| 인기 영화 조회 | 100명 | 980ms | 2711ms | 0.00% | 30.8/s | O |
+| 영화 검색 | 100명 | 799ms | 1048ms | 0.00% | 38.8/s | O |
+
+- Ramp-up: 30초 / SLA 기준: 3000ms
+- 테스트 파일: `src/tests/performance/tmdb_load_test.jmx`
+
+```bash
+# 성능 테스트 실행 (Non-GUI)
+jmeter -n -t src/tests/performance/tmdb_load_test.jmx -l result.jtl -e -o report/
+```
+
+---
 
 ## 주요 구현
 

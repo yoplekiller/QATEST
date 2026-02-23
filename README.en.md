@@ -38,6 +38,7 @@ QA Engineer portfolio -- test automation for Kurly, a live e-commerce site, usin
 | Web UI | Selenium 4.27 |
 | Mobile | Appium + UiAutomator2 |
 | API | Requests 2.32 |
+| Performance | JMeter 5.6.3 |
 | Framework | Pytest 8.3 |
 | Reporting | Allure Report |
 | CI/CD | GitHub Actions + GitHub Pages |
@@ -68,7 +69,9 @@ QATEST/
 │       ├── conftest.py            # Pytest Fixtures
 │       ├── api/                   # API tests (9)
 │       ├── ui/                    # UI tests (11)
-│       └── mobile/                # Mobile tests (3)
+│       ├── mobile/                # Mobile tests (3)
+│       └── performance/           # Performance tests (JMeter)
+│           └── tmdb_load_test.jmx
 │
 ├── utils/
 │   ├── logger.py
@@ -178,6 +181,25 @@ Target: https://api.themoviedb.org/3
 | `test_new_product` | New product display |
 
 Target: Kurly mobile app (Appium + UiAutomator2)
+
+### TMDB API Performance Tests (JMeter)
+
+Verifies that the TMDB API meets SLA (under 3 seconds) under concurrent user load.
+
+| Scenario | Concurrent Users | Avg Response | Max | Error Rate | TPS | SLA Met |
+|---|---|---|---|---|---|---|
+| Popular Movies | 100 | 980ms | 2711ms | 0.00% | 30.8/s | O |
+| Movie Search | 100 | 799ms | 1048ms | 0.00% | 38.8/s | O |
+
+- Ramp-up: 30s / SLA threshold: 3000ms
+- Test file: `src/tests/performance/tmdb_load_test.jmx`
+
+```bash
+# Run performance test (Non-GUI)
+jmeter -n -t src/tests/performance/tmdb_load_test.jmx -l result.jtl -e -o report/
+```
+
+---
 
 ## Key Implementations
 
