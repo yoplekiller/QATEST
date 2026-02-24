@@ -1,0 +1,401 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/7HKpc11uQfxnw0Y8tRUYn1fsKqE.jpg",
+      "genre_ids": [
+        878,
+        28,
+        53
+      ],
+      "id": 1236153,
+      "original_language": "en",
+      "original_title": "Mercy",
+      "overview": "In the near future, a detective stands on trial accused of murdering his wife. He has ninety minutes to prove his innocence to the advanced AI Judge he once championed, before it determines his fate.",
+      "popularity": 649.4032,
+      "poster_path": "/pyok1kZJCfyuFapYXzHcy7BLlQa.jpg",
+      "release_date": "2026-01-20",
+      "title": "Mercy",
+      "video": false,
+      "vote_average": 7.054,
+      "vote_count": 468
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hHDNOlATHhre4eZ7aYz5cdyJLik.jpg",
+      "genre_ids": [
+        27,
+        53,
+        878
+      ],
+      "id": 1272837,
+      "original_language": "en",
+      "original_title": "28 Years Later: The Bone Temple",
+      "overview": "Dr. Kelson finds himself in a shocking new relationship - with consequences that could change the world as they know it - and Spike's encounter with Jimmy Crystal becomes a nightmare he can't escape.",
+      "popularity": 281.8152,
+      "poster_path": "/kK1BGkG3KAvWB0WMV1DfOx9yTMZ.jpg",
+      "release_date": "2026-01-14",
+      "title": "28 Years Later: The Bone Temple",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 597
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xzY15HIBMR1MPo9Me8OsaZShF9T.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1244975,
+      "original_language": "fr",
+      "original_title": "Les Orphelins",
+      "overview": "Gab and Driss, childhood friends on bad terms since they left the orphanage, now have opposite lives - one is a cop with the IGPN, the other a fixer for thugs. When their first love dies in a suspicious accident, her 17-year-old daughter, Leïla, takes Gab's gun and sets off on the trail of a powerful organization willing to do anything to cover the case up. Forced to team up, the orphans must stop her before she crosses a line she can't return from...",
+      "popularity": 239.1588,
+      "poster_path": "/hP7mjZr2SVfjAorlRHTdV1XZmHY.jpg",
+      "release_date": "2025-08-20",
+      "title": "The Orphans",
+      "video": false,
+      "vote_average": 6.043,
+      "vote_count": 47
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uzZ7LUx4Bb3nZXjvBx5PiqTE7rk.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1301306,
+      "original_language": "en",
+      "original_title": "A Woman Scorned",
+      "overview": "Jas and her sister Laura are interrupted on their family weekend break in the country side by a group of local men intent on terrorising them. When Laura is attacked and killed by the group, Jas discovers her lifeless body back at the cabin they've hired. She is instilled with grief, rage and fury and intent on hunting down and taking out the gang by whatever means necessary as justice for her sister's murder.",
+      "popularity": 233.8935,
+      "poster_path": "/dlOSBiNULMPzKIze84LDjvEN9z1.jpg",
+      "release_date": "2025-06-09",
+      "title": "A Woman Scorned",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cugd16e3WbCG3Zogb8N7lwUnVXH.jpg",
+      "genre_ids": [
+        14,
+        28,
+        12
+      ],
+      "id": 1253000,
+      "original_language": "en",
+      "original_title": "Deathstalker",
+      "overview": "A powerful swordsman known as Deathstalker recovers a cursed amulet from a corpse-strewn battlefield. Marked by dark magic and hunted by monstrous assassins, he must face the rising evil and break the curse.",
+      "popularity": 194.1675,
+      "poster_path": "/nEI3DnzQC1afAjJOAizx6UX27pL.jpg",
+      "release_date": "2025-10-10",
+      "title": "Deathstalker",
+      "video": false,
+      "vote_average": 6.29,
+      "vote_count": 50
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u9jE0R1nvkmdWu3bt7Op8joPywa.jpg",
+      "genre_ids": [
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "Having found the safety of the Greenland bunker after the comet Clarke decimated the Earth, the Garrity family must now risk everything to embark on a perilous journey across the wasteland of Europe to find a new home.",
+      "popularity": 195.8156,
+      "poster_path": "/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg",
+      "release_date": "2026-01-07",
+      "title": "Greenland 2: Migration",
+      "video": false,
+      "vote_average": 6.524,
+      "vote_count": 502
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "original_language": "ru",
+      "original_title": "Твое сердце будет разбито",
+      "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
+      "popularity": 197.2014,
+      "poster_path": "/6qmhUBfGoII6PSNik0e35OgEK8g.jpg",
+      "release_date": "2026-03-26",
+      "title": "Your Heart Will Be Broken",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w1Z1I9PqTK5UjG6RVAFXLCjp1Sw.jpg",
+      "genre_ids": [
+        878,
+        28,
+        53
+      ],
+      "id": 434853,
+      "original_language": "en",
+      "original_title": "Space/Time",
+      "overview": "After a fatal test shuts down their project, a disgraced team of scientists enters the criminal underworld to rebuild a forbidden space-bending engine that could rescue humanity or annihilate it entirely.",
+      "popularity": 173.3223,
+      "poster_path": "/uje1ecKMnNpZp0at5TxlvVgVXqI.jpg",
+      "release_date": "2025-05-01",
+      "title": "Space/Time",
+      "video": false,
+      "vote_average": 5.859,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zXINNssll2zsPGqd7F7Llrw7Uql.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 185.265,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.241,
+      "vote_count": 446
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7nfpkR9XsQ1lBNCXSSHxGV7Dkxe.jpg",
+      "genre_ids": [
+        16,
+        35,
+        12,
+        10751,
+        9648
+      ],
+      "id": 1084242,
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 184.3642,
+      "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "release_date": "2025-11-26",
+      "title": "Zootopia 2",
+      "video": false,
+      "vote_average": 7.614,
+      "vote_count": 1825
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4IEjHlV6ciUPopHnEs5AfBNJ6XS.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1634858,
+      "original_language": "es",
+      "original_title": "Cuerno Azulado",
+      "overview": "",
+      "popularity": 161.7774,
+      "poster_path": "/q0OveDlsh5BNq6ifZqNWKtLKiwb.jpg",
+      "release_date": "2025-09-10",
+      "title": "Cuerno Azulado",
+      "video": false,
+      "vote_average": 7.778,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/82lM4GJ9uuNvNDOEpxFy77uv4Ak.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 135.352,
+      "poster_path": "/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.721,
+      "vote_count": 2132
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tNONILTe9OJz574KZWaLze4v6RC.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 188.8147,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.238,
+      "vote_count": 1278
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80,
+        9648
+      ],
+      "id": 1168190,
+      "original_language": "en",
+      "original_title": "The Wrecking Crew",
+      "overview": "Estranged half-brothers Jonny and James reunite after their father's mysterious death. As they search for the truth, buried secrets reveal a conspiracy threatening to tear their family apart.",
+      "popularity": 143.5081,
+      "poster_path": "/gbVwHl4YPSq6BcC92TQpe7qUTh6.jpg",
+      "release_date": "2026-01-28",
+      "title": "The Wrecking Crew",
+      "video": false,
+      "vote_average": 6.929,
+      "vote_count": 670
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sdZSjtGUTSN8B3al5o0f2WoQfQQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 119.2245,
+      "poster_path": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+      "release_date": "2025-12-17",
+      "title": "Avatar: Fire and Ash",
+      "video": false,
+      "vote_average": 7.276,
+      "vote_count": 1810
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vSQSYd2zZTqc0zmHImwWEGGluMI.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1316092,
+      "original_language": "en",
+      "original_title": "\"Wuthering Heights\"",
+      "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
+      "popularity": 127.5837,
+      "poster_path": "/ywRO5dyE8RyyXJd6cvd69jLZeic.jpg",
+      "release_date": "2026-02-11",
+      "title": "\"Wuthering Heights\"",
+      "video": false,
+      "vote_average": 6.6,
+      "vote_count": 353
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 112.9817,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.199,
+      "vote_count": 899
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5arE7ysejlE2byGyakuUrR5TmUt.jpg",
+      "genre_ids": [
+        27,
+        53,
+        28
+      ],
+      "id": 1205225,
+      "original_language": "en",
+      "original_title": "Gates of Flesh",
+      "overview": "A group of friends attempt to escape the city after an outbreak of demon-possessions. The friends seek shelter in an abandoned church, but their plans for escape are ruined when one of them becomes possessed.",
+      "popularity": 111.1327,
+      "poster_path": "/tsu0fapttpwweWhx2GvYFtSCFhi.jpg",
+      "release_date": "2025-04-08",
+      "title": "Gates of Flesh",
+      "video": false,
+      "vote_average": 6.333,
+      "vote_count": 21
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xcBlMEvzuaHoWANKYn5PGvcW4OC.jpg",
+      "genre_ids": [
+        27,
+        28,
+        53
+      ],
+      "id": 1110034,
+      "original_language": "no",
+      "original_title": "Kraken",
+      "overview": "Marine biologist Johanne is doing research on a fish farm in Vangsnes, a rural community located by the fjord, when she encounters several strange occurrences. Along with the brutal deaths of two local teenagers, all signs point to the deep fjord; can there be more to the depths than the eye can see? At the bottom of the deepest fjord rests a mythical monster as large as a mountain, with a myriad of arms ready to crush and devour anything they can grab.",
+      "popularity": 97.3187,
+      "poster_path": "/jVsflOu9WpMqUJ3WwVX2mITi86S.jpg",
+      "release_date": "2026-02-06",
+      "title": "Kraken",
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/thgemkoLauZxcqe6KX8wxqEc70z.jpg",
+      "genre_ids": [
+        53,
+        18
+      ],
+      "id": 1428862,
+      "original_language": "es",
+      "original_title": "Cortafuego",
+      "overview": "Little Lide disappears in the forest while her family packs up their home. As a fire breaks out, her mother must race to reach her before the flames do.",
+      "popularity": 99.7451,
+      "poster_path": "/knh3c8LzL9fMhjc5SZPAOotXyiy.jpg",
+      "release_date": "2026-02-19",
+      "title": "Firebreak",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 37
+    }
+  ],
+  "total_pages": 55350,
+  "total_results": 1107000
+}
