@@ -22,7 +22,7 @@ QA 엔지니어 포트폴리오 프로젝트입니다. Python + Selenium 기반�
 | 특징 | 설명 |
 |------|------|
 | **Page Object Model** | 6개 페이지 클래스로 구조화 |
-| **다중 플랫폼** | Web (Selenium) + Mobile (Appium) + API (Requests) |
+| **다중 플랫폼** | Web (Selenium) + API (Requests) |
 | **CI/CD** | GitHub Actions 8시간 주기 자동 실행 |
 | **Allure Report** | 단계별 실행 과정 시각화 |
 | **환경변수 관리** | .env 기반 API 키/계정 정보 보호 |
@@ -36,7 +36,6 @@ QA 엔지니어 포트폴리오 프로젝트입니다. Python + Selenium 기반�
 |------|------|
 | Language | Python 3.11 |
 | Web UI | Selenium 4.27 |
-| Mobile | Appium + UiAutomator2 |
 | API | Requests 2.32 |
 | Performance | JMeter 5.6.3 |
 | Framework | Pytest 8.3 |
@@ -69,7 +68,6 @@ QATEST/
 │       ├── conftest.py            # Pytest Fixture
 │       ├── api/                   # API 테스트 (9개)
 │       ├── ui/                    # UI 테스트 (11개)
-│       ├── mobile/                # Mobile 테스트 (3개)
 │       └── performance/           # 성능 테스트 (JMeter)
 │           └── tmdb_load_test.jmx
 │
@@ -129,12 +127,9 @@ pytest --alluredir=./allure-results
 # 테스트 스위트별 실행
 pytest src/tests/api --alluredir=./allure-results
 pytest src/tests/ui --alluredir=./allure-results
-pytest src/tests/mobile --alluredir=./allure-results
-
 # 마커로 실행
 pytest -m api
 pytest -m ui
-pytest -m mobile
 
 # Allure 리포트 확인
 allure serve ./allure-results
@@ -171,16 +166,6 @@ allure serve ./allure-results
 | `test_top_rated_movie_consistency` | 평점 범위 (0-10) |
 
 테스트 대상: https://api.themoviedb.org/3
-
-### Mobile 테스트 (3개)
-
-| 테스트 | 검증 내용 |
-|--------|-----------|
-| `test_best_product` | 베스트 메뉴 진입 |
-| `test_low_price` | 저가 필터 기능 |
-| `test_new_product` | 신상품 표시 |
-
-테스트 대상: 마켓컬리 앱 (Appium + UiAutomator2)
 
 ### TMDB API 성능 테스트 (JMeter)
 

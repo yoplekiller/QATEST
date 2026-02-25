@@ -22,7 +22,7 @@ QA Engineer portfolio -- test automation for Kurly, a live e-commerce site, usin
 | Feature | Description |
 |---------|-------------|
 | **Page Object Model** | 6 page classes for structured automation |
-| **Multi-Platform** | Web (Selenium) + Mobile (Appium) + API (Requests) |
+| **Multi-Platform** | Web (Selenium) + API (Requests) |
 | **CI/CD** | GitHub Actions with 8-hour scheduled runs |
 | **Allure Report** | Step-by-step execution visualization |
 | **Environment Variables** | .env-based API key/credential protection |
@@ -36,7 +36,6 @@ QA Engineer portfolio -- test automation for Kurly, a live e-commerce site, usin
 |----------|------------|
 | Language | Python 3.11 |
 | Web UI | Selenium 4.27 |
-| Mobile | Appium + UiAutomator2 |
 | API | Requests 2.32 |
 | Performance | JMeter 5.6.3 |
 | Framework | Pytest 8.3 |
@@ -69,7 +68,6 @@ QATEST/
 │       ├── conftest.py            # Pytest Fixtures
 │       ├── api/                   # API tests (9)
 │       ├── ui/                    # UI tests (11)
-│       ├── mobile/                # Mobile tests (3)
 │       └── performance/           # Performance tests (JMeter)
 │           └── tmdb_load_test.jmx
 │
@@ -129,12 +127,9 @@ pytest --alluredir=./allure-results
 # By test suite
 pytest src/tests/api --alluredir=./allure-results
 pytest src/tests/ui --alluredir=./allure-results
-pytest src/tests/mobile --alluredir=./allure-results
-
 # By marker
 pytest -m api
 pytest -m ui
-pytest -m mobile
 
 # View Allure report
 allure serve ./allure-results
@@ -171,16 +166,6 @@ Target: https://www.kurly.com
 | `test_top_rated_movie_consistency` | Rating range (0-10) |
 
 Target: https://api.themoviedb.org/3
-
-### Mobile Tests (3 tests)
-
-| Test | Validation |
-|------|------------|
-| `test_best_product` | Best menu access |
-| `test_low_price` | Low price filter |
-| `test_new_product` | New product display |
-
-Target: Kurly mobile app (Appium + UiAutomator2)
 
 ### TMDB API Performance Tests (JMeter)
 
