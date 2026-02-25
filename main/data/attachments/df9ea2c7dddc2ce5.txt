@@ -1,0 +1,4 @@
+2026-02-25 16:34:32 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-02-25 16:34:33 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-02-25 16:34:38 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath__input_placeholder_검색어를_입력해주세요__20260225_163438.png
+2026-02-25 16:34:38 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "//input[@placeholder='검색어를 입력해주세요']")
