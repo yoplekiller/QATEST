@@ -1,0 +1,399 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/7HKpc11uQfxnw0Y8tRUYn1fsKqE.jpg",
+      "genre_ids": [
+        878,
+        28,
+        53
+      ],
+      "id": 1236153,
+      "original_language": "en",
+      "original_title": "Mercy",
+      "overview": "In the near future, a detective stands on trial accused of murdering his wife. He has ninety minutes to prove his innocence to the advanced AI Judge he once championed, before it determines his fate.",
+      "popularity": 545.1617,
+      "poster_path": "/pyok1kZJCfyuFapYXzHcy7BLlQa.jpg",
+      "release_date": "2026-01-20",
+      "title": "Mercy",
+      "video": false,
+      "vote_average": 7.094,
+      "vote_count": 506
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6YjnTRBz704LF1uJ3ZC4wsS9T8r.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1290821,
+      "original_language": "en",
+      "original_title": "Shelter",
+      "overview": "A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.",
+      "popularity": 274.4696,
+      "poster_path": "/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
+      "release_date": "2026-01-28",
+      "title": "Shelter",
+      "video": false,
+      "vote_average": 7.021,
+      "vote_count": 97
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hHDNOlATHhre4eZ7aYz5cdyJLik.jpg",
+      "genre_ids": [
+        27,
+        53,
+        878
+      ],
+      "id": 1272837,
+      "original_language": "en",
+      "original_title": "28 Years Later: The Bone Temple",
+      "overview": "Dr. Kelson finds himself in a shocking new relationship - with consequences that could change the world as they know it - and Spike's encounter with Jimmy Crystal becomes a nightmare he can't escape.",
+      "popularity": 237.7059,
+      "poster_path": "/kK1BGkG3KAvWB0WMV1DfOx9yTMZ.jpg",
+      "release_date": "2026-01-14",
+      "title": "28 Years Later: The Bone Temple",
+      "video": false,
+      "vote_average": 7.184,
+      "vote_count": 619
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/z4hZZQ1GRuNGdeeWfKZIt8PXrmX.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1244975,
+      "original_language": "fr",
+      "original_title": "Les Orphelins",
+      "overview": "Gab and Driss, childhood friends on bad terms since they left the orphanage, now have opposite lives - one is a cop with the IGPN, the other a fixer for thugs. When their first love dies in a suspicious accident, her 17-year-old daughter, Leïla, takes Gab's gun and sets off on the trail of a powerful organization willing to do anything to cover the case up. Forced to team up, the orphans must stop her before she crosses a line she can't return from...",
+      "popularity": 230.6038,
+      "poster_path": "/hP7mjZr2SVfjAorlRHTdV1XZmHY.jpg",
+      "release_date": "2025-08-20",
+      "title": "The Orphans",
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 50
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uzZ7LUx4Bb3nZXjvBx5PiqTE7rk.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1301306,
+      "original_language": "en",
+      "original_title": "A Woman Scorned",
+      "overview": "Jas and her sister Laura are interrupted on their family weekend break in the country side by a group of local men intent on terrorising them. When Laura is attacked and killed by the group, Jas discovers her lifeless body back at the cabin they've hired. She is instilled with grief, rage and fury and intent on hunting down and taking out the gang by whatever means necessary as justice for her sister's murder.",
+      "popularity": 227.8739,
+      "poster_path": "/dlOSBiNULMPzKIze84LDjvEN9z1.jpg",
+      "release_date": "2025-06-09",
+      "title": "A Woman Scorned",
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 10
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1gLFGrxHqQebqLWpISmoFR6XWtJ.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1088434,
+      "original_language": "en",
+      "original_title": "Hellfire",
+      "overview": "A drifter with a mysterious past arrives in a small town and finds the residents in the grip of a ruthless crime boss and realizes he has to help them.",
+      "popularity": 217.9571,
+      "poster_path": "/tQti9QTf13MfzNpXguijgNh7ojE.jpg",
+      "release_date": "2026-02-05",
+      "title": "Hellfire",
+      "video": false,
+      "vote_average": 7.031,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "original_language": "ru",
+      "original_title": "Твое сердце будет разбито",
+      "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
+      "popularity": 186.6904,
+      "poster_path": "/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
+      "release_date": "2026-03-26",
+      "title": "Your Heart Will Be Broken",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zXINNssll2zsPGqd7F7Llrw7Uql.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 178.4926,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.245,
+      "vote_count": 451
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u9jE0R1nvkmdWu3bt7Op8joPywa.jpg",
+      "genre_ids": [
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "Having found the safety of the Greenland bunker after the comet Clarke decimated the Earth, the Garrity family must now risk everything to embark on a perilous journey across the wasteland of Europe to find a new home.",
+      "popularity": 169.0134,
+      "poster_path": "/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg",
+      "release_date": "2026-01-07",
+      "title": "Greenland 2: Migration",
+      "video": false,
+      "vote_average": 6.51,
+      "vote_count": 509
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7nfpkR9XsQ1lBNCXSSHxGV7Dkxe.jpg",
+      "genre_ids": [
+        16,
+        35,
+        12,
+        10751,
+        9648
+      ],
+      "id": 1084242,
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 168.5377,
+      "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "release_date": "2025-11-26",
+      "title": "Zootopia 2",
+      "video": false,
+      "vote_average": 7.608,
+      "vote_count": 1847
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cugd16e3WbCG3Zogb8N7lwUnVXH.jpg",
+      "genre_ids": [
+        14,
+        28,
+        12
+      ],
+      "id": 1253000,
+      "original_language": "en",
+      "original_title": "Deathstalker",
+      "overview": "A powerful swordsman known as Deathstalker recovers a cursed amulet from a corpse-strewn battlefield. Marked by dark magic and hunted by monstrous assassins, he must face the rising evil and break the curse.",
+      "popularity": 158.6682,
+      "poster_path": "/nEI3DnzQC1afAjJOAizx6UX27pL.jpg",
+      "release_date": "2025-10-10",
+      "title": "Deathstalker",
+      "video": false,
+      "vote_average": 6.29,
+      "vote_count": 50
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w1Z1I9PqTK5UjG6RVAFXLCjp1Sw.jpg",
+      "genre_ids": [
+        878,
+        28,
+        53
+      ],
+      "id": 434853,
+      "original_language": "en",
+      "original_title": "Space/Time",
+      "overview": "After a fatal test shuts down their project, a disgraced team of scientists enters the criminal underworld to rebuild a forbidden space-bending engine that could rescue humanity or annihilate it entirely.",
+      "popularity": 146.0445,
+      "poster_path": "/uje1ecKMnNpZp0at5TxlvVgVXqI.jpg",
+      "release_date": "2025-05-01",
+      "title": "Space/Time",
+      "video": false,
+      "vote_average": 5.894,
+      "vote_count": 33
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tNONILTe9OJz574KZWaLze4v6RC.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 143.4842,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.241,
+      "vote_count": 1303
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80,
+        9648
+      ],
+      "id": 1168190,
+      "original_language": "en",
+      "original_title": "The Wrecking Crew",
+      "overview": "Estranged half-brothers Jonny and James reunite after their father's mysterious death. As they search for the truth, buried secrets reveal a conspiracy threatening to tear their family apart.",
+      "popularity": 131.0266,
+      "poster_path": "/gbVwHl4YPSq6BcC92TQpe7qUTh6.jpg",
+      "release_date": "2026-01-28",
+      "title": "The Wrecking Crew",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 687
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4IEjHlV6ciUPopHnEs5AfBNJ6XS.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1634858,
+      "original_language": "es",
+      "original_title": "Cuerno Azulado",
+      "overview": "",
+      "popularity": 125.0657,
+      "poster_path": "/q0OveDlsh5BNq6ifZqNWKtLKiwb.jpg",
+      "release_date": "2025-09-10",
+      "title": "Cuerno Azulado",
+      "video": false,
+      "vote_average": 7.778,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gaKFXcB5J1gz0QqYj8bWIfrPc04.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 122.1662,
+      "poster_path": "/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.718,
+      "vote_count": 2151
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sdZSjtGUTSN8B3al5o0f2WoQfQQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 115.5859,
+      "poster_path": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+      "release_date": "2025-12-17",
+      "title": "Avatar: Fire and Ash",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 1819
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vSQSYd2zZTqc0zmHImwWEGGluMI.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1316092,
+      "original_language": "en",
+      "original_title": "\"Wuthering Heights\"",
+      "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
+      "popularity": 113.8131,
+      "poster_path": "/ywRO5dyE8RyyXJd6cvd69jLZeic.jpg",
+      "release_date": "2026-02-11",
+      "title": "\"Wuthering Heights\"",
+      "video": false,
+      "vote_average": 6.505,
+      "vote_count": 377
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 108.9751,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.196,
+      "vote_count": 900
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fAF3VGFBpItWNROmiGob60n0y5.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1242937,
+      "original_language": "en",
+      "original_title": "The Dreadful",
+      "overview": "In medieval England, Anne and her domineering mother-in-law Morwen struggle to survive on the outskirts of society. But when a man from Anne's past returns from war, a curse begins to take shape through a mysterious knight and threatens to destroy them all.",
+      "popularity": 99.7629,
+      "poster_path": "/hGH8Ji7pG2ytHxo7ABqHM3TpzFA.jpg",
+      "release_date": "2026-02-20",
+      "title": "The Dreadful",
+      "video": false,
+      "vote_average": 6.513,
+      "vote_count": 38
+    }
+  ],
+  "total_pages": 55384,
+  "total_results": 1107669
+}
