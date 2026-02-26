@@ -1,0 +1,2 @@
+2026-02-26 12:23:13 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-02-26 12:23:15 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
