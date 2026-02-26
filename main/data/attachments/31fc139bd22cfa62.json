@@ -1,0 +1,394 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/4IEjHlV6ciUPopHnEs5AfBNJ6XS.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1634858,
+      "original_language": "es",
+      "original_title": "Cuerno Azulado",
+      "overview": "",
+      "popularity": 103.4295,
+      "poster_path": "/q0OveDlsh5BNq6ifZqNWKtLKiwb.jpg",
+      "release_date": "2025-09-10",
+      "title": "Cuerno Azulado",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 10
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 102.7999,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.192,
+      "vote_count": 901
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/thgemkoLauZxcqe6KX8wxqEc70z.jpg",
+      "genre_ids": [
+        53,
+        18
+      ],
+      "id": 1428862,
+      "original_language": "es",
+      "original_title": "Cortafuego",
+      "overview": "Little Lide disappears in the forest while her family packs up their home. As a fire breaks out, her mother must race to reach her before the flames do.",
+      "popularity": 91.1206,
+      "poster_path": "/knh3c8LzL9fMhjc5SZPAOotXyiy.jpg",
+      "release_date": "2026-02-19",
+      "title": "Firebreak",
+      "video": false,
+      "vote_average": 6.256,
+      "vote_count": 45
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fAF3VGFBpItWNROmiGob60n0y5.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1242937,
+      "original_language": "en",
+      "original_title": "The Dreadful",
+      "overview": "In medieval England, Anne and her domineering mother-in-law Morwen struggle to survive on the outskirts of society. But when a man from Anne's past returns from war, a curse begins to take shape through a mysterious knight and threatens to destroy them all.",
+      "popularity": 89.3059,
+      "poster_path": "/hGH8Ji7pG2ytHxo7ABqHM3TpzFA.jpg",
+      "release_date": "2026-02-20",
+      "title": "The Dreadful",
+      "video": false,
+      "vote_average": 6.488,
+      "vote_count": 40
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yWCZc2TcsCYbMMjvUIsczmQi2TX.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        80
+      ],
+      "id": 1159559,
+      "original_language": "en",
+      "original_title": "Scream 7",
+      "overview": "When a new Ghostface killer emerges in the quiet town where Sidney Prescott has built a new life, her darkest fears are realized as her daughter becomes the next target. Determined to protect her family, Sidney must face the horrors of her past to put an end to the bloodshed once and for all.",
+      "popularity": 88.308,
+      "poster_path": "/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
+      "release_date": "2026-02-25",
+      "title": "Scream 7",
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 38
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lNYympQM5O6QSInusbyG9eJDIe4.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 84.8907,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.675,
+      "vote_count": 739
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1qwhYqg7YEZajh3Q4biqbuQoDq8.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        28
+      ],
+      "id": 1297842,
+      "original_language": "en",
+      "original_title": "GOAT",
+      "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'!",
+      "popularity": 80.7805,
+      "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+      "release_date": "2026-02-11",
+      "title": "GOAT",
+      "video": false,
+      "vote_average": 7.471,
+      "vote_count": 70
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jFKbhV0uFZuA3K73UJIq1dzisCi.jpg",
+      "genre_ids": [
+        16,
+        878,
+        12,
+        14,
+        10751
+      ],
+      "id": 804370,
+      "original_language": "fr",
+      "original_title": "Arco",
+      "overview": "10-year-old Arco lives in a far future. During his first flight in his rainbow suit, he loses control and falls into the past. Iris, a girl his age from 2075, comes to his rescue and tries by all means to help send him back to his era.",
+      "popularity": 77.85,
+      "poster_path": "/ipE3XiHqbSQm3HS0tJ09CDaJ2Fs.jpg",
+      "release_date": "2025-10-22",
+      "title": "Arco",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 82
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5arE7ysejlE2byGyakuUrR5TmUt.jpg",
+      "genre_ids": [
+        27,
+        53,
+        28
+      ],
+      "id": 1205225,
+      "original_language": "en",
+      "original_title": "Gates of Flesh",
+      "overview": "A group of friends attempt to escape the city after an outbreak of demon-possessions. The friends seek shelter in an abandoned church, but their plans for escape are ruined when one of them becomes possessed.",
+      "popularity": 76.6491,
+      "poster_path": "/tsu0fapttpwweWhx2GvYFtSCFhi.jpg",
+      "release_date": "2025-04-08",
+      "title": "Gates of Flesh",
+      "video": false,
+      "vote_average": 5.72,
+      "vote_count": 25
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qKWDHofjMHPSEOTLaixkC9ZmjTT.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1317288,
+      "original_language": "en",
+      "original_title": "Marty Supreme",
+      "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
+      "popularity": 75.0849,
+      "poster_path": "/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+      "release_date": "2025-12-19",
+      "title": "Marty Supreme",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 982
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1eFyO5JIDTZxrQuVZ3NfHl0M0xU.jpg",
+      "genre_ids": [
+        18,
+        10751
+      ],
+      "id": 8981,
+      "original_language": "en",
+      "original_title": "Dear Frankie",
+      "overview": "Nine-year-old Frankie and his single mum Lizzie have been on the move ever since Frankie can remember, most recently arriving in a seaside Scottish town. Wanting to protect her deaf son from the truth that they've run away from his father, Lizzie has invented a story that he is away at sea on the HMS Accra. Every few weeks, Lizzie writes Frankie a make-believe letter from his father, telling of his adventures in exotic lands. As Frankie tracks the ship's progress around the globe, he discovers that it is due to dock in his hometown. With the real HMS Accra arriving in only a fortnight, Lizzie must choose between telling Frankie the truth or finding the perfect stranger to play Frankie's father for just one day...",
+      "popularity": 74.0994,
+      "poster_path": "/5YRDvaBWBbhTKBYYc7BoOWdW01N.jpg",
+      "release_date": "2004-05-18",
+      "title": "Dear Frankie",
+      "video": false,
+      "vote_average": 7.046,
+      "vote_count": 216
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xcBlMEvzuaHoWANKYn5PGvcW4OC.jpg",
+      "genre_ids": [
+        27,
+        28,
+        53
+      ],
+      "id": 1110034,
+      "original_language": "no",
+      "original_title": "Kraken",
+      "overview": "Marine biologist Johanne is doing research on a fish farm in Vangsnes, a rural community located by the fjord, when she encounters several strange occurrences. Along with the brutal deaths of two local teenagers, all signs point to the deep fjord; can there be more to the depths than the eye can see? At the bottom of the deepest fjord rests a mythical monster as large as a mountain, with a myriad of arms ready to crush and devour anything they can grab.",
+      "popularity": 72.779,
+      "poster_path": "/jVsflOu9WpMqUJ3WwVX2mITi86S.jpg",
+      "release_date": "2026-02-06",
+      "title": "Kraken",
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/q2UhJtqp4ONeARofhpIHx4S0ElU.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1549519,
+      "original_language": "tl",
+      "original_title": "Sex Trip",
+      "overview": "On a final trip after college graduation, five friends go on a hiking trip and discover a mystical cave that unleashes forbidden desires within them, igniting a night of uninhibited passion, partner-swapping, and raw sexual exploration leaving them forever changed.",
+      "popularity": 70.4827,
+      "poster_path": "/sr4sLilBbPx4TfPnX2zzUxlySgu.jpg",
+      "release_date": "2026-02-20",
+      "title": "Sex Trip",
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6D6M5z4reppUxo2cnBEKI02Csp1.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53,
+        37
+      ],
+      "id": 1601243,
+      "original_language": "en",
+      "original_title": "Oscar Shaw",
+      "overview": "After retiring from the police force, a relentless detective haunted by the tragic loss of his closest friend sets out on a perilous quest for vengeance, seeking redemption and fighting to restore justice to the streets he once swore to protect.",
+      "popularity": 67.8136,
+      "poster_path": "/tsE3nySukwrfUjouz8vzvKTcXNC.jpg",
+      "release_date": "2026-01-09",
+      "title": "Oscar Shaw",
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 22
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/73BClq9FOcrWrutnpiqhCNEWEwJ.jpg",
+      "genre_ids": [
+        18,
+        10749,
+        36
+      ],
+      "id": 858024,
+      "original_language": "en",
+      "original_title": "Hamnet",
+      "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
+      "popularity": 67.8134,
+      "poster_path": "/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
+      "release_date": "2025-11-26",
+      "title": "Hamnet",
+      "video": false,
+      "vote_average": 7.725,
+      "vote_count": 743
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oJRlYxfG10h4sxk2A7fpeOZnaFi.jpg",
+      "genre_ids": [
+        27,
+        878
+      ],
+      "id": 9276,
+      "original_language": "en",
+      "original_title": "The Faculty",
+      "overview": "When some very creepy things start happening around school, the kids at Herrington High make the chilling discovery that confirms their worst suspicions: their teachers really are from another planet!",
+      "popularity": 67.654,
+      "poster_path": "/5XetJwmAiDC0EtH23NIXaqFn3Wl.jpg",
+      "release_date": "1998-12-25",
+      "title": "The Faculty",
+      "video": false,
+      "vote_average": 6.564,
+      "vote_count": 2183
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ohUhHOqW8cM59Ay5UjqplLzJbH3.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1317672,
+      "original_language": "en",
+      "original_title": "Love Me Love Me",
+      "overview": "After her brother's death, June moves to Milan for a fresh start, finding comfort in Will, the perfect honor student at her new international school. But when his troubled best friend James—hiding a dangerous life in clandestine MMA fights—sparks a rivalry that quickly turns into irresistible attraction, June must choose between safety and a love that upends everything she thought she wanted.",
+      "popularity": 65.3115,
+      "poster_path": "/xmoO861IKm1ycJ52mLGc3nwINKV.jpg",
+      "release_date": "2026-02-12",
+      "title": "Love Me Love Me",
+      "video": false,
+      "vote_average": 5.621,
+      "vote_count": 140
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fIuuYkIjF9Q7W26YbIeKX5OWwiL.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1600028,
+      "original_language": "es",
+      "original_title": "La celda de los milagros",
+      "overview": "After being falsely accused of a terrible crime, Hector, a man with a neurological disability, goes to a secret prison. His goodness conquers the prisoners, who plan to prove their innocence.",
+      "popularity": 65.0896,
+      "poster_path": "/heC13pt4SV7y3HF5lWNzf0u729j.jpg",
+      "release_date": "2025-12-25",
+      "title": "A Father's Miracle",
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 50
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yWZc7ZglTAecVLKHS0oROuetKce.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 1171145,
+      "original_language": "en",
+      "original_title": "Crime 101",
+      "overview": "When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of this being his final job, his path collides with a disillusioned insurance broker who is facing her own crossroads. Determined to crack the case, a relentless detective closes in on the operation, raising the stakes even higher.",
+      "popularity": 65.015,
+      "poster_path": "/2HoR2x23bqKpopluoBD1FH3tBi7.jpg",
+      "release_date": "2026-02-11",
+      "title": "Crime 101",
+      "video": false,
+      "vote_average": 6.941,
+      "vote_count": 101
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xBORKTaQJTq3l7EdnTTnrZnYzYa.jpg",
+      "genre_ids": [
+        28,
+        80
+      ],
+      "id": 1327688,
+      "original_language": "en",
+      "original_title": "One Mile: Chapter One",
+      "overview": "After being released from prison, a father tries to reconnect with his daughter by taking her on a tour of college, but they soon find themselves fighting for more than their lost relationship when a murderous cult pursues them.",
+      "popularity": 64.8193,
+      "poster_path": "/1GZaoYe0mQy211DgDSAxAXr30ul.jpg",
+      "release_date": "2026-02-20",
+      "title": "One Mile: Chapter One",
+      "video": false,
+      "vote_average": 7.414,
+      "vote_count": 29
+    }
+  ],
+  "total_pages": 55398,
+  "total_results": 1107956
+}
