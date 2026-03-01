@@ -1,0 +1,396 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80,
+        9648
+      ],
+      "id": 1168190,
+      "original_language": "en",
+      "original_title": "The Wrecking Crew",
+      "overview": "Estranged half-brothers Jonny and James reunite after their father's mysterious death. As they search for the truth, buried secrets reveal a conspiracy threatening to tear their family apart.",
+      "popularity": 95.6564,
+      "poster_path": "/gbVwHl4YPSq6BcC92TQpe7qUTh6.jpg",
+      "release_date": "2026-01-28",
+      "title": "The Wrecking Crew",
+      "video": false,
+      "vote_average": 6.931,
+      "vote_count": 700
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 103.9262,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.186,
+      "vote_count": 903
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gaKFXcB5J1gz0QqYj8bWIfrPc04.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 93.9624,
+      "poster_path": "/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.712,
+      "vote_count": 2189
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cugd16e3WbCG3Zogb8N7lwUnVXH.jpg",
+      "genre_ids": [
+        14,
+        28,
+        12
+      ],
+      "id": 1253000,
+      "original_language": "en",
+      "original_title": "Deathstalker",
+      "overview": "A powerful swordsman known as Deathstalker recovers a cursed amulet from a corpse-strewn battlefield. Marked by dark magic and hunted by monstrous assassins, he must face the rising evil and break the curse.",
+      "popularity": 84.0257,
+      "poster_path": "/nEI3DnzQC1afAjJOAizx6UX27pL.jpg",
+      "release_date": "2025-10-10",
+      "title": "Deathstalker",
+      "video": false,
+      "vote_average": 6.198,
+      "vote_count": 53
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w1Z1I9PqTK5UjG6RVAFXLCjp1Sw.jpg",
+      "genre_ids": [
+        878,
+        28,
+        53
+      ],
+      "id": 434853,
+      "original_language": "en",
+      "original_title": "Space/Time",
+      "overview": "After a fatal test shuts down their project, a disgraced team of scientists enters the criminal underworld to rebuild a forbidden space-bending engine that could rescue humanity or annihilate it entirely.",
+      "popularity": 87.2654,
+      "poster_path": "/uje1ecKMnNpZp0at5TxlvVgVXqI.jpg",
+      "release_date": "2025-05-01",
+      "title": "Space/Time",
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 33
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vSQSYd2zZTqc0zmHImwWEGGluMI.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1316092,
+      "original_language": "en",
+      "original_title": "\"Wuthering Heights\"",
+      "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
+      "popularity": 96.2299,
+      "poster_path": "/ywRO5dyE8RyyXJd6cvd69jLZeic.jpg",
+      "release_date": "2026-02-11",
+      "title": "\"Wuthering Heights\"",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 406
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jFKbhV0uFZuA3K73UJIq1dzisCi.jpg",
+      "genre_ids": [
+        16,
+        878,
+        12,
+        14,
+        10751
+      ],
+      "id": 804370,
+      "original_language": "fr",
+      "original_title": "Arco",
+      "overview": "10-year-old Arco lives in a far future. During his first flight in his rainbow suit, he loses control and falls into the past. Iris, a girl his age from 2075, comes to his rescue and tries by all means to help send him back to his era.",
+      "popularity": 104.5622,
+      "poster_path": "/ipE3XiHqbSQm3HS0tJ09CDaJ2Fs.jpg",
+      "release_date": "2025-10-22",
+      "title": "Arco",
+      "video": false,
+      "vote_average": 7.753,
+      "vote_count": 87
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/coyHrYHD2xHhDoYD6o4uwoJ2o7b.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        12
+      ],
+      "id": 1084244,
+      "original_language": "en",
+      "original_title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "popularity": 75.2243,
+      "poster_path": "/gaiMtK2ll6BLdK1qKFuZGDwwEuD.jpg",
+      "release_date": "2026-06-17",
+      "title": "Toy Story 5",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lNYympQM5O6QSInusbyG9eJDIe4.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 86.1718,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.673,
+      "vote_count": 741
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fAF3VGFBpItWNROmiGob60n0y5.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1242937,
+      "original_language": "en",
+      "original_title": "The Dreadful",
+      "overview": "In medieval England, Anne and her domineering mother-in-law Morwen struggle to survive on the outskirts of society. But when a man from Anne's past returns from war, a curse begins to take shape through a mysterious knight and threatens to destroy them all.",
+      "popularity": 71.4681,
+      "poster_path": "/hGH8Ji7pG2ytHxo7ABqHM3TpzFA.jpg",
+      "release_date": "2026-02-20",
+      "title": "The Dreadful",
+      "video": false,
+      "vote_average": 6.457,
+      "vote_count": 47
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1qwhYqg7YEZajh3Q4biqbuQoDq8.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        28
+      ],
+      "id": 1297842,
+      "original_language": "en",
+      "original_title": "GOAT",
+      "overview": "A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.",
+      "popularity": 73.7654,
+      "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+      "release_date": "2026-02-11",
+      "title": "GOAT",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 77
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/q2UhJtqp4ONeARofhpIHx4S0ElU.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1549519,
+      "original_language": "tl",
+      "original_title": "Sex Trip",
+      "overview": "On a final trip after college graduation, five friends go on a hiking trip and discover a mystical cave that unleashes forbidden desires within them, igniting a night of uninhibited passion, partner-swapping, and raw sexual exploration leaving them forever changed.",
+      "popularity": 71.3903,
+      "poster_path": "/sr4sLilBbPx4TfPnX2zzUxlySgu.jpg",
+      "release_date": "2026-02-20",
+      "title": "Sex Trip",
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4IEjHlV6ciUPopHnEs5AfBNJ6XS.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1634858,
+      "original_language": "es",
+      "original_title": "Cuerno Azulado",
+      "overview": "",
+      "popularity": 61.1476,
+      "poster_path": "/q0OveDlsh5BNq6ifZqNWKtLKiwb.jpg",
+      "release_date": "2025-09-10",
+      "title": "Cuerno Azulado",
+      "video": false,
+      "vote_average": 6.923,
+      "vote_count": 13
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lmns2jlRmATs8OGWKcCkgrbHLM4.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1634301,
+      "original_language": "te",
+      "original_title": "Vanaveera",
+      "overview": "A descendant of the Vanara clan is pushed into conflict when a modern-day Ravana seizes his only bike for an election rally. What starts as a petty injustice soon erupts into a fierce fight for self-respect and dignity.",
+      "popularity": 123.7811,
+      "poster_path": "/oBYExKI8E3bTzQjPkofhpV2EJon.jpg",
+      "release_date": "2026-02-13",
+      "title": "Vanaveera",
+      "video": false,
+      "vote_average": 2.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oJRlYxfG10h4sxk2A7fpeOZnaFi.jpg",
+      "genre_ids": [
+        27,
+        878
+      ],
+      "id": 9276,
+      "original_language": "en",
+      "original_title": "The Faculty",
+      "overview": "When some very creepy things start happening around school, the kids at Herrington High make the chilling discovery that confirms their worst suspicions: their teachers really are from another planet!",
+      "popularity": 70.4627,
+      "poster_path": "/5XetJwmAiDC0EtH23NIXaqFn3Wl.jpg",
+      "release_date": "1998-12-25",
+      "title": "The Faculty",
+      "video": false,
+      "vote_average": 6.563,
+      "vote_count": 2187
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jwRbJMGO3OZCwFLoJXn8tEbatJ2.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1375831,
+      "original_language": "en",
+      "original_title": "Diabolic",
+      "overview": "A woman's hope for a miracle cure turns into a nightmare when she confronts the vengeful spirit of a cursed witch, determined to claim her as a vessel for her evil power.",
+      "popularity": 67.7127,
+      "poster_path": "/3qikoc12LQH6upkLZZlJY8wEZvN.jpg",
+      "release_date": "2025-11-20",
+      "title": "Diabolic",
+      "video": false,
+      "vote_average": 7.289,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qKWDHofjMHPSEOTLaixkC9ZmjTT.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1317288,
+      "original_language": "en",
+      "original_title": "Marty Supreme",
+      "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
+      "popularity": 63.0951,
+      "poster_path": "/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+      "release_date": "2025-12-19",
+      "title": "Marty Supreme",
+      "video": false,
+      "vote_average": 7.538,
+      "vote_count": 1042
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/thgemkoLauZxcqe6KX8wxqEc70z.jpg",
+      "genre_ids": [
+        53,
+        18
+      ],
+      "id": 1428862,
+      "original_language": "es",
+      "original_title": "Cortafuego",
+      "overview": "Little Lide disappears in the forest while her family packs up their home. As a fire breaks out, her mother must race to reach her before the flames do.",
+      "popularity": 45.6517,
+      "poster_path": "/knh3c8LzL9fMhjc5SZPAOotXyiy.jpg",
+      "release_date": "2026-02-19",
+      "title": "Firebreak",
+      "video": false,
+      "vote_average": 6.225,
+      "vote_count": 51
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/73BClq9FOcrWrutnpiqhCNEWEwJ.jpg",
+      "genre_ids": [
+        18,
+        10749,
+        36
+      ],
+      "id": 858024,
+      "original_language": "en",
+      "original_title": "Hamnet",
+      "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
+      "popularity": 62.6708,
+      "poster_path": "/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
+      "release_date": "2025-11-26",
+      "title": "Hamnet",
+      "video": false,
+      "vote_average": 7.742,
+      "vote_count": 784
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1eFyO5JIDTZxrQuVZ3NfHl0M0xU.jpg",
+      "genre_ids": [
+        18,
+        10751
+      ],
+      "id": 8981,
+      "original_language": "en",
+      "original_title": "Dear Frankie",
+      "overview": "Nine-year-old Frankie and his single mum Lizzie have been on the move ever since Frankie can remember, most recently arriving in a seaside Scottish town. Wanting to protect her deaf son from the truth that they've run away from his father, Lizzie has invented a story that he is away at sea on the HMS Accra. Every few weeks, Lizzie writes Frankie a make-believe letter from his father, telling of his adventures in exotic lands. As Frankie tracks the ship's progress around the globe, he discovers that it is due to dock in his hometown. With the real HMS Accra arriving in only a fortnight, Lizzie must choose between telling Frankie the truth or finding the perfect stranger to play Frankie's father for just one day...",
+      "popularity": 50.6258,
+      "poster_path": "/5YRDvaBWBbhTKBYYc7BoOWdW01N.jpg",
+      "release_date": "2004-05-18",
+      "title": "Dear Frankie",
+      "video": false,
+      "vote_average": 7.046,
+      "vote_count": 216
+    }
+  ],
+  "total_pages": 55433,
+  "total_results": 1108652
+}
