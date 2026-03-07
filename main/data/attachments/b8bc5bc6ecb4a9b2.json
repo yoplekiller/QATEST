@@ -1,0 +1,403 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/nHxWyy18SvAZ8jJeemtS8k1UNjM.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1290821,
+      "original_language": "en",
+      "original_title": "Shelter",
+      "overview": "A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.",
+      "popularity": 388.3942,
+      "poster_path": "/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
+      "release_date": "2026-01-28",
+      "title": "Shelter",
+      "video": false,
+      "vote_average": 6.791,
+      "vote_count": 220
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/huW5dZywslw6muqmpDtMl6Ywl3m.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 10156,
+      "original_language": "en",
+      "original_title": "History of the World: Part I",
+      "overview": "An uproarious version of history that proves nothing is sacred – not even the Roman Empire, the French Revolution and the Spanish Inquisition.",
+      "popularity": 275.8545,
+      "poster_path": "/6iAl78qZHT65erPXr2YW6Y54wlY.jpg",
+      "release_date": "1981-06-12",
+      "title": "History of the World: Part I",
+      "video": false,
+      "vote_average": 6.75,
+      "vote_count": 892
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hYgUkH7TusddHRtelj53I6gFOWR.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 799882,
+      "original_language": "en",
+      "original_title": "The Bluff",
+      "overview": "When her tranquil life on a remote island is shattered by the return of her vengeful former captain, a skilled ex-pirate must confront her bloody past and unleash her deadly talents to save her family from a ruthless siege.",
+      "popularity": 245.9062,
+      "poster_path": "/sojEzvfxR2DBcDSJyAisX8TWjov.jpg",
+      "release_date": "2026-02-17",
+      "title": "The Bluff",
+      "video": false,
+      "vote_average": 6.109,
+      "vote_count": 179
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bAFnjhweXxHUWjmFzMTuX12Ud3b.jpg",
+      "genre_ids": [
+        53
+      ],
+      "id": 1199193,
+      "original_language": "en",
+      "original_title": "Pose",
+      "overview": "Isolated in a grand country manor, a reclusive artist spends a passionate and paranoid weekend with his ex-lover, an obsessive fan, and a potential muse. Hoping to spark a new wave of artistic brilliance over the course of a few tumultuous days, filled with chaos and revelation not all of them will make it out alive.",
+      "popularity": 239.8635,
+      "poster_path": "/qhyyyWrHUbl6QG4udAJj17CBa5.jpg",
+      "release_date": "2026-02-25",
+      "title": "Pose",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hz7TdCrpLLt2Dz7S3PS2HG9rpAO.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        80
+      ],
+      "id": 1159559,
+      "original_language": "en",
+      "original_title": "Scream 7",
+      "overview": "When a new Ghostface killer emerges in the quiet town where Sidney Prescott has built a new life, her darkest fears are realized as her daughter becomes the next target. Determined to protect her family, Sidney must face the horrors of her past to put an end to the bloodshed once and for all.",
+      "popularity": 179.2451,
+      "poster_path": "/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
+      "release_date": "2026-02-25",
+      "title": "Scream 7",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 234
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nTbO6UF944b0VZrgypMK5rFYRSW.jpg",
+      "genre_ids": [
+        9648,
+        18,
+        27
+      ],
+      "id": 680493,
+      "original_language": "en",
+      "original_title": "Return to Silent Hill",
+      "overview": "When James receives a mysterious letter from his lost love Mary, he is drawn to Silent Hill—a once-familiar town now consumed by darkness. As he searches for her, James faces monstrous creatures and unravels a terrifying truth that will push him to the edge of his sanity.",
+      "popularity": 162.2613,
+      "poster_path": "/fqAGFN2K2kDL0EHxvJaXzaMUkkt.jpg",
+      "release_date": "2026-01-21",
+      "title": "Return to Silent Hill",
+      "video": false,
+      "vote_average": 5.036,
+      "vote_count": 239
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/O50sdY6JEwpU7cQRaFtTO9eSAk.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1499984,
+      "original_language": "en",
+      "original_title": "Gladiator Underground",
+      "overview": "Two brothers compete in the world's deadliest underground fighting tournament, where they must decide whether to play by the rules or to cast their honor aside and team up to bring down the dark syndicate running the tournament.",
+      "popularity": 154.103,
+      "poster_path": "/qLN16AeIjS5P5Kk5B6pBi1Mh1mi.jpg",
+      "release_date": "2025-08-22",
+      "title": "Gladiator Underground",
+      "video": false,
+      "vote_average": 6.471,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vOV4Qy3g791OTzEndiSGoJwuI2M.jpg",
+      "genre_ids": [
+        53,
+        28,
+        12,
+        18,
+        14
+      ],
+      "id": 1401778,
+      "original_language": "en",
+      "original_title": "Turbulence",
+      "overview": "Young married couple Zach and Emmy decide to take a hot air balloon trip across the Italian Dolomites to rekindle their relationship. When they and pilot Harry are joined by a third passenger, Julia, events unfold in ways they could never imagine five thousand meters in the air.",
+      "popularity": 152.807,
+      "poster_path": "/jRuiKL4S9UpLma2ZlM47xIu2gbe.jpg",
+      "release_date": "2025-11-26",
+      "title": "Turbulence",
+      "video": false,
+      "vote_average": 5.709,
+      "vote_count": 55
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lmns2jlRmATs8OGWKcCkgrbHLM4.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1634301,
+      "original_language": "te",
+      "original_title": "Vanaveera",
+      "overview": "A descendant of the Vanara clan is pushed into conflict when a modern-day Ravana seizes his only bike for an election rally. What starts as a petty injustice soon erupts into a fierce fight for self-respect and dignity.",
+      "popularity": 145.3455,
+      "poster_path": "/oBYExKI8E3bTzQjPkofhpV2EJon.jpg",
+      "release_date": "2026-02-13",
+      "title": "Vanaveera",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ImIRPOvlxKC1jsKld5ZEpxmvmV.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1461181,
+      "original_language": "en",
+      "original_title": "Hierarchy",
+      "overview": "In an undisclosed area of Texas after two adoptive brothers become entangled in criminal activity, forced to evade law enforcement and the greedy Russian mafia.",
+      "popularity": 137.9096,
+      "poster_path": "/3KVq24NkOn98nrSEAFphnRWVWNd.jpg",
+      "release_date": "2025-08-15",
+      "title": "Hierarchy",
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 13
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7HKpc11uQfxnw0Y8tRUYn1fsKqE.jpg",
+      "genre_ids": [
+        878,
+        28,
+        53
+      ],
+      "id": 1236153,
+      "original_language": "en",
+      "original_title": "Mercy",
+      "overview": "In the near future, a detective stands on trial accused of murdering his wife. He has ninety minutes to prove his innocence to the advanced AI Judge he once championed, before it determines his fate.",
+      "popularity": 133.6746,
+      "poster_path": "/pyok1kZJCfyuFapYXzHcy7BLlQa.jpg",
+      "release_date": "2026-01-20",
+      "title": "Mercy",
+      "video": false,
+      "vote_average": 7.092,
+      "vote_count": 645
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1gLFGrxHqQebqLWpISmoFR6XWtJ.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1088434,
+      "original_language": "en",
+      "original_title": "Hellfire",
+      "overview": "A drifter with a mysterious past arrives in a small town and finds the residents in the grip of a ruthless crime boss and realizes he has to help them.",
+      "popularity": 129.7752,
+      "poster_path": "/tQti9QTf13MfzNpXguijgNh7ojE.jpg",
+      "release_date": "2026-02-05",
+      "title": "Hellfire",
+      "video": false,
+      "vote_average": 6.947,
+      "vote_count": 47
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5BeOSbwt6BR7q2Fax70lF4AIshD.jpg",
+      "genre_ids": [
+        16,
+        35,
+        12,
+        10751,
+        9648
+      ],
+      "id": 1084242,
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 125.1053,
+      "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "release_date": "2025-11-26",
+      "title": "Zootopia 2",
+      "video": false,
+      "vote_average": 7.616,
+      "vote_count": 1937
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tn95fumbkVAgXjOuw9CQOg0aYQz.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 123.21,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 467
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "original_language": "ru",
+      "original_title": "Твое сердце будет разбито",
+      "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
+      "popularity": 122.4756,
+      "poster_path": "/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
+      "release_date": "2026-03-26",
+      "title": "Your Heart Will Be Broken",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/OO75q1cTWWXDmy52bB79yzpxBt.jpg",
+      "genre_ids": [
+        53,
+        878,
+        80,
+        28
+      ],
+      "id": 1266798,
+      "original_language": "fr",
+      "original_title": "Chien 51",
+      "overview": "In the near future, Paris is divided into three zones that separate social classes, and no one can escape ALMA, a predictive AI that has revolutionized law enforcement. When ALMA’s creator is assassinated, Salia, a top agent, and Zem, a jaded cop, are forced to work together to solve a murder that may expose the dark secrets of the system they serve.",
+      "popularity": 117.5584,
+      "poster_path": "/olMvhbCRuhTbf6EMKxKGHi2on3L.jpg",
+      "release_date": "2025-10-15",
+      "title": "Dog 51",
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 214
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wmTBmCLPZSX5eAVAiBf8td8Hb9g.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        14,
+        12
+      ],
+      "id": 1497970,
+      "original_language": "zh",
+      "original_title": "猫和老鼠：星盘奇缘",
+      "overview": "The iconic cat-and-mouse duo accidentally travel through time in a museum. Along their journey, they meet a group of intriguing new companions and become involved in a final showdown with mysterious forces.",
+      "popularity": 108.8545,
+      "poster_path": "/5qttWFjsO62k88civZaDMHiBTvy.jpg",
+      "release_date": "2025-08-02",
+      "title": "Tom and Jerry: Forbidden Compass",
+      "video": false,
+      "vote_average": 5.567,
+      "vote_count": 15
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u9jE0R1nvkmdWu3bt7Op8joPywa.jpg",
+      "genre_ids": [
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "Having found the safety of the Greenland bunker after the comet Clarke decimated the Earth, the Garrity family must now risk everything to embark on a perilous journey across the wasteland of Europe to find a new home.",
+      "popularity": 106.1658,
+      "poster_path": "/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg",
+      "release_date": "2026-01-07",
+      "title": "Greenland 2: Migration",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 552
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8h3Ev1xf3WBrzHD4fNOGs790GWZ.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 891644,
+      "original_language": "en",
+      "original_title": "Zero",
+      "overview": "Two Americans wake up in Dakar, Senegal, with bombs strapped to their chests ticking down from ten hours. Guided by a threatening voice on the phone, these men complete a series of violent tasks that spark widespread protest against Western influence in the city.",
+      "popularity": 104.4172,
+      "poster_path": "/5bo30pUJGUpvNP8XS75T3Al8V1R.jpg",
+      "release_date": "2025-04-11",
+      "title": "Zero",
+      "video": false,
+      "vote_average": 5.865,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/efcAOJ9Thm0NHzMk16Bpo4m550G.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1319280,
+      "original_language": "en",
+      "original_title": "Run Baby Run",
+      "overview": "A young woman has to run for her life.",
+      "popularity": 102.7172,
+      "poster_path": "/p9e7gGdYfdRauIbh9dBu6PgzVGP.jpg",
+      "release_date": "2024-08-30",
+      "title": "Run Baby Run",
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 7
+    }
+  ],
+  "total_pages": 55520,
+  "total_results": 1110399
+}
