@@ -1,0 +1,394 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 101.1316,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.162,
+      "vote_count": 915
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zTnAnYIn0Iv3cn0ZHlzLhou3ybm.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 100.9489,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.259,
+      "vote_count": 1442
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/O50sdY6JEwpU7cQRaFtTO9eSAk.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1499984,
+      "original_language": "en",
+      "original_title": "Gladiator Underground",
+      "overview": "Two brothers compete in the world's deadliest underground fighting tournament, where they must decide whether to play by the rules or to cast their honor aside and team up to bring down the dark syndicate running the tournament.",
+      "popularity": 99.6886,
+      "poster_path": "/qLN16AeIjS5P5Kk5B6pBi1Mh1mi.jpg",
+      "release_date": "2025-08-22",
+      "title": "Gladiator Underground",
+      "video": false,
+      "vote_average": 6.86,
+      "vote_count": 25
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gaKFXcB5J1gz0QqYj8bWIfrPc04.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 88.9053,
+      "poster_path": "/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.716,
+      "vote_count": 2302
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hoqE4Saa4fQyWhUxws2Lw4qv2oz.jpg",
+      "genre_ids": [],
+      "id": 937101,
+      "original_language": "zh",
+      "original_title": "動物感傷の清晨",
+      "overview": "A provocative erotic drama about a Japanese food delivery man, a Taiwanese prostitute and a Filipino cleaner who are swept up by their insatiable appetites for sex.",
+      "popularity": 80.3598,
+      "poster_path": "/8lkpsMdOODEoLAxbhnzjEhoZWwt.jpg",
+      "release_date": "2023-10-13",
+      "title": "In the Morning of La Petite Mort",
+      "video": false,
+      "vote_average": 6.75,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hHDNOlATHhre4eZ7aYz5cdyJLik.jpg",
+      "genre_ids": [
+        27,
+        53,
+        878
+      ],
+      "id": 1272837,
+      "original_language": "en",
+      "original_title": "28 Years Later: The Bone Temple",
+      "overview": "Dr. Kelson finds himself in a shocking new relationship - with consequences that could change the world as they know it - and Spike's encounter with Jimmy Crystal becomes a nightmare he can't escape.",
+      "popularity": 80.3193,
+      "poster_path": "/kK1BGkG3KAvWB0WMV1DfOx9yTMZ.jpg",
+      "release_date": "2026-01-14",
+      "title": "28 Years Later: The Bone Temple",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 777
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vOV4Qy3g791OTzEndiSGoJwuI2M.jpg",
+      "genre_ids": [
+        53,
+        28,
+        12,
+        18,
+        14
+      ],
+      "id": 1401778,
+      "original_language": "en",
+      "original_title": "Turbulence",
+      "overview": "Young married couple Zach and Emmy decide to take a hot air balloon trip across the Italian Dolomites to rekindle their relationship. When they and pilot Harry are joined by a third passenger, Julia, events unfold in ways they could never imagine five thousand meters in the air.",
+      "popularity": 79.5942,
+      "poster_path": "/jRuiKL4S9UpLma2ZlM47xIu2gbe.jpg",
+      "release_date": "2025-11-26",
+      "title": "Turbulence",
+      "video": false,
+      "vote_average": 5.759,
+      "vote_count": 58
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/huW5dZywslw6muqmpDtMl6Ywl3m.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 10156,
+      "original_language": "en",
+      "original_title": "History of the World: Part I",
+      "overview": "An uproarious version of history that proves nothing is sacred – not even the Roman Empire, the French Revolution and the Spanish Inquisition.",
+      "popularity": 77.7032,
+      "poster_path": "/6iAl78qZHT65erPXr2YW6Y54wlY.jpg",
+      "release_date": "1981-06-12",
+      "title": "History of the World: Part I",
+      "video": false,
+      "vote_average": 6.759,
+      "vote_count": 897
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/q2UhJtqp4ONeARofhpIHx4S0ElU.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1549519,
+      "original_language": "tl",
+      "original_title": "Sex Trip",
+      "overview": "On a final trip after college graduation, five friends go on a hiking trip and discover a mystical cave that unleashes forbidden desires within them, igniting a night of uninhibited passion, partner-swapping, and raw sexual exploration leaving them forever changed.",
+      "popularity": 73.8602,
+      "poster_path": "/sr4sLilBbPx4TfPnX2zzUxlySgu.jpg",
+      "release_date": "2026-02-20",
+      "title": "Sex Trip",
+      "video": false,
+      "vote_average": 6.833,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1Xdsq7U7bvJJd2X7Jg4qNaKVkYO.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80,
+        18
+      ],
+      "id": 1426964,
+      "original_language": "pt",
+      "original_title": "Salve Geral: Irmandade",
+      "overview": "As São Paulo erupts in an unprecedented wave of violence, a lawyer with underworld ties must strike a deal with the police to rescue her kidnapped niece.",
+      "popularity": 72.6537,
+      "poster_path": "/3Eaqedg8MAlnP51GYY8MCSIdTnV.jpg",
+      "release_date": "2026-02-10",
+      "title": "State of Fear",
+      "video": false,
+      "vote_average": 5.4,
+      "vote_count": 55
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/daVBzTiyRs4a7vf4SnBoeqJtwRy.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        14,
+        12
+      ],
+      "id": 1497970,
+      "original_language": "zh",
+      "original_title": "猫和老鼠：星盘奇缘",
+      "overview": "The iconic cat-and-mouse duo accidentally travel through time in a museum. Along their journey, they meet a group of intriguing new companions and become involved in a final showdown with mysterious forces.",
+      "popularity": 67.5505,
+      "poster_path": "/5qttWFjsO62k88civZaDMHiBTvy.jpg",
+      "release_date": "2025-08-02",
+      "title": "Tom and Jerry: Forbidden Compass",
+      "video": false,
+      "vote_average": 5.763,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3F2EXWF1thX0BdrVaKvnm6mAhqh.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 1306368,
+      "original_language": "en",
+      "original_title": "The Rip",
+      "overview": "Trust frays when a team of Miami cops discovers millions in cash inside a run-down stash house, calling everyone — and everything — into question.",
+      "popularity": 66.9258,
+      "poster_path": "/4wsYWH73Hb1B6noGIFaRQSAkuXj.jpg",
+      "release_date": "2026-01-13",
+      "title": "The Rip",
+      "video": false,
+      "vote_average": 7.066,
+      "vote_count": 1339
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eJ0HooOOD1uzI39CfOQNWIiWKlJ.jpg",
+      "genre_ids": [
+        28,
+        18,
+        53
+      ],
+      "id": 1387382,
+      "original_language": "en",
+      "original_title": "Hunting Season",
+      "overview": "When a reclusive survivalist and his daughter rescue a mysterious, wounded woman from a river, they become entangled in a deadly web of violence and revenge, forcing them to confront a brutal criminal to survive.",
+      "popularity": 66.7675,
+      "poster_path": "/cbryTyaWdqrKpQCw6K7zm2jrB5v.jpg",
+      "release_date": "2025-12-05",
+      "title": "Hunting Season",
+      "video": false,
+      "vote_average": 6.965,
+      "vote_count": 144
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oN4TQ1TxchynXlFiXFBL3NHLT54.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        18
+      ],
+      "id": 1167307,
+      "original_language": "en",
+      "original_title": "David",
+      "overview": "From the songs of his mother’s heart to the whispers of a faithful God, David’s story begins in quiet devotion. When the giant Goliath rises to terrorize a nation, a young shepherd armed with only a sling, a few stones, and unshakable faith steps forward. Pursued by power and driven by purpose, his journey tests the limits of loyalty, love, and courage—culminating in a battle not just for a crown, but for the soul of a kingdom.",
+      "popularity": 66.1365,
+      "poster_path": "/7lFG1WrCwAxBfyGK8ahlBVzXno7.jpg",
+      "release_date": "2025-12-14",
+      "title": "David",
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 99
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eUERZRVjCTNdgnESlQxyaOJ2d4K.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 1584215,
+      "original_language": "en",
+      "original_title": "The Internship",
+      "overview": "A CIA-trained assassin recruits other graduates from her secret childhood program, The Internship, to violently destroy the organization. The CIA fights back with deadly force.",
+      "popularity": 65.7827,
+      "poster_path": "/fYqSOkix4rbDiZW0ACNnvZCpT6X.jpg",
+      "release_date": "2026-01-13",
+      "title": "The Internship",
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 52
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wt0gb7ISUf8IyaJ4tnZVltvWoo7.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1353333,
+      "original_language": "en",
+      "original_title": "Mouseboat Massacre",
+      "overview": "The story follows a young woman battling a drug addiction who suddenly begins to see a mutated mouse human hybrid who infests her life. Those around her begin to drop like flies.",
+      "popularity": 63.8354,
+      "poster_path": "/ctKqevqOwbeVg5GLQLu5VvnCjan.jpg",
+      "release_date": "2025-05-09",
+      "title": "Mouseboat Massacre",
+      "video": false,
+      "vote_average": 5.446,
+      "vote_count": 28
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vSQSYd2zZTqc0zmHImwWEGGluMI.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1316092,
+      "original_language": "en",
+      "original_title": "\"Wuthering Heights\"",
+      "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
+      "popularity": 63.5751,
+      "poster_path": "/3YBce6dTh1D5oCMITXk2S5QhPt.jpg",
+      "release_date": "2026-02-11",
+      "title": "\"Wuthering Heights\"",
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 477
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dHSz0tSFuO2CsXJ1CApSauP9Ncl.jpg",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "id": 425274,
+      "original_language": "en",
+      "original_title": "Now You See Me: Now You Don't",
+      "overview": "The original Four Horsemen reunite with a new generation of illusionists to take on powerful diamond heiress Veronika Vanderberg, who leads a criminal empire built on money laundering and trafficking. The new and old magicians must overcome their differences to work together on their most ambitious heist yet.",
+      "popularity": 61.0022,
+      "poster_path": "/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg",
+      "release_date": "2025-11-12",
+      "title": "Now You See Me: Now You Don't",
+      "video": false,
+      "vote_average": 6.531,
+      "vote_count": 1188
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gtKglOSEq3d4MgQE4VsrT1sRkd0.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1539104,
+      "original_language": "ja",
+      "original_title": "劇場版 呪術廻戦「渋谷事変 特別編集版」×「死滅回游 先行上映」",
+      "overview": "A veil abruptly descends over the busy Shibuya area amid the bustling Halloween crowds, trapping countless civilians inside. Satoru Gojo, the strongest jujutsu sorcerer, steps into the chaos. But lying in wait are curse users and spirits scheming to seal him away. Yuji Itadori, accompanied by his classmates and other top-tier jujutsu sorcerers, enters the fray in an unprecedented clash of curses — the Shibuya Incident. In the aftermath, ten colonies across Japan are transformed into dens of curses in a plan orchestrated by Noritoshi Kamo. As the deadly Culling Game starts, Special Grade sorcerer Yuta Okkotsu is assigned to carry out Yuji's execution for his perceived crimes. A compilation movie of Shibuya Incident including the first two episodes of the Culling Games arc.",
+      "popularity": 60.7384,
+      "poster_path": "/v0s3dx6am0RzfsuK3KdEy8ZoCDs.jpg",
+      "release_date": "2025-11-07",
+      "title": "JUJUTSU KAISEN: Execution",
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 83
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wCwZ4ljSsWyZyTiyk1tGQtBHTDx.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1511417,
+      "original_language": "te",
+      "original_title": "Bāhubali: The Epic",
+      "overview": "When a mysterious child is found by a tribal couple near a roaring waterfall, they raise him as their own. As he grows, Sivudu is drawn to the world beyond the cliffs, where he discovers the ancient kingdom of Mahishmati, ruled by a cruel tyrant, haunted by rebellion, and bound to his past. What begins as a quest for love soon unravels a legacy of betrayal, sacrifice, and a forgotten prince.",
+      "popularity": 60.7256,
+      "poster_path": "/z9YIo2qscyaXYgRqIdRJtND3bw8.jpg",
+      "release_date": "2025-10-29",
+      "title": "Bāhubali: The Epic",
+      "video": false,
+      "vote_average": 5.953,
+      "vote_count": 32
+    }
+  ],
+  "total_pages": 55578,
+  "total_results": 1111552
+}
