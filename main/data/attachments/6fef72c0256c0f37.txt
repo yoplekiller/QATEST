@@ -1,0 +1,6 @@
+2026-03-13 20:13:48 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-03-13 20:13:52 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-03-13 20:13:59 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath__button_class_kpds_j1jks21_kpds_j1jks24__20260313_201359.png
+2026-03-13 20:13:59 - test_automation - ERROR - 클릭 실패: ('xpath', "//button[@class='kpds_j1jks21 kpds_j1jks24']")
+2026-03-13 20:14:04 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath__button_contains_text_장바구니_담기__20260313_201404.png
+2026-03-13 20:14:04 - test_automation - ERROR - 클릭 실패: ('xpath', "//button[contains(text(),'장바구니 담기')]")
