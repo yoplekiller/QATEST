@@ -7,7 +7,7 @@
 [![Selenium](https://img.shields.io/badge/selenium-4.27-green.svg)](https://www.selenium.dev/)
 [![Pytest](https://img.shields.io/badge/pytest-8.3-red.svg)](https://pytest.org/)
 
-> 마켓컬리 웹사이트 UI/API 테스트 자동화 프로젝트
+> 마켓컬리 웹사이트 UI/ TDMB API 테스트 자동화 프로젝트
 
 [Live Allure Report](https://yoplekiller.github.io/QATEST/)
 
