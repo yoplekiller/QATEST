@@ -1,0 +1,30 @@
+[32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): googlechromelabs.github.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 15747
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): googlechromelabs.github.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 15747
+[32mINFO    [0m WDM:logger.py:11 There is no [linux64] chromedriver "145.0.7632.117" for browser google-chrome "145.0.7632" in cache
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): googlechromelabs.github.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 15747
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): googlechromelabs.github.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://googlechromelabs.github.io:443 "GET /chrome-for-testing/known-good-versions-with-downloads.json HTTP/1.1" 200 133513
+[32mINFO    [0m WDM:logger.py:11 WebDriver version 145.0.7632.117 selected
+[32mINFO    [0m WDM:logger.py:11 Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/145.0.7632.117/linux64/chromedriver-linux64.zip
+[32mINFO    [0m WDM:logger.py:11 About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/145.0.7632.117/linux64/chromedriver-linux64.zip
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): storage.googleapis.com:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://storage.googleapis.com:443 "GET /chrome-for-testing-public/145.0.7632.117/linux64/chromedriver-linux64.zip HTTP/1.1" 200 9596700
+[32mINFO    [0m WDM:logger.py:11 Driver downloading response is 200
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): googlechromelabs.github.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 15747
+[32mINFO    [0m WDM:logger.py:11 Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/145.0.7632.117]
+[35mDEBUG   [0m selenium.webdriver.common.driver_finder:driver_finder.py:60 Skipping Selenium Manager; path to chrome driver specified in Service class: /home/runner/.wdm/drivers/chromedriver/linux64/145.0.7632.117/chromedriver-linux64/chromedriver
+[35mDEBUG   [0m selenium.webdriver.common.service:service.py:225 Started executable: `/home/runner/.wdm/drivers/chromedriver/linux64/145.0.7632.117/chromedriver-linux64/chromedriver` in a child process with pid: 3054 using 0 to output -3
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:42215/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--disable-blink-features=AutomationControlled', '--no-sandbox', '--disable-dev-shm-usage', '--disable-gpu', '--window-size=1920,1080', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36']}}}}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:241 Starting new HTTP connection (1): localhost:42215
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 http://localhost:42215 "POST /session HTTP/1.1" 500 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.","stacktrace":"#0 0x56465cd12b6a \u003Cunknown>\n#1 0x56465c725a32 \u003Cunknown>\n#2 0x56465c7635bb \u003Cunknown>\n#3 0x56465c75e289 \u003Cunknown>\n#4 0x56465c7afc2e \u003Cunknown>\n#5 0x56465c7af31c \u003Cunknown>\n#6 0x56465c76cc0f \u003Cunknown>\n#7 0x56465c76d9d1 \u003Cunknown>\n#8 0x56465ccd76b9 \u003Cunknown>\n#9 0x56465ccda5c1 \u003Cunknown>\n#10 0x56465ccc3e29 \u003Cunknown>\n#11 0x56465ccdb17e \u003Cunknown>\n#12 0x56465ccaa4b0 \u003Cunknown>\n#13 0x56465ccff578 \u003Cunknown>\n#14 0x56465ccff74b \u003Cunknown>\n#15 0x56465cd111a3 \u003Cunknown>\n#16 0x7fb7e269caa4 \u003Cunknown>\n#17 0x7fb7e2729c6c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
