@@ -151,6 +151,7 @@ class TestSearch:
         with allure.step("메인 페이지에서 검색"):
             kurly_main_page.open_main_page()
             kurly_main_page.search_goods("사과")
+            time.sleep(2)  # 검색 결과 로딩 대기
 
         
         with allure.step("첫 번째 검색 결과 클릭"):
