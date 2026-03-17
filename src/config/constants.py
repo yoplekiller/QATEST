@@ -53,3 +53,30 @@ PAGE_URLS = {
 #  - kurly_login_page.py:20 - KURLY_MAIN_URL 제거, constants 사용
 #  - kurly_main_page.py:24 - KURLY_MAIN_URL 제거, constants 사용
 #  - kurly_cart_page.py:22 - CART_URL 제거, constants 사용
+
+
+# ========================================
+# DB 관련 상수
+# ========================================
+MOVIES_TABLE = "movies"
+"""영화 데이터 테이블명"""
+
+CREATE_MOVIES_TABLE = """
+CREATE TABLE IF NOT EXISTS movies (
+    id INT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    release_date VARCHAR(20),
+    vote_average FLOAT,
+    genre_ids VARCHAR(255),
+    overview TEXT,
+    popularity FLOAT
+)
+"""
+
+INSERT_MOVIE = """
+INSERT INTO movies (id, title, release_date, vote_average, genre_ids, overview, popularity)
+VALUES (%s, %s, %s, %s, %s, %s, %s)
+"""
+
+# TMDB API 엔드포인트
+POPULAR_MOVIES_ENDPOINT = "/movie/popular"

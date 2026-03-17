@@ -5,6 +5,9 @@ env:
     base_url: "https://api.themoviedb.org/3"
     # API 키는 환경변수 TMDB_API_KEY에서 로드됩니다
     # .env 파일에 설정하거나 시스템 환경변수로 설정하세요
+    db:
+      host: "localhost"
+      port: 3306
 
   prod:
     base_url: "https://api.themoviedb.org/3"

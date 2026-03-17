@@ -37,6 +37,7 @@ QA Engineer portfolio -- test automation for Kurly, a live e-commerce site, usin
 | Language | Python 3.11 |
 | Web UI | Selenium 4.27 |
 | API | Requests 2.32 |
+| Database | MySQL + mysql-connector-python |
 | Performance | JMeter 5.6.3 |
 | Framework | Pytest 8.3 |
 | Reporting | Allure Report |
@@ -68,6 +69,12 @@ QATEST/
 │       ├── conftest.py            # Pytest Fixtures
 │       ├── api/                   # API tests (9)
 │       ├── ui/                    # UI tests (11)
+│       ├── sql/                   # SQL DB tests (10)
+│       │   ├── conftest.py
+│       │   ├── setup_test_db.py
+│       │   ├── test_data_integrity.py
+│       │   ├── test_data_consistency.py
+│       │   └── test_query_validation.py
 │       └── performance/           # Performance tests (JMeter)
 │           └── tmdb_load_test.jmx
 │
@@ -116,6 +123,11 @@ TMDB_API_KEY=your_tmdb_api_key              # Required
 KURLY_TEST_USERNAME=your_test_username       # Required
 KURLY_TEST_PASSWORD=your_test_password       # Required
 SLACK_WEBHOOK_URL=your_slack_webhook_url     # Optional
+DB_HOST=localhost                            # For SQL tests
+DB_PORT=3306                                 # For SQL tests
+DB_USER=root                                 # For SQL tests
+DB_PASSWORD=your_db_password                 # For SQL tests
+DB_NAME=tmdb_test                            # For SQL tests
 ```
 
 ### Running Tests
@@ -130,6 +142,7 @@ pytest src/tests/ui --alluredir=./allure-results
 # By marker
 pytest -m api
 pytest -m ui
+pytest -m sql
 
 # View Allure report
 allure serve ./allure-results
@@ -166,6 +179,23 @@ Target: https://www.kurly.com
 | `test_top_rated_movie_consistency` | Rating range (0-10) |
 
 Target: https://api.themoviedb.org/3
+
+### SQL Database Tests (10 tests)
+
+| Test | Validation |
+|------|------------|
+| `test_no_null_movie_ids` | No NULL movie IDs |
+| `test_no_duplicate_movie_ids` | No duplicate IDs |
+| `test_vote_average_range` | Rating within 0-10 range |
+| `test_release_date_format` | Date format (YYYY-MM-DD) |
+| `test_api_db_movie_count_match` | API result count matches DB row count |
+| `test_api_db_movie_title_match` | API title matches DB title |
+| `test_api_db_vote_average_match` | API rating matches DB rating |
+| `test_top_rated_movies_query` | ORDER BY top-rated movie query |
+| `test_movies_by_popularity` | Popularity-based sorting |
+| `test_movie_count_by_year` | GROUP BY yearly movie count |
+
+Flow: Fetch TMDB API data -> Store in MySQL -> Verify data integrity/consistency via SQL queries
 
 ### TMDB API Performance Tests (JMeter)
 

@@ -91,8 +91,8 @@ class KurlyCartPage(BasePage):
         Returns:
             int: 장바구니 상품 종류 개수
         """
-        element = self.get_text(self.CART_ITEM_COUNT, timeout=0.5)
-        text = element.text  # 예: '전체선택 */*'
+        text = self.get_text(self.CART_ITEM_COUNT, timeout=0.5)
+        
         try:
             # '*/ *'에서 뒤의 숫자만 추출
             count = int(text.split()[-1].split('/')[-1])
@@ -116,30 +116,4 @@ class KurlyCartPage(BasePage):
         self.click(self.DELETE_SELECTED_BUTTON)
         self.sleep(0.5)  # 삭제 처리 대기   
 
-    def get_cart_kind_count_from_text(self) -> int:
-        """
-        '전체선택 2/2' 텍스트에서 전체 상품 종류 개수(2)를 추출
-        """
-        # 해당 <p> 요소를 찾음 (적절한 locator로 교체 필요)
-        element = self.get_text(self.CART_ITEM_COUNT)
-        text = element.text  # 예: "전체선택 2/2"
-        try:
-            # "2/2"에서 뒤의 숫자만 추출
-            count = int(text.split()[-1].split('/')[-1])
-            return count
-        except Exception:
-            return 0
-        
-    def get_cart_total_quantity(self) -> int:
-        """
-        장바구니에 담긴 상품 총 수량 반환 (각 상품별 수량 합산)
-
-        Returns:
-            int: 장바구니 상품 총 수량
-        """
-        # TODO: 실제 수량 표시 셀렉터 및 파싱 로직 구현 필요
-        # 예시: 상품별 수량이 span.kpds_xxxxx에 있다면 모두 합산
-        # elements = self.find_elements((By.CSS_SELECTOR, 'span.kpds_xxxxx'))
-        # return sum(int(e.text) for e in elements if e.text.isdigit())
-        return 0  # 실제 구현 필요
 

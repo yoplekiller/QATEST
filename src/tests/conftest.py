@@ -23,7 +23,7 @@ IS_CI = os.getenv("GITHUB_ACTIONS") == "true" or os.getenv("CI") == "true"
 @pytest.fixture(scope="module")
 def driver():
     options = Options()
-    options.add_argument("--headless") # 헤드리스 모드
+    # options.add_argument("--headless") # 헤드리스 모드
     options.add_argument("--disable-blink-features=AutomationControlled") # 자동화 감지 방지
     options.add_argument("--no-sandbox") # 샌드박스 비활성화
     options.add_argument("--disable-dev-shm-usage") # /dev/shm 사용 안함

@@ -1,12 +1,12 @@
 import allure
 import pytest
-
+import time
 
 @pytest.mark.ui
 @allure.feature("장바구니 기능")
 @allure.story("상품 추가 플로우")
 @allure.title("상품을 장바구니에 추가하는 전체 플로우 테스트")
-def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_goods_page):
+def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_goods_page, kurly_login_page, test_credentials):
     """
     상품을 장바구니에 추가하는 전체 플로우 테스트
     Steps:
@@ -17,18 +17,20 @@ def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_goods_p
         5. 장바구니에 담기
     """
     increase_count = 2
-    decrease_count = 2
+    decrease_count = 1
 
-    # 1. 메인 페이지 열고 검색
-    with allure.step("메인 페이지 접속"):
-        kurly_main_page.open_main_page()
+    # 1. 로그인
+    with allure.step("로그인"):
+        kurly_login_page.login(test_credentials["username"], test_credentials["password"])
+        time.sleep(2)  # 로그인 처리 시간 대기
 
     with allure.step("'과자' 검색"):
         kurly_main_page.search_goods("과자")
+        time.sleep(2)
 
     # 2. 상품 추가 버튼 클릭
-    with allure.step("세 번째 상품 담기 버튼 클릭"):
-        kurly_search_page.click_nth_add_button(3)
+    with allure.step("두 번째 상품 담기 버튼 클릭"):
+        kurly_search_page.click_nth_add_button(2)
 
     # 3. 수량 올리기
     with allure.step(f"수량 {increase_count}회 증가"):

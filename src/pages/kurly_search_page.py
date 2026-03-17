@@ -6,6 +6,7 @@ from typing import List
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.action_chains import ActionChains
 from src.pages.base_page import BasePage
 
 class KurlySearchPage(BasePage):
@@ -29,17 +30,13 @@ class KurlySearchPage(BasePage):
     GOODS_LIST = (By.XPATH, "//a[@class='css-11geqae e1c07x4811']")  # 대체 선택자
     NO_RESULT_TEXT = (By.XPATH, "//*[contains(normalize-space(), '검색된 상품이 없습니다') or contains(normalize-space(),'없')]")
 
-    # Locators - 장바구니 추가 버튼 (검색 결과 내)
-    ADD_TO_CART_BUTTONS = (By.XPATH, "//a//div[2]//button[1]")
-
     
     # Locators - ALT 기능 (검색 결과 내 수량 조절 및 확인)
-    QUANTITY_UP_BUTTON_IN_ALT = (By.XPATH, "//button[@class='kpds_j1jks21 kpds_j1jks25']")
-    QUANTITY_DOWN_BUTTON_IN_ALT = (By.XPATH, "//button[@class='kpds_j1jks21 kpds_j1jks24']")
+    QUANTITY_UP_BUTTON_IN_ALT = (By.XPATH, "//button[@aria-label='Stepper plus']")
+    QUANTITY_DOWN_BUTTON_IN_ALT = (By.XPATH, "//button[@aria-label='Stepper minus']")
     QUANTITY_DISPLAY_IN_ALT = (By.CSS_SELECTOR, "div.count") # 수량 표시 요소 ALT 내
-    ADD_TO_CART_BUTTONS_IN_ALT = (By.XPATH, "//button[contains(text(),'장바구니 담기')]") # 금액이 앞에 붙은 장바구니 담기 버튼 ALT 내
+    ADD_TO_CART_BUTTONS_IN_ALT = (By.XPATH, "//button[contains(.,'장바구니 담기')]") # 금액이 앞에 붙은 장바구니 담기 버튼 ALT 내
 
-    
 
     # Locators - 정렬
     SORT_SALE = (By.XPATH, "//a[contains(text(),'판매량순')]")
@@ -172,8 +169,10 @@ class KurlySearchPage(BasePage):
         Args:
             n: 클릭할 상품의 순번 (1부터 시작)
         """
-        nth_add_button = (By.XPATH, f"(//a//div[2]//button[1])[{n}]")
-        self.click(nth_add_button)
+        
+        nth_add_button = (By.XPATH, f"(//button[@type='button'][contains(text(),'담기')])[{n}]")
+        element = self.find_element(nth_add_button)
+        ActionChains(self.driver).move_to_element(element).click().perform()
 
     def is_keyword_in_page_source(self, keyword: str) -> bool:
         """
@@ -233,9 +232,12 @@ class KurlySearchPage(BasePage):
         except ValueError:
             return False
         
+
     def add_to_cart_in_alt(self) -> None:
         """ALT에서 장바구니 담기 버튼 클릭"""
+        self.wait_visible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
         self.click(self.ADD_TO_CART_BUTTONS_IN_ALT)
+
 
     def click_first_good(self) -> None:
         """

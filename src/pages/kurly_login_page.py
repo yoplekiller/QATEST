@@ -36,9 +36,10 @@ class KurlyLoginPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
 
+
     def open_main_page(self) -> None:
-        """마켓컬리 메인 페이지로 이동"""
-        self.open(self.KURLY_MAIN_URL)
+        """마켓컬리 메인 페이지 열기"""
+        self.driver.get(self.KURLY_MAIN_URL)
 
     def go_to_login_page(self) -> None:
         """메인 페이지에서 로그인 버튼을 클릭하여 로그인 페이지로 이동"""
@@ -79,6 +80,7 @@ class KurlyLoginPage(BasePage):
         self.enter_username(username)
         self.enter_password(password)
         self.click_login_button()
+        self.wait_visible(self.USER_MENU, timeout=10)
 
     def is_mismatch_error_message_displayed(self) -> bool:
         """

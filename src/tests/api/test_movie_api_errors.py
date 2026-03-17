@@ -56,7 +56,7 @@ class ErrorHandlingTests:
 
     @allure.title("빈 검색어로 검색 시 빈 결과 반환")
     def test_empty_search_query(self, api_env, send_get_request_no_raise, attach_response):
-        API_KEY = api_env["api_key"]
+        API_KEY = api_env.api_key
         endpoint = "/search/movie"
 
         with allure.step("빈 검색어로 검색 전송"):
@@ -71,8 +71,8 @@ class ErrorHandlingTests:
 
             
     @allure.title("잘못된 페이지 번호로 요청 시 422 반환")
-    def test_invalied_page_number(self, api_env, send_get_request_no_raise, attach_response):
-        API_KEY = api_env["api_key"]
+    def test_invalid_page_number(self, api_env, send_get_request_no_raise, attach_response):
+        API_KEY = api_env.api_key
         endpoint = "/movie/popular"
         with allure.step("잘못된 페이지 번호로 요청 전송"):
             response = send_get_request_no_raise(endpoint, params={"api_key": API_KEY, "page": -1})
@@ -82,7 +82,7 @@ class ErrorHandlingTests:
 
     @allure.title("잘못된 언어 코드로 요청 시 기본값 반환")
     def test_invalid_language_code(self, api_env, send_get_request, attach_response):
-        API_KEY = api_env["api_key"]
+        API_KEY = api_env.api_key
         endpoint = "/movie/popular"
 
         with allure.step("잘못된 언어 코드로 요청 전송"):
@@ -93,7 +93,7 @@ class ErrorHandlingTests:
 
     @allure.title("존재하지 않는 엔드포인트로 요청 시 404 반환")
     def test_nonexistent_endpoint(self, api_env, send_get_request_no_raise, attach_response):
-        API_KEY = api_env["api_key"]
+        API_KEY = api_env.api_key
         endpoint = "/movie/nonexistent_endpoint"
         
         with allure.step("존재하지 않는 엔드포인트로 요청 전송"):

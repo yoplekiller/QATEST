@@ -2,6 +2,7 @@
 .env
 .env.local
 
+
 # 테스트 결과 및 리포트
 allure-results/
 allure-report/

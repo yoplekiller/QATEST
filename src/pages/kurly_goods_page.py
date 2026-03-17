@@ -95,7 +95,7 @@ class KurlyGoodsPage(BasePage):
         Returns:
             str: 상품명
         """
-        return self.get_text(self.GOODS_NAME)
+        return self.get_text(self.GOODS_TITLE)
 
     def get_good_price(self) -> str:
         """
@@ -115,6 +115,7 @@ class KurlyGoodsPage(BasePage):
         """
         try:
             self.wait_visible(self.GOODS_TITLE, timeout=5)
+            return True
         except Exception:
             return False
 
