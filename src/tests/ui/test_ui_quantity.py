@@ -9,6 +9,7 @@ import pytest
 @allure.severity(allure.severity_level.NORMAL)
 class TestQuantity:
 
+    @pytest.mark.skip(reason="비로그인 상태에서 '담기' 클릭 시 컬리 로그인 팝업 표시 - 로그인 세션 필요")
     @allure.title("수량 증가/감소 버튼 동작 확인")
     @allure.description("""
     **목적:** 상품 상세 팝업에서 수량 조절 버튼이 정상 작동하는지 확인

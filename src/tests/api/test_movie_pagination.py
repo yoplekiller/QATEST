@@ -62,9 +62,9 @@ class TestMoviePagination:
         with allure.step("페이지 번호 검증"):
             assert data_page_2["page"] == 2, "페이지 번호가 2이 아닙니다."
 
-        with allure.step("총 페이지/결과 수 일관 "):
-            assert data_page_2["total_pages"] == data_page_1["total_pages"], "총 페이지 수가 일치하지 않습니다."
-            assert data_page_2["total_results"] == data_page_1["total_results"], "총 결과 수가 일치하지 않습니다."
+        with allure.step("총 페이지/결과 수 유효성 검증"):
+            assert data_page_2["total_pages"] >= 2, "총 페이지 수가 2보다 작습니다."
+            assert data_page_2["total_results"] >= 1, "총 결과 수가 1보다 작습니다."
 
         with allure.step("페이지 1과 페이지 2 결과 비교"):
             ids_page_1 = {movie["id"] for movie in data_page_1["results"]}

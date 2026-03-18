@@ -108,14 +108,10 @@ class KurlyGoodsPage(BasePage):
     
     def is_product_detail_displayed(self) -> bool:
         """
-        상품 상세 페이지가 표시되는지 확인
+        상품 상세 페이지가 표시되는지 확인 (URL 기반 - CSS 클래스명 변경에 안전)
 
         Returns:
             bool: 상세 페이지가 표시되면 True
         """
-        try:
-            self.wait_visible(self.GOODS_TITLE, timeout=5)
-            return True
-        except Exception:
-            return False
+        return "/goods/" in self.get_current_url()
 

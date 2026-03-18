@@ -28,13 +28,13 @@ class KurlySearchPage(BasePage):
     RESULT_TITLE = (By.XPATH, "//*[contains(normalize-space(), '에 대한 검색결과')]")
     GOODS_CARDS = (By.CSS_SELECTOR, "a[href*='/goods/']")
     GOODS_LIST = (By.XPATH, "//a[@class='css-11geqae e1c07x4811']")  # 대체 선택자
-    NO_RESULT_TEXT = (By.XPATH, "//*[contains(normalize-space(), '검색된 상품이 없습니다') or contains(normalize-space(),'없')]")
+    NO_RESULT_TEXT = (By.XPATH, "//*[contains(normalize-space(), '검색된 상품이 없습니다') or contains(normalize-space(), '검색결과가 없습니다') or contains(normalize-space(), '에 대한 검색결과 0건')]")
 
     
     # Locators - ALT 기능 (검색 결과 내 수량 조절 및 확인)
     QUANTITY_UP_BUTTON_IN_ALT = (By.XPATH, "//button[@aria-label='Stepper plus']")
     QUANTITY_DOWN_BUTTON_IN_ALT = (By.XPATH, "//button[@aria-label='Stepper minus']")
-    QUANTITY_DISPLAY_IN_ALT = (By.CSS_SELECTOR, "div.count") # 수량 표시 요소 ALT 내
+    QUANTITY_DISPLAY_IN_ALT = (By.XPATH, "//button[@aria-label='Stepper plus']/preceding-sibling::*[1] | //button[@aria-label='Stepper minus']/following-sibling::*[1]") # 수량 표시 요소 ALT 내
     ADD_TO_CART_BUTTONS_IN_ALT = (By.XPATH, "//button[contains(.,'장바구니 담기')]") # 금액이 앞에 붙은 장바구니 담기 버튼 ALT 내
 
 
@@ -88,11 +88,20 @@ class KurlySearchPage(BasePage):
 
     def is_no_result_message_displayed(self) -> bool:
         """
-        검색 결과가 없을 때 표시되는 메시지 확인
+        검색 결과가 없는지 확인
+        - 기존: '검색된 상품이 없습니다' 텍스트 확인
+        - 변경: 컬리가 결과 없을 때 추천상품만 보여주므로 결과 타이틀의 '0건' 텍스트도 확인
+
         Returns:
-            bool: 메시지 표시 여부
+            bool: 검색 결과가 없으면 True
         """
-        return self.is_displayed(self.NO_RESULT_TEXT)
+        if self.is_displayed(self.NO_RESULT_TEXT, timeout=3):
+            return True
+        try:
+            title_text = self.get_text(self.RESULT_TITLE, timeout=3)
+            return "0건" in title_text
+        except Exception:
+            return False
 
     def is_sorted_correctly(self, sort_type: str) -> bool:
         """
@@ -169,7 +178,6 @@ class KurlySearchPage(BasePage):
         Args:
             n: 클릭할 상품의 순번 (1부터 시작)
         """
-        
         nth_add_button = (By.XPATH, f"(//button[@type='button'][contains(text(),'담기')])[{n}]")
         element = self.find_element(nth_add_button)
         ActionChains(self.driver).move_to_element(element).click().perform()
@@ -233,10 +241,22 @@ class KurlySearchPage(BasePage):
             return False
         
 
+    POPUP_CLOSE_BUTTON = (By.XPATH, "//button[@aria-label='닫기']")
+
+    def click_add_to_cart_in_popup(self) -> None:
+        """add_to_cart_in_alt의 별칭 - 팝업에서 장바구니 담기 버튼 클릭"""
+        self.add_to_cart_in_alt()
+
     def add_to_cart_in_alt(self) -> None:
         """ALT에서 장바구니 담기 버튼 클릭"""
         self.wait_visible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
         self.click(self.ADD_TO_CART_BUTTONS_IN_ALT)
+        self.sleep(1)
+        close_btns = self.driver.find_elements(*self.POPUP_CLOSE_BUTTON)
+        visible_close = [b for b in close_btns if b.is_displayed()]
+        if visible_close:
+            visible_close[0].click()
+        self.wait_until_invisible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
 
 
     def click_first_good(self) -> None:

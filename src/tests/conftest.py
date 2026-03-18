@@ -1,8 +1,6 @@
 import os
-import datetime
 from dotenv import load_dotenv
 import shutil
-import allure
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
