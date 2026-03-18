@@ -12,7 +12,6 @@ import time
 @allure.story("로그인 후 상품 추가")
 @allure.severity(allure.severity_level.CRITICAL)
 class TestGoodAddFlow:
-    @pytest.mark.skip(reason="컬리 장바구니 추가 팝업 UI 변경됨 - click_nth_add_button 후 수량 팝업 미표시, 현장 확인 필요")
     @allure.title("로그인 후 상품 추가 및 장바구니 확인")
     @allure.description("""
     **목적:** 로그인부터 장바구니 담기까지 전체 플로우가 정상 동작하는지 확인
@@ -34,11 +33,8 @@ class TestGoodAddFlow:
         """
         # Step 1: 로그인
         with allure.step("로그인 프로세스"):
-            kurly_login_page.open_main_page()
-            kurly_login_page.go_to_login_page()
-            kurly_login_page.enter_username(test_credentials['username'])
-            kurly_login_page.enter_password(test_credentials['password'])
-            kurly_login_page.click_login_button()
+            kurly_login_page.login(test_credentials["username"], test_credentials["password"])
+
             time.sleep(2)  # 로그인 처리 대기
             assert kurly_login_page.is_login_successful(), "로그인에 실패했습니다"
 
@@ -46,6 +42,7 @@ class TestGoodAddFlow:
         # Step 2: 상품 검색
         with allure.step("상품 검색: '과자'"):
             kurly_main_page.search_goods("과자")
+            time.sleep(2)  # 검색 결과 로드 대기
 
         # Step 3: 상품 추가
         with allure.step("세 번째 상품 선택"):
@@ -57,7 +54,7 @@ class TestGoodAddFlow:
 
         # Step 5: 장바구니 담기
         with allure.step("장바구니 담기"):
-            kurly_search_page.click_add_to_cart_in_popup()
+            kurly_search_page.add_to_cart_in_alt()
             
         with allure.step("장바구니 페이지로 이동"):
             kurly_cart_page.click_cart_icon()

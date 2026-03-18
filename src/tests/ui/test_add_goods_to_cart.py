@@ -23,6 +23,7 @@ def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_login_p
     with allure.step("로그인"):
         kurly_login_page.login(test_credentials["username"], test_credentials["password"])
         time.sleep(2)  # 로그인 처리 시간 대기
+        assert kurly_login_page.is_login_successful(), "로그인에 실패했습니다"
 
     with allure.step("'과자' 검색"):
         kurly_main_page.search_goods("과자")

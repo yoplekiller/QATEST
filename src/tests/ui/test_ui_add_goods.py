@@ -1,6 +1,7 @@
 """
 상품 추가 테스트 (POM 패턴 적용)
 """
+import time
 import allure
 import pytest
 
@@ -11,8 +12,6 @@ import pytest
 @allure.story("상품 추가")
 @allure.severity(allure.severity_level.CRITICAL)
 class TestAddGoods:
-
-    @pytest.mark.skip(reason="비로그인 상태에서 '담기' 클릭 시 컬리 로그인 팝업 표시 - 로그인 세션 필요")
     @allure.title("상품 검색 후 장바구니 추가 테스트")
     @allure.description("""
     **목적:** 상품 검색 → 수량 조절 → 장바구니 담기 플로우가 정상 동작하는지 확인
@@ -28,7 +27,7 @@ class TestAddGoods:
 
     **예상 결과:** 상품이 장바구니에 정상적으로 담김
     """)
-    def test_add_goods_to_cart(self, kurly_main_page, kurly_search_page, kurly_goods_page):
+    def test_add_goods_to_cart(self, kurly_main_page, kurly_search_page):
         """
         상품 검색 후 장바구니에 추가하는 전체 플로우 테스트
         """
@@ -38,14 +37,15 @@ class TestAddGoods:
 
         with allure.step("'과자' 검색"):
             kurly_main_page.search_goods("과자")
+            time.sleep(2)  # 검색 결과 로드 대기
 
         # When: 상품 추가 플로우 실행
         with allure.step("세 번째 상품의 장바구니 추가 버튼 클릭"):
             kurly_search_page.click_nth_add_button(3)
 
-        with allure.step("수량 조절 (2회 증가, 2회 감소)"):
+        with allure.step("수량 조절 (2회 증가, 1회 감소)"):
             kurly_search_page.quantity_up_in_alt(2)
-            kurly_search_page.quantity_down_in_alt(2)
+            kurly_search_page.quantity_down_in_alt(1)
 
         with allure.step("장바구니에 담기"):
             kurly_search_page.add_to_cart_in_alt()
