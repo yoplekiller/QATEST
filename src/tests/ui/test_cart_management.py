@@ -10,7 +10,6 @@ class TestCartManagement:
     """장바구니에서 상품 관리 기능 테스트"""
 
    
-    @pytest.mark.skip(reason="다른거 테스트중")
     @allure.title("여러 상품을 장바구니에 담기")
     @allure.description("여러 상품을 장바구니에 담고 모두 장바구니에 있는지 확인")
     def test_add_multiple_items_to_cart(self, kurly_main_page, kurly_search_page, kurly_cart_page):
