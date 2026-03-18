@@ -28,17 +28,21 @@ class KurlyCartPage(BasePage):
     QUANTITY_DOWN_BUTTON = (By.CSS_SELECTOR, "svg[width='13.333'][height='20']")
 
     # Locators - 버튼
-    DELETE_BUTTON = (By.XPATH, "//button[normalize-space()='선택삭제']")
-    DELETE_SELECTED_BUTTON = (By.XPATH, "//button[contains(text(), '선택삭제')]")
-    FIRST_ITEM_CHECKBOX = (By.XPATH, "(//input[@type='checkbox'])[2]")  # 첫 번째는 전체선택, 두 번째가 첫 상품
+    DELETE_BUTTON = (By.XPATH, "//button[@class='css-1scpl7s e131dn080']") # 상품 삭제 버튼
+    DELETE_SELECTED_BUTTON =  (By.XPATH, "//button[.//p[normalize-space()='선택삭제']]")
+    FIRST_ITEM_CHECKBOX = (By.XPATH, "//label[@class='kpds_126coma0']")
     LOGIN_IN_CART = (By.XPATH, "//button[contains(text(),'로그인')]")
+
+    # Loators - ALT
+    CHOICE_ITEM_DELETE_ALT_OK_BUTTON = (By.XPATH, "//button[contains(text(),'확인')]") # 선택 삭제 확인 팝업의 '확인' 버튼
+    CHOICE_ITEM_DELETE_ALT_CANCEL_BUTTON = (By.XPATH, "//button[contains(text(),'취소')]") # 선택 삭제 확인 팝업의 '취소' 버튼
 
     
     # Locators - 메시지
     EMPTY_CART_MESSAGE = (By.XPATH, "//*[contains(text(),'장바구니가 비어')]")
 
     # Locators - 수량 확인
-    CART_ITEM_COUNT = (By.XPATH, "//p[@class='kpds_97oqoup kpds_97oqouw kpds_97oqou6 kpds_ldmw177h kpds_97oqou1a kpds_97oqouk kpds_ldmw177x kpds_97oqou12 kpds_97oqouc kpds_ldmw177p kpds_126coma4 kpds_126coma7 kpds_126coma8 kpds_126coma3 kpds_ldmw171a0']")
+    CART_ITEM_COUNT = (By.CSS_SELECTOR, "p.kpds_126coma4")
     CART_QUANTITY_DISPLAY = (By.CSS_SELECTOR, "p.kpds_97oqoup")
 
     def __init__(self, driver):
@@ -91,7 +95,7 @@ class KurlyCartPage(BasePage):
         Returns:
             int: 장바구니 상품 종류 개수
         """
-        text = self.get_text(self.CART_ITEM_COUNT, timeout=0.5)
+        text = self.get_text(self.CART_ITEM_COUNT, timeout=5)
         
         try:
             # '*/ *'에서 뒤의 숫자만 추출
@@ -100,20 +104,28 @@ class KurlyCartPage(BasePage):
         except Exception:
             return 0
 
-    def remove_first_item(self) -> None:
+    def uncheck_item(self) -> None:
         """
-        장바구니의 첫 번째 상품을 선택하여 삭제
+        장바구니의 첫 번째 상품을 선택 해제
 
         Steps:
             1. 첫 번째 상품 체크박스 선택
-            2. 선택삭제 버튼 클릭
         """
         # 첫 번째 상품 체크박스 선택
         self.click(self.FIRST_ITEM_CHECKBOX)
         self.sleep(0.5)  # UI 반영 대기
 
-        # 선택삭제 버튼 클릭
+
+    def choiced_item_delete(self) -> None:
+        """
+        선택된 상품 삭제
+
+        Steps:
+            1. '선택삭제' 버튼 클릭
+            2. 삭제 확인 팝업에서 '확인' 클릭
+        """
         self.click(self.DELETE_SELECTED_BUTTON)
-        self.sleep(0.5)  # 삭제 처리 대기   
+        self.sleep(0.5)  # UI 반영 대기
+        self.click(self.CHOICE_ITEM_DELETE_ALT_OK_BUTTON)
 
 

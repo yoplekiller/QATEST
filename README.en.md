@@ -15,7 +15,7 @@
 
 ## Project Overview
 
-QA Engineer portfolio -- test automation for Kurly, a live e-commerce site, using Python + Selenium for UI tests and TMDB API for API tests.
+QA Engineer portfolio — test automation for Kurly, a live e-commerce site, using Python + Selenium for UI tests and TMDB API for API tests.
 
 ### Key Features
 
@@ -38,7 +38,6 @@ QA Engineer portfolio -- test automation for Kurly, a live e-commerce site, usin
 | Web UI | Selenium 4.27 |
 | API | Requests 2.32 |
 | Database | MySQL + mysql-connector-python |
-| Performance | JMeter 5.6.3 |
 | Framework | Pytest 8.3 |
 | Reporting | Allure Report |
 | CI/CD | GitHub Actions + GitHub Pages |
@@ -69,14 +68,12 @@ QATEST/
 │       ├── conftest.py            # Pytest Fixtures
 │       ├── api/                   # API tests (9)
 │       ├── ui/                    # UI tests (11)
-│       ├── sql/                   # SQL DB tests (10)
-│       │   ├── conftest.py
-│       │   ├── setup_test_db.py
-│       │   ├── test_data_integrity.py
-│       │   ├── test_data_consistency.py
-│       │   └── test_query_validation.py
-│       └── performance/           # Performance tests (JMeter)
-│           └── tmdb_load_test.jmx
+│       └── sql/                   # SQL DB tests (10)
+│           ├── conftest.py
+│           ├── setup_test_db.py
+│           ├── test_data_integrity.py
+│           ├── test_data_consistency.py
+│           └── test_query_validation.py
 │
 ├── utils/
 │   ├── logger.py
@@ -150,17 +147,21 @@ allure serve ./allure-results
 
 ## Test Cases
 
-### Kurly UI Tests (11 tests)
+### Kurly UI Tests (22 active / 2 skipped)
 
 | Test | Validation |
 |------|------------|
-| `test_ui_login` | Valid/invalid login, empty input handling |
-| `test_ui_search` | Normal search, blank search, special chars, result click |
-| `test_ui_cart` | Cart access and verification |
-| `test_ui_add_product` | Add to cart, quantity adjustment |
-| `test_ui_product_add_flow` | Login, search, add, cart E2E flow |
-| `test_ui_quantity` | Quantity increase/decrease buttons |
-| `test_ui_sort_button` | Product sorting |
+| `test_ui_login` (3) | Valid/invalid login, empty input, page elements |
+| `test_ui_search` (7) | Normal search, blank search, special chars, result click |
+| `test_ui_cart` (1) | Cart page access |
+| `test_ui_add_goods` (1) | Search → quantity adjustment (up ×2, down ×1) → add to cart |
+| `test_add_goods_to_cart` (1) | Login → search → quantity adjustment → add to cart flow |
+| `test_ui_goods_add_flow` (1) | Login → search → add product → cart navigation E2E |
+| `test_cart_management` (2) | Add multiple items to cart, remove item from cart |
+| `test_blank_search` (1) | Empty search keyword handling |
+| `test_ui_sort_button` (4) | Sort by recommend / new / low price / high price |
+| `test_ui_quantity` (1) | ⚠️ skip - cart popup unavailable without login |
+| `test_invalid_search` (1) | ⚠️ skip - Kurly no-result message UI changed |
 
 Target: https://www.kurly.com
 
@@ -195,24 +196,7 @@ Target: https://api.themoviedb.org/3
 | `test_movies_by_popularity` | Popularity-based sorting |
 | `test_movie_count_by_year` | GROUP BY yearly movie count |
 
-Flow: Fetch TMDB API data -> Store in MySQL -> Verify data integrity/consistency via SQL queries
-
-### TMDB API Performance Tests (JMeter)
-
-Verifies that the TMDB API meets SLA (under 3 seconds) under concurrent user load.
-
-| Scenario | Concurrent Users | Avg Response | Max | Error Rate | TPS | SLA Met |
-|---|---|---|---|---|---|---|
-| Popular Movies | 100 | 980ms | 2711ms | 0.00% | 30.8/s | O |
-| Movie Search | 100 | 799ms | 1048ms | 0.00% | 38.8/s | O |
-
-- Ramp-up: 30s / SLA threshold: 3000ms
-- Test file: `src/tests/performance/tmdb_load_test.jmx`
-
-```bash
-# Run performance test (Non-GUI)
-jmeter -n -t src/tests/performance/tmdb_load_test.jmx -l result.jtl -e -o report/
-```
+Flow: Fetch TMDB API data → Store in MySQL → Verify data integrity/consistency via SQL queries
 
 ---
 

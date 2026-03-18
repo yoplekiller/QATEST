@@ -25,7 +25,7 @@ class KurlyMainPage(BasePage):
 
     # Locators - 검색
     SEARCH_INPUT = (By.XPATH, "//input[@placeholder='검색어를 입력해주세요']")
-    SEARCH_BUTTON = (By.XPATH, "(//button[@id='submit'])[1]")
+    SEARCH_BUTTON = (By.ID, "submit")
 
     # Locators - 상품 목록
     GOODS_ITEMS = (By.XPATH, "//div[contains(@class,'goods-card')]")
