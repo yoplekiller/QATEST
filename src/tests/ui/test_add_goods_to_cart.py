@@ -6,7 +6,7 @@ import time
 @allure.feature("장바구니 기능")
 @allure.story("상품 추가 플로우")
 @allure.title("상품을 장바구니에 추가하는 전체 플로우 테스트")
-def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_goods_page, kurly_login_page, test_credentials):
+def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_login_page, test_credentials):
     """
     상품을 장바구니에 추가하는 전체 플로우 테스트
     Steps:
@@ -43,7 +43,7 @@ def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_goods_p
     # 5. 장바구니 담기
     with allure.step("장바구니에 담기"):
         kurly_search_page.add_to_cart_in_alt()
-
+    
     # 6. 성공 검증
     with allure.step("장바구니 담기 성공 확인"):
         assert kurly_search_page.is_add_to_cart_success(), "장바구니 담기가 실패했습니다"
