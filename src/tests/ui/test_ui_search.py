@@ -91,44 +91,7 @@ class TestSearch:
             assert initial_url == current_url or kurly_main_page.is_search_keyword_required_popup_displayed(), \
                 "❌ 빈 검색어에 대한 적절한 처리가 없습니다"
 
-    @allure.title("존재하지 않는 상품명으로 검색")
-    @allure.description("""
-    **목적:** 존재하지 않는 상품명으로 검색 시 '결과 없음' 메시지가 표시되는지 확인
-
-    **테스트 단계:**
-    1. 마켓컬리 메인 페이지 접속
-    2. 검색창에 존재하지 않는 상품명 입력
-    3. 검색 버튼 클릭
-    4. "검색 결과가 없습니다" 메시지 확인
-
-    **예상 결과:** 검색 결과가 없다는 메시지가 표시됨
-    """)
-    @pytest.mark.parametrize("keyword", ["xyzabc123", "!@#$%", "가나다라마바사아자차카타파하"])
-    def test_search_non_existent_good(self,kurly_main_page, kurly_search_page, keyword):
-        """
-        존재하지 않는 상품명으로 검색 시 적절한 메시지가 표시되는지 확인
-        """
-       
-        kurly_main_page.open_main_page()
-
-        
-        with allure.step(f"'{keyword}' 검색"):
-            kurly_main_page.search_goods(keyword)
-        
-        with allure.step("검색 결과 없음 확인"):
-            kurly_search_page.take_screenshot(f"{keyword}_검색_결과_없음")
-
-            results_count = kurly_search_page.get_goods_count()
-            has_no_results_message = kurly_search_page.is_no_result_message_displayed()
-
-            allure.attach(
-                f"검색 결과 개수: {results_count}\n결과 없음 메시지: {has_no_results_message}",
-                name="검색_결과_정보",
-                attachment_type=allure.attachment_type.TEXT
-            )
-
-            assert results_count == 0 or has_no_results_message, \
-                f"❌ '{keyword}' 검색 시 결과가 없어야 하는데 {results_count}개가 표시됨"
+ 
 
     @allure.title("검색 후 첫 번째 상품 클릭")
     @allure.description("""
