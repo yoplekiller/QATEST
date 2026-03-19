@@ -5,7 +5,7 @@ import pytest
 @allure.feature("TMDB API - Error Handling")
 @allure.story("404 Not Found")
 @allure.title("TMDB API 오류 처리 테스트")
-class ErrorHandlingTests:
+class TestErrorHandling:
               
     @allure.title("존재하지 않는 영화 ID로 조회 시 404 반환")
     def test_movie_not_found(self, api_env, send_get_request_no_raise, attach_response):
