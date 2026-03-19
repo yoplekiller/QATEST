@@ -204,16 +204,6 @@ Checkout → 의존성 설치 → UI/API 테스트 실행
 → Allure Report 생성 → GitHub Pages 배포 → Slack 알림
 ```
 
-## 스크린샷
-
-### Allure Report
-![Allure Report](./docs/screenshots/allure_report.png)
-
-### GitHub Actions CI/CD
-![GitHub Actions](./docs/screenshots/github_actions.png)
-
-### Slack 알림
-![Slack 알림](./docs/screenshots/slack_notification.png)
 
 ---
 
