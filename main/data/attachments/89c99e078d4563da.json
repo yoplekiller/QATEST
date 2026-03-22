@@ -1,0 +1,404 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/6yeVcxFR0j08vlv2OlL6zbewm4D.jpg",
+      "genre_ids": [
+        28,
+        878,
+        53
+      ],
+      "id": 1265609,
+      "original_language": "en",
+      "original_title": "War Machine",
+      "overview": "",
+      "popularity": 378.8329,
+      "poster_path": "/sNcd70Q6sEBnF3YEd3kC9jIUO5E.jpg",
+      "release_date": "2026-02-12",
+      "title": "War Machine",
+      "video": false,
+      "vote_average": 7.252,
+      "vote_count": 1064
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aouxo2EaR7QSGBBUNTITuW0lj4z.jpg",
+      "genre_ids": [
+        80,
+        18
+      ],
+      "id": 875828,
+      "original_language": "en",
+      "original_title": "Peaky Blinders: The Immortal Man",
+      "overview": "",
+      "popularity": 325.8409,
+      "poster_path": "/bMqKj63kMFaZTHJ7J6s4Seq1jgP.jpg",
+      "release_date": "2026-03-05",
+      "title": "Peaky Blinders: The Immortal Man",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 233
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wsQPh8gz0sK3C3mAyaXcPSSOWUZ.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1290821,
+      "original_language": "en",
+      "original_title": "Shelter",
+      "overview": "",
+      "popularity": 309.5562,
+      "poster_path": "/8Mr7Av3LOJWdqhAI24ytCN4QNjw.jpg",
+      "release_date": "2026-01-28",
+      "title": "Shelter",
+      "video": false,
+      "vote_average": 6.583,
+      "vote_count": 342
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sdZSjtGUTSN8B3al5o0f2WoQfQQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "",
+      "popularity": 289.7544,
+      "poster_path": "/dVv28yL7kyeMK3sUTWVSKrZC6tV.jpg",
+      "release_date": "2025-12-17",
+      "title": "Avatar: Fire and Ash",
+      "video": false,
+      "vote_average": 7.266,
+      "vote_count": 1910
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hz7TdCrpLLt2Dz7S3PS2HG9rpAO.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        80
+      ],
+      "id": 1159559,
+      "original_language": "en",
+      "original_title": "Scream 7",
+      "overview": "",
+      "popularity": 281.5991,
+      "poster_path": "/yI6UQuEmJxTpG7j8bEMSGGJC4kC.jpg",
+      "release_date": "2026-02-25",
+      "title": "Scream 7",
+      "video": false,
+      "vote_average": 5.861,
+      "vote_count": 413
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "genre_ids": [
+        878,
+        12,
+        9648
+      ],
+      "id": 687163,
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "",
+      "popularity": 261.0145,
+      "poster_path": "/jrubxFgThfkIU3lRjYFLGobYa8z.jpg",
+      "release_date": "2026-03-15",
+      "title": "Project Hail Mary",
+      "video": false,
+      "vote_average": 8.315,
+      "vote_count": 259
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/52AkwEfQiJl2HuTPMZ2yC5Bdr9I.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 1171145,
+      "original_language": "en",
+      "original_title": "Crime 101",
+      "overview": "",
+      "popularity": 243.2293,
+      "poster_path": "/5SdVfKcBka1RczF2gWV1GUsM243.jpg",
+      "release_date": "2026-02-11",
+      "title": "Crime 101",
+      "video": false,
+      "vote_average": 7.01,
+      "vote_count": 197
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "original_language": "ru",
+      "original_title": "Твое сердце будет разбито",
+      "overview": "",
+      "popularity": 198.9139,
+      "poster_path": "/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
+      "release_date": "2026-03-26",
+      "title": "Твое сердце будет разбито",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wns4x1GyxCudgOZRyhXKjXVJf3T.jpg",
+      "genre_ids": [
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "",
+      "popularity": 186.4838,
+      "poster_path": "/oEGnHmRkpNfUsxnh0gOKuTqNeQk.jpg",
+      "release_date": "2026-01-07",
+      "title": "Greenland 2: Migration",
+      "video": false,
+      "vote_average": 6.388,
+      "vote_count": 650
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+      "genre_ids": [
+        16,
+        35,
+        12,
+        10751,
+        9648
+      ],
+      "id": 1084242,
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "",
+      "popularity": 171.7285,
+      "poster_path": "/1n0t8vMw96B54gEa7TLaYMsXyLn.jpg",
+      "release_date": "2025-11-26",
+      "title": "Zootopia 2",
+      "video": false,
+      "vote_average": 7.612,
+      "vote_count": 2276
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2RrLuIfIzGWWIH8IAEo6o0IYHmx.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        878,
+        35
+      ],
+      "id": 1327819,
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "",
+      "popularity": 138.5197,
+      "poster_path": "/kNBcP9HKIE8TFIpj3nxRw8FS06q.jpg",
+      "release_date": "2026-03-04",
+      "title": "Hoppers",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 256
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yJi6g0CnsqANLNuVaRX28tZxeHX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1193501,
+      "original_language": "en",
+      "original_title": "Whistle",
+      "overview": "",
+      "popularity": 132.2406,
+      "poster_path": "/esibhXHloaHIbX3sCGdheBG1qC6.jpg",
+      "release_date": "2026-01-20",
+      "title": "Whistle",
+      "video": false,
+      "vote_average": 6.075,
+      "vote_count": 167
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vSQSYd2zZTqc0zmHImwWEGGluMI.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1316092,
+      "original_language": "en",
+      "original_title": "\"Wuthering Heights\"",
+      "overview": "",
+      "popularity": 128.0267,
+      "poster_path": "/ov0Wqu2I8EzaV1zuoaTnAnHVejY.jpg",
+      "release_date": "2026-02-11",
+      "title": "\"Wuthering Heights\"",
+      "video": false,
+      "vote_average": 6.362,
+      "vote_count": 548
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zpEWFNqoN8Qg1SzMMHmaGyOBTdW.jpg",
+      "genre_ids": [
+        53,
+        80,
+        35
+      ],
+      "id": 1054867,
+      "original_language": "en",
+      "original_title": "One Battle After Another",
+      "overview": "",
+      "popularity": 126.3005,
+      "poster_path": "/mPKI17bw3qbv9h5wbrpUAlbanjw.jpg",
+      "release_date": "2025-09-23",
+      "title": "One Battle After Another",
+      "video": false,
+      "vote_average": 7.389,
+      "vote_count": 3235
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nTbO6UF944b0VZrgypMK5rFYRSW.jpg",
+      "genre_ids": [
+        9648,
+        18,
+        27
+      ],
+      "id": 680493,
+      "original_language": "en",
+      "original_title": "Return to Silent Hill",
+      "overview": "",
+      "popularity": 123.4317,
+      "poster_path": "/7f1ZGvPq7tILnyTtwdaHSI7bPUr.jpg",
+      "release_date": "2026-01-21",
+      "title": "Return to Silent Hill",
+      "video": false,
+      "vote_average": 5.011,
+      "vote_count": 283
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7HKpc11uQfxnw0Y8tRUYn1fsKqE.jpg",
+      "genre_ids": [
+        878,
+        28,
+        53
+      ],
+      "id": 1236153,
+      "original_language": "en",
+      "original_title": "Mercy",
+      "overview": "",
+      "popularity": 121.6332,
+      "poster_path": "/htmc5X2gfIlscCBRkNO8xFIo2l.jpg",
+      "release_date": "2026-01-20",
+      "title": "Mercy",
+      "video": false,
+      "vote_average": 7.083,
+      "vote_count": 777
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1gLFGrxHqQebqLWpISmoFR6XWtJ.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1088434,
+      "original_language": "en",
+      "original_title": "Hellfire",
+      "overview": "",
+      "popularity": 114.773,
+      "poster_path": "/aqSwdbfYqoEVwjNUZYmYOGfCKu6.jpg",
+      "release_date": "2026-02-05",
+      "title": "Hellfire",
+      "video": false,
+      "vote_average": 6.942,
+      "vote_count": 60
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lmns2jlRmATs8OGWKcCkgrbHLM4.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1634301,
+      "original_language": "te",
+      "original_title": "Vanaveera",
+      "overview": "",
+      "popularity": 112.8817,
+      "poster_path": "/oBYExKI8E3bTzQjPkofhpV2EJon.jpg",
+      "release_date": "2026-02-13",
+      "title": "Vanaveera",
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lNYympQM5O6QSInusbyG9eJDIe4.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "",
+      "popularity": 110.9542,
+      "poster_path": "/vJpkOAjW84OZO4CGYKGmHKjVosc.jpg",
+      "release_date": "2025-07-18",
+      "title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 768
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80,
+        9648
+      ],
+      "id": 1168190,
+      "original_language": "en",
+      "original_title": "The Wrecking Crew",
+      "overview": "",
+      "popularity": 110.7653,
+      "poster_path": "/vePk3W1a4sknzK428gUkwKOGf41.jpg",
+      "release_date": "2026-01-28",
+      "title": "The Wrecking Crew",
+      "video": false,
+      "vote_average": 6.884,
+      "vote_count": 808
+    }
+  ],
+  "total_pages": 55772,
+  "total_results": 1115421
+}
