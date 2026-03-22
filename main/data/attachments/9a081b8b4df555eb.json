@@ -1,0 +1,405 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/ibK0sooxQwIeqS9tz4Tj0chyca9.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1058710,
+      "original_language": "en",
+      "original_title": "Bloodline Killer",
+      "overview": "Moira Cole endeavors to rebuild her shattered life after her family's murder at the hands of her deranged and obsessed cousin.",
+      "popularity": 95.1737,
+      "poster_path": "/wHmzCQwBzT6m8wtZdXHOIITn82B.jpg",
+      "release_date": "2024-04-26",
+      "title": "Bloodline Killer",
+      "video": false,
+      "vote_average": 5.848,
+      "vote_count": 46
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lmns2jlRmATs8OGWKcCkgrbHLM4.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1634301,
+      "original_language": "te",
+      "original_title": "Vanaveera",
+      "overview": "A descendant of the Vanara clan is pushed into conflict when a modern-day Ravana seizes his only bike for an election rally. What starts as a petty injustice soon erupts into a fierce fight for self-respect and dignity.",
+      "popularity": 112.8817,
+      "poster_path": "/oBYExKI8E3bTzQjPkofhpV2EJon.jpg",
+      "release_date": "2026-02-13",
+      "title": "Vanaveera",
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tn95fumbkVAgXjOuw9CQOg0aYQz.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "The Shadow's Edge",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 101.8049,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.194,
+      "vote_count": 508
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zTnAnYIn0Iv3cn0ZHlzLhou3ybm.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 96.5823,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.21,
+      "vote_count": 1578
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/owQeDouUZ6wI6f1aTOYEFd511zn.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1582770,
+      "original_language": "hi",
+      "original_title": "धुरंधर: द रिवेंज",
+      "overview": "As rival gangs, corrupt officials and a ruthless Major Iqbal close in, Hamza's mission for his country spirals into a bloody personal war where the line between patriot and monster disappears in the streets of Lyari.",
+      "popularity": 105.5612,
+      "poster_path": "/ov8vrRLZGoXHpYjSY9Vpv1tHJX7.jpg",
+      "release_date": "2026-03-18",
+      "title": "Dhurandhar: The Revenge",
+      "video": false,
+      "vote_average": 7.321,
+      "vote_count": 14
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 91.9218,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.2,
+      "vote_count": 928
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gaKFXcB5J1gz0QqYj8bWIfrPc04.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 86.2381,
+      "poster_path": "/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.701,
+      "vote_count": 2439
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jtO2Mm5X22QmJZH8YyUMmG0ZXOV.jpg",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "id": 1314786,
+      "original_language": "es",
+      "original_title": "Zeta",
+      "overview": "Four Spanish ex-intelligence officers are assassinated simultaneously worldwide. The CNI discovers all participated in the covert \"Operation Ciénaga\" decades ago in Colombia. Zeta, the CNI's best operative, must hunt and protect the sole survivor, facing his deadliest global mission yet. Top Colombian agent Alfa will join Zeta, seemingly knowing more about \"Ciénaga\"'s secrets than him.",
+      "popularity": 83.7732,
+      "poster_path": "/1cKLG9KMoCjsgFB8Nw1EuglteVi.jpg",
+      "release_date": "2026-03-20",
+      "title": "Agent Zeta",
+      "video": false,
+      "vote_average": 6.667,
+      "vote_count": 24
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/f3ugXLa0w4x3cVVNodBPB6HDmSk.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53
+      ],
+      "id": 10538,
+      "original_language": "en",
+      "original_title": "Passenger 57",
+      "overview": "Airline security specialist John Cutter, finally returning to the job after his wife's death, finds himself stuck on a flight being hijacked by notorious terrorist Charles Rane. Unfortunately for the terrorists, they're also stuck with him.",
+      "popularity": 88.9444,
+      "poster_path": "/4VBN8pQxGHjeZWcNv1V1xSw0OKC.jpg",
+      "release_date": "1992-11-06",
+      "title": "Passenger 57",
+      "video": false,
+      "vote_average": 5.996,
+      "vote_count": 1093
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3eOINbgRs8WiWfQfViXeuZ3enrs.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 1003596,
+      "original_language": "en",
+      "original_title": "Avengers: Doomsday",
+      "overview": "The Avengers, Wakandans, Fantastic Four, Thunderbolts, and X-Men all fight against Doctor Doom. Plot TBA.",
+      "popularity": 85.9475,
+      "poster_path": "/8HkIe2i4ScpCkcX9SzZ9IPasqWV.jpg",
+      "release_date": "2026-12-16",
+      "title": "Avengers: Doomsday",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3Vq8otoGevbhcZAKY2devVbPs6L.jpg",
+      "genre_ids": [
+        27,
+        35,
+        12
+      ],
+      "id": 1381216,
+      "original_language": "en",
+      "original_title": "Lake Jesup: Bonecrusher's Revenge",
+      "overview": "In 2003, Lake Jesup became the stage for a real-life horror story, as a monstrous alligator escaped from captivity and began a reign of terror. As the body count rose, a desperate hunt ensued to stop the creature.",
+      "popularity": 99.1946,
+      "poster_path": "/wm8vkpJmY7UbUXME8lXkxqIalX6.jpg",
+      "release_date": "2024-05-01",
+      "title": "Lake Jesup: Bonecrusher's Revenge",
+      "video": false,
+      "vote_average": 6.381,
+      "vote_count": 21
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4GbCLy8uia4nwc39CHOT0XHjnpY.jpg",
+      "genre_ids": [
+        878
+      ],
+      "id": 328595,
+      "original_language": "en",
+      "original_title": "Parallels",
+      "overview": "An underground MMA fighter must confront his sister and his past in an adventure through parallel universes",
+      "popularity": 86.8137,
+      "poster_path": "/fqUallsX9KSSey1tw7AbujlOmOa.jpg",
+      "release_date": "2015-03-01",
+      "title": "Parallels",
+      "video": false,
+      "vote_average": 6.021,
+      "vote_count": 387
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jenQoCLJ4FEfFGZS13op91jlxjy.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 969681,
+      "original_language": "en",
+      "original_title": "Spider-Man: Brand New Day",
+      "overview": "Four years have passed since the events of No Way Home, and Peter is now an adult living entirely alone, having voluntarily erased himself from the lives and memories of those he loves. Crime-fighting in a New York that no longer knows his name, he's devoted himself entirely to protecting his city — a full-time Spider-Man — but as the demands on him intensify, the pressure sparks a surprising physical evolution that threatens his existence, even as a strange new pattern of crimes gives rise to one of the most powerful threats he has ever faced.",
+      "popularity": 77.2251,
+      "poster_path": "/ucQ0QBXXQPSxeUmWfh4YQenIuB9.jpg",
+      "release_date": "2026-07-29",
+      "title": "Spider-Man: Brand New Day",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/swxhEJsAWms6X1fDZ4HdbvYBSf9.jpg",
+      "genre_ids": [
+        12,
+        35,
+        27
+      ],
+      "id": 1234731,
+      "original_language": "en",
+      "original_title": "Anaconda",
+      "overview": "A group of friends facing mid-life crises head to the rainforest with the intention of remaking their favorite movie from their youth, only to find themselves in a fight for their lives against natural disasters, giant snakes and violent criminals.",
+      "popularity": 81.5017,
+      "poster_path": "/hBxN6dwrANN1ic3a4G9x6JZcR3C.jpg",
+      "release_date": "2025-12-24",
+      "title": "Anaconda",
+      "video": false,
+      "vote_average": 5.872,
+      "vote_count": 819
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "id": 278,
+      "original_language": "en",
+      "original_title": "The Shawshank Redemption",
+      "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+      "popularity": 56.6955,
+      "poster_path": "/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+      "release_date": "1994-09-23",
+      "title": "The Shawshank Redemption",
+      "video": false,
+      "vote_average": 8.717,
+      "vote_count": 29958
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/f0oDdvbzZ1qjfggotV1aniJmd6b.jpg",
+      "genre_ids": [
+        14,
+        35,
+        27
+      ],
+      "id": 991708,
+      "original_language": "es",
+      "original_title": "El Conde",
+      "overview": "After living for over two centuries, Augusto Pinochet is a vampire ready to die… but the vultures around him won't let him go without one last bite.",
+      "popularity": 49.9651,
+      "poster_path": "/5tcbdLbMzYEMBeJwf5PWcgUnmVa.jpg",
+      "release_date": "2023-09-07",
+      "title": "El Conde",
+      "video": false,
+      "vote_average": 6.157,
+      "vote_count": 338
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rakS8RAhKOMIplBi4RbluQg4Xqn.jpg",
+      "genre_ids": [
+        27,
+        18,
+        878,
+        53
+      ],
+      "id": 1284460,
+      "original_language": "fr",
+      "original_title": "Alpha",
+      "overview": "Alpha, a troubled 13-year-old lives with her single mom. Their world collapses the day she returns from school with a tattoo on her arm.",
+      "popularity": 56.6861,
+      "poster_path": "/iE3P4LFSJCBX5PRWxbPs7DQh7yI.jpg",
+      "release_date": "2025-08-20",
+      "title": "Alpha",
+      "video": false,
+      "vote_average": 6.354,
+      "vote_count": 99
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qyheW3m6KPumuI5jiopNJcdFWLb.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80,
+        18
+      ],
+      "id": 337170,
+      "original_language": "en",
+      "original_title": "American Made",
+      "overview": "The true story of pilot Barry Seal, who transported contraband for the CIA and the Medellin cartel in the 1980s.",
+      "popularity": 49.5191,
+      "poster_path": "/23ILgoPSO5ShKcTZOuiTVfqFAUB.jpg",
+      "release_date": "2017-08-18",
+      "title": "American Made",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 4904
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2OHa6ukEq3Hce7Pc2kvu8wkmMFY.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53,
+        80,
+        18
+      ],
+      "id": 7451,
+      "original_language": "en",
+      "original_title": "xXx",
+      "overview": "Xander Cage is your standard adrenaline junkie with no fear and a lousy attitude. When the US Government \"recruits\" him to go on a mission, he's not exactly thrilled. His mission: to gather information on an organization that may just be planning the destruction of the world, led by the nihilistic Yorgi.",
+      "popularity": 70.7233,
+      "poster_path": "/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg",
+      "release_date": "2002-08-09",
+      "title": "xXx",
+      "video": false,
+      "vote_average": 5.98,
+      "vote_count": 4823
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oN4TQ1TxchynXlFiXFBL3NHLT54.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        18
+      ],
+      "id": 1167307,
+      "original_language": "en",
+      "original_title": "David",
+      "overview": "From the songs of his mother’s heart to the whispers of a faithful God, David’s story begins in quiet devotion. When the giant Goliath rises to terrorize a nation, a young shepherd armed with only a sling, a few stones, and unshakable faith steps forward. Pursued by power and driven by purpose, his journey tests the limits of loyalty, love, and courage—culminating in a battle not just for a crown, but for the soul of a kingdom.",
+      "popularity": 67.0937,
+      "poster_path": "/7lFG1WrCwAxBfyGK8ahlBVzXno7.jpg",
+      "release_date": "2025-12-14",
+      "title": "David",
+      "video": false,
+      "vote_average": 8.1,
+      "vote_count": 109
+    }
+  ],
+  "total_pages": 55767,
+  "total_results": 1115338
+}
