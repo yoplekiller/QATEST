@@ -6,6 +6,7 @@ import pytest
 @allure.feature("영화 상세 정보 API 테스트")
 @allure.story("영화 비디오 정보 테스트")
 @allure.title("영화 ID {movie_id}의 비디오 정보 테스트")
+# TC: TC-API-020 (SC-API-002)
 def test_movie_videos(api_env, send_get_request, attach_response):
 
     API_KEY = api_env.api_key

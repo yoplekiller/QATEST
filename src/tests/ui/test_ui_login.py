@@ -22,6 +22,7 @@ class TestLogin:
 
     **예상 결과:** 로그인 실패 메시지가 화면에 표시됨
     """)
+    # TC: TC-UI-010 (SC-UI-009)
     def test_login_with_invalid_credentials(self, kurly_login_page, test_credentials_invalid):
         """
         잘못된 계정 정보로 로그인 시도 시 실패하는지 확인
@@ -62,6 +63,7 @@ class TestLogin:
     4. 로그인 버튼 클릭
     5. 에러 메시지 또는 유효성 검사 메시지 표시 확인
     """)
+    # TC: TC-UI-014 (SC-UI-009)
     def test_login_with_empty_credentials(self, kurly_login_page):
         """
         빈 계정 정보로 로그인 시도 시 실패하는지 확인
@@ -93,6 +95,7 @@ class TestLogin:
     - 비밀번호 입력 필드
     - 로그인 버튼
     """)
+    # TC: TC-UI-013 (SC-UI-009)
     def test_login_page_elements_displayed(self, kurly_login_page):
         """
         로그인 페이지의 필수 요소들이 화면에 표시되는지 확인

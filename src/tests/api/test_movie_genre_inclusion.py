@@ -7,6 +7,7 @@ from utils.data_loader import load_genre_test_data
 @allure.story("영화 장르 포함 여부 테스트")
 @allure.title("영화 ID {movie_id}의 장르 포함 여부 테스트")
 @pytest.mark.parametrize(["movie_id", "expected_genres"], load_genre_test_data())
+# TC: TC-API-014 (SC-API-002)
 def test_movie_genre_inclusion(movie_id, expected_genres, send_get_request, allure_attach_response, api_env):
     """특정 영화의 상세 정보에서 장르 포함 여부 테스트"""
     API_KEY =  api_env.api_key

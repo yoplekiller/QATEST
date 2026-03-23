@@ -8,6 +8,7 @@ import pytest
 class TestErrorHandling:
               
     @allure.title("존재하지 않는 영화 ID로 조회 시 404 반환")
+    # TC: TC-API-005 (SC-API-005)
     def test_movie_not_found(self, api_env, send_get_request_no_raise, attach_response):
 
         API_KEY = api_env.api_key
@@ -26,6 +27,7 @@ class TestErrorHandling:
             assert data["status_message"] == "The resource you requested could not be found.", "상세 오류 메시지가 일치하지 않습니다"
 
     @allure.title("빈 API 키로 요청 시 401 반환")
+    # TC: TC-API-006 (SC-API-006)
     def test_empty_api_key(self, send_get_request_no_raise, attach_response):
         endpoint = "/movie/popular"
 
@@ -36,6 +38,7 @@ class TestErrorHandling:
             attach_response(response)
 
     @allure.title("API 키  누락 시 401 반환")
+    # TC: TC-API-006 (SC-API-006)
     def test_missing_api_key(self, send_get_request_no_raise, attach_response):
         endpoint = "/movie/popular"
 
@@ -46,6 +49,7 @@ class TestErrorHandling:
         attach_response(response)
 
     @allure.title("잘못된 API 키로 요청 시 401 반환")
+    # TC: TC-API-001 (SC-API-001)
     def test_invalid_api_key(self, send_get_request_no_raise, attach_response):
         endpoint = "/movie/popular"
         with allure.step("잘못된 API 키로 요청 전송"):
@@ -55,6 +59,7 @@ class TestErrorHandling:
             attach_response(response)
 
     @allure.title("빈 검색어로 검색 시 빈 결과 반환")
+    # TC: TC-API-010 (SC-API-007)
     def test_empty_search_query(self, api_env, send_get_request_no_raise, attach_response):
         API_KEY = api_env.api_key
         endpoint = "/search/movie"
@@ -71,6 +76,7 @@ class TestErrorHandling:
 
             
     @allure.title("잘못된 페이지 번호로 요청 시 422 반환")
+    # TC: TC-API-011 (SC-API-008)
     def test_invalid_page_number(self, api_env, send_get_request_no_raise, attach_response):
         API_KEY = api_env.api_key
         endpoint = "/movie/popular"
@@ -81,6 +87,7 @@ class TestErrorHandling:
             attach_response(response)
 
     @allure.title("잘못된 언어 코드로 요청 시 기본값 반환")
+    # TC: TC-API-012 (SC-API-007)
     def test_invalid_language_code(self, api_env, send_get_request, attach_response):
         API_KEY = api_env.api_key
         endpoint = "/movie/popular"
@@ -92,6 +99,7 @@ class TestErrorHandling:
             attach_response(response)
 
     @allure.title("존재하지 않는 엔드포인트로 요청 시 404 반환")
+    # TC: TC-API-013 (SC-API-005)
     def test_nonexistent_endpoint(self, api_env, send_get_request_no_raise, attach_response):
         API_KEY = api_env.api_key
         endpoint = "/movie/nonexistent_endpoint"

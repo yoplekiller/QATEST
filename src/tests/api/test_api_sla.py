@@ -13,6 +13,7 @@ SLA_SECONDS = 2
     "/movie/popular",
     "/genre/movie/list"
 ])
+# TC: TC-API-009 (SC-API-008)
 def test_api_sla(api_env, send_get_request, endpoint):
 
 

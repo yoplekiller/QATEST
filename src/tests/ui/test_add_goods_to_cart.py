@@ -6,6 +6,7 @@ import time
 @allure.feature("장바구니 기능")
 @allure.story("상품 추가 플로우")
 @allure.title("상품을 장바구니에 추가하는 전체 플로우 테스트")
+# TC: TC-UI-020, TC-UI-021, TC-UI-022, TC-UI-024 (SC-UI-013)
 def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_login_page, test_credentials):
     """
     상품을 장바구니에 추가하는 전체 플로우 테스트

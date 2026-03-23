@@ -29,6 +29,7 @@ class TestSearch:
     **예상 결과:** 검색어와 관련된 상품이 1개 이상 표시됨
     """)
     @pytest.mark.parametrize("keyword", ["사과", "우유", "계란"])
+    # TC: TC-UI-001 (SC-UI-001) | TC-UI-006 (SC-UI-014)
     def test_search_valid_keyword(self, kurly_main_page, kurly_search_page, keyword):
         """
         유효한 검색어로 검색 시 결과가 표시되는지 확인
@@ -106,6 +107,7 @@ class TestSearch:
 
     **예상 결과:** 상품 상세 페이지로 정상 이동
     """)
+    # TC: TC-UI-009 (SC-UI-001)
     def test_search_and_click_first_result(self, kurly_main_page, kurly_search_page, kurly_goods_page):
         """
         검색 후 첫 번째 결과를 클릭하여 상세 페이지로 이동
@@ -142,6 +144,7 @@ class TestSearch:
     **예상 결과:** 에러 없이 검색이 수행되며, 결과가 있거나 "결과 없음" 메시지 표시
     """)
     @pytest.mark.parametrize("keyword", ["<script>", "' OR 1=1--", "사과!@#"])
+    # TC: TC-UI-008 (SC-UI-005)
     def test_search_with_special_characters(self, kurly_main_page, kurly_search_page, keyword):
         """
         특수문자를 포함한 검색어 처리 확인

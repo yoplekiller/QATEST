@@ -20,6 +20,7 @@ class TestCart:
 
     **예상 결과:** 장바구니 페이지로 정상 이동
     """)
+    # TC: TC-UI-023 (SC-UI-007)
     def test_cart_page_access(self, kurly_main_page, kurly_cart_page):
         """
         장바구니 버튼 클릭 시 장바구니 페이지로 이동하는지 확인

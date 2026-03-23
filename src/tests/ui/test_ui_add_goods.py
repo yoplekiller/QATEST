@@ -27,6 +27,7 @@ class TestAddGoods:
 
     **예상 결과:** 상품이 장바구니에 정상적으로 담김
     """)
+    # TC: TC-UI-020, TC-UI-021, TC-UI-022, TC-UI-024 (SC-UI-012)
     def test_add_goods_to_cart(self, kurly_main_page, kurly_search_page):
         """
         상품 검색 후 장바구니에 추가하는 전체 플로우 테스트
@@ -49,6 +50,7 @@ class TestAddGoods:
 
         with allure.step("장바구니에 담기"):
             kurly_search_page.add_to_cart_in_alt()
+            
         # Then: 검색 결과 및 추가 성공 확인
         with allure.step("결과 확인"):
             kurly_search_page.take_screenshot("상품_추가_완료")

@@ -7,6 +7,7 @@ import pytest
 @allure.feature("영화 목록 API 테스트")
 @allure.story("인기 영화 조회")
 @allure.title("인기 영화 목록 조회 - 200 응답 확인")
+# TC: TC-API-003 (SC-API-003)
 def test_get_popular_movies(api_env, send_get_request, attach_response):
 
     API_KEY = api_env.api_key

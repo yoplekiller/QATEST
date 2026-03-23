@@ -12,6 +12,7 @@ import pytest
 @allure.story("상품 정렬")
 @allure.severity(allure.severity_level.NORMAL)
 @pytest.mark.parametrize("sort_type", ["recommend", "new", "low_price", "high_price"])
+# TC: TC-UI-029 (SC-UI-008) | TC-UI-030 (recommend) | TC-UI-031 (new) | TC-UI-032 (low_price) | TC-UI-033 (high_price) | TC-UI-034 (판매량순) | TC-UI-035 (혜택순)
 def test_all_sort_options(sort_type, kurly_main_page, kurly_search_page):
     """
     검색 결과에서 모든 정렬 옵션이 정상 동작하는지 확인

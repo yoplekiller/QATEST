@@ -24,6 +24,7 @@ class TestQuantity:
 
     **예상 결과:** 수량이 올바르게 조절됨 (최종 수량: 2)
     """)
+    # TC: TC-UI-021, TC-UI-022 (SC-UI-012)
     def test_quantity_buttons(self, kurly_main_page, kurly_search_page):
         """
         수량 증가/감소 버튼이 정상 작동하는지 확인

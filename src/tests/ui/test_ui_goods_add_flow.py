@@ -27,6 +27,7 @@ class TestGoodAddFlow:
 
     **예상 결과:** 전체 플로우가 성공적으로 완료됨
     """)
+    # TC: TC-UI-020, TC-UI-021, TC-UI-022, TC-UI-024 (SC-UI-013)
     def test_full_good_add_flow(self, kurly_login_page, kurly_main_page, kurly_search_page, kurly_cart_page, test_credentials):
         """
         로그인 → 상품 검색 → 장바구니 추가 전체 플로우 테스트

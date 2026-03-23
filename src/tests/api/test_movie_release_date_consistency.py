@@ -9,6 +9,7 @@ from utils.data_loader import load_movie_test_data
 @allure.story("영화 개봉일 일관성 테스트")
 @allure.title("영화 ID {movie_id}의 개봉일 일관성 테스트")
 @pytest.mark.parametrize(["movie_id", "expected_title"], load_movie_test_data())
+# TC: TC-API-019 (SC-API-002)
 def test_movie_release_date_consistency(movie_id, expected_title, api_env, send_get_request, attach_response):
     
     API_KEY = api_env.api_key

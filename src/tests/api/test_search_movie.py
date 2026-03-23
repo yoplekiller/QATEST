@@ -6,6 +6,7 @@ import pytest
 @allure.feature("영화 목록 API 테스트")
 @allure.story("영화 검색 기능 테스트")
 @allure.title("영화 검색 기능이 잘 동작 하는지 확인")
+# TC: TC-API-004 (SC-API-004)
 def test_search_movie(api_env, send_get_request, attach_response):
 
     API_KEY = api_env.api_key

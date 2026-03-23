@@ -12,6 +12,7 @@ class TestCartManagement:
    
     @allure.title("여러 상품을 장바구니에 담기")
     @allure.description("여러 상품을 장바구니에 담고 모두 장바구니에 있는지 확인")
+    # TC: TC-UI-025 (SC-UI-012)
     def test_add_multiple_items_to_cart(self, kurly_main_page, kurly_search_page, kurly_cart_page):
           """여러 상품을 장바구니에 담는 테스트"""
 
@@ -62,6 +63,7 @@ class TestCartManagement:
 
     @allure.title("장바구니에서 상품 삭제")
     @allure.description("장바구니에 담긴 상품을 삭제하고 개수가 줄어드는지 확인")
+    # TC: TC-UI-026 (SC-UI-012)
     def test_remove_item_from_cart(self, kurly_main_page, kurly_search_page, kurly_cart_page):
         """장바구니에서 상품 삭제 기능 테스트"""
 

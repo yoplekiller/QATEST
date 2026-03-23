@@ -7,6 +7,7 @@ import pytest
 @allure.feature("UI 테스트")
 @allure.story("검색 실패 케이스")
 @allure.title("잘못된 검색어로 검색 시 '검색 결과가 없습니다' 메시지 확인 테스트")
+# TC: TC-UI-003 (SC-UI-005)
 def test_search_invalid_good(kurly_main_page, kurly_search_page):
     """
     빈 검색어로 검색 시 '검색 결과가 없습니다' 메시지 확인 테스트
