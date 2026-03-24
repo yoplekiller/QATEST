@@ -1,0 +1,395 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80,
+        9648
+      ],
+      "id": 1168190,
+      "original_language": "en",
+      "original_title": "The Wrecking Crew",
+      "overview": "Estranged half-brothers Jonny and James reunite after their father's mysterious death. As they search for the truth, buried secrets reveal a conspiracy threatening to tear their family apart.",
+      "popularity": 118.428,
+      "poster_path": "/gbVwHl4YPSq6BcC92TQpe7qUTh6.jpg",
+      "release_date": "2026-01-28",
+      "title": "The Wrecking Crew",
+      "video": false,
+      "vote_average": 6.879,
+      "vote_count": 813
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zpEWFNqoN8Qg1SzMMHmaGyOBTdW.jpg",
+      "genre_ids": [
+        53,
+        80,
+        35
+      ],
+      "id": 1054867,
+      "original_language": "en",
+      "original_title": "One Battle After Another",
+      "overview": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+      "popularity": 116.1629,
+      "poster_path": "/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+      "release_date": "2025-09-23",
+      "title": "One Battle After Another",
+      "video": false,
+      "vote_average": 7.388,
+      "vote_count": 3253
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tn95fumbkVAgXjOuw9CQOg0aYQz.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "The Shadow's Edge",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 109.8227,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.212,
+      "vote_count": 517
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zTnAnYIn0Iv3cn0ZHlzLhou3ybm.jpg",
+      "genre_ids": [
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 104.7055,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.214,
+      "vote_count": 1589
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+      "genre_ids": [
+        27,
+        28,
+        53
+      ],
+      "id": 1233413,
+      "original_language": "en",
+      "original_title": "Sinners",
+      "overview": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+      "popularity": 98.9029,
+      "poster_path": "/705nQHqe4JGdEisrQmVYmXyjs1U.jpg",
+      "release_date": "2025-04-16",
+      "title": "Sinners",
+      "video": false,
+      "vote_average": 7.467,
+      "vote_count": 4130
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jtO2Mm5X22QmJZH8YyUMmG0ZXOV.jpg",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "id": 1314786,
+      "original_language": "es",
+      "original_title": "Zeta",
+      "overview": "Four Spanish ex-intelligence officers are assassinated simultaneously worldwide. The CNI discovers all participated in the covert \"Operation Ciénaga\" decades ago in Colombia. Zeta, the CNI's best operative, must hunt and protect the sole survivor, facing his deadliest global mission yet. Top Colombian agent Alfa will join Zeta, seemingly knowing more about \"Ciénaga\"'s secrets than him.",
+      "popularity": 98.7295,
+      "poster_path": "/1cKLG9KMoCjsgFB8Nw1EuglteVi.jpg",
+      "release_date": "2026-03-20",
+      "title": "Agent Zeta",
+      "video": false,
+      "vote_average": 6.775,
+      "vote_count": 40
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ibK0sooxQwIeqS9tz4Tj0chyca9.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1058710,
+      "original_language": "en",
+      "original_title": "Bloodline Killer",
+      "overview": "Moira Cole endeavors to rebuild her shattered life after her family's murder at the hands of her deranged and obsessed cousin.",
+      "popularity": 96.9951,
+      "poster_path": "/wHmzCQwBzT6m8wtZdXHOIITn82B.jpg",
+      "release_date": "2024-04-26",
+      "title": "Bloodline Killer",
+      "video": false,
+      "vote_average": 5.809,
+      "vote_count": 47
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 96.9477,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.16,
+      "vote_count": 930
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lZ3vcm5HtPX8BeHs4axZABJrYJa.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1426297,
+      "original_language": "es",
+      "original_title": "Hazte la muerta",
+      "overview": "A woman wakes up injured in a basement surrounded by corpses. To survive, she pretends to be dead while a grotesque ritual unfolds in the house above.",
+      "popularity": 95.2888,
+      "poster_path": "/ixWeYfvXT9AbfM0QPb9kwbVLbLV.jpg",
+      "release_date": "2025-03-29",
+      "title": "Play Dead",
+      "video": false,
+      "vote_average": 5.827,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/82lM4GJ9uuNvNDOEpxFy77uv4Ak.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 92.8452,
+      "poster_path": "/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.694,
+      "vote_count": 2459
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/swxhEJsAWms6X1fDZ4HdbvYBSf9.jpg",
+      "genre_ids": [
+        12,
+        35,
+        27
+      ],
+      "id": 1234731,
+      "original_language": "en",
+      "original_title": "Anaconda",
+      "overview": "A group of friends facing mid-life crises head to the rainforest with the intention of remaking their favorite movie from their youth, only to find themselves in a fight for their lives against natural disasters, giant snakes and violent criminals.",
+      "popularity": 91.3591,
+      "poster_path": "/hBxN6dwrANN1ic3a4G9x6JZcR3C.jpg",
+      "release_date": "2025-12-24",
+      "title": "Anaconda",
+      "video": false,
+      "vote_average": 5.877,
+      "vote_count": 828
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wy4yQpONIh1e5qyvi0j7a9ha8Kp.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 14671,
+      "original_language": "en",
+      "original_title": "Summer School",
+      "overview": "A high-school gym teacher has big plans for the summer, but is forced to cancel them to teach a \"bonehead\" English class for misfit goof-off students. Fortunately, his unconventional brand of teaching fun field trips begins to connect with them, and even inspires ardor in some.",
+      "popularity": 87.2738,
+      "poster_path": "/s1Ad6q0XnVS6u1yoaYghHw5dskv.jpg",
+      "release_date": "1987-07-22",
+      "title": "Summer School",
+      "video": false,
+      "vote_average": 6.36,
+      "vote_count": 272
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gz0egUOuOk9EWQEMaFUvKewDKU0.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1367763,
+      "original_language": "en",
+      "original_title": "Lilly Lives Alone",
+      "overview": "Guided by the ghost of her daughter, a guilt-ridden mother plunges into madness through the course of drug-fueled fever dream.",
+      "popularity": 87.093,
+      "poster_path": "/w6aIZIGNlGqTvfRaRG1p2FlBXJl.jpg",
+      "release_date": "2025-08-22",
+      "title": "Lilly Lives Alone",
+      "video": false,
+      "vote_average": 4.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wlmkOvDesGlhXZF8TXwEihHtlWW.jpg",
+      "genre_ids": [
+        10770,
+        9648
+      ],
+      "id": 746467,
+      "original_language": "en",
+      "original_title": "USS Christmas",
+      "overview": "Maddie, a reporter for a Norfolk newspaper, embarks on a Tiger Cruise during Christmastime where she meets a handsome naval officer and stumbles upon a mystery in the ship’s archive room.",
+      "popularity": 84.5959,
+      "poster_path": "/kio6inuU0xXbtacJE5NgPYDedlf.jpg",
+      "release_date": "2020-11-28",
+      "title": "USS Christmas",
+      "video": false,
+      "vote_average": 6.784,
+      "vote_count": 44
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2OHa6ukEq3Hce7Pc2kvu8wkmMFY.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53,
+        80,
+        18
+      ],
+      "id": 7451,
+      "original_language": "en",
+      "original_title": "xXx",
+      "overview": "Xander Cage is your standard adrenaline junkie with no fear and a lousy attitude. When the US Government \"recruits\" him to go on a mission, he's not exactly thrilled. His mission: to gather information on an organization that may just be planning the destruction of the world, led by the nihilistic Yorgi.",
+      "popularity": 77.2199,
+      "poster_path": "/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg",
+      "release_date": "2002-08-09",
+      "title": "xXx",
+      "video": false,
+      "vote_average": 5.98,
+      "vote_count": 4826
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jenQoCLJ4FEfFGZS13op91jlxjy.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 969681,
+      "original_language": "en",
+      "original_title": "Spider-Man: Brand New Day",
+      "overview": "Four years have passed since the events of No Way Home, and Peter is now an adult living entirely alone, having voluntarily erased himself from the lives and memories of those he loves. Crime-fighting in a New York that no longer knows his name, he's devoted himself entirely to protecting his city — a full-time Spider-Man — but as the demands on him intensify, the pressure sparks a surprising physical evolution that threatens his existence, even as a strange new pattern of crimes gives rise to one of the most powerful threats he has ever faced.",
+      "popularity": 76.6971,
+      "poster_path": "/ucQ0QBXXQPSxeUmWfh4YQenIuB9.jpg",
+      "release_date": "2026-07-29",
+      "title": "Spider-Man: Brand New Day",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yzIjyPtwvyjHelxqIRXGpiaucPG.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1572073,
+      "original_language": "en",
+      "original_title": "The Deadly Little Mermaid",
+      "overview": "Some secrets are better left at the bottom of the ocean. Once she's in your house, there is no escape. When a struggling artist pulls a beautiful, unconscious woman from the freezing coastal waters, he thinks he’s performed a miracle. But as she recovers within the walls of his secluded home, a series of unsettling events leads him to a terrifying realization: her presence is no coincidence. She is inextricably linked to the same watery grave that claimed his family years ago.",
+      "popularity": 74.489,
+      "poster_path": "/uye25uG7k8r3NNPLyPiKOiRnFRF.jpg",
+      "release_date": "2026-03-06",
+      "title": "The Deadly Little Mermaid",
+      "video": false,
+      "vote_average": 5.067,
+      "vote_count": 15
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sukQ2u7ebigO0AvLJrTbji5Rfmx.jpg",
+      "genre_ids": [
+        878
+      ],
+      "id": 411135,
+      "original_language": "en",
+      "original_title": "Future World",
+      "overview": "A young boy searches a future world wasteland for a rumored cure for his dying mother.",
+      "popularity": 74.2977,
+      "poster_path": "/kMA0IalnEEa0PaHRUzzjpTu5xXQ.jpg",
+      "release_date": "2018-05-25",
+      "title": "Future World",
+      "video": false,
+      "vote_average": 4.306,
+      "vote_count": 276
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        16
+      ],
+      "id": 727190,
+      "original_language": "en",
+      "original_title": "Slumberland Express",
+      "overview": "Oswald the Rabbit and his little brother catch the Slumberland Express and it carries the assorted animals to childhood's dream of paradise - an amusement park where all the games are free, and windows are provided just to be broken by an abundant supply of free rocks, and old men wear silk hats to provide targets for snowballs. But Oswald's little brother wanders into Nightmare Land where terror reigns; the soap and comb and brush and toothpaste that plague a child's existence come to life.",
+      "popularity": 72.9195,
+      "poster_path": "/25XlcHC3LkBHCVmdabYUqpCVKul.jpg",
+      "release_date": "1936-03-09",
+      "title": "Slumberland Express",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oN4TQ1TxchynXlFiXFBL3NHLT54.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        18
+      ],
+      "id": 1167307,
+      "original_language": "en",
+      "original_title": "David",
+      "overview": "From the songs of his mother’s heart to the whispers of a faithful God, David’s story begins in quiet devotion. When the giant Goliath rises to terrorize a nation, a young shepherd armed with only a sling, a few stones, and unshakable faith steps forward. Pursued by power and driven by purpose, his journey tests the limits of loyalty, love, and courage—culminating in a battle not just for a crown, but for the soul of a kingdom.",
+      "popularity": 72.7995,
+      "poster_path": "/7lFG1WrCwAxBfyGK8ahlBVzXno7.jpg",
+      "release_date": "2025-12-14",
+      "title": "David",
+      "video": false,
+      "vote_average": 8.1,
+      "vote_count": 109
+    }
+  ],
+  "total_pages": 55793,
+  "total_results": 1115842
+}
