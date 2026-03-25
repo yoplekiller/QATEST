@@ -1,0 +1,403 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/1fkuBPid72KGS6WmtkEXMftZtkE.jpg",
+      "genre_ids": [
+        80,
+        18
+      ],
+      "id": 875828,
+      "original_language": "en",
+      "original_title": "Peaky Blinders: The Immortal Man",
+      "overview": "After his estranged son gets embroiled in a Nazi plot, self-exiled gangster Tommy Shelby must return to Birmingham to save his family — and his nation.",
+      "popularity": 354.7335,
+      "poster_path": "/gRMalasZEzsZi4w2VFuYusfSfqf.jpg",
+      "release_date": "2026-03-05",
+      "title": "Peaky Blinders: The Immortal Man",
+      "video": false,
+      "vote_average": 7.46,
+      "vote_count": 383
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qL4dBGLkWOVP5vImN7EEoqJQYd8.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
+      "popularity": 318.4081,
+      "poster_path": "/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "release_date": "2026-03-15",
+      "title": "Project Hail Mary",
+      "video": false,
+      "vote_average": 8.178,
+      "vote_count": 450
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6yeVcxFR0j08vlv2OlL6zbewm4D.jpg",
+      "genre_ids": [
+        28,
+        878,
+        53
+      ],
+      "id": 1265609,
+      "original_language": "en",
+      "original_title": "War Machine",
+      "overview": "On one last grueling mission during Army Ranger training, a combat engineer must lead his unit in a fight against a giant otherworldly killing machine.",
+      "popularity": 309.9162,
+      "poster_path": "/tlPgDzwIE7VYYIIAGCTUOnN4wI1.jpg",
+      "release_date": "2026-02-12",
+      "title": "War Machine",
+      "video": false,
+      "vote_average": 7.27,
+      "vote_count": 1132
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sdZSjtGUTSN8B3al5o0f2WoQfQQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 322.8645,
+      "poster_path": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+      "release_date": "2025-12-17",
+      "title": "Avatar: Fire and Ash",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 1924
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hz7TdCrpLLt2Dz7S3PS2HG9rpAO.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        80
+      ],
+      "id": 1159559,
+      "original_language": "en",
+      "original_title": "Scream 7",
+      "overview": "When a new Ghostface killer emerges in the quiet town where Sidney Prescott has built a new life, her darkest fears are realized as her daughter becomes the next target. Determined to protect her family, Sidney must face the horrors of her past to put an end to the bloodshed once and for all.",
+      "popularity": 312.7549,
+      "poster_path": "/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
+      "release_date": "2026-02-25",
+      "title": "Scream 7",
+      "video": false,
+      "vote_average": 5.841,
+      "vote_count": 440
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nHxWyy18SvAZ8jJeemtS8k1UNjM.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1290821,
+      "original_language": "en",
+      "original_title": "Shelter",
+      "overview": "A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.",
+      "popularity": 313.4164,
+      "poster_path": "/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
+      "release_date": "2026-01-28",
+      "title": "Shelter",
+      "video": false,
+      "vote_average": 6.681,
+      "vote_count": 378
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/52AkwEfQiJl2HuTPMZ2yC5Bdr9I.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 1171145,
+      "original_language": "en",
+      "original_title": "Crime 101",
+      "overview": "When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of this being his final job, his path collides with a disillusioned insurance broker who is facing her own crossroads. Determined to crack the case, a relentless detective closes in on the operation, raising the stakes even higher.",
+      "popularity": 264.0752,
+      "poster_path": "/heMdO64ys1hR896YE2jvTv8JlBX.jpg",
+      "release_date": "2026-02-11",
+      "title": "Crime 101",
+      "video": false,
+      "vote_average": 7.019,
+      "vote_count": 209
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "original_language": "ru",
+      "original_title": "Твое сердце будет разбито",
+      "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
+      "popularity": 222.2706,
+      "poster_path": "/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
+      "release_date": "2026-03-26",
+      "title": "Your Heart Will Be Broken",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wns4x1GyxCudgOZRyhXKjXVJf3T.jpg",
+      "genre_ids": [
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "Having found the safety of the Greenland bunker after the comet Clarke decimated the Earth, the Garrity family must now risk everything to embark on a perilous journey across the wasteland of Europe to find a new home.",
+      "popularity": 204.4447,
+      "poster_path": "/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg",
+      "release_date": "2026-01-07",
+      "title": "Greenland 2: Migration",
+      "video": false,
+      "vote_average": 6.385,
+      "vote_count": 673
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gCmfeKmEAZBP5gcXpiqb0gii9rS.jpg",
+      "genre_ids": [
+        27,
+        53,
+        35
+      ],
+      "id": 1198994,
+      "original_language": "en",
+      "original_title": "Send Help",
+      "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+      "popularity": 184.7958,
+      "poster_path": "/mjkS2iAgWj3ik1DTjvI15nHZ7yl.jpg",
+      "release_date": "2026-01-22",
+      "title": "Send Help",
+      "video": false,
+      "vote_average": 7.045,
+      "vote_count": 451
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+      "genre_ids": [
+        16,
+        35,
+        12,
+        10751,
+        9648
+      ],
+      "id": 1084242,
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 150.4479,
+      "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "release_date": "2025-11-26",
+      "title": "Zootopia 2",
+      "video": false,
+      "vote_average": 7.613,
+      "vote_count": 2318
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yJi6g0CnsqANLNuVaRX28tZxeHX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1193501,
+      "original_language": "en",
+      "original_title": "Whistle",
+      "overview": "A misfit group of unwitting high school students stumble upon a cursed object, an ancient Aztec Death Whistle. They discover that blowing the whistle and the terrifying sound it emits will summon their future deaths to hunt them down.",
+      "popularity": 138.0945,
+      "poster_path": "/eGxPyseSnEZBMJaopGfRUO9HSYx.jpg",
+      "release_date": "2026-01-20",
+      "title": "Whistle",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 176
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nTbO6UF944b0VZrgypMK5rFYRSW.jpg",
+      "genre_ids": [
+        9648,
+        18,
+        27
+      ],
+      "id": 680493,
+      "original_language": "en",
+      "original_title": "Return to Silent Hill",
+      "overview": "When James receives a mysterious letter from his lost love Mary, he is drawn to Silent Hill—a once-familiar town now consumed by darkness. As he searches for her, James faces monstrous creatures and unravels a terrifying truth that will push him to the edge of his sanity.",
+      "popularity": 124.8227,
+      "poster_path": "/fqAGFN2K2kDL0EHxvJaXzaMUkkt.jpg",
+      "release_date": "2026-01-21",
+      "title": "Return to Silent Hill",
+      "video": false,
+      "vote_average": 5.003,
+      "vote_count": 291
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vSQSYd2zZTqc0zmHImwWEGGluMI.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1316092,
+      "original_language": "en",
+      "original_title": "\"Wuthering Heights\"",
+      "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
+      "popularity": 125.5984,
+      "poster_path": "/3YBce6dTh1D5oCMITXk2S5QhPt.jpg",
+      "release_date": "2026-02-11",
+      "title": "\"Wuthering Heights\"",
+      "video": false,
+      "vote_average": 6.367,
+      "vote_count": 556
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3Vq8otoGevbhcZAKY2devVbPs6L.jpg",
+      "genre_ids": [
+        27,
+        35,
+        12
+      ],
+      "id": 1381216,
+      "original_language": "en",
+      "original_title": "Lake Jesup: Bonecrusher's Revenge",
+      "overview": "In 2003, Lake Jesup became the stage for a real-life horror story, as a monstrous alligator escaped from captivity and began a reign of terror. As the body count rose, a desperate hunt ensued to stop the creature.",
+      "popularity": 134.9959,
+      "poster_path": "/1Z1TgGXS1MD4DDfIkBNloM43vvj.jpg",
+      "release_date": "2024-05-01",
+      "title": "Lake Jesup: Bonecrusher's Revenge",
+      "video": false,
+      "vote_average": 6.091,
+      "vote_count": 22
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7HKpc11uQfxnw0Y8tRUYn1fsKqE.jpg",
+      "genre_ids": [
+        878,
+        28,
+        53
+      ],
+      "id": 1236153,
+      "original_language": "en",
+      "original_title": "Mercy",
+      "overview": "In the near future, a detective stands on trial accused of murdering his wife. He has ninety minutes to prove his innocence to the advanced AI Judge he once championed, before it determines his fate.",
+      "popularity": 117.9588,
+      "poster_path": "/pyok1kZJCfyuFapYXzHcy7BLlQa.jpg",
+      "release_date": "2026-01-20",
+      "title": "Mercy",
+      "video": false,
+      "vote_average": 7.069,
+      "vote_count": 831
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/owQeDouUZ6wI6f1aTOYEFd511zn.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1582770,
+      "original_language": "hi",
+      "original_title": "धुरंधर: द रिवेंज",
+      "overview": "As rival gangs, corrupt officials and a ruthless Major Iqbal close in, Hamza's mission for his country spirals into a bloody personal war where the line between patriot and monster disappears in the streets of Lyari.",
+      "popularity": 121.8774,
+      "poster_path": "/m4TCUYg3g9w9v4wQV0AEeLTWo3O.jpg",
+      "release_date": "2026-03-18",
+      "title": "Dhurandhar: The Revenge",
+      "video": false,
+      "vote_average": 7.804,
+      "vote_count": 23
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lmns2jlRmATs8OGWKcCkgrbHLM4.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1634301,
+      "original_language": "te",
+      "original_title": "Vanaveera",
+      "overview": "A descendant of the Vanara clan is pushed into conflict when a modern-day Ravana seizes his only bike for an election rally. What starts as a petty injustice soon erupts into a fierce fight for self-respect and dignity.",
+      "popularity": 118.2943,
+      "poster_path": "/oBYExKI8E3bTzQjPkofhpV2EJon.jpg",
+      "release_date": "2026-02-13",
+      "title": "Vanaveera",
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lNYympQM5O6QSInusbyG9eJDIe4.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 112.3971,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 768
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80,
+        9648
+      ],
+      "id": 1168190,
+      "original_language": "en",
+      "original_title": "The Wrecking Crew",
+      "overview": "Estranged half-brothers Jonny and James reunite after their father's mysterious death. As they search for the truth, buried secrets reveal a conspiracy threatening to tear their family apart.",
+      "popularity": 107.0545,
+      "poster_path": "/gbVwHl4YPSq6BcC92TQpe7qUTh6.jpg",
+      "release_date": "2026-01-28",
+      "title": "The Wrecking Crew",
+      "video": false,
+      "vote_average": 6.882,
+      "vote_count": 825
+    }
+  ],
+  "total_pages": 55823,
+  "total_results": 1116449
+}
