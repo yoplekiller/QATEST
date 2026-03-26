@@ -1,0 +1,396 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80,
+        9648
+      ],
+      "id": 1168190,
+      "original_language": "en",
+      "original_title": "The Wrecking Crew",
+      "overview": "Estranged half-brothers Jonny and James reunite after their father's mysterious death. As they search for the truth, buried secrets reveal a conspiracy threatening to tear their family apart.",
+      "popularity": 103.9216,
+      "poster_path": "/gbVwHl4YPSq6BcC92TQpe7qUTh6.jpg",
+      "release_date": "2026-01-28",
+      "title": "The Wrecking Crew",
+      "video": false,
+      "vote_average": 6.89,
+      "vote_count": 829
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1gLFGrxHqQebqLWpISmoFR6XWtJ.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1088434,
+      "original_language": "en",
+      "original_title": "Hellfire",
+      "overview": "A drifter with a mysterious past arrives in a small town and finds the residents in the grip of a ruthless crime boss and realizes he has to help them.",
+      "popularity": 103.0455,
+      "poster_path": "/tQti9QTf13MfzNpXguijgNh7ojE.jpg",
+      "release_date": "2026-02-05",
+      "title": "Hellfire",
+      "video": false,
+      "vote_average": 6.893,
+      "vote_count": 61
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/owQeDouUZ6wI6f1aTOYEFd511zn.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1582770,
+      "original_language": "hi",
+      "original_title": "धुरंधर: द रिवेंज",
+      "overview": "As rival gangs, corrupt officials and a ruthless Major Iqbal close in, Hamza's mission for his country spirals into a bloody personal war where the line between patriot and monster disappears in the streets of Lyari.",
+      "popularity": 105.9388,
+      "poster_path": "/ov8vrRLZGoXHpYjSY9Vpv1tHJX7.jpg",
+      "release_date": "2026-03-18",
+      "title": "Dhurandhar: The Revenge",
+      "video": false,
+      "vote_average": 7.9,
+      "vote_count": 27
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tn95fumbkVAgXjOuw9CQOg0aYQz.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "The Shadow's Edge",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 100.0367,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.22,
+      "vote_count": 521
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lZ3vcm5HtPX8BeHs4axZABJrYJa.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1426297,
+      "original_language": "es",
+      "original_title": "Hazte la muerta",
+      "overview": "A woman wakes up injured in a basement surrounded by corpses. To survive, she pretends to be dead while a grotesque ritual unfolds in the house above.",
+      "popularity": 98.5541,
+      "poster_path": "/ixWeYfvXT9AbfM0QPb9kwbVLbLV.jpg",
+      "release_date": "2025-03-29",
+      "title": "Play Dead",
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 29
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ptcyGmBonW6mDQmrPhXbt6Rjrlp.jpg",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "id": 1314786,
+      "original_language": "es",
+      "original_title": "Zeta",
+      "overview": "Four Spanish ex-intelligence officers are assassinated simultaneously worldwide. The CNI discovers all participated in the covert \"Operation Ciénaga\" decades ago in Colombia. Zeta, the CNI's best operative, must hunt and protect the sole survivor, facing his deadliest global mission yet. Top Colombian agent Alfa will join Zeta, seemingly knowing more about \"Ciénaga\"'s secrets than him.",
+      "popularity": 97.9858,
+      "poster_path": "/1cKLG9KMoCjsgFB8Nw1EuglteVi.jpg",
+      "release_date": "2026-03-20",
+      "title": "Agent Zeta",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 50
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zTnAnYIn0Iv3cn0ZHlzLhou3ybm.jpg",
+      "genre_ids": [
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 92.2983,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.216,
+      "vote_count": 1610
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tq3h43fZy0H80vzf47MAY7R9Mxo.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
+      "id": 1297842,
+      "original_language": "en",
+      "original_title": "GOAT",
+      "overview": "A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.",
+      "popularity": 163.3332,
+      "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+      "release_date": "2026-02-11",
+      "title": "GOAT",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 136
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yzIjyPtwvyjHelxqIRXGpiaucPG.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1572073,
+      "original_language": "en",
+      "original_title": "The Deadly Little Mermaid",
+      "overview": "Some secrets are better left at the bottom of the ocean. Once she's in your house, there is no escape. When a struggling artist pulls a beautiful, unconscious woman from the freezing coastal waters, he thinks he’s performed a miracle. But as she recovers within the walls of his secluded home, a series of unsettling events leads him to a terrifying realization: her presence is no coincidence. She is inextricably linked to the same watery grave that claimed his family years ago.",
+      "popularity": 97.6018,
+      "poster_path": "/uye25uG7k8r3NNPLyPiKOiRnFRF.jpg",
+      "release_date": "2026-03-06",
+      "title": "The Deadly Little Mermaid",
+      "video": false,
+      "vote_average": 5.412,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gz0egUOuOk9EWQEMaFUvKewDKU0.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1367763,
+      "original_language": "en",
+      "original_title": "Lilly Lives Alone",
+      "overview": "Guided by the ghost of her daughter, a guilt-ridden mother plunges into madness through the course of drug-fueled fever dream.",
+      "popularity": 80.2723,
+      "poster_path": "/w6aIZIGNlGqTvfRaRG1p2FlBXJl.jpg",
+      "release_date": "2025-08-22",
+      "title": "Lilly Lives Alone",
+      "video": false,
+      "vote_average": 6.667,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/82lM4GJ9uuNvNDOEpxFy77uv4Ak.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 76.8503,
+      "poster_path": "/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.694,
+      "vote_count": 2478
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 85.4851,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.169,
+      "vote_count": 935
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/swxhEJsAWms6X1fDZ4HdbvYBSf9.jpg",
+      "genre_ids": [
+        12,
+        35,
+        27
+      ],
+      "id": 1234731,
+      "original_language": "en",
+      "original_title": "Anaconda",
+      "overview": "A group of friends facing mid-life crises head to the rainforest with the intention of remaking their favorite movie from their youth, only to find themselves in a fight for their lives against natural disasters, giant snakes and violent criminals.",
+      "popularity": 80.5068,
+      "poster_path": "/hBxN6dwrANN1ic3a4G9x6JZcR3C.jpg",
+      "release_date": "2025-12-24",
+      "title": "Anaconda",
+      "video": false,
+      "vote_average": 5.881,
+      "vote_count": 843
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/k0ACyZCXdqx50464BlE0ZeWR5cu.jpg",
+      "genre_ids": [
+        80,
+        18,
+        53,
+        28
+      ],
+      "id": 13012,
+      "original_language": "en",
+      "original_title": "Felon",
+      "overview": "A family man convicted of killing an intruder must cope with life afterward in the violent penal system.",
+      "popularity": 88.8603,
+      "poster_path": "/1eYGh6DETJFXQt5PWjV8lp8YZvx.jpg",
+      "release_date": "2008-07-17",
+      "title": "Felon",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 957
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sJTXx61jciDDzpoGcyxXgT0gc3b.jpg",
+      "genre_ids": [
+        878,
+        27
+      ],
+      "id": 31393,
+      "original_language": "en",
+      "original_title": "The Unearthly",
+      "overview": "A mad doctor uses patients at his isolated psychiatric institute as subjects in his attempts to create longevity by surgically installing an artificial gland in their skulls.",
+      "popularity": 59.6105,
+      "poster_path": "/sZcP866eeTI4V7V2JtqZwP2m5VR.jpg",
+      "release_date": "1957-06-28",
+      "title": "The Unearthly",
+      "video": false,
+      "vote_average": 3.8,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/l0NntdkIS0ov1h7zu1b8Ry5Lrf3.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 934468,
+      "original_language": "en",
+      "original_title": "Mrs Sen",
+      "overview": "On the wee hours of a December morning, the ring of a telephone shatters the quietness of the Sen household. Anuradha, Who answers the call, is stunned to hear the caller on the other side of the line. Her husband had met with a fatal accident in Thailand and had sunk into coma and she needed to take the next available flight and reach the hospital. Both Anuradha and Sohini's world are shattered. Both the Mrs. Sen did not know how to address this crisis that they had never imagined in their wildest dreams. Somnath's body is cremated and Anuradha wants to carry the ashes to India, to Somnath's father for the last rights. Sohini does not object, as she is about to set for the Airport, Sohini faints. The doctor is called and he asks Anuradha to admit Sohini to the Hospital once more. In the Hospital, Sohini is diagnosed as having her internal organs damaged and internal bleeding happening. Doctor's however clearly mention that it was only days before Sohini would actually die.",
+      "popularity": 85.0244,
+      "poster_path": "/wWxKnT0VHNCBe4FokkileHSTIvR.jpg",
+      "release_date": "2013-07-11",
+      "title": "Mrs Sen",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ibK0sooxQwIeqS9tz4Tj0chyca9.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1058710,
+      "original_language": "en",
+      "original_title": "Bloodline Killer",
+      "overview": "Moira Cole endeavors to rebuild her shattered life after her family's murder at the hands of her deranged and obsessed cousin.",
+      "popularity": 61.4477,
+      "poster_path": "/wHmzCQwBzT6m8wtZdXHOIITn82B.jpg",
+      "release_date": "2024-04-26",
+      "title": "Bloodline Killer",
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 48
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zpEWFNqoN8Qg1SzMMHmaGyOBTdW.jpg",
+      "genre_ids": [
+        53,
+        80,
+        35
+      ],
+      "id": 1054867,
+      "original_language": "en",
+      "original_title": "One Battle After Another",
+      "overview": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+      "popularity": 65.5952,
+      "poster_path": "/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+      "release_date": "2025-09-23",
+      "title": "One Battle After Another",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 3270
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dfpzK6bobAQZWD2bJOJ07cBp6hc.jpg",
+      "genre_ids": [
+        878,
+        27
+      ],
+      "id": 55663,
+      "original_language": "en",
+      "original_title": "Dinosaurus!",
+      "overview": "After undersea explosions near a Caribbean island, prehistoric creatures are unleashed on the unsuspecting population.",
+      "popularity": 83.1998,
+      "poster_path": "/s70D6TKjyB2KkJw1HJXAebD1kSi.jpg",
+      "release_date": "1960-07-20",
+      "title": "Dinosaurus!",
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 47
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+      "genre_ids": [
+        27,
+        28,
+        53
+      ],
+      "id": 1233413,
+      "original_language": "en",
+      "original_title": "Sinners",
+      "overview": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+      "popularity": 65.7084,
+      "poster_path": "/mEhWSOmUp3WsSWXZowpUuWJd5zO.jpg",
+      "release_date": "2025-04-16",
+      "title": "Sinners",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 4151
+    }
+  ],
+  "total_pages": 55842,
+  "total_results": 1116835
+}
