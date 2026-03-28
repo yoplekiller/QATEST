@@ -1,0 +1,394 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/lNYympQM5O6QSInusbyG9eJDIe4.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 105.9096,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.67,
+      "vote_count": 771
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lmns2jlRmATs8OGWKcCkgrbHLM4.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1634301,
+      "original_language": "te",
+      "original_title": "Vanaveera",
+      "overview": "A descendant of the Vanara clan is pushed into conflict when a modern-day Ravana seizes his only bike for an election rally. What starts as a petty injustice soon erupts into a fierce fight for self-respect and dignity.",
+      "popularity": 96.5703,
+      "poster_path": "/oBYExKI8E3bTzQjPkofhpV2EJon.jpg",
+      "release_date": "2026-02-13",
+      "title": "Vanaveera",
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80,
+        9648
+      ],
+      "id": 1168190,
+      "original_language": "en",
+      "original_title": "The Wrecking Crew",
+      "overview": "Estranged half-brothers Jonny and James reunite after their father's mysterious death. As they search for the truth, buried secrets reveal a conspiracy threatening to tear their family apart.",
+      "popularity": 93.5903,
+      "poster_path": "/gbVwHl4YPSq6BcC92TQpe7qUTh6.jpg",
+      "release_date": "2026-01-28",
+      "title": "The Wrecking Crew",
+      "video": false,
+      "vote_average": 6.891,
+      "vote_count": 831
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/61RYedFgX1K07xgVIvdJzukSR4g.jpg",
+      "genre_ids": [
+        35,
+        18,
+        10751,
+        10749
+      ],
+      "id": 848116,
+      "original_language": "hi",
+      "original_title": "रॉकी और रानी की प्रेम कहानी",
+      "overview": "Gym-freak brat Rocky falls in love with Rani, who comes from a well-educated Bengali family. Being from polar opposite worlds, the two decide to switch their families to adjust to each other's cultures and backgrounds and to know if their marriage will survive. Rocky and Rani are trapped in a world where they are united by love but divided by families and the ultimate question is will they fit in?",
+      "popularity": 126.8102,
+      "poster_path": "/vTQIqlxUkOuyf2UKhlM2OUaFGKz.jpg",
+      "release_date": "2023-07-28",
+      "title": "Rocky Aur Rani Kii Prem Kahaani",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 76
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yzIjyPtwvyjHelxqIRXGpiaucPG.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1572073,
+      "original_language": "en",
+      "original_title": "The Deadly Little Mermaid",
+      "overview": "Some secrets are better left at the bottom of the ocean. Once she's in your house, there is no escape. When a struggling artist pulls a beautiful, unconscious woman from the freezing coastal waters, he thinks he’s performed a miracle. But as she recovers within the walls of his secluded home, a series of unsettling events leads him to a terrifying realization: her presence is no coincidence. She is inextricably linked to the same watery grave that claimed his family years ago.",
+      "popularity": 104.9861,
+      "poster_path": "/uye25uG7k8r3NNPLyPiKOiRnFRF.jpg",
+      "release_date": "2026-03-06",
+      "title": "The Deadly Little Mermaid",
+      "video": false,
+      "vote_average": 5.194,
+      "vote_count": 18
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tn95fumbkVAgXjOuw9CQOg0aYQz.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "The Shadow's Edge",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 92.6336,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 523
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1gLFGrxHqQebqLWpISmoFR6XWtJ.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1088434,
+      "original_language": "en",
+      "original_title": "Hellfire",
+      "overview": "A drifter with a mysterious past arrives in a small town and finds the residents in the grip of a ruthless crime boss and realizes he has to help them.",
+      "popularity": 95.0199,
+      "poster_path": "/tQti9QTf13MfzNpXguijgNh7ojE.jpg",
+      "release_date": "2026-02-05",
+      "title": "Hellfire",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 62
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8zyQbsmMlXfLkcctjNz5YZZwpkw.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 999136,
+      "original_language": "en",
+      "original_title": "Do Not Enter",
+      "overview": "A group of young explorers investigates an old abandoned hotel, only to encounter a strange supernatural being and a competing group looking for a legendary hidden treasure.",
+      "popularity": 100.6261,
+      "poster_path": "/stM9N7eJmHKLmFR59JG4tLdN7Wk.jpg",
+      "release_date": "2026-03-19",
+      "title": "Do Not Enter",
+      "video": false,
+      "vote_average": 5.5,
+      "vote_count": 33
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ptcyGmBonW6mDQmrPhXbt6Rjrlp.jpg",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "id": 1314786,
+      "original_language": "es",
+      "original_title": "Zeta",
+      "overview": "Four Spanish ex-intelligence officers are assassinated simultaneously worldwide. The CNI discovers all participated in the covert \"Operation Ciénaga\" decades ago in Colombia. Zeta, the CNI's best operative, must hunt and protect the sole survivor, facing his deadliest global mission yet. Top Colombian agent Alfa will join Zeta, seemingly knowing more about \"Ciénaga\"'s secrets than him.",
+      "popularity": 84.4101,
+      "poster_path": "/1cKLG9KMoCjsgFB8Nw1EuglteVi.jpg",
+      "release_date": "2026-03-20",
+      "title": "Agent Zeta",
+      "video": false,
+      "vote_average": 6.697,
+      "vote_count": 61
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zTnAnYIn0Iv3cn0ZHlzLhou3ybm.jpg",
+      "genre_ids": [
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 94.2166,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.216,
+      "vote_count": 1629
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lZ3vcm5HtPX8BeHs4axZABJrYJa.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1426297,
+      "original_language": "es",
+      "original_title": "Hazte la muerta",
+      "overview": "A woman wakes up injured in a basement surrounded by corpses. To survive, she pretends to be dead while a grotesque ritual unfolds in the house above.",
+      "popularity": 82.0382,
+      "poster_path": "/ixWeYfvXT9AbfM0QPb9kwbVLbLV.jpg",
+      "release_date": "2025-03-29",
+      "title": "Play Dead",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 31
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aRR90kdGuJiEOqzhBZ5UML463CF.jpg",
+      "genre_ids": [
+        35,
+        53
+      ],
+      "id": 467905,
+      "original_language": "en",
+      "original_title": "How to Make a Killing",
+      "overview": "Disowned at birth by his obscenely wealthy family, blue-collar Becket Redfellow will stop at nothing to reclaim his inheritance, no matter how many relatives stand in his way.",
+      "popularity": 94.6851,
+      "poster_path": "/vxMeKC7o5Gi8IHMi6lUgsdprTqv.jpg",
+      "release_date": "2026-02-19",
+      "title": "How to Make a Killing",
+      "video": false,
+      "vote_average": 6.944,
+      "vote_count": 99
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 85.9051,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.162,
+      "vote_count": 937
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7BM4QoygM0LT1vFmcIbT4e0o02Q.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 171776,
+      "original_language": "en",
+      "original_title": "Sparks",
+      "overview": "A masked vigilante who discovers the dark side to heroism. Going after the nation's most notorious super criminal leaves Sparks' life and reputation in ruins.",
+      "popularity": 78.2326,
+      "poster_path": "/59X0So2x1HGEGXr91kqe4YaMhW0.jpg",
+      "release_date": "2013-03-01",
+      "title": "Sparks",
+      "video": false,
+      "vote_average": 4.8,
+      "vote_count": 101
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/swxhEJsAWms6X1fDZ4HdbvYBSf9.jpg",
+      "genre_ids": [
+        12,
+        35,
+        27
+      ],
+      "id": 1234731,
+      "original_language": "en",
+      "original_title": "Anaconda",
+      "overview": "A group of friends facing mid-life crises head to the rainforest with the intention of remaking their favorite movie from their youth, only to find themselves in a fight for their lives against natural disasters, giant snakes and violent criminals.",
+      "popularity": 75.1562,
+      "poster_path": "/hBxN6dwrANN1ic3a4G9x6JZcR3C.jpg",
+      "release_date": "2025-12-24",
+      "title": "Anaconda",
+      "video": false,
+      "vote_average": 5.888,
+      "vote_count": 853
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/t0Vd1QDmDC1jBuL8GEukJsSY2O2.jpg",
+      "genre_ids": [
+        12,
+        10752,
+        36
+      ],
+      "id": 1555895,
+      "original_language": "en",
+      "original_title": "The Aryan Papers",
+      "overview": "Stuttgart, 1942: Nazis have cleared Jewish communities from towns and Villages. Two German-born Jewish children flee Nazis who have killed their family, escorted by Gisella, part of the Lebensborn, an SS Master Race program.",
+      "popularity": 120.1202,
+      "poster_path": "/30fQ2nYMyv5TjyEm3j9JwgTa3ZW.jpg",
+      "release_date": "2026-01-26",
+      "title": "The Aryan Papers",
+      "video": false,
+      "vote_average": 4.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/82lM4GJ9uuNvNDOEpxFy77uv4Ak.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 70.0945,
+      "poster_path": "/erTRAi241eYF4K8KoGGOI8kFPox.jpg",
+      "release_date": "2025-11-05",
+      "title": "Predator: Badlands",
+      "video": false,
+      "vote_average": 7.695,
+      "vote_count": 2493
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gz0egUOuOk9EWQEMaFUvKewDKU0.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1367763,
+      "original_language": "en",
+      "original_title": "Lilly Lives Alone",
+      "overview": "Guided by the ghost of her daughter, a guilt-ridden mother plunges into madness through the course of drug-fueled fever dream.",
+      "popularity": 62.246,
+      "poster_path": "/w6aIZIGNlGqTvfRaRG1p2FlBXJl.jpg",
+      "release_date": "2025-08-22",
+      "title": "Lilly Lives Alone",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zD5v1E4joAzFvmAEytt7fM3ivyT.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 634649,
+      "original_language": "en",
+      "original_title": "Spider-Man: No Way Home",
+      "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+      "popularity": 75.0791,
+      "poster_path": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+      "release_date": "2021-12-15",
+      "title": "Spider-Man: No Way Home",
+      "video": false,
+      "vote_average": 7.933,
+      "vote_count": 21704
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9IQkcuprmB4DEo30DAeCormtfLE.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 515771,
+      "original_language": "en",
+      "original_title": "Lady Bodyguard",
+      "overview": "A.C.Baker, advertising executive for an insurance company, approaches test pilot Terry Moore with a proposition that in return for using his picture and endorsement he will get a paid-for-a-year $1000 policy. High-risk Terry agrees. George MacAlister fires his secretary, Miss Tracy, just as she is typing up the policy and she, for spite, changes the amount from a thousand dollars to one million dollars. A.C. delivers the policy, without noticing the difference, to Terry at a party at the Frolics Club, a cheap joint wedged between a burlesque house and a flop house hotel. Three characters, an elderly hat-check \"girl\" known as Mother Hodges; Avery Jamieson, a broken-down actor; and bartender Harry Gargan are named beneficiaries. When the company discovers the error, A.C. is sent to get back the policy and, pending that, don't let Terry make any test flights.",
+      "popularity": 51.6775,
+      "poster_path": "/smwHQgTVMJLCRzjWRaqVQHAZPTz.jpg",
+      "release_date": "1943-01-02",
+      "title": "Lady Bodyguard",
+      "video": false,
+      "vote_average": 4.0,
+      "vote_count": 2
+    }
+  ],
+  "total_pages": 55873,
+  "total_results": 1117451
+}
