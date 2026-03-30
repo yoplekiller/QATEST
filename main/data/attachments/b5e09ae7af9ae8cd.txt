@@ -1,0 +1,4 @@
+2026-03-30 16:28:52 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-03-30 16:28:53 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-03-30 16:28:57 - test_automation - INFO - 1초 명시적 대기 시작
+2026-03-30 16:29:01 - test_automation - INFO - 0.5초 명시적 대기 시작
