@@ -1,0 +1,4 @@
+2026-04-03 04:52:44 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-04-03 04:52:47 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-04-03 04:52:51 - test_automation - INFO - 1초 명시적 대기 시작
+2026-04-03 04:52:53 - test_automation - INFO - 스크린샷 저장: screenshots/상품_추가_완료_20260403_045253.png
