@@ -62,9 +62,19 @@ jobs:
           venv/bin/python -m pytest src/tests/ui \
             --alluredir=allure-results-ui \
             --junitxml=ui_report.xml \
+            --json-report --json-report-file=test_results_ui.json \
             --capture=tee-sys -v \
             --maxfail=100 --disable-warnings --tb=short
         continue-on-error: true
+
+      - name: Upload UI Test Results JSON
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-ui
+          path: test_results_ui.json
+          retention-days: 7
+          if-no-files-found: warn
 
       - name: Upload UI Allure Results
         if: always()
@@ -123,6 +133,7 @@ jobs:
           venv/bin/python -m pytest src/tests/api \
             --alluredir=allure-results-api \
             --junitxml=api_report.xml \
+            --json-report --json-report-file=test_results_api.json \
             --capture=tee-sys -v \
             --maxfail=100 --disable-warnings --tb=short
         continue-on-error: true
@@ -135,6 +146,15 @@ jobs:
           path: allure-results-api
           retention-days: 7
 
+      - name: Upload API Test Results JSON
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-api
+          path: test_results_api.json
+          retention-days: 7
+          if-no-files-found: warn
+
       - name: Upload API Test Report
         if: always()
         uses: actions/upload-artifact@v4
@@ -142,7 +162,47 @@ jobs:
           name: api-test-report
           path: api_report.xml
           retention-days: 7
-  
+
+  # ==========================================
+  # Jira 버그 자동 등록
+  # ==========================================
+  create_jira_bugs:
+    needs: [ui_tests, api_tests]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install jira python-dotenv
+
+      - name: Download UI Test Results
+        uses: actions/download-artifact@v4
+        with:
+          name: test-results-ui
+          path: .
+        continue-on-error: true
+
+      - name: Download API Test Results
+        uses: actions/download-artifact@v4
+        with:
+          name: test-results-api
+          path: .
+        continue-on-error: true
+
+      - name: Create Jira Bug Tickets
+        env:
+          JIRA_URL: ${{ secrets.JIRA_URL }}
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          JIRA_PROJECT_KEY: ${{ secrets.JIRA_PROJECT_KEY }}
+        run: python utils/create_jira_bugs.py
+
   # ==========================================
   # Allure Report 배포 (GitHub Pages)
   # ==========================================
