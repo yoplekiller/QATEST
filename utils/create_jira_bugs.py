@@ -52,7 +52,7 @@ existing_keys = set()
 for i in existing:
     s = i.fields.summary
     if "] " in s:
-        key = s.split("] ", 1)[-1].split(" - ")[0].strip()  # "fname / func"
+        key = s.split("] ")[-1].split(" - ")[0].strip()  # "fname / func"
         existing_keys.add(key)
 
 created = []
