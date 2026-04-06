@@ -42,12 +42,18 @@ if not all_failed:
 
 print(f"\n총 {len(all_failed)}건 -> Jira 버그 티켓 생성\n")
 
-# 기존 자동버그 티켓 조회 (중복 방지)
+# 기존 자동버그 티켓 조회 (중복 방지) - 오픈 상태만 체크
 existing = jira.search_issues(
-    f'project={PROJECT_KEY} AND issuetype=Bug AND summary ~ "[자동버그]"',
+    f'project={PROJECT_KEY} AND issuetype=Bug AND summary ~ "[자동버그]" AND statusCategory != Done',
     maxResults=200
 )
-existing_summaries = {i.fields.summary for i in existing}
+# "fname / func" 조합으로 중복 키 생성
+existing_keys = set()
+for i in existing:
+    s = i.fields.summary
+    if "] " in s:
+        key = s.split("] ", 1)[-1].split(" - ")[0].strip()  # "fname / func"
+        existing_keys.add(key)
 
 created = []
 skipped = []
@@ -69,8 +75,9 @@ for t in all_failed:
     category = "UI" if "ui" in source else "API"
 
     summary = f"[자동버그][{category}] {fname} / {func} - {outcome}"
+    dup_key = f"{fname} / {func}"
 
-    if summary in existing_summaries:
+    if dup_key in existing_keys:
         print(f"  [SKIP] {summary}")
         skipped.append(summary)
         continue
