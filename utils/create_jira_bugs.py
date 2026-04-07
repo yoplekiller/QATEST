@@ -44,7 +44,7 @@ print(f"\n총 {len(all_failed)}건 -> Jira 버그 티켓 생성\n")
 
 # 기존 자동버그 티켓 조회 (중복 방지) - 오픈 상태만 체크
 existing = jira.search_issues(
-    f'project={PROJECT_KEY} AND issuetype=Bug AND summary ~ "[자동버그]" AND statusCategory != Done',
+    f'project={PROJECT_KEY} AND issuetype=Bug AND summary ~ "자동버그" AND statusCategory != Done',
     maxResults=200
 )
 # "fname / func" 조합으로 중복 키 생성
