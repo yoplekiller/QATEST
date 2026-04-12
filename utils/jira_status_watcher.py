@@ -10,7 +10,6 @@ JIRA_URL    = os.getenv("JIRA_URL")
 JIRA_EMAIL  = os.getenv("JIRA_EMAIL")
 JIRA_TOKEN  = os.getenv("JIRA_API_TOKEN")
 PROJECT_KEY = os.getenv("JIRA_PROJECT_KEY")
-WEBHOOK_URL = os.getenv("SLACK_WEBHOOK_URL")
 
 os.makedirs("cache", exist_ok=True)
 CACHE_FILE = "cache/jira_status_cache.json"
@@ -22,7 +21,7 @@ issues = jira.search_issues(
     f'project={PROJECT_KEY} AND issuetype=Bug AND summary ~ "자동버그"',
     maxResults=200
 )
-
+# "key" → "issue 객체" 매핑
 if os.path.exists(CACHE_FILE):
     with open(CACHE_FILE, "r", encoding="utf-8") as f:
         cache = json.load(f)

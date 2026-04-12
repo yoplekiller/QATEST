@@ -22,6 +22,7 @@ jira = JIRA(server=JIRA_URL, basic_auth=(JIRA_EMAIL, JIRA_TOKEN))
 result_files = ["test_results_ui.json", "test_results_api.json"]
 all_failed = []
 
+# 각 결과 파일에서 실패 항목 추출
 for fname in result_files:
     if not os.path.exists(fname):
         print(f"[SKIP] {fname} 없음")
@@ -62,6 +63,7 @@ reopened = []
 
 now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
 
+# 실패 항목별로 티켓 생성 또는 리오픈 처리
 for t in all_failed:
     nodeid  = t["nodeid"]
     outcome = t["outcome"]

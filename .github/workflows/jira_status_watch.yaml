@@ -27,7 +27,7 @@ jobs:
                   JIRA_URL: ${{ secrets.JIRA_URL }}
                   JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
                   JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
-                  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+                  SLACK_WEBHOOK_URL: ${{ secrets.QA_SLACK_WEBHOOK_URL }}
               run: |
                   python utils/jira_status_watcher.py
 
