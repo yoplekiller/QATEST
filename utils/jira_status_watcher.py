@@ -10,6 +10,7 @@ JIRA_URL    = os.getenv("JIRA_URL")
 JIRA_EMAIL  = os.getenv("JIRA_EMAIL")
 JIRA_TOKEN  = os.getenv("JIRA_API_TOKEN")
 PROJECT_KEY = os.getenv("JIRA_PROJECT_KEY")
+WEBHOOK_URL = os.getenv("QA_SLACK_WEBHOOK_URL", "")
 
 os.makedirs("cache", exist_ok=True)
 CACHE_FILE = "cache/jira_status_cache.json"
@@ -57,8 +58,11 @@ if changed:
     for item in changed:
         text += f"- {item['key']} ({item['summary']}): {item['previous_status']} → {item['current_status']}\n"
 
-    requests.post(WEBHOOK_URL, json={"text": text}, timeout=10)
-    print(f"{len(changed)}건의 상태 변경 알림 전송")
+    if WEBHOOK_URL:
+        requests.post(WEBHOOK_URL, json={"text": text}, timeout=10)
+        print(f"{len(changed)}건의 상태 변경 알림 전송")
+    else:
+        print("QA_SLACK_WEBHOOK_URL이 설정되지 않아 알림 전송을 건너뜀")
 else:
     print("상태 변경 감지된 티켓 없음")
 

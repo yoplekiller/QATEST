@@ -89,6 +89,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set RUN_TS (timestamp)
+        run: |
+          echo "RUN_TS=$(TZ=Asia/Seoul date +'%Y%m%d_%H%M%S')" >> $GITHUB_ENV
+          echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
