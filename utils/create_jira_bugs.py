@@ -5,6 +5,7 @@ GitHub Actions에서 실행: python utils/create_jira_bugs.py
 import os
 import json
 import glob
+from datetime import datetime
 from jira import JIRA
 from dotenv import load_dotenv
 
@@ -42,21 +43,24 @@ if not all_failed:
 
 print(f"\n총 {len(all_failed)}건 -> Jira 버그 티켓 생성\n")
 
-# 기존 자동버그 티켓 조회 (중복 방지) - 오픈 상태만 체크
+# 기존 자동버그 티켓 조회 (Done 포함 전체 - 재발 시 리오픈을 위해)
 existing = jira.search_issues(
-    f'project={PROJECT_KEY} AND issuetype=Bug AND summary ~ "자동버그" AND statusCategory != Done',
+    f'project={PROJECT_KEY} AND issuetype=Bug AND summary ~ "자동버그"',
     maxResults=200
 )
-# "fname / func" 조합으로 중복 키 생성
-existing_keys = set()
+# "fname / func" 조합 → issue 객체 매핑
+existing_map = {}
 for i in existing:
     s = i.fields.summary
     if "] " in s:
         key = s.split("] ")[-1].split(" - ")[0].strip()  # "fname / func"
-        existing_keys.add(key)
+        existing_map[key] = i
 
 created = []
 skipped = []
+reopened = []
+
+now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
 
 for t in all_failed:
     nodeid  = t["nodeid"]
@@ -77,11 +81,6 @@ for t in all_failed:
     summary = f"[자동버그][{category}] {fname} / {func} - {outcome}"
     dup_key = f"{fname} / {func}"
 
-    if dup_key in existing_keys:
-        print(f"  [SKIP] {summary}")
-        skipped.append(summary)
-        continue
-
     description = f"""*자동 생성 버그 티켓 (GitHub Actions)*
 
 ||항목||내용||
@@ -97,6 +96,44 @@ for t in all_failed:
 {{code}}
 """
 
+    # 기존 티켓 존재 여부 확인
+    if dup_key in existing_map:
+        existing_issue = existing_map[dup_key]
+        status_cat = existing_issue.fields.status.statusCategory.key  # "done" / "indeterminate" / "new"
+
+        if status_cat == "done":
+            # 완료된 버그가 재발 → 리오픈
+            transitions = jira.transitions(existing_issue)
+            reopen_t = next(
+                (t for t in transitions if any(kw in t["name"].lower() for kw in ["reopen", "재열기", "재오픈", "open"])),
+                None
+            )
+            if reopen_t:
+                jira.transition_issue(existing_issue, reopen_t["id"])
+                jira.add_comment(
+                    existing_issue,
+                    f"*[자동] 버그 재발 감지 — {now_str}*\n\n"
+                    f"이전에 완료 처리된 버그가 다시 실패했습니다.\n\n"
+                    f"*에러 로그:*\n{{code}}\n{longrepr_short}\n{{code}}"
+                )
+                print(f"  [REOPEN] {existing_issue.key} - {summary}")
+                reopened.append(existing_issue.key)
+            else:
+                # 리오픈 트랜지션 없으면 코멘트만 추가
+                jira.add_comment(
+                    existing_issue,
+                    f"*[자동] 버그 재발 감지 — {now_str}* (리오픈 트랜지션 없음, 코멘트로 대체)\n\n"
+                    f"{{code}}\n{longrepr_short}\n{{code}}"
+                )
+                print(f"  [COMMENT] 리오픈 트랜지션 없음, 코멘트 추가: {existing_issue.key}")
+                reopened.append(existing_issue.key)
+        else:
+            # 이미 오픈 중 → 스킵
+            print(f"  [SKIP] 이미 오픈 중 ({existing_issue.fields.status.name}): {existing_issue.key}")
+            skipped.append(summary)
+        continue
+
+    # 새 버그 티켓 생성
     try:
         issue = jira.create_issue(
             project=PROJECT_KEY,
@@ -109,4 +146,4 @@ for t in all_failed:
     except Exception as e:
         print(f"  [FAIL] {func}: {e}")
 
-print(f"\n완료: {len(created)}개 생성, {len(skipped)}개 스킵")
+print(f"\n완료: {len(created)}개 생성, {len(reopened)}개 리오픈, {len(skipped)}개 스킵")
