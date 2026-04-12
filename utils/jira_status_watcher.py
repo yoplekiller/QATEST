@@ -19,7 +19,7 @@ jira = JIRA(server=JIRA_URL, basic_auth=(JIRA_EMAIL, JIRA_TOKEN))
 
 # Jira 이슈 상태 캐시 로드
 issues = jira.search_issues(
-    f'project={PROJECT_KEY} AND issuetype=Bug AND summary ~ "자동버그"',
+    f'project={PROJECT_KEY} AND issuetype=버그 AND summary ~ "자동버그"',
     maxResults=200
 )
 # "key" → "issue 객체" 매핑
