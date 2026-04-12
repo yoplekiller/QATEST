@@ -22,6 +22,9 @@ issues = jira.search_issues(
     f'project={PROJECT_KEY} AND issuetype=버그 AND summary ~ "자동버그"',
     maxResults=200
 )
+print(f"[DEBUG] PROJECT_KEY={PROJECT_KEY}, 조회된 이슈 수={len(issues)}")
+for issue in issues:
+    print(f"[DEBUG] {issue.key} | {issue.fields.issuetype.name} | {issue.fields.status.name} | {issue.fields.summary}")
 # "key" → "issue 객체" 매핑
 if os.path.exists(CACHE_FILE):
     with open(CACHE_FILE, "r", encoding="utf-8") as f:
