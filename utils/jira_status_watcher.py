@@ -62,8 +62,15 @@ if changed:
         text += f"- {item['key']} ({item['summary']}): {item['previous_status']} → {item['current_status']}\n"
 
     if WEBHOOK_URL:
-        requests.post(WEBHOOK_URL, json={"text": text}, timeout=10)
-        print(f"{len(changed)}건의 상태 변경 알림 전송")
+        try:
+            response = requests.post(WEBHOOK_URL, json={"text": text}, timeout=10)
+            print(f"[Slack] 응답 코드: {response.status_code}, 응답 내용: {response.text}")
+            if response.status_code == 200:
+                print(f"{len(changed)}건의 상태 변경 알림 전송 완료")
+            else:
+                print(f"[ERROR] Slack 전송 실패: {response.status_code}")
+        except Exception as e:
+            print(f"[ERROR] Slack 요청 중 예외 발생: {e}")
     else:
         print("QA_SLACK_WEBHOOK_URL이 설정되지 않아 알림 전송을 건너뜀")
 else:
