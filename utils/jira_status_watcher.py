@@ -10,7 +10,7 @@ JIRA_URL    = os.getenv("JIRA_URL")
 JIRA_EMAIL  = os.getenv("JIRA_EMAIL")
 JIRA_TOKEN  = os.getenv("JIRA_API_TOKEN")
 PROJECT_KEY = os.getenv("JIRA_PROJECT_KEY")
-WEBHOOK_URL = os.getenv("QA_SLACK_WEBHOOK_URL", "")
+WEBHOOK_URL = os.getenv("QA_SLACK_WEBHOOK_URL") or os.getenv("SLACK_WEBHOOK_URL", "")
 
 os.makedirs("cache", exist_ok=True)
 CACHE_FILE = "cache/jira_status_cache.json"
@@ -19,7 +19,7 @@ jira = JIRA(server=JIRA_URL, basic_auth=(JIRA_EMAIL, JIRA_TOKEN))
 
 # Jira 이슈 상태 캐시 로드
 issues = jira.search_issues(
-    f'project={PROJECT_KEY} AND issuetype=버그 AND summary ~ "자동버그"',
+    f'project={PROJECT_KEY} ORDER BY updated DESC',
     maxResults=200
 )
 print(f"[DEBUG] PROJECT_KEY={PROJECT_KEY}, 조회된 이슈 수={len(issues)}")
