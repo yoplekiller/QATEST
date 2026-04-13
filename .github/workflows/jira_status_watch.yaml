@@ -4,7 +4,10 @@ on:
     schedule:
         - cron: '0 * * * *' # Runs every hour
     workflow_dispatch: # Allows manual triggering
-    
+
+permissions:
+    contents: write
+
 jobs:
     watch:
         runs-on: ubuntu-latest
