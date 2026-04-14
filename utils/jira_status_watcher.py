@@ -63,13 +63,38 @@ for issue in issues:
 
 
 if changed:
-    text = "🔄 *Jira 티켓 상태 변경*\n\n"
+    blocks = [
+        {
+            "type": "header",
+            "text": {"type": "plain_text", "text": "🔄 Jira 티켓 상태 변경", "emoji": True}
+        },
+        {"type": "divider"}
+    ]
+
     for item in changed:
-        text += f"- {item['key']} ({item['summary']}): {item['previous_status']} → {item['current_status']}\n"
+        blocks.append({
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": f"*{item['key']}*\n{item['summary']}\n`{item['previous_status']}` → `{item['current_status']}`"
+            },
+            "accessory": {
+                "type": "button",
+                "text": {"type": "plain_text", "text": "Jira에서 보기", "emoji": True},
+                "url": f"{JIRA_URL}/browse/{item['key']}",
+                "action_id": f"open_{item['key']}"
+            }
+        })
+        blocks.append({"type": "divider"})
+
+    payload = {
+        "text": f"🔄 Jira 티켓 {len(changed)}건 상태 변경",
+        "blocks": blocks
+    }
 
     if WEBHOOK_URL:
         try:
-            response = requests.post(WEBHOOK_URL, json={"text": text}, timeout=10)
+            response = requests.post(WEBHOOK_URL, json=payload, timeout=10)
             print(f"[Slack] 응답 코드: {response.status_code}, 응답 내용: {response.text}")
             if response.status_code == 200:
                 print(f"{len(changed)}건의 상태 변경 알림 전송 완료")
