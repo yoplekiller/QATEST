@@ -42,8 +42,14 @@ for issue in issues:
     previous_status = cache.get(key)
 
     if previous_status is None:
-        # 처음 보는 티켓 → 캐시에 저장만 하고 알림 없음
+        # 처음 보는 티켓 → 캐시에 저장 + 신규 티켓 알림
         cache[key] = current_status
+        changed.append({
+            "key": key,
+            "summary": issue.fields.summary,
+            "previous_status": "신규",
+            "current_status": current_status
+        })
 
     elif previous_status != current_status:
         # 상태가 바뀐 티켓 → changed 리스트에 추가
