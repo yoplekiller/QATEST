@@ -1,0 +1,397 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 127.3926,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.679,
+      "vote_count": 787
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        9648,
+        12,
+        35
+      ],
+      "id": 1084242,
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 120.7232,
+      "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "release_date": "2025-11-26",
+      "title": "Zootopia 2",
+      "video": false,
+      "vote_average": 7.602,
+      "vote_count": 2540
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4840rkbpsiuow5ew155oVKcqJwj.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 615,
+      "original_language": "en",
+      "original_title": "The Passion of the Christ",
+      "overview": "A graphic portrayal of the last twelve hours of Jesus of Nazareth's life.",
+      "popularity": 107.6992,
+      "poster_path": "/rBM5o2HpmCfDejuIPybI09tkY3V.jpg",
+      "release_date": "2004-02-25",
+      "title": "The Passion of the Christ",
+      "video": false,
+      "vote_average": 7.537,
+      "vote_count": 5147
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tZiRd4IpoNiaoLXr2o2YfhTMjE2.jpg",
+      "genre_ids": [
+        12,
+        28
+      ],
+      "id": 662707,
+      "original_language": "en",
+      "original_title": "Starbright",
+      "overview": "A young woman becomes the guardian of a fallen star, which she must protect from dangerous forces with the help of a brave stranger.",
+      "popularity": 105.5365,
+      "poster_path": "/m1Zl07DNYeSyNcz9hf8hDsS2oB5.jpg",
+      "release_date": "2026-02-27",
+      "title": "Starbright",
+      "video": false,
+      "vote_average": 7.318,
+      "vote_count": 11
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yJi6g0CnsqANLNuVaRX28tZxeHX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1193501,
+      "original_language": "en",
+      "original_title": "Whistle",
+      "overview": "A misfit group of unwitting high school students stumble upon a cursed object, an ancient Aztec Death Whistle. They discover that blowing the whistle and the terrifying sound it emits will summon their future deaths to hunt them down.",
+      "popularity": 116.757,
+      "poster_path": "/eGxPyseSnEZBMJaopGfRUO9HSYx.jpg",
+      "release_date": "2026-01-20",
+      "title": "Whistle",
+      "video": false,
+      "vote_average": 5.996,
+      "vote_count": 237
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 110.7873,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 564
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3okjpK0zn4LGkXXdfPS7WKzcyve.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1526650,
+      "original_language": "zh",
+      "original_title": "泥娃娃",
+      "overview": "Hsu-Chuan, who works at a game company, accidentally brings home a broken clay doll from a haunted house while developing a new horror VR game. Unexpectedly, his pregnant wife, Mu-Hua, a cultural relic restorer, develops an obsession with the doll and relentlessly tries to repair it. As strange things begin to happen in the house, Mu-Hua's condition deteriorates, and Hsu-Chuan, at his wits' end, seeks help from a spiritual medium, Ah-Sheng. Meanwhile, the horrifying secret hidden behind the clay doll begins to surface.",
+      "popularity": 118.5458,
+      "poster_path": "/ifYNeKwpyKUTtjkUExrqTc65L2p.jpg",
+      "release_date": "2025-10-09",
+      "title": "Mudborn",
+      "video": false,
+      "vote_average": 6.618,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/v0NEB75SZjxY8GS3ho8WeEvjIT3.jpg",
+      "genre_ids": [
+        9648,
+        18,
+        27
+      ],
+      "id": 680493,
+      "original_language": "en",
+      "original_title": "Return to Silent Hill",
+      "overview": "When James receives a mysterious letter from his lost love Mary, he is drawn to Silent Hill—a once-familiar town now consumed by darkness. As he searches for her, James faces monstrous creatures and unravels a terrifying truth that will push him to the edge of his sanity.",
+      "popularity": 98.7428,
+      "poster_path": "/fqAGFN2K2kDL0EHxvJaXzaMUkkt.jpg",
+      "release_date": "2026-01-21",
+      "title": "Return to Silent Hill",
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 330
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
+      "genre_ids": [
+        28,
+        18,
+        878
+      ],
+      "id": 1235877,
+      "original_language": "ta",
+      "original_title": "ஜன நாயகன்",
+      "overview": "A clash of ideologies. One stands for the people, the other feeds on control. Their paths collided once before. Years later, a child’s silent fear ignites the past, drawing a former police officer into a battle far bigger than personal revenge.",
+      "popularity": 73.7153,
+      "poster_path": "/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
+      "release_date": "",
+      "title": "Jana Nayagan",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/CpLAfXgSNeNRRbRzPrTuzKmIHO.jpg",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 350,
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada",
+      "overview": "A young woman from the Midwest gets more than she bargained for when she moves to New York to become a writer and ends up as the assistant to the tyrannical, larger-than-life editor-in-chief of a major fashion magazine.",
+      "popularity": 92.5044,
+      "poster_path": "/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+      "release_date": "2006-06-29",
+      "title": "The Devil Wears Prada",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 12920
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zTnAnYIn0Iv3cn0ZHlzLhou3ybm.jpg",
+      "genre_ids": [
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 92.2821,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.191,
+      "vote_count": 1799
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/r9aYDDP7tHpwCvQbOxcfhZFBT63.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1610418,
+      "original_language": "en",
+      "original_title": "The House on Haunted Grounds",
+      "overview": "They walked into a haunted house with a history of possession and murder. The victims never came out, but the footage did.",
+      "popularity": 86.6814,
+      "poster_path": "/750RNSHr25GQcCr2Ws8iSGrHJA9.jpg",
+      "release_date": "2026-01-09",
+      "title": "The House on Haunted Grounds",
+      "video": false,
+      "vote_average": 4.7,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/13iSfmlqlMBAAYVlfrxj84qrQPP.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1418657,
+      "original_language": "en",
+      "original_title": "The Yeti",
+      "overview": "When an oil tycoon and a famous adventurer vanish into the harsh winter of remote northern Alaska, a hand-picked rescue team endeavors to bring them home. What they don’t know is that they are trespassing on The Yeti’s territory, and the elements are the least of their worries.",
+      "popularity": 90.778,
+      "poster_path": "/qW22SucWPODisKufindxiI5Frxm.jpg",
+      "release_date": "2026-04-04",
+      "title": "The Yeti",
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 87.4623,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.1,
+      "vote_count": 952
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vSQSYd2zZTqc0zmHImwWEGGluMI.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1316092,
+      "original_language": "en",
+      "original_title": "\"Wuthering Heights\"",
+      "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
+      "popularity": 83.6882,
+      "poster_path": "/3YBce6dTh1D5oCMITXk2S5QhPt.jpg",
+      "release_date": "2026-02-11",
+      "title": "\"Wuthering Heights\"",
+      "video": false,
+      "vote_average": 6.514,
+      "vote_count": 753
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/swxhEJsAWms6X1fDZ4HdbvYBSf9.jpg",
+      "genre_ids": [
+        12,
+        35,
+        27
+      ],
+      "id": 1234731,
+      "original_language": "en",
+      "original_title": "Anaconda",
+      "overview": "A group of friends facing mid-life crises head to the rainforest with the intention of remaking their favorite movie from their youth, only to find themselves in a fight for their lives against natural disasters, giant snakes and violent criminals.",
+      "popularity": 75.3925,
+      "poster_path": "/hBxN6dwrANN1ic3a4G9x6JZcR3C.jpg",
+      "release_date": "2025-12-24",
+      "title": "Anaconda",
+      "video": false,
+      "vote_average": 5.879,
+      "vote_count": 997
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pfcyWSaPKGagqdunfBXQYCqZHxx.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1339876,
+      "original_language": "hi",
+      "original_title": "मर्दानी 3",
+      "overview": "Officer Shivani Shivaji Roy returns to hunt down those behind the disappearance of young girls, risking everything to bring them back alive.",
+      "popularity": 66.8281,
+      "poster_path": "/dHxLBtHw4InwsVumnthupZYz6NM.jpg",
+      "release_date": "2026-01-30",
+      "title": "Mardaani 3",
+      "video": false,
+      "vote_average": 7.614,
+      "vote_count": 22
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/61RYedFgX1K07xgVIvdJzukSR4g.jpg",
+      "genre_ids": [
+        35,
+        18,
+        10751,
+        10749
+      ],
+      "id": 848116,
+      "original_language": "hi",
+      "original_title": "रॉकी और रानी की प्रेम कहानी",
+      "overview": "Gym-freak brat Rocky falls in love with Rani, who comes from a well-educated Bengali family. Being from polar opposite worlds, the two decide to switch their families to adjust to each other's cultures and backgrounds and to know if their marriage will survive. Rocky and Rani are trapped in a world where they are united by love but divided by families and the ultimate question is will they fit in?",
+      "popularity": 87.8213,
+      "poster_path": "/vTQIqlxUkOuyf2UKhlM2OUaFGKz.jpg",
+      "release_date": "2023-07-28",
+      "title": "Rocky Aur Rani Kii Prem Kahaani",
+      "video": false,
+      "vote_average": 6.068,
+      "vote_count": 81
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7uXzE0ZBkbAeKylOz7cUQF4Yw75.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 879945,
+      "original_language": "nl",
+      "original_title": "L'homme inconnu",
+      "overview": "Louis, a Flemish writer, decides to isolate himself at the Côte d’Azur, hoping this place will bring him inspiration.",
+      "popularity": 65.9261,
+      "poster_path": "/4TpBhdaSl5ALHbgeaYOLF8Q3haz.jpg",
+      "release_date": "2021-10-16",
+      "title": "The Unknown Man",
+      "video": false,
+      "vote_average": 7.333,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zD5v1E4joAzFvmAEytt7fM3ivyT.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 634649,
+      "original_language": "en",
+      "original_title": "Spider-Man: No Way Home",
+      "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+      "popularity": 72.9939,
+      "poster_path": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+      "release_date": "2021-12-15",
+      "title": "Spider-Man: No Way Home",
+      "video": false,
+      "vote_average": 7.934,
+      "vote_count": 21777
+    }
+  ],
+  "total_pages": 56145,
+  "total_results": 1122881
+}
