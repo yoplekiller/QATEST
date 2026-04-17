@@ -1,0 +1,407 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 1226863,
+      "original_language": "en",
+      "original_title": "The Super Mario Galaxy Movie",
+      "overview": "",
+      "popularity": 689.6183,
+      "poster_path": "/6RmUnKyBfLu6MfC7sya2WXjyVut.jpg",
+      "release_date": "2026-04-01",
+      "title": "The Super Mario Galaxy Movie",
+      "video": false,
+      "vote_average": 6.811,
+      "vote_count": 477
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "",
+      "popularity": 401.9712,
+      "poster_path": "/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
+      "release_date": "2026-03-26",
+      "title": "Твоё сердце будет разбито",
+      "video": false,
+      "vote_average": 7.213,
+      "vote_count": 61
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "",
+      "popularity": 326.8193,
+      "poster_path": "/dVv28yL7kyeMK3sUTWVSKrZC6tV.jpg",
+      "release_date": "2025-12-17",
+      "title": "Avatar: Fire and Ash",
+      "video": false,
+      "vote_average": 7.37,
+      "vote_count": 2607
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "",
+      "popularity": 271.2981,
+      "poster_path": "/kutdTXxqWJ7KYmnll8nSrtWWsCR.jpg",
+      "release_date": "2026-03-15",
+      "title": "Project Hail Mary",
+      "video": false,
+      "vote_average": 8.2,
+      "vote_count": 1465
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gGFh3upk94dtq0kYitcg0FZ24ef.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1290417,
+      "original_language": "en",
+      "original_title": "Thrash",
+      "overview": "",
+      "popularity": 245.8304,
+      "poster_path": "/gisGNozNhBxfgCgc20Qytw9xBhL.jpg",
+      "release_date": "2026-04-10",
+      "title": "Thrash",
+      "video": false,
+      "vote_average": 5.932,
+      "vote_count": 279
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        878,
+        35,
+        12
+      ],
+      "id": 1327819,
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "",
+      "popularity": 236.2309,
+      "poster_path": "/p5G1Fbn6hjQprNijkcjarf8FZWG.jpg",
+      "release_date": "2026-03-04",
+      "title": "Hoppers",
+      "video": false,
+      "vote_average": 7.583,
+      "vote_count": 474
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 502356,
+      "original_language": "en",
+      "original_title": "The Super Mario Bros. Movie",
+      "overview": "",
+      "popularity": 230.0353,
+      "poster_path": "/dDsRyuDgRNOcsxe8369kRVshmuj.jpg",
+      "release_date": "2023-04-05",
+      "title": "The Super Mario Bros. Movie",
+      "video": false,
+      "vote_average": 7.587,
+      "vote_count": 10484
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7lizs4SuEU2ihkkAa0SZ66NtHbl.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1641319,
+      "original_language": "en",
+      "original_title": "Sniper: No Nation",
+      "overview": "",
+      "popularity": 201.2921,
+      "poster_path": "/3T9nAX0jAp0iT18ex25BlZEpRDb.jpg",
+      "release_date": "2026-04-07",
+      "title": "Sniper: No Nation",
+      "video": false,
+      "vote_average": 6.155,
+      "vote_count": 29
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sS3zGYFPcfM5pArVNWl6qLyaSmU.jpg",
+      "genre_ids": [
+        28,
+        12,
+        16,
+        14,
+        10751
+      ],
+      "id": 980431,
+      "original_language": "en",
+      "original_title": "Avatar: Aang, The Last Airbender",
+      "overview": "",
+      "popularity": 216.3499,
+      "poster_path": "/xMEuVXMuC2doymjfvLJucHESGE9.jpg",
+      "release_date": "2026-10-09",
+      "title": "Avatar: Aang, The Last Airbender",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jRsjWwZzI39bTm44FNhRtiICd9k.jpg",
+      "genre_ids": [
+        35,
+        28,
+        12
+      ],
+      "id": 1084577,
+      "original_language": "en",
+      "original_title": "Balls Up",
+      "overview": "",
+      "popularity": 214.6571,
+      "poster_path": "/xwvJ3WzdJ1OCuDoY8LAxBUlQyig.jpg",
+      "release_date": "2026-04-15",
+      "title": "Balls Up",
+      "video": false,
+      "vote_average": 5.703,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nHxWyy18SvAZ8jJeemtS8k1UNjM.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1290821,
+      "original_language": "en",
+      "original_title": "Shelter",
+      "overview": "",
+      "popularity": 205.5854,
+      "poster_path": "/8Mr7Av3LOJWdqhAI24ytCN4QNjw.jpg",
+      "release_date": "2026-01-28",
+      "title": "Shelter",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 550
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wns4x1GyxCudgOZRyhXKjXVJf3T.jpg",
+      "genre_ids": [
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "",
+      "popularity": 200.0018,
+      "poster_path": "/oEGnHmRkpNfUsxnh0gOKuTqNeQk.jpg",
+      "release_date": "2026-01-07",
+      "title": "Greenland 2: Migration",
+      "video": false,
+      "vote_average": 6.498,
+      "vote_count": 866
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vG42HeYtoTFflqwP42wYD7tBuNr.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 1171145,
+      "original_language": "en",
+      "original_title": "Crime 101",
+      "overview": "",
+      "popularity": 181.2436,
+      "poster_path": "/sGWwEfFxIsSfhDxuAXhIDGKa7B6.jpg",
+      "release_date": "2026-02-11",
+      "title": "Crime 101",
+      "video": false,
+      "vote_average": 6.991,
+      "vote_count": 704
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1470130,
+      "original_language": "en",
+      "original_title": "The Mortuary Assistant",
+      "overview": "",
+      "popularity": 217.7751,
+      "poster_path": "/72AoFPC5TY4DfJwXXS9rPwPeReD.jpg",
+      "release_date": "2026-02-13",
+      "title": "The Mortuary Assistant",
+      "video": false,
+      "vote_average": 5.529,
+      "vote_count": 69
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tq3h43fZy0H80vzf47MAY7R9Mxo.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
+      "id": 1297842,
+      "original_language": "en",
+      "original_title": "GOAT",
+      "overview": "",
+      "popularity": 152.3201,
+      "poster_path": "/vd3MzHqfuz9HyntKikW1oYDjzNu.jpg",
+      "release_date": "2026-02-11",
+      "title": "GOAT",
+      "video": false,
+      "vote_average": 7.925,
+      "vote_count": 402
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/avwIERZtWiWa34qShf5biDzAVaF.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1049471,
+      "original_language": "en",
+      "original_title": "Outcome",
+      "overview": "",
+      "popularity": 130.2508,
+      "poster_path": "/tKn1neIMx9J53nCcIJbJsxtSvQB.jpg",
+      "release_date": "2026-04-06",
+      "title": "Outcome",
+      "video": false,
+      "vote_average": 5.467,
+      "vote_count": 91
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/t9J2HXaDuJR7bvIG9XF7mttn4VY.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        80
+      ],
+      "id": 1159559,
+      "original_language": "en",
+      "original_title": "Scream 7",
+      "overview": "",
+      "popularity": 129.9811,
+      "poster_path": "/aScnrxN5ScvQ93KNtEwESU3xc5q.jpg",
+      "release_date": "2026-02-25",
+      "title": "Scream 7",
+      "video": false,
+      "vote_average": 6.029,
+      "vote_count": 750
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "",
+      "popularity": 119.2237,
+      "poster_path": "/vJpkOAjW84OZO4CGYKGmHKjVosc.jpg",
+      "release_date": "2025-07-18",
+      "title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "video": false,
+      "vote_average": 7.682,
+      "vote_count": 796
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6yeVcxFR0j08vlv2OlL6zbewm4D.jpg",
+      "genre_ids": [
+        28,
+        878,
+        53
+      ],
+      "id": 1265609,
+      "original_language": "en",
+      "original_title": "War Machine",
+      "overview": "",
+      "popularity": 110.1599,
+      "poster_path": "/sNcd70Q6sEBnF3YEd3kC9jIUO5E.jpg",
+      "release_date": "2026-02-12",
+      "title": "War Machine",
+      "video": false,
+      "vote_average": 7.243,
+      "vote_count": 1446
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pmGkvEWKFDapogIzkG7TqB0aeYE.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1526650,
+      "original_language": "zh",
+      "original_title": "泥娃娃",
+      "overview": "",
+      "popularity": 110.0515,
+      "poster_path": "/onlPWcpVAwuZAki2kAcWUxJkhcT.jpg",
+      "release_date": "2025-10-09",
+      "title": "泥娃娃",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 21
+    }
+  ],
+  "total_pages": 56243,
+  "total_results": 1124856
+}
