@@ -1,0 +1,399 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/6yeVcxFR0j08vlv2OlL6zbewm4D.jpg",
+      "genre_ids": [
+        28,
+        878,
+        53
+      ],
+      "id": 1265609,
+      "original_language": "en",
+      "original_title": "War Machine",
+      "overview": "On one last grueling mission during Army Ranger training, a combat engineer must lead his unit in a fight against a giant otherworldly killing machine.",
+      "popularity": 107.6893,
+      "poster_path": "/tlPgDzwIE7VYYIIAGCTUOnN4wI1.jpg",
+      "release_date": "2026-02-12",
+      "title": "War Machine",
+      "video": false,
+      "vote_average": 7.242,
+      "vote_count": 1453
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pmGkvEWKFDapogIzkG7TqB0aeYE.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1526650,
+      "original_language": "zh",
+      "original_title": "泥娃娃",
+      "overview": "Hsu-Chuan, who works at a game company, accidentally brings home a broken clay doll from a haunted house while developing a new horror VR game. Unexpectedly, his pregnant wife, Mu-Hua, a cultural relic restorer, develops an obsession with the doll and relentlessly tries to repair it. As strange things begin to happen in the house, Mu-Hua's condition deteriorates, and Hsu-Chuan, at his wits' end, seeks help from a spiritual medium, Ah-Sheng. Meanwhile, the horrifying secret hidden behind the clay doll begins to surface.",
+      "popularity": 104.347,
+      "poster_path": "/ifYNeKwpyKUTtjkUExrqTc65L2p.jpg",
+      "release_date": "2025-10-09",
+      "title": "Mudborn",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 21
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1ytf7rzkZ7RLlMnBdGggQ0ENe6z.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1418657,
+      "original_language": "en",
+      "original_title": "The Yeti",
+      "overview": "When an oil tycoon and a famous adventurer vanish into the harsh winter of remote northern Alaska, a hand-picked rescue team endeavors to bring them home. What they don’t know is that they are trespassing on The Yeti’s territory, and the elements are the least of their worries.",
+      "popularity": 90.1198,
+      "poster_path": "/zaqEfoKcWkVni2eONhJ7DRhMO8Q.jpg",
+      "release_date": "2026-04-04",
+      "title": "The Yeti",
+      "video": false,
+      "vote_average": 6.768,
+      "vote_count": 28
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        9648,
+        12,
+        35
+      ],
+      "id": 1084242,
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 98.0254,
+      "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "release_date": "2025-11-26",
+      "title": "Zootopia 2",
+      "video": false,
+      "vote_average": 7.602,
+      "vote_count": 2561
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/l8rKKMU2M9dDULO9CEtDNdWAEUJ.jpg",
+      "genre_ids": [
+        878,
+        27,
+        14
+      ],
+      "id": 1159831,
+      "original_language": "en",
+      "original_title": "The Bride!",
+      "overview": "A lonely Frankenstein travels to 1930s Chicago to ask groundbreaking scientist Dr. Euphronious to create a companion for him. The two revive a murdered young woman and The Bride is born. But what ensues is beyond what either of them imagined.",
+      "popularity": 91.3881,
+      "poster_path": "/lV8YHwGkYZsm6EfIqnhaSz2avKt.jpg",
+      "release_date": "2026-03-04",
+      "title": "The Bride!",
+      "video": false,
+      "vote_average": 6.217,
+      "vote_count": 323
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/v0NEB75SZjxY8GS3ho8WeEvjIT3.jpg",
+      "genre_ids": [
+        9648,
+        18,
+        27
+      ],
+      "id": 680493,
+      "original_language": "en",
+      "original_title": "Return to Silent Hill",
+      "overview": "When James receives a mysterious letter from his lost love Mary, he is drawn to Silent Hill—a once-familiar town now consumed by darkness. As he searches for her, James faces monstrous creatures and unravels a terrifying truth that will push him to the edge of his sanity.",
+      "popularity": 101.865,
+      "poster_path": "/fqAGFN2K2kDL0EHxvJaXzaMUkkt.jpg",
+      "release_date": "2026-01-21",
+      "title": "Return to Silent Hill",
+      "video": false,
+      "vote_average": 5.04,
+      "vote_count": 348
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/z3bzhmC0CPikWeerUkLO73YvGrC.jpg",
+      "genre_ids": [
+        10402,
+        53,
+        28,
+        27
+      ],
+      "id": 1084187,
+      "original_language": "en",
+      "original_title": "Pretty Lethal",
+      "overview": "A troupe of ballerinas find themselves fighting for survival as they attempt to escape from a remote inn after their bus breaks down on the way to a dance competition.",
+      "popularity": 92.6789,
+      "poster_path": "/znTPnXCK3lEQJgqXCvP7e5FUz6f.jpg",
+      "release_date": "2026-03-13",
+      "title": "Pretty Lethal",
+      "video": false,
+      "vote_average": 6.848,
+      "vote_count": 277
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yJi6g0CnsqANLNuVaRX28tZxeHX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1193501,
+      "original_language": "en",
+      "original_title": "Whistle",
+      "overview": "A misfit group of unwitting high school students stumble upon a cursed object, an ancient Aztec Death Whistle. They discover that blowing the whistle and the terrifying sound it emits will summon their future deaths to hunt them down.",
+      "popularity": 94.6697,
+      "poster_path": "/eGxPyseSnEZBMJaopGfRUO9HSYx.jpg",
+      "release_date": "2026-01-20",
+      "title": "Whistle",
+      "video": false,
+      "vote_average": 6.035,
+      "vote_count": 241
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7uXzE0ZBkbAeKylOz7cUQF4Yw75.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 879945,
+      "original_language": "nl",
+      "original_title": "L'homme inconnu",
+      "overview": "Louis, a Flemish writer, decides to isolate himself at the Côte d’Azur, hoping this place will bring him inspiration.",
+      "popularity": 101.7774,
+      "poster_path": "/4TpBhdaSl5ALHbgeaYOLF8Q3haz.jpg",
+      "release_date": "2021-10-16",
+      "title": "The Unknown Man",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fPfDB0IHOqvmKIzFP9CA51OOS1N.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1010755,
+      "original_language": "en",
+      "original_title": "The Strangers: Chapter 3",
+      "overview": "Tethered by a frightening conclusion, Maya and the Strangers are locked on an unavoidable, unforgiving collision course — a showdown that proves they’re far from strangers now.",
+      "popularity": 99.9048,
+      "poster_path": "/yPHwX78mcwJw3I6YOJ9qh2wQBFr.jpg",
+      "release_date": "2026-02-05",
+      "title": "The Strangers: Chapter 3",
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 111
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zTnAnYIn0Iv3cn0ZHlzLhou3ybm.jpg",
+      "genre_ids": [
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 89.1327,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "title": "The Housemaid",
+      "video": false,
+      "vote_average": 7.207,
+      "vote_count": 1846
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/CpLAfXgSNeNRRbRzPrTuzKmIHO.jpg",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 350,
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada",
+      "overview": "A young woman from the Midwest gets more than she bargained for when she moves to New York to become a writer and ends up as the assistant to the tyrannical, larger-than-life editor-in-chief of a major fashion magazine.",
+      "popularity": 88.3481,
+      "poster_path": "/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+      "release_date": "2006-06-29",
+      "title": "The Devil Wears Prada",
+      "video": false,
+      "vote_average": 7.39,
+      "vote_count": 12937
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 84.3346,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "title": "The Shadow's Edge",
+      "video": false,
+      "vote_average": 7.224,
+      "vote_count": 577
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5KFThZkdBEQkp9gPWWWNb5CI5yD.jpg",
+      "genre_ids": [
+        53,
+        28,
+        18
+      ],
+      "id": 1268127,
+      "original_language": "ko",
+      "original_title": "휴민트",
+      "overview": "A South Korean agent hunts a drug ring in Russia and goes head-to-head with a North Korean operative — pulling both into peril and tangled secrets.",
+      "popularity": 78.9949,
+      "poster_path": "/82bX2GK4PhaJQtfkTnfmd2P7erG.jpg",
+      "release_date": "2026-02-11",
+      "title": "Humint",
+      "video": false,
+      "vote_average": 7.275,
+      "vote_count": 91
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uNToXatdunyvWXyXMrTI1nLvh6r.jpg",
+      "genre_ids": [
+        35,
+        878,
+        80
+      ],
+      "id": 1115544,
+      "original_language": "en",
+      "original_title": "Mike & Nick & Nick & Alice",
+      "overview": "Two gangsters and the woman they love try to survive the most dangerous night of their lives. As if that wasn’t enough, there’s one wild ingredient added to the mix: a time machine.",
+      "popularity": 74.7487,
+      "poster_path": "/7F0jc75HrSkLVcvOXR2FXAIwuEv.jpg",
+      "release_date": "2026-03-14",
+      "title": "Mike & Nick & Nick & Alice",
+      "video": false,
+      "vote_average": 6.763,
+      "vote_count": 236
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 79.6585,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "title": "War of the Worlds",
+      "video": false,
+      "vote_average": 4.142,
+      "vote_count": 954
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/q9ff80fha6CtuABJtkQvx7woJFc.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1613798,
+      "original_language": "es",
+      "original_title": "Venganza",
+      "overview": "The brutal murder of the wife of “Toro,” a military hero in the special forces, turns him into a man with a single purpose: revenge. After a stroke of fate makes him a millionaire, Carlos transforms his fortune into an arsenal and, together with his closest soldiers, sets out to hunt down those responsible.",
+      "popularity": 79.5416,
+      "poster_path": "/ygWXPL0RS91JyJPNOfK34eV3bRE.jpg",
+      "release_date": "2026-02-26",
+      "title": "Vengeance",
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jSxeFrFCajefwka3TTRY4k8XVEX.jpg",
+      "genre_ids": [
+        27,
+        35
+      ],
+      "id": 1266127,
+      "original_language": "en",
+      "original_title": "Ready or Not: Here I Come",
+      "overview": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
+      "popularity": 75.4319,
+      "poster_path": "/jRf89HVEtBZiSnOXXWDhZOfuTwW.jpg",
+      "release_date": "2026-03-19",
+      "title": "Ready or Not: Here I Come",
+      "video": false,
+      "vote_average": 7.029,
+      "vote_count": 209
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tZiRd4IpoNiaoLXr2o2YfhTMjE2.jpg",
+      "genre_ids": [
+        12,
+        28
+      ],
+      "id": 662707,
+      "original_language": "en",
+      "original_title": "Starbright",
+      "overview": "A young woman becomes the guardian of a fallen star, which she must protect from dangerous forces with the help of a brave stranger.",
+      "popularity": 71.0633,
+      "poster_path": "/m1Zl07DNYeSyNcz9hf8hDsS2oB5.jpg",
+      "release_date": "2026-02-27",
+      "title": "Starbright",
+      "video": false,
+      "vote_average": 7.458,
+      "vote_count": 12
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/swxhEJsAWms6X1fDZ4HdbvYBSf9.jpg",
+      "genre_ids": [
+        12,
+        35,
+        27
+      ],
+      "id": 1234731,
+      "original_language": "en",
+      "original_title": "Anaconda",
+      "overview": "A group of friends facing mid-life crises head to the rainforest with the intention of remaking their favorite movie from their youth, only to find themselves in a fight for their lives against natural disasters, giant snakes and violent criminals.",
+      "popularity": 70.5638,
+      "poster_path": "/hBxN6dwrANN1ic3a4G9x6JZcR3C.jpg",
+      "release_date": "2025-12-24",
+      "title": "Anaconda",
+      "video": false,
+      "vote_average": 5.87,
+      "vote_count": 1007
+    }
+  ],
+  "total_pages": 56242,
+  "total_results": 1124837
+}
