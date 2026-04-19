@@ -1,0 +1,406 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 1226863,
+      "original_language": "en",
+      "original_title": "The Super Mario Galaxy Movie",
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "popularity": 718.7308,
+      "poster_path": "/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "release_date": "2026-04-01",
+      "title": "The Super Mario Galaxy Movie",
+      "video": false,
+      "vote_average": 6.815,
+      "vote_count": 501
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
+      "popularity": 377.5413,
+      "poster_path": "/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
+      "release_date": "2026-03-26",
+      "title": "Your Heart Will Be Broken",
+      "video": false,
+      "vote_average": 7.111,
+      "vote_count": 63
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 306.1776,
+      "poster_path": "/cf7hE1ifY4UNbS25tGnaTyyDrI2.jpg",
+      "release_date": "2025-12-17",
+      "title": "Avatar: Fire and Ash",
+      "video": false,
+      "vote_average": 7.371,
+      "vote_count": 2628
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
+      "popularity": 263.6881,
+      "poster_path": "/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "release_date": "2026-03-15",
+      "title": "Project Hail Mary",
+      "video": false,
+      "vote_average": 8.215,
+      "vote_count": 1516
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sS3zGYFPcfM5pArVNWl6qLyaSmU.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14
+      ],
+      "id": 980431,
+      "original_language": "en",
+      "original_title": "Avatar: Aang, The Last Airbender",
+      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "popularity": 235.9757,
+      "poster_path": "/gPiyTLo5GGwtJl0L8TlaJF9r0KE.jpg",
+      "release_date": "2026-10-09",
+      "title": "Avatar: Aang, The Last Airbender",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3ooXDVaz4xHKtwe4lkmF1gNopOC.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1290417,
+      "original_language": "en",
+      "original_title": "Thrash",
+      "overview": "When a Category 5 hurricane decimates a coastal town, the storm surge brings devastation, chaos, and something far more frightening onto shore: hungry sharks.",
+      "popularity": 222.0529,
+      "poster_path": "/adk8weka3O5648g3de4z3y4aE7G.jpg",
+      "release_date": "2026-04-10",
+      "title": "Thrash",
+      "video": false,
+      "vote_average": 6.002,
+      "vote_count": 327
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        878,
+        35,
+        12
+      ],
+      "id": 1327819,
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "popularity": 220.5682,
+      "poster_path": "/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "release_date": "2026-03-04",
+      "title": "Hoppers",
+      "video": false,
+      "vote_average": 7.578,
+      "vote_count": 477
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1470130,
+      "original_language": "en",
+      "original_title": "The Mortuary Assistant",
+      "overview": "Rebecca Owens, a recent mortuary science graduate takes a night shift job at River Fields Mortuary. Initially, the job seems straightforward — embalming bodies, completing paperwork, and keeping things tidy. But once Rebecca starts working the night shift, things take a dark turn.",
+      "popularity": 214.7007,
+      "poster_path": "/72AoFPC5TY4DfJwXXS9rPwPeReD.jpg",
+      "release_date": "2026-02-13",
+      "title": "The Mortuary Assistant",
+      "video": false,
+      "vote_average": 5.384,
+      "vote_count": 73
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jRsjWwZzI39bTm44FNhRtiICd9k.jpg",
+      "genre_ids": [
+        35,
+        28,
+        12
+      ],
+      "id": 1084577,
+      "original_language": "en",
+      "original_title": "Balls Up",
+      "overview": "Two marketing executives go \"balls out\" and pitch a bold full‑coverage condom sponsorship with the World Cup. After their drunken celebration in Brazil sparks a global scandal, they must outrun furious fans, criminals, and power-hungry officials to salvage their careers and make it home alive.",
+      "popularity": 212.7175,
+      "poster_path": "/xwvJ3WzdJ1OCuDoY8LAxBUlQyig.jpg",
+      "release_date": "2026-04-15",
+      "title": "Balls Up",
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 61
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 502356,
+      "original_language": "en",
+      "original_title": "The Super Mario Bros. Movie",
+      "overview": "While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
+      "popularity": 202.3205,
+      "poster_path": "/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
+      "release_date": "2023-04-05",
+      "title": "The Super Mario Bros. Movie",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 10488
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nHxWyy18SvAZ8jJeemtS8k1UNjM.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1290821,
+      "original_language": "en",
+      "original_title": "Shelter",
+      "overview": "A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.",
+      "popularity": 198.6925,
+      "poster_path": "/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
+      "release_date": "2026-01-28",
+      "title": "Shelter",
+      "video": false,
+      "vote_average": 6.791,
+      "vote_count": 560
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wns4x1GyxCudgOZRyhXKjXVJf3T.jpg",
+      "genre_ids": [
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "Having found the safety of the Greenland bunker after the comet Clarke decimated the Earth, the Garrity family must now risk everything to embark on a perilous journey across the wasteland of Europe to find a new home.",
+      "popularity": 194.8899,
+      "poster_path": "/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg",
+      "release_date": "2026-01-07",
+      "title": "Greenland 2: Migration",
+      "video": false,
+      "vote_average": 6.486,
+      "vote_count": 874
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7lizs4SuEU2ihkkAa0SZ66NtHbl.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1641319,
+      "original_language": "en",
+      "original_title": "Sniper: No Nation",
+      "overview": "Brandon Beckett and Agent Zero lead a rescue mission in Venezuela when their friends are taken hostage.",
+      "popularity": 184.9982,
+      "poster_path": "/3T9nAX0jAp0iT18ex25BlZEpRDb.jpg",
+      "release_date": "2026-04-07",
+      "title": "Sniper: No Nation",
+      "video": false,
+      "vote_average": 6.15,
+      "vote_count": 30
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vG42HeYtoTFflqwP42wYD7tBuNr.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 1171145,
+      "original_language": "en",
+      "original_title": "Crime 101",
+      "overview": "When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of this being his final job, his path collides with a disillusioned insurance broker who is facing her own crossroads. Determined to crack the case, a relentless detective closes in on the operation, raising the stakes even higher.",
+      "popularity": 170.9671,
+      "poster_path": "/tVvpFIoteRHNnoZMhdnwIVwJpCA.jpg",
+      "release_date": "2026-02-11",
+      "title": "Crime 101",
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 711
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bYkgJUGlkDrKzCrN6Jrd1qVx9aB.jpg",
+      "genre_ids": [
+        35,
+        10749
+      ],
+      "id": 20222,
+      "original_language": "es",
+      "original_title": "Sexo con amor",
+      "overview": "In Santiago, Chile, the schoolteacher Luisa proposes a debate about sex with the parents of her students with the intention of giving classes about sex education to the youngsters.",
+      "popularity": 153.0266,
+      "poster_path": "/9Unz4SnlkXg0OAxgiLKZAfu096c.jpg",
+      "release_date": "2003-03-27",
+      "title": "Sex with Love",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 240
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tq3h43fZy0H80vzf47MAY7R9Mxo.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
+      "id": 1297842,
+      "original_language": "en",
+      "original_title": "GOAT",
+      "overview": "A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.",
+      "popularity": 145.776,
+      "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+      "release_date": "2026-02-11",
+      "title": "GOAT",
+      "video": false,
+      "vote_average": 7.914,
+      "vote_count": 407
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zc08qkHtWfZ2cQGQBK1S5yafJmR.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1304313,
+      "original_language": "en",
+      "original_title": "Lee Cronin's The Mummy",
+      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
+      "popularity": 132.0094,
+      "poster_path": "/8L8efNkz8rUmwR7sV0g3vnC9yjn.jpg",
+      "release_date": "2026-04-15",
+      "title": "Lee Cronin's The Mummy",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 76
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/t9J2HXaDuJR7bvIG9XF7mttn4VY.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        80
+      ],
+      "id": 1159559,
+      "original_language": "en",
+      "original_title": "Scream 7",
+      "overview": "When a new Ghostface killer emerges in the quiet town where Sidney Prescott has built a new life, her darkest fears are realized as her daughter becomes the next target. Determined to protect her family, Sidney must face the horrors of her past to put an end to the bloodshed once and for all.",
+      "popularity": 122.3201,
+      "poster_path": "/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
+      "release_date": "2026-02-25",
+      "title": "Scream 7",
+      "video": false,
+      "vote_average": 6.037,
+      "vote_count": 757
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 119.9303,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "video": false,
+      "vote_average": 7.683,
+      "vote_count": 797
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gCmfeKmEAZBP5gcXpiqb0gii9rS.jpg",
+      "genre_ids": [
+        27,
+        53,
+        35
+      ],
+      "id": 1198994,
+      "original_language": "en",
+      "original_title": "Send Help",
+      "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+      "popularity": 117.9549,
+      "poster_path": "/mjkS2iAgWj3ik1DTjvI15nHZ7yl.jpg",
+      "release_date": "2026-01-22",
+      "title": "Send Help",
+      "video": false,
+      "vote_average": 7.025,
+      "vote_count": 1013
+    }
+  ],
+  "total_pages": 56253,
+  "total_results": 1125047
+}
