@@ -1,0 +1,421 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/kxQiIJ4gVcD3K6o14MJ72p5yRcE.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 1226863,
+      "title": "The Super Mario Galaxy Movie",
+      "original_language": "en",
+      "original_title": "The Super Mario Galaxy Movie",
+      "overview": "",
+      "popularity": 650.7446,
+      "poster_path": "/6RmUnKyBfLu6MfC7sya2WXjyVut.jpg",
+      "release_date": "2026-04-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 576
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "title": "Твоё сердце будет разбито",
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "",
+      "popularity": 378.6976,
+      "poster_path": "/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
+      "release_date": "2026-03-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.861,
+      "vote_count": 72
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gCmfeKmEAZBP5gcXpiqb0gii9rS.jpg",
+      "genre_ids": [
+        27,
+        53,
+        35
+      ],
+      "id": 1198994,
+      "title": "Send Help",
+      "original_language": "en",
+      "original_title": "Send Help",
+      "overview": "",
+      "popularity": 309.1211,
+      "poster_path": "/A7Xrton5QMrtG5qNdbnD0739vBM.jpg",
+      "release_date": "2026-01-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.041,
+      "vote_count": 1056
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sS3zGYFPcfM5pArVNWl6qLyaSmU.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14
+      ],
+      "id": 980431,
+      "title": "Avatar Aang: The Last Airbender",
+      "original_language": "en",
+      "original_title": "Avatar Aang: The Last Airbender",
+      "overview": "",
+      "popularity": 294.0381,
+      "poster_path": "/xMEuVXMuC2doymjfvLJucHESGE9.jpg",
+      "release_date": "2026-10-09",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "title": "Avatar: Fire and Ash",
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "",
+      "popularity": 262.7902,
+      "poster_path": "/dVv28yL7kyeMK3sUTWVSKrZC6tV.jpg",
+      "release_date": "2025-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.374,
+      "vote_count": 2691
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jJmlCFi5EjpH5vHmOczRiVDm0qS.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1613798,
+      "title": "Venganza",
+      "original_language": "es",
+      "original_title": "Venganza",
+      "overview": "",
+      "popularity": 248.2392,
+      "poster_path": "/xAxD7bSny1ahmyu06uHybSAyC2D.jpg",
+      "release_date": "2026-02-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.729,
+      "vote_count": 70
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "title": "Project Hail Mary",
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "",
+      "popularity": 213.1689,
+      "poster_path": "/kutdTXxqWJ7KYmnll8nSrtWWsCR.jpg",
+      "release_date": "2026-03-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.219,
+      "vote_count": 1669
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1470130,
+      "title": "The Mortuary Assistant",
+      "original_language": "en",
+      "original_title": "The Mortuary Assistant",
+      "overview": "",
+      "popularity": 198.9187,
+      "poster_path": "/eq2jLkFKv4FvVmuw453CyM5qF7f.jpg",
+      "release_date": "2026-02-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.449,
+      "vote_count": 79
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nHxWyy18SvAZ8jJeemtS8k1UNjM.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1290821,
+      "title": "Shelter",
+      "original_language": "en",
+      "original_title": "Shelter",
+      "overview": "",
+      "popularity": 186.1386,
+      "poster_path": "/8Mr7Av3LOJWdqhAI24ytCN4QNjw.jpg",
+      "release_date": "2026-01-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.779,
+      "vote_count": 586
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        878,
+        35,
+        12
+      ],
+      "id": 1327819,
+      "title": "Hoppers",
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "",
+      "popularity": 182.0789,
+      "poster_path": "/p5G1Fbn6hjQprNijkcjarf8FZWG.jpg",
+      "release_date": "2026-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.589,
+      "vote_count": 506
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zc08qkHtWfZ2cQGQBK1S5yafJmR.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1304313,
+      "title": "Lee Cronin's The Mummy",
+      "original_language": "en",
+      "original_title": "Lee Cronin's The Mummy",
+      "overview": "",
+      "popularity": 166.7205,
+      "poster_path": "/cxUKpGVwAB9pRi4SRu320wWSh5B.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.925,
+      "vote_count": 127
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jRsjWwZzI39bTm44FNhRtiICd9k.jpg",
+      "genre_ids": [
+        35,
+        28,
+        12
+      ],
+      "id": 1084577,
+      "title": "Balls Up",
+      "original_language": "en",
+      "original_title": "Balls Up",
+      "overview": "",
+      "popularity": 160.7202,
+      "poster_path": "/4YuXpMrU9L71oCQTmFO7TEFOjxd.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.623,
+      "vote_count": 114
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wns4x1GyxCudgOZRyhXKjXVJf3T.jpg",
+      "genre_ids": [
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "title": "Greenland 2: Migration",
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "",
+      "popularity": 156.953,
+      "poster_path": "/oEGnHmRkpNfUsxnh0gOKuTqNeQk.jpg",
+      "release_date": "2026-01-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.455,
+      "vote_count": 900
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3ooXDVaz4xHKtwe4lkmF1gNopOC.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1290417,
+      "title": "Thrash",
+      "original_language": "en",
+      "original_title": "Thrash",
+      "overview": "",
+      "popularity": 153.9028,
+      "poster_path": "/gisGNozNhBxfgCgc20Qytw9xBhL.jpg",
+      "release_date": "2026-04-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.985,
+      "vote_count": 397
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/be5T7oHxmDG4ytEimwPdmDHZD9N.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1352874,
+      "title": "The Crucifix: Blood of the Exorcist",
+      "original_language": "en",
+      "original_title": "The Crucifix: Blood of the Exorcist",
+      "overview": "",
+      "popularity": 143.4088,
+      "poster_path": "/6mAcxYNN0LtPKLViAhqthqDzdDc.jpg",
+      "release_date": "2025-01-09",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.571,
+      "vote_count": 21
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7lizs4SuEU2ihkkAa0SZ66NtHbl.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1641319,
+      "title": "Sniper: No Nation",
+      "original_language": "en",
+      "original_title": "Sniper: No Nation",
+      "overview": "",
+      "popularity": 135.2849,
+      "poster_path": "/tUmARo0TZEK1EaSuS6dU35FhDyU.jpg",
+      "release_date": "2026-04-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.221,
+      "vote_count": 34
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tq3h43fZy0H80vzf47MAY7R9Mxo.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
+      "id": 1297842,
+      "title": "GOAT",
+      "original_language": "en",
+      "original_title": "GOAT",
+      "overview": "",
+      "popularity": 132.4376,
+      "poster_path": "/vd3MzHqfuz9HyntKikW1oYDjzNu.jpg",
+      "release_date": "2026-02-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.899,
+      "vote_count": 429
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vG42HeYtoTFflqwP42wYD7tBuNr.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 1171145,
+      "title": "Crime 101",
+      "original_language": "en",
+      "original_title": "Crime 101",
+      "overview": "",
+      "popularity": 132.0621,
+      "poster_path": "/sGWwEfFxIsSfhDxuAXhIDGKa7B6.jpg",
+      "release_date": "2026-02-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.97,
+      "vote_count": 755
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fPfDB0IHOqvmKIzFP9CA51OOS1N.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1010755,
+      "title": "The Strangers: Chapter 3",
+      "original_language": "en",
+      "original_title": "The Strangers: Chapter 3",
+      "overview": "",
+      "popularity": 131.2846,
+      "poster_path": "/3vNEzHHvtN1auh5qDMpB8xsTjli.jpg",
+      "release_date": "2026-02-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.658,
+      "vote_count": 117
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "",
+      "popularity": 129.1631,
+      "poster_path": "/blFjizlJ8iTkMcOu3aFelj61VhX.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 808
+    }
+  ],
+  "total_pages": 56351,
+  "total_results": 1127015
+}
