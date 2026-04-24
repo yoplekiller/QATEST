@@ -1,0 +1,419 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 502356,
+      "title": "The Super Mario Bros. Movie",
+      "original_language": "en",
+      "original_title": "The Super Mario Bros. Movie",
+      "overview": "While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
+      "popularity": 118.4745,
+      "poster_path": "/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
+      "release_date": "2023-04-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.587,
+      "vote_count": 10513
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qXxFWyur7jFkg2aQgENcXuyYeHF.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1480387,
+      "title": "undertone",
+      "original_language": "en",
+      "original_title": "undertone",
+      "overview": "The host of a popular paranormal podcast becomes haunted by terrifying recordings mysteriously sent her way.",
+      "popularity": 109.8813,
+      "poster_path": "/2PFgFMnrdCPXWiZl1PUvky7Mo9D.jpg",
+      "release_date": "2026-03-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.564,
+      "vote_count": 94
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/t9J2HXaDuJR7bvIG9XF7mttn4VY.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        80
+      ],
+      "id": 1159559,
+      "title": "Scream 7",
+      "original_language": "en",
+      "original_title": "Scream 7",
+      "overview": "When a new Ghostface killer emerges in the quiet town where Sidney Prescott has built a new life, her darkest fears are realized as her daughter becomes the next target. Determined to protect her family, Sidney must face the horrors of her past to put an end to the bloodshed once and for all.",
+      "popularity": 106.7999,
+      "poster_path": "/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
+      "release_date": "2026-02-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 785
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        9648,
+        12,
+        35
+      ],
+      "id": 1084242,
+      "title": "Zootopia 2",
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 100.5579,
+      "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "release_date": "2025-11-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.609,
+      "vote_count": 2594
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/61RYedFgX1K07xgVIvdJzukSR4g.jpg",
+      "genre_ids": [
+        35,
+        18,
+        10751,
+        10749
+      ],
+      "id": 848116,
+      "title": "Rocky Aur Rani Kii Prem Kahaani",
+      "original_language": "hi",
+      "original_title": "रॉकी और रानी की प्रेम कहानी",
+      "overview": "Gym-freak brat Rocky falls in love with Rani, who comes from a well-educated Bengali family. Being from polar opposite worlds, the two decide to switch their families to adjust to each other's cultures and backgrounds and to know if their marriage will survive. Rocky and Rani are trapped in a world where they are united by love but divided by families and the ultimate question is will they fit in?",
+      "popularity": 99.4974,
+      "poster_path": "/vTQIqlxUkOuyf2UKhlM2OUaFGKz.jpg",
+      "release_date": "2023-07-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.068,
+      "vote_count": 81
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/CpLAfXgSNeNRRbRzPrTuzKmIHO.jpg",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 350,
+      "title": "The Devil Wears Prada",
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada",
+      "overview": "A young woman from the Midwest gets more than she bargained for when she moves to New York to become a writer and ends up as the assistant to the tyrannical, larger-than-life editor-in-chief of a major fashion magazine.",
+      "popularity": 98.0983,
+      "poster_path": "/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+      "release_date": "2006-06-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.39,
+      "vote_count": 12965
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "title": "The Shadow's Edge",
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 88.2702,
+      "poster_path": "/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg",
+      "release_date": "2025-08-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.222,
+      "vote_count": 585
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zTnAnYIn0Iv3cn0ZHlzLhou3ybm.jpg",
+      "genre_ids": [
+        9648,
+        53
+      ],
+      "id": 1368166,
+      "title": "The Housemaid",
+      "original_language": "en",
+      "original_title": "The Housemaid",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "popularity": 88.1917,
+      "poster_path": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "release_date": "2025-12-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.225,
+      "vote_count": 1900
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1ZruuRXztqC3QQybbgbVxVrdNjv.jpg",
+      "genre_ids": [
+        35,
+        10749
+      ],
+      "id": 1601797,
+      "title": "¿Quieres Ser Mi Novia?",
+      "original_language": "es",
+      "original_title": "¿Quieres Ser Mi Novia?",
+      "overview": "Javi and Lu's relationship faces dangerous territory as old and new temptations emerge: a young woman reigniting Javi's chemistry and a mature man pursuing Lu. Through humor, entanglements, and surprises, their love is tested.",
+      "popularity": 83.0942,
+      "poster_path": "/oscW8xV8EhRYj7iAhyVlBohKqxo.jpg",
+      "release_date": "2026-02-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.13,
+      "vote_count": 27
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yJi6g0CnsqANLNuVaRX28tZxeHX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1193501,
+      "title": "Whistle",
+      "original_language": "en",
+      "original_title": "Whistle",
+      "overview": "A misfit group of unwitting high school students stumble upon a cursed object, an ancient Aztec Death Whistle. They discover that blowing the whistle and the terrifying sound it emits will summon their future deaths to hunt them down.",
+      "popularity": 83.0479,
+      "poster_path": "/eGxPyseSnEZBMJaopGfRUO9HSYx.jpg",
+      "release_date": "2026-01-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.034,
+      "vote_count": 248
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/v0NEB75SZjxY8GS3ho8WeEvjIT3.jpg",
+      "genre_ids": [
+        9648,
+        18,
+        27
+      ],
+      "id": 680493,
+      "title": "Return to Silent Hill",
+      "original_language": "en",
+      "original_title": "Return to Silent Hill",
+      "overview": "When James receives a mysterious letter from his lost love Mary, he is drawn to Silent Hill—a once-familiar town now consumed by darkness. As he searches for her, James faces monstrous creatures and unravels a terrifying truth that will push him to the edge of his sanity.",
+      "popularity": 81.3736,
+      "poster_path": "/fqAGFN2K2kDL0EHxvJaXzaMUkkt.jpg",
+      "release_date": "2026-01-21",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.213,
+      "vote_count": 404
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6yeVcxFR0j08vlv2OlL6zbewm4D.jpg",
+      "genre_ids": [
+        28,
+        878,
+        53
+      ],
+      "id": 1265609,
+      "title": "War Machine",
+      "original_language": "en",
+      "original_title": "War Machine",
+      "overview": "On one last grueling mission during Army Ranger training, a combat engineer must lead his unit in a fight against a giant otherworldly killing machine.",
+      "popularity": 80.5488,
+      "poster_path": "/rFhKkXhk7ClU03jQ5rHIApJDwev.jpg",
+      "release_date": "2026-02-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.232,
+      "vote_count": 1497
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1525963,
+      "title": "Debtor’s Wife",
+      "original_language": "ko",
+      "original_title": "채무자의 아내",
+      "overview": "Soo-yeong and Hae-soo are college friends stuck in a love tangle: Soo-yeong likes Che-moo, but Che-moo likes Hae-soo. Meanwhile, Hae-soo likes Dae-in, but Dae-in likes Soo-yeong. Despite the mixed-up feelings, they end up in mismatched marriages. Later, Hae-soo wants to have a baby and tries to get closer to her husband, Dae-in. But Dae-in knows he can’t have children, so he secretly makes a surprising proposal to Soo-yeong’s husband, Che-moo.",
+      "popularity": 80.0196,
+      "poster_path": "/ouXTrnJBimHIhWIUlHARDJH47no.jpg",
+      "release_date": "2024-12-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
+      "genre_ids": [
+        10402,
+        18
+      ],
+      "id": 936075,
+      "title": "Michael",
+      "original_language": "en",
+      "original_title": "Michael",
+      "overview": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+      "popularity": 79.8068,
+      "poster_path": "/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
+      "release_date": "2026-04-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.285,
+      "vote_count": 86
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "title": "War of the Worlds",
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 78.29,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.132,
+      "vote_count": 964
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hpEjnTB0gAhMCBN42CJZawRfWuv.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 1511057,
+      "title": "Roommates",
+      "original_language": "en",
+      "original_title": "Roommates",
+      "overview": "When shy college freshman Devon asks cool-girl Celeste to be her roommate, a blossoming friendship quickly spirals into a war of passive aggression.",
+      "popularity": 78.1851,
+      "poster_path": "/eW1s6omXIfVkTlmKVe9y9Dwwt4u.jpg",
+      "release_date": "2026-04-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.426,
+      "vote_count": 54
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1ytf7rzkZ7RLlMnBdGggQ0ENe6z.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1418657,
+      "title": "The Yeti",
+      "original_language": "en",
+      "original_title": "The Yeti",
+      "overview": "When an oil tycoon and a famous adventurer vanish into the harsh winter of remote northern Alaska, a hand-picked rescue team endeavors to bring them home. What they don’t know is that they are trespassing on The Yeti’s territory, and the elements are the least of their worries.",
+      "popularity": 77.838,
+      "poster_path": "/zaqEfoKcWkVni2eONhJ7DRhMO8Q.jpg",
+      "release_date": "2026-04-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.843,
+      "vote_count": 35
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iQSXJs6RbTumcwxMjCedDoK99rx.jpg",
+      "genre_ids": [
+        53,
+        80,
+        18
+      ],
+      "id": 1659087,
+      "title": "180",
+      "original_language": "en",
+      "original_title": "180",
+      "overview": "When an unexpected road rage incident puts his son in critical condition, an enraged father spirals down a dark path of emotional turmoil and vengeance.",
+      "popularity": 73.6476,
+      "poster_path": "/9ISjrhA38HpSSGtfiCk8lpziC3K.jpg",
+      "release_date": "2026-04-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.61,
+      "vote_count": 41
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/swxhEJsAWms6X1fDZ4HdbvYBSf9.jpg",
+      "genre_ids": [
+        12,
+        35,
+        27
+      ],
+      "id": 1234731,
+      "title": "Anaconda",
+      "original_language": "en",
+      "original_title": "Anaconda",
+      "overview": "A group of friends facing mid-life crises head to the rainforest with the intention of remaking their favorite movie from their youth, only to find themselves in a fight for their lives against natural disasters, giant snakes and violent criminals.",
+      "popularity": 72.6251,
+      "poster_path": "/hBxN6dwrANN1ic3a4G9x6JZcR3C.jpg",
+      "release_date": "2025-12-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.861,
+      "vote_count": 1036
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zD5v1E4joAzFvmAEytt7fM3ivyT.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 634649,
+      "title": "Spider-Man: No Way Home",
+      "original_language": "en",
+      "original_title": "Spider-Man: No Way Home",
+      "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+      "popularity": 71.3268,
+      "poster_path": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+      "release_date": "2021-12-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.934,
+      "vote_count": 21822
+    }
+  ],
+  "total_pages": 56347,
+  "total_results": 1126921
+}
