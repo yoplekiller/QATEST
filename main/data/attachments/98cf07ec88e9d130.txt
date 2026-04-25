@@ -1,0 +1,2 @@
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): api.themoviedb.org:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://api.themoviedb.org:443 "GET /3/movie/550/videos?api_key=040ab6b57016f82bc6cac7e111efe301 HTTP/1.1" 200 None
