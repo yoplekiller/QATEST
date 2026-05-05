@@ -80,15 +80,30 @@ for t in all_failed:
     func    = nodeid.split("::")[-1] if "::" in nodeid else nodeid
     category = "UI" if "ui" in source else "API"
 
-    summary = f"[자동버그][{category}] {fname} / {func} - {outcome}"
-    dup_key = f"{fname} / {func}"
+    # 유니코드 이스케이프 디코딩 (e.g. 사과 → 사과)
+    try:
+        func_decoded = func.encode("raw_unicode_escape").decode("unicode_escape")
+    except Exception:
+        func_decoded = func
+
+    # 에러 로그 첫 줄이 있으면 제목으로, 없으면 테스트명으로
+    first_line = longrepr.splitlines()[0].strip() if longrepr and longrepr != "에러 없음" else ""
+    if first_line and len(first_line) <= 80:
+        title_body = first_line
+    elif first_line:
+        title_body = first_line[:80] + "…"
+    else:
+        title_body = func_decoded
+
+    summary = f"[자동버그][{category}] {title_body}"
+    dup_key = f"{fname} / {func_decoded}"
 
     description = f"""*자동 생성 버그 티켓 (GitHub Actions)*
 
 ||항목||내용||
 |카테고리|{category}|
 |테스트 파일|{fname}|
-|테스트 함수|{func}|
+|테스트 함수|{func_decoded}|
 |결과|{outcome}|
 |소스|{source}|
 
