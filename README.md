@@ -26,10 +26,12 @@ Python + Selenium 기반으로 실제 운영 중인 마켓컬리 웹사이트를
 |------|------|
 | **Page Object Model** | 6개 페이지 클래스로 구조화 |
 | **다중 플랫폼** | Web UI (Selenium) + API (Requests) |
-| **CI/CD** | GitHub Actions 8시간 주기 자동 실행 |
-| **Allure Report** | 단계별 실행 과정 시각화 |
+| **CI/CD** | GitHub Actions 4시간 주기 자동 실행 (UI/API 병렬) |
+| **Allure Report** | 단계별 실행 과정 시각화, GitHub Pages 자동 배포 |
+| **Jira 자동 연동** | 테스트 실패 시 Jira 버그 티켓 자동 생성 |
+| **Jira Status Watcher** | Jira 이슈 상태 변경 감지 → Slack 실시간 알림 |
 | **환경변수 관리** | .env 기반 API 키/계정 정보 보호 |
-| **Slack 알림** | 테스트 결과 실시간 알림 |
+| **Slack 알림** | 테스트 결과 및 Jira 상태 변경 실시간 알림 |
 
 ---
 
@@ -82,7 +84,11 @@ QATEST/
 │   └── movie_list.csv
 │
 ├── .github/workflows/
-│   └── Test_Automation.yaml       # CI/CD 설정
+│   ├── Test_Automation.yaml       # CI/CD 메인 파이프라인
+│   └── jira_status_watch.yaml     # Jira 상태 감시 (1시간 주기)
+│
+├── cache/
+│   └── jira_status_cache.json     # Jira 상태 변경 감지용 캐시
 │
 ├── .env.example
 ├── requirements.txt
@@ -196,27 +202,61 @@ BasePage (공통: open, find_element, click, send_keys, is_displayed, take_scree
   └── KurlyCartPage      장바구니
 ```
 
-### CI/CD
+### CI/CD 파이프라인
 
-- `main`, `develop` 브랜치 PR / `feature/*`, `temp/*` push
-- 8시간 주기 스케줄 / 수동 실행
+**트리거 조건**
+- `main`, `develop` 브랜치 push / PR
+- 4시간 주기 스케줄 (`0 */4 * * *` UTC)
+- 수동 실행 (workflow_dispatch)
+
+**파이프라인 구조** (UI/API 병렬 실행)
 
 ```
-Checkout → 의존성 설치 → UI/API 테스트 실행
-→ Allure Report 생성 → GitHub Pages 배포 → Slack 알림
+[Push / Schedule / PR]
+        │
+   ┌────┴────┐
+   ▼         ▼
+ui_tests   api_tests        ← 병렬 실행
+   └────┬────┘
+        │
+   ┌────┴──────────┐
+   ▼               ▼
+ deploy      create_jira_bugs   ← 병렬 실행
+(GitHub Pages)  (실패 케이스 Jira 자동 등록)
+   └────┬──────────┘
+        ▼
+  notify_slack
+  (테스트 결과 Slack 발송)
+```
+
+**concurrency 설정**: 동시 배포 방지 (`cancel-in-progress: true`)
+
+### Jira 자동 연동
+
+테스트 실패 시 자동으로 Jira 버그 티켓을 생성하고, Jira 이슈 상태 변경을 감지해 Slack으로 알림을 전송합니다.
+
+```
+[테스트 실패]
+     │
+     ▼
+create_jira_bugs (GitHub Actions)
+     │  test_results_ui.json / test_results_api.json 파싱
+     ▼
+Jira 버그 티켓 자동 생성 (utils/create_jira_bugs.py)
+
+[Jira Status Watcher] ← 매 1시간 실행
+     │  Jira 이슈 상태 변경 감지 (cache/jira_status_cache.json 비교)
+     ▼
+Slack 알림 발송 (utils/jira_status_watcher.py)
 ```
 
 
 ---
-
-## 데모 영상
-
-[마켓컬리 주문 플로우 자동화 (YouTube)](https://www.youtube.com/watch?v=TqsvT2RsYEs)
-
 ## 관련 프로젝트
 
 - [PlaywrightQA](https://github.com/yoplekiller/PlaywrightQA) - Playwright/TypeScript E2E 테스트
 - [woongjinAppTest](https://github.com/yoplekiller/woongjinAppTest) - Python/Appium 모바일 테스트
+- [AutoTC](https://github.com/yoplekiller/AutoTC) - 테스트 케이스 자동 생성 
 
 ---
 
