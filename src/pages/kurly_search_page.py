@@ -5,8 +5,9 @@ Kurly 검색 결과 페이지 Page Object
 from typing import List
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import ElementClickInterceptedException, NoSuchElementException, TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
 from src.pages.base_page import BasePage
 
 class KurlySearchPage(BasePage):
@@ -247,15 +248,49 @@ class KurlySearchPage(BasePage):
         """add_to_cart_in_alt의 별칭 - 팝업에서 장바구니 담기 버튼 클릭"""
         self.add_to_cart_in_alt()
 
+    def close_cart_popup(self) -> None:
+        """장바구니 팝업 닫기 버튼 클릭"""
+        wait = WebDriverWait(self.driver, 10)
+        close_button = wait.until(
+            lambda driver: next(
+                (
+                    button
+                    for button in driver.find_elements(*self.POPUP_CLOSE_BUTTON)
+                    if button.is_displayed() and button.is_enabled()
+                ),
+                None,
+            )
+        )
+        self.driver.execute_script(
+            "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
+            close_button,
+        )
+
+        try:
+            WebDriverWait(self.driver, 3).until(
+                lambda driver: driver.execute_script(
+                    """
+                    const el = arguments[0];
+                    const rect = el.getBoundingClientRect();
+                    const x = rect.left + rect.width / 2;
+                    const y = rect.top + rect.height / 2;
+                    const top = document.elementFromPoint(x, y);
+                    return top === el || el.contains(top);
+                    """,
+                    close_button,
+                )
+            )
+            close_button.click()
+        except (ElementClickInterceptedException, TimeoutException):
+            self.driver.execute_script("arguments[0].click();", close_button)
+
+        self.wait_until_invisible(self.POPUP_CLOSE_BUTTON, timeout=10)
+
     def add_to_cart_in_alt(self) -> None:
         """ALT에서 장바구니 담기 버튼 클릭"""
         self.wait_visible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
         self.click(self.ADD_TO_CART_BUTTONS_IN_ALT)
-        self.sleep(1)
-        close_btns = self.driver.find_elements(*self.POPUP_CLOSE_BUTTON)
-        visible_close = [b for b in close_btns if b.is_displayed()]
-        if visible_close:
-            visible_close[0].click()
+        self.close_cart_popup()
         self.wait_until_invisible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
 
 
@@ -299,5 +334,3 @@ class KurlySearchPage(BasePage):
             str: 페이지 제목
         """
         return self.driver.title
-    
-  
