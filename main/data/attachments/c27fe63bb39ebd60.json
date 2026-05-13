@@ -1,0 +1,418 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        12,
+        18,
+        14
+      ],
+      "id": 1007757,
+      "title": "Swapped",
+      "original_language": "en",
+      "original_title": "Swapped",
+      "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
+      "popularity": 439.3294,
+      "poster_path": "/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "release_date": "2026-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.979,
+      "vote_count": 704
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 1226863,
+      "title": "The Super Mario Galaxy Movie",
+      "original_language": "en",
+      "original_title": "The Super Mario Galaxy Movie",
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "popularity": 385.0295,
+      "poster_path": "/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "release_date": "2026-04-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 818
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9nzfyiYbmTUXWC4B2kwjl4NAlqO.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1318447,
+      "title": "Apex",
+      "original_language": "en",
+      "original_title": "Apex",
+      "overview": "A grieving woman pushing her limits on a solo adventure in the Australian wild is ensnared in a twisted game with a cunning killer who thinks she's prey.",
+      "popularity": 311.0979,
+      "poster_path": "/eTp7gSPkSF3Aw79mNx1NkBP1PZT.jpg",
+      "release_date": "2026-04-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.594,
+      "vote_count": 898
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "title": "Project Hail Mary",
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+      "popularity": 369.2965,
+      "poster_path": "/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "release_date": "2026-03-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.4,
+      "vote_count": 2671
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gkh6Nt8DtY1XT4gQsyFq9XAVJlJ.jpg",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 350,
+      "title": "The Devil Wears Prada",
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada",
+      "overview": "A young woman from the Midwest gets more than she bargained for when she moves to New York to become a writer and ends up as the assistant to the tyrannical, larger-than-life editor-in-chief of a major fashion magazine.",
+      "popularity": 288.555,
+      "poster_path": "/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+      "release_date": "2006-06-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.402,
+      "vote_count": 13333
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gCmfeKmEAZBP5gcXpiqb0gii9rS.jpg",
+      "genre_ids": [
+        27,
+        53,
+        35
+      ],
+      "id": 1198994,
+      "title": "Send Help",
+      "original_language": "en",
+      "original_title": "Send Help",
+      "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+      "popularity": 230.8622,
+      "poster_path": "/mjkS2iAgWj3ik1DTjvI15nHZ7yl.jpg",
+      "release_date": "2026-01-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.035,
+      "vote_count": 1357
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "title": "Your Heart Will Be Broken",
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
+      "popularity": 236.6187,
+      "poster_path": "/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
+      "release_date": "2026-03-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.799,
+      "vote_count": 77
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qjv21Iu0nHQ0crJpy6KKiW8LX1Y.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 931285,
+      "title": "Mortal Kombat II",
+      "original_language": "en",
+      "original_title": "Mortal Kombat II",
+      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "popularity": 223.6578,
+      "poster_path": "/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
+      "release_date": "2026-05-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.138,
+      "vote_count": 134
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/d1TupF3vMdQ6BhnADkFiNf0ZBOo.jpg",
+      "genre_ids": [
+        28,
+        18,
+        10749
+      ],
+      "id": 1630423,
+      "title": "My Dearest Assassin",
+      "original_language": "th",
+      "original_title": "เลือดรัก นักฆ่า",
+      "overview": "Hunted for her rare blood type, a caged woman vows to fight alongside the assassin she loves to protect their future when an old enemy resurfaces.",
+      "popularity": 222.8938,
+      "poster_path": "/ul4dQcA68mtSx8J56N5gEcaCCtP.jpg",
+      "release_date": "2026-05-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.554,
+      "vote_count": 93
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9dMp9t0d0nIGhiil8TyqChwiNwA.jpg",
+      "genre_ids": [
+        27,
+        35
+      ],
+      "id": 1266127,
+      "title": "Ready or Not 2: Here I Come",
+      "original_language": "en",
+      "original_title": "Ready or Not 2: Here I Come",
+      "overview": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
+      "popularity": 179.0672,
+      "poster_path": "/13ZcJzSGEqVgDSqsS9U5EkQwPkV.jpg",
+      "release_date": "2026-03-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.511,
+      "vote_count": 618
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
+      "genre_ids": [
+        10402,
+        18
+      ],
+      "id": 936075,
+      "title": "Michael",
+      "original_language": "en",
+      "original_title": "Michael",
+      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+      "popularity": 159.5523,
+      "poster_path": "/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
+      "release_date": "2026-04-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 660
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iN41Ccw4DctL8npfmYg1j5Tr1eb.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "title": "Avatar: Fire and Ash",
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 158.9445,
+      "poster_path": "/aabwWZWx6z1aYP4PX2ADvbDKktd.jpg",
+      "release_date": "2025-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 2959
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vadUKKQixxOKWkcuZ1SUEoBQeVG.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 10867,
+      "title": "Malena",
+      "original_language": "it",
+      "original_title": "Malèna",
+      "overview": "12-year-old Renato experiences three significant events on the same day: the beginning of the Second World War, getting a bike, and witnessing the arrival of the gorgeous Malèna. Through his eyes, we see the curse of beauty and loneliness of Malena, whose husband is presumed dead, and, through his soul, we see his love for her.",
+      "popularity": 125.5315,
+      "poster_path": "/3OyQTl0IGkbnjDxd3MhztfPE34g.jpg",
+      "release_date": "2000-10-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.44,
+      "vote_count": 2543
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        16,
+        12,
+        35,
+        10751,
+        878
+      ],
+      "id": 1327819,
+      "title": "Hoppers",
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "popularity": 154.6615,
+      "poster_path": "/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "release_date": "2026-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.949,
+      "vote_count": 962
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jAJYVbVR5fP0BeTQXRP1BXjW5bl.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1669050,
+      "title": "Tayuan 2",
+      "original_language": "tl",
+      "original_title": "Tayuan 2",
+      "overview": "A charming bus conductor drawn to both men and women who feels an unexpected spark with a shy commuter. On crowded bus rides where bodies brush, desire grows and love becomes messy.",
+      "popularity": 123.2287,
+      "poster_path": "/gkHNa8q3RNhgj2EMuoYWJUHsMa6.jpg",
+      "release_date": "2026-04-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 3.7,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+      "genre_ids": [
+        18,
+        9648
+      ],
+      "id": 1330021,
+      "title": "Remarkably Bright Creatures",
+      "original_language": "en",
+      "original_title": "Remarkably Bright Creatures",
+      "overview": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
+      "popularity": 141.8722,
+      "poster_path": "/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+      "release_date": "2026-05-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.375,
+      "vote_count": 144
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hlZGaey4lR9hc4rGxZRAmIEsZOc.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1292415,
+      "title": "Beast",
+      "original_language": "en",
+      "original_title": "Beast",
+      "overview": "MMA legend Patton James, now a commercial fisherman, is pulled back into the cage when his brother is in danger. Reuniting with his old coach Sammy, he commits to one final fight in one championship against the brutal champion Xavier Grau.",
+      "popularity": 135.1991,
+      "poster_path": "/7NrvUI3vnW8H3rD7ExKcTL7KRcQ.jpg",
+      "release_date": "2026-04-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.763,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jJmlCFi5EjpH5vHmOczRiVDm0qS.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1613798,
+      "title": "Vengeance",
+      "original_language": "es",
+      "original_title": "Venganza",
+      "overview": "The brutal murder of the wife of “Toro,” a military hero in the special forces, turns him into a man with a single purpose: revenge. After a stroke of fate makes him a millionaire, Carlos transforms his fortune into an arsenal and, together with his closest soldiers, sets out to hunt down those responsible.",
+      "popularity": 119.0393,
+      "poster_path": "/ygWXPL0RS91JyJPNOfK34eV3bRE.jpg",
+      "release_date": "2026-02-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.169,
+      "vote_count": 160
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tq3h43fZy0H80vzf47MAY7R9Mxo.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
+      "id": 1297842,
+      "title": "GOAT",
+      "original_language": "en",
+      "original_title": "GOAT",
+      "overview": "A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.",
+      "popularity": 116.8097,
+      "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+      "release_date": "2026-02-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.026,
+      "vote_count": 549
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5AsIFZ2AJC7JcGpq40aRPuRuaRc.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1241752,
+      "title": "Rita",
+      "original_language": "tl",
+      "original_title": "Rita",
+      "overview": "Rita, who finds herself alone when husband Ariel works abroad. They both find solace and sexual satisfaction in other people. When Ariel comes back, they both act like nothing happened. But will this keep their marriage from falling apart?",
+      "popularity": 122.5153,
+      "poster_path": "/pXENxAzOBrTSDJGxDcUnlNTNmWr.jpg",
+      "release_date": "2024-03-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 21
+    }
+  ],
+  "total_pages": 56765,
+  "total_results": 1135294
+}

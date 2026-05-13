@@ -1,0 +1,4 @@
+2026-05-13 12:54:55 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-05-13 12:54:57 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-05-13 12:55:10 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath___button_type_button_contains_text_담기_3__20260513_125510.png
+2026-05-13 12:55:10 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "(//button[@type='button'][contains(text(),'담기')])[3]")
