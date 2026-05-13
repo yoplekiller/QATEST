@@ -250,36 +250,35 @@ class KurlySearchPage(BasePage):
 
     def close_cart_popup(self) -> None:
         """장바구니 팝업 닫기 버튼 클릭"""
-        wait = WebDriverWait(self.driver, 10)
-        close_button = wait.until(
-            lambda driver: next(
-                (
-                    button
-                    for button in driver.find_elements(*self.POPUP_CLOSE_BUTTON)
-                    if button.is_displayed() and button.is_enabled()
-                ),
-                None,
+        def find_visible_close_button(driver):
+            close_buttons = driver.find_elements(*self.POPUP_CLOSE_BUTTON)
+            for button in close_buttons:
+                if button.is_displayed() and button.is_enabled():
+                    return button
+            return None
+
+        def is_click_point_clear(driver):
+            return driver.execute_script(
+                """
+                const el = arguments[0];
+                const rect = el.getBoundingClientRect();
+                const x = rect.left + rect.width / 2;
+                const y = rect.top + rect.height / 2;
+                const top = document.elementFromPoint(x, y);
+                return top === el || el.contains(top);
+                """,
+                close_button,
             )
-        )
+
+        wait = WebDriverWait(self.driver, 10)
+        close_button = wait.until(find_visible_close_button)
         self.driver.execute_script(
             "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
             close_button,
         )
 
         try:
-            WebDriverWait(self.driver, 3).until(
-                lambda driver: driver.execute_script(
-                    """
-                    const el = arguments[0];
-                    const rect = el.getBoundingClientRect();
-                    const x = rect.left + rect.width / 2;
-                    const y = rect.top + rect.height / 2;
-                    const top = document.elementFromPoint(x, y);
-                    return top === el || el.contains(top);
-                    """,
-                    close_button,
-                )
-            )
+            WebDriverWait(self.driver, 3).until(is_click_point_clear)
             close_button.click()
         except (ElementClickInterceptedException, TimeoutException):
             self.driver.execute_script("arguments[0].click();", close_button)
