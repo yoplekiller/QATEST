@@ -47,6 +47,12 @@ class KurlyMainPage(BasePage):
     # 팝업
     POPUP_CLOSE_BUTTON = (By.XPATH, "//button[contains(text(),'확인')]")
     POPUP_TEXT = (By.XPATH, "//div[@class='popup-content css-15yaaju e1k5padi2']")
+    SWEET_ALERT = (By.CSS_SELECTOR, ".swal2-container.swal2-backdrop-show")
+    SWEET_ALERT_CLOSE_BUTTON = (
+        By.XPATH,
+        "//*[contains(@class, 'swal2-container')]"
+        "//button[normalize-space()='닫기' or contains(@class, 'swal2-confirm')]",
+    )
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -66,6 +72,7 @@ class KurlyMainPage(BasePage):
 
     def click_search_button(self) -> None:
         """검색 버튼 클릭"""
+        self.close_sweet_alert_if_displayed()
         self.click(self.SEARCH_BUTTON)
 
     def search_goods(self, keyword: str) -> None:
@@ -77,6 +84,28 @@ class KurlyMainPage(BasePage):
         """
         self.enter_search_keyword(keyword)
         self.click_search_button()
+
+    def close_sweet_alert_if_displayed(self) -> None:
+        """이전 동작에서 남아 있는 SweetAlert 팝업 닫기"""
+        alerts = [
+            alert
+            for alert in self.driver.find_elements(*self.SWEET_ALERT)
+            if alert.is_displayed()
+        ]
+        if not alerts:
+            return
+
+        close_buttons = [
+            button
+            for button in self.driver.find_elements(*self.SWEET_ALERT_CLOSE_BUTTON)
+            if button.is_displayed() and button.is_enabled()
+        ]
+        if close_buttons:
+            self.driver.execute_script("arguments[0].click();", close_buttons[0])
+        else:
+            self.driver.execute_script("arguments[0].remove();", alerts[0])
+
+        self.wait_until_invisible(self.SWEET_ALERT, timeout=5)
 
 
     def open_category_menu(self) -> None:
