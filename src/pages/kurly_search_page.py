@@ -5,7 +5,11 @@ Kurly 검색 결과 페이지 Page Object
 from typing import List
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
-from selenium.common.exceptions import ElementClickInterceptedException, NoSuchElementException, TimeoutException
+from selenium.common.exceptions import (
+    ElementClickInterceptedException,
+    NoSuchElementException,
+    TimeoutException,
+)
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from src.pages.base_page import BasePage
@@ -37,6 +41,14 @@ class KurlySearchPage(BasePage):
     QUANTITY_DOWN_BUTTON_IN_ALT = (By.XPATH, "//button[@aria-label='Stepper minus']")
     QUANTITY_DISPLAY_IN_ALT = (By.XPATH, "//button[@aria-label='Stepper plus']/preceding-sibling::*[1] | //button[@aria-label='Stepper minus']/following-sibling::*[1]") # 수량 표시 요소 ALT 내
     ADD_TO_CART_BUTTONS_IN_ALT = (By.XPATH, "//button[contains(.,'장바구니 담기')]") # 금액이 앞에 붙은 장바구니 담기 버튼 ALT 내
+    SEARCH_RESULT_ADD_BUTTONS = (
+        By.XPATH,
+        "//button[@type='button' and not(@disabled) and "
+        "(contains(normalize-space(.), '담기') "
+        "or contains(normalize-space(.), '장바구니') "
+        "or contains(@aria-label, '담기') "
+        "or contains(@aria-label, '장바구니'))]",
+    )
 
 
     # Locators - 정렬
@@ -179,9 +191,32 @@ class KurlySearchPage(BasePage):
         Args:
             n: 클릭할 상품의 순번 (1부터 시작)
         """
-        nth_add_button = (By.XPATH, f"(//button[@type='button'][contains(text(),'담기')])[{n}]")
-        element = self.find_element(nth_add_button)
-        ActionChains(self.driver).move_to_element(element).click().perform()
+        def find_nth_visible_add_button(driver):
+            buttons = [
+                button
+                for button in driver.find_elements(*self.SEARCH_RESULT_ADD_BUTTONS)
+                if button.is_displayed() and button.is_enabled()
+            ]
+            return buttons[n - 1] if len(buttons) >= n else None
+
+        if n < 1:
+            raise ValueError("n은 1 이상의 값이어야 합니다.")
+
+        try:
+            element = self._get_wait(10).until(find_nth_visible_add_button)
+        except TimeoutException:
+            self.take_screenshot(name=f"add_button_not_found_{n}")
+            raise TimeoutException(f"{n}번째 장바구니 담기 버튼을 찾을 수 없습니다.")
+
+        self.driver.execute_script(
+            "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
+            element,
+        )
+
+        try:
+            ActionChains(self.driver).move_to_element(element).click().perform()
+        except ElementClickInterceptedException:
+            self.driver.execute_script("arguments[0].click();", element)
 
     def is_keyword_in_page_source(self, keyword: str) -> bool:
         """
