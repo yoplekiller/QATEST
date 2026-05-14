@@ -1,0 +1,2 @@
+2026-05-14 05:25:15 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath__input_placeholder_아이디를_입력해주세요__20260514_052514.png
+2026-05-14 05:25:15 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "//input[@placeholder='아이디를 입력해주세요']")
