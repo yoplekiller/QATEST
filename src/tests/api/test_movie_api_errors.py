@@ -14,7 +14,7 @@ class TestErrorHandling:
         API_KEY = api_env.api_key
 
         with allure.step("존재하지 않는 영화 ID로 요청 전송"):  
-            endpoint = "/movie/0"  # 존재하지 않는 영화 ID
+            endpoint = "/movie/999999999"  # 존재하지 않는 영화 ID
             response = send_get_request_no_raise(endpoint, params={"api_key": API_KEY})
             assert response.status_code == 404, "상태 코드가 404가 아닙니다"
             attach_response(response)
@@ -75,7 +75,7 @@ class TestErrorHandling:
             assert data["total_results"] == 0, "검색 결과가 비어있지 않습니다"
 
             
-    @allure.title("잘못된 페이지 번호로 요청 시 422 반환")
+    @allure.title("잘못된 페이지 번호로 요청 시 400 반환")
     # TC: TC-API-011 (SC-API-008)
     def test_invalid_page_number(self, api_env, send_get_request_no_raise, attach_response):
         API_KEY = api_env.api_key
@@ -83,7 +83,7 @@ class TestErrorHandling:
         with allure.step("잘못된 페이지 번호로 요청 전송"):
             response = send_get_request_no_raise(endpoint, params={"api_key": API_KEY, "page": -1})
         with allure.step("응답 상태 코드 검증"):
-            assert response.status_code == 422, "상태 코드가 422가 아닙니다"
+            assert response.status_code == 400, "상태 코드가 400이 아닙니다"
             attach_response(response)
 
     @allure.title("잘못된 언어 코드로 요청 시 기본값 반환")
