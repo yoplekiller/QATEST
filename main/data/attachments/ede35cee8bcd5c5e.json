@@ -1,0 +1,420 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/tq3h43fZy0H80vzf47MAY7R9Mxo.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
+      "id": 1297842,
+      "title": "GOAT",
+      "original_language": "en",
+      "original_title": "GOAT",
+      "overview": "A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.",
+      "popularity": 108.3436,
+      "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+      "release_date": "2026-02-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.042,
+      "vote_count": 570
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xyW8rJO3rwG2EGcTO6eaUEa8b9d.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1613798,
+      "title": "Vengeance",
+      "original_language": "es",
+      "original_title": "Venganza",
+      "overview": "The brutal murder of the wife of “Toro,” a military hero in the special forces, turns him into a man with a single purpose: revenge. After a stroke of fate makes him a millionaire, Carlos transforms his fortune into an arsenal and, together with his closest soldiers, sets out to hunt down those responsible.",
+      "popularity": 105.3483,
+      "poster_path": "/ygWXPL0RS91JyJPNOfK34eV3bRE.jpg",
+      "release_date": "2026-02-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.194,
+      "vote_count": 173
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sS3zGYFPcfM5pArVNWl6qLyaSmU.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14
+      ],
+      "id": 980431,
+      "title": "Avatar Aang: The Last Airbender",
+      "original_language": "en",
+      "original_title": "Avatar Aang: The Last Airbender",
+      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "popularity": 102.4557,
+      "poster_path": "/29Jdsak3SrwGds5k1t43kH6Khed.jpg",
+      "release_date": "2026-10-09",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qnTdOizsXBzYu3uIbfhHSfE29TE.jpg",
+      "genre_ids": [
+        28,
+        35,
+        27
+      ],
+      "id": 1292695,
+      "title": "They Will Kill You",
+      "original_language": "en",
+      "original_title": "They Will Kill You",
+      "overview": "A woman answers a help wanted ad to be a housekeeper in a mysterious New York City high-rise, unaware that she is entering a community that has seen a number of disappearances over the years and may be under the grip of a Satanic cult.",
+      "popularity": 93.7633,
+      "poster_path": "/6oI4oQKTWMVUlr8Ivqydp28Ruu6.jpg",
+      "release_date": "2026-03-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.836,
+      "vote_count": 478
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vadUKKQixxOKWkcuZ1SUEoBQeVG.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 10867,
+      "title": "Malena",
+      "original_language": "it",
+      "original_title": "Malèna",
+      "overview": "12-year-old Renato experiences three significant events on the same day: the beginning of the Second World War, getting a bike, and witnessing the arrival of the gorgeous Malèna. Through his eyes, we see the curse of beauty and loneliness of Malena, whose husband is presumed dead, and, through his soul, we see his love for her.",
+      "popularity": 70.4671,
+      "poster_path": "/3OyQTl0IGkbnjDxd3MhztfPE34g.jpg",
+      "release_date": "2000-10-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.451,
+      "vote_count": 2563
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nHxWyy18SvAZ8jJeemtS8k1UNjM.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1290821,
+      "title": "Shelter",
+      "original_language": "en",
+      "original_title": "Shelter",
+      "overview": "A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.",
+      "popularity": 95.8399,
+      "poster_path": "/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
+      "release_date": "2026-01-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 865
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        9648
+      ],
+      "id": 1084242,
+      "title": "Zootopia 2",
+      "original_language": "en",
+      "original_title": "Zootopia 2",
+      "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+      "popularity": 90.4056,
+      "poster_path": "/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+      "release_date": "2025-11-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.626,
+      "vote_count": 2734
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 91.2156,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 825
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wfGDy0KVZsiQpGgYoxObUGgccwk.jpg",
+      "genre_ids": [
+        878,
+        27,
+        12
+      ],
+      "id": 1235192,
+      "title": "Wormtown",
+      "original_language": "en",
+      "original_title": "Wormtown",
+      "overview": "One year into a plague of flesh-eating, mind-altering worms, the nocturnal town of Ashland, Ohio, has embraced the parasites’ rule. Under cult-like Mayor Joshua, zealous Ranchers spread their gospel—by persuasion or by force. A trio of uninfected women cling to survival through scavenging, extreme hygiene, and evasion. But everyone breaks eventually, unleashing betrayal, sacrilege, and body horror.",
+      "popularity": 84.4179,
+      "poster_path": "/lE10ww38b7XA5LIagIsVQj9a8Hn.jpg",
+      "release_date": "2025-09-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 13
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zADcOKcoplphgtTtXRtTEzzF0qC.jpg",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "id": 1038918,
+      "title": "Magistrate Woman Prison Collection II",
+      "original_language": "ja",
+      "original_title": "美女奉行 おんな牢秘抄II",
+      "overview": "",
+      "popularity": 86.4542,
+      "poster_path": "/i3Ouy0rMUHyKeHZV3PYl106OSwe.jpg",
+      "release_date": "1995-09-21",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8qkDwjTFoLAwmYh2J9HMeIDRlxd.jpg",
+      "genre_ids": [
+        18,
+        9648
+      ],
+      "id": 249397,
+      "title": "Nymphomaniac: Vol. II",
+      "original_language": "en",
+      "original_title": "Nymphomaniac: Vol. II",
+      "overview": "The continuation of Joe's sexually dictated life delves into the darker aspects of her adult life and what led to her being in Seligman's care.",
+      "popularity": 92.0899,
+      "poster_path": "/iLUNqgNKuWn667kXCKztSxYbT3k.jpg",
+      "release_date": "2013-12-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.708,
+      "vote_count": 3139
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1314481,
+      "title": "The Devil Wears Prada 2",
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "popularity": 81.6798,
+      "poster_path": "/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
+      "release_date": "2026-04-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.693,
+      "vote_count": 518
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/a8uQvrplTkhGJQog6GZ6CqF8An6.jpg",
+      "genre_ids": [
+        35,
+        10751,
+        9648
+      ],
+      "id": 1301421,
+      "title": "The Sheep Detectives",
+      "original_language": "en",
+      "original_title": "The Sheep Detectives",
+      "overview": "George Hardy is a shepherd who reads detective novels to his beloved sheep every night, assuming they can't possibly understand. But when a mysterious incident disrupts life on the farm, the sheep realize they must become the detectives. As they follow the clues and investigate human suspects, they prove that even sheep can be brilliant crime-solvers.",
+      "popularity": 99.1166,
+      "poster_path": "/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg",
+      "release_date": "2026-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.589,
+      "vote_count": 45
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qmWypRw88VYp35oTQn0a1sqdZRs.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1510745,
+      "title": "Bodycam",
+      "original_language": "en",
+      "original_title": "Bodycam",
+      "overview": "A call to a quiet suburban home unleashes unthinkable carnage when two officers mistakenly shoot a man and his infant child, spiraling the tragedy into a fierce, unrelenting fall into the unknown.",
+      "popularity": 73.102,
+      "poster_path": "/xFpBNcG3Dlr8mYF5Kz9Tizs3Pxn.jpg",
+      "release_date": "2026-03-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.552,
+      "vote_count": 48
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gaKFXcB5J1gz0QqYj8bWIfrPc04.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 1242898,
+      "title": "Predator: Badlands",
+      "original_language": "en",
+      "original_title": "Predator: Badlands",
+      "overview": "Cast out from his clan, a young Predator finds an unlikely ally in a damaged android and embarks on a treacherous journey in search of the ultimate adversary.",
+      "popularity": 75.478,
+      "poster_path": "/pHpq9yNUIo6aDoCXEBzjSolywgz.jpg",
+      "release_date": "2025-11-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 2812
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 755898,
+      "title": "War of the Worlds",
+      "original_language": "en",
+      "original_title": "War of the Worlds",
+      "overview": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+      "popularity": 89.2632,
+      "poster_path": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+      "release_date": "2025-07-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.135,
+      "vote_count": 985
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/r7AKQ0OB69JOPskeTWL3U206ehY.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 855435,
+      "title": "Faces of Death",
+      "original_language": "en",
+      "original_title": "Faces of Death",
+      "overview": "A woman, employed as a website content moderator, comes across a series of violent videos reproducing death scenes from a film.",
+      "popularity": 75.31,
+      "poster_path": "/vPVY3S57lEooBLJCg6KGdMHkUxm.jpg",
+      "release_date": "2026-04-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.2,
+      "vote_count": 31
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6D2NsU3FIQVthPgjT6RAsX58qZ6.jpg",
+      "genre_ids": [
+        28,
+        53,
+        9648,
+        18
+      ],
+      "id": 1414413,
+      "title": "Brothers Under Fire",
+      "original_language": "en",
+      "original_title": "Brothers Under Fire",
+      "overview": "Captain Jordan Wright's squadron on leave for a wedding in Mexico encounters a murderous cartel. As Jordan tries to lead survivors to safety, war erupts between his squad and the cartel, forcing him into a battle to save his men.",
+      "popularity": 67.1049,
+      "poster_path": "/e5EKqk9V7N3w0WvYFhl6wSVrMp0.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.237,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wns4x1GyxCudgOZRyhXKjXVJf3T.jpg",
+      "genre_ids": [
+        12,
+        53,
+        878
+      ],
+      "id": 840464,
+      "title": "Greenland 2: Migration",
+      "original_language": "en",
+      "original_title": "Greenland 2: Migration",
+      "overview": "Having found the safety of the Greenland bunker after the comet Clarke decimated the Earth, the Garrity family must now risk everything to embark on a perilous journey across the wasteland of Europe to find a new home.",
+      "popularity": 67.2197,
+      "poster_path": "/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg",
+      "release_date": "2026-01-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 1028
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nnmbJvYyDS1VkMOCbxSpdBi3WbJ.jpg",
+      "genre_ids": [
+        28,
+        18,
+        36
+      ],
+      "id": 1579,
+      "title": "Apocalypto",
+      "original_language": "en",
+      "original_title": "Apocalypto",
+      "overview": "Set in the Mayan civilization, when a man's idyllic presence is brutally disrupted by a violent invading force, he is taken on a perilous journey to a world ruled by fear and oppression where a harrowing end awaits him. Through a twist of fate and spurred by the power of his love for his woman and his family he will make a desperate break to return home and to ultimately save his way of life.",
+      "popularity": 66.7061,
+      "poster_path": "/cRY25Q32kDNPFDkFkxAs6bgCq3L.jpg",
+      "release_date": "2006-12-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.611,
+      "vote_count": 6272
+    }
+  ],
+  "total_pages": 56819,
+  "total_results": 1136368
+}
