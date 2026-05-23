@@ -1,0 +1,422 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1304313,
+      "title": "Lee Cronin's The Mummy",
+      "original_language": "en",
+      "original_title": "Lee Cronin's The Mummy",
+      "overview": "",
+      "popularity": 604.065,
+      "poster_path": "/cxUKpGVwAB9pRi4SRu320wWSh5B.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.001,
+      "vote_count": 803
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
+      "genre_ids": [
+        28,
+        18,
+        80
+      ],
+      "id": 1439930,
+      "title": "The Punisher: One Last Kill",
+      "original_language": "en",
+      "original_title": "The Punisher: One Last Kill",
+      "overview": "",
+      "popularity": 548.4984,
+      "poster_path": "/cOKI717riBv8V6NMtLDyEMCSmUs.jpg",
+      "release_date": "2026-05-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.485,
+      "vote_count": 1074
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "title": "Project Hail Mary",
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "",
+      "popularity": 399.5933,
+      "poster_path": "/cdGVNiyUt289DgopWUdImNVVDaw.jpg",
+      "release_date": "2026-03-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.613,
+      "vote_count": 3846
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 1226863,
+      "title": "The Super Mario Galaxy Movie",
+      "original_language": "en",
+      "original_title": "The Super Mario Galaxy Movie",
+      "overview": "",
+      "popularity": 375.5009,
+      "poster_path": "/6RmUnKyBfLu6MfC7sya2WXjyVut.jpg",
+      "release_date": "2026-04-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.697,
+      "vote_count": 1488
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/69KkxROnZoJdQAulnY5B7Gx6D7Z.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1380291,
+      "title": "Tom Clancy's Jack Ryan: Ghost War",
+      "original_language": "en",
+      "original_title": "Tom Clancy's Jack Ryan: Ghost War",
+      "overview": "",
+      "popularity": 372.0336,
+      "poster_path": "/3AUQkykJOi6E8GL1O4T73rlqoro.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 134
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        10751,
+        14
+      ],
+      "id": 1007757,
+      "title": "Swapped",
+      "original_language": "en",
+      "original_title": "Swapped",
+      "overview": "",
+      "popularity": 314.2688,
+      "poster_path": "/KkPiW9mOd2ilRebTRb1jgukIBP.jpg",
+      "release_date": "2026-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.977,
+      "vote_count": 1282
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "title": "Твоё сердце будет разбито",
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "",
+      "popularity": 243.6697,
+      "poster_path": "/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
+      "release_date": "2026-03-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 78
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gkh6Nt8DtY1XT4gQsyFq9XAVJlJ.jpg",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 350,
+      "title": "The Devil Wears Prada",
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada",
+      "overview": "",
+      "popularity": 215.3848,
+      "poster_path": "/s4qyBwtJ3D2fpyZa5e0gaj30g8w.jpg",
+      "release_date": "2006-06-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.418,
+      "vote_count": 13517
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 931285,
+      "title": "Mortal Kombat II",
+      "original_language": "en",
+      "original_title": "Mortal Kombat II",
+      "overview": "",
+      "popularity": 204.0723,
+      "poster_path": "/mUExj4VneG3S0Ysufxnj9JPZEHQ.jpg",
+      "release_date": "2026-05-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.875,
+      "vote_count": 256
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1pKFDggvtk23zcn1vUcPiKyuHxM.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1339713,
+      "title": "Obsession",
+      "original_language": "en",
+      "original_title": "Obsession",
+      "overview": "",
+      "popularity": 229.6188,
+      "poster_path": "/vj3niHx3ikSAIr1O8A2uBgwsuTp.jpg",
+      "release_date": "2026-04-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 191
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oTE4lNs4PSG5iIWjqaTdCIFJ4Bs.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1318447,
+      "title": "Apex",
+      "original_language": "en",
+      "original_title": "Apex",
+      "overview": "",
+      "popularity": 184.5595,
+      "poster_path": "/wZJOOGbnqTJ2vxkaaLBBDHZVOuy.jpg",
+      "release_date": "2026-04-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.674,
+      "vote_count": 1167
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8zLS8p1tRyWFLRFfmgQq0j5WE6z.jpg",
+      "genre_ids": [
+        12,
+        28,
+        14
+      ],
+      "id": 564,
+      "title": "The Mummy",
+      "original_language": "en",
+      "original_title": "The Mummy",
+      "overview": "",
+      "popularity": 113.0772,
+      "poster_path": "/jPopgn5a6Lex8JL90gHHuWcG1Ml.jpg",
+      "release_date": "1999-04-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.971,
+      "vote_count": 9976
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6ELCZlTA5lGUops70hKdB83WJxH.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 460465,
+      "title": "Mortal Kombat",
+      "original_language": "en",
+      "original_title": "Mortal Kombat",
+      "overview": "",
+      "popularity": 173.1472,
+      "poster_path": "/hlfe5BlKpXudszhV04fwTECrwnt.jpg",
+      "release_date": "2021-04-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.029,
+      "vote_count": 6596
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gRoZG3Z0zJxgElmTsVHOl2dNYXe.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1582770,
+      "title": "धुरंधर: द रिवेंज",
+      "original_language": "hi",
+      "original_title": "धुरंधर: द रिवेंज",
+      "overview": "",
+      "popularity": 196.0838,
+      "poster_path": "/uQ68EOU4Yo5AdeBkYbIpcRr3LYh.jpg",
+      "release_date": "2026-03-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 86
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iN41Ccw4DctL8npfmYg1j5Tr1eb.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "title": "Avatar: Fire and Ash",
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "",
+      "popularity": 152.4538,
+      "poster_path": "/dVv28yL7kyeMK3sUTWVSKrZC6tV.jpg",
+      "release_date": "2025-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.492,
+      "vote_count": 3136
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hdLsZ3dCjKt5A6xDpoo3UFgcTSm.jpg",
+      "genre_ids": [
+        27,
+        28
+      ],
+      "id": 1426822,
+      "title": "Mortal Game",
+      "original_language": "en",
+      "original_title": "Mortal Game",
+      "overview": "",
+      "popularity": 136.7667,
+      "poster_path": "/iCvucorbs3hFqWshDbLe0fHzB71.jpg",
+      "release_date": "2025-02-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.571,
+      "vote_count": 7
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hlZGaey4lR9hc4rGxZRAmIEsZOc.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1292415,
+      "title": "Beast",
+      "original_language": "en",
+      "original_title": "Beast",
+      "overview": "",
+      "popularity": 131.2628,
+      "poster_path": "/fSTduv38uZq0uAh2JNAEQRaP13p.jpg",
+      "release_date": "2026-04-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.289,
+      "vote_count": 38
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7s7WkAFPBsMTprYMbqbgKoppQsR.jpg",
+      "genre_ids": [
+        12,
+        28,
+        14
+      ],
+      "id": 1734,
+      "title": "The Mummy Returns",
+      "original_language": "en",
+      "original_title": "The Mummy Returns",
+      "overview": "",
+      "popularity": 70.651,
+      "poster_path": "/5d4FgMspQq6xi0H3NqrdAUrDNkZ.jpg",
+      "release_date": "2001-05-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.402,
+      "vote_count": 7656
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xA6AM5MvEkieZKlv1Tn3sN23I7i.jpg",
+      "genre_ids": [
+        28,
+        18,
+        10749
+      ],
+      "id": 1630423,
+      "title": "เลือดรัก นักฆ่า",
+      "original_language": "th",
+      "original_title": "เลือดรัก นักฆ่า",
+      "overview": "",
+      "popularity": 113.7208,
+      "poster_path": "/wK8jWSxT3RigCH1IeIeR0erwaUf.jpg",
+      "release_date": "2026-05-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.605,
+      "vote_count": 191
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        878
+      ],
+      "id": 1327819,
+      "title": "Hoppers",
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "",
+      "popularity": 123.7509,
+      "poster_path": "/p5G1Fbn6hjQprNijkcjarf8FZWG.jpg",
+      "release_date": "2026-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.083,
+      "vote_count": 1174
+    }
+  ],
+  "total_pages": 56983,
+  "total_results": 1139657
+}
