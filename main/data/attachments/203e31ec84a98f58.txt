@@ -1,0 +1,1 @@
+2026-05-27 13:03:03 - test_automation - INFO - 스크린샷 저장: screenshots/로그인_실패_에러_20260527_130303.png
