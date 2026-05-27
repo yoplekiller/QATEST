@@ -29,29 +29,30 @@ class TestQuantity:
         """
         수량 증가/감소 버튼이 정상 작동하는지 확인
         """
-    
-        with allure.step("마켓컬리 메인 페이지로 이동"):
-            kurly_main_page.open_main_page()
+        try:
+            with allure.step("마켓컬리 메인 페이지로 이동"):
+                kurly_main_page.open_main_page()
 
-        with allure.step("'과자' 검색"):
-            kurly_main_page.search_goods("과자")
+            with allure.step("'과자' 검색"):
+                kurly_main_page.search_goods("과자")
 
-        with allure.step("세 번째 상품의 장바구니 추가 버튼 클릭"):
-            kurly_search_page.click_nth_add_button(3)
+            with allure.step("세 번째 상품의 장바구니 추가 버튼 클릭"):
+                kurly_search_page.click_nth_add_button(3)
 
+            with allure.step("수량 2회 증가"):
+                kurly_search_page.quantity_up_in_alt(times=2)
 
-        with allure.step("수량 2회 증가"):
-            kurly_search_page.quantity_up_in_alt(times=2)
+            with allure.step("수량 1회 감소"):
+                kurly_search_page.quantity_down_in_alt(times=1)
 
-        with allure.step("수량 1회 감소"):
-            kurly_search_page.quantity_down_in_alt(times=1)
+            with allure.step("최종 수량 확인"):
+                assert kurly_search_page.is_diplayed_quantity_in_alt(2), "❌ 수량이 예상과 다릅니다"
 
-
-        with allure.step("최종 수량 확인"):
-            assert kurly_search_page.is_diplayed_quantity_in_alt(2), "❌ 수량이 예상과 다릅니다"
-
-            allure.attach(
-                "수량 조절 버튼이 정상적으로 작동했습니다",
-                name="테스트_결과",
-                attachment_type=allure.attachment_type.TEXT
-            )
+                allure.attach(
+                    "수량 조절 버튼이 정상적으로 작동했습니다",
+                    name="테스트_결과",
+                    attachment_type=allure.attachment_type.TEXT
+                )
+        except Exception as e:
+            kurly_search_page.take_screenshot("수량조절_실패")
+            raise

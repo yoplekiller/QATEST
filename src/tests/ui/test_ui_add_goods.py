@@ -32,35 +32,39 @@ class TestAddGoods:
         """
         상품 검색 후 장바구니에 추가하는 전체 플로우 테스트
         """
-        # Given: 메인 페이지에서 상품 검색
-        with allure.step("마켓컬리 메인 페이지로 이동"):
-            kurly_main_page.open_main_page()
+        try:
+            # Given: 메인 페이지에서 상품 검색
+            with allure.step("마켓컬리 메인 페이지로 이동"):
+                kurly_main_page.open_main_page()
 
-        with allure.step("'과자' 검색"):
-            kurly_main_page.search_goods("과자")
-            time.sleep(2)  # 검색 결과 로드 대기
+            with allure.step("'과자' 검색"):
+                kurly_main_page.search_goods("과자")
+                time.sleep(2)  # 검색 결과 로드 대기
 
-        # When: 상품 추가 플로우 실행
-        with allure.step("세 번째 상품의 장바구니 추가 버튼 클릭"):
-            kurly_search_page.click_nth_add_button(3)
+            # When: 상품 추가 플로우 실행
+            with allure.step("세 번째 상품의 장바구니 추가 버튼 클릭"):
+                kurly_search_page.click_nth_add_button(3)
 
-        with allure.step("수량 조절 (2회 증가, 1회 감소)"):
-            kurly_search_page.quantity_up_in_alt(2)
-            kurly_search_page.quantity_down_in_alt(1)
+            with allure.step("수량 조절 (2회 증가, 1회 감소)"):
+                kurly_search_page.quantity_up_in_alt(2)
+                kurly_search_page.quantity_down_in_alt(1)
 
-        with allure.step("장바구니에 담기"):
-            kurly_search_page.add_to_cart_in_alt()
-            
-        # Then: 검색 결과 및 추가 성공 확인
-        with allure.step("결과 확인"):
-            kurly_search_page.take_screenshot("상품_추가_완료")
+            with allure.step("장바구니에 담기"):
+                kurly_search_page.add_to_cart_in_alt()
 
-            # 검색 키워드가 페이지에 포함되어 있는지 확인
-            assert kurly_search_page.is_keyword_in_page_source("과자"), \
-                "❌ 검색 결과에서 '과자'가 포함되지 않음"
+            # Then: 검색 결과 및 추가 성공 확인
+            with allure.step("결과 확인"):
+                kurly_search_page.take_screenshot("상품_추가_완료")
 
-            allure.attach(
-                "상품 추가 플로우가 성공적으로 완료되었습니다",
-                name="테스트_결과",
-                attachment_type=allure.attachment_type.TEXT
-            )
+                # 검색 키워드가 페이지에 포함되어 있는지 확인
+                assert kurly_search_page.is_keyword_in_page_source("과자"), \
+                    "❌ 검색 결과에서 '과자'가 포함되지 않음"
+
+                allure.attach(
+                    "상품 추가 플로우가 성공적으로 완료되었습니다",
+                    name="테스트_결과",
+                    attachment_type=allure.attachment_type.TEXT
+                )
+        except Exception as e:
+            kurly_search_page.take_screenshot("상품_추가_실패")
+            raise

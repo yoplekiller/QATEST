@@ -25,30 +25,31 @@ class TestCart:
         """
         장바구니 버튼 클릭 시 장바구니 페이지로 이동하는지 확인
         """
-        
-        with allure.step("마켓컬리 메인 페이지로 이동"):
-            kurly_main_page.open_main_page()
-            assert kurly_main_page.is_on_main_page(), "❌ 메인 페이지에 접속하지 못했습니다."
+        try:
+            with allure.step("마켓컬리 메인 페이지로 이동"):
+                kurly_main_page.open_main_page()
+                assert kurly_main_page.is_on_main_page(), "❌ 메인 페이지에 접속하지 못했습니다."
 
-        
-        with allure.step("장바구니 아이콘 클릭"):
-            kurly_cart_page.click_cart_icon()   
+            with allure.step("장바구니 아이콘 클릭"):
+                kurly_cart_page.click_cart_icon()   
 
-        
-        with allure.step("장바구니 페이지 확인"):
-            kurly_cart_page.take_screenshot("장바구니_페이지")
+            with allure.step("장바구니 페이지 확인"):
+                kurly_cart_page.take_screenshot("장바구니_페이지")
 
-            # URL 확인
-            assert kurly_cart_page.is_on_cart_page(), \
-                "❌ 장바구니 페이지가 아닙니다."
+                # URL 확인
+                assert kurly_cart_page.is_on_cart_page(), \
+                    "❌ 장바구니 페이지가 아닙니다."
 
-            # 페이지 제목 확인
-            assert kurly_cart_page.has_kurly_in_title(), \
-                "❌ 컬리 페이지 제목이 다릅니다."
+                # 페이지 제목 확인
+                assert kurly_cart_page.has_kurly_in_title(), \
+                    "❌ 컬리 페이지 제목이 다릅니다."
 
-            current_url = kurly_cart_page.get_current_url()
-            allure.attach(
-                f"현재 URL: {current_url}",
-                name="URL_확인",
-                attachment_type=allure.attachment_type.TEXT
-            )
+                current_url = kurly_cart_page.get_current_url()
+                allure.attach(
+                    f"현재 URL: {current_url}",
+                    name="URL_확인",
+                    attachment_type=allure.attachment_type.TEXT
+                )
+        except Exception as e:
+            kurly_cart_page.take_screenshot("장바구니_페이지_실패")
+            raise

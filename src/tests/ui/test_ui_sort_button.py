@@ -34,17 +34,20 @@ def test_all_sort_options(sort_type, kurly_main_page, kurly_search_page):
     Expected:
         선택한 정렬 옵션에 따라 상품 목록이 올바르게 정렬됨
     """
+    try:
+        with allure.step("마켓컬리 메인 페이지로 이동"):
+            kurly_main_page.open_main_page()
 
-    with allure.step("마켓컬리 메인 페이지로 이동"):
-        kurly_main_page.open_main_page()
+        with allure.step("상품 검색"):
+            kurly_main_page.search_goods("과자")
 
-    with allure.step("상품 검색"):
-        kurly_main_page.search_goods("과자")
-
-    with allure.step(f"정렬 옵션 '{sort_type}' 선택"):
-        kurly_search_page.select_sort_option(sort_type)
-        
-    with allure.step("정렬 결과 확인"):
-        assert kurly_search_page.is_sorted_correctly(sort_type), f"❌ '{sort_type}' 정렬이 올바르게 적용되지 않음"
+        with allure.step(f"정렬 옵션 '{sort_type}' 선택"):
+            kurly_search_page.select_sort_option(sort_type)
+            
+        with allure.step("정렬 결과 확인"):
+            assert kurly_search_page.is_sorted_correctly(sort_type), f"❌ '{sort_type}' 정렬이 올바르게 적용되지 않음"
+    except Exception as e:
+        kurly_search_page.take_screenshot(f"정렬_{sort_type}_실패")
+        raise
 
     

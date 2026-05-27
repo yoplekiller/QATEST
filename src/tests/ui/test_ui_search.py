@@ -34,29 +34,28 @@ class TestSearch:
         """
         유효한 검색어로 검색 시 결과가 표시되는지 확인
         """
-       
-        with allure.step("마켓컬리 메인 페이지로 이동"):
-            kurly_main_page.open_main_page()
-            
-       
-        with allure.step(f"'{keyword}' 검색"):
-            kurly_main_page.search_goods(keyword)
-           
+        try:
+            with allure.step("마켓컬리 메인 페이지로 이동"):
+                kurly_main_page.open_main_page()
 
-        
-        with allure.step("검색 결과 확인"):
-            kurly_search_page.take_screenshot(f"{keyword}_검색_결과")
-            results_count = kurly_search_page.get_goods_count()
-            assert results_count > 0, f"❌ '{keyword}' 검색 결과가 없습니다"
-            
+            with allure.step(f"'{keyword}' 검색"):
+                kurly_main_page.search_goods(keyword)
 
-            allure.attach(
-                f"검색 결과 개수: {results_count}",
-                name="검색_결과_개수",
-                attachment_type=allure.attachment_type.TEXT
-            )
+            with allure.step("검색 결과 확인"):
+                kurly_search_page.take_screenshot(f"{keyword}_검색_결과")
+                results_count = kurly_search_page.get_goods_count()
+                assert results_count > 0, f"❌ '{keyword}' 검색 결과가 없습니다"
 
-            assert results_count > 0, f"❌ '{keyword}' 검색 결과가 없습니다"
+                allure.attach(
+                    f"검색 결과 개수: {results_count}",
+                    name="검색_결과_개수",
+                    attachment_type=allure.attachment_type.TEXT
+                )
+
+                assert results_count > 0, f"❌ '{keyword}' 검색 결과가 없습니다"
+        except Exception as e:
+            kurly_search_page.take_screenshot(f"{keyword}_검색_실패")
+            raise
 
     @allure.title("빈 검색어로 검색 시도")
     @allure.description("""
@@ -74,23 +73,24 @@ class TestSearch:
         """
         빈 검색어로 검색 시 적절한 처리가 되는지 확인
         """
-        
-        kurly_main_page.open_main_page()
-        initial_url = kurly_main_page.get_current_url()
+        try:
+            kurly_main_page.open_main_page()
+            initial_url = kurly_main_page.get_current_url()
 
-        
-        with allure.step("빈 검색어로 검색 시도"):
-            kurly_main_page.enter_search_keyword("")
-            kurly_main_page.click_search_button()
+            with allure.step("빈 검색어로 검색 시도"):
+                kurly_main_page.enter_search_keyword("")
+                kurly_main_page.click_search_button()
 
-       
-        with allure.step("에러 처리 확인"):
-            kurly_main_page.take_screenshot("빈_검색어_검색")
+            with allure.step("에러 처리 확인"):
+                kurly_main_page.take_screenshot("빈_검색어_검색")
 
-            current_url = kurly_main_page.get_current_url()
-            # URL이 변경되지 않았거나, 검색 결과 페이지에서 "결과 없음" 표시
-            assert initial_url == current_url or kurly_main_page.is_search_keyword_required_popup_displayed(), \
-                "❌ 빈 검색어에 대한 적절한 처리가 없습니다"
+                current_url = kurly_main_page.get_current_url()
+                # URL이 변경되지 않았거나, 검색 결과 페이지에서 "결과 없음" 표시
+                assert initial_url == current_url or kurly_main_page.is_search_keyword_required_popup_displayed(), \
+                    "❌ 빈 검색어에 대한 적절한 처리가 없습니다"
+        except Exception as e:
+            kurly_main_page.take_screenshot("빈_검색어_검색_실패")
+            raise
 
  
 
@@ -112,24 +112,25 @@ class TestSearch:
         """
         검색 후 첫 번째 결과를 클릭하여 상세 페이지로 이동
         """
-        
-        with allure.step("메인 페이지에서 검색"):
-            kurly_main_page.open_main_page()
-            kurly_main_page.search_goods("사과")
-            time.sleep(2)  # 검색 결과 로딩 대기
+        try:
+            with allure.step("메인 페이지에서 검색"):
+                kurly_main_page.open_main_page()
+                kurly_main_page.search_goods("사과")
+                time.sleep(2)  # 검색 결과 로딩 대기
 
-        
-        with allure.step("첫 번째 검색 결과 클릭"):
-            kurly_search_page.click_first_good()
-            time.sleep(5)  # 페이지 로딩 대기
-        
-        
-        with allure.step("상세 페이지 이동 확인"):
-            kurly_search_page.take_screenshot("상품_상세_페이지")
+            with allure.step("첫 번째 검색 결과 클릭"):
+                kurly_search_page.click_first_good()
+                time.sleep(5)  # 페이지 로딩 대기
 
-            assert kurly_goods_page.is_product_detail_displayed(), "❌ 상품 상세 페이지로 이동하지 않았습니다"
-            
-            
+            with allure.step("상세 페이지 이동 확인"):
+                kurly_search_page.take_screenshot("상품_상세_페이지")
+
+                assert kurly_goods_page.is_product_detail_displayed(), "❌ 상품 상세 페이지로 이동하지 않았습니다"
+        except Exception as e:
+            kurly_search_page.take_screenshot("상품_상세_페이지_실패")
+            raise
+
+
 
     @allure.title("특수문자 검색 처리")
     @allure.description("""
@@ -149,17 +150,20 @@ class TestSearch:
         """
         특수문자를 포함한 검색어 처리 확인
         """
-       
-        kurly_main_page.open_main_page()
+        try:
+            kurly_main_page.open_main_page()
 
-        # When: 특수문자 포함 검색어로 검색
-        with allure.step(f"특수문자 포함 검색어 '{keyword}' 검색"):
-            kurly_main_page.search_goods(keyword)
+            # When: 특수문자 포함 검색어로 검색
+            with allure.step(f"특수문자 포함 검색어 '{keyword}' 검색"):
+                kurly_main_page.search_goods(keyword)
 
-        
-        with allure.step("검색 처리 확인"):
-            kurly_main_page.take_screenshot(f"특수문자_검색_{keyword}")
+            with allure.step("검색 처리 확인"):
+                kurly_main_page.take_screenshot(f"특수문자_검색_{keyword}")
 
-            # 페이지가 정상적으로 로드되었는지 확인
-            page_title = kurly_search_page.get_title()
-            assert page_title, "❌ 페이지가 정상적으로 로드되지 않았습니다"
+                # 페이지가 정상적으로 로드되었는지 확인
+                page_title = kurly_search_page.get_title()
+                assert page_title, "❌ 페이지가 정상적으로 로드되지 않았습니다"
+        except Exception as e:
+            kurly_main_page.take_screenshot(f"특수문자_검색_{keyword}_실패")
+            raise
+

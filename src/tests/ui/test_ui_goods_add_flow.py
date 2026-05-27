@@ -32,40 +32,43 @@ class TestGoodAddFlow:
         """
         로그인 → 상품 검색 → 장바구니 추가 전체 플로우 테스트
         """
-        # Step 1: 로그인
-        with allure.step("로그인 프로세스"):
-            kurly_login_page.login(test_credentials["username"], test_credentials["password"])
+        try:
+            # Step 1: 로그인
+            with allure.step("로그인 프로세스"):
+                kurly_login_page.login(test_credentials["username"], test_credentials["password"])
 
-            time.sleep(2)  # 로그인 처리 대기
-            assert kurly_login_page.is_login_successful(), "로그인에 실패했습니다"
+                time.sleep(2)  # 로그인 처리 대기
+                assert kurly_login_page.is_login_successful(), "로그인에 실패했습니다"
 
+            # Step 2: 상품 검색
+            with allure.step("상품 검색: '과자'"):
+                kurly_main_page.search_goods("과자")
+                time.sleep(2)  # 검색 결과 로드 대기
 
-        # Step 2: 상품 검색
-        with allure.step("상품 검색: '과자'"):
-            kurly_main_page.search_goods("과자")
-            time.sleep(2)  # 검색 결과 로드 대기
+            # Step 3: 상품 추가
+            with allure.step("세 번째 상품 선택"):
+                kurly_search_page.click_nth_add_button(3)
+                
+            # Step 4: 수량 조절
+            with allure.step("수량 올리기"):
+                kurly_search_page.quantity_up_in_alt(1)
 
-        # Step 3: 상품 추가
-        with allure.step("세 번째 상품 선택"):
-            kurly_search_page.click_nth_add_button(3)
-            
-        # Step 4: 수량 조절
-        with allure.step("수량 올리기"):
-            kurly_search_page.quantity_up_in_alt(1)
+            # Step 5: 장바구니 담기
+            with allure.step("장바구니 담기"):
+                kurly_search_page.add_to_cart_in_alt()
+                
+            with allure.step("장바구니 페이지로 이동"):
+                kurly_cart_page.click_cart_icon()
 
-        # Step 5: 장바구니 담기
-        with allure.step("장바구니 담기"):
-            kurly_search_page.add_to_cart_in_alt()
-            
-        with allure.step("장바구니 페이지로 이동"):
-            kurly_cart_page.click_cart_icon()
+            # Then: 전체 플로우 성공 확인
+            with allure.step("결과 확인"):
+                kurly_cart_page.take_screenshot("전체_플로우_완료")
 
-        # Then: 전체 플로우 성공 확인
-        with allure.step("결과 확인"):
-            kurly_cart_page.take_screenshot("전체_플로우_완료")
-
-            allure.attach(
-                "로그인부터 장바구니 추가까지 전체 플로우가 성공적으로 완료되었습니다",
-                name="테스트_결과",
-                attachment_type=allure.attachment_type.TEXT
-            )
+                allure.attach(
+                    "로그인부터 장바구니 추가까지 전체 플로우가 성공적으로 완료되었습니다",
+                    name="테스트_결과",
+                    attachment_type=allure.attachment_type.TEXT
+                )
+        except Exception as e:
+            kurly_cart_page.take_screenshot("전체_플로우_실패")
+            raise

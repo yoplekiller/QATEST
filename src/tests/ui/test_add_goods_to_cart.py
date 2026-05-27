@@ -19,33 +19,36 @@ def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_login_p
     """
     increase_count = 2
     decrease_count = 1
+    try:
+        # 1. 로그인
+        with allure.step("로그인"):
+            kurly_login_page.login(test_credentials["username"], test_credentials["password"])
+            time.sleep(2)  # 로그인 처리 시간 대기
+            assert kurly_login_page.is_login_successful(), "로그인에 실패했습니다"
 
-    # 1. 로그인
-    with allure.step("로그인"):
-        kurly_login_page.login(test_credentials["username"], test_credentials["password"])
-        time.sleep(2)  # 로그인 처리 시간 대기
-        assert kurly_login_page.is_login_successful(), "로그인에 실패했습니다"
+        with allure.step("'과자' 검색"):
+            kurly_main_page.search_goods("수박")
+            time.sleep(2)
 
-    with allure.step("'과자' 검색"):
-        kurly_main_page.search_goods("과자")
-        time.sleep(2)
+        # 2. 상품 추가 버튼 클릭
+        with allure.step("두 번째 상품 담기 버튼 클릭"):
+            kurly_search_page.click_nth_add_button(2)
 
-    # 2. 상품 추가 버튼 클릭
-    with allure.step("두 번째 상품 담기 버튼 클릭"):
-        kurly_search_page.click_nth_add_button(2)
+        # 3. 수량 올리기
+        with allure.step(f"수량 {increase_count}회 증가"):
+            kurly_search_page.quantity_up_in_alt(increase_count)
 
-    # 3. 수량 올리기
-    with allure.step(f"수량 {increase_count}회 증가"):
-        kurly_search_page.quantity_up_in_alt(increase_count)
-
-    # 4. 수량 내리기
-    with allure.step(f"수량 {decrease_count}회 감소"):
-        kurly_search_page.quantity_down_in_alt(decrease_count)
+        # 4. 수량 내리기
+        with allure.step(f"수량 {decrease_count}회 감소"):
+            kurly_search_page.quantity_down_in_alt(decrease_count)
+            
+        # 5. 장바구니 담기
+        with allure.step("장바구니에 담기"):
+            kurly_search_page.add_to_cart_in_alt()
         
-    # 5. 장바구니 담기
-    with allure.step("장바구니에 담기"):
-        kurly_search_page.add_to_cart_in_alt()
-    
-    # 6. 성공 검증
-    with allure.step("장바구니 담기 성공 확인"):
-        assert kurly_search_page.is_add_to_cart_success(), "장바구니 담기가 실패했습니다"
+        # 6. 성공 검증
+        with allure.step("장바구니 담기 성공 확인"):
+            assert kurly_search_page.is_add_to_cart_success(), "장바구니 담기가 실패했습니다"
+    except Exception as e:
+        kurly_search_page.take_screenshot("장바구니_플로우_실패")
+        raise
