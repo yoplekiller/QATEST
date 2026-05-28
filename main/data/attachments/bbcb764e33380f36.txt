@@ -1,0 +1,3 @@
+2026-05-28 13:27:48 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-05-28 13:27:49 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-05-28 13:28:17 - test_automation - INFO - 스크린샷 저장: screenshots/장바구니_여러상품_실패_20260528_132817.png
