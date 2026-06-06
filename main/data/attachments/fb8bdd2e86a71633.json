@@ -1,0 +1,418 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/4k99kV4R1bbbrsnjR205v91Xbin.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1339713,
+      "title": "Obsession",
+      "original_language": "en",
+      "original_title": "Obsession",
+      "overview": "",
+      "popularity": 735.0361,
+      "poster_path": "/vj3niHx3ikSAIr1O8A2uBgwsuTp.jpg",
+      "release_date": "2026-05-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.9,
+      "vote_count": 543
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/e5IdZ1OEWMYxTeu51tI67gXvfpn.jpg",
+      "genre_ids": [
+        80,
+        18,
+        53
+      ],
+      "id": 1433117,
+      "title": "கர",
+      "original_language": "ta",
+      "original_title": "கர",
+      "overview": "",
+      "popularity": 437.3168,
+      "poster_path": "/hQEblf85LHogbWuVtvtlx1k8OAM.jpg",
+      "release_date": "2026-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xugEpZk9YQ0DIz1aFvH5HGkqpZK.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1304313,
+      "title": "Lee Cronin's The Mummy",
+      "original_language": "en",
+      "original_title": "Lee Cronin's The Mummy",
+      "overview": "",
+      "popularity": 405.32,
+      "poster_path": "/qZiQO2SpMw8Fh8byvJ3cShIwgoi.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.049,
+      "vote_count": 1599
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        878
+      ],
+      "id": 1083381,
+      "title": "Backrooms",
+      "original_language": "en",
+      "original_title": "Backrooms",
+      "overview": "",
+      "popularity": 258.6737,
+      "poster_path": "/7NVnp7XHiW99nYLqEH5A63uPSJN.jpg",
+      "release_date": "2026-05-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.749,
+      "vote_count": 333
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dd31qJxOarrHyGZwYsCzOjobQzP.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1380291,
+      "title": "Tom Clancy's Jack Ryan: Ghost War",
+      "original_language": "en",
+      "original_title": "Tom Clancy's Jack Ryan: Ghost War",
+      "overview": "",
+      "popularity": 250.9757,
+      "poster_path": "/3AUQkykJOi6E8GL1O4T73rlqoro.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 482
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
+      "genre_ids": [
+        28,
+        18,
+        80
+      ],
+      "id": 1439930,
+      "title": "The Punisher: One Last Kill",
+      "original_language": "en",
+      "original_title": "The Punisher: One Last Kill",
+      "overview": "",
+      "popularity": 249.583,
+      "poster_path": "/kcfrtUB8Ev0oOnHAwI2vCrjL9TS.jpg",
+      "release_date": "2026-05-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.366,
+      "vote_count": 1461
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "title": "Project Hail Mary",
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "",
+      "popularity": 253.1933,
+      "poster_path": "/cdGVNiyUt289DgopWUdImNVVDaw.jpg",
+      "release_date": "2026-03-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 4650
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gRoZG3Z0zJxgElmTsVHOl2dNYXe.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1582770,
+      "title": "धुरंधर: द रिवेंज",
+      "original_language": "hi",
+      "original_title": "धुरंधर: द रिवेंज",
+      "overview": "",
+      "popularity": 230.7293,
+      "poster_path": "/uQ68EOU4Yo5AdeBkYbIpcRr3LYh.jpg",
+      "release_date": "2026-03-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 111
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nTimAHDG7PoycFF2afMZVPyOokg.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1065834,
+      "title": "കാട്ടാളൻ",
+      "original_language": "ml",
+      "original_title": "കാട്ടാളൻ",
+      "overview": "",
+      "popularity": 226.8282,
+      "poster_path": "/9OA6y2GdbXuJ5PAMMMawNBIkrZA.jpg",
+      "release_date": "2026-05-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 1226863,
+      "title": "The Super Mario Galaxy Movie",
+      "original_language": "en",
+      "original_title": "The Super Mario Galaxy Movie",
+      "overview": "",
+      "popularity": 225.8877,
+      "poster_path": "/6RmUnKyBfLu6MfC7sya2WXjyVut.jpg",
+      "release_date": "2026-04-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.134,
+      "vote_count": 2363
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ksl01eojCFiGl5zO9kACiyiwpZs.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "title": "Твоё сердце будет разбито",
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "",
+      "popularity": 213.3826,
+      "poster_path": "/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
+      "release_date": "2026-03-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 85
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        10751,
+        14
+      ],
+      "id": 1007757,
+      "title": "Swapped",
+      "original_language": "en",
+      "original_title": "Swapped",
+      "overview": "",
+      "popularity": 208.5489,
+      "poster_path": "/KkPiW9mOd2ilRebTRb1jgukIBP.jpg",
+      "release_date": "2026-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.97,
+      "vote_count": 1574
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oBft4BZeoDQzTT9ZGijClr76qvK.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1122573,
+      "title": "In the Grey",
+      "original_language": "en",
+      "original_title": "In the Grey",
+      "overview": "",
+      "popularity": 209.3898,
+      "poster_path": "/parLHiFZtrzsCygZhv3kHWqmoN7.jpg",
+      "release_date": "2026-05-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.642,
+      "vote_count": 134
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oPsRr7AfNLw6XaPuMpvkWK0bIUA.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1057265,
+      "title": "పెద్ది",
+      "original_language": "te",
+      "original_title": "పెద్ది",
+      "overview": "",
+      "popularity": 391.3,
+      "poster_path": "/Ap0gHovdbx6IYHwx2yNsA1zq8gt.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 9.333,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/woZX9wZaiX70LbW7bOeNccNTIhp.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1430077,
+      "title": "Hokum",
+      "original_language": "en",
+      "original_title": "Hokum",
+      "overview": "",
+      "popularity": 181.8437,
+      "poster_path": "/jMoKsY986yjeRLU1CUzSm4Vkht1.jpg",
+      "release_date": "2026-04-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.957,
+      "vote_count": 138
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6zg7A9ICOthNR2TSXlT51KvXrsA.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1228710,
+      "title": "The Mandalorian and Grogu",
+      "original_language": "en",
+      "original_title": "The Mandalorian and Grogu",
+      "overview": "",
+      "popularity": 243.5879,
+      "poster_path": "/zAxyRS0GiDDVCztJIwL1o4PuJpO.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.822,
+      "vote_count": 397
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "title": "捕风追影",
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "",
+      "popularity": 170.1583,
+      "poster_path": "/xlrx8GiaKu2sJ35hlA7uKVjpEIS.jpg",
+      "release_date": "2025-08-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.625,
+      "vote_count": 781
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+      "genre_ids": [
+        28,
+        878
+      ],
+      "id": 603,
+      "title": "The Matrix",
+      "original_language": "en",
+      "original_title": "The Matrix",
+      "overview": "",
+      "popularity": 134.7788,
+      "poster_path": "/iLWzJxatuwwMT76dtMuwh3FEp2X.jpg",
+      "release_date": "1999-03-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.247,
+      "vote_count": 27954
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xGJT18qN8lzELAnHRyfoe1vLTiI.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 186745,
+      "title": "L'Amour violé",
+      "original_language": "fr",
+      "original_title": "L'Amour violé",
+      "overview": "",
+      "popularity": 183.5151,
+      "poster_path": "/kWlQqBbyrtGfcYU1qRqwCaEmBuz.jpg",
+      "release_date": "1978-01-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 24
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gqGQ0zADV5FIcgMWtWX8FcGQjFp.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        878
+      ],
+      "id": 1116201,
+      "title": "Iron Lung",
+      "original_language": "en",
+      "original_title": "Iron Lung",
+      "overview": "",
+      "popularity": 147.7426,
+      "poster_path": "/oqWuQwZlbzdLiD52RFCCru30l8j.jpg",
+      "release_date": "2026-01-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.196,
+      "vote_count": 214
+    }
+  ],
+  "total_pages": 57260,
+  "total_results": 1145182
+}
