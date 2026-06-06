@@ -1,0 +1,414 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/kkRpcauZoBFKnH0Qsy7J5qtwBF5.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1371023,
+      "title": "Chand Mera Dil",
+      "original_language": "hi",
+      "original_title": "चाँद मेरा दिल",
+      "overview": "Aarav and Chandni's passionate college romance is struck by adulthood far too soon, forcing the two young lovers to balance their ambitions with responsibility and realize the evolved meaning of love.",
+      "popularity": 135.5843,
+      "poster_path": "/9LPkXJustudEBgPZEm9tgDx5KtC.jpg",
+      "release_date": "2026-05-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 3.833,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6DfHl4CE88x7Rt9oyARQQm6bHXD.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1510339,
+      "title": "Mark",
+      "original_language": "kn",
+      "original_title": "ಮಾರ್ಕ್",
+      "overview": "Mark is suspended from his police duties for his unruly yet effective ways of operating, but when 18 children are abducted and found dead, races to catch the criminals. With only 18 hours left, he must confront powerful foes and use unconventional tactics to succeed.",
+      "popularity": 146.2747,
+      "poster_path": "/6LTDv6XHiHN0N77QIFg2tidVvhh.jpg",
+      "release_date": "2025-12-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rHnANzYUmV3WZw3n0yWOLiR3pen.jpg",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "id": 976912,
+      "title": "Graphic Desires",
+      "original_language": "en",
+      "original_title": "Graphic Desires",
+      "overview": "When reclusive Franklin cheats on his partner with a mysterious girl he meets on a dating app, it becomes the start of a deadly obsession.",
+      "popularity": 143.493,
+      "poster_path": "/3BjLdTWRiHc1ISIZMFvToOmghOM.jpg",
+      "release_date": "2023-08-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.869,
+      "vote_count": 84
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iN41Ccw4DctL8npfmYg1j5Tr1eb.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "title": "Avatar: Fire and Ash",
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 143.2867,
+      "poster_path": "/aabwWZWx6z1aYP4PX2ADvbDKktd.jpg",
+      "release_date": "2025-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.55,
+      "vote_count": 3328
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vP7YFt9pP8NPCg4PMBAHO5ILdrQ.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 44980,
+      "title": "Zero Woman 2",
+      "original_language": "ja",
+      "original_title": "Zero WOMAN ＩＩ　警視庁０課の女",
+      "overview": "When a valuable suitcase is stolen, the mob, petty criminals, and a beautiful agent from the Elite Zero division are pulled into a battle to settle the score.",
+      "popularity": 130.7038,
+      "poster_path": "/sQHeDjwmBQba8E51Mkp5dvgkzeZ.jpg",
+      "release_date": "1995-09-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        878
+      ],
+      "id": 1327819,
+      "title": "Hoppers",
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "popularity": 130.8414,
+      "poster_path": "/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "release_date": "2026-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.162,
+      "vote_count": 1397
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1eAuwNBy34kkM3xkl202z4f1NiI.jpg",
+      "genre_ids": [
+        28,
+        14
+      ],
+      "id": 1367220,
+      "title": "Karuppu",
+      "original_language": "ta",
+      "original_title": "கருப்பு",
+      "overview": "In a world where justice falters, guardian deity Vettai Karuppu takes the guise of a lawyer to battle a corrupt legal system preying on the powerless.",
+      "popularity": 126.6237,
+      "poster_path": "/4KZXlZ5tTT6ghbW77gS4hSLkCd7.jpg",
+      "release_date": "2026-05-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.364,
+      "vote_count": 11
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5AsIFZ2AJC7JcGpq40aRPuRuaRc.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1241752,
+      "title": "Rita",
+      "original_language": "tl",
+      "original_title": "Rita",
+      "overview": "Rita, who finds herself alone when husband Ariel works abroad. They both find solace and sexual satisfaction in other people. When Ariel comes back, they both act like nothing happened. But will this keep their marriage from falling apart?",
+      "popularity": 128.5224,
+      "poster_path": "/pXENxAzOBrTSDJGxDcUnlNTNmWr.jpg",
+      "release_date": "2024-03-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 23
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eQySd26OW7UmCuaeBOL7qy6foMn.jpg",
+      "genre_ids": [
+        28,
+        14,
+        878
+      ],
+      "id": 454639,
+      "title": "Masters of the Universe",
+      "original_language": "en",
+      "original_title": "Masters of the Universe",
+      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
+      "popularity": 179.1713,
+      "poster_path": "/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.66,
+      "vote_count": 53
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gQq1r3H0QgM9h72o2OpOV5kTOpG.jpg",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "id": 405818,
+      "title": "Door II: Tokyo Diary",
+      "original_language": "ja",
+      "original_title": "Door II: Tokyo Diary",
+      "overview": "Ai is a call girl that makes good money for what she does but there’s always at risk no matter how good the money is.",
+      "popularity": 111.0768,
+      "poster_path": "/lskJ34j4VKwbMwcvFSQeNYEdt8g.jpg",
+      "release_date": "1991-04-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 14
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5n417Ff5GXOGCOKj3ZLMRAxEP0o.jpg",
+      "genre_ids": [
+        18,
+        9648
+      ],
+      "id": 249397,
+      "title": "Nymphomaniac: Vol. II",
+      "original_language": "en",
+      "original_title": "Nymphomaniac: Vol. II",
+      "overview": "The continuation of Joe's sexually dictated life delves into the darker aspects of her adult life and what led to her being in Seligman's care.",
+      "popularity": 110.7447,
+      "poster_path": "/iLUNqgNKuWn667kXCKztSxYbT3k.jpg",
+      "release_date": "2013-12-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.714,
+      "vote_count": 3173
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/krhj4Fhb0G3QCmyBtEADxgFFmRX.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 11012,
+      "title": "Damage",
+      "original_language": "en",
+      "original_title": "Damage",
+      "overview": "The life of a respected British politician at the height of his career crumbles when he becomes obsessed with his son's lover.",
+      "popularity": 123.7593,
+      "poster_path": "/alf3JOPP7EYP0iO24gwe5YfRnqo.jpg",
+      "release_date": "1992-12-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.561,
+      "vote_count": 683
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 931285,
+      "title": "Mortal Kombat II",
+      "original_language": "en",
+      "original_title": "Mortal Kombat II",
+      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "popularity": 99.2779,
+      "poster_path": "/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
+      "release_date": "2026-05-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.739,
+      "vote_count": 375
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
+      "genre_ids": [
+        35,
+        27
+      ],
+      "id": 1273221,
+      "title": "Scary Movie",
+      "original_language": "en",
+      "original_title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "popularity": 150.7951,
+      "poster_path": "/bqOKJrZFR9KpqWE607dw6KOdKCj.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 91
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gkh6Nt8DtY1XT4gQsyFq9XAVJlJ.jpg",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 350,
+      "title": "The Devil Wears Prada",
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada",
+      "overview": "A young woman from the Midwest gets more than she bargained for when she moves to New York to become a writer and ends up as the assistant to the tyrannical, larger-than-life editor-in-chief of a major fashion magazine.",
+      "popularity": 104.385,
+      "poster_path": "/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+      "release_date": "2006-06-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.428,
+      "vote_count": 13653
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6ELCZlTA5lGUops70hKdB83WJxH.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 460465,
+      "title": "Mortal Kombat",
+      "original_language": "en",
+      "original_title": "Mortal Kombat",
+      "overview": "Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe.",
+      "popularity": 104.8365,
+      "poster_path": "/ybrX94xQm8lXYpZAPRmwD9iIbWP.jpg",
+      "release_date": "2021-04-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.038,
+      "vote_count": 6696
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7TJjD2X9GTEqyLVIJKLS85J2V47.jpg",
+      "genre_ids": [
+        53,
+        28,
+        80
+      ],
+      "id": 28322,
+      "title": "Madness",
+      "original_language": "it",
+      "original_title": "Vacanze per un massacro",
+      "overview": "An escaped convicted murderer invades the cottage of a man, his wife and the wife's sister, whereupon he proceeds to torment this already dysfunctional trio with rape and violence.",
+      "popularity": 158.1913,
+      "poster_path": "/gV0J0Fqw2mYMtQbzb0ruxv9MAeZ.jpg",
+      "release_date": "1980-03-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.969,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cfDHxkco8RrslL0Vk2XPTwTVFCe.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1472951,
+      "title": "Infiltrate",
+      "original_language": "en",
+      "original_title": "Infiltrate",
+      "overview": "In a city overrun by crime, government Agent Lily Chen is forced to choose between her duty and her family when her husband is kidnapped, and she’s blackmailed into assassinating high-level criminals to save him. As she delves deeper into the criminal underworld, Lily’s relentless pursuit of justice unravels a web of corruption, leading to a final, life-altering decision that will change her world forever.",
+      "popularity": 111.8508,
+      "poster_path": "/8Cw8GF9wG63kF8pRRXwOx2kXGt.jpg",
+      "release_date": "2026-04-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.469,
+      "vote_count": 16
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eNAFLrd1XAAD4hgdTPjewpzYU4W.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 1320660,
+      "title": "Pati Patni Aur Woh Do",
+      "original_language": "hi",
+      "original_title": "पति पत्नी और वो दो",
+      "overview": "A seemingly perfect marriage in Prayagraj takes an unexpected turn when one decision leads to a chain of misunderstandings, suspicion, and comedic chaos.",
+      "popularity": 94.428,
+      "poster_path": "/x0RUPvba4JlCCkyyEZGlQFIFVuF.jpg",
+      "release_date": "2026-05-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 106.5556,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.73,
+      "vote_count": 849
+    }
+  ],
+  "total_pages": 57254,
+  "total_results": 1145068
+}
