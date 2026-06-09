@@ -1,0 +1,412 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
+      "genre_ids": [
+        35,
+        27
+      ],
+      "id": 1273221,
+      "title": "Scary Movie",
+      "original_language": "en",
+      "original_title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "popularity": 171.6801,
+      "poster_path": "/bqOKJrZFR9KpqWE607dw6KOdKCj.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.753,
+      "vote_count": 180
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xGJT18qN8lzELAnHRyfoe1vLTiI.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 186745,
+      "title": "Rape of Love",
+      "original_language": "fr",
+      "original_title": "L'Amour violé",
+      "overview": "Nicole, nurse in Grenoble, is raped one night by four men. Deeply scarred, emotionally and physically, she thinks she will never recover from the trauma. Following a friend's advice, she decides to file a lawsuit.",
+      "popularity": 128.538,
+      "poster_path": "/qVGL9xgGCzXtRwexUTmpz7z1MVg.jpg",
+      "release_date": "1978-01-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 24
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3QEwa9vZFC8PyZgFOKYPZx55nv8.jpg",
+      "genre_ids": [
+        35,
+        53,
+        18
+      ],
+      "id": 1628448,
+      "title": "Maa Behen",
+      "original_language": "hi",
+      "original_title": "माँ बहन",
+      "overview": "In this dark comedy, a woman calls her estranged daughters in the middle of the night with chilling news — there's a dead body in her kitchen.",
+      "popularity": 160.5372,
+      "poster_path": "/dpQIeEunpgj0C4rngb6OFb4zSd1.jpg",
+      "release_date": "2026-06-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.625,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rHnANzYUmV3WZw3n0yWOLiR3pen.jpg",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "id": 976912,
+      "title": "Graphic Desires",
+      "original_language": "en",
+      "original_title": "Graphic Desires",
+      "overview": "When reclusive Franklin cheats on his partner with a mysterious girl he meets on a dating app, it becomes the start of a deadly obsession.",
+      "popularity": 159.218,
+      "poster_path": "/3BjLdTWRiHc1ISIZMFvToOmghOM.jpg",
+      "release_date": "2023-08-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.977,
+      "vote_count": 87
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5RkZOvu9FC0A8NypE2BL7oKNOTU.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1065834,
+      "title": "Kattalan",
+      "original_language": "ml",
+      "original_title": "കാട്ടാളൻ",
+      "overview": "Power-hungry forces clash in the Ivory cartel war-a fierce story of control, vengeance, and survival where compassion vanishes and only the ruthless endure.",
+      "popularity": 155.263,
+      "poster_path": "/9OA6y2GdbXuJ5PAMMMawNBIkrZA.jpg",
+      "release_date": "2026-05-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iN41Ccw4DctL8npfmYg1j5Tr1eb.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "title": "Avatar: Fire and Ash",
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 154.431,
+      "poster_path": "/aabwWZWx6z1aYP4PX2ADvbDKktd.jpg",
+      "release_date": "2025-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.567,
+      "vote_count": 3375
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/krhj4Fhb0G3QCmyBtEADxgFFmRX.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 11012,
+      "title": "Damage",
+      "original_language": "en",
+      "original_title": "Damage",
+      "overview": "The life of a respected British politician at the height of his career crumbles when he becomes obsessed with his son's lover.",
+      "popularity": 150.0238,
+      "poster_path": "/alf3JOPP7EYP0iO24gwe5YfRnqo.jpg",
+      "release_date": "1992-12-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.568,
+      "vote_count": 686
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        878
+      ],
+      "id": 1327819,
+      "title": "Hoppers",
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "popularity": 147.4152,
+      "poster_path": "/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "release_date": "2026-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.183,
+      "vote_count": 1478
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7TJjD2X9GTEqyLVIJKLS85J2V47.jpg",
+      "genre_ids": [
+        53,
+        28,
+        80
+      ],
+      "id": 28322,
+      "title": "Madness",
+      "original_language": "it",
+      "original_title": "Vacanze per un massacro",
+      "overview": "An escaped convicted murderer invades the cottage of a man, his wife and the wife's sister, whereupon he proceeds to torment this already dysfunctional trio with rape and violence.",
+      "popularity": 172.7417,
+      "poster_path": "/gV0J0Fqw2mYMtQbzb0ruxv9MAeZ.jpg",
+      "release_date": "1980-03-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.969,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5AsIFZ2AJC7JcGpq40aRPuRuaRc.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1241752,
+      "title": "Rita",
+      "original_language": "tl",
+      "original_title": "Rita",
+      "overview": "Rita, who finds herself alone when husband Ariel works abroad. They both find solace and sexual satisfaction in other people. When Ariel comes back, they both act like nothing happened. But will this keep their marriage from falling apart?",
+      "popularity": 135.8629,
+      "poster_path": "/pXENxAzOBrTSDJGxDcUnlNTNmWr.jpg",
+      "release_date": "2024-03-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.979,
+      "vote_count": 24
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cfDHxkco8RrslL0Vk2XPTwTVFCe.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1472951,
+      "title": "Infiltrate",
+      "original_language": "en",
+      "original_title": "Infiltrate",
+      "overview": "In a city overrun by crime, government Agent Lily Chen is forced to choose between her duty and her family when her husband is kidnapped, and she’s blackmailed into assassinating high-level criminals to save him. As she delves deeper into the criminal underworld, Lily’s relentless pursuit of justice unravels a web of corruption, leading to a final, life-altering decision that will change her world forever.",
+      "popularity": 130.9391,
+      "poster_path": "/8Cw8GF9wG63kF8pRRXwOx2kXGt.jpg",
+      "release_date": "2026-04-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.471,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gqGQ0zADV5FIcgMWtWX8FcGQjFp.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        878
+      ],
+      "id": 1116201,
+      "title": "Iron Lung",
+      "original_language": "en",
+      "original_title": "Iron Lung",
+      "overview": "In a post-apocalyptic future where an event known as \"The Quiet Rapture\" caused all known stars and habitable planets in the universe to disappear, a convict is sent to search an ocean of blood discovered on a desolate moon, using a small submarine nicknamed the \"Iron Lung\".",
+      "popularity": 119.9465,
+      "poster_path": "/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
+      "release_date": "2026-01-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.186,
+      "vote_count": 228
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 115.3566,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.737,
+      "vote_count": 853
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1eAuwNBy34kkM3xkl202z4f1NiI.jpg",
+      "genre_ids": [
+        28,
+        14
+      ],
+      "id": 1367220,
+      "title": "Karuppu",
+      "original_language": "ta",
+      "original_title": "கருப்பு",
+      "overview": "In a world where justice falters, guardian deity Vettai Karuppu takes the guise of a lawyer to battle a corrupt legal system preying on the powerless.",
+      "popularity": 112.0689,
+      "poster_path": "/4KZXlZ5tTT6ghbW77gS4hSLkCd7.jpg",
+      "release_date": "2026-05-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 12
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kI7JBjvZkqYsLJRhcqTQU1MMdQA.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 424711,
+      "title": "Poppea's Hot Nights",
+      "original_language": "it",
+      "original_title": "Le calde notti di Poppea",
+      "overview": "Poppea's Hot Nights (Italian: Le calde notti di Poppea) is a 1969 Italian comedy film set in Ancient Rome. It was written and directed by Guido Malatesta and stars Olga Schoberová (credited as Olinka Berova) and Brad Harris in the main roles.",
+      "popularity": 111.7801,
+      "poster_path": "/zNfqugt7ZPFpWeXAQsF5IqDCDft.jpg",
+      "release_date": "1969-01-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 3.6,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7uXzE0ZBkbAeKylOz7cUQF4Yw75.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 879945,
+      "title": "The Unknown Man",
+      "original_language": "nl",
+      "original_title": "L'homme inconnu",
+      "overview": "Louis, a Flemish writer, decides to isolate himself at the Côte d’Azur, hoping this place will bring him inspiration.",
+      "popularity": 110.4406,
+      "poster_path": "/4TpBhdaSl5ALHbgeaYOLF8Q3haz.jpg",
+      "release_date": "2021-10-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gkh6Nt8DtY1XT4gQsyFq9XAVJlJ.jpg",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 350,
+      "title": "The Devil Wears Prada",
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada",
+      "overview": "A young woman from the Midwest gets more than she bargained for when she moves to New York to become a writer and ends up as the assistant to the tyrannical, larger-than-life editor-in-chief of a major fashion magazine.",
+      "popularity": 99.0828,
+      "poster_path": "/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+      "release_date": "2006-06-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.431,
+      "vote_count": 13680
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vP7YFt9pP8NPCg4PMBAHO5ILdrQ.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 44980,
+      "title": "Zero Woman 2",
+      "original_language": "ja",
+      "original_title": "Zero WOMAN ＩＩ　警視庁０課の女",
+      "overview": "When a valuable suitcase is stolen, the mob, petty criminals, and a beautiful agent from the Elite Zero division are pulled into a battle to settle the score.",
+      "popularity": 108.652,
+      "poster_path": "/sQHeDjwmBQba8E51Mkp5dvgkzeZ.jpg",
+      "release_date": "1995-09-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6ELCZlTA5lGUops70hKdB83WJxH.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 460465,
+      "title": "Mortal Kombat",
+      "original_language": "en",
+      "original_title": "Mortal Kombat",
+      "overview": "Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe.",
+      "popularity": 106.273,
+      "poster_path": "/ybrX94xQm8lXYpZAPRmwD9iIbWP.jpg",
+      "release_date": "2021-04-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.041,
+      "vote_count": 6720
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oTE4lNs4PSG5iIWjqaTdCIFJ4Bs.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1318447,
+      "title": "Apex",
+      "original_language": "en",
+      "original_title": "Apex",
+      "overview": "A grieving woman pushing her limits on a solo adventure in the Australian wild is ensnared in a twisted game with a cunning killer who thinks she's prey.",
+      "popularity": 103.7192,
+      "poster_path": "/eTp7gSPkSF3Aw79mNx1NkBP1PZT.jpg",
+      "release_date": "2026-04-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.787,
+      "vote_count": 1408
+    }
+  ],
+  "total_pages": 57319,
+  "total_results": 1146362
+}
