@@ -1,0 +1,416 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/gRoZG3Z0zJxgElmTsVHOl2dNYXe.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1582770,
+      "title": "Dhurandhar: The Revenge",
+      "original_language": "hi",
+      "original_title": "धुरंधर: द रिवेंज",
+      "overview": "As rival gangs, corrupt officials and a ruthless Major Iqbal close in, Hamza's mission for his country spirals into a bloody personal war where the line between patriot and monster disappears in the streets of Lyari.",
+      "popularity": 182.0455,
+      "poster_path": "/ov8vrRLZGoXHpYjSY9Vpv1tHJX7.jpg",
+      "release_date": "2026-03-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.272,
+      "vote_count": 114
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dd31qJxOarrHyGZwYsCzOjobQzP.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1380291,
+      "title": "Tom Clancy's Jack Ryan: Ghost War",
+      "original_language": "en",
+      "original_title": "Tom Clancy's Jack Ryan: Ghost War",
+      "overview": "Jack Ryan is reluctantly pulled back into espionage when an international covert mission unravels a deadly conspiracy. Racing against time, he joins CIA allies Mike November & James Greer and sharp MI6 officer Emma Marlowe to battle a rogue black-ops unit in a high-stakes, deeply personal fight.",
+      "popularity": 178.3875,
+      "poster_path": "/8ehYxUh5MWE41AeE9gkHE8DKzvB.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.104,
+      "vote_count": 528
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "title": "The Shadow's Edge",
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 176.0285,
+      "poster_path": "/cHKo3m8N1fwvEy2ZEr0xGmmMODV.jpg",
+      "release_date": "2025-08-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.725,
+      "vote_count": 834
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oUozq2XHWifwAVOoS1qHU0qfXqM.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        878
+      ],
+      "id": 1083381,
+      "title": "Backrooms",
+      "original_language": "en",
+      "original_title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "popularity": 169.8666,
+      "poster_path": "/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "release_date": "2026-05-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 467
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/n7WeIugzFXXkkCO6ps3GClKvn7V.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1430077,
+      "title": "Hokum",
+      "original_language": "en",
+      "original_title": "Hokum",
+      "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
+      "popularity": 169.1502,
+      "poster_path": "/jKPWwsbAM6HKURPYQ1eG8DmKMKn.jpg",
+      "release_date": "2026-04-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.718,
+      "vote_count": 202
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xS8tsJ8IvNkzBMu3kq3gZFReh7j.jpg",
+      "genre_ids": [
+        53
+      ],
+      "id": 1293550,
+      "title": "Bandar",
+      "original_language": "hi",
+      "original_title": "बंदर",
+      "overview": "TV star Samar's life spirals when his ex Gayatri accuses him of rape after he blocks contact with her. Despite his new relationship with Khushi, he faces arrest and encounters a corrupt justice system.",
+      "popularity": 164.3313,
+      "poster_path": "/3TrQUHmnEL2tOYf4KKkXb01BQt2.jpg",
+      "release_date": "2026-06-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
+      "genre_ids": [
+        878,
+        53,
+        28
+      ],
+      "id": 1275779,
+      "title": "Disclosure Day",
+      "original_language": "en",
+      "original_title": "Disclosure Day",
+      "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
+      "popularity": 162.3728,
+      "poster_path": "/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 64
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
+      "genre_ids": [
+        35,
+        27
+      ],
+      "id": 1273221,
+      "title": "Scary Movie",
+      "original_language": "en",
+      "original_title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "popularity": 153.4589,
+      "poster_path": "/reZ8NInXjMkkaOpUHcI3Pn7iaRN.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 230
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/Ag4eANWzHEwC7rQVyvcGsL34ieP.jpg",
+      "genre_ids": [
+        10402,
+        18
+      ],
+      "id": 12104,
+      "title": "Pink Floyd: The Wall",
+      "original_language": "en",
+      "original_title": "Pink Floyd: The Wall",
+      "overview": "A troubled rock star descends into madness in the midst of his physical and social isolation from everyone.",
+      "popularity": 148.1743,
+      "poster_path": "/aElHyIdF5jmctFGhlhhaPFsbBJC.jpg",
+      "release_date": "1982-07-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.926,
+      "vote_count": 1646
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7TJjD2X9GTEqyLVIJKLS85J2V47.jpg",
+      "genre_ids": [
+        53,
+        28,
+        80
+      ],
+      "id": 28322,
+      "title": "Madness",
+      "original_language": "it",
+      "original_title": "Vacanze per un massacro",
+      "overview": "An escaped convicted murderer invades the cottage of a man, his wife and the wife's sister, whereupon he proceeds to torment this already dysfunctional trio with rape and violence.",
+      "popularity": 145.2538,
+      "poster_path": "/gV0J0Fqw2mYMtQbzb0ruxv9MAeZ.jpg",
+      "release_date": "1980-03-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.969,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/krhj4Fhb0G3QCmyBtEADxgFFmRX.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 11012,
+      "title": "Damage",
+      "original_language": "en",
+      "original_title": "Damage",
+      "overview": "The life of a respected British politician at the height of his career crumbles when he becomes obsessed with his son's lover.",
+      "popularity": 143.734,
+      "poster_path": "/alf3JOPP7EYP0iO24gwe5YfRnqo.jpg",
+      "release_date": "1992-12-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.568,
+      "vote_count": 686
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "title": "Avatar: Fire and Ash",
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 137.5108,
+      "poster_path": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+      "release_date": "2025-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.568,
+      "vote_count": 3405
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        878
+      ],
+      "id": 1327819,
+      "title": "Hoppers",
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "popularity": 132.7109,
+      "poster_path": "/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "release_date": "2026-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.177,
+      "vote_count": 1524
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rHnANzYUmV3WZw3n0yWOLiR3pen.jpg",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "id": 976912,
+      "title": "Graphic Desires",
+      "original_language": "en",
+      "original_title": "Graphic Desires",
+      "overview": "When reclusive Franklin cheats on his partner with a mysterious girl he meets on a dating app, it becomes the start of a deadly obsession.",
+      "popularity": 132.462,
+      "poster_path": "/3BjLdTWRiHc1ISIZMFvToOmghOM.jpg",
+      "release_date": "2023-08-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.955,
+      "vote_count": 88
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5AsIFZ2AJC7JcGpq40aRPuRuaRc.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1241752,
+      "title": "Rita",
+      "original_language": "tl",
+      "original_title": "Rita",
+      "overview": "Rita, who finds herself alone when husband Ariel works abroad. They both find solace and sexual satisfaction in other people. When Ariel comes back, they both act like nothing happened. But will this keep their marriage from falling apart?",
+      "popularity": 125.0514,
+      "poster_path": "/pXENxAzOBrTSDJGxDcUnlNTNmWr.jpg",
+      "release_date": "2024-03-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.979,
+      "vote_count": 24
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/g2aOpyCO1vEyUZURh3V5uaHu187.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1288341,
+      "title": "Seven Snipers",
+      "original_language": "en",
+      "original_title": "Seven Snipers",
+      "overview": "When a former elite sniper is hunted down by the ruthless warlord who once held her captive, she must fight to the death to protect the daughter she has raised in hiding, on a remote Australian farm.",
+      "popularity": 122.3038,
+      "poster_path": "/xIZ8huVdXCL7OMtsjd3XvmFP5sK.jpg",
+      "release_date": "2026-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.9,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6kheApG5qPsKbiKDxsGpOb6i6i6.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1694978,
+      "title": "Chum",
+      "original_language": "en",
+      "original_title": "Chum",
+      "overview": "A newlywed couple joins friends on a Mediterranean yacht excursion, only to find themselves caught between a predatory shark and a psychopathic killer in their midst-transforming a sun-drenched escape into a fight for survival.",
+      "popularity": 105.1937,
+      "poster_path": "/uJOW6pWxJ0i5sji9VXRR6Y1wXyE.jpg",
+      "release_date": "2026-05-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.333,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 102.3026,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.742,
+      "vote_count": 857
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cfDHxkco8RrslL0Vk2XPTwTVFCe.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1472951,
+      "title": "Infiltrate",
+      "original_language": "en",
+      "original_title": "Infiltrate",
+      "overview": "In a city overrun by crime, government Agent Lily Chen is forced to choose between her duty and her family when her husband is kidnapped, and she’s blackmailed into assassinating high-level criminals to save him. As she delves deeper into the criminal underworld, Lily’s relentless pursuit of justice unravels a web of corruption, leading to a final, life-altering decision that will change her world forever.",
+      "popularity": 99.4943,
+      "poster_path": "/8Cw8GF9wG63kF8pRRXwOx2kXGt.jpg",
+      "release_date": "2026-04-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.471,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sb76azrAXr9U13uEQxNP5e3fujY.jpg",
+      "genre_ids": [
+        28,
+        35,
+        53
+      ],
+      "id": 1390300,
+      "title": "Over Your Dead Body",
+      "original_language": "en",
+      "original_title": "Over Your Dead Body",
+      "overview": "A dysfunctional couple head to a remote cabin to \"reconnect\", but each has secret intentions to kill the other.",
+      "popularity": 97.0416,
+      "poster_path": "/kZCauMzAt9eMAhLMopCqnFw1Q5k.jpg",
+      "release_date": "2026-03-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.877,
+      "vote_count": 142
+    }
+  ],
+  "total_pages": 57374,
+  "total_results": 1147476
+}
