@@ -1,0 +1,3 @@
+2026-06-16 09:55:55 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath__button_class_css-1o9e4kz__20260616_095555.png
+2026-06-16 09:55:55 - test_automation - ERROR - 클릭 실패: ('xpath', "//button[@class='css-1o9e4kz']")
+2026-06-16 09:55:55 - test_automation - INFO - 스크린샷 저장: screenshots/전체_플로우_실패_20260616_095555.png
