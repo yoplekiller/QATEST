@@ -1,0 +1,414 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1339713,
+      "title": "Obsession",
+      "original_language": "en",
+      "original_title": "Obsession",
+      "overview": "",
+      "popularity": 669.5524,
+      "poster_path": "/vj3niHx3ikSAIr1O8A2uBgwsuTp.jpg",
+      "release_date": "2026-05-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.913,
+      "vote_count": 804
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/laR2dpcNpbv83jdlRUNAYPPjH90.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 931285,
+      "title": "Mortal Kombat II",
+      "original_language": "en",
+      "original_title": "Mortal Kombat II",
+      "overview": "",
+      "popularity": 579.1548,
+      "poster_path": "/mUExj4VneG3S0Ysufxnj9JPZEHQ.jpg",
+      "release_date": "2026-05-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.998,
+      "vote_count": 1406
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
+      "genre_ids": [
+        10402,
+        18
+      ],
+      "id": 936075,
+      "title": "Michael",
+      "original_language": "en",
+      "original_title": "Michael",
+      "overview": "",
+      "popularity": 556.8145,
+      "poster_path": "/5HgVwIzug5iCoprtj4ZSvcHjjI1.jpg",
+      "release_date": "2026-04-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.644,
+      "vote_count": 2502
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oPsRr7AfNLw6XaPuMpvkWK0bIUA.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1057265,
+      "title": "పెద్ది",
+      "original_language": "te",
+      "original_title": "పెద్ది",
+      "overview": "",
+      "popularity": 426.0296,
+      "poster_path": "/Ap0gHovdbx6IYHwx2yNsA1zq8gt.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 41
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1eAuwNBy34kkM3xkl202z4f1NiI.jpg",
+      "genre_ids": [
+        28,
+        14
+      ],
+      "id": 1367220,
+      "title": "கருப்பு",
+      "original_language": "ta",
+      "original_title": "கருப்பு",
+      "overview": "",
+      "popularity": 412.8818,
+      "poster_path": "/wfyAZkRaVI3sp5rD3Iz8eFZq095.jpg",
+      "release_date": "2026-05-14",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 16
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7uXzE0ZBkbAeKylOz7cUQF4Yw75.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 879945,
+      "title": "L'homme inconnu",
+      "original_language": "nl",
+      "original_title": "L'homme inconnu",
+      "overview": "",
+      "popularity": 379.4438,
+      "poster_path": "/4TpBhdaSl5ALHbgeaYOLF8Q3haz.jpg",
+      "release_date": "2021-10-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
+      "genre_ids": [
+        28,
+        878,
+        53
+      ],
+      "id": 1275779,
+      "title": "Disclosure Day",
+      "original_language": "en",
+      "original_title": "Disclosure Day",
+      "overview": "",
+      "popularity": 375.0176,
+      "poster_path": "/ltwfCfSjIfwekD9TNDL2cN8RTwZ.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.751,
+      "vote_count": 441
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/l5QgEvlfK6eHPM4YPEk7AArXmh8.jpg",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "id": 1308553,
+      "title": "है जवानी तो इश्क होना है",
+      "original_language": "hi",
+      "original_title": "है जवानी तो इश्क होना है",
+      "overview": "",
+      "popularity": 341.0197,
+      "poster_path": "/vmlJvz6qVzYgei2V74GvnmcuQfW.jpg",
+      "release_date": "2026-06-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.471,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/A2tzVTVtnTvpji96IZmleN78KKv.jpg",
+      "genre_ids": [
+        27,
+        35
+      ],
+      "id": 1239134,
+      "title": "भूत बंगला",
+      "original_language": "hi",
+      "original_title": "भूत बंगला",
+      "overview": "",
+      "popularity": 293.2174,
+      "poster_path": "/ArIS4vwUxdhm3j7tsTHmffdfU8W.jpg",
+      "release_date": "2026-04-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.5,
+      "vote_count": 20
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 1226863,
+      "title": "The Super Mario Galaxy Movie",
+      "original_language": "en",
+      "original_title": "The Super Mario Galaxy Movie",
+      "overview": "",
+      "popularity": 261.279,
+      "poster_path": "/6RmUnKyBfLu6MfC7sya2WXjyVut.jpg",
+      "release_date": "2026-04-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.182,
+      "vote_count": 2621
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6zg7A9ICOthNR2TSXlT51KvXrsA.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1228710,
+      "title": "The Mandalorian and Grogu",
+      "original_language": "en",
+      "original_title": "The Mandalorian and Grogu",
+      "overview": "",
+      "popularity": 256.9239,
+      "poster_path": "/zAxyRS0GiDDVCztJIwL1o4PuJpO.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 474
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/emK2hOB6ACiExT0lNLog9lAmMFL.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 1226293,
+      "title": "Salitan",
+      "original_language": "tl",
+      "original_title": "Salitan",
+      "overview": "",
+      "popularity": 235.2681,
+      "poster_path": "/rMgG7cWuq9O6zhhLs2CbqIKVA8V.jpg",
+      "release_date": "2024-02-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.714,
+      "vote_count": 7
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 1604143,
+      "title": "나는 신혼 너는 재혼",
+      "original_language": "ko",
+      "original_title": "나는 신혼 너는 재혼",
+      "overview": "",
+      "popularity": 229.4319,
+      "poster_path": "/wTFF1SFTDYL7M1yWjY0K8Ga5pZS.jpg",
+      "release_date": "2021-08-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/l1nekhf05HS5OpBr0vRqcD3NxoS.jpg",
+      "genre_ids": [
+        36,
+        80,
+        28,
+        14
+      ],
+      "id": 1103473,
+      "title": "ಕೆಡಿ - ದಿ ಡೆವಿಲ್",
+      "original_language": "kn",
+      "original_title": "ಕೆಡಿ - ದಿ ಡೆವಿಲ್",
+      "overview": "",
+      "popularity": 220.9666,
+      "poster_path": "/9cgwiPHZ57NjI0RKb2yIu8mUnNs.jpg",
+      "release_date": "2026-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 1523145,
+      "title": "Твоё сердце будет разбито",
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "",
+      "popularity": 214.5581,
+      "poster_path": "/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
+      "release_date": "2026-03-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 91
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/krhj4Fhb0G3QCmyBtEADxgFFmRX.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 11012,
+      "title": "Damage",
+      "original_language": "en",
+      "original_title": "Damage",
+      "overview": "",
+      "popularity": 181.0522,
+      "poster_path": "/2TLbJKCVBpycbOyKSp00Da32Mnw.jpg",
+      "release_date": "1992-12-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.6,
+      "vote_count": 689
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xugEpZk9YQ0DIz1aFvH5HGkqpZK.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1304313,
+      "title": "Lee Cronin's The Mummy",
+      "original_language": "en",
+      "original_title": "Lee Cronin's The Mummy",
+      "overview": "",
+      "popularity": 179.8683,
+      "poster_path": "/qZiQO2SpMw8Fh8byvJ3cShIwgoi.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.043,
+      "vote_count": 1851
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jPr9Id0f3knF82ETEBGPpMhXj4M.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 912378,
+      "title": "ദൃഢം",
+      "original_language": "ml",
+      "original_title": "ദൃഢം",
+      "overview": "",
+      "popularity": 175.61,
+      "poster_path": "/9u4coG8fQvLIGQs4Y7lzG1x3b7a.jpg",
+      "release_date": "2026-05-08",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
+      "genre_ids": [
+        28,
+        14,
+        878
+      ],
+      "id": 454639,
+      "title": "Masters of the Universe",
+      "original_language": "en",
+      "original_title": "Masters of the Universe",
+      "overview": "",
+      "popularity": 174.796,
+      "poster_path": "/eBwwob0OTtoQGLy4ncchnXaTsKO.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.258,
+      "vote_count": 227
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ew3EqF9VLTxmK64OsHT7p7lr4wT.jpg",
+      "genre_ids": [
+        28,
+        80
+      ],
+      "id": 1280738,
+      "title": "火遮眼",
+      "original_language": "zh",
+      "original_title": "火遮眼",
+      "overview": "",
+      "popularity": 171.7234,
+      "poster_path": "/824pEvU4CACETKjeohqaGetzmuv.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.095,
+      "vote_count": 37
+    }
+  ],
+  "total_pages": 57473,
+  "total_results": 1149451
+}
