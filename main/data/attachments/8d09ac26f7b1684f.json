@@ -1,0 +1,420 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        10751,
+        14
+      ],
+      "id": 1007757,
+      "title": "Swapped",
+      "original_language": "en",
+      "original_title": "Swapped",
+      "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
+      "popularity": 162.9906,
+      "poster_path": "/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "release_date": "2026-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.966,
+      "vote_count": 1697
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xS8tsJ8IvNkzBMu3kq3gZFReh7j.jpg",
+      "genre_ids": [
+        53
+      ],
+      "id": 1293550,
+      "title": "Bandar",
+      "original_language": "hi",
+      "original_title": "बंदर",
+      "overview": "TV star Samar's life spirals when his ex Gayatri accuses him of rape after he blocks contact with her. Despite his new relationship with Khushi, he faces arrest and encounters a corrupt justice system.",
+      "popularity": 156.5874,
+      "poster_path": "/3TrQUHmnEL2tOYf4KKkXb01BQt2.jpg",
+      "release_date": "2026-06-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7TJjD2X9GTEqyLVIJKLS85J2V47.jpg",
+      "genre_ids": [
+        53,
+        28,
+        80
+      ],
+      "id": 28322,
+      "title": "Madness",
+      "original_language": "it",
+      "original_title": "Vacanze per un massacro",
+      "overview": "An escaped convicted murderer invades the cottage of a man, his wife and the wife's sister, whereupon he proceeds to torment this already dysfunctional trio with rape and violence.",
+      "popularity": 156.5237,
+      "poster_path": "/gV0J0Fqw2mYMtQbzb0ruxv9MAeZ.jpg",
+      "release_date": "1980-03-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.969,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qcIKxhqGMIj8uujsSoSMZWr8QqU.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1122573,
+      "title": "In the Grey",
+      "original_language": "en",
+      "original_title": "In the Grey",
+      "overview": "A covert team of elite operatives are living in the shadows. When a ruthless despot steals a billion-dollar fortune, they're sent to take it back—an impossible heist that erupts into a deadly game of strategy, deception and survival.",
+      "popularity": 153.9684,
+      "poster_path": "/dQgIcW6Th08kMRf2HBoYWoFE6OD.jpg",
+      "release_date": "2026-05-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.62,
+      "vote_count": 238
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "title": "Project Hail Mary",
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+      "popularity": 152.4552,
+      "poster_path": "/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "release_date": "2026-03-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.684,
+      "vote_count": 5133
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
+      "genre_ids": [
+        28,
+        18,
+        80
+      ],
+      "id": 1439930,
+      "title": "The Punisher: One Last Kill",
+      "original_language": "en",
+      "original_title": "The Punisher: One Last Kill",
+      "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
+      "popularity": 144.7455,
+      "poster_path": "/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg",
+      "release_date": "2026-05-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.346,
+      "vote_count": 1621
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gRoZG3Z0zJxgElmTsVHOl2dNYXe.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1582770,
+      "title": "Dhurandhar: The Revenge",
+      "original_language": "hi",
+      "original_title": "धुरंधर: द रिवेंज",
+      "overview": "As rival gangs, corrupt officials and a ruthless Major Iqbal close in, Hamza's mission for his country spirals into a bloody personal war where the line between patriot and monster disappears in the streets of Lyari.",
+      "popularity": 137.8492,
+      "poster_path": "/ptTwQES14pr5c3aZvJg56YlYgb1.jpg",
+      "release_date": "2026-03-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 118
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rHnANzYUmV3WZw3n0yWOLiR3pen.jpg",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "id": 976912,
+      "title": "Graphic Desires",
+      "original_language": "en",
+      "original_title": "Graphic Desires",
+      "overview": "When reclusive Franklin cheats on his partner with a mysterious girl he meets on a dating app, it becomes the start of a deadly obsession.",
+      "popularity": 133.3214,
+      "poster_path": "/3BjLdTWRiHc1ISIZMFvToOmghOM.jpg",
+      "release_date": "2023-08-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.935,
+      "vote_count": 92
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1N5yz1IDw6Ci8le1YgeM6xtBijA.jpg",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "id": 1358005,
+      "title": "Office Romance",
+      "original_language": "en",
+      "original_title": "Office Romance",
+      "overview": "Jackie, President and CEO of Air Cruz, runs a tight ship in her business, including a rigid anti-fraternization policy for all her employees. When a new sexy lawyer begins working for her, that policy becomes very tested.",
+      "popularity": 132.655,
+      "poster_path": "/1HRUTqEVDmJC4L6tp6zd85MI6uH.jpg",
+      "release_date": "2026-06-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.505,
+      "vote_count": 207
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kwq3lxPrBfyyVRRSDSlojwCPzwH.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        12
+      ],
+      "id": 1084244,
+      "title": "Toy Story 5",
+      "original_language": "en",
+      "original_title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "popularity": 132.4506,
+      "poster_path": "/pxG26JdyuiDvJbSoucknaFiLeZD.jpg",
+      "release_date": "2026-06-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 28
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dd31qJxOarrHyGZwYsCzOjobQzP.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1380291,
+      "title": "Tom Clancy's Jack Ryan: Ghost War",
+      "original_language": "en",
+      "original_title": "Tom Clancy's Jack Ryan: Ghost War",
+      "overview": "Jack Ryan is reluctantly pulled back into espionage when an international covert mission unravels a deadly conspiracy. Racing against time, he joins CIA allies Mike November & James Greer and sharp MI6 officer Emma Marlowe to battle a rogue black-ops unit in a high-stakes, deeply personal fight.",
+      "popularity": 123.7577,
+      "poster_path": "/8ehYxUh5MWE41AeE9gkHE8DKzvB.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.08,
+      "vote_count": 571
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53
+      ],
+      "id": 1419406,
+      "title": "The Shadow's Edge",
+      "original_language": "zh",
+      "original_title": "捕风追影",
+      "overview": "Macau Police brings the tracking expert police officer out of retirement to help catch a dangerous group of professional thieves.",
+      "popularity": 121.4666,
+      "poster_path": "/cHKo3m8N1fwvEy2ZEr0xGmmMODV.jpg",
+      "release_date": "2025-08-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.76,
+      "vote_count": 862
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        878
+      ],
+      "id": 1083381,
+      "title": "Backrooms",
+      "original_language": "en",
+      "original_title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "popularity": 120.7205,
+      "poster_path": "/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "release_date": "2026-05-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.903,
+      "vote_count": 575
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        878
+      ],
+      "id": 1327819,
+      "title": "Hoppers",
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "popularity": 120.5732,
+      "poster_path": "/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "release_date": "2026-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.178,
+      "vote_count": 1611
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/efIhQiHcgAvHyq8nwSlfJNPpoaH.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1536233,
+      "title": "The Summoning of Baby Blue",
+      "original_language": "en",
+      "original_title": "The Summoning of Baby Blue",
+      "overview": "A babysitting gig becomes a nightmare of urban legend when three teens summon Baby Blue. Survival depends on uncovering the past to escape a mother’s wrath from beyond the grave.",
+      "popularity": 110.437,
+      "poster_path": "/fDyjVv5ryBYDiE1sN9mbBbZycBL.jpg",
+      "release_date": "2025-10-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.0,
+      "vote_count": 6
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aV5YOTVTnO2wYcN2AlNbdgnBYpb.jpg",
+      "genre_ids": [
+        35,
+        53,
+        18
+      ],
+      "id": 1628448,
+      "title": "Maa Behen",
+      "original_language": "hi",
+      "original_title": "माँ बहन",
+      "overview": "In this dark comedy, a woman calls her estranged daughters in the middle of the night with chilling news — there's a dead body in her kitchen.",
+      "popularity": 108.9136,
+      "poster_path": "/dpQIeEunpgj0C4rngb6OFb4zSd1.jpg",
+      "release_date": "2026-06-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "title": "Avatar: Fire and Ash",
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 108.0377,
+      "poster_path": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+      "release_date": "2025-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.585,
+      "vote_count": 3468
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6kheApG5qPsKbiKDxsGpOb6i6i6.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1694978,
+      "title": "Chum",
+      "original_language": "en",
+      "original_title": "Chum",
+      "overview": "A newlywed couple joins friends on a Mediterranean yacht excursion, only to find themselves caught between a predatory shark and a psychopathic killer in their midst-transforming a sun-drenched escape into a fight for survival.",
+      "popularity": 101.948,
+      "poster_path": "/uJOW6pWxJ0i5sji9VXRR6Y1wXyE.jpg",
+      "release_date": "2026-05-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.1,
+      "vote_count": 11
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 100.1295,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.724,
+      "vote_count": 863
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/g2aOpyCO1vEyUZURh3V5uaHu187.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1288341,
+      "title": "Seven Snipers",
+      "original_language": "en",
+      "original_title": "Seven Snipers",
+      "overview": "When a former elite sniper is hunted down by the ruthless warlord who once held her captive, she must fight to the death to protect the daughter she has raised in hiding, on a remote Australian farm.",
+      "popularity": 97.5032,
+      "poster_path": "/xIZ8huVdXCL7OMtsjd3XvmFP5sK.jpg",
+      "release_date": "2026-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 33
+    }
+  ],
+  "total_pages": 57479,
+  "total_results": 1149562
+}
