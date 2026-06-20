@@ -1,0 +1,1 @@
+2026-06-20 16:38:48 - test_automation - INFO - 스크린샷 저장: screenshots/장바구니_플로우_실패_20260620_163848.png
