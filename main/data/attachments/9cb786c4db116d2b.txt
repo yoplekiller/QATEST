@@ -1,0 +1,21 @@
+[32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1062 Starting new HTTPS connection (1): googlechromelabs.github.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 17328
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1062 Starting new HTTPS connection (1): googlechromelabs.github.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 17328
+[32mINFO    [0m WDM:logger.py:11 There is no [linux64] chromedriver "149.0.7827.155" for browser google-chrome "149.0.7827" in cache
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1062 Starting new HTTPS connection (1): googlechromelabs.github.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 17328
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1062 Starting new HTTPS connection (1): googlechromelabs.github.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://googlechromelabs.github.io:443 "GET /chrome-for-testing/known-good-versions-with-downloads.json HTTP/1.1" 200 147782
+[32mINFO    [0m WDM:logger.py:11 WebDriver version 149.0.7827.155 selected
+[32mINFO    [0m WDM:logger.py:11 Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.155/linux64/chromedriver-linux64.zip
+[32mINFO    [0m WDM:logger.py:11 About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.155/linux64/chromedriver-linux64.zip
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1062 Starting new HTTPS connection (1): storage.googleapis.com:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://storage.googleapis.com:443 "GET /chrome-for-testing-public/149.0.7827.155/linux64/chromedriver-linux64.zip HTTP/1.1" 200 10252980
+[32mINFO    [0m WDM:logger.py:11 Driver downloading response is 200
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1062 Starting new HTTPS connection (1): googlechromelabs.github.io:443
