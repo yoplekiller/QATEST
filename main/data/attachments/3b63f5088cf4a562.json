@@ -1,0 +1,422 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 1275779,
+      "title": "Disclosure Day",
+      "original_language": "en",
+      "original_title": "Disclosure Day",
+      "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
+      "popularity": 647.9174,
+      "poster_path": "/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.687,
+      "vote_count": 745
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1339713,
+      "title": "Obsession",
+      "original_language": "en",
+      "original_title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "popularity": 609.353,
+      "poster_path": "/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "release_date": "2026-05-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.146,
+      "vote_count": 1468
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2flMSJfRSZ8OWdPjZEz2kJatBLm.jpg",
+      "genre_ids": [
+        28,
+        35,
+        12,
+        80
+      ],
+      "id": 1169516,
+      "title": "Welcome to the Jungle",
+      "original_language": "hi",
+      "original_title": "Welcome to the Jungle",
+      "overview": "A group of quirky characters gets stuck in a dangerous jungle during a chaotic mission. Filled with confusion, criminals, and hilarious situations, they must work together to survive and find their way out.",
+      "popularity": 527.6674,
+      "poster_path": "/1JlfUuvvX5xLP2LIDah4JhWUtTx.jpg",
+      "release_date": "2026-06-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.3,
+      "vote_count": 16
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        12
+      ],
+      "id": 1084244,
+      "title": "Toy Story 5",
+      "original_language": "en",
+      "original_title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "popularity": 538.9499,
+      "poster_path": "/pxG26JdyuiDvJbSoucknaFiLeZD.jpg",
+      "release_date": "2026-06-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 405
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        878
+      ],
+      "id": 1083381,
+      "title": "Backrooms",
+      "original_language": "en",
+      "original_title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "popularity": 511.9282,
+      "poster_path": "/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "release_date": "2026-05-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.838,
+      "vote_count": 811
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 1273221,
+      "title": "Scary Movie",
+      "original_language": "en",
+      "original_title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "popularity": 485.6451,
+      "poster_path": "/reZ8NInXjMkkaOpUHcI3Pn7iaRN.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.445,
+      "vote_count": 392
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iYjlQzWbcFIjWe2WifbEPb4kErp.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1127384,
+      "title": "Deep Water",
+      "original_language": "en",
+      "original_title": "Deep Water",
+      "overview": "A group of international passengers on a flight from Los Angeles to Shanghai is forced to make an emergency landing in shark-infested waters. The terrified group is forced to work together and overcome their differences if they hope to escape their sinking plane and the frenzy of sharks drawn to the wreckage.",
+      "popularity": 304.397,
+      "poster_path": "/kjcuS7xaRyqRjVaVcH4t0qHshuX.jpg",
+      "release_date": "2026-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.146,
+      "vote_count": 72
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
+      "genre_ids": [
+        10402,
+        18
+      ],
+      "id": 936075,
+      "title": "Michael",
+      "original_language": "en",
+      "original_title": "Michael",
+      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+      "popularity": 262.3596,
+      "poster_path": "/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
+      "release_date": "2026-04-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.704,
+      "vote_count": 3202
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1081003,
+      "title": "Supergirl",
+      "original_language": "en",
+      "original_title": "Supergirl",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "popularity": 270.0264,
+      "poster_path": "/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "release_date": "2026-06-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.223,
+      "vote_count": 296
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
+      "genre_ids": [
+        12,
+        9648,
+        35,
+        10751
+      ],
+      "id": 1301421,
+      "title": "The Sheep Detectives",
+      "original_language": "en",
+      "original_title": "The Sheep Detectives",
+      "overview": "George Hardy is a shepherd who reads detective novels to his beloved sheep every night, assuming they can't possibly understand. But when a mysterious incident disrupts life on the farm, the sheep realize they must become the detectives. As they follow the clues and investigate human suspects, they prove that even sheep can be brilliant crime-solvers.",
+      "popularity": 236.4043,
+      "poster_path": "/iKy5460GdsoknM8ppmGlJbKxAKa.jpg",
+      "release_date": "2026-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.745,
+      "vote_count": 591
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qJ2KSHJhlFvASBMLbGuP7OFMaFg.jpg",
+      "genre_ids": [
+        53,
+        28,
+        80
+      ],
+      "id": 1413976,
+      "title": "Citizen Vigilante",
+      "original_language": "en",
+      "original_title": "Citizen Vigilante",
+      "overview": "A man takes justice into his own hands, hunting down criminals. His vigilante crusade makes him a social media star but puts him at odds with the local police chief.",
+      "popularity": 221.2655,
+      "poster_path": "/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
+      "release_date": "2026-06-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.716,
+      "vote_count": 153
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/laR2dpcNpbv83jdlRUNAYPPjH90.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 931285,
+      "title": "Mortal Kombat II",
+      "original_language": "en",
+      "original_title": "Mortal Kombat II",
+      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "popularity": 219.9335,
+      "poster_path": "/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
+      "release_date": "2026-05-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.991,
+      "vote_count": 1785
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 1523145,
+      "title": "Your Heart Will Be Broken",
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
+      "popularity": 196.346,
+      "poster_path": "/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
+      "release_date": "2026-03-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.024,
+      "vote_count": 106
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1314481,
+      "title": "The Devil Wears Prada 2",
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "popularity": 202.6534,
+      "poster_path": "/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+      "release_date": "2026-04-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 1048
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6tROOVmV5vRymO2g52aR8kWlfoT.jpg",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "id": 1392469,
+      "title": "Cocktail 2",
+      "original_language": "hi",
+      "original_title": "कॉकटेल २",
+      "overview": "After a decade together, Diya and Kunal's relationship is shaken when Ally, an old friend, re-enters their lives. What begins as a plan between two women spirals into chaos, triggering hilarious, emotional rollercoaster none of them saw coming.",
+      "popularity": 131.2175,
+      "poster_path": "/oIQmtByV1LtEQSwM4EpdLTyoSlM.jpg",
+      "release_date": "2026-06-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/emK2hOB6ACiExT0lNLog9lAmMFL.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 1226293,
+      "title": "Salitan",
+      "original_language": "tl",
+      "original_title": "Salitan",
+      "overview": "A suspicious wife follows her husband in Bali. She meets a dashing man who captures her heart. She soon wants her husband to really have an affair to alleviate the guilt she is feeling.",
+      "popularity": 161.3716,
+      "poster_path": "/rMgG7cWuq9O6zhhLs2CbqIKVA8V.jpg",
+      "release_date": "2024-02-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.727,
+      "vote_count": 11
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/krhj4Fhb0G3QCmyBtEADxgFFmRX.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 11012,
+      "title": "Damage",
+      "original_language": "en",
+      "original_title": "Damage",
+      "overview": "The life of a respected British politician at the height of his career crumbles when he becomes obsessed with his son's lover.",
+      "popularity": 162.5829,
+      "poster_path": "/alf3JOPP7EYP0iO24gwe5YfRnqo.jpg",
+      "release_date": "1992-12-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.586,
+      "vote_count": 700
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kxQiIJ4gVcD3K6o14MJ72p5yRcE.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 1226863,
+      "title": "The Super Mario Galaxy Movie",
+      "original_language": "en",
+      "original_title": "The Super Mario Galaxy Movie",
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "popularity": 155.0737,
+      "poster_path": "/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "release_date": "2026-04-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.239,
+      "vote_count": 2904
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4lj7MZtcIDI2FmZXGkFWh0sNCsq.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1228710,
+      "title": "The Mandalorian and Grogu",
+      "original_language": "en",
+      "original_title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "popularity": 138.3072,
+      "poster_path": "/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.679,
+      "vote_count": 543
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        14
+      ],
+      "id": 1315772,
+      "title": "Minions & Monsters",
+      "original_language": "en",
+      "original_title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "popularity": 148.9936,
+      "poster_path": "/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "release_date": "2026-06-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.713,
+      "vote_count": 47
+    }
+  ],
+  "total_pages": 57751,
+  "total_results": 1155006
+}
