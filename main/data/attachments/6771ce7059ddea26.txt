@@ -1,0 +1,3 @@
+2026-07-03 20:31:30 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath__div_class_popup-content_css-15yaaju_e1k5padi2__20260703_203130.png
+2026-07-03 20:31:30 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "//div[@class='popup-content css-15yaaju e1k5padi2']")
+2026-07-03 20:31:30 - test_automation - INFO - 스크린샷 저장: screenshots/로그인_실패_에러_20260703_203130.png
