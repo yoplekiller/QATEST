@@ -1,0 +1,424 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "title": "Avatar: Fire and Ash",
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 134.6155,
+      "poster_path": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+      "release_date": "2025-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.611,
+      "vote_count": 3638
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sS3zGYFPcfM5pArVNWl6qLyaSmU.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14
+      ],
+      "id": 980431,
+      "title": "Avatar Aang: The Last Airbender",
+      "original_language": "en",
+      "original_title": "Avatar Aang: The Last Airbender",
+      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "popularity": 132.9589,
+      "poster_path": "/29Jdsak3SrwGds5k1t43kH6Khed.jpg",
+      "release_date": "2026-07-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6tROOVmV5vRymO2g52aR8kWlfoT.jpg",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "id": 1392469,
+      "title": "Cocktail 2",
+      "original_language": "hi",
+      "original_title": "कॉकटेल २",
+      "overview": "After a decade together, Diya and Kunal's relationship is shaken when Ally, an old friend, re-enters their lives. What begins as a plan between two women spirals into chaos, triggering hilarious, emotional rollercoaster none of them saw coming.",
+      "popularity": 131.2175,
+      "poster_path": "/oIQmtByV1LtEQSwM4EpdLTyoSlM.jpg",
+      "release_date": "2026-06-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.8,
+      "vote_count": 19
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2WU6Y6aonzD6uAaCmNnEFlesxxJ.jpg",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "id": 614945,
+      "title": "Voicemails for Isabelle",
+      "original_language": "en",
+      "original_title": "Voicemails for Isabelle",
+      "overview": "A young woman's hilariously confessional voicemails to her late sister are unknowingly redirected to a stranger, who begins to fall in love from afar.",
+      "popularity": 130.168,
+      "poster_path": "/canZTWSxACSnAluir3dCtMxKpA1.jpg",
+      "release_date": "2026-06-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.313,
+      "vote_count": 378
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ew3EqF9VLTxmK64OsHT7p7lr4wT.jpg",
+      "genre_ids": [
+        28,
+        80
+      ],
+      "id": 1280738,
+      "title": "The Furious",
+      "original_language": "en",
+      "original_title": "火遮眼",
+      "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
+      "popularity": 128.5188,
+      "poster_path": "/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.721,
+      "vote_count": 70
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/q62bpQ67qaXY0u6b2wFEnQYIbPd.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        16,
+        12
+      ],
+      "id": 301528,
+      "title": "Toy Story 4",
+      "original_language": "en",
+      "original_title": "Toy Story 4",
+      "overview": "Woody has always been confident about his place in the world, devoted to taking care of his kid—whether that's Andy or Bonnie. But after Bonnie creates a reluctant new toy called \"Forky\", a road trip adventure alongside old and new friends challenges everything Woody believes about loyalty, purpose, and what it truly means to be a toy.",
+      "popularity": 128.1173,
+      "poster_path": "/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg",
+      "release_date": "2019-06-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.461,
+      "vote_count": 10666
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "title": "Project Hail Mary",
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+      "popularity": 123.0578,
+      "poster_path": "/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "release_date": "2026-03-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 5537
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rHnANzYUmV3WZw3n0yWOLiR3pen.jpg",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "id": 976912,
+      "title": "Graphic Desires",
+      "original_language": "en",
+      "original_title": "Graphic Desires",
+      "overview": "When reclusive Franklin cheats on his partner with a mysterious girl he meets on a dating app, it becomes the start of a deadly obsession.",
+      "popularity": 121.7614,
+      "poster_path": "/3BjLdTWRiHc1ISIZMFvToOmghOM.jpg",
+      "release_date": "2023-08-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.093,
+      "vote_count": 108
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "id": 278,
+      "title": "The Shawshank Redemption",
+      "original_language": "en",
+      "original_title": "The Shawshank Redemption",
+      "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+      "popularity": 121.1668,
+      "poster_path": "/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+      "release_date": "1994-09-23",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.723,
+      "vote_count": 30663
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
+      "genre_ids": [
+        12,
+        80,
+        9648,
+        28
+      ],
+      "id": 1202033,
+      "title": "Enola Holmes 3",
+      "original_language": "en",
+      "original_title": "Enola Holmes 3",
+      "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
+      "popularity": 116.1365,
+      "poster_path": "/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
+      "release_date": "2026-06-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.291,
+      "vote_count": 91
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/s3tHm62ohyb0I5vSnPrpczCBtSX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1304313,
+      "title": "Lee Cronin's The Mummy",
+      "original_language": "en",
+      "original_title": "Lee Cronin's The Mummy",
+      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
+      "popularity": 114.9775,
+      "poster_path": "/1q308iixueCU4pFtSYugNOevtNx.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.026,
+      "vote_count": 2038
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xsoKAonKy1zk5XoQoUG1dUXDCKH.jpg",
+      "genre_ids": [
+        18,
+        28,
+        10751,
+        53
+      ],
+      "id": 1515729,
+      "title": "Blast",
+      "original_language": "ta",
+      "original_title": "Blast",
+      "overview": "A seemingly ordinary family must unleash their hidden martial arts skills when they clash with a ruthless criminal gang tied to corruption and violence.",
+      "popularity": 113.6573,
+      "poster_path": "/ho824aZtnBzE6FuJRn2znQCq4qQ.jpg",
+      "release_date": "2026-05-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        10751,
+        14
+      ],
+      "id": 1007757,
+      "title": "Swapped",
+      "original_language": "en",
+      "original_title": "Swapped",
+      "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
+      "popularity": 113.1324,
+      "poster_path": "/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "release_date": "2026-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.951,
+      "vote_count": 1842
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pQ8pEfze9ToLfeJmyU3Bqfl9CsD.jpg",
+      "genre_ids": [
+        18,
+        35,
+        14,
+        878
+      ],
+      "id": 911345,
+      "title": "Viking",
+      "original_language": "fr",
+      "original_title": "Viking",
+      "overview": "Five people are recruited by the Viking Society to collaborate on the first manned mission to Mars. They were chosen because of the psychological similarities they share with the five astronauts who will travel to the red planet. These volunteers therefore form a B-team of alter egos who will experience the adventure in parallel, behind closed doors on Earth.",
+      "popularity": 112.0919,
+      "poster_path": "/pkbG9xXZwwXAG8Bb8WXJweOlF1M.jpg",
+      "release_date": "2022-09-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.531,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qcIKxhqGMIj8uujsSoSMZWr8QqU.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1122573,
+      "title": "In the Grey",
+      "original_language": "en",
+      "original_title": "In the Grey",
+      "overview": "A covert team of elite operatives are living in the shadows. When a ruthless despot steals a billion-dollar fortune, they're sent to take it back—an impossible heist that erupts into a deadly game of strategy, deception and survival.",
+      "popularity": 102.4516,
+      "poster_path": "/dQgIcW6Th08kMRf2HBoYWoFE6OD.jpg",
+      "release_date": "2026-05-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.6,
+      "vote_count": 288
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
+      "genre_ids": [
+        28,
+        18,
+        80
+      ],
+      "id": 1439930,
+      "title": "The Punisher: One Last Kill",
+      "original_language": "en",
+      "original_title": "The Punisher: One Last Kill",
+      "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
+      "popularity": 99.8665,
+      "poster_path": "/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg",
+      "release_date": "2026-05-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.343,
+      "vote_count": 1760
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        16,
+        12
+      ],
+      "id": 862,
+      "title": "Toy Story",
+      "original_language": "en",
+      "original_title": "Toy Story",
+      "overview": "Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz. But when circumstances separate Buzz and Woody from their owner, the duo eventually learns to put aside their differences.",
+      "popularity": 98.0269,
+      "poster_path": "/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+      "release_date": "1995-11-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.98,
+      "vote_count": 20066
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/A2tzVTVtnTvpji96IZmleN78KKv.jpg",
+      "genre_ids": [
+        27,
+        35
+      ],
+      "id": 1239134,
+      "title": "Bhooth Bangla",
+      "original_language": "hi",
+      "original_title": "भूत बंगला",
+      "overview": "A man inherits a palace in rural Mangalpur and plans his sister's wedding there, but strange supernatural events and panicked locals force him to investigate the property's mysterious past.",
+      "popularity": 97.2632,
+      "poster_path": "/ArIS4vwUxdhm3j7tsTHmffdfU8W.jpg",
+      "release_date": "2026-04-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.444,
+      "vote_count": 45
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zyqAhNJqwiop5yUOJ8SHV27labY.jpg",
+      "genre_ids": [
+        28,
+        53,
+        878
+      ],
+      "id": 949536,
+      "title": "Kill Code",
+      "original_language": "en",
+      "original_title": "Kill Code",
+      "overview": "North America has been divided into four main quadrants. A power-hungry corporation has taken over the conventional prison system and made criminals the new law enforcers.  The owner of that corporation, nanoscientist Eion Prescott, created a nano-virus called Onyx. Which is distributed through deadly watches to criminals. First, infecting them. Then, forcing them into eliminating each other for freedom. Who can topple the corporation's entire system from within?",
+      "popularity": 96.0323,
+      "poster_path": "/bXvSKLCillha6wxY0yxoRCM2WQl.jpg",
+      "release_date": "2026-04-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.5,
+      "vote_count": 12
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        53,
+        27
+      ],
+      "id": 1359685,
+      "title": "El mal",
+      "original_language": "es",
+      "original_title": "El mal",
+      "overview": "“El mal is basically a suspense story, where the audience senses that something disturbing is going to happen, but doesn't know how or when. But it also aims to get the viewer to question their own certainties, their capacity to love and to accept their own dark side.”",
+      "popularity": 95.8673,
+      "poster_path": "/fZWqXuy6UAgnc9ySFyZhXaB2DoR.jpg",
+      "release_date": "2026-01-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 2
+    }
+  ],
+  "total_pages": 57764,
+  "total_results": 1155280
+}
