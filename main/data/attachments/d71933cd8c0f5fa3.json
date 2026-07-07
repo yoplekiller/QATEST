@@ -1,0 +1,422 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "title": "Avatar: Fire and Ash",
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 117.1246,
+      "poster_path": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+      "release_date": "2025-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.615,
+      "vote_count": 3698
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/s3tHm62ohyb0I5vSnPrpczCBtSX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1304313,
+      "title": "Lee Cronin's The Mummy",
+      "original_language": "en",
+      "original_title": "Lee Cronin's The Mummy",
+      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
+      "popularity": 111.7122,
+      "poster_path": "/1q308iixueCU4pFtSYugNOevtNx.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.01,
+      "vote_count": 2116
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4lj7MZtcIDI2FmZXGkFWh0sNCsq.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1228710,
+      "title": "The Mandalorian and Grogu",
+      "original_language": "en",
+      "original_title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "popularity": 106.2738,
+      "poster_path": "/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.68,
+      "vote_count": 558
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/q62bpQ67qaXY0u6b2wFEnQYIbPd.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        16,
+        12
+      ],
+      "id": 301528,
+      "title": "Toy Story 4",
+      "original_language": "en",
+      "original_title": "Toy Story 4",
+      "overview": "Woody has always been confident about his place in the world, devoted to taking care of his kid—whether that's Andy or Bonnie. But after Bonnie creates a reluctant new toy called \"Forky\", a road trip adventure alongside old and new friends challenges everything Woody believes about loyalty, purpose, and what it truly means to be a toy.",
+      "popularity": 101.5899,
+      "poster_path": "/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg",
+      "release_date": "2019-06-19",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.459,
+      "vote_count": 10694
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sS3zGYFPcfM5pArVNWl6qLyaSmU.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14
+      ],
+      "id": 980431,
+      "title": "Avatar Aang: The Last Airbender",
+      "original_language": "en",
+      "original_title": "Avatar Aang: The Last Airbender",
+      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "popularity": 110.4798,
+      "poster_path": "/29Jdsak3SrwGds5k1t43kH6Khed.jpg",
+      "release_date": "2026-10-09",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bdwv8Hsu4Bnz8aRbH5MQ9clQ0DG.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 1397385,
+      "title": "Little Brother",
+      "original_language": "en",
+      "original_title": "Little Brother",
+      "overview": "A tightly wound realtor's picture-perfect life gets an extreme makeover when his lovably chaotic \"little brother\" suddenly reappears.",
+      "popularity": 100.8706,
+      "poster_path": "/hIJpXb7Xaje2mebN9ylsS7blQzP.jpg",
+      "release_date": "2026-06-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.438,
+      "vote_count": 194
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gsq4670nadz8Xc5GJ3osNiP3UzS.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 64439,
+      "title": "A Flame in My Heart",
+      "original_language": "fr",
+      "original_title": "Une flamme dans mon cœur",
+      "overview": "Mércedès, an actress from Paris attempts to break off a difficult relationship with the jealous and possessive stalker Johnny. She meets newspaper writer Pierre and goes with him for an afternoon fling. Before the sweat even dries, she finds herself hopelessly in love with him. But soon after their affair begins, he is called off on a business trip leaving the suddenly distraught Mércedès alone. Though preparing for a new play, she is unable to concentrate and barely able to function. Mércedès quits the production, locks herself in Pierre's apartment and quietly begins falling apart, collapsing into a bleak, reclusive madness until his return.",
+      "popularity": 109.2586,
+      "poster_path": "/qI2cTls7msoXF4wIqju7klqiZ6Y.jpg",
+      "release_date": "1987-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 14
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rHnANzYUmV3WZw3n0yWOLiR3pen.jpg",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "id": 976912,
+      "title": "Graphic Desires",
+      "original_language": "en",
+      "original_title": "Graphic Desires",
+      "overview": "When reclusive Franklin cheats on his partner with a mysterious girl he meets on a dating app, it becomes the start of a deadly obsession.",
+      "popularity": 99.8695,
+      "poster_path": "/3BjLdTWRiHc1ISIZMFvToOmghOM.jpg",
+      "release_date": "2023-08-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.094,
+      "vote_count": 117
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/96chPcURxg5thGyLqxO6otyxHFR.jpg",
+      "genre_ids": [
+        28,
+        35,
+        12,
+        80
+      ],
+      "id": 1169516,
+      "title": "Welcome to the Jungle",
+      "original_language": "hi",
+      "original_title": "Welcome to the Jungle",
+      "overview": "A group of quirky characters gets stuck in a dangerous jungle during a chaotic mission. Filled with confusion, criminals, and hilarious situations, they must work together to survive and find their way out.",
+      "popularity": 85.8915,
+      "poster_path": "/1JlfUuvvX5xLP2LIDah4JhWUtTx.jpg",
+      "release_date": "2026-06-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.8,
+      "vote_count": 21
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1368314,
+      "title": "Passenger",
+      "original_language": "en",
+      "original_title": "Passenger",
+      "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
+      "popularity": 106.973,
+      "poster_path": "/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 114
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        10751,
+        14
+      ],
+      "id": 1007757,
+      "title": "Swapped",
+      "original_language": "en",
+      "original_title": "Swapped",
+      "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
+      "popularity": 90.9091,
+      "poster_path": "/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "release_date": "2026-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.945,
+      "vote_count": 1875
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        878
+      ],
+      "id": 1327819,
+      "title": "Hoppers",
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "popularity": 89.6696,
+      "poster_path": "/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "release_date": "2026-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.194,
+      "vote_count": 1837
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yQy9Y3p5INwkfTuHSnzYnz4MCV3.jpg",
+      "genre_ids": [
+        35,
+        14,
+        10751
+      ],
+      "id": 1125257,
+      "title": "Freakier Friday",
+      "original_language": "en",
+      "original_title": "Freakier Friday",
+      "overview": "Years after Tess and Anna endured an identity crisis, Anna now has a daughter of her own and a soon-to-be stepdaughter. As they navigate the myriad challenges that come when two families merge, Tess and Anna discover lightning might indeed strike twice.",
+      "popularity": 72.97,
+      "poster_path": "/9wV65OmsjLAqBfDnYTkMPutXH8j.jpg",
+      "release_date": "2025-08-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.772,
+      "vote_count": 739
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
+      "genre_ids": [
+        28,
+        18,
+        80
+      ],
+      "id": 1439930,
+      "title": "The Punisher: One Last Kill",
+      "original_language": "en",
+      "original_title": "The Punisher: One Last Kill",
+      "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
+      "popularity": 83.0044,
+      "poster_path": "/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg",
+      "release_date": "2026-05-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.3,
+      "vote_count": 1792
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9XwQphZxNJgGASfjL58mhIkJJpf.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1280738,
+      "title": "The Furious",
+      "original_language": "zh",
+      "original_title": "火遮眼",
+      "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
+      "popularity": 95.5841,
+      "poster_path": "/lwmXob14Bslv1YcVT1VYt3zBfs9.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 79
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2WU6Y6aonzD6uAaCmNnEFlesxxJ.jpg",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "id": 614945,
+      "title": "Voicemails for Isabelle",
+      "original_language": "en",
+      "original_title": "Voicemails for Isabelle",
+      "overview": "A young woman's hilariously confessional voicemails to her late sister are unknowingly redirected to a stranger, who begins to fall in love from afar.",
+      "popularity": 84.7334,
+      "poster_path": "/canZTWSxACSnAluir3dCtMxKpA1.jpg",
+      "release_date": "2026-06-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.366,
+      "vote_count": 461
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zyqAhNJqwiop5yUOJ8SHV27labY.jpg",
+      "genre_ids": [
+        28,
+        53,
+        878
+      ],
+      "id": 949536,
+      "title": "Kill Code",
+      "original_language": "en",
+      "original_title": "Kill Code",
+      "overview": "North America has been divided into four main quadrants. A power-hungry corporation has taken over the conventional prison system and made criminals the new law enforcers.  The owner of that corporation, nanoscientist Eion Prescott, created a nano-virus called Onyx. Which is distributed through deadly watches to criminals. First, infecting them. Then, forcing them into eliminating each other for freedom. Who can topple the corporation's entire system from within?",
+      "popularity": 78.7212,
+      "poster_path": "/7yy4cVr9obHOZC9lj3uct4DwDEn.jpg",
+      "release_date": "2026-04-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.5,
+      "vote_count": 12
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 84.8049,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.727,
+      "vote_count": 886
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rhuEN18ZimDOva3guaWZA4hYgLB.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1309083,
+      "title": "Dolly",
+      "original_language": "en",
+      "original_title": "Dolly",
+      "overview": "Young Macy is abducted by a deranged, monstrous figure who wants to raise her as its child.",
+      "popularity": 89.7411,
+      "poster_path": "/sTPUg3XtdcKRAS5Vwsi1GYPFhNZ.jpg",
+      "release_date": "2026-03-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.04,
+      "vote_count": 112
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7OjUOEWRoASbsmngmS96CpYfH3C.jpg",
+      "genre_ids": [
+        27,
+        36
+      ],
+      "id": 1301310,
+      "title": "Zombies of the Third Reich",
+      "original_language": "en",
+      "original_title": "Zombies of the Third Reich",
+      "overview": "During WW2, a group of assembled allied forces are sent to a secret nuclear bunker occupied by Nazi Germany to  uncover the operations of what's been occurring there. But when they discover the bunker is infested with rabid, zombie, super-humans in a nuclear testing operation gone wrong, they must destroy every last one in hopes of survival.",
+      "popularity": 85.7357,
+      "poster_path": "/hjrgOWoruk9ea0tXaN8l2gtmkeH.jpg",
+      "release_date": "2025-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.0,
+      "vote_count": 2
+    }
+  ],
+  "total_pages": 57850,
+  "total_results": 1156981
+}
