@@ -1,0 +1,422 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
+      "genre_ids": [
+        12,
+        28,
+        14
+      ],
+      "id": 1368337,
+      "title": "The Odyssey",
+      "original_language": "en",
+      "original_title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "popularity": 132.301,
+      "poster_path": "/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "release_date": "2026-07-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.1,
+      "vote_count": 23
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sS3zGYFPcfM5pArVNWl6qLyaSmU.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14
+      ],
+      "id": 980431,
+      "title": "Avatar Aang: The Last Airbender",
+      "original_language": "en",
+      "original_title": "Avatar Aang: The Last Airbender",
+      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "popularity": 120.4119,
+      "poster_path": "/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+      "release_date": "2026-07-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jITuPW8zL9JmDnc7R24jpTtn2Qu.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 11012,
+      "title": "Damage",
+      "original_language": "en",
+      "original_title": "Damage",
+      "overview": "The life of a respected British politician at the height of his career crumbles when he becomes obsessed with his son's lover.",
+      "popularity": 130.4779,
+      "poster_path": "/alf3JOPP7EYP0iO24gwe5YfRnqo.jpg",
+      "release_date": "1992-12-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.6,
+      "vote_count": 705
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        14
+      ],
+      "id": 1315772,
+      "title": "Minions & Monsters",
+      "original_language": "en",
+      "original_title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "popularity": 113.2715,
+      "poster_path": "/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "release_date": "2026-06-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.334,
+      "vote_count": 160
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/h7VptulPVCJUIvWCE2HzXdHljkj.jpg",
+      "genre_ids": [
+        80,
+        18,
+        36
+      ],
+      "id": 1155818,
+      "title": "Satluj",
+      "original_language": "hi",
+      "original_title": "ਸਤਲੁਜ",
+      "overview": "Triggered by the search for his missing aunt, human rights activist Jaswant Singh Khalra takes on a broken system in a courageous fight to uncover the conspiracy behind thousands of disappearances and extrajudicial killings during the nadir of Punjab’s period of insurgency.",
+      "popularity": 115.3673,
+      "poster_path": "/cxFo7L82dW3Vg8x0280BVPpLNXf.jpg",
+      "release_date": "2026-07-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/h1x4YiBtQEGY2dMx7k0fvlErlSn.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1645603,
+      "title": "Night of the Living Dead",
+      "original_language": "en",
+      "original_title": "Night of the Living Dead",
+      "overview": "A ragtag group barricade themselves in an old Pennsylvania farmhouse to remain safe from a horde of flesh-eating ghouls ravaging the Northeast.",
+      "popularity": 126.0019,
+      "poster_path": "/5l0klDtj2v4FMFOGGCEH23AQb30.jpg",
+      "release_date": "2026-07-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.629,
+      "vote_count": 35
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/s3tHm62ohyb0I5vSnPrpczCBtSX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1304313,
+      "title": "Lee Cronin's The Mummy",
+      "original_language": "en",
+      "original_title": "Lee Cronin's The Mummy",
+      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
+      "popularity": 117.4589,
+      "poster_path": "/1q308iixueCU4pFtSYugNOevtNx.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.978,
+      "vote_count": 2208
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "title": "Avatar: Fire and Ash",
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 126.2492,
+      "poster_path": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+      "release_date": "2025-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.623,
+      "vote_count": 3782
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
+      "genre_ids": [
+        12,
+        80,
+        9648
+      ],
+      "id": 1202033,
+      "title": "Enola Holmes 3",
+      "original_language": "en",
+      "original_title": "Enola Holmes 3",
+      "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
+      "popularity": 99.5789,
+      "poster_path": "/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
+      "release_date": "2026-06-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.033,
+      "vote_count": 375
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10749
+      ],
+      "id": 920728,
+      "title": "We Want Now",
+      "original_language": "ko",
+      "original_title": "우리 지금 할래",
+      "overview": "A man who protects the island and his woman, Soo-hee, live on a remote island that is nothing more than an uninhabited island. And Bok-soon, who lost her mind after being abandoned by the man she loved. This is an island where only three people live, even if they die. Then one day, a photographer who seems to be holding something secret comes to the island. However, the man who guards the island misunderstands the visitor and kills him because of it. Bok-soon, who loved the dead photographer, commits suicide upon seeing the photographer's death. A man who has gone mad after killing someone hears a story from Soo-hee, who lives with him, and only later finds out all the secrets...",
+      "popularity": 107.2664,
+      "poster_path": "/mQ95TSIl1QqNWCMQs1lTRgZUWT8.jpg",
+      "release_date": "2016-04-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/a8uQvrplTkhGJQog6GZ6CqF8An6.jpg",
+      "genre_ids": [
+        35,
+        10751,
+        9648
+      ],
+      "id": 1301421,
+      "title": "The Sheep Detectives",
+      "original_language": "en",
+      "original_title": "The Sheep Detectives",
+      "overview": "George Hardy is a shepherd who reads detective novels to his beloved sheep every night, assuming they can't possibly understand. But when a mysterious incident disrupts life on the farm, the sheep realize they must become the detectives. As they follow the clues and investigate human suspects, they prove that even sheep can be brilliant crime-solvers.",
+      "popularity": 96.0037,
+      "poster_path": "/iKy5460GdsoknM8ppmGlJbKxAKa.jpg",
+      "release_date": "2026-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.9,
+      "vote_count": 895
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6zg7A9ICOthNR2TSXlT51KvXrsA.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1228710,
+      "title": "The Mandalorian and Grogu",
+      "original_language": "en",
+      "original_title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "popularity": 96.5,
+      "poster_path": "/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.662,
+      "vote_count": 582
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rHnANzYUmV3WZw3n0yWOLiR3pen.jpg",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "id": 976912,
+      "title": "Graphic Desires",
+      "original_language": "en",
+      "original_title": "Graphic Desires",
+      "overview": "When reclusive Franklin cheats on his partner with a mysterious girl he meets on a dating app, it becomes the start of a deadly obsession.",
+      "popularity": 96.3791,
+      "poster_path": "/3BjLdTWRiHc1ISIZMFvToOmghOM.jpg",
+      "release_date": "2023-08-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.025,
+      "vote_count": 119
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 969681,
+      "title": "Spider-Man: Brand New Day",
+      "original_language": "en",
+      "original_title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "popularity": 91.7655,
+      "poster_path": "/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
+      "release_date": "2026-07-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 92.8062,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.737,
+      "vote_count": 896
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        10751,
+        14
+      ],
+      "id": 1007757,
+      "title": "Swapped",
+      "original_language": "en",
+      "original_title": "Swapped",
+      "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
+      "popularity": 88.4108,
+      "poster_path": "/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "release_date": "2026-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.915,
+      "vote_count": 1923
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        878
+      ],
+      "id": 1327819,
+      "title": "Hoppers",
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "popularity": 87.4748,
+      "poster_path": "/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "release_date": "2026-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.2,
+      "vote_count": 1904
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rhuEN18ZimDOva3guaWZA4hYgLB.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1309083,
+      "title": "Dolly",
+      "original_language": "en",
+      "original_title": "Dolly",
+      "overview": "Young Macy is abducted by a deranged, monstrous figure who wants to raise her as its child.",
+      "popularity": 88.0025,
+      "poster_path": "/sTPUg3XtdcKRAS5Vwsi1GYPFhNZ.jpg",
+      "release_date": "2026-03-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.773,
+      "vote_count": 143
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
+      "genre_ids": [
+        28,
+        18,
+        80
+      ],
+      "id": 1439930,
+      "title": "The Punisher: One Last Kill",
+      "original_language": "en",
+      "original_title": "The Punisher: One Last Kill",
+      "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
+      "popularity": 87.4668,
+      "poster_path": "/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg",
+      "release_date": "2026-05-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.334,
+      "vote_count": 1831
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5ip7m3KjjiYWbiqipTTCagWyYJ5.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1321491,
+      "title": "The Banished",
+      "original_language": "en",
+      "original_title": "The Banished",
+      "overview": "Grace has nowhere to turn when she finds herself lost in the wilderness with a dark presence threatening to consume her in this twisted folk horror.",
+      "popularity": 83.2401,
+      "poster_path": "/wJLxynToyvomCX2Q4gBkXcYDxxK.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.1,
+      "vote_count": 8
+    }
+  ],
+  "total_pages": 57971,
+  "total_results": 1159410
+}
