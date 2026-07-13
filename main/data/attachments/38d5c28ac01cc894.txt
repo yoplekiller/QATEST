@@ -1,0 +1,10 @@
+[32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1062 Starting new HTTPS connection (1): googlechromelabs.github.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 17631
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1062 Starting new HTTPS connection (1): googlechromelabs.github.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 17631
+[32mINFO    [0m WDM:logger.py:11 There is no [linux64] chromedriver "150.0.7871.115" for browser google-chrome "150.0.7871" in cache
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1062 Starting new HTTPS connection (1): googlechromelabs.github.io:443
