@@ -1,0 +1,1 @@
+2026-07-14 16:34:15 - test_automation - INFO - 스크린샷 저장: screenshots/전체_플로우_실패_20260714_163415.png
