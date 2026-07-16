@@ -1,0 +1,421 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1212763,
+      "title": "Evil Dead Burn",
+      "original_language": "en",
+      "original_title": "Evil Dead Burn",
+      "overview": "After her husband's abrupt death, a woman seeks solace with her in-laws. As they transform into Deadites one by one, she comes to discover that the vows she took in life survive even in death.",
+      "popularity": 119.7293,
+      "poster_path": "/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
+      "release_date": "2026-07-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 133
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mVHyU4pnu9b2LWByPGGM0GGCA1v.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1279493,
+      "title": "The Get Out",
+      "original_language": "en",
+      "original_title": "The Get Out",
+      "overview": "A nightclub owner is on the verge of leaving his dangerous past behind for retirement with his girlfriend. When masked gunmen rob him and he finds himself squeezed by ruthless cartels, a mysterious newcomer arrives with an interest in buying the business. With danger closing in from all sides, he must navigate a deadly web of deception, power, and survival  -  where escape may no longer be an option.",
+      "popularity": 115.5352,
+      "poster_path": "/zlkeH0s7dDxcnuPcHBqAyXFUxqN.jpg",
+      "release_date": "2026-06-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.325,
+      "vote_count": 40
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sS3zGYFPcfM5pArVNWl6qLyaSmU.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14
+      ],
+      "id": 980431,
+      "title": "Avatar Aang: The Last Airbender",
+      "original_language": "en",
+      "original_title": "Avatar Aang: The Last Airbender",
+      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "popularity": 110.9359,
+      "poster_path": "/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+      "release_date": "2026-07-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/h1x4YiBtQEGY2dMx7k0fvlErlSn.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1645603,
+      "title": "Night of the Living Dead",
+      "original_language": "en",
+      "original_title": "Night of the Living Dead",
+      "overview": "A ragtag group barricade themselves in an old Pennsylvania farmhouse to remain safe from a horde of flesh-eating ghouls ravaging the Northeast.",
+      "popularity": 110.2656,
+      "poster_path": "/5l0klDtj2v4FMFOGGCEH23AQb30.jpg",
+      "release_date": "2026-07-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.102,
+      "vote_count": 49
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/s3tHm62ohyb0I5vSnPrpczCBtSX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1304313,
+      "title": "Lee Cronin's The Mummy",
+      "original_language": "en",
+      "original_title": "Lee Cronin's The Mummy",
+      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
+      "popularity": 108.7024,
+      "poster_path": "/1q308iixueCU4pFtSYugNOevtNx.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 2237
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 969681,
+      "title": "Spider-Man: Brand New Day",
+      "original_language": "en",
+      "original_title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "popularity": 104.7492,
+      "poster_path": "/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
+      "release_date": "2026-07-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vOrbq0qe3BMpGLcbYQPUP9VTN72.jpg",
+      "genre_ids": [
+        18,
+        35,
+        28
+      ],
+      "id": 1491920,
+      "title": "Kung Fu Soccer",
+      "original_language": "zh",
+      "original_title": "功夫女足",
+      "overview": "The \"Supreme Invincible Cup\" is about to begin, and a host of top teams are about to engage in an unprecedented showdown! But the Kung Fu Women's Soccer Team has been dealt a hellish script right from the start?! Their opponents are all highly skilled, and external pressure is mounting. The schemes on the field are one after another... Can they use their kung fu to turn the tide on the green field?",
+      "popularity": 104.2194,
+      "poster_path": "/6QgJQrClh9ej357yzLWgCxrjAmJ.jpg",
+      "release_date": "2026-07-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.571,
+      "vote_count": 7
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ce0RjYfcgzQeiT3PjaARWv5PVQO.jpg",
+      "genre_ids": [
+        27,
+        53,
+        878
+      ],
+      "id": 1321008,
+      "title": "Black Box",
+      "original_language": "en",
+      "original_title": "Black Box",
+      "overview": "A routine domestic flight turns into the flight from hell through a series of inexplicable phenomena and raw terror. Surreal encounters blur the boundaries between reality and nightmare. Passengers fight against all the odds in an attempt to survive while combating bizarre technological malfunctions, accelerating supernatural events and alien influences.",
+      "popularity": 104.1901,
+      "poster_path": "/O7vJPEWsnLrKqPYHIHKG8zlEK1.jpg",
+      "release_date": "2026-06-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.25,
+      "vote_count": 24
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jITuPW8zL9JmDnc7R24jpTtn2Qu.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 11012,
+      "title": "Damage",
+      "original_language": "en",
+      "original_title": "Damage",
+      "overview": "The life of a respected British politician at the height of his career crumbles when he becomes obsessed with his son's lover.",
+      "popularity": 103.8355,
+      "poster_path": "/alf3JOPP7EYP0iO24gwe5YfRnqo.jpg",
+      "release_date": "1992-12-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.598,
+      "vote_count": 707
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        14
+      ],
+      "id": 1315772,
+      "title": "Minions & Monsters",
+      "original_language": "en",
+      "original_title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "popularity": 95.2104,
+      "poster_path": "/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "release_date": "2026-06-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.393,
+      "vote_count": 177
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10749
+      ],
+      "id": 920728,
+      "title": "We Want Now",
+      "original_language": "ko",
+      "original_title": "우리 지금 할래",
+      "overview": "A man who protects the island and his woman, Soo-hee, live on a remote island that is nothing more than an uninhabited island. And Bok-soon, who lost her mind after being abandoned by the man she loved. This is an island where only three people live, even if they die. Then one day, a photographer who seems to be holding something secret comes to the island. However, the man who guards the island misunderstands the visitor and kills him because of it. Bok-soon, who loved the dead photographer, commits suicide upon seeing the photographer's death. A man who has gone mad after killing someone hears a story from Soo-hee, who lives with him, and only later finds out all the secrets...",
+      "popularity": 93.695,
+      "poster_path": "/mQ95TSIl1QqNWCMQs1lTRgZUWT8.jpg",
+      "release_date": "2016-04-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5ip7m3KjjiYWbiqipTTCagWyYJ5.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1321491,
+      "title": "The Banished",
+      "original_language": "en",
+      "original_title": "The Banished",
+      "overview": "Grace has nowhere to turn when she finds herself lost in the wilderness with a dark presence threatening to consume her in this twisted folk horror.",
+      "popularity": 90.8652,
+      "poster_path": "/pBlTYknphiODxIQQrei030MSvdT.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.1,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "id": 1311031,
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "popularity": 89.8534,
+      "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.739,
+      "vote_count": 898
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6zg7A9ICOthNR2TSXlT51KvXrsA.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1228710,
+      "title": "The Mandalorian and Grogu",
+      "original_language": "en",
+      "original_title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "popularity": 89.4077,
+      "poster_path": "/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.661,
+      "vote_count": 595
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rHnANzYUmV3WZw3n0yWOLiR3pen.jpg",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "id": 976912,
+      "title": "Graphic Desires",
+      "original_language": "en",
+      "original_title": "Graphic Desires",
+      "overview": "When reclusive Franklin cheats on his partner with a mysterious girl he meets on a dating app, it becomes the start of a deadly obsession.",
+      "popularity": 83.1398,
+      "poster_path": "/3BjLdTWRiHc1ISIZMFvToOmghOM.jpg",
+      "release_date": "2023-08-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.024,
+      "vote_count": 123
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        10751,
+        14
+      ],
+      "id": 1007757,
+      "title": "Swapped",
+      "original_language": "en",
+      "original_title": "Swapped",
+      "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
+      "popularity": 82.6481,
+      "poster_path": "/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "release_date": "2026-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.921,
+      "vote_count": 1941
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oV472EbPedkc5QzqolGc7sCgCnn.jpg",
+      "genre_ids": [
+        27,
+        28,
+        53
+      ],
+      "id": 1110034,
+      "title": "Kraken",
+      "original_language": "no",
+      "original_title": "Kraken",
+      "overview": "A marine biologist is doing research on a fish farm when she encounters several strange occurrences. Along with the brutal deaths of two teenagers, all signs point to the deep fjord; can there be more to the depths than the eye can see?",
+      "popularity": 81.5512,
+      "poster_path": "/xdZ8k5s8DTwWyPBMIcflrYLgcAK.jpg",
+      "release_date": "2026-02-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.423,
+      "vote_count": 215
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
+      "genre_ids": [
+        28,
+        18,
+        80
+      ],
+      "id": 1439930,
+      "title": "The Punisher: One Last Kill",
+      "original_language": "en",
+      "original_title": "The Punisher: One Last Kill",
+      "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
+      "popularity": 80.0605,
+      "poster_path": "/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg",
+      "release_date": "2026-05-12",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.329,
+      "vote_count": 1849
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        878
+      ],
+      "id": 1327819,
+      "title": "Hoppers",
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "popularity": 79.8464,
+      "poster_path": "/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "release_date": "2026-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.197,
+      "vote_count": 1932
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oPsRr7AfNLw6XaPuMpvkWK0bIUA.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1057265,
+      "title": "Peddi",
+      "original_language": "te",
+      "original_title": "పెద్ది",
+      "overview": "In a village that doesn't officially exist, a laborer's unmatched athletic talent becomes his weapon to fight for his people's right to be recognized.",
+      "popularity": 79.7583,
+      "poster_path": "/wDoZa41ieE80WT5dQfC6QPC9Caf.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 54
+    }
+  ],
+  "total_pages": 58002,
+  "total_results": 1160039
+}
