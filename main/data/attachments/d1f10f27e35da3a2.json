@@ -1,0 +1,416 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/ce0RjYfcgzQeiT3PjaARWv5PVQO.jpg",
+      "genre_ids": [
+        27,
+        53,
+        878
+      ],
+      "id": 1321008,
+      "title": "Black Box",
+      "original_language": "en",
+      "original_title": "Black Box",
+      "overview": "A routine domestic flight turns into the flight from hell through a series of inexplicable phenomena and raw terror. Surreal encounters blur the boundaries between reality and nightmare. Passengers fight against all the odds in an attempt to survive while combating bizarre technological malfunctions, accelerating supernatural events and alien influences.",
+      "popularity": 106.0823,
+      "poster_path": "/O7vJPEWsnLrKqPYHIHKG8zlEK1.jpg",
+      "release_date": "2026-06-25",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.077,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 969681,
+      "title": "Spider-Man: Brand New Day",
+      "original_language": "en",
+      "original_title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "popularity": 104.7492,
+      "poster_path": "/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
+      "release_date": "2026-07-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/h1x4YiBtQEGY2dMx7k0fvlErlSn.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1645603,
+      "title": "Night of the Living Dead",
+      "original_language": "en",
+      "original_title": "Night of the Living Dead",
+      "overview": "A ragtag group barricade themselves in an old Pennsylvania farmhouse to remain safe from a horde of flesh-eating ghouls ravaging the Northeast.",
+      "popularity": 104.4032,
+      "poster_path": "/5l0klDtj2v4FMFOGGCEH23AQb30.jpg",
+      "release_date": "2026-07-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.059,
+      "vote_count": 51
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vOrbq0qe3BMpGLcbYQPUP9VTN72.jpg",
+      "genre_ids": [
+        18,
+        35,
+        28
+      ],
+      "id": 1491920,
+      "title": "Kung Fu Soccer",
+      "original_language": "zh",
+      "original_title": "功夫女足",
+      "overview": "The \"Supreme Invincible Cup\" is about to begin, and a host of top teams are about to engage in an unprecedented showdown! But the Kung Fu Women's Soccer Team has been dealt a hellish script right from the start?! Their opponents are all highly skilled, and external pressure is mounting. The schemes on the field are one after another... Can they use their kung fu to turn the tide on the green field?",
+      "popularity": 104.2194,
+      "poster_path": "/6QgJQrClh9ej357yzLWgCxrjAmJ.jpg",
+      "release_date": "2026-07-11",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.444,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5ip7m3KjjiYWbiqipTTCagWyYJ5.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1321491,
+      "title": "The Banished",
+      "original_language": "en",
+      "original_title": "The Banished",
+      "overview": "Grace has nowhere to turn when she finds herself lost in the wilderness with a dark presence threatening to consume her in this twisted folk horror.",
+      "popularity": 93.8157,
+      "poster_path": "/pBlTYknphiODxIQQrei030MSvdT.jpg",
+      "release_date": "2025-07-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.1,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yjK3ardrgdS8suZG8KMU82Q7U38.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 1285366,
+      "title": "Shape of My Heart",
+      "original_language": "ja",
+      "original_title": "愛のぬくもり",
+      "overview": "A romance about a man and a woman who, due to an unexpected event, end up switching bodies. Despite coming from completely different backgrounds and environments, the two try to overcome the various difficulties that arise from their body swap.",
+      "popularity": 92.2986,
+      "poster_path": "/3r0O6BW9USoZ9mteCVyNKMQriRL.jpg",
+      "release_date": "2024-07-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1212763,
+      "title": "Evil Dead Burn",
+      "original_language": "en",
+      "original_title": "Evil Dead Burn",
+      "overview": "After her husband's abrupt death, a woman seeks solace with her in-laws. As they transform into Deadites one by one, she comes to discover that the vows she took in life survive even in death.",
+      "popularity": 88.6382,
+      "poster_path": "/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
+      "release_date": "2026-07-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 140
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kxQiIJ4gVcD3K6o14MJ72p5yRcE.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 1226863,
+      "title": "The Super Mario Galaxy Movie",
+      "original_language": "en",
+      "original_title": "The Super Mario Galaxy Movie",
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "popularity": 87.3073,
+      "poster_path": "/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "release_date": "2026-04-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.259,
+      "vote_count": 3094
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rHnANzYUmV3WZw3n0yWOLiR3pen.jpg",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "id": 976912,
+      "title": "Graphic Desires",
+      "original_language": "en",
+      "original_title": "Graphic Desires",
+      "overview": "When reclusive Franklin cheats on his partner with a mysterious girl he meets on a dating app, it becomes the start of a deadly obsession.",
+      "popularity": 83.1398,
+      "poster_path": "/3BjLdTWRiHc1ISIZMFvToOmghOM.jpg",
+      "release_date": "2023-08-31",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.048,
+      "vote_count": 124
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        10751,
+        14
+      ],
+      "id": 1007757,
+      "title": "Swapped",
+      "original_language": "en",
+      "original_title": "Swapped",
+      "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
+      "popularity": 82.6481,
+      "poster_path": "/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "release_date": "2026-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.923,
+      "vote_count": 1949
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oPsRr7AfNLw6XaPuMpvkWK0bIUA.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 1057265,
+      "title": "Peddi",
+      "original_language": "te",
+      "original_title": "పెద్ది",
+      "overview": "In a village that doesn't officially exist, a laborer's unmatched athletic talent becomes his weapon to fight for his people's right to be recognized.",
+      "popularity": 79.7583,
+      "poster_path": "/wDoZa41ieE80WT5dQfC6QPC9Caf.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.082,
+      "vote_count": 55
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        878
+      ],
+      "id": 1327819,
+      "title": "Hoppers",
+      "original_language": "en",
+      "original_title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "popularity": 77.1598,
+      "poster_path": "/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "release_date": "2026-03-04",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.199,
+      "vote_count": 1940
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        10749
+      ],
+      "id": 920728,
+      "title": "We Want Now",
+      "original_language": "ko",
+      "original_title": "우리 지금 할래",
+      "overview": "A man who protects the island and his woman, Soo-hee, live on a remote island that is nothing more than an uninhabited island. And Bok-soon, who lost her mind after being abandoned by the man she loved. This is an island where only three people live, even if they die. Then one day, a photographer who seems to be holding something secret comes to the island. However, the man who guards the island misunderstands the visitor and kills him because of it. Bok-soon, who loved the dead photographer, commits suicide upon seeing the photographer's death. A man who has gone mad after killing someone hears a story from Soo-hee, who lives with him, and only later finds out all the secrets...",
+      "popularity": 76.5493,
+      "poster_path": "/mQ95TSIl1QqNWCMQs1lTRgZUWT8.jpg",
+      "release_date": "2016-04-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/s3tHm62ohyb0I5vSnPrpczCBtSX.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1304313,
+      "title": "Lee Cronin's The Mummy",
+      "original_language": "en",
+      "original_title": "Lee Cronin's The Mummy",
+      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
+      "popularity": 74.1566,
+      "poster_path": "/1q308iixueCU4pFtSYugNOevtNx.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.968,
+      "vote_count": 2247
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jITuPW8zL9JmDnc7R24jpTtn2Qu.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 11012,
+      "title": "Damage",
+      "original_language": "en",
+      "original_title": "Damage",
+      "overview": "The life of a respected British politician at the height of his career crumbles when he becomes obsessed with his son's lover.",
+      "popularity": 71.5605,
+      "poster_path": "/alf3JOPP7EYP0iO24gwe5YfRnqo.jpg",
+      "release_date": "1992-12-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.598,
+      "vote_count": 707
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9nzfyiYbmTUXWC4B2kwjl4NAlqO.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 1318447,
+      "title": "Apex",
+      "original_language": "en",
+      "original_title": "Apex",
+      "overview": "A grieving woman pushing her limits on a solo adventure in the Australian wild is ensnared in a twisted game with a cunning killer who thinks she's prey.",
+      "popularity": 68.1928,
+      "poster_path": "/eTp7gSPkSF3Aw79mNx1NkBP1PZT.jpg",
+      "release_date": "2026-04-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.862,
+      "vote_count": 1639
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/25N840Us9DC7JY6WSxKCsHSjDsu.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1711175,
+      "title": "Summerween",
+      "original_language": "en",
+      "original_title": "Summerween",
+      "overview": "A former circus clown escapes a mental institution on the tenth anniversary of his first kills. Now, as unsuspecting high schoolers throw a Summerween party at the clown’s abandoned mansion, a police officer and father to one of the party goers must rescue his daughter before the clown kills again.",
+      "popularity": 67.663,
+      "poster_path": "/oCsyamu5ixofd3yyK9gD7pGfCiF.jpg",
+      "release_date": "2026-06-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.667,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bdwv8Hsu4Bnz8aRbH5MQ9clQ0DG.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 1397385,
+      "title": "Little Brother",
+      "original_language": "en",
+      "original_title": "Little Brother",
+      "overview": "A tightly wound realtor's picture-perfect life gets an extreme makeover when his lovably chaotic \"little brother\" suddenly reappears.",
+      "popularity": 63.2217,
+      "poster_path": "/hIJpXb7Xaje2mebN9ylsS7blQzP.jpg",
+      "release_date": "2026-06-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.459,
+      "vote_count": 246
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        14
+      ],
+      "id": 1315772,
+      "title": "Minions & Monsters",
+      "original_language": "en",
+      "original_title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "popularity": 61.7127,
+      "poster_path": "/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "release_date": "2026-06-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 179
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hxCJcyDnR964ja5mzExvb8UlHLG.jpg",
+      "genre_ids": [
+        14,
+        35
+      ],
+      "id": 1451078,
+      "title": "Raakaasa",
+      "original_language": "te",
+      "original_title": "రాకాస",
+      "overview": "Returning home after a decade, an NRI chasing romance inadvertently awakens an ancient darkness long feared by his village. As the threat intensifies, love turns deadly and life hangs in the balance.",
+      "popularity": 61.1104,
+      "poster_path": "/x7zwiuC1HTw5XGZ5JrOwF9uFqRy.jpg",
+      "release_date": "2026-04-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.571,
+      "vote_count": 14
+    }
+  ],
+  "total_pages": 58016,
+  "total_results": 1160309
+}
