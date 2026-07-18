@@ -1,0 +1,3 @@
+2026-07-18 16:24:25 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath__button_type_submit__20260718_162425.png
+2026-07-18 16:24:25 - test_automation - ERROR - 클릭 실패: ('xpath', "//button[@type='submit']")
+2026-07-18 16:24:25 - test_automation - INFO - 스크린샷 저장: screenshots/빈계정_로그인_실패_20260718_162425.png
