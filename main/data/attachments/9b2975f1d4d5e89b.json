@@ -1,0 +1,416 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
+      "genre_ids": [
+        12,
+        28,
+        14
+      ],
+      "id": 1368337,
+      "title": "The Odyssey",
+      "original_language": "en",
+      "original_title": "The Odyssey",
+      "overview": "",
+      "popularity": 801.9569,
+      "poster_path": "/cxS9D4yyMkn7euvdFXGMLJnEj13.jpg",
+      "release_date": "2026-07-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.883,
+      "vote_count": 862
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
+      "genre_ids": [
+        10751,
+        14,
+        35,
+        12
+      ],
+      "id": 1108427,
+      "title": "Moana",
+      "original_language": "en",
+      "original_title": "Moana",
+      "overview": "",
+      "popularity": 612.1061,
+      "poster_path": "/6lOyun4HZBr9rrtdNniv84IFBcz.jpg",
+      "release_date": "2026-07-08",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.756,
+      "vote_count": 131
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1339713,
+      "title": "Obsession",
+      "original_language": "en",
+      "original_title": "Obsession",
+      "overview": "",
+      "popularity": 538.7196,
+      "poster_path": "/pgya613gQdfzfmksLZO0HeWdTHZ.jpg",
+      "release_date": "2026-05-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.245,
+      "vote_count": 3418
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pW4Ah1A6SgZNQNmf5AgiIYPzFHF.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 1275779,
+      "title": "Disclosure Day",
+      "original_language": "en",
+      "original_title": "Disclosure Day",
+      "overview": "",
+      "popularity": 449.8,
+      "poster_path": "/9EWslDkjkIvsN2dlmlr5G7Ku8vQ.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 931
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2aA8iPlMCks3k131ymFBAY6FL0b.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        878
+      ],
+      "id": 1083381,
+      "title": "Backrooms",
+      "original_language": "en",
+      "original_title": "Backrooms",
+      "overview": "",
+      "popularity": 441.4933,
+      "poster_path": "/7NVnp7XHiW99nYLqEH5A63uPSJN.jpg",
+      "release_date": "2026-05-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 1870
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        14
+      ],
+      "id": 1315772,
+      "title": "Minions & Monsters",
+      "original_language": "en",
+      "original_title": "Minions & Monsters",
+      "overview": "",
+      "popularity": 373.1675,
+      "poster_path": "/u75I7gCM59Ni7MkYNZ3HBUS5l5h.jpg",
+      "release_date": "2026-06-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.379,
+      "vote_count": 210
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8CIgg0gCHIYz0jrx5IcZEOy047J.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1081003,
+      "title": "Supergirl",
+      "original_language": "en",
+      "original_title": "Supergirl",
+      "overview": "",
+      "popularity": 363.8004,
+      "poster_path": "/pu1HUNDeqn3q0Llcpn9dq1GesBj.jpg",
+      "release_date": "2026-06-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.152,
+      "vote_count": 507
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        12
+      ],
+      "id": 1084244,
+      "title": "Toy Story 5",
+      "original_language": "en",
+      "original_title": "Toy Story 5",
+      "overview": "",
+      "popularity": 317.664,
+      "poster_path": "/to5PIWJXXOmatYepPRTLGWENLJf.jpg",
+      "release_date": "2026-06-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.429,
+      "vote_count": 669
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
+      "genre_ids": [
+        35,
+        27
+      ],
+      "id": 1273221,
+      "title": "Scary Movie",
+      "original_language": "en",
+      "original_title": "Scary Movie",
+      "overview": "",
+      "popularity": 298.8358,
+      "poster_path": "/3DMLOvFBb1AMfmznYZmonjkmwZQ.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.318,
+      "vote_count": 811
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "title": "Project Hail Mary",
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "",
+      "popularity": 187.8063,
+      "poster_path": "/cdGVNiyUt289DgopWUdImNVVDaw.jpg",
+      "release_date": "2026-03-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 6280
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oBter8Y5p2ZFUwWgQ1T9pulGFTJ.jpg",
+      "genre_ids": [
+        9648,
+        18
+      ],
+      "id": 1668364,
+      "title": "Deseo",
+      "original_language": "es",
+      "original_title": "Deseo",
+      "overview": "",
+      "popularity": 186.7704,
+      "poster_path": "/5lJPvf7cJ2r2EiNrnvBVYpusKFM.jpg",
+      "release_date": "2026-05-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.856,
+      "vote_count": 80
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/idRLKyu43mRhMWNjzd6FiEromNI.jpg",
+      "genre_ids": [
+        14,
+        10751,
+        10770
+      ],
+      "id": 1318621,
+      "title": "Descendants: Wicked Wonderland",
+      "original_language": "en",
+      "original_title": "Descendants: Wicked Wonderland",
+      "overview": "",
+      "popularity": 184.9253,
+      "poster_path": "/llpRfr8rPXBLQtZ2DgDE3J0nQ5z.jpg",
+      "release_date": "2026-07-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.797,
+      "vote_count": 74
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1368314,
+      "title": "Passenger",
+      "original_language": "en",
+      "original_title": "Passenger",
+      "overview": "",
+      "popularity": 177.5062,
+      "poster_path": "/hWDeY0200afbcnEFnSqh68NhICO.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.26,
+      "vote_count": 516
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1280738,
+      "title": "火遮眼",
+      "original_language": "zh",
+      "original_title": "火遮眼",
+      "overview": "",
+      "popularity": 177.4357,
+      "poster_path": "/824pEvU4CACETKjeohqaGetzmuv.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.42,
+      "vote_count": 231
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 261639,
+      "title": "尼寺の情事　極楽ＳＥＸ",
+      "original_language": "ja",
+      "original_title": "尼寺の情事　極楽ＳＥＸ",
+      "overview": "",
+      "popularity": 164.0907,
+      "poster_path": "/fDKjelHpsbpv4tmdKf8cXQknc5K.jpg",
+      "release_date": "1998-02-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 1.667,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1314481,
+      "title": "The Devil Wears Prada 2",
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada 2",
+      "overview": "",
+      "popularity": 155.4359,
+      "poster_path": "/actsXdSxCMQFmyH6QH4fy7ODXs8.jpg",
+      "release_date": "2026-04-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.118,
+      "vote_count": 1587
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/MJcERawyqGqJdPsOBc0C449hQ9.jpg",
+      "genre_ids": [
+        14,
+        28,
+        12
+      ],
+      "id": 1228710,
+      "title": "The Mandalorian and Grogu",
+      "original_language": "en",
+      "original_title": "The Mandalorian and Grogu",
+      "overview": "",
+      "popularity": 146.7686,
+      "poster_path": "/zAxyRS0GiDDVCztJIwL1o4PuJpO.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.721,
+      "vote_count": 629
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 1523145,
+      "title": "Твоё сердце будет разбито",
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "",
+      "popularity": 135.3229,
+      "poster_path": "/naOC89qeEygU44xM9EIot1m5AUQ.jpg",
+      "release_date": "2026-03-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.127,
+      "vote_count": 118
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/szKv713FcUXx6hcfdY369vtkmzr.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1127384,
+      "title": "Deep Water",
+      "original_language": "en",
+      "original_title": "Deep Water",
+      "overview": "",
+      "popularity": 130.7742,
+      "poster_path": "/fiZMTsQk247dzswf6tWx6NwDyKW.jpg",
+      "release_date": "2026-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.461,
+      "vote_count": 257
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
+      "genre_ids": [
+        10402,
+        18
+      ],
+      "id": 936075,
+      "title": "Michael",
+      "original_language": "en",
+      "original_title": "Michael",
+      "overview": "",
+      "popularity": 124.3267,
+      "poster_path": "/5HgVwIzug5iCoprtj4ZSvcHjjI1.jpg",
+      "release_date": "2026-04-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 3619
+    }
+  ],
+  "total_pages": 58076,
+  "total_results": 1161512
+}
