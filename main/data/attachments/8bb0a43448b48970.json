@@ -1,0 +1,423 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+      "genre_ids": [
+        12,
+        28,
+        14
+      ],
+      "id": 1368337,
+      "title": "The Odyssey",
+      "original_language": "en",
+      "original_title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "popularity": 1049.7104,
+      "poster_path": "/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "release_date": "2026-07-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.96,
+      "vote_count": 1573
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pW4Ah1A6SgZNQNmf5AgiIYPzFHF.jpg",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "id": 1275779,
+      "title": "Disclosure Day",
+      "original_language": "en",
+      "original_title": "Disclosure Day",
+      "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
+      "popularity": 596.4318,
+      "poster_path": "/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 1847
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
+      "genre_ids": [
+        28,
+        14,
+        878
+      ],
+      "id": 454639,
+      "title": "Masters of the Universe",
+      "original_language": "en",
+      "original_title": "Masters of the Universe",
+      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
+      "popularity": 539.6908,
+      "poster_path": "/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.345,
+      "vote_count": 1155
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "genre_ids": [
+        10751,
+        14,
+        35,
+        12
+      ],
+      "id": 1108427,
+      "title": "Moana",
+      "original_language": "en",
+      "original_title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "popularity": 519.3627,
+      "poster_path": "/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "release_date": "2026-07-08",
+      "softcore": false,
+      "video": false,
+      "vote_average": 5.9,
+      "vote_count": 146
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1339713,
+      "title": "Obsession",
+      "original_language": "en",
+      "original_title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "popularity": 401.1034,
+      "poster_path": "/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "release_date": "2026-05-13",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.3,
+      "vote_count": 3767
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cbyslfazMuDUGt4W6QcO3cKq8xj.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1081003,
+      "title": "Supergirl",
+      "original_language": "en",
+      "original_title": "Supergirl",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "popularity": 387.3581,
+      "poster_path": "/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "release_date": "2026-06-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.303,
+      "vote_count": 608
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        878
+      ],
+      "id": 1083381,
+      "title": "Backrooms",
+      "original_language": "en",
+      "original_title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "popularity": 377.6653,
+      "poster_path": "/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "release_date": "2026-05-27",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 2156
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        12
+      ],
+      "id": 1084244,
+      "title": "Toy Story 5",
+      "original_language": "en",
+      "original_title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "popularity": 343.6461,
+      "poster_path": "/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+      "release_date": "2026-06-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.417,
+      "vote_count": 709
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        14
+      ],
+      "id": 1315772,
+      "title": "Minions & Monsters",
+      "original_language": "en",
+      "original_title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "popularity": 326.3002,
+      "poster_path": "/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "release_date": "2026-06-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.428,
+      "vote_count": 235
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 1273221,
+      "title": "Scary Movie",
+      "original_language": "en",
+      "original_title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "popularity": 285.9608,
+      "poster_path": "/znHT8peERZRWG1ME3r0Db0EV8k8.jpg",
+      "release_date": "2026-06-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 1174
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wPSOPYy2fV62GjeXpVdKyweZGZu.jpg",
+      "genre_ids": [
+        53
+      ],
+      "id": 1727780,
+      "title": "Borderline",
+      "original_language": "en",
+      "original_title": "Borderline",
+      "overview": "Convinced they are our secret saviors, rogue U.S. operatives abduct Mexican gang members and seed them across major American cities, unleashing criminal chaos, swaying voters by playing on nativist prejudices, and forcing law enforcement into a race to expose the plot as the escalating carnage threatens democracy itself.",
+      "popularity": 268.2932,
+      "poster_path": "/sAA2mjpYJFAKydtzG4P4aHC4mZk.jpg",
+      "release_date": "2026-07-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aM3pduSU53VjcALWOfLWNw8v2TI.jpg",
+      "genre_ids": [
+        12,
+        18,
+        53,
+        28
+      ],
+      "id": 1284465,
+      "title": "The Death of Robin Hood",
+      "original_language": "en",
+      "original_title": "The Death of Robin Hood",
+      "overview": "Grappling with his past after a life of crime and murder, Robin Hood finds himself gravely injured after a battle he thought would be his last. In the hands of a mysterious woman, he is offered a chance at salvation.",
+      "popularity": 251.1055,
+      "poster_path": "/13MmRwmG5NmaMfU8qNrtgGXisiD.jpg",
+      "release_date": "2026-06-18",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.68,
+      "vote_count": 111
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oBter8Y5p2ZFUwWgQ1T9pulGFTJ.jpg",
+      "genre_ids": [
+        9648,
+        18
+      ],
+      "id": 1668364,
+      "title": "Desire",
+      "original_language": "es",
+      "original_title": "Deseo",
+      "overview": "Lucero’s life appears immaculate: a wealthy household, a devoted husband, and two children who embody the promise of a perfect family. Yet beneath this surface simmers a quiet dissatisfaction. When Matías, a young swimming coach hired by her husband, enters their lives, Lucero finds herself pulled into a risky and consuming relationship. As secrecy, desire, and jealousy tighten their grip, the boundaries within the family begin to collapse, placing mother and daughter in a dangerous emotional triangle that threatens to shatter everything Lucero has built.",
+      "popularity": 241.7979,
+      "poster_path": "/3bEqHqeaQlFykaLQ7N4gDkIvL5w.jpg",
+      "release_date": "2026-05-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.984,
+      "vote_count": 122
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14
+      ],
+      "id": 980431,
+      "title": "Avatar Aang: The Last Airbender",
+      "original_language": "en",
+      "original_title": "Avatar Aang: The Last Airbender",
+      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "popularity": 236.1374,
+      "poster_path": "/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+      "release_date": "2026-07-24",
+      "softcore": false,
+      "video": false,
+      "vote_average": 9.351,
+      "vote_count": 269
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ysLlsAxwgNSxBWHCgTKJrmjxpRQ.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1228710,
+      "title": "The Mandalorian and Grogu",
+      "original_language": "en",
+      "original_title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "popularity": 228.3475,
+      "poster_path": "/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.294,
+      "vote_count": 947
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dk68ykaNd3HdrDJyPJqEGsgvag7.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 1630409,
+      "title": "The Debt Collector",
+      "original_language": "th",
+      "original_title": "คนเดือดทวงแค้น",
+      "overview": "Tormented by past mistakes and a terminal diagnosis, an ex-debt collector returns to the underworld to protect the victims of a violent organization.",
+      "popularity": 214.3933,
+      "poster_path": "/7HEMg4ZonD0YIcztf1Sp199cBb9.jpg",
+      "release_date": "2026-07-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 15
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 969681,
+      "title": "Spider-Man: Brand New Day",
+      "original_language": "en",
+      "original_title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "popularity": 211.9043,
+      "poster_path": "/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
+      "release_date": "2026-07-28",
+      "softcore": false,
+      "video": false,
+      "vote_average": 9.1,
+      "vote_count": 14
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "title": "Project Hail Mary",
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+      "popularity": 201.2387,
+      "poster_path": "/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "release_date": "2026-03-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.659,
+      "vote_count": 6499
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oV472EbPedkc5QzqolGc7sCgCnn.jpg",
+      "genre_ids": [
+        27,
+        28,
+        53
+      ],
+      "id": 1110034,
+      "title": "Kraken",
+      "original_language": "no",
+      "original_title": "Kraken",
+      "overview": "A marine biologist is doing research on a fish farm when she encounters several strange occurrences. Along with the brutal deaths of two teenagers, all signs point to the deep fjord; can there be more to the depths than the eye can see?",
+      "popularity": 182.0052,
+      "poster_path": "/xdZ8k5s8DTwWyPBMIcflrYLgcAK.jpg",
+      "release_date": "2026-02-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 237
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 1523145,
+      "title": "Your Heart Will Be Broken",
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
+      "popularity": 170.5266,
+      "poster_path": "/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
+      "release_date": "2026-03-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.127,
+      "vote_count": 118
+    }
+  ],
+  "total_pages": 58167,
+  "total_results": 1163327
+}
