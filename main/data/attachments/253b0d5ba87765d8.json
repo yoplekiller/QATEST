@@ -1,0 +1,414 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/MJcERawyqGqJdPsOBc0C449hQ9.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1228710,
+      "title": "The Mandalorian and Grogu",
+      "original_language": "en",
+      "original_title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "popularity": 153.3296,
+      "poster_path": "/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.371,
+      "vote_count": 1004
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 1523145,
+      "title": "Your Heart Will Be Broken",
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
+      "popularity": 159.7661,
+      "poster_path": "/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
+      "release_date": "2026-03-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 118
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/szKv713FcUXx6hcfdY369vtkmzr.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1127384,
+      "title": "Deep Water",
+      "original_language": "en",
+      "original_title": "Deep Water",
+      "overview": "A group of international passengers on a flight from Los Angeles to Shanghai is forced to make an emergency landing in shark-infested waters. The terrified group is forced to work together and overcome their differences if they hope to escape their sinking plane and the frenzy of sharks drawn to the wreckage.",
+      "popularity": 145.0063,
+      "poster_path": "/kjcuS7xaRyqRjVaVcH4t0qHshuX.jpg",
+      "release_date": "2026-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.205,
+      "vote_count": 321
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1314481,
+      "title": "The Devil Wears Prada 2",
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "popularity": 153.5867,
+      "poster_path": "/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+      "release_date": "2026-04-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.16,
+      "vote_count": 1732
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/AeK2MPOpYrOOgZNfFnfwp0L8tNn.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 634649,
+      "title": "Spider-Man: No Way Home",
+      "original_language": "en",
+      "original_title": "Spider-Man: No Way Home",
+      "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+      "popularity": 176.336,
+      "poster_path": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+      "release_date": "2021-12-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.935,
+      "vote_count": 22350
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
+      "genre_ids": [
+        10402,
+        18
+      ],
+      "id": 936075,
+      "title": "Michael",
+      "original_language": "en",
+      "original_title": "Michael",
+      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+      "popularity": 117.1261,
+      "poster_path": "/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
+      "release_date": "2026-04-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.698,
+      "vote_count": 3769
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hL5EIk48251OXlbIbRJq3yaBHk8.jpg",
+      "genre_ids": [
+        35,
+        80
+      ],
+      "id": 949838,
+      "title": "72 HOURS",
+      "original_language": "en",
+      "original_title": "72 HOURS",
+      "overview": "To save his career, a 40-year-old ad exec joins a crew of twentysomethings for a wild Miami bachelor party after they mistakenly add him to a group chat.",
+      "popularity": 122.2023,
+      "poster_path": "/9Bu1PW2R1XayqRqnl0aDOgMcrdS.jpg",
+      "release_date": "2026-07-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.81,
+      "vote_count": 182
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9XwQphZxNJgGASfjL58mhIkJJpf.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1280738,
+      "title": "The Furious",
+      "original_language": "zh",
+      "original_title": "火遮眼",
+      "overview": "After a criminal network kidnaps Wang Wei's daughter and the corrupt police refuse to assist him, Wei sets out on his own to locate her. Navin, a tenacious journalist whose wife has mysteriously vanished, is his only ally. In this explosive martial arts showdown, the unlikely duo fights the kidnappers ruthlessly driven by a furious vengeance.",
+      "popularity": 111.2718,
+      "poster_path": "/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 260
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 931285,
+      "title": "Mortal Kombat II",
+      "original_language": "en",
+      "original_title": "Mortal Kombat II",
+      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "popularity": 108.3948,
+      "poster_path": "/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
+      "release_date": "2026-05-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.936,
+      "vote_count": 2191
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sdZSjtGUTSN8B3al5o0f2WoQfQQ.jpg",
+      "genre_ids": [
+        878,
+        12,
+        14
+      ],
+      "id": 83533,
+      "title": "Avatar: Fire and Ash",
+      "original_language": "en",
+      "original_title": "Avatar: Fire and Ash",
+      "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+      "popularity": 103.2057,
+      "poster_path": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+      "release_date": "2025-12-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 3977
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "id": 278,
+      "title": "The Shawshank Redemption",
+      "original_language": "en",
+      "original_title": "The Shawshank Redemption",
+      "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+      "popularity": 96.6546,
+      "poster_path": "/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+      "release_date": "1994-09-23",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.726,
+      "vote_count": 30882
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ehozSQRKL0g0xU8NsiR1vHDudMn.jpg",
+      "genre_ids": [
+        878,
+        28
+      ],
+      "id": 1698856,
+      "title": "Master of the Universe",
+      "original_language": "en",
+      "original_title": "Master of the Universe",
+      "overview": "A young man must use his untapped powers to fight back against an evil alien and their army, who will stop at nothing to take over Earth and then the universe.",
+      "popularity": 113.8776,
+      "poster_path": "/a77OcLmarwiBJakOPPC36m58t4L.jpg",
+      "release_date": "2026-05-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.8,
+      "vote_count": 30
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/idRLKyu43mRhMWNjzd6FiEromNI.jpg",
+      "genre_ids": [
+        14,
+        10751,
+        10770,
+        12
+      ],
+      "id": 1318621,
+      "title": "Descendants: Wicked Wonderland",
+      "original_language": "en",
+      "original_title": "Descendants: Wicked Wonderland",
+      "overview": "Now that the Queen of Hearts is nice and Cinderella is safe, things seem perfect for Red and Chloe… But little do they know that changing the past created a new villain — Maddox Hatter. When Maddox captures the Queen of Hearts, Red and Chloe must work alongside Red’s new sister Pink, Luisa Madrigal’s son Luis, and Maddox’s son Max to save her and Wonderland.",
+      "popularity": 110.7029,
+      "poster_path": "/xdhLAADGSse8KCrsDLBuM5b68Cg.jpg",
+      "release_date": "2026-07-16",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.621,
+      "vote_count": 120
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/o5bRLCNBmWBCBluFlOLUgivdONs.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 47612,
+      "title": "Au Bonheur des Dames",
+      "original_language": "fr",
+      "original_title": "Au Bonheur des Dames",
+      "overview": "Denise, an orphaned girl, moves to Paris where she hopes to find work at her uncle's store. But the glamorous department store 'Aux Bonheur des Dames' across the street crushes all the little businesses around. She finds a position there.",
+      "popularity": 100.4647,
+      "poster_path": "/sVFvFFEMRJ1eUzD6nbYLSqwHi0d.jpg",
+      "release_date": "1930-07-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 36
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pLyaH6k69OJHnONSmN3R7Peh6HE.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1481343,
+      "title": "The Devil's Mouth",
+      "original_language": "en",
+      "original_title": "The Devil's Mouth",
+      "overview": "Five friends explore The Devil's Mouth cave system in Thailand for one last adventure before life in the real world begins. But they soon discover that something is hunting them under the water... fast, silent, and deadly. In the suffocating darkness, trust erodes, panic spreads and every wrong turn becomes a fight for survival.",
+      "popularity": 104.6637,
+      "poster_path": "/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
+      "release_date": "2026-07-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.339,
+      "vote_count": 62
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xugEpZk9YQ0DIz1aFvH5HGkqpZK.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1304313,
+      "title": "Lee Cronin's The Mummy",
+      "original_language": "en",
+      "original_title": "Lee Cronin's The Mummy",
+      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
+      "popularity": 93.5402,
+      "poster_path": "/1q308iixueCU4pFtSYugNOevtNx.jpg",
+      "release_date": "2026-04-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.949,
+      "vote_count": 2390
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kxQiIJ4gVcD3K6o14MJ72p5yRcE.jpg",
+      "genre_ids": [
+        10751,
+        35,
+        12,
+        14,
+        16
+      ],
+      "id": 1226863,
+      "title": "The Super Mario Galaxy Movie",
+      "original_language": "en",
+      "original_title": "The Super Mario Galaxy Movie",
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "popularity": 98.58,
+      "poster_path": "/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "release_date": "2026-04-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.266,
+      "vote_count": 3269
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qaMQOtAZ6K4RneNDa1yDlJv1V6J.jpg",
+      "genre_ids": [
+        53,
+        27
+      ],
+      "id": 1430698,
+      "title": "The Bay",
+      "original_language": "en",
+      "original_title": "The Bay",
+      "overview": "Best friends Emma and Lani, attending a destination wedding in Thailand, find themselves trapped on a sinking tour boat in the heart of a tiger shark sanctuary.",
+      "popularity": 99.7834,
+      "poster_path": "/6F1UlF8YCtSDAoTpPY7WIkpm9sw.jpg",
+      "release_date": "2026-07-02",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.292,
+      "vote_count": 12
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yjK3ardrgdS8suZG8KMU82Q7U38.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 1285366,
+      "title": "Shape of My Heart",
+      "original_language": "ja",
+      "original_title": "愛のぬくもり",
+      "overview": "A romance about a man and a woman who, due to an unexpected event, end up switching bodies. Despite coming from completely different backgrounds and environments, the two try to overcome the various difficulties that arise from their body swap.",
+      "popularity": 99.0022,
+      "poster_path": "/3r0O6BW9USoZ9mteCVyNKMQriRL.jpg",
+      "release_date": "2024-07-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.25,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5XZqtQNB3XAnn7kFgU0XsSHbevV.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1728704,
+      "title": "Siping",
+      "original_language": "tl",
+      "original_title": "Siping",
+      "overview": "A gripping story about a woman wagered in a high-stakes card game. But the stakes get even hotter when she’s won by the man who’s long been obsessed with her.",
+      "popularity": 98.5893,
+      "poster_path": "/wNzRyplxryB8s6jb8Be5dYAKZb5.jpg",
+      "release_date": "2026-07-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 2.833,
+      "vote_count": 3
+    }
+  ],
+  "total_pages": 58212,
+  "total_results": 1164239
+}
