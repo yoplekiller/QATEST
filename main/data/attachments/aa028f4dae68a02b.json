@@ -1,0 +1,408 @@
+{
+  "page": 2,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/wPSOPYy2fV62GjeXpVdKyweZGZu.jpg",
+      "genre_ids": [
+        53
+      ],
+      "id": 1727780,
+      "title": "Borderline",
+      "original_language": "en",
+      "original_title": "Borderline",
+      "overview": "Convinced they are our secret saviors, rogue U.S. operatives abduct Mexican gang members and seed them across major American cities, unleashing criminal chaos, swaying voters by playing on nativist prejudices, and forcing law enforcement into a race to expose the plot as the escalating carnage threatens democracy itself.",
+      "popularity": 163.4223,
+      "poster_path": "/sAA2mjpYJFAKydtzG4P4aHC4mZk.jpg",
+      "release_date": "2026-07-17",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.45,
+      "vote_count": 10
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
+      "genre_ids": [
+        28,
+        878
+      ],
+      "id": 557,
+      "title": "Spider-Man",
+      "original_language": "en",
+      "original_title": "Spider-Man",
+      "overview": "After being bitten by a genetically altered spider at Oscorp, nerdy but endearing high school student Peter Parker is endowed with amazing powers to become the superhero known as Spider-Man.",
+      "popularity": 188.8814,
+      "poster_path": "/nXdAh5vUwERL4WGVMaee8RoDEAS.jpg",
+      "release_date": "2002-05-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.339,
+      "vote_count": 20999
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "id": 687163,
+      "title": "Project Hail Mary",
+      "original_language": "en",
+      "original_title": "Project Hail Mary",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+      "popularity": 162.7023,
+      "poster_path": "/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "release_date": "2026-03-15",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.658,
+      "vote_count": 6744
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oV472EbPedkc5QzqolGc7sCgCnn.jpg",
+      "genre_ids": [
+        27,
+        28,
+        53
+      ],
+      "id": 1110034,
+      "title": "Kraken",
+      "original_language": "no",
+      "original_title": "Kraken",
+      "overview": "A marine biologist is doing research on a fish farm when she encounters several strange occurrences. Along with the brutal deaths of two teenagers, all signs point to the deep fjord; can there be more to the depths than the eye can see?",
+      "popularity": 155.2919,
+      "poster_path": "/xdZ8k5s8DTwWyPBMIcflrYLgcAK.jpg",
+      "release_date": "2026-02-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.324,
+      "vote_count": 258
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fn4n6uOYcB6Uh89nbNPoU2w80RV.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 315635,
+      "title": "Spider-Man: Homecoming",
+      "original_language": "en",
+      "original_title": "Spider-Man: Homecoming",
+      "overview": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
+      "popularity": 180.7367,
+      "poster_path": "/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+      "release_date": "2017-07-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.33,
+      "vote_count": 23463
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1314481,
+      "title": "The Devil Wears Prada 2",
+      "original_language": "en",
+      "original_title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "popularity": 154.8675,
+      "poster_path": "/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
+      "release_date": "2026-04-29",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.102,
+      "vote_count": 1883
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 1523145,
+      "title": "Your Heart Will Be Broken",
+      "original_language": "ru",
+      "original_title": "Твоё сердце будет разбито",
+      "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
+      "popularity": 126.2544,
+      "poster_path": "/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
+      "release_date": "2026-03-26",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.0,
+      "vote_count": 120
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uOQtyMV2G9yJvc0s14zmLoRC5H9.jpg",
+      "genre_ids": [
+        878,
+        28,
+        14
+      ],
+      "id": 1698856,
+      "title": "Master of the Universe",
+      "original_language": "en",
+      "original_title": "Master of the Universe",
+      "overview": "A young man must use his untapped powers to fight back against an evil alien and their army, who will stop at nothing to take over Earth and then the universe.",
+      "popularity": 124.9473,
+      "poster_path": "/a77OcLmarwiBJakOPPC36m58t4L.jpg",
+      "release_date": "2026-05-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.763,
+      "vote_count": 40
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/o5bRLCNBmWBCBluFlOLUgivdONs.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 47612,
+      "title": "Au Bonheur des Dames",
+      "original_language": "fr",
+      "original_title": "Au Bonheur des Dames",
+      "overview": "Denise, an orphaned girl, moves to Paris where she hopes to find work at her uncle's store. But the glamorous department store 'Aux Bonheur des Dames' across the street crushes all the little businesses around. She finds a position there.",
+      "popularity": 165.8721,
+      "poster_path": "/sVFvFFEMRJ1eUzD6nbYLSqwHi0d.jpg",
+      "release_date": "1930-07-03",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 36
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/szKv713FcUXx6hcfdY369vtkmzr.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1127384,
+      "title": "Deep Water",
+      "original_language": "en",
+      "original_title": "Deep Water",
+      "overview": "A group of international passengers on a flight from Los Angeles to Shanghai is forced to make an emergency landing in shark-infested waters. The terrified group is forced to work together and overcome their differences if they hope to escape their sinking plane and the frenzy of sharks drawn to the wreckage.",
+      "popularity": 109.7525,
+      "poster_path": "/kjcuS7xaRyqRjVaVcH4t0qHshuX.jpg",
+      "release_date": "2026-04-30",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.194,
+      "vote_count": 348
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yjK3ardrgdS8suZG8KMU82Q7U38.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 1285366,
+      "title": "Shape of My Heart",
+      "original_language": "ja",
+      "original_title": "愛のぬくもり",
+      "overview": "A romance about a man and a woman who, due to an unexpected event, end up switching bodies. Despite coming from completely different backgrounds and environments, the two try to overcome the various difficulties that arise from their body swap.",
+      "popularity": 133.9328,
+      "poster_path": "/3r0O6BW9USoZ9mteCVyNKMQriRL.jpg",
+      "release_date": "2024-07-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.25,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/MJcERawyqGqJdPsOBc0C449hQ9.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 1228710,
+      "title": "The Mandalorian and Grogu",
+      "original_language": "en",
+      "original_title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "popularity": 109.9912,
+      "poster_path": "/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
+      "release_date": "2026-05-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.428,
+      "vote_count": 1103
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/90Vx3KpCXR2D9iVdxJpkjeYBq9P.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1510795,
+      "title": "Shake, Rattle & Roll: Evil Origins",
+      "original_language": "tl",
+      "original_title": "Shake, Rattle & Roll: Evil Origins",
+      "overview": "In 1775 during the Spanish colonial period in the Philippines, nuns attempts to survive the night after an unknown evil was set free in their cloister. Meanwhile in 2025, a group of friends attend a Halloween masquerade ball which was attacked by a serial killer. Fast forward to the future in 2050, a post-apocalytic Philippines is ruled by the aswang.",
+      "popularity": 124.7969,
+      "poster_path": "/2ayOQIh18qhJRoajoAxxGuZXry2.jpg",
+      "release_date": "2026-06-05",
+      "softcore": false,
+      "video": false,
+      "vote_average": 3.0,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oBter8Y5p2ZFUwWgQ1T9pulGFTJ.jpg",
+      "genre_ids": [
+        9648,
+        18
+      ],
+      "id": 1668364,
+      "title": "Desire",
+      "original_language": "es",
+      "original_title": "Deseo",
+      "overview": "Lucero’s life appears immaculate: a wealthy household, a devoted husband, and two children who embody the promise of a perfect family. Yet beneath this surface simmers a quiet dissatisfaction. When Matías, a young swimming coach hired by her husband, enters their lives, Lucero finds herself pulled into a risky and consuming relationship. As secrecy, desire, and jealousy tighten their grip, the boundaries within the family begin to collapse, placing mother and daughter in a dangerous emotional triangle that threatens to shatter everything Lucero has built.",
+      "popularity": 112.7246,
+      "poster_path": "/3bEqHqeaQlFykaLQ7N4gDkIvL5w.jpg",
+      "release_date": "2026-05-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.788,
+      "vote_count": 177
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yhGCxn4pYIQhK52g6JjM4bL9fVX.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 82976,
+      "title": "The Novices",
+      "original_language": "fr",
+      "original_title": "Les Novices",
+      "overview": "Sister Agnès runs away from her convent in Brittany and seeks refuge in Paris with prostitute Mona Lisa. With absolutely no qualifications, the young novice has a hard job finding work, so Mona Lisa tries to teach her the ropes of the oldest profession of them all!",
+      "popularity": 160.7638,
+      "poster_path": "/a2SnSbRxMB4vktOxZapaspY2fTC.jpg",
+      "release_date": "1970-04-01",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.769,
+      "vote_count": 13
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
+      "genre_ids": [
+        10402,
+        18
+      ],
+      "id": 936075,
+      "title": "Michael",
+      "original_language": "en",
+      "original_title": "Michael",
+      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+      "popularity": 108.7248,
+      "poster_path": "/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
+      "release_date": "2026-04-22",
+      "softcore": false,
+      "video": false,
+      "vote_average": 8.696,
+      "vote_count": 3841
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hL5EIk48251OXlbIbRJq3yaBHk8.jpg",
+      "genre_ids": [
+        35,
+        80
+      ],
+      "id": 949838,
+      "title": "72 HOURS",
+      "original_language": "en",
+      "original_title": "72 HOURS",
+      "overview": "To save his career, a 40-year-old ad exec joins a crew of twentysomethings for a wild Miami bachelor party after they mistakenly add him to a group chat.",
+      "popularity": 103.2815,
+      "poster_path": "/9Bu1PW2R1XayqRqnl0aDOgMcrdS.jpg",
+      "release_date": "2026-07-20",
+      "softcore": false,
+      "video": false,
+      "vote_average": 6.773,
+      "vote_count": 253
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5rFN70d7gTxJIGW3n833fTkI1xG.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 151024,
+      "title": "The Soldier with Great Maneuvers",
+      "original_language": "it",
+      "original_title": "La soldatessa alle grandi manovre",
+      "overview": "Doctor Eva Marini takes up a position at an army base to investigate the sexual behavior of the Italian male soldier and soon finds out she's taken on more than she bargained for.",
+      "popularity": 87.3865,
+      "poster_path": "/zWGFtuDT5B10Km0jrIhOX8kDeac.jpg",
+      "release_date": "1978-12-07",
+      "softcore": false,
+      "video": false,
+      "vote_average": 4.904,
+      "vote_count": 47
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9XwQphZxNJgGASfjL58mhIkJJpf.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 1280738,
+      "title": "The Furious",
+      "original_language": "zh",
+      "original_title": "火遮眼",
+      "overview": "After a criminal network kidnaps Wang Wei's daughter and the corrupt police refuse to assist him, Wei sets out on his own to locate her. Navin, a tenacious journalist whose wife has mysteriously vanished, is his only ally. In this explosive martial arts showdown, the unlikely duo fights the kidnappers ruthlessly driven by a furious vengeance.",
+      "popularity": 106.3439,
+      "poster_path": "/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+      "release_date": "2026-06-10",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.323,
+      "vote_count": 285
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 931285,
+      "title": "Mortal Kombat II",
+      "original_language": "en",
+      "original_title": "Mortal Kombat II",
+      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "popularity": 99.5231,
+      "poster_path": "/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
+      "release_date": "2026-05-06",
+      "softcore": false,
+      "video": false,
+      "vote_average": 7.908,
+      "vote_count": 2255
+    }
+  ],
+  "total_pages": 58274,
+  "total_results": 1165466
+}
