@@ -1,0 +1,1 @@
+2026-08-06 00:40:42 - test_automation - INFO - 스크린샷 저장: screenshots/로그인_페이지_20260806_004042.png
