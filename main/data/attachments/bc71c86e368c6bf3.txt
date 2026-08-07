@@ -1,0 +1,3 @@
+2026-08-07 20:16:53 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath__a_contains_text_로그인__20260807_201653.png
+2026-08-07 20:16:53 - test_automation - ERROR - 클릭 실패: ('xpath', "//a[contains(text(),'로그인')]")
+2026-08-07 20:16:53 - test_automation - INFO - 스크린샷 저장: screenshots/전체_플로우_실패_20260807_201653.png
