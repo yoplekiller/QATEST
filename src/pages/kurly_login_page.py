@@ -30,8 +30,13 @@ class KurlyLoginPage(BasePage):
     USER_MENU = (By.XPATH, "//button[contains(@class,'css-')]")
 
     #로그인 실패시 표시되는 에러 메시지 요소
-    LOGIN_ACCOUNT_MISMATCH_MESSAGE_POPUP = (By.XPATH, "//div[@class='popup-content css-15yaaju e1k5padi2']")
+    LOGIN_ACCOUNT_MISMATCH_MESSAGE_POPUP = (
+        By.XPATH,
+        "//*[contains(@class, 'popup-content') "
+        "or contains(@class, 'swal2-html-container')]",
+    )
     LOGIN_FAILURE_MESSAGE = (By.XPATH, "//div[contains(text(),'로그인에 실패하였습니다.')]")
+    LOGIN_ERROR_KEYWORDS = ("아이디", "비밀번호")
     
     def __init__(self, driver):
         super().__init__(driver)
@@ -89,12 +94,10 @@ class KurlyLoginPage(BasePage):
         Returns:
             bool: 에러 메시지 표시 여부
         """
-        try:
-            self.find_element(self.LOGIN_ACCOUNT_MISMATCH_MESSAGE_POPUP, timeout=5)
-            text = self.get_text(self.LOGIN_ACCOUNT_MISMATCH_MESSAGE_POPUP, timeout=5)
-            return "아이디, 비밀번호를 확인해주세요." in text if text else False
-        except:
+        text = self.get_mismatch_error_message_text(timeout=5)
+        if not text:
             return False
+        return all(keyword in text for keyword in self.LOGIN_ERROR_KEYWORDS)
         
 
     def is_error_message_displayed(self) -> bool:
@@ -120,13 +123,19 @@ class KurlyLoginPage(BasePage):
         """
         return self.is_displayed(self.USER_MENU, timeout=timeout)
     
-    def get_mismatch_error_message_text(self) -> str:
+    def get_mismatch_error_message_text(self, timeout: int = 5) -> str:
       """아이디 또는 비밀번호 불일치 에러 메시지 텍스트 반환"""
-      return self.get_text(self.LOGIN_ACCOUNT_MISMATCH_MESSAGE_POPUP)
+      try:
+          self.find_element(self.LOGIN_ACCOUNT_MISMATCH_MESSAGE_POPUP, timeout=timeout)
+          messages = [
+              message.text.strip()
+              for message in self.driver.find_elements(*self.LOGIN_ACCOUNT_MISMATCH_MESSAGE_POPUP)
+              if message.is_displayed() and message.text.strip()
+          ]
+          return "\n".join(messages)
+      except Exception:
+          return ""
     
     def get_error_message_text(self) -> str:
       """로그인 에러 메시지 텍스트 반환"""
       return self.get_text(self.LOGIN_FAILURE_MESSAGE)
-    
-    
-    

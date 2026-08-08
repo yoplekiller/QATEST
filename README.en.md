@@ -7,8 +7,8 @@
 [![Selenium](https://img.shields.io/badge/selenium-4.27-green.svg)](https://www.selenium.dev/)
 [![Pytest](https://img.shields.io/badge/pytest-8.3-red.svg)](https://pytest.org/)
 
-> UI / API Test Automation for Kurly (Korean E-commerce) Website
-> Total 50 test cases (UI 22 active + 2 skipped, API 26)
+> UI Test Automation for Kurly (Korean E-commerce) Website
+> Total 24 test cases (22 active + 2 skipped)
 
 [Live Allure Report](https://yoplekiller.github.io/QATEST/)
 
@@ -16,17 +16,16 @@
 
 ## Project Overview
 
-QA Engineer portfolio — test automation for Kurly, a live e-commerce site, using Python + Selenium for UI tests and TMDB API for API tests.
+QA Engineer portfolio — test automation for Kurly, a live e-commerce site, using Python + Selenium for UI tests.
 
 ### Key Features
 
 | Feature | Description |
 |---------|-------------|
 | **Page Object Model** | 6 page classes for structured automation |
-| **Multi-Platform** | Web UI (Selenium) + API (Requests) |
 | **CI/CD** | GitHub Actions with 8-hour scheduled runs |
 | **Allure Report** | Step-by-step execution visualization |
-| **Environment Variables** | .env-based API key/credential protection |
+| **Environment Variables** | .env-based credential protection |
 | **Slack Notifications** | Real-time test result alerts |
 
 ---
@@ -37,7 +36,6 @@ QA Engineer portfolio — test automation for Kurly, a live e-commerce site, usi
 |----------|------------|
 | Language | Python 3.11 |
 | Web UI | Selenium 4.27 |
-| API | Requests 2.32 |
 | Framework | Pytest 8.3 |
 | Reporting | Allure Report |
 | CI/CD | GitHub Actions + GitHub Pages |
@@ -58,7 +56,6 @@ QATEST/
 │   │   └── kurly_search_page.py   # Search results
 │   │
 │   ├── config/
-│   │   ├── config.yaml            # API endpoint config
 │   │   └── constants.py           # Timeouts, URL constants
 │   │
 │   ├── report/
@@ -66,18 +63,11 @@ QATEST/
 │   │
 │   └── tests/
 │       ├── conftest.py            # Pytest Fixtures
-│       ├── api/                   # API tests (26)
 │       └── ui/                    # UI tests (24)
 │
 ├── utils/
 │   ├── logger.py
-│   ├── api_utils.py
-│   ├── config_utils.py
 │   └── ...
-│
-├── testdata/
-│   ├── genre_expectations.csv
-│   └── movie_list.csv
 │
 ├── .github/workflows/
 │   └── Test_Automation.yaml       # CI/CD config
@@ -104,13 +94,12 @@ pip install -r requirements.txt
 
 # Configure environment variables
 cp .env.example .env
-# Edit .env with actual API keys and credentials
+# Edit .env with actual credentials
 ```
 
 ### Environment Variables (.env)
 
 ```env
-TMDB_API_KEY=your_tmdb_api_key              # Required
 KURLY_TEST_USERNAME=your_test_username       # Required
 KURLY_TEST_PASSWORD=your_test_password       # Required
 SLACK_WEBHOOK_URL=your_slack_webhook_url     # Optional
@@ -122,11 +111,7 @@ SLACK_WEBHOOK_URL=your_slack_webhook_url     # Optional
 # All tests
 pytest --alluredir=./allure-results
 
-# By test suite
-pytest src/tests/api --alluredir=./allure-results
-pytest src/tests/ui --alluredir=./allure-results
 # By marker
-pytest -m api
 pytest -m ui
 
 # View Allure report
@@ -135,7 +120,7 @@ allure serve ./allure-results
 
 ## Test Cases
 
-### Kurly UI Tests (22 active / 2 skipped)
+### UI Tests (22 active / 2 skipped)
 
 | Test | Cases | Validation |
 |------|-------|------------|
@@ -152,32 +137,6 @@ allure serve ./allure-results
 | `test_invalid_search` | 1 | ⚠️ skip - Kurly no-result message UI changed |
 
 Target: https://www.kurly.com
-
-### TMDB API Tests (26 tests)
-
-| Test | Cases | Validation |
-|------|-------|------------|
-| `test_get_popular_movies` | 1 | Popular movies list (200, results field) |
-| `test_search_movie` | 1 | Search Inception, verify first result title |
-| `test_get_movie_details` | 3 | Fight Club / The Matrix / Interstellar id & title |
-| `test_movie_videos` | 1 | Fight Club video data exists |
-| `test_api_sla` | 2 | /movie/popular, /genre/movie/list response under 2s |
-| `test_movie_genre_inclusion` | 3 | Genre inclusion for 3 movies |
-| `test_movie_release_date_consistency` | 3 | Release date format (YYYY-MM-DD) for 3 movies |
-| `test_movie_pagination_page_1` | 1 | Page 1 results count validation |
-| `test_movie_pagination_page_2` | 1 | No duplicate results between page 1 and 2 |
-| `test_pagination_invalid_page_zero` | 1 | Page 0 request → 400 error |
-| `test_pagination_out_of_range` | 1 | Page >500 request → 400 error |
-| `test_movie_not_found` | 1 | Non-existent movie ID → 404 |
-| `test_empty_api_key` | 1 | Empty API key → 401 |
-| `test_missing_api_key` | 1 | Missing API key → 401 |
-| `test_invalid_api_key` | 1 | Invalid API key → 401 |
-| `test_empty_search_query` | 1 | Empty search query → 0 results |
-| `test_invalid_page_number` | 1 | Page -1 → 422 error |
-| `test_invalid_language_code` | 1 | Invalid language code → default response |
-| `test_nonexistent_endpoint` | 1 | Non-existent endpoint → 404 |
-
-Target: https://api.themoviedb.org/3
 
 ---
 
@@ -200,7 +159,7 @@ BasePage (common: open, find_element, click, send_keys, is_displayed, take_scree
 - 8-hour scheduled runs / Manual execution
 
 ```
-Checkout → Install deps → Run UI/API tests
+Checkout → Install deps → Run UI tests
 → Generate Allure Report → Deploy to GitHub Pages → Slack notification
 ```
 

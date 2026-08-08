@@ -11,7 +11,6 @@ from src.pages.kurly_login_page import KurlyLoginPage
 from src.pages.kurly_search_page import KurlySearchPage
 from src.pages.kurly_cart_page import KurlyCartPage
 from src.pages.kurly_goods_page import KurlyGoodsPage
-from utils.api_utils import APIEnv
 
 load_dotenv()
 
@@ -97,39 +96,3 @@ def test_credentials_invalid():
         "username": "invalid_user@example.com",
         "password": "wrong_password123"
     }
-# =================================
-# API Fixtures
-# =================================
-
-# APIEnv 인스턴스 fixture
-
-
-@pytest.fixture(scope="session")
-def api_env():
-    """API 테스트용 환경 변수 및 APIEnv 인스턴스 제공"""
-    return APIEnv()
-
-
-@pytest.fixture
-def send_get_request(api_env):
-    return api_env.send_get_request
-
-@pytest.fixture
-def send_post_request(api_env):
-    return api_env.send_post_request
-
-@pytest.fixture
-def send_get_request_no_raise(api_env):
-    return api_env.send_get_request_no_raise
-
-
-# =================================
-# ALLURE Fixtures
-# =================================
-@pytest.fixture
-def allure_attach_response(api_env):
-    return api_env.attach_response
-
-@pytest.fixture
-def attach_response(api_env):
-    return api_env.attach_response

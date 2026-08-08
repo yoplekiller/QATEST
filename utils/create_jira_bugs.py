@@ -18,8 +18,8 @@ PROJECT_KEY = os.getenv("JIRA_PROJECT_KEY")
 
 jira = JIRA(server=JIRA_URL, basic_auth=(JIRA_EMAIL, JIRA_TOKEN))
 
-# UI + API 결과 파일 수집
-result_files = ["test_results_ui.json", "test_results_api.json"]
+# UI 결과 파일 수집
+result_files = ["test_results_ui.json"]
 all_failed = []
 
 # 각 결과 파일에서 실패 항목 추출
@@ -78,7 +78,7 @@ for t in all_failed:
     parts   = nodeid.replace("\\", "/").split("/")
     fname   = parts[-1].split("::")[0] if "::" in parts[-1] else parts[-1]
     func    = nodeid.split("::")[-1] if "::" in nodeid else nodeid
-    category = "UI" if "ui" in source else "API"
+    category = "UI"
 
     # 유니코드 이스케이프 디코딩 (e.g. 사과 → 사과)
     try:

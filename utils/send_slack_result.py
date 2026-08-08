@@ -27,20 +27,10 @@ def send_slack_result():
 
 
     ui_report_path = "reports/ui_report.xml" if is_docker else "ui_report.xml"
-    api_report_path = "reports/api_report.xml" if is_docker else "api_report.xml"
 
-    ui_passed, ui_failures, ui_errors, ui_skipped = parse_test_result(ui_report_path)
-    api_passed, api_failures, api_errors, api_skipped = parse_test_result(api_report_path)
+    passed, failures, errors, skipped = parse_test_result(ui_report_path)
 
-
-    failed_ui_tests = get_failed_test_names(ui_report_path)
-    failed_api_tests = get_failed_test_names(api_report_path)
-    all_failed_tests = failed_ui_tests + failed_api_tests
-
-    passed = ui_passed + api_passed
-    failures = ui_failures + api_failures
-    errors = ui_errors + api_errors
-    skipped = ui_skipped + api_skipped
+    all_failed_tests = get_failed_test_names(ui_report_path)
 
 
     # 브랜치별 Allure Report URL (슬래시를 대시로 변환)

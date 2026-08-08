@@ -46,7 +46,11 @@ class KurlyMainPage(BasePage):
 
     # 팝업
     POPUP_CLOSE_BUTTON = (By.XPATH, "//button[contains(text(),'확인')]")
-    POPUP_TEXT = (By.XPATH, "//div[@class='popup-content css-15yaaju e1k5padi2']")
+    POPUP_TEXT = (
+        By.XPATH,
+        "//*[contains(@class, 'popup-content') "
+        "or contains(@class, 'swal2-html-container')]",
+    )
     SWEET_ALERT = (By.CSS_SELECTOR, ".swal2-container.swal2-backdrop-show")
     SWEET_ALERT_CLOSE_BUTTON = (
         By.XPATH,
@@ -201,14 +205,14 @@ class KurlyMainPage(BasePage):
     
     def is_search_keyword_required_popup_displayed(self) -> bool:
         """
-        '검색어를 입력해주세요' 팝업 메시지 확인
+        '검색어를 입력해주세요.' 팝업 메시지 확인
         
         Returns:
             bool: 팝업 표시 여부
         """
         if self.is_displayed(self.POPUP_TEXT, timeout=5):
             popup_text = self.get_text(self.POPUP_TEXT)
-            return "검색어를 입력해주세요" in popup_text
+            return "검색어를 입력해주세요." in popup_text
         return False
     
     def is_on_main_page(self) -> bool:
