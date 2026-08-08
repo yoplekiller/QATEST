@@ -1,0 +1,1 @@
+2026-08-08 16:11:28 - test_automation - INFO - 스크린샷 저장: screenshots/로그인_실패_에러_20260808_161128.png
