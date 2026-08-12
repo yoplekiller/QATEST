@@ -1,0 +1,5 @@
+2026-08-12 04:39:51 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-08-12 04:39:52 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-08-12 04:39:58 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath__a_contains_text_낮은_가격순__20260812_043958.png
+2026-08-12 04:39:58 - test_automation - ERROR - 클릭 실패: ('xpath', "//a[contains(text(),'낮은 가격순')]")
+2026-08-12 04:39:58 - test_automation - INFO - 스크린샷 저장: screenshots/정렬_low_price_실패_20260812_043958.png
