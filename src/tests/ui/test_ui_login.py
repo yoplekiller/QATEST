@@ -78,19 +78,16 @@ class TestLogin:
             with allure.step("빈 계정 정보로 로그인 시도"):
                 kurly_login_page.click_login_button()
 
-            # Then: 에러 메시지가 표시되거나 로그인이 되지 않아야 함
+            # Then: 에러 메시지가 표시되거나, 여전히 로그인 페이지에 있어야 함
             with allure.step("에러 처리 확인"):
-                pass  # 실제 검증 로직이 있다면 여기에 추가
+                is_still_on_login_page = "login" in kurly_login_page.get_current_url()
+                has_error_message = kurly_login_page.is_error_message_displayed()
+
+                assert is_still_on_login_page or has_error_message, \
+                    "❌ 빈 계정 정보로 로그인이 진행되어서는 안 됨"
         except Exception as e:
             kurly_login_page.take_screenshot("빈계정_로그인_실패")
             raise
-            kurly_login_page.take_screenshot("빈_계정_정보_로그인_시도")
-            # 에러 메시지가 표시되거나, 여전히 로그인 페이지에 있어야 함
-            is_still_on_login_page = "login" in kurly_login_page.get_current_url()
-            has_error_message = kurly_login_page.is_error_message_displayed()
-
-            assert is_still_on_login_page or has_error_message, \
-                "❌ 빈 계정 정보로 로그인이 진행되어서는 안 됨"
 
     @allure.title("로그인 페이지 요소 표시 확인") 
     @allure.description("""

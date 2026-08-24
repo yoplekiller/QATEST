@@ -163,19 +163,6 @@ Checkout → Install deps → Run UI tests
 → Generate Allure Report → Deploy to GitHub Pages → Slack notification
 ```
 
-## Screenshots
-
-### Allure Report
-![Allure Report](./docs/screenshots/allure_report.png)
-
-### GitHub Actions CI/CD
-![GitHub Actions](./docs/screenshots/github_actions.png)
-
-### Slack Notifications
-![Slack](./docs/screenshots/slack_notification.png)
-
----
-
 ## Demo
 
 [Kurly Order Flow Automation (YouTube)](https://www.youtube.com/watch?v=TqsvT2RsYEs)

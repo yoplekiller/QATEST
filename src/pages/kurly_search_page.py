@@ -135,22 +135,22 @@ class KurlySearchPage(BasePage):
             return False
         
         # URL에 정렬 파라미터가 포함되었는지 확인
+        # sorted_type 값은 실제 사이트 동작 확인 후 반영 (2026-08-24 검증)
         current_url = self.get_current_url()
         sort_params = {
-            "recommend": "sort=",  # 기본값이므로 파라미터가 없을 수도 있음
-            "new": "sort=new",
-            "sale": "sort=sale", 
-            "bonus": "sort=benefit",
-            "low_price": "sort=price_asc",
-            "high_price": "sort=price_desc"
+            "new": "sorted_type=0",
+            "sale": "sorted_type=1",
+            "low_price": "sorted_type=2",
+            "high_price": "sorted_type=3",
+            "bonus": "sorted_type=5",
         }
-        
-        # 추천순은 기본값이므로 특별 처리
+
+        # 추천순은 기본 정렬이라 sorted_type 파라미터 자체가 안 붙음
         if sort_type == "recommend":
-            return True  # 상품이 있으면 정렬이 적용된 것으로 간주
-        
+            return "sorted_type=" not in current_url
+
         expected_param = sort_params.get(sort_type, "")
-        return expected_param in current_url or len(goods) > 0
+        return expected_param in current_url
 
     def get_goods_count(self) -> int:
         """
