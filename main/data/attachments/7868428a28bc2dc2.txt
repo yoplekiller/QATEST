@@ -1,0 +1,5 @@
+2026-08-30 12:21:54 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-08-30 12:22:40 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-08-30 12:22:46 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath___contains_class___popup-content__or_contains_class___swal2-html-container__20260830_122246.png
+2026-08-30 12:22:46 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "//*[contains(@class, 'popup-content') or contains(@class, 'swal2-html-container')]")
+2026-08-30 12:22:46 - test_automation - INFO - 스크린샷 저장: screenshots/빈_검색어_알럿_실패_20260830_122246.png
