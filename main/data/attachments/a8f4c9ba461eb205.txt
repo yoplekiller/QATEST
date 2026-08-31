@@ -1,0 +1,1 @@
+2026-08-31 20:17:29 - test_automation - INFO - 스크린샷 저장: screenshots/빈계정_로그인_실패_20260831_201729.png
