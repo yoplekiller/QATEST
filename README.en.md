@@ -23,10 +23,12 @@ QA Engineer portfolio — test automation for Kurly, a live e-commerce site, usi
 | Feature | Description |
 |---------|-------------|
 | **Page Object Model** | 6 page classes for structured automation |
-| **CI/CD** | GitHub Actions with 8-hour scheduled runs |
-| **Allure Report** | Step-by-step execution visualization |
+| **CI/CD** | GitHub Actions with 4-hour scheduled runs |
+| **Allure Report** | Step-by-step execution visualization, auto-deployed to GitHub Pages |
+| **Jira Auto Integration** | Auto-creates a Jira bug ticket on test failure |
+| **Jira Status Watcher** | Detects Jira issue status changes → real-time Slack alert |
 | **Environment Variables** | .env-based credential protection |
-| **Slack Notifications** | Real-time test result alerts |
+| **Slack Notifications** | Real-time test result and Jira status alerts |
 
 ---
 
@@ -70,7 +72,11 @@ QATEST/
 │   └── ...
 │
 ├── .github/workflows/
-│   └── Test_Automation.yaml       # CI/CD config
+│   ├── Test_Automation.yaml       # CI/CD main pipeline
+│   └── jira_status_watch.yaml     # Jira status watcher (hourly)
+│
+├── cache/
+│   └── jira_status_cache.json     # Cache for Jira status change detection
 │
 ├── .env.example
 ├── requirements.txt
@@ -155,12 +161,49 @@ BasePage (common: open, find_element, click, send_keys, is_displayed, take_scree
 
 ### CI/CD
 
-- `main`, `develop` branch PR / `feature/*`, `temp/*` push
-- 8-hour scheduled runs / Manual execution
+**Trigger conditions**
+- PR to `main`, `develop` branches
+- Push to `main` branch
+- 4-hour scheduled runs (`0 */4 * * *` UTC)
+- Manual execution (workflow_dispatch)
+
+**Pipeline structure**
 
 ```
-Checkout → Install deps → Run UI tests
-→ Generate Allure Report → Deploy to GitHub Pages → Slack notification
+[Push / Schedule / PR]
+        │
+        ▼
+    ui_tests
+        │
+   ┌────┴──────────┐
+   ▼               ▼
+ deploy      create_jira_bugs   ← runs in parallel
+(GitHub Pages)  (auto-create Jira ticket for failures)
+   └────┬──────────┘
+        ▼
+  notify_slack
+  (send test results to Slack)
+```
+
+**concurrency**: prevents overlapping deployments (`cancel-in-progress: true`)
+
+### Jira Auto Integration
+
+Automatically creates a Jira bug ticket on test failure, and watches Jira issue status changes to notify Slack.
+
+```
+[Test failure]
+     │
+     ▼
+create_jira_bugs (GitHub Actions)
+     │  parses test_results_ui.json
+     ▼
+Auto-create Jira bug ticket (utils/create_jira_bugs.py)
+
+[Jira Status Watcher] ← runs hourly
+     │  detects status change (compares cache/jira_status_cache.json)
+     ▼
+Send Slack alert (utils/jira_status_watcher.py)
 ```
 
 ## Demo
@@ -170,7 +213,8 @@ Checkout → Install deps → Run UI tests
 ## Related Projects
 
 - [PlaywrightQA](https://github.com/yoplekiller/PlaywrightQA) - Playwright/TypeScript E2E Testing
-- [woongjinAppTest](https://github.com/yoplekiller/woongjinAppTest) - Python/Appium Mobile Testing
+- [KurlyApp](https://github.com/yoplekiller/KurlyApp) - Python/Appium Mobile Testing
+- [AutoTC](https://github.com/yoplekiller/AutoTC) - AI-based Test Case Generation
 
 ---
 

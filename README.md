@@ -212,7 +212,7 @@ Slack 알림 발송 (utils/jira_status_watcher.py)
 ## 관련 프로젝트
 
 - [PlaywrightQA](https://github.com/yoplekiller/PlaywrightQA) - Playwright/TypeScript E2E 테스트
-- [woongjinAppTest](https://github.com/yoplekiller/woongjinAppTest) - Python/Appium 모바일 테스트
+- [KurlyApp](https://github.com/yoplekiller/KurlyApp) - Python/Appium 모바일 테스트
 - [AutoTC](https://github.com/yoplekiller/AutoTC) - 테스트 케이스 자동 생성 
 
 ---
