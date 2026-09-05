@@ -1,0 +1,17 @@
+[32mINFO    [0m test_automation:base_page.py:76 페이지 열기: https://www.kurly.com/main
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:51591/session/e363a0961fa887414ea34042b8d42340/url {'url': 'https://www.kurly.com/main'}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:241 Starting new HTTP connection (6): localhost:51591
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 DELETE http://localhost:51591/session/e363a0961fa887414ea34042b8d42340 {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:241 Starting new HTTP connection (7): localhost:51591
+[35mDEBUG   [0m urllib3.util.retry:retry.py:545 Incremented Retry for (url='/session/e363a0961fa887414ea34042b8d42340'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:869 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=51591): Read timed out. (read timeout=120)")': /session/e363a0961fa887414ea34042b8d42340
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:241 Starting new HTTP connection (8): localhost:51591
+[35mDEBUG   [0m urllib3.util.retry:retry.py:545 Incremented Retry for (url='/session/e363a0961fa887414ea34042b8d42340'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:869 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=51591): Read timed out. (read timeout=120)")': /session/e363a0961fa887414ea34042b8d42340
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:241 Starting new HTTP connection (9): localhost:51591
+[35mDEBUG   [0m urllib3.util.retry:retry.py:545 Incremented Retry for (url='/session/e363a0961fa887414ea34042b8d42340'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:869 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=51591): Read timed out. (read timeout=120)")': /session/e363a0961fa887414ea34042b8d42340
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:241 Starting new HTTP connection (10): localhost:51591
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 http://localhost:51591 "DELETE /session/e363a0961fa887414ea34042b8d42340 HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request

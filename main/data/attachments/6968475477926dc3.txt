@@ -1,0 +1,13 @@
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:54473/session/0ff3c4cc966183533e58253def4d7d06/url {'url': 'https://www.kurly.com/main'}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:241 Starting new HTTP connection (11): localhost:54473
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 DELETE http://localhost:54473/session/0ff3c4cc966183533e58253def4d7d06 {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:241 Starting new HTTP connection (12): localhost:54473
+[35mDEBUG   [0m urllib3.util.retry:retry.py:545 Incremented Retry for (url='/session/0ff3c4cc966183533e58253def4d7d06'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:869 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=54473): Read timed out. (read timeout=120)")': /session/0ff3c4cc966183533e58253def4d7d06
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:241 Starting new HTTP connection (13): localhost:54473
+[35mDEBUG   [0m urllib3.util.retry:retry.py:545 Incremented Retry for (url='/session/0ff3c4cc966183533e58253def4d7d06'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:869 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=54473): Read timed out. (read timeout=120)")': /session/0ff3c4cc966183533e58253def4d7d06
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:241 Starting new HTTP connection (14): localhost:54473
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:544 http://localhost:54473 "DELETE /session/0ff3c4cc966183533e58253def4d7d06 HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request

@@ -1,0 +1,1 @@
+2026-09-05 04:52:12 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
