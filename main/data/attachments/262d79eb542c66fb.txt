@@ -1,0 +1,2 @@
+2026-09-12 04:18:19 - test_automation - INFO - 스크린샷 저장: screenshots/add_button_not_found_2_20260912_041818.png
+2026-09-12 04:18:19 - test_automation - INFO - 스크린샷 저장: screenshots/장바구니_플로우_실패_20260912_041819.png
