@@ -25,7 +25,7 @@ Python + Selenium 기반으로 실제 운영 중인 마켓컬리 웹사이트를
 | 특징 | 설명 |
 |------|------|
 | **Page Object Model** | 6개 페이지 클래스로 구조화 |
-| **CI/CD** | GitHub Actions 4시간 주기 자동 실행 |
+| **CI/CD** | GitHub Actions 하루 1회 자동 실행 |
 | **Allure Report** | 단계별 실행 과정 시각화, GitHub Pages 자동 배포 |
 | **Jira 자동 연동** | 테스트 실패 시 Jira 버그 티켓 자동 생성 |
 | **Jira Status Watcher** | Jira 이슈 상태 변경 감지 → Slack 실시간 알림 |
@@ -165,7 +165,7 @@ BasePage (공통: open, find_element, click, send_keys, is_displayed, take_scree
 
 **트리거 조건**
 - `main`, `develop` 브랜치 push / PR
-- 4시간 주기 스케줄 (`0 */4 * * *` UTC)
+- 하루 1회 스케줄 (`0 0 * * *` UTC)
 - 수동 실행 (workflow_dispatch)
 
 **파이프라인 구조**

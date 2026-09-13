@@ -23,7 +23,7 @@ QA Engineer portfolio — test automation for Kurly, a live e-commerce site, usi
 | Feature | Description |
 |---------|-------------|
 | **Page Object Model** | 6 page classes for structured automation |
-| **CI/CD** | GitHub Actions with 4-hour scheduled runs |
+| **CI/CD** | GitHub Actions with daily scheduled runs |
 | **Allure Report** | Step-by-step execution visualization, auto-deployed to GitHub Pages |
 | **Jira Auto Integration** | Auto-creates a Jira bug ticket on test failure |
 | **Jira Status Watcher** | Detects Jira issue status changes → real-time Slack alert |
@@ -164,7 +164,7 @@ BasePage (common: open, find_element, click, send_keys, is_displayed, take_scree
 **Trigger conditions**
 - PR to `main`, `develop` branches
 - Push to `main` branch
-- 4-hour scheduled runs (`0 */4 * * *` UTC)
+- Daily scheduled run (`0 0 * * *` UTC)
 - Manual execution (workflow_dispatch)
 
 **Pipeline structure**
