@@ -56,7 +56,6 @@ jobs:
             --json-report --json-report-file=test_results_ui.json \
             --capture=tee-sys -v \
             --maxfail=100 --disable-warnings --tb=short
-        continue-on-error: true
 
       - name: Upload UI Test Results JSON
         if: always()
