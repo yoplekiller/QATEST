@@ -31,8 +31,6 @@ class TestCartManagement:
                     while retry < 2:
                         try:
                             kurly_search_page.click_nth_add_button(n=i)
-                            if i == 3:
-                                kurly_search_page.quantity_up_in_alt(times=1)  # 3번째 상품은 수량 1로 담기
                             kurly_search_page.add_to_cart_in_alt()
                             time.sleep(1)  # 팝업 닫힐 때까지 대기
                             break
