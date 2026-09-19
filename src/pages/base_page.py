@@ -5,7 +5,7 @@ from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException, ElementClickInterceptedException
 from utils.logger import logger
 from typing import Optional, Tuple, Any
 
@@ -270,8 +270,19 @@ class BasePage:
         """
         try:
             element = self.wait_clickable(locator, timeout)
-            element.click()
-        except TimeoutException:
+            # element_to_be_clickable은 표시/활성화 여부만 보장할 뿐, 다른 요소(배너·팝업 등
+            # 일시적으로 떠 있다 사라지는 오버레이)에 가려져 있지 않은지는 보장하지 않는다.
+            # 실사이트 조사로 확인: 가로채는 오버레이는 대부분 순간적으로 떴다 사라지므로
+            # 짧게 재시도하면 해소되는 경우가 많음.
+            for attempt in range(3):
+                try:
+                    element.click()
+                    return
+                except ElementClickInterceptedException:
+                    if attempt == 2:
+                        raise
+                    time.sleep(0.5)
+        except (TimeoutException, ElementClickInterceptedException):
             self.take_screenshot(name=f"click_failed_{locator}")
             logger.error(f"클릭 실패: {locator}")
             raise TimeoutException(f"❌ 요소를 클릭할 수 없습니다: {locator}")
