@@ -28,6 +28,17 @@ class TestGoodAddFlow:
     **예상 결과:** 전체 플로우가 성공적으로 완료됨
     """)
     # TC: TC-UI-020, TC-UI-021, TC-UI-022, TC-UI-024 (SC-UI-013)
+    @pytest.mark.skip(
+        reason=(
+            "실사이트 조사로 확인됨: 로그인 폼에 봇 탐지/보안 계층이 새로 추가되어, 유효한 "
+            "테스트 계정으로도 자동화된 로그인 시도는 '보안 인증 과정에서 오류가 발생하였습니다' "
+            "차단 메시지를 받고 실제 로그인에 도달하지 못함(is_login_successful()의 "
+            "USER_MENU 로케이터가 사실상 모든 버튼에 매칭되는 tautology라 이 실패를 숨기고 "
+            "있었음 - 실제 로그인 성공 화면을 볼 수 없어 올바른 로케이터로 고칠 근거도 없음). "
+            "이 보안 계층을 우회하는 건 범위 밖 - 전용 테스트 환경 없이는 로그인 필요 플로우를 "
+            "신뢰성 있게 자동화할 수 없음."
+        )
+    )
     def test_full_good_add_flow(self, kurly_login_page, kurly_main_page, kurly_search_page, kurly_cart_page, test_credentials):
         """
         로그인 → 상품 검색 → 장바구니 추가 전체 플로우 테스트
