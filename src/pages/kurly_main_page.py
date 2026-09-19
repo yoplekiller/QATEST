@@ -41,7 +41,7 @@ class KurlyMainPage(BasePage):
     ADD_TO_CART_BUTTON = (By.XPATH, "//button[contains(text(),'장바구니')]")
 
     # Locators - 장바구니
-    CART_ICON = (By.CSS_SELECTOR, ".css-1o9e4kz")
+    CART_ICON = (By.CSS_SELECTOR, ".css-1b4kx1j")  # 실사이트 조사로 해시 클래스 갱신 확인
     CART_COUNT = (By.CSS_SELECTOR, ".css-5ojige") 
 
     # 팝업

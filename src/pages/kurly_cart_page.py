@@ -20,7 +20,7 @@ class KurlyCartPage(BasePage):
     CART_URL = "https://www.kurly.com/cart"
 
     # Locators - 장바구니 버튼
-    CART_ICON = (By.XPATH, "//button[@class='css-1o9e4kz']")  # 장바구니 아이콘
+    CART_ICON = (By.CSS_SELECTOR, ".css-1b4kx1j")  # 장바구니 아이콘 (실사이트 조사로 해시 클래스 갱신 확인)
     CART_TITLE = (By.XPATH, "//h1[normalize-space()='장바구니']")
 
     # Locators - 수량 조절
