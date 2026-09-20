@@ -323,9 +323,36 @@ class KurlySearchPage(BasePage):
     def add_to_cart_in_alt(self) -> None:
         """ALT에서 장바구니 담기 버튼 클릭"""
         self.wait_visible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
+        self._select_first_option_if_needed()
         self.click(self.ADD_TO_CART_BUTTONS_IN_ALT)
         self.close_cart_popup()
         self.wait_until_invisible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
+
+    def _select_first_option_if_needed(self) -> None:
+        """
+        옵션이 여러 개인 상품(예: '~7종 (택1)')은 ALT를 열면 모든 옵션의 수량이 0으로
+        시작한다. 아무 옵션도 선택하지 않은 채 장바구니 담기를 확정하면 사이트가
+        "최소 구매 수량은 N개 입니다" 경고창을 띄우며 막아버려(실사이트 확인,
+        2026-09-20), 이후 상품 선택 로직 전체가 그 경고창에 가려 깨진다.
+        Stepper plus 버튼이 보이면(=옵션형 상품) 첫 옵션을 수량 1개로 선택해준다.
+        """
+        steppers = [
+            button
+            for button in self.driver.find_elements(*self.QUANTITY_UP_BUTTON_IN_ALT)
+            if button.is_displayed() and button.is_enabled()
+        ]
+        if not steppers:
+            return
+
+        target = steppers[0]
+        self.driver.execute_script(
+            "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
+            target,
+        )
+        try:
+            target.click()
+        except ElementClickInterceptedException:
+            self.driver.execute_script("arguments[0].click();", target)
 
 
     def click_first_good(self) -> None:

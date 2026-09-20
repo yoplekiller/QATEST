@@ -16,6 +16,9 @@ class TestCartManagement:
     def test_add_multiple_items_to_cart(self, kurly_main_page, kurly_search_page, kurly_cart_page):
         """여러 상품을 장바구니에 담는 테스트"""
         try:
+            with allure.step("장바구니 비우기(테스트 독립성 확보)"):
+                kurly_cart_page.clear_cart()
+
             with allure.step("메인 페이지 접속"):
                 kurly_main_page.open_main_page()
 
@@ -67,6 +70,9 @@ class TestCartManagement:
     # TC: TC-UI-026 (SC-UI-012)
     def test_remove_item_from_cart(self, kurly_main_page, kurly_search_page, kurly_cart_page):
         """장바구니에서 상품 삭제 기능 테스트"""
+
+        with allure.step("장바구니 비우기(테스트 독립성 확보)"):
+            kurly_cart_page.clear_cart()
 
         with allure.step("메인 페이지 접속 및 검색"):
             kurly_main_page.open_main_page()

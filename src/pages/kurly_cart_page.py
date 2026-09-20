@@ -128,4 +128,23 @@ class KurlyCartPage(BasePage):
         self.sleep(0.5)  # UI 반영 대기
         self.click(self.CHOICE_ITEM_DELETE_ALT_OK_BUTTON)
 
+    def clear_cart(self) -> None:
+        """
+        장바구니를 완전히 비운다(이미 비어있으면 아무 것도 안 함).
+
+        실사이트 조사(2026-09-20) 결과 이 페이지의 체크박스는 배송 그룹 단위로만
+        존재하고 상품 개별 체크박스가 없어서(장바구니가 '전체선택' 상태가 기본값),
+        '선택삭제'를 누르면 장바구니 안의 모든 항목이 한 번에 지워진다. driver가
+        module scope라 테스트 간 장바구니 상태가 이어지므로, 상태에 의존하는
+        테스트는 시작할 때 이 메서드로 먼저 비워서 독립성을 확보해야 한다.
+
+        Note: EMPTY_CART_MESSAGE 텍스트는 실사이트에서 뜨지 않음(빈 장바구니는
+        '전체선택 0/0' + 비활성화된 선택삭제 버튼으로만 표시됨) - get_cart_item_count()
+        기준으로 비어있는지 판단한다.
+        """
+        self.open_cart_page()
+        if self.get_cart_item_count() == 0:
+            return
+        self.choiced_item_delete()
+
 
