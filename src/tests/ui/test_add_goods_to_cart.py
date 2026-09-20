@@ -39,7 +39,7 @@ def test_add_good_to_cart_flow(kurly_main_page, kurly_search_page, kurly_login_p
 
         with allure.step("'과자' 검색"):
             kurly_main_page.search_goods("수박")
-            time.sleep(2)
+            kurly_main_page.wait_until_url_contains("search", timeout=10)
 
         # 2. 상품 추가 버튼 클릭
         with allure.step("두 번째 상품 담기 버튼 클릭"):

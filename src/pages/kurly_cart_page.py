@@ -3,7 +3,9 @@ Kurly 장바구니 페이지 Page Object
 마켓컬리 웹사이트의 장바구니 기능을 담당하는 페이지 오브젝트
 """
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
 from src.pages.base_page import BasePage
+from utils.logger import logger
 
 
 class KurlyCartPage(BasePage):
@@ -104,6 +106,24 @@ class KurlyCartPage(BasePage):
         except Exception:
             return 0
 
+    def wait_until_count_differs_from(self, previous_count: int, timeout: int = 10) -> bool:
+        """
+        장바구니 상품 개수가 이전 값과 달라질 때까지 대기(삭제/추가 후 UI 반영 확인용).
+
+        get_cart_item_count()가 읽는 요소는 삭제 전에도 이미 화면에 있어서(값만
+        바뀜), 단순히 "요소가 보이는지"만 기다리면 바뀌기 전 값을 그대로 읽어버릴
+        수 있다 - 값 자체가 바뀔 때까지 폴링해야 한다.
+
+        Returns:
+            bool: 값이 바뀌면 True, timeout이면 False
+        """
+        wait = self._get_wait(timeout)
+        try:
+            return wait.until(lambda d: self.get_cart_item_count() != previous_count)
+        except TimeoutException:
+            logger.warning(f"장바구니 개수가 {previous_count}에서 바뀌지 않음")
+            return False
+
     def uncheck_item(self) -> None:
         """
         장바구니의 첫 번째 상품을 선택 해제
@@ -125,7 +145,8 @@ class KurlyCartPage(BasePage):
             2. 삭제 확인 팝업에서 '확인' 클릭
         """
         self.click(self.DELETE_SELECTED_BUTTON)
-        self.sleep(0.5)  # UI 반영 대기
+        # click()이 CHOICE_ITEM_DELETE_ALT_OK_BUTTON을 clickable 상태로
+        # wait_clickable까지 기다린 뒤 클릭하므로 별도 sleep이 필요 없다.
         self.click(self.CHOICE_ITEM_DELETE_ALT_OK_BUTTON)
 
     def clear_cart(self) -> None:
@@ -141,8 +162,14 @@ class KurlyCartPage(BasePage):
         Note: EMPTY_CART_MESSAGE 텍스트는 실사이트에서 뜨지 않음(빈 장바구니는
         '전체선택 0/0' + 비활성화된 선택삭제 버튼으로만 표시됨) - get_cart_item_count()
         기준으로 비어있는지 판단한다.
+
+        Note 2: 장바구니 개수 데이터는 페이지 진입 직후 잠깐 0으로 보였다가
+        비동기로 채워짐(SPA 특성, 2026-09-20 실측 - open_cart_page() 직후
+        바로 읽으면 실제로 상품이 있어도 0으로 읽혀 삭제를 건너뛰는 버그가
+        재현됨). 데이터가 채워질 시간을 준 뒤 판단한다.
         """
         self.open_cart_page()
+        self.sleep(2)  # 장바구니 데이터 비동기 로드 대기
         if self.get_cart_item_count() == 0:
             return
         self.choiced_item_delete()

@@ -54,7 +54,7 @@ class TestGoodAddFlow:
             # Step 2: 상품 검색
             with allure.step("상품 검색: '과자'"):
                 kurly_main_page.search_goods("과자")
-                time.sleep(2)  # 검색 결과 로드 대기
+                kurly_main_page.wait_until_url_contains("search", timeout=10)
 
             # Step 3: 상품 추가
             with allure.step("세 번째 상품 선택"):

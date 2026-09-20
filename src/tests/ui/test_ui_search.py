@@ -3,7 +3,6 @@
 Page Object Model을 사용하여 리팩토링된 검색 테스트
 """
 
-import time
 import allure
 import pytest
 
@@ -116,11 +115,13 @@ class TestSearch:
             with allure.step("메인 페이지에서 검색"):
                 kurly_main_page.open_main_page()
                 kurly_main_page.search_goods("사과")
-                time.sleep(2)  # 검색 결과 로딩 대기
+                kurly_main_page.wait_until_url_contains("search", timeout=10)
 
             with allure.step("첫 번째 검색 결과 클릭"):
                 kurly_search_page.click_first_good()
-                time.sleep(5)  # 페이지 로딩 대기
+                # is_product_detail_displayed()는 URL만 즉시 확인하고 자체 대기가
+                # 없어서, 상세 페이지 URL로 바뀔 때까지 여기서 명시적으로 기다린다.
+                kurly_search_page.wait_until_url_contains("/goods/", timeout=10)
 
             with allure.step("상세 페이지 이동 확인"):
                 kurly_search_page.take_screenshot("상품_상세_페이지")

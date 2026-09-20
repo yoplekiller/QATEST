@@ -24,7 +24,7 @@ class TestCartManagement:
 
             with allure.step("'과자' 검색"):
                 kurly_main_page.search_goods("과자")
-                time.sleep(2)  # 검색 결과 로드 대기
+                kurly_main_page.wait_until_url_contains("search", timeout=10)
 
             items_to_add = 3
 
@@ -35,7 +35,8 @@ class TestCartManagement:
                         try:
                             kurly_search_page.click_nth_add_button(n=i)
                             kurly_search_page.add_to_cart_in_alt()
-                            time.sleep(1)  # 팝업 닫힐 때까지 대기
+                            # add_to_cart_in_alt()가 팝업이 닫힐 때까지 이미
+                            # wait_until_invisible로 기다린 뒤 반환하므로 추가 대기 불필요
                             break
                         except Exception as e:
                             if 'stale element reference' in str(e).lower():
@@ -46,6 +47,10 @@ class TestCartManagement:
 
             with allure.step("장바구니로 이동"):
                 kurly_main_page.go_to_cart()
+                # URL은 클릭 즉시 바뀌지만 실제 장바구니 개수 데이터는 그보다
+                # 늦게 채워짐(SPA 특성, 2026-09-20 실측: URL 대기 직후 0 ->
+                # +1.5초 후 정상값) - wait_until_url_contains로는 못 잡아서
+                # sleep 유지가 맞음.
                 time.sleep(2)  # 페이지 로드 대기
 
             with allure.step(f"장바구니에 {items_to_add}개 상품이 있는지 확인"):
@@ -77,7 +82,7 @@ class TestCartManagement:
         with allure.step("메인 페이지 접속 및 검색"):
             kurly_main_page.open_main_page()
             kurly_main_page.search_goods("과자")
-            time.sleep(2)  # 검색 결과 로드 대기
+            kurly_main_page.wait_until_url_contains("search", timeout=10)
 
 
         with allure.step("상품을 장바구니에 담기"):
@@ -86,6 +91,8 @@ class TestCartManagement:
 
         with allure.step("장바구니 페이지로 이동"):
             kurly_main_page.go_to_cart()
+            # URL은 클릭 즉시 바뀌지만 실제 장바구니 개수 데이터는 그보다
+            # 늦게 채워짐(SPA 특성, 2026-09-20 실측) - sleep 유지가 맞음.
             time.sleep(2)  # 페이지 로드 대기
 
         with allure.step("장바구니에 상품이 있는지 확인"):
@@ -100,7 +107,7 @@ class TestCartManagement:
 
         with allure.step("상품 삭제"):
             kurly_cart_page.choiced_item_delete()
-            time.sleep(1)  # 삭제 처리 대기
+            kurly_cart_page.wait_until_count_differs_from(initial_count, timeout=10)
 
         with allure.step("상품이 삭제되었는지 확인"):
             final_count = kurly_cart_page.get_cart_item_count()

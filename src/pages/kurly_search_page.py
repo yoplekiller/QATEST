@@ -126,17 +126,8 @@ class KurlySearchPage(BasePage):
         Returns:
             bool: 정렬이 올바르게 적용되었으면 True
         """
-        # 정렬 후 페이지가 로드될 시간을 기다림
-        self.sleep(1)
-        
-        # 상품이 있는지 확인
-        goods = self.find_elements(self.GOODS_CARDS)
-        if len(goods) == 0:
-            return False
-        
         # URL에 정렬 파라미터가 포함되었는지 확인
         # sorted_type 값은 실제 사이트 동작 확인 후 반영 (2026-08-24 검증)
-        current_url = self.get_current_url()
         sort_params = {
             "new": "sorted_type=0",
             "sale": "sorted_type=1",
@@ -145,12 +136,24 @@ class KurlySearchPage(BasePage):
             "bonus": "sorted_type=5",
         }
 
-        # 추천순은 기본 정렬이라 sorted_type 파라미터 자체가 안 붙음
+        if sort_type == "recommend":
+            # 추천순은 기본 정렬이라 URL에 파라미터가 안 붙어서(=생기는 걸 기다릴
+            # 대상이 없음) 정렬 클릭이 반영될 시간만 짧게 기다린다.
+            self.sleep(1)
+        else:
+            # 정렬 파라미터가 URL에 실제로 반영될 때까지 대기(고정 sleep 대신)
+            self.wait_until_url_contains(sort_params.get(sort_type, ""), timeout=5)
+
+        # 상품이 있는지 확인
+        goods = self.find_elements(self.GOODS_CARDS)
+        if len(goods) == 0:
+            return False
+
+        current_url = self.get_current_url()
         if sort_type == "recommend":
             return "sorted_type=" not in current_url
 
-        expected_param = sort_params.get(sort_type, "")
-        return expected_param in current_url
+        return sort_params.get(sort_type, "") in current_url
 
     def get_goods_count(self) -> int:
         """

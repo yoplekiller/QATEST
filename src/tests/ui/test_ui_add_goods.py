@@ -1,7 +1,6 @@
 """
 상품 추가 테스트 (POM 패턴 적용)
 """
-import time
 import allure
 import pytest
 
@@ -39,7 +38,7 @@ class TestAddGoods:
 
             with allure.step("'과자' 검색"):
                 kurly_main_page.search_goods("과자")
-                time.sleep(2)  # 검색 결과 로드 대기
+                kurly_main_page.wait_until_url_contains("search", timeout=10)
 
             # When: 상품 추가 플로우 실행
             with allure.step("세 번째 상품의 장바구니 추가 버튼 클릭"):
