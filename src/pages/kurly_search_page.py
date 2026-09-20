@@ -242,11 +242,17 @@ class KurlySearchPage(BasePage):
         """
         try:
             self.wait_clickable(self.QUANTITY_UP_BUTTON_IN_ALT, timeout=5)
-            for _ in range(times):
+            for i in range(times):
                 self.click(self.QUANTITY_UP_BUTTON_IN_ALT)
+                if i < times - 1:
+                    # 연속 클릭 사이 딜레이 없이 바로 다음 클릭을 보내면 스텝퍼
+                    # 컴포넌트의 디바운스/애니메이션 때문에 일부 클릭이 씹혀
+                    # 반영 안 되는 현상이 실측 확인됨(2026-09-20) - 반영될
+                    # 시간을 준다.
+                    self.sleep(0.3)
         except Exception:
             return False
-    
+
     def quantity_down_in_alt(self, times: int =1) -> None:
         """
         ALT에서 수량 내리기
@@ -256,8 +262,10 @@ class KurlySearchPage(BasePage):
         """
         try:
             self.wait_clickable(self.QUANTITY_DOWN_BUTTON_IN_ALT, timeout=5)
-            for _ in range(times):
+            for i in range(times):
                 self.click(self.QUANTITY_DOWN_BUTTON_IN_ALT)
+                if i < times - 1:
+                    self.sleep(0.3)  # 위 quantity_up_in_alt와 동일한 이유
         except Exception:
             return False
         
@@ -326,12 +334,12 @@ class KurlySearchPage(BasePage):
     def add_to_cart_in_alt(self) -> None:
         """ALT에서 장바구니 담기 버튼 클릭"""
         self.wait_visible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
-        self._select_first_option_if_needed()
+        self.select_first_option_if_needed()
         self.click(self.ADD_TO_CART_BUTTONS_IN_ALT)
         self.close_cart_popup()
         self.wait_until_invisible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
 
-    def _select_first_option_if_needed(self) -> None:
+    def select_first_option_if_needed(self) -> None:
         """
         옵션이 여러 개인 상품(예: '~7종 (택1)')은 ALT를 열면 모든 옵션의 수량이 0으로
         시작한다. 아무 옵션도 선택하지 않은 채 장바구니 담기를 확정하면 사이트가
