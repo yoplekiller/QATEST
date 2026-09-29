@@ -1,0 +1,5 @@
+2026-09-29 00:12:22 - test_automation - INFO - 페이지 열기: https://www.kurly.com/main
+2026-09-29 00:12:23 - test_automation - INFO - 페이지 로드 요청 완료: https://www.kurly.com/main
+2026-09-29 00:12:34 - test_automation - INFO - 스크린샷 저장: screenshots/click_failed__xpath__button_aria-label_Stepper_plus__20260929_001234.png
+2026-09-29 00:12:34 - test_automation - ERROR - 클릭 실패: ('xpath', "//button[@aria-label='Stepper plus']")
+2026-09-29 00:12:40 - test_automation - INFO - 스크린샷 저장: screenshots/상품_추가_완료_20260929_001240.png
