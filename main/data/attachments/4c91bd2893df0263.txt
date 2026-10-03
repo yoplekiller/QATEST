@@ -1,0 +1,2 @@
+2026-10-03 00:11:32 - test_automation - INFO - 스크린샷 저장: screenshots/find_element_failed__xpath__div_contains_text_로그인에_실패하였습니다.__20261003_001132.png
+2026-10-03 00:11:32 - test_automation - ERROR - 요소 찾기 실패: ('xpath', "//div[contains(text(),'로그인에 실패하였습니다.')]")
