@@ -8,7 +8,7 @@
 [![Pytest](https://img.shields.io/badge/pytest-8.3-red.svg)](https://pytest.org/)
 
 > UI Test Automation for Kurly (Korean E-commerce) Website
-> Total 24 test cases (22 active + 2 skipped)
+> Total 24 test cases (20 regular + 1 known issue (xfail) + 3 skipped)
 
 [Live Allure Report](https://yoplekiller.github.io/QATEST/)
 
