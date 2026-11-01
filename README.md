@@ -8,7 +8,7 @@
 [![Pytest](https://img.shields.io/badge/pytest-8.3-red.svg)](https://pytest.org/)
 
 > 마켓컬리 웹사이트 UI 테스트 자동화 프로젝트
-> 총 24개 테스트 케이스 (22개 실행 + 2개 skip)
+> 총 24개 테스트 케이스 (일반 실행 20개 + known issue(xfail) 1개 + skip 3개)
 
 [Live Allure Report](https://yoplekiller.github.io/QATEST/)
 
@@ -67,7 +67,7 @@ QATEST/
 │   │
 │   └── tests/
 │       ├── conftest.py            # Pytest Fixture
-│       └── ui/                    # UI 테스트 (22개)
+│       └── ui/                    # UI 테스트 (총 24개 TC, xfail·skip 포함)
 │
 ├── utils/
 │   ├── logger.py
