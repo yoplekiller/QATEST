@@ -2,13 +2,11 @@ import json
 import os
 import re
 from dotenv import load_dotenv
-import shutil
 import allure
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 from src.pages.kurly_main_page import KurlyMainPage
 from src.pages.kurly_login_page import KurlyLoginPage
 from src.pages.kurly_search_page import KurlySearchPage
@@ -16,9 +14,6 @@ from src.pages.kurly_cart_page import KurlyCartPage
 from src.pages.kurly_goods_page import KurlyGoodsPage
 
 load_dotenv()
-
-# ✅ CI 환경 감지 (GitHub Actions, Docker)
-IS_CI = os.getenv("GITHUB_ACTIONS") == "true" or os.getenv("CI") == "true"
 
 @pytest.fixture(scope="module")
 def driver():
@@ -33,14 +28,11 @@ def driver():
     # 실패 증거로 브라우저 콘솔 로그를 남기기 위해 수집 활성화
     options.set_capability("goog:loggingPrefs", {"browser": "ALL"})
 
-    # ✅ CI 환경에서는 캐시 삭제로 손상된 드라이버 방지
-    if IS_CI:
-        cache_dir = os.path.expanduser("~/.wdm")
-        if os.path.exists(cache_dir):
-            shutil.rmtree(cache_dir)
-
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=options)
+    # 드라이버 바이너리는 Selenium 내장 Selenium Manager 가 설치된 Chrome 버전에 맞춰 찾는다.
+    # 예전에는 CI 에서 driver 픽스처가 만들어질 때마다 ~/.wdm 캐시를 지우고 webdriver-manager 로
+    # 다시 설치했는데, xdist 병렬에서는 한 워커가 다음 모듈을 시작하며 공유 캐시를 지우는 순간
+    # 다른 워커들의 chromedriver 세션이 함께 끊겼다(2026-11-01 CI: Connection refused 로 8건 실패).
+    driver = webdriver.Chrome(service=Service(), options=options)
 
     # ✅ Selenium 감지 우회 (CDP 명령어)
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
