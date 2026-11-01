@@ -145,7 +145,22 @@ class TestSearch:
 
     **예상 결과:** 에러 없이 검색이 수행되며, 결과가 있거나 "결과 없음" 메시지 표시
     """)
-    @pytest.mark.parametrize("keyword", ["<script>", "' OR 1=1--", "사과!@#"])
+    @pytest.mark.parametrize("keyword", [
+        "<script>",
+        pytest.param(
+            "' OR 1=1--",
+            marks=pytest.mark.xfail(
+                strict=True,
+                reason=(
+                    "known issue(사이트, 2026-10-06~ 지속, 11-01 재확인): SQL 인젝션 형태 검색어만 "
+                    "'알 수 없는 에러가 발생했습니다' 일반 에러 페이지 + 빈 title로 응답함. "
+                    "' 단독, 'OR 1=1' 은 정상 검색됨 → 보안 필터 차단으로 추정, 사용자에겐 '결과 없음' 대신 에러 노출. "
+                    "사이트가 고치면 strict xfail 이 XPASS 로 CI 를 깨서 알려준다."
+                ),
+            ),
+        ),
+        "사과!@#",
+    ])
     # TC: TC-UI-008 (SC-UI-005)
     def test_search_with_special_characters(self, kurly_main_page, kurly_search_page, keyword):
         """
@@ -157,13 +172,20 @@ class TestSearch:
             # When: 특수문자 포함 검색어로 검색
             with allure.step(f"특수문자 포함 검색어 '{keyword}' 검색"):
                 kurly_main_page.search_goods(keyword)
+                kurly_main_page.wait_until_url_contains("search", timeout=10)
 
             with allure.step("검색 처리 확인"):
                 kurly_main_page.take_screenshot(f"특수문자_검색_{keyword}")
 
-                # 페이지가 정상적으로 로드되었는지 확인
+                # title 은 SPA 라 URL 변경 뒤 늦게 채워짐 - 채워질 때까지 잠깐 기다린 뒤 판단
+                try:
+                    kurly_search_page._get_wait(5).until(lambda d: d.title)
+                except Exception:
+                    pass
                 page_title = kurly_search_page.get_title()
-                assert page_title, "❌ 페이지가 정상적으로 로드되지 않았습니다"
+                assert not kurly_search_page.is_error_page(), \
+                    f"❌ 검색어 '{keyword}'에 '알 수 없는 에러' 페이지가 노출됨"
+                assert page_title, "❌ 페이지가 정상적으로 로드되지 않았습니다(빈 title)"
         except Exception as e:
             kurly_main_page.take_screenshot(f"특수문자_검색_{keyword}_실패")
             raise

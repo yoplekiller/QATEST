@@ -119,6 +119,9 @@ SLACK_WEBHOOK_URL=your_slack_webhook_url     # 선택
 # 전체 테스트
 pytest --alluredir=./allure-results
 
+# CI 와 같은 방식: 파일 단위 병렬(워커 3) + 실패 시 1회 재시도(재시도 통과는 Flaky 로 따로 집계)
+pytest -n 3 --dist loadfile --reruns 1 --reruns-delay 3
+
 # 마커로 실행
 pytest -m ui
 
@@ -128,21 +131,21 @@ allure serve ./allure-results
 
 ## 테스트 케이스
 
-### UI 테스트 (22개 실행 / 2개 skip)
+### UI 테스트 (24개: 20개 실행 · 1개 known issue(xfail) · 3개 skip)
 
 | 테스트 | 케이스 수 | 검증 내용 |
 |--------|-----------|-----------|
-| `test_ui_login` | 3 | 잘못된 계정 로그인 실패, 빈 계정 로그인 실패, 로그인 페이지 요소 확인 |
-| `test_ui_search` | 8 | 유효 검색어 3종(사과/우유/계란), 빈 검색어, 첫 번째 결과 클릭, 특수문자 3종 |
+| `test_ui_login` | 3 | 빈 계정 로그인 실패, 로그인 페이지 요소 확인 (잘못된 계정 케이스는 ⚠️ skip - 로그인 봇 탐지) |
+| `test_ui_search` | 8 | 유효 검색어 3종(사과/우유/계란), 빈 검색어, 첫 번째 결과 클릭, 특수문자 3종 (`' OR 1=1--` 은 🟡 known issue: 사이트가 에러 페이지 노출) |
 | `test_blank_search` | 1 | 빈 검색어 입력 시 '검색어를 입력해주세요' 팝업 확인 |
 | `test_ui_cart` | 1 | 장바구니 아이콘 클릭 → 장바구니 페이지 이동 확인 |
-| `test_ui_add_goods` | 1 | 상품 검색 → 수량 조절(2회 증가, 1회 감소) → 장바구니 담기 |
-| `test_add_goods_to_cart` | 1 | 로그인 → 검색 → 수량 조절 → 장바구니 담기 플로우 |
-| `test_ui_goods_add_flow` | 1 | 로그인 → 검색 → 상품 추가 → 장바구니 이동 E2E |
-| `test_cart_management` | 2 | 여러 상품(3개) 장바구니 담기, 장바구니 상품 삭제 |
+| `test_ui_add_goods` | 1 | 상품 검색 → 수량 조절(2회 증가, 1회 감소) → 장바구니 담기 → 담기 완료 토스트 확인 |
+| `test_add_goods_to_cart` | 1 | ⚠️ skip - 로그인 필요(로그인 봇 탐지로 자동화 불가) |
+| `test_ui_goods_add_flow` | 1 | ⚠️ skip - 로그인 필요(로그인 봇 탐지로 자동화 불가) |
+| `test_cart_management` | 2 | 여러 상품(3개) 장바구니 담기 → 개수 3 확인, 1개 담고 삭제 → 개수 1→0 확인 |
 | `test_ui_sort_button` | 4 | 추천순 / 신상품순 / 낮은가격순 / 높은가격순 정렬 |
-| `test_ui_quantity` | 1 | ⚠️ skip - 비로그인 상태 장바구니 팝업 미지원 |
-| `test_invalid_search` | 1 | ⚠️ skip - 검색 결과 없음 메시지 UI 변경 이슈 |
+| `test_ui_quantity` | 1 | 상품 선택 팝업 수량 +2 / -1 → 클릭마다 반영 확인 |
+| `test_invalid_search` | 1 | 없는 검색어 → 결과 없음 메시지 확인 |
 
 테스트 대상: https://www.kurly.com
 
@@ -187,6 +190,12 @@ BasePage (공통: open, find_element, click, send_keys, is_displayed, take_scree
 ```
 
 **concurrency 설정**: 동시 배포 방지 (`cancel-in-progress: true`)
+
+**안정성 · 가시성 (2026-11-01)** — 자세한 내용: [docs/changes/2026-11-01_selenium-flaky-hardening.md](docs/changes/2026-11-01_selenium-flaky-hardening.md)
+- `pytest-xdist` 파일 단위 병렬(워커 3), `pytest-rerunfailures` 1회 재시도
+- 재시도로 통과한 테스트는 통과로 치지 않고 **Flaky** 로 따로 집계 → Actions 요약 · Slack 에 표시
+- 실패 시 스크린샷 · URL · page source · 브라우저 콘솔 로그를 Allure 첨부 + `failure-evidence` artifact 업로드
+- 사이트 결함은 `xfail(strict=True)` known issue 로 분리 (고쳐지면 XPASS 로 CI 가 알림)
 
 ### Jira 자동 연동
 

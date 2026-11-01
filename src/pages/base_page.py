@@ -5,12 +5,18 @@ from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException, ElementClickInterceptedException
+from selenium.common.exceptions import (
+    TimeoutException,
+    NoSuchElementException,
+    ElementClickInterceptedException,
+    StaleElementReferenceException,
+)
 from utils.logger import logger
-from typing import Optional, Tuple, Any
+from typing import Optional, Tuple, Any, Callable, TypeVar
 
 
 Locator = Tuple[By, str]
+T = TypeVar("T")
 
 
 class BasePage:
@@ -262,30 +268,90 @@ class BasePage:
 
     def click(self, locator: Locator, timeout: Optional[int] = None) -> None:
         """
-        요소 클릭 (clickable 기준)
+        요소 클릭 (clickable 기준, stale/가림 대응)
+
+        - 매 시도마다 locator로 요소를 새로 찾는다. React가 재렌더링하면 이전에 찾아둔
+          WebElement는 stale이 되므로 "찾아둔 요소 재사용"을 하지 않는다.
+        - element_to_be_clickable은 다른 요소(딤/토스트/배너)에 가려졌는지는 보장하지
+          않아서, 클릭 지점의 최상단 요소가 자기 자신인지 짧게 확인한 뒤 클릭한다.
 
         Args:
             locator: 클릭할 요소 locator
             timeout: 이 클릭에서만 적용할 timeout
         """
+        last_error: Optional[Exception] = None
+        for attempt in range(3):
+            try:
+                element = self.wait_clickable(locator, timeout)
+                self.wait_click_point_clear(element, timeout=2)
+                element.click()
+                return
+            except (StaleElementReferenceException, ElementClickInterceptedException) as e:
+                last_error = e
+                logger.info(f"클릭 재시도 {attempt + 1}/3 ({type(e).__name__}): {locator}")
+                time.sleep(0.5)
+            except TimeoutException as e:
+                last_error = e
+                break
+        self.take_screenshot(name=f"click_failed_{locator}")
+        logger.error(f"클릭 실패: {locator} ({type(last_error).__name__})")
+        raise TimeoutException(f"❌ 요소를 클릭할 수 없습니다: {locator} ({type(last_error).__name__})")
+
+    # =========================
+    # Stale / 가림 대응 헬퍼
+    # =========================
+
+    def is_click_point_clear(self, element) -> bool:
+        """요소 중앙 좌표의 최상단 요소가 자기 자신(또는 자식)인지 = 다른 요소에 가려지지 않았는지"""
+        return bool(self.driver.execute_script(
+            """
+            const el = arguments[0];
+            const rect = el.getBoundingClientRect();
+            const top = document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2);
+            return top === el || el.contains(top);
+            """,
+            element,
+        ))
+
+    def wait_click_point_clear(self, element, timeout: float = 2) -> bool:
+        """
+        딤/애니메이션 오버레이가 걷힐 때까지 짧게 대기.
+
+        Returns:
+            bool: 가림이 풀리면 True, timeout이면 False (클릭 자체는 호출한 쪽에서 시도)
+        """
         try:
-            element = self.wait_clickable(locator, timeout)
-            # element_to_be_clickable은 표시/활성화 여부만 보장할 뿐, 다른 요소(배너·팝업 등
-            # 일시적으로 떠 있다 사라지는 오버레이)에 가려져 있지 않은지는 보장하지 않는다.
-            # 실사이트 조사로 확인: 가로채는 오버레이는 대부분 순간적으로 떴다 사라지므로
-            # 짧게 재시도하면 해소되는 경우가 많음.
-            for attempt in range(3):
-                try:
-                    element.click()
-                    return
-                except ElementClickInterceptedException:
-                    if attempt == 2:
-                        raise
-                    time.sleep(0.5)
-        except (TimeoutException, ElementClickInterceptedException):
-            self.take_screenshot(name=f"click_failed_{locator}")
-            logger.error(f"클릭 실패: {locator}")
-            raise TimeoutException(f"❌ 요소를 클릭할 수 없습니다: {locator}")
+            return WebDriverWait(self.driver, timeout).until(lambda d: self.is_click_point_clear(element))
+        except TimeoutException:
+            return False
+
+    def retry_on_stale(self, action: Callable[[], T], attempts: int = 3, delay: float = 0.3) -> T:
+        """
+        action을 실행하다 StaleElementReferenceException이 나면 다시 실행한다.
+
+        action 안에서 요소를 "새로 찾아야" 의미가 있다(찾아둔 요소를 넘기면 계속 stale).
+        """
+        for attempt in range(attempts):
+            try:
+                return action()
+            except StaleElementReferenceException:
+                if attempt == attempts - 1:
+                    raise
+                logger.info(f"stale 요소 재조회 후 재시도 {attempt + 1}/{attempts}")
+                time.sleep(delay)
+        raise RuntimeError("unreachable")
+
+    def wait_for_staleness(self, element, timeout: Optional[int] = None) -> bool:
+        """
+        요소가 DOM에서 제거(교체)될 때까지 대기. 팝업이 스스로 닫히는 것 등을 확인할 때 사용.
+
+        Returns:
+            bool: 제거되면 True, timeout이면 False
+        """
+        try:
+            return self._get_wait(timeout).until(EC.staleness_of(element))
+        except TimeoutException:
+            return False
 
     def send_keys(
         self,

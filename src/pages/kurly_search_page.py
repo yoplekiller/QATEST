@@ -8,6 +8,7 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.common.exceptions import (
     ElementClickInterceptedException,
     NoSuchElementException,
+    StaleElementReferenceException,
     TimeoutException,
 )
 from selenium.webdriver.common.action_chains import ActionChains
@@ -37,18 +38,27 @@ class KurlySearchPage(BasePage):
 
     
     # Locators - ALT 기능 (검색 결과 내 수량 조절 및 확인)
-    QUANTITY_UP_BUTTON_IN_ALT = (By.XPATH, "//button[@aria-label='Stepper plus']")
-    QUANTITY_DOWN_BUTTON_IN_ALT = (By.XPATH, "//button[@aria-label='Stepper minus']")
-    QUANTITY_DISPLAY_IN_ALT = (By.XPATH, "//button[@aria-label='Stepper plus']/preceding-sibling::*[1] | //button[@aria-label='Stepper minus']/following-sibling::*[1]") # 수량 표시 요소 ALT 내
-    ADD_TO_CART_BUTTONS_IN_ALT = (By.XPATH, "//button[contains(.,'장바구니 담기')]") # 금액이 앞에 붙은 장바구니 담기 버튼 ALT 내
+    # ALT(상품 선택 팝업)는 role=dialog. 팝업 안 요소는 전부 dialog 기준으로 좁혀서,
+    # 팝업 뒤 검색 결과 카드의 버튼이 먼저 잡히는 일을 막는다(2026-11-01 실측).
+    ALT_DIALOG = (By.XPATH, "//*[@role='dialog']")
+    QUANTITY_UP_BUTTON_IN_ALT = (By.XPATH, "//*[@role='dialog']//button[@aria-label='Stepper plus']")
+    QUANTITY_DOWN_BUTTON_IN_ALT = (By.XPATH, "//*[@role='dialog']//button[@aria-label='Stepper minus']")
+    # 첫 번째 스텝퍼(옵션형 상품이면 첫 옵션)의 수량 표시.
+    # 스텝퍼 구조(2026-11-01 실측): [- 버튼][p: 수량][+ 아이콘 div][+ 버튼] 이라
+    # "+ 버튼 바로 앞 형제"는 아이콘 div(빈 텍스트)다 → - 버튼 다음의 p 를 읽는다.
+    QUANTITY_DISPLAY_IN_ALT = (By.XPATH, "(//*[@role='dialog']//button[@aria-label='Stepper minus'])[1]/following-sibling::p[1]")
+    ADD_TO_CART_BUTTONS_IN_ALT = (By.XPATH, "//*[@role='dialog']//button[contains(.,'장바구니 담기')]") # 금액이 앞에 붙은 장바구니 담기 버튼 ALT 내
+    ADD_TO_CART_TOAST = (By.XPATH, "//*[contains(text(),'장바구니에 상품을 담았습니다')]")
     SEARCH_RESULT_ADD_BUTTONS = (
         By.XPATH,
-        "//button[@type='button' and not(@disabled) and "
+        "//button[@type='button' and not(@disabled) and not(ancestor::*[@role='dialog']) and "
         "(contains(normalize-space(.), '담기') "
         "or contains(normalize-space(.), '장바구니') "
         "or contains(@aria-label, '담기') "
         "or contains(@aria-label, '장바구니'))]",
     )
+    # 검색어가 보안 필터 등에 걸렸을 때 뜨는 일반 에러 페이지
+    ERROR_PAGE_TEXT = (By.XPATH, "//*[contains(normalize-space(), '알 수 없는 에러가 발생했습니다')]")
 
 
     # Locators - 정렬
@@ -205,21 +215,27 @@ class KurlySearchPage(BasePage):
         if n < 1:
             raise ValueError("n은 1 이상의 값이어야 합니다.")
 
-        try:
-            element = self._get_wait(10).until(find_nth_visible_add_button)
-        except TimeoutException:
-            self.take_screenshot(name=f"add_button_not_found_{n}")
-            raise TimeoutException(f"{n}번째 장바구니 담기 버튼을 찾을 수 없습니다.")
+        def find_and_click():
+            # 검색 결과 목록은 장바구니 담기/무한스크롤 때 재렌더링되므로 찾기~클릭을 한 단위로 재시도
+            try:
+                element = self._get_wait(10).until(find_nth_visible_add_button)
+            except TimeoutException:
+                self.take_screenshot(name=f"add_button_not_found_{n}")
+                raise TimeoutException(f"{n}번째 장바구니 담기 버튼을 찾을 수 없습니다.")
 
-        self.driver.execute_script(
-            "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
-            element,
-        )
+            self.driver.execute_script(
+                "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
+                element,
+            )
 
-        try:
-            ActionChains(self.driver).move_to_element(element).click().perform()
-        except ElementClickInterceptedException:
-            self.driver.execute_script("arguments[0].click();", element)
+            try:
+                ActionChains(self.driver).move_to_element(element).click().perform()
+            except ElementClickInterceptedException:
+                self.driver.execute_script("arguments[0].click();", element)
+
+        self.retry_on_stale(find_and_click)
+        # 팝업이 열린 것까지 확인해야 다음 단계(수량/담기)가 이전 팝업 잔상과 섞이지 않는다
+        self.wait_visible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
 
     def is_keyword_in_page_source(self, keyword: str) -> bool:
         """
@@ -233,111 +249,127 @@ class KurlySearchPage(BasePage):
         """
         return keyword in self.driver.page_source
     
-    def quantity_up_in_alt(self, times: int =1) -> None:
+    def _read_quantity_in_alt(self):
+        """ALT 첫 번째 스텝퍼 수량. 재렌더링 중이라 못 읽으면 None."""
+        try:
+            return int(self.driver.find_element(*self.QUANTITY_DISPLAY_IN_ALT).text.strip())
+        except (NoSuchElementException, StaleElementReferenceException, ValueError):
+            return None
+
+    def get_quantity_in_alt(self, timeout: int = 5) -> int:
+        """ALT 첫 번째 스텝퍼의 현재 수량 (읽힐 때까지 대기)"""
+        self._get_wait(timeout).until(lambda d: self._read_quantity_in_alt() is not None)
+        return self._read_quantity_in_alt()
+
+    def _step_quantity_in_alt(self, button_locator, delta: int, times: int) -> None:
         """
-        ALT에서 수량 올리기
+        스텝퍼를 times번 누르고, 매번 수량이 실제로 delta만큼 바뀐 것까지 확인한다.
+
+        예전에는 클릭 사이에 sleep(0.3)만 두고 예외를 삼켜서(return False) 클릭이 씹혀도
+        테스트가 모른 채 진행했다(2026-10-24 CI: 초기 2, 기대 3 실패). 이제 반영을 기다리고,
+        반영이 안 되면 어떤 값에서 멈췄는지 메시지와 함께 실패한다.
+        """
+        for _ in range(times):
+            before = self.get_quantity_in_alt()
+            expected = before + delta
+            self.click(button_locator)
+            try:
+                self._get_wait(5).until(lambda d: self._read_quantity_in_alt() == expected)
+            except TimeoutException:
+                self.take_screenshot(name="quantity_not_changed")
+                raise TimeoutException(
+                    f"❌ 수량이 {before} → {expected}로 바뀌지 않았습니다(현재 {self._read_quantity_in_alt()})"
+                )
+
+    def quantity_up_in_alt(self, times: int = 1) -> None:
+        """
+        ALT에서 수량 올리기 (클릭마다 반영 확인)
 
         Args:
             times: 클릭 횟수 (기본값: 1)
         """
-        try:
-            self.wait_clickable(self.QUANTITY_UP_BUTTON_IN_ALT, timeout=5)
-            for i in range(times):
-                self.click(self.QUANTITY_UP_BUTTON_IN_ALT)
-                if i < times - 1:
-                    # 연속 클릭 사이 딜레이 없이 바로 다음 클릭을 보내면 스텝퍼
-                    # 컴포넌트의 디바운스/애니메이션 때문에 일부 클릭이 씹혀
-                    # 반영 안 되는 현상이 실측 확인됨(2026-09-20) - 반영될
-                    # 시간을 준다.
-                    self.sleep(0.3)
-        except Exception:
-            return False
+        self._step_quantity_in_alt(self.QUANTITY_UP_BUTTON_IN_ALT, +1, times)
 
-    def quantity_down_in_alt(self, times: int =1) -> None:
+    def quantity_down_in_alt(self, times: int = 1) -> None:
         """
-        ALT에서 수량 내리기
+        ALT에서 수량 내리기 (클릭마다 반영 확인)
 
         Args:
             times: 클릭 횟수 (기본값: 1)
         """
-        try:
-            self.wait_clickable(self.QUANTITY_DOWN_BUTTON_IN_ALT, timeout=5)
-            for i in range(times):
-                self.click(self.QUANTITY_DOWN_BUTTON_IN_ALT)
-                if i < times - 1:
-                    self.sleep(0.3)  # 위 quantity_up_in_alt와 동일한 이유
-        except Exception:
-            return False
-        
-    
+        self._step_quantity_in_alt(self.QUANTITY_DOWN_BUTTON_IN_ALT, -1, times)
+
     def is_diplayed_quantity_in_alt(self, expected_quantity: int) -> bool:
         """
         ALT에서 표시된 수량이 예상 수량과 일치하는지 확인
 
-        Args:add_to_cart_in_alt
+        Args:
             expected_quantity: 예상 수량
 
-        Returns://button[contains(text(),'3,070원 장바구니 담기')]
+        Returns:
             bool: 일치하면 True
         """
-        quantity_text = self.get_text(self.QUANTITY_DISPLAY_IN_ALT)
-        try:
-            current_quantity = int(quantity_text)
-            return current_quantity == expected_quantity
-        except ValueError:
-            return False
-        
+        return self._read_quantity_in_alt() == expected_quantity
 
-    POPUP_CLOSE_BUTTON = (By.XPATH, "//button[@aria-label='닫기']")
+    POPUP_CLOSE_BUTTON = (By.XPATH, "//*[@role='dialog']//button[@aria-label='닫기']")
 
     def click_add_to_cart_in_popup(self) -> None:
         """add_to_cart_in_alt의 별칭 - 팝업에서 장바구니 담기 버튼 클릭"""
         self.add_to_cart_in_alt()
 
     def close_cart_popup(self) -> None:
-        """장바구니 팝업 닫기 버튼 클릭"""
-        def find_visible_close_button(driver):
-            close_buttons = driver.find_elements(*self.POPUP_CLOSE_BUTTON)
-            for button in close_buttons:
-                if button.is_displayed() and button.is_enabled():
-                    return button
-            return None
+        """
+        ALT가 아직 열려 있으면 닫기 버튼으로 닫는다. 이미 닫혔으면 아무 것도 하지 않는다.
 
-        def is_click_point_clear(driver):
-            return driver.execute_script(
-                """
-                const el = arguments[0];
-                const rect = el.getBoundingClientRect();
-                const x = rect.left + rect.width / 2;
-                const y = rect.top + rect.height / 2;
-                const top = document.elementFromPoint(x, y);
-                return top === el || el.contains(top);
-                """,
-                close_button,
+        닫기 버튼은 매번 새로 찾는다 - 팝업이 닫히는 중(재렌더링)에 예전에 찾아둔 버튼을
+        누르면 StaleElementReferenceException이 난다(2026-10-28/29 CI 실패 원인).
+        """
+        def close_once() -> None:
+            buttons = [b for b in self.driver.find_elements(*self.POPUP_CLOSE_BUTTON) if b.is_displayed()]
+            if not buttons:
+                return
+            button = buttons[0]
+            self.driver.execute_script(
+                "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
+                button,
             )
+            if self.wait_click_point_clear(button, timeout=3):
+                try:
+                    button.click()
+                    return
+                except ElementClickInterceptedException:
+                    pass
+            self.driver.execute_script("arguments[0].click();", button)
 
-        wait = WebDriverWait(self.driver, 10)
-        close_button = wait.until(find_visible_close_button)
-        self.driver.execute_script(
-            "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
-            close_button,
-        )
-
-        try:
-            WebDriverWait(self.driver, 3).until(is_click_point_clear)
-            close_button.click()
-        except (ElementClickInterceptedException, TimeoutException):
-            self.driver.execute_script("arguments[0].click();", close_button)
-
+        self.retry_on_stale(close_once)
         self.wait_until_invisible(self.POPUP_CLOSE_BUTTON, timeout=10)
 
-    def add_to_cart_in_alt(self) -> None:
-        """ALT에서 장바구니 담기 버튼 클릭"""
+    def add_to_cart_in_alt(self) -> bool:
+        """
+        ALT에서 장바구니 담기 버튼 클릭
+
+        2026-11-01 실측: 담기를 누르면 사이트가 ALT를 0.5~0.8초 안에 스스로 닫고
+        '장바구니에 상품을 담았습니다.' 토스트를 띄운다. 그래서 닫기 버튼을 누르는 대신
+        팝업 DOM이 사라지는 것(staleness)을 기다리고, 그래도 안 닫혔을 때만 직접 닫는다.
+
+        Returns:
+            bool: 담기 완료 토스트를 봤으면 True
+        """
         self.wait_visible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
         self.select_first_option_if_needed()
+        dialog = self.wait_present(self.ALT_DIALOG, timeout=5)
         self.click(self.ADD_TO_CART_BUTTONS_IN_ALT)
-        self.close_cart_popup()
+
+        try:
+            self.wait_visible(self.ADD_TO_CART_TOAST, timeout=5)
+            toast_seen = True
+        except TimeoutException:
+            toast_seen = False
+
+        if not self.wait_for_staleness(dialog, timeout=5):
+            self.close_cart_popup()
         self.wait_until_invisible(self.ADD_TO_CART_BUTTONS_IN_ALT, timeout=10)
+        return toast_seen
 
     def select_first_option_if_needed(self) -> None:
         """
@@ -345,25 +377,23 @@ class KurlySearchPage(BasePage):
         시작한다. 아무 옵션도 선택하지 않은 채 장바구니 담기를 확정하면 사이트가
         "최소 구매 수량은 N개 입니다" 경고창을 띄우며 막아버려(실사이트 확인,
         2026-09-20), 이후 상품 선택 로직 전체가 그 경고창에 가려 깨진다.
-        Stepper plus 버튼이 보이면(=옵션형 상품) 첫 옵션을 수량 1개로 선택해준다.
+        첫 옵션 수량이 0일 때만 1개로 올린다.
+
+        2026-11-01 수정: 예전에는 스텝퍼가 보이기만 하면 +를 눌렀는데, 단일 상품도
+        스텝퍼가 있고 수량 1로 시작해서 의도와 달리 2개가 담겼다(가격 1,080원 → 2,160원 실측).
         """
         steppers = [
             button
             for button in self.driver.find_elements(*self.QUANTITY_UP_BUTTON_IN_ALT)
             if button.is_displayed() and button.is_enabled()
         ]
-        if not steppers:
+        if not steppers or self.get_quantity_in_alt() != 0:
             return
+        self._step_quantity_in_alt(self.QUANTITY_UP_BUTTON_IN_ALT, +1, 1)
 
-        target = steppers[0]
-        self.driver.execute_script(
-            "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
-            target,
-        )
-        try:
-            target.click()
-        except ElementClickInterceptedException:
-            self.driver.execute_script("arguments[0].click();", target)
+    def is_error_page(self) -> bool:
+        """'알 수 없는 에러가 발생했습니다' 일반 에러 페이지가 떠 있는지"""
+        return any(e.is_displayed() for e in self.driver.find_elements(*self.ERROR_PAGE_TEXT))
 
 
     def click_first_good(self) -> None:

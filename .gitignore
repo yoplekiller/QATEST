@@ -49,3 +49,6 @@ test-report_*.xlsx
 
 # 개인 설정 파일
 config.local.yaml
+# 실패 증거 / flaky 집계 (CI artifact 로만 보관)
+test-evidence/
+test_results_flaky.json

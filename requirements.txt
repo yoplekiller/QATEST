@@ -3,6 +3,8 @@ pytest==8.3.4
 pytest-html==4.1.1
 pytest-metadata==3.1.1
 allure-pytest==2.13.5
+pytest-xdist==3.8.0
+pytest-rerunfailures==16.7
 
 # Web Automation
 selenium==4.27.0

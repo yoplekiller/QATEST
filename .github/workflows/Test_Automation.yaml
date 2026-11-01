@@ -46,16 +46,38 @@ jobs:
           echo "KURLY_TEST_USERNAME=${{ secrets.KURLY_TEST_USERNAME }}" >> $GITHUB_ENV
           echo "KURLY_TEST_PASSWORD=${{ secrets.KURLY_TEST_PASSWORD }}" >> $GITHUB_ENV
 
+      # -n 3 --dist loadfile: 파일 단위로 워커 3개에 분배. 드라이버가 module scope 이고
+      #   장바구니 상태를 파일 안 테스트끼리 이어 쓰므로 같은 파일은 같은 워커에 둔다.
+      #   워커마다 브라우저(=비회원 장바구니 쿠키)가 따로라 워커 간 상태 간섭은 없다.
+      # --reruns 1: 실사이트 일시 오류 흡수용. 재시도로 통과한 테스트는 conftest 가
+      #   test_results_flaky.json 으로 따로 집계해 요약/Slack 에 'Flaky' 로 표시한다.
       - name: Run UI Tests
         run: |
-          rm -rf allure-results-ui || true
+          rm -rf allure-results-ui test-evidence || true
           mkdir -p allure-results-ui
           venv/bin/python -m pytest src/tests/ui \
+            -n 3 --dist loadfile \
+            --reruns 1 --reruns-delay 3 \
             --alluredir=allure-results-ui \
             --junitxml=ui_report.xml \
             --json-report --json-report-file=test_results_ui.json \
-            --capture=tee-sys -v \
+            -v \
             --maxfail=100 --disable-warnings --tb=short
+
+      - name: Write Test Summary
+        if: always()
+        run: python utils/write_ci_summary.py test_results_ui.json test_results_flaky.json >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload Failure Evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failure-evidence
+          path: |
+            test-evidence/
+            screenshots/
+          retention-days: 7
+          if-no-files-found: ignore
 
       - name: Upload UI Test Results JSON
         if: always()
@@ -79,7 +101,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-report
-          path: ui_report.xml
+          path: |
+            ui_report.xml
+            test_results_flaky.json
           retention-days: 7
           if-no-files-found: warn
 

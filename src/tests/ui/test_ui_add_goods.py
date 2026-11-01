@@ -49,15 +49,15 @@ class TestAddGoods:
                 kurly_search_page.quantity_down_in_alt(1)
 
             with allure.step("장바구니에 담기"):
-                kurly_search_page.add_to_cart_in_alt()
+                toast_seen = kurly_search_page.add_to_cart_in_alt()
 
             # Then: 검색 결과 및 추가 성공 확인
             with allure.step("결과 확인"):
                 kurly_search_page.take_screenshot("상품_추가_완료")
 
-                # 검색 키워드가 페이지에 포함되어 있는지 확인
-                assert kurly_search_page.is_keyword_in_page_source("과자"), \
-                    "❌ 검색 결과에서 '과자'가 포함되지 않음"
+                # 예전 검증은 "페이지 소스에 '과자'가 있다"뿐이라 담기가 실패해도 통과했다.
+                # 담기 성공 시에만 뜨는 토스트로 결과를 검증한다.
+                assert toast_seen, "❌ '장바구니에 상품을 담았습니다' 토스트가 보이지 않음(담기 실패)"
 
                 allure.attach(
                     "상품 추가 플로우가 성공적으로 완료되었습니다",

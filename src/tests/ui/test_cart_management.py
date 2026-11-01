@@ -1,6 +1,5 @@
 import pytest
 import allure
-import time
 
 
 @pytest.mark.ui
@@ -29,32 +28,19 @@ class TestCartManagement:
             items_to_add = 3
 
             with allure.step(f"{items_to_add}개 상품을 장바구니에 담기"):
+                # stale 대응은 page object(click_nth_add_button/add_to_cart_in_alt)가 로케이터
+                # 재조회로 처리하므로, 테스트에서 'stale' 문자열을 잡아 재시도하던 루프는 제거했다.
                 for i in range(2, items_to_add + 2):
-                    retry = 0
-                    while retry < 2:
-                        try:
-                            kurly_search_page.click_nth_add_button(n=i)
-                            kurly_search_page.add_to_cart_in_alt()
-                            # add_to_cart_in_alt()가 팝업이 닫힐 때까지 이미
-                            # wait_until_invisible로 기다린 뒤 반환하므로 추가 대기 불필요
-                            break
-                        except Exception as e:
-                            if 'stale element reference' in str(e).lower():
-                                time.sleep(1)
-                                retry += 1
-                            else:
-                                raise
+                    kurly_search_page.click_nth_add_button(n=i)
+                    assert kurly_search_page.add_to_cart_in_alt(), \
+                        f"{i}번째 상품 담기 후 '장바구니에 상품을 담았습니다' 토스트가 보이지 않음"
 
             with allure.step("장바구니로 이동"):
                 kurly_main_page.go_to_cart()
-                # URL은 클릭 즉시 바뀌지만 실제 장바구니 개수 데이터는 그보다
-                # 늦게 채워짐(SPA 특성, 2026-09-20 실측: URL 대기 직후 0 ->
-                # +1.5초 후 정상값) - wait_until_url_contains로는 못 잡아서
-                # sleep 유지가 맞음.
-                time.sleep(2)  # 페이지 로드 대기
 
             with allure.step(f"장바구니에 {items_to_add}개 상품이 있는지 확인"):
-                cart_count = kurly_cart_page.get_cart_item_count()
+                # 개수는 진입 직후 0이었다가 비동기로 채워짐 - 고정 sleep 대신 기대값까지 폴링
+                cart_count = kurly_cart_page.wait_for_item_count(items_to_add)
 
                 allure.attach(
                     f"예상: {items_to_add}개, 실제: {cart_count}개",
@@ -87,17 +73,16 @@ class TestCartManagement:
 
         with allure.step("상품을 장바구니에 담기"):
             kurly_search_page.click_nth_add_button(n=1)
-            kurly_search_page.add_to_cart_in_alt()
+            assert kurly_search_page.add_to_cart_in_alt(), \
+                "담기 후 '장바구니에 상품을 담았습니다' 토스트가 보이지 않음"
 
         with allure.step("장바구니 페이지로 이동"):
             kurly_main_page.go_to_cart()
-            # URL은 클릭 즉시 바뀌지만 실제 장바구니 개수 데이터는 그보다
-            # 늦게 채워짐(SPA 특성, 2026-09-20 실측) - sleep 유지가 맞음.
-            time.sleep(2)  # 페이지 로드 대기
 
         with allure.step("장바구니에 상품이 있는지 확인"):
-            initial_count = kurly_cart_page.get_cart_item_count()
-            assert initial_count > 0, "장바구니에 상품이 없습니다"
+            # 비운 뒤 1종을 담았으므로 정확히 1이어야 한다(> 0 보다 강한 검증)
+            initial_count = kurly_cart_page.wait_for_item_count(1)
+            assert initial_count == 1, f"장바구니 상품 종류 수가 1이 아닙니다: {initial_count}"
 
             allure.attach(
                 f"삭제 전 상품 개수: {initial_count}",
@@ -107,10 +92,9 @@ class TestCartManagement:
 
         with allure.step("상품 삭제"):
             kurly_cart_page.choiced_item_delete()
-            kurly_cart_page.wait_until_count_differs_from(initial_count, timeout=10)
 
         with allure.step("상품이 삭제되었는지 확인"):
-            final_count = kurly_cart_page.get_cart_item_count()
+            final_count = kurly_cart_page.wait_for_item_count(initial_count - 1)
 
             allure.attach(
                 f"삭제 후 상품 개수: {final_count}",

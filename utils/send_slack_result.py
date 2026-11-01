@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 import requests
@@ -6,6 +7,18 @@ import requests
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from parse_test_result import parse_test_result, get_failed_test_names
+
+
+def load_flaky_tests(path: str) -> list:
+    """conftest 가 남긴 flaky 목록(재시도 후 통과한 테스트 이름). 파일이 없으면 빈 목록."""
+    if not os.path.exists(path):
+        return []
+    try:
+        with open(path, encoding="utf-8") as f:
+            nodeids = json.load(f).get("flaky_passed_on_rerun", [])
+    except (OSError, ValueError):
+        return []
+    return [nodeid.split("::")[-1] for nodeid in nodeids]
 
 
 def send_slack_result():
@@ -32,6 +45,10 @@ def send_slack_result():
 
     all_failed_tests = get_failed_test_names(ui_report_path)
 
+    # 재시도(--reruns)로 통과한 테스트는 junit 에서 passed 로 집계되므로, conftest 가 남긴
+    # test_results_flaky.json 으로 따로 표시해 재시도가 불안정성을 숨기지 않게 한다.
+    flaky_tests = load_flaky_tests("reports/test_results_flaky.json" if is_docker else "test_results_flaky.json")
+
 
     # 브랜치별 Allure Report URL (슬래시를 대시로 변환)
     safe_branch = branch_name.replace("/", "-")
@@ -52,6 +69,11 @@ def send_slack_result():
             failed_test_str += f"\n  _...and {remaining_count}   more (전체 보기: <{allure_report_url}|Allure Report>)_"
     else:
         failed_test_str = "✅ *모든 테스트가 완료되었습니다!* 🎉"
+
+    if flaky_tests:
+        failed_test_str += "\n\n⚠️ *Flaky (재시도 후 통과 - 원인 확인 필요):*\n" + "\n".join(
+            f"  • `{name}`" for name in flaky_tests[:MAX_DISPLAY_FAILURES]
+        )
 
     # 성공/실패에 따른 아이콘
     status_icon = "✅" if failures == 0 and errors == 0 else "❌"
@@ -86,6 +108,10 @@ def send_slack_result():
                     {
                         "type": "mrkdwn",
                         "text": f"*⏭️ Skipped:*\n{skipped}"
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": f"*🔁 Flaky(재시도 통과):*\n{len(flaky_tests)}"
                     }
                 ]
             },

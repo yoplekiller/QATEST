@@ -120,27 +120,30 @@ pytest --alluredir=./allure-results
 # By marker
 pytest -m ui
 
+# Same as CI: file-level parallel (3 workers) + 1 rerun (rerun-passes are reported separately as Flaky)
+pytest -n 3 --dist loadfile --reruns 1 --reruns-delay 3
+
 # View Allure report
 allure serve ./allure-results
 ```
 
 ## Test Cases
 
-### UI Tests (22 active / 2 skipped)
+### UI Tests (24: 20 active · 1 known issue (xfail) · 3 skipped)
 
 | Test | Cases | Validation |
 |------|-------|------------|
-| `test_ui_login` | 3 | Invalid login, empty credentials, login page elements |
-| `test_ui_search` | 8 | Valid keywords ×3 (사과/우유/계란), empty search, click first result, special chars ×3 |
+| `test_ui_login` | 3 | Empty credentials, login page elements (invalid-login case ⚠️ skipped - login bot detection) |
+| `test_ui_search` | 8 | Valid keywords ×3 (사과/우유/계란), empty search, click first result, special chars ×3 (`' OR 1=1--` is a 🟡 known issue: site shows a generic error page) |
 | `test_blank_search` | 1 | Empty keyword → '검색어를 입력해주세요' popup |
 | `test_ui_cart` | 1 | Cart icon click → cart page navigation |
-| `test_ui_add_goods` | 1 | Search → quantity adjustment (up ×2, down ×1) → add to cart |
-| `test_add_goods_to_cart` | 1 | Login → search → quantity adjustment → add to cart flow |
-| `test_ui_goods_add_flow` | 1 | Login → search → add product → cart navigation E2E |
-| `test_cart_management` | 2 | Add 3 items to cart, remove item from cart |
+| `test_ui_add_goods` | 1 | Search → quantity adjustment (up ×2, down ×1) → add to cart → success toast |
+| `test_add_goods_to_cart` | 1 | ⚠️ skip - requires login (blocked by login bot detection) |
+| `test_ui_goods_add_flow` | 1 | ⚠️ skip - requires login (blocked by login bot detection) |
+| `test_cart_management` | 2 | Add 3 items → cart count 3; add 1 and remove → count 1 → 0 |
 | `test_ui_sort_button` | 4 | Sort by recommend / new / low price / high price |
-| `test_ui_quantity` | 1 | ⚠️ skip - cart popup unavailable without login |
-| `test_invalid_search` | 1 | ⚠️ skip - Kurly no-result message UI changed |
+| `test_ui_quantity` | 1 | Product popup quantity +2 / -1, verifying each click is applied |
+| `test_invalid_search` | 1 | Unknown keyword → no-result message |
 
 Target: https://www.kurly.com
 
@@ -186,6 +189,12 @@ BasePage (common: open, find_element, click, send_keys, is_displayed, take_scree
 ```
 
 **concurrency**: prevents overlapping deployments (`cancel-in-progress: true`)
+
+**Stability & visibility (2026-11-01)** — details (Korean): [docs/changes/2026-11-01_selenium-flaky-hardening.md](docs/changes/2026-11-01_selenium-flaky-hardening.md)
+- `pytest-xdist` file-level parallel (3 workers), `pytest-rerunfailures` 1 rerun
+- Tests that pass only on rerun are not counted as plain passes — reported as **Flaky** in the Actions summary and Slack
+- On failure: screenshot, URL, page source and browser console log attached to Allure + uploaded as `failure-evidence` artifact
+- Site defects are tracked as `xfail(strict=True)` known issues (XPASS fails CI when the site fixes them)
 
 ### Jira Auto Integration
 

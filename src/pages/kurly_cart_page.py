@@ -3,7 +3,7 @@ Kurly 장바구니 페이지 Page Object
 마켓컬리 웹사이트의 장바구니 기능을 담당하는 페이지 오브젝트
 """
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import StaleElementReferenceException, TimeoutException
 from src.pages.base_page import BasePage
 from utils.logger import logger
 
@@ -123,6 +123,30 @@ class KurlyCartPage(BasePage):
         except TimeoutException:
             logger.warning(f"장바구니 개수가 {previous_count}에서 바뀌지 않음")
             return False
+
+    def wait_for_item_count(self, expected: int, timeout: int = 10) -> int:
+        """
+        장바구니 상품 종류 개수가 expected가 될 때까지 대기하고 마지막으로 읽은 값을 반환.
+
+        장바구니 진입 직후 개수가 잠깐 0으로 보였다가 비동기로 채워지는데(2026-09-20 실측),
+        예전에는 고정 sleep(2)로 기다렸다. 기대값이 정해진 상황에서는 값 자체를 폴링하는 게
+        더 빠르고(보통 1초 안) 느린 날에도 안 깨진다. timeout이면 그때 값을 그대로 돌려줘서
+        assert 메시지에 실제 값이 찍히게 한다.
+        """
+        last = {"count": None}
+
+        def reached(_):
+            try:
+                last["count"] = self.get_cart_item_count()
+            except (TimeoutException, StaleElementReferenceException):
+                return False
+            return last["count"] == expected
+
+        try:
+            self._get_wait(timeout).until(reached)
+        except TimeoutException:
+            logger.warning(f"장바구니 개수가 {expected}가 되지 않음(마지막 값 {last['count']})")
+        return last["count"] if last["count"] is not None else 0
 
     def uncheck_item(self) -> None:
         """
