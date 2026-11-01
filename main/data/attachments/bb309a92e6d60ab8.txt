@@ -1,0 +1,1 @@
+수집 실패: MaxRetryError: HTTPConnectionPool(host='localhost', port=36547): Max retries exceeded with url: /session/3ed7027afde8f47623454e945330154a/url (Caused by NewConnectionError("HTTPConnection(host='localhost', port=36547): Failed to establish a new connection: [Errno 111] Connection refused"))

@@ -1,0 +1,248 @@
+[32mINFO    [0m test_automation:base_page.py:82 페이지 열기: https://www.kurly.com/main
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/url {'url': 'https://www.kurly.com/main'}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "POST /session/b8afc2405dff63cecab3f5fd8238a1a6/url HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/window/maximize {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "POST /session/b8afc2405dff63cecab3f5fd8238a1a6/window/maximize HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":{"height":600,"width":800,"x":0,"y":0}} | headers=HTTPHeaderDict({'Content-Length': '48', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[32mINFO    [0m test_automation:base_page.py:94 페이지 로드 요청 완료: https://www.kurly.com/main
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/element {'using': 'xpath', 'value': "//input[@placeholder='검색어를 입력해주세요']"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "POST /session/b8afc2405dff63cecab3f5fd8238a1a6/element HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.769"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.769'}]}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "POST /session/b8afc2405dff63cecab3f5fd8238a1a6/execute/sync HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/element/f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.769/clear {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "POST /session/b8afc2405dff63cecab3f5fd8238a1a6/element/f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.769/clear HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/element/f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.769/value {'text': '사과', 'value': ['사', '과']}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "POST /session/b8afc2405dff63cecab3f5fd8238a1a6/element/f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.769/value HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/elements {'using': 'css selector', 'value': '.swal2-container.swal2-backdrop-show'}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "POST /session/b8afc2405dff63cecab3f5fd8238a1a6/elements HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/element {'using': 'css selector', 'value': '[id="submit"]'}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "POST /session/b8afc2405dff63cecab3f5fd8238a1a6/element HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.768"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.768'}]}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "POST /session/b8afc2405dff63cecab3f5fd8238a1a6/execute/sync HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 GET http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/element/f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.768/enabled {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "GET /session/b8afc2405dff63cecab3f5fd8238a1a6/element/f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.768/enabled HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/execute/sync {'script': '\n            const el = arguments[0];\n            const rect = el.getBoundingClientRect();\n         ...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.768'}]}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "POST /session/b8afc2405dff63cecab3f5fd8238a1a6/execute/sync HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/element/f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.768/click {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "POST /session/b8afc2405dff63cecab3f5fd8238a1a6/element/f.B0CB24D19F2E6E7F75CE5C42FA4CABF0.d.FCFE728FDABDD9AEEC73F0A19927A97D.e.768/click HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 GET http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/url {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:550 http://localhost:48455 "GET /session/b8afc2405dff63cecab3f5fd8238a1a6/url HTTP/1.1" 200 0
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:436 Remote response: status=200 | data={"value":"https://www.kurly.com/main"} | headers=HTTPHeaderDict({'Content-Length': '38', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:465 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 GET http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/url {}
+[35mDEBUG   [0m urllib3.util.retry:retry.py:557 Incremented Retry for (url='/session/b8afc2405dff63cecab3f5fd8238a1a6/url'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:874 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /session/b8afc2405dff63cecab3f5fd8238a1a6/url
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:247 Starting new HTTP connection (2): localhost:48455
+[35mDEBUG   [0m urllib3.util.retry:retry.py:557 Incremented Retry for (url='/session/b8afc2405dff63cecab3f5fd8238a1a6/url'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:874 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=48455): Failed to establish a new connection: [Errno 111] Connection refused")': /session/b8afc2405dff63cecab3f5fd8238a1a6/url
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:247 Starting new HTTP connection (3): localhost:48455
+[35mDEBUG   [0m urllib3.util.retry:retry.py:557 Incremented Retry for (url='/session/b8afc2405dff63cecab3f5fd8238a1a6/url'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:874 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=48455): Failed to establish a new connection: [Errno 111] Connection refused")': /session/b8afc2405dff63cecab3f5fd8238a1a6/url
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:247 Starting new HTTP connection (4): localhost:48455
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 GET http://localhost:48455/session/b8afc2405dff63cecab3f5fd8238a1a6/screenshot {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:247 Starting new HTTP connection (5): localhost:48455
+[35mDEBUG   [0m urllib3.util.retry:retry.py:557 Incremented Retry for (url='/session/b8afc2405dff63cecab3f5fd8238a1a6/screenshot'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:874 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=48455): Failed to establish a new connection: [Errno 111] Connection refused")': /session/b8afc2405dff63cecab3f5fd8238a1a6/screenshot
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:247 Starting new HTTP connection (6): localhost:48455
+[35mDEBUG   [0m urllib3.util.retry:retry.py:557 Incremented Retry for (url='/session/b8afc2405dff63cecab3f5fd8238a1a6/screenshot'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:874 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=48455): Failed to establish a new connection: [Errno 111] Connection refused")': /session/b8afc2405dff63cecab3f5fd8238a1a6/screenshot
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:247 Starting new HTTP connection (7): localhost:48455
+[35mDEBUG   [0m urllib3.util.retry:retry.py:557 Incremented Retry for (url='/session/b8afc2405dff63cecab3f5fd8238a1a6/screenshot'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:874 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=48455): Failed to establish a new connection: [Errno 111] Connection refused")': /session/b8afc2405dff63cecab3f5fd8238a1a6/screenshot
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:247 Starting new HTTP connection (8): localhost:48455
+[31m[1mERROR   [0m test_automation:base_page.py:224 스크린샷 저장 실패: HTTPConnectionPool(host='localhost', port=48455): Max retries exceeded with url: /session/b8afc2405dff63cecab3f5fd8238a1a6/screenshot (Caused by NewConnectionError("HTTPConnection(host='localhost', port=48455): Failed to establish a new connection: [Errno 111] Connection refused"))
+Traceback (most recent call last):
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connection.py", line 239, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 499, in _make_request
+    conn.request(
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connection.py", line 567, in request
+    self.endheaders()
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1346, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1106, in _send_output
+    self.send(msg)
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1044, in send
+    self.connect()
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connection.py", line 398, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connection.py", line 254, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='localhost', port=48455): Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/QATEST/QATEST/src/tests/ui/test_ui_search.py", line 118, in test_search_and_click_first_result
+    kurly_main_page.wait_until_url_contains("search", timeout=10)
+  File "/home/runner/work/QATEST/QATEST/src/pages/base_page.py", line 168, in wait_until_url_contains
+    return wait.until(EC.url_contains(text))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/support/wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/support/expected_conditions.py", line 98, in _predicate
+    return url in driver.current_url
+                  ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 474, in current_url
+    return self.execute(Command.GET_CURRENT_URL)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 382, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 135, in request
+    return self.request_encode_url(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 182, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/poolmanager.py", line 459, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=48455): Max retries exceeded with url: /session/b8afc2405dff63cecab3f5fd8238a1a6/url (Caused by NewConnectionError("HTTPConnection(host='localhost', port=48455): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connection.py", line 239, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 499, in _make_request
+    conn.request(
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connection.py", line 567, in request
+    self.endheaders()
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1346, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1106, in _send_output
+    self.send(msg)
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1044, in send
+    self.connect()
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connection.py", line 398, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connection.py", line 254, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='localhost', port=48455): Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/QATEST/QATEST/src/pages/base_page.py", line 212, in take_screenshot
+    saved = self.driver.save_screenshot(screenshot_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 843, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 819, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 853, in get_screenshot_as_png
+    return b64decode(self.get_screenshot_as_base64().encode("ascii"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 864, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 382, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 135, in request
+    return self.request_encode_url(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 182, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/poolmanager.py", line 459, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/QATEST/QATEST/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=48455): Max retries exceeded with url: /session/b8afc2405dff63cecab3f5fd8238a1a6/screenshot (Caused by NewConnectionError("HTTPConnection(host='localhost', port=48455): Failed to establish a new connection: [Errno 111] Connection refused"))

@@ -1,0 +1,12 @@
+[32mINFO    [0m test_automation:base_page.py:82 페이지 열기: https://www.kurly.com/cart
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:403 POST http://localhost:54625/session/b8f0e0f88cb3f61948f35ce18387b9a6/url {'url': 'https://www.kurly.com/cart'}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:247 Starting new HTTP connection (46): localhost:54625
+[35mDEBUG   [0m urllib3.util.retry:retry.py:557 Incremented Retry for (url='/session/b8f0e0f88cb3f61948f35ce18387b9a6/url'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:874 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54625): Failed to establish a new connection: [Errno 111] Connection refused")': /session/b8f0e0f88cb3f61948f35ce18387b9a6/url
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:247 Starting new HTTP connection (47): localhost:54625
+[35mDEBUG   [0m urllib3.util.retry:retry.py:557 Incremented Retry for (url='/session/b8f0e0f88cb3f61948f35ce18387b9a6/url'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:874 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54625): Failed to establish a new connection: [Errno 111] Connection refused")': /session/b8f0e0f88cb3f61948f35ce18387b9a6/url
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:247 Starting new HTTP connection (48): localhost:54625
+[35mDEBUG   [0m urllib3.util.retry:retry.py:557 Incremented Retry for (url='/session/b8f0e0f88cb3f61948f35ce18387b9a6/url'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:874 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54625): Failed to establish a new connection: [Errno 111] Connection refused")': /session/b8f0e0f88cb3f61948f35ce18387b9a6/url
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:247 Starting new HTTP connection (49): localhost:54625
